@@ -51,10 +51,8 @@ public class CostStaminaMixin extends AbilityMixinHandler {
         staminaManager.staminaRecoverDelay = 0;
 
         // segs
-        // Not getAbilityName(null): that dereferences its argument, so this threw on every tick of
-        // every stamina-costing ability - Mona's sprint above all - and took the mixin with it.
-        Grasscutter.getLogger().debug("MIXIN STAMINA CONSUMPTION: Skill={}, Cost={}, PastTime={}",
-            ability.getData() != null ? ability.getData().abilityName : null, costStamina, pastTime);
+        Grasscutter.getLogger().info("MIXIN STAMINA CONSUMPTION: Skill={}, Cost={}, PastTime={}", 
+            ability.getAbilityName(null), costStamina, pastTime);
 
         return true;
     }

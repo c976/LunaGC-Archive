@@ -19,7 +19,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     int getSceneId();
@@ -109,7 +109,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
     public static final int SCENE_ID_FIELD_NUMBER = 10;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 10;</code>
+     * <code>uint32 scene_id = 3;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -421,7 +421,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 10;</code>
+       * <code>uint32 scene_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -517,9 +517,9 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GetDailyDungeonEntryInfoReq.proto\"/\n\033G" +
-      "etDailyDungeonEntryInfoReq\022\020\n\010scene_id\030\n" +
-      " \001(\rBB\n\031emu.grasscutter.net.protoB%GetDa" +
-      "ilyDungeonEntryInfoReqOuterClassb\006proto3"
+      "etDailyDungeonEntryInfoReq\022\020\n\010scene_id\030\003" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

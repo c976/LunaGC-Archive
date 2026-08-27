@@ -69,7 +69,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 120: {
+            case 56: {
 
               routineType_ = input.readUInt32();
               break;
@@ -106,7 +106,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
               emu.grasscutter.net.proto.WorldRoutineTypeCloseNotifyOuterClass.WorldRoutineTypeCloseNotify.class, emu.grasscutter.net.proto.WorldRoutineTypeCloseNotifyOuterClass.WorldRoutineTypeCloseNotify.Builder.class);
     }
 
-    public static final int ROUTINE_TYPE_FIELD_NUMBER = 15;
+    public static final int ROUTINE_TYPE_FIELD_NUMBER = 7;
     private int routineType_;
 
     @java.lang.Override
@@ -129,7 +129,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (routineType_ != 0) {
-        output.writeUInt32(15, routineType_);
+        output.writeUInt32(7, routineType_);
       }
       unknownFields.writeTo(output);
     }
@@ -142,7 +142,7 @@ public final class WorldRoutineTypeCloseNotifyOuterClass {
       size = 0;
       if (routineType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, routineType_);
+          .computeUInt32Size(7, routineType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

@@ -233,7 +233,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
 
               break;
             }
-            case 69: {
+            case 85: {
 
               duration_ = input.readFloat();
               break;
@@ -278,7 +278,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
               fBJIPNLHIJM_ = input.readFloat();
               break;
             }
-            case 80: {
+            case 128008: {
 
               kONBEJGAKGH_ = input.readBool();
               break;
@@ -316,7 +316,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
               eFPNBOJMHOF_ = input.readFloat();
               break;
             }
-            case 3760: {
+            case 6432: {
 
               entityId_ = input.readUInt32();
               break;
@@ -453,7 +453,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return getOCJINDALGCH();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 470;
+    public static final int ENTITY_ID_FIELD_NUMBER = 804;
     private int entityId_;
     /**
      * <code>uint32 entity_id = 534;</code>
@@ -486,7 +486,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return fBJIPNLHIJM_;
     }
 
-    public static final int DURATION_FIELD_NUMBER = 8;
+    public static final int DURATION_FIELD_NUMBER = 10;
     private float duration_;
     /**
      * <code>float duration = 2;</code>
@@ -519,7 +519,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       return eFJMAKKIMCP_;
     }
 
-    public static final int KONBEJGAKGH_FIELD_NUMBER = 10;
+    public static final int KONBEJGAKGH_FIELD_NUMBER = 16001;
     private boolean kONBEJGAKGH_;
     /**
      * <code>bool KONBEJGAKGH = 10;</code>
@@ -644,7 +644,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         output.writeMessage(1, getPKONLLGKBAI());
       }
       if (duration_ != 0F) {
-        output.writeFloat(8, duration_);
+        output.writeFloat(10, duration_);
       }
       if (aGIIGOAJHHO_ != emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.KeepRotType_KEEP_ROT_X.getNumber()) {
         output.writeEnum(3, aGIIGOAJHHO_);
@@ -668,7 +668,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         output.writeFloat(9, fBJIPNLHIJM_);
       }
       if (kONBEJGAKGH_ != false) {
-        output.writeBool(10, kONBEJGAKGH_);
+        output.writeBool(16001, kONBEJGAKGH_);
       }
       if (dEGBPOEAHHC_ != false) {
         output.writeBool(11, dEGBPOEAHHC_);
@@ -686,7 +686,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
         output.writeFloat(506, eFPNBOJMHOF_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(470, entityId_);
+        output.writeUInt32(804, entityId_);
       }
       if (hEKPMBICIPF_ != 0) {
         output.writeUInt32(911, hEKPMBICIPF_);
@@ -709,7 +709,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       if (duration_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(8, duration_);
+          .computeFloatSize(10, duration_);
       }
       if (aGIIGOAJHHO_ != emu.grasscutter.net.proto.KeepRotTypeOuterClass.KeepRotType.KeepRotType_KEEP_ROT_X.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
@@ -745,7 +745,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       if (kONBEJGAKGH_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, kONBEJGAKGH_);
+          .computeBoolSize(16001, kONBEJGAKGH_);
       }
       if (dEGBPOEAHHC_ != false) {
         size += com.google.protobuf.CodedOutputStream
@@ -769,7 +769,7 @@ public final class BeginCameraSceneLookNotifyOuterClass {
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(470, entityId_);
+          .computeUInt32Size(804, entityId_);
       }
       if (hEKPMBICIPF_ != 0) {
         size += com.google.protobuf.CodedOutputStream

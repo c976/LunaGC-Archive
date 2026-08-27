@@ -109,12 +109,12 @@ public final class ObstacleModifyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 72: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 112: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 removeObstacleIds_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -122,7 +122,7 @@ public final class ObstacleModifyNotifyOuterClass {
               removeObstacleIds_.addInt(input.readInt32());
               break;
             }
-            case 18: {
+            case 114: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -135,7 +135,7 @@ public final class ObstacleModifyNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 72: {
+            case 128000: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 eFBNDPGCKBA_ = newIntList();
                 mutable_bitField0_ |= 0x00000004;
@@ -143,7 +143,7 @@ public final class ObstacleModifyNotifyOuterClass {
               eFBNDPGCKBA_.addInt(input.readInt32());
               break;
             }
-            case 74: {
+            case 128002: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
@@ -156,7 +156,7 @@ public final class ObstacleModifyNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 50: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 addObstacles_ = new java.util.ArrayList<emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo>();
                 mutable_bitField0_ |= 0x00000002;
@@ -206,7 +206,7 @@ public final class ObstacleModifyNotifyOuterClass {
               emu.grasscutter.net.proto.ObstacleModifyNotifyOuterClass.ObstacleModifyNotify.class, emu.grasscutter.net.proto.ObstacleModifyNotifyOuterClass.ObstacleModifyNotify.Builder.class);
     }
 
-    public static final int REMOVE_OBSTACLE_IDS_FIELD_NUMBER = 2;
+    public static final int REMOVE_OBSTACLE_IDS_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList removeObstacleIds_;
 
     @java.lang.Override
@@ -224,7 +224,7 @@ public final class ObstacleModifyNotifyOuterClass {
     }
     private int removeObstacleIdsMemoizedSerializedSize = -1;
 
-    public static final int ADD_OBSTACLES_FIELD_NUMBER = 6;
+    public static final int ADD_OBSTACLES_FIELD_NUMBER = 1;
     private java.util.List<emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo> addObstacles_;
 
     @java.lang.Override
@@ -254,7 +254,7 @@ public final class ObstacleModifyNotifyOuterClass {
       return addObstacles_.get(index);
     }
 
-    public static final int EFBNDPGCKBA_FIELD_NUMBER = 9;
+    public static final int EFBNDPGCKBA_FIELD_NUMBER = 16000;
     private com.google.protobuf.Internal.IntList eFBNDPGCKBA_;
     /**
      * <code>repeated int32 EFBNDPGCKBA = 9;</code>
@@ -282,7 +282,7 @@ public final class ObstacleModifyNotifyOuterClass {
     }
     private int eFBNDPGCKBAMemoizedSerializedSize = -1;
 
-    public static final int SCENE_ID_FIELD_NUMBER = 4;
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
     private int sceneId_;
 
     @java.lang.Override
@@ -306,24 +306,24 @@ public final class ObstacleModifyNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (sceneId_ != 0) {
-        output.writeUInt32(4, sceneId_);
+        output.writeUInt32(9, sceneId_);
       }
       if (getRemoveObstacleIdsList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(114);
         output.writeUInt32NoTag(removeObstacleIdsMemoizedSerializedSize);
       }
       for (int i = 0; i < removeObstacleIds_.size(); i++) {
         output.writeInt32NoTag(removeObstacleIds_.getInt(i));
       }
       if (getEFBNDPGCKBAList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(128002);
         output.writeUInt32NoTag(eFBNDPGCKBAMemoizedSerializedSize);
       }
       for (int i = 0; i < eFBNDPGCKBA_.size(); i++) {
         output.writeInt32NoTag(eFBNDPGCKBA_.getInt(i));
       }
       for (int i = 0; i < addObstacles_.size(); i++) {
-        output.writeMessage(6, addObstacles_.get(i));
+        output.writeMessage(1, addObstacles_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -336,7 +336,7 @@ public final class ObstacleModifyNotifyOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, sceneId_);
+          .computeUInt32Size(9, sceneId_);
       }
       {
         int dataSize = 0;
@@ -360,7 +360,7 @@ public final class ObstacleModifyNotifyOuterClass {
         }
         size += dataSize;
         if (!getEFBNDPGCKBAList().isEmpty()) {
-          size += 1;
+          size += 3;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
@@ -368,7 +368,7 @@ public final class ObstacleModifyNotifyOuterClass {
       }
       for (int i = 0; i < addObstacles_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, addObstacles_.get(i));
+          .computeMessageSize(1, addObstacles_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

@@ -69,7 +69,7 @@ public final class TowerAllDataReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 16: {
 
               isInteract_ = input.readBool();
               break;
@@ -106,7 +106,7 @@ public final class TowerAllDataReqOuterClass {
               emu.grasscutter.net.proto.TowerAllDataReqOuterClass.TowerAllDataReq.class, emu.grasscutter.net.proto.TowerAllDataReqOuterClass.TowerAllDataReq.Builder.class);
     }
 
-    public static final int IS_INTERACT_FIELD_NUMBER = 10;
+    public static final int IS_INTERACT_FIELD_NUMBER = 2;
     private boolean isInteract_;
 
     @java.lang.Override
@@ -129,7 +129,7 @@ public final class TowerAllDataReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (isInteract_ != false) {
-        output.writeBool(10, isInteract_);
+        output.writeBool(2, isInteract_);
       }
       unknownFields.writeTo(output);
     }
@@ -142,7 +142,7 @@ public final class TowerAllDataReqOuterClass {
       size = 0;
       if (isInteract_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isInteract_);
+          .computeBoolSize(2, isInteract_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

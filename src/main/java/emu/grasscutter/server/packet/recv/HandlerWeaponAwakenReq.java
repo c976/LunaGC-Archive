@@ -12,7 +12,7 @@ public class HandlerWeaponAwakenReq extends PacketHandler {
         WeaponAwakenReq req = WeaponAwakenReq.parseFrom(payload);
 
         // Weapon refinement
-        var items = req.getItemGuidListList();
+        var items = req.getItemGuidList();
         for (long item : items) {
             session
                 .getServer()

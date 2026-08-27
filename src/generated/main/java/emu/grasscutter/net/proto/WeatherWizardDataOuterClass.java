@@ -18,10 +18,6 @@ public final class WeatherWizardDataOuterClass {
       // @@protoc_insertion_point(interface_extends:WeatherWizardData)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 shield_value = 4;</code>
-     * @return The shieldValue.
-     */
     int getShieldValue();
   }
   /**
@@ -108,10 +104,7 @@ public final class WeatherWizardDataOuterClass {
 
     public static final int SHIELD_VALUE_FIELD_NUMBER = 4;
     private int shieldValue_;
-    /**
-     * <code>uint32 shield_value = 4;</code>
-     * @return The shieldValue.
-     */
+
     @java.lang.Override
     public int getShieldValue() {
       return shieldValue_;
@@ -420,31 +413,21 @@ public final class WeatherWizardDataOuterClass {
       }
 
       private int shieldValue_ ;
-      /**
-       * <code>uint32 shield_value = 4;</code>
-       * @return The shieldValue.
-       */
+
       @java.lang.Override
       public int getShieldValue() {
         return shieldValue_;
       }
-      /**
-       * <code>uint32 shield_value = 4;</code>
-       * @param value The shieldValue to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setShieldValue(int value) {
-        
+
         shieldValue_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 shield_value = 4;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearShieldValue() {
-        
+
         shieldValue_ = 0;
         onChanged();
         return this;
@@ -460,7 +443,6 @@ public final class WeatherWizardDataOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:WeatherWizardData)
     }
@@ -504,7 +486,7 @@ public final class WeatherWizardDataOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WeatherWizardData_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WeatherWizardData_fieldAccessorTable;
 
@@ -517,9 +499,8 @@ public final class WeatherWizardDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027WeatherWizardData.proto\")\n\021WeatherWiza" +
-      "rdData\022\024\n\014shield_value\030\004 \001(\rB8\n\031emu.gras" +
-      "scutter.net.protoB\033WeatherWizardDataOute" +
-      "rClassb\006proto3"
+      "rdData\022\024\n\014shield_value\030\006 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

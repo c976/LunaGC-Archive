@@ -3,7 +3,6 @@ package emu.grasscutter.game.ability.actions;
 import com.google.protobuf.ByteString;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.game.ability.Ability;
-import emu.grasscutter.game.ability.AbilityManager;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.server.packet.send.PacketServerGlobalValueChangeNotify;
@@ -15,23 +14,24 @@ public final class ActionSetGlobalValue extends AbilityActionHandler {
     @Override
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
-                var properties = propertiesFor(ability);
+                var owner = ability.getOwner();
+                var properties = new Object2FloatOpenHashMap<String>();
+
+                for (var property : FightProperty.values()) {
+                    var name = property.name();
+                    var value = owner.getFightProperty(property);
+                    properties.put(name, value);
+                }
+
+                properties.putAll(ability.getAbilitySpecials());
 
                 var valueKey = action.key;
-                float computedValue = action.writtenValue().get(properties, 0f);
+                var value = action.ratio;
+                float computedValue = value.get(properties, 0f);
                 target.getGlobalAbilityValues().put(valueKey, computedValue);
                 target.onAbilityValueUpdate();
 
-            // Team abilities run against a pseudo-entity that is in no scene, so this fired four
-            // NPEs on every single login before the guard.
-            if (!AbilityManager.isServerOwnedChain()) {
-                var scene = target.getScene();
-                var host = scene == null ? null : scene.getHost();
-                if (host != null) {
-                    host.sendPacket(
-                            new PacketServerGlobalValueChangeNotify(target, valueKey, computedValue));
-                }
-            }
+            target.getScene().getHost().sendPacket(new PacketServerGlobalValueChangeNotify(target, valueKey, computedValue));
         return true;
     }
 }

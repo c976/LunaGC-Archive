@@ -19,12 +19,17 @@ public final class AvatarChangeElementTypeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 26227
+   * Obf: CLNCAJHKIFD
+   * </pre>
+   *
    * Protobuf type {@code AvatarChangeElementTypeRsp}
    */
   public static final class AvatarChangeElementTypeRsp extends
@@ -109,7 +114,7 @@ public final class AvatarChangeElementTypeRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 15;
     private int retcode_;
     /**
-     * <code>int32 retcode = 15;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class AvatarChangeElementTypeRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 26227
+     * Obf: CLNCAJHKIFD
+     * </pre>
+     *
      * Protobuf type {@code AvatarChangeElementTypeRsp}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class AvatarChangeElementTypeRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class AvatarChangeElementTypeRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class AvatarChangeElementTypeRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 15;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,9 +527,8 @@ public final class AvatarChangeElementTypeRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AvatarChangeElementTypeRsp.proto\"-\n\032Av" +
-      "atarChangeElementTypeRsp\022\017\n\007retcode\030\017 \001(" +
-      "\005BA\n\031emu.grasscutter.net.protoB$AvatarCh" +
-      "angeElementTypeRspOuterClassb\006proto3"
+      "atarChangeElementTypeRsp\022\017\n\007retcode\030\006 \001(" +
+      "\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

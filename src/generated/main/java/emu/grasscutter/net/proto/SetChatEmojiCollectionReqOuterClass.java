@@ -19,21 +19,26 @@ public final class SetChatEmojiCollectionReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      * @return Whether the chatEmojiCollectionData field is set.
      */
     boolean hasChatEmojiCollectionData();
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      * @return The chatEmojiCollectionData.
      */
     emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData getChatEmojiCollectionData();
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      */
     emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionDataOrBuilder getChatEmojiCollectionDataOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 21632
+   * Obf: CAOLNHCCHFO
+   * </pre>
+   *
    * Protobuf type {@code SetChatEmojiCollectionReq}
    */
   public static final class SetChatEmojiCollectionReq extends
@@ -126,7 +131,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
     public static final int CHAT_EMOJI_COLLECTION_DATA_FIELD_NUMBER = 1;
     private emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData chatEmojiCollectionData_;
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      * @return Whether the chatEmojiCollectionData field is set.
      */
     @java.lang.Override
@@ -134,7 +139,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
       return chatEmojiCollectionData_ != null;
     }
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      * @return The chatEmojiCollectionData.
      */
     @java.lang.Override
@@ -142,7 +147,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
       return chatEmojiCollectionData_ == null ? emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.getDefaultInstance() : chatEmojiCollectionData_;
     }
     /**
-     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+     * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionDataOrBuilder getChatEmojiCollectionDataOrBuilder() {
@@ -310,6 +315,11 @@ public final class SetChatEmojiCollectionReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21632
+     * Obf: CAOLNHCCHFO
+     * </pre>
+     *
      * Protobuf type {@code SetChatEmojiCollectionReq}
      */
     public static final class Builder extends
@@ -468,14 +478,14 @@ public final class SetChatEmojiCollectionReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionDataOrBuilder> chatEmojiCollectionDataBuilder_;
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        * @return Whether the chatEmojiCollectionData field is set.
        */
       public boolean hasChatEmojiCollectionData() {
         return chatEmojiCollectionDataBuilder_ != null || chatEmojiCollectionData_ != null;
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        * @return The chatEmojiCollectionData.
        */
       public emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData getChatEmojiCollectionData() {
@@ -486,7 +496,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         }
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public Builder setChatEmojiCollectionData(emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData value) {
         if (chatEmojiCollectionDataBuilder_ == null) {
@@ -502,7 +512,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         return this;
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public Builder setChatEmojiCollectionData(
           emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder builderForValue) {
@@ -516,7 +526,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         return this;
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public Builder mergeChatEmojiCollectionData(emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData value) {
         if (chatEmojiCollectionDataBuilder_ == null) {
@@ -534,7 +544,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         return this;
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public Builder clearChatEmojiCollectionData() {
         if (chatEmojiCollectionDataBuilder_ == null) {
@@ -548,7 +558,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         return this;
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder getChatEmojiCollectionDataBuilder() {
         
@@ -556,7 +566,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         return getChatEmojiCollectionDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       public emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionDataOrBuilder getChatEmojiCollectionDataOrBuilder() {
         if (chatEmojiCollectionDataBuilder_ != null) {
@@ -567,7 +577,7 @@ public final class SetChatEmojiCollectionReqOuterClass {
         }
       }
       /**
-       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 1;</code>
+       * <code>.ChatEmojiCollectionData chat_emoji_collection_data = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionData.Builder, emu.grasscutter.net.proto.ChatEmojiCollectionDataOuterClass.ChatEmojiCollectionDataOrBuilder> 
@@ -652,9 +662,8 @@ public final class SetChatEmojiCollectionReqOuterClass {
       "\n\037SetChatEmojiCollectionReq.proto\032\035ChatE" +
       "mojiCollectionData.proto\"Y\n\031SetChatEmoji" +
       "CollectionReq\022<\n\032chat_emoji_collection_d" +
-      "ata\030\001 \001(\0132\030.ChatEmojiCollectionDataB@\n\031e" +
-      "mu.grasscutter.net.protoB#SetChatEmojiCo" +
-      "llectionReqOuterClassb\006proto3"
+      "ata\030\n \001(\0132\030.ChatEmojiCollectionDataB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

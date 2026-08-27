@@ -5,7 +5,6 @@ import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.SceneEntityInfoOuterClass;
 import emu.grasscutter.scripts.data.SceneRegion;
 import it.unimi.dsi.fastutil.ints.Int2FloatMap;
-import it.unimi.dsi.fastutil.ints.Int2FloatOpenHashMap;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import lombok.Getter;
@@ -66,16 +65,10 @@ public class EntityRegion extends GameEntity {
         return this.entityLeave;
     }
 
-    /**
-     * Nothing fights this entity, but an ability attached to one reads the whole FightProperty set
-     * off its owner, and a null threw right through the action instead of reading zeroes.
-     */
     @Override
     public Int2FloatMap getFightProperties() {
-        return this.fightProperties;
+        return null;
     }
-
-    private final Int2FloatMap fightProperties = new Int2FloatOpenHashMap();
 
     @Override
     public Position getPosition() {

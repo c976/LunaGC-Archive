@@ -19,12 +19,16 @@ public final class SeaLampSectionInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 section_id = 6;</code>
+     * <code>uint32 section_id = 10;</code>
      * @return The sectionId.
      */
     int getSectionId();
   }
   /**
+   * <pre>
+   * Obf: EPENKOINLCG
+   * </pre>
+   *
    * Protobuf type {@code SeaLampSectionInfo}
    */
   public static final class SeaLampSectionInfo extends
@@ -109,7 +113,7 @@ public final class SeaLampSectionInfoOuterClass {
     public static final int SECTION_ID_FIELD_NUMBER = 6;
     private int sectionId_;
     /**
-     * <code>uint32 section_id = 6;</code>
+     * <code>uint32 section_id = 10;</code>
      * @return The sectionId.
      */
     @java.lang.Override
@@ -273,6 +277,10 @@ public final class SeaLampSectionInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: EPENKOINLCG
+     * </pre>
+     *
      * Protobuf type {@code SeaLampSectionInfo}
      */
     public static final class Builder extends
@@ -421,7 +429,7 @@ public final class SeaLampSectionInfoOuterClass {
 
       private int sectionId_ ;
       /**
-       * <code>uint32 section_id = 6;</code>
+       * <code>uint32 section_id = 10;</code>
        * @return The sectionId.
        */
       @java.lang.Override
@@ -429,7 +437,7 @@ public final class SeaLampSectionInfoOuterClass {
         return sectionId_;
       }
       /**
-       * <code>uint32 section_id = 6;</code>
+       * <code>uint32 section_id = 10;</code>
        * @param value The sectionId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +448,7 @@ public final class SeaLampSectionInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 section_id = 6;</code>
+       * <code>uint32 section_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearSectionId() {
@@ -517,9 +525,8 @@ public final class SeaLampSectionInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030SeaLampSectionInfo.proto\"(\n\022SeaLampSec" +
-      "tionInfo\022\022\n\nsection_id\030\006 \001(\rB9\n\031emu.gras" +
-      "scutter.net.protoB\034SeaLampSectionInfoOut" +
-      "erClassb\006proto3"
+      "tionInfo\022\022\n\nsection_id\030\n \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

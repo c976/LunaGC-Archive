@@ -28,13 +28,9 @@ public final class UgcTypeOuterClass {
      */
     UgcType_MUSIC_GAME(1),
     /**
-     * <code>LAN_V5_CARD_GAME = 2;</code>
+     * <code>UgcType_LAN_V_5_CARD_GAME = 2;</code>
      */
-    LAN_V5_CARD_GAME(2),
-    /**
-     * <code>SHORT_VIDEO = 3;</code>
-     */
-    SHORT_VIDEO(3),
+    UgcType_LAN_V_5_CARD_GAME(2),
     UNRECOGNIZED(-1),
     ;
 
@@ -47,13 +43,9 @@ public final class UgcTypeOuterClass {
      */
     public static final int UgcType_MUSIC_GAME_VALUE = 1;
     /**
-     * <code>LAN_V5_CARD_GAME = 2;</code>
+     * <code>UgcType_LAN_V_5_CARD_GAME = 2;</code>
      */
-    public static final int LAN_V5_CARD_GAME_VALUE = 2;
-    /**
-     * <code>SHORT_VIDEO = 3;</code>
-     */
-    public static final int SHORT_VIDEO_VALUE = 3;
+    public static final int UgcType_LAN_V_5_CARD_GAME_VALUE = 2;
 
 
     public final int getNumber() {
@@ -82,8 +74,7 @@ public final class UgcTypeOuterClass {
       switch (value) {
         case 0: return UgcType_NONE;
         case 1: return UgcType_MUSIC_GAME;
-        case 2: return LAN_V5_CARD_GAME;
-        case 3: return SHORT_VIDEO;
+        case 2: return UgcType_LAN_V_5_CARD_GAME;
         default: return null;
       }
     }
@@ -149,11 +140,10 @@ public final class UgcTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rUgcType.proto*Z\n\007UgcType\022\020\n\014UgcType_NO" +
-      "NE\020\000\022\026\n\022UgcType_MUSIC_GAME\020\001\022\024\n\020LAN_V5_C" +
-      "ARD_GAME\020\002\022\017\n\013SHORT_VIDEO\020\003B.\n\031emu.grass" +
-      "cutter.net.protoB\021UgcTypeOuterClassb\006pro" +
-      "to3"
+      "\n\rUgcType.proto*R\n\007UgcType\022\020\n\014UgcType_NO" +
+      "NE\020\000\022\026\n\022UgcType_MUSIC_GAME\020\001\022\035\n\031UgcType_" +
+      "LAN_V_5_CARD_GAME\020\002B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

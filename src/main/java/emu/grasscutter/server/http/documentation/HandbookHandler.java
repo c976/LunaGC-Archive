@@ -10,7 +10,6 @@ import emu.grasscutter.utils.objects.*;
 import emu.grasscutter.utils.objects.HandbookBody.Action;
 import io.javalin.Javalin;
 import io.javalin.http.*;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -26,9 +25,7 @@ public final class HandbookHandler implements Router {
      * found.
      */
     public HandbookHandler() {
-        // The handbook is optional - it is skipped by -PskipHandbook - so read it without
-        // FileUtils' "Failed to read resource" warning, which fired on every single start
-        this.handbook = readHandbook();
+        this.handbook = new String(FileUtils.readResource("/html/handbook.html"));
         this.serve = HANDBOOK.enable && this.handbook.length() > 0;
 
         var server = HANDBOOK.server;
@@ -52,14 +49,6 @@ public final class HandbookHandler implements Router {
                             },
                             0,
                             TimeUnit.SECONDS.toMillis(HANDBOOK.limits.interval));
-        }
-    }
-
-    private static String readHandbook() {
-        try (var stream = FileUtils.readResourceAsStream("/html/handbook.html")) {
-            return stream == null ? "" : new String(stream.readAllBytes(), StandardCharsets.UTF_8);
-        } catch (Exception exception) {
-            return "";
         }
     }
 

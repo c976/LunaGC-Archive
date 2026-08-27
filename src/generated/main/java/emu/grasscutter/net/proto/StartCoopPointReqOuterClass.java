@@ -19,12 +19,17 @@ public final class StartCoopPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 coop_point = 14;</code>
+     * <code>uint32 coop_point = 8;</code>
      * @return The coopPoint.
      */
     int getCoopPoint();
   }
   /**
+   * <pre>
+   * CmdId: 22463
+   * Obf: NEHKCPAFDAI
+   * </pre>
+   *
    * Protobuf type {@code StartCoopPointReq}
    */
   public static final class StartCoopPointReq extends
@@ -109,7 +114,7 @@ public final class StartCoopPointReqOuterClass {
     public static final int COOP_POINT_FIELD_NUMBER = 14;
     private int coopPoint_;
     /**
-     * <code>uint32 coop_point = 14;</code>
+     * <code>uint32 coop_point = 8;</code>
      * @return The coopPoint.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class StartCoopPointReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 22463
+     * Obf: NEHKCPAFDAI
+     * </pre>
+     *
      * Protobuf type {@code StartCoopPointReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class StartCoopPointReqOuterClass {
 
       private int coopPoint_ ;
       /**
-       * <code>uint32 coop_point = 14;</code>
+       * <code>uint32 coop_point = 8;</code>
        * @return The coopPoint.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class StartCoopPointReqOuterClass {
         return coopPoint_;
       }
       /**
-       * <code>uint32 coop_point = 14;</code>
+       * <code>uint32 coop_point = 8;</code>
        * @param value The coopPoint to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class StartCoopPointReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 coop_point = 14;</code>
+       * <code>uint32 coop_point = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearCoopPoint() {
@@ -517,9 +527,8 @@ public final class StartCoopPointReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027StartCoopPointReq.proto\"\'\n\021StartCoopPo" +
-      "intReq\022\022\n\ncoop_point\030\016 \001(\rB8\n\031emu.grassc" +
-      "utter.net.protoB\033StartCoopPointReqOuterC" +
-      "lassb\006proto3"
+      "intReq\022\022\n\ncoop_point\030\010 \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

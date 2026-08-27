@@ -15,12 +15,10 @@ public final class PacketGetAllMailResultNotify extends BasePacket {
     public PacketGetAllMailResultNotify(Player player, boolean gifts) {
         super(PacketOpcodes.GetAllMailResultNotify);
 
-		var packet =
-				GetAllMailResultNotify.newBuilder()
-						.setTransaction(player.getUid() + "-" + Utils.getCurrentSeconds() + "-" + 0)
-						.setIsCollected(gifts)
-						.setPageIndex(1)
-						.setTotalPageCount(1);
+        var packet =
+                GetAllMailResultNotify.newBuilder()
+                        .setTransaction(player.getUid() + "-" + Utils.getCurrentSeconds() + "-" + 0)
+                        .setIsCollected(gifts);
 
         var inbox = player.getAllMail();
         if (!gifts && inbox.size() > 0) {

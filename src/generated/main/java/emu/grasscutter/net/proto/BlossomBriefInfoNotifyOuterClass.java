@@ -19,30 +19,35 @@ public final class BlossomBriefInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo> 
         getBriefInfoListList();
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo getBriefInfoList(int index);
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     int getBriefInfoListCount();
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder> 
         getBriefInfoListOrBuilderList();
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder getBriefInfoListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * CmdId: 29177
+   * Obf: GHNDODAOAJO
+   * </pre>
+   *
    * Protobuf type {@code BlossomBriefInfoNotify}
    */
   public static final class BlossomBriefInfoNotify extends
@@ -136,14 +141,14 @@ public final class BlossomBriefInfoNotifyOuterClass {
     public static final int BRIEF_INFO_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo> briefInfoList_;
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo> getBriefInfoListList() {
       return briefInfoList_;
     }
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder> 
@@ -151,21 +156,21 @@ public final class BlossomBriefInfoNotifyOuterClass {
       return briefInfoList_;
     }
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     @java.lang.Override
     public int getBriefInfoListCount() {
       return briefInfoList_.size();
     }
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo getBriefInfoList(int index) {
       return briefInfoList_.get(index);
     }
     /**
-     * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+     * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder getBriefInfoListOrBuilder(
@@ -331,6 +336,11 @@ public final class BlossomBriefInfoNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29177
+     * Obf: GHNDODAOAJO
+     * </pre>
+     *
      * Protobuf type {@code BlossomBriefInfoNotify}
      */
     public static final class Builder extends
@@ -528,7 +538,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
           emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder> briefInfoListBuilder_;
 
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo> getBriefInfoListList() {
         if (briefInfoListBuilder_ == null) {
@@ -538,7 +548,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public int getBriefInfoListCount() {
         if (briefInfoListBuilder_ == null) {
@@ -548,7 +558,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo getBriefInfoList(int index) {
         if (briefInfoListBuilder_ == null) {
@@ -558,7 +568,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder setBriefInfoList(
           int index, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo value) {
@@ -575,7 +585,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder setBriefInfoList(
           int index, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder builderForValue) {
@@ -589,7 +599,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder addBriefInfoList(emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo value) {
         if (briefInfoListBuilder_ == null) {
@@ -605,7 +615,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder addBriefInfoList(
           int index, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo value) {
@@ -622,7 +632,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder addBriefInfoList(
           emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder builderForValue) {
@@ -636,7 +646,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder addBriefInfoList(
           int index, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder builderForValue) {
@@ -650,7 +660,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder addAllBriefInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo> values) {
@@ -665,7 +675,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder clearBriefInfoList() {
         if (briefInfoListBuilder_ == null) {
@@ -678,7 +688,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public Builder removeBriefInfoList(int index) {
         if (briefInfoListBuilder_ == null) {
@@ -691,14 +701,14 @@ public final class BlossomBriefInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder getBriefInfoListBuilder(
           int index) {
         return getBriefInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder getBriefInfoListOrBuilder(
           int index) {
@@ -708,7 +718,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfoOrBuilder> 
            getBriefInfoListOrBuilderList() {
@@ -719,14 +729,14 @@ public final class BlossomBriefInfoNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder addBriefInfoListBuilder() {
         return getBriefInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder addBriefInfoListBuilder(
           int index) {
@@ -734,7 +744,7 @@ public final class BlossomBriefInfoNotifyOuterClass {
             index, emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .BlossomBriefInfo brief_info_list = 13;</code>
+       * <code>repeated .BlossomBriefInfo brief_info_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.BlossomBriefInfoOuterClass.BlossomBriefInfo.Builder> 
            getBriefInfoListBuilderList() {
@@ -823,9 +833,9 @@ public final class BlossomBriefInfoNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034BlossomBriefInfoNotify.proto\032\026BlossomB" +
       "riefInfo.proto\"D\n\026BlossomBriefInfoNotify" +
-      "\022*\n\017brief_info_list\030\r \003(\0132\021.BlossomBrief" +
-      "InfoB=\n\031emu.grasscutter.net.protoB Bloss" +
-      "omBriefInfoNotifyOuterClassb\006proto3"
+      "\022*\n\017brief_info_list\030\014 \003(\0132\021.BlossomBrief" +
+      "InfoB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

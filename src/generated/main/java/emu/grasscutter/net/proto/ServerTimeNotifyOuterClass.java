@@ -18,13 +18,13 @@ public final class ServerTimeNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:ServerTimeNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint64 server_time = 15;</code>
-     * @return The serverTime.
-     */
     long getServerTime();
   }
   /**
+   * <pre>
+   * CmdId: 24474
+   * </pre>
+   *
    * Protobuf type {@code ServerTimeNotify}
    */
   public static final class ServerTimeNotify extends
@@ -108,10 +108,7 @@ public final class ServerTimeNotifyOuterClass {
 
     public static final int SERVER_TIME_FIELD_NUMBER = 15;
     private long serverTime_;
-    /**
-     * <code>uint64 server_time = 15;</code>
-     * @return The serverTime.
-     */
+
     @java.lang.Override
     public long getServerTime() {
       return serverTime_;
@@ -274,6 +271,10 @@ public final class ServerTimeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24474
+     * </pre>
+     *
      * Protobuf type {@code ServerTimeNotify}
      */
     public static final class Builder extends
@@ -421,31 +422,21 @@ public final class ServerTimeNotifyOuterClass {
       }
 
       private long serverTime_ ;
-      /**
-       * <code>uint64 server_time = 15;</code>
-       * @return The serverTime.
-       */
+
       @java.lang.Override
       public long getServerTime() {
         return serverTime_;
       }
-      /**
-       * <code>uint64 server_time = 15;</code>
-       * @param value The serverTime to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setServerTime(long value) {
-        
+
         serverTime_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint64 server_time = 15;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearServerTime() {
-        
+
         serverTime_ = 0L;
         onChanged();
         return this;
@@ -461,7 +452,6 @@ public final class ServerTimeNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:ServerTimeNotify)
     }
@@ -505,7 +495,7 @@ public final class ServerTimeNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ServerTimeNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ServerTimeNotify_fieldAccessorTable;
 
@@ -518,9 +508,8 @@ public final class ServerTimeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026ServerTimeNotify.proto\"\'\n\020ServerTimeNo" +
-      "tify\022\023\n\013server_time\030\017 \001(\004B7\n\031emu.grasscu" +
-      "tter.net.protoB\032ServerTimeNotifyOuterCla" +
-      "ssb\006proto3"
+      "tify\022\023\n\013server_time\030\001 \001(\004B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -83,29 +83,29 @@ public final class MiracleRingDeliverItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 80: {
               int rawValue = input.readEnum();
 
               interactType_ = rawValue;
               break;
             }
-            case 112: {
+            case 16: {
 
               gadgetEntityId_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 56: {
               int rawValue = input.readEnum();
 
               opType_ = rawValue;
               break;
             }
-            case 96: {
+            case 40: {
 
               gadgetId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -142,7 +142,7 @@ public final class MiracleRingDeliverItemRspOuterClass {
               emu.grasscutter.net.proto.MiracleRingDeliverItemRspOuterClass.MiracleRingDeliverItemRsp.class, emu.grasscutter.net.proto.MiracleRingDeliverItemRspOuterClass.MiracleRingDeliverItemRsp.Builder.class);
     }
 
-    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 14;
+    public static final int GADGET_ENTITY_ID_FIELD_NUMBER = 2;
     private int gadgetEntityId_;
 
     @java.lang.Override
@@ -150,7 +150,7 @@ public final class MiracleRingDeliverItemRspOuterClass {
       return gadgetEntityId_;
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 12;
+    public static final int GADGET_ID_FIELD_NUMBER = 5;
     private int gadgetId_;
 
     @java.lang.Override
@@ -158,7 +158,7 @@ public final class MiracleRingDeliverItemRspOuterClass {
       return gadgetId_;
     }
 
-    public static final int OP_TYPE_FIELD_NUMBER = 6;
+    public static final int OP_TYPE_FIELD_NUMBER = 7;
     private int opType_;
 
     @java.lang.Override public int getOpTypeValue() {
@@ -171,7 +171,7 @@ public final class MiracleRingDeliverItemRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.UNRECOGNIZED : result;
     }
 
-    public static final int INTERACT_TYPE_FIELD_NUMBER = 2;
+    public static final int INTERACT_TYPE_FIELD_NUMBER = 10;
     private int interactType_;
 
     @java.lang.Override public int getInteractTypeValue() {
@@ -184,7 +184,7 @@ public final class MiracleRingDeliverItemRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.InteractTypeOuterClass.InteractType.UNRECOGNIZED : result;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 5;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
 
     @java.lang.Override
@@ -207,19 +207,19 @@ public final class MiracleRingDeliverItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (interactType_ != emu.grasscutter.net.proto.InteractTypeOuterClass.InteractType.InteractType_INTERACT_NONE.getNumber()) {
-        output.writeEnum(2, interactType_);
+        output.writeEnum(10, interactType_);
       }
       if (gadgetEntityId_ != 0) {
-        output.writeUInt32(14, gadgetEntityId_);
+        output.writeUInt32(2, gadgetEntityId_);
       }
       if (opType_ != emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.InterOpType_INTER_OP_FINISH.getNumber()) {
-        output.writeEnum(6, opType_);
+        output.writeEnum(7, opType_);
       }
       if (gadgetId_ != 0) {
-        output.writeUInt32(12, gadgetId_);
+        output.writeUInt32(5, gadgetId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(5, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -232,23 +232,23 @@ public final class MiracleRingDeliverItemRspOuterClass {
       size = 0;
       if (interactType_ != emu.grasscutter.net.proto.InteractTypeOuterClass.InteractType.InteractType_INTERACT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(2, interactType_);
+          .computeEnumSize(10, interactType_);
       }
       if (gadgetEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, gadgetEntityId_);
+          .computeUInt32Size(2, gadgetEntityId_);
       }
       if (opType_ != emu.grasscutter.net.proto.InterOpTypeOuterClass.InterOpType.InterOpType_INTER_OP_FINISH.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, opType_);
+          .computeEnumSize(7, opType_);
       }
       if (gadgetId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, gadgetId_);
+          .computeUInt32Size(5, gadgetId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(5, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

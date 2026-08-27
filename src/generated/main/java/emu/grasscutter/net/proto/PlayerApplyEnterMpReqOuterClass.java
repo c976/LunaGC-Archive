@@ -19,7 +19,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 14;</code>
      * @return The targetUid.
      */
     int getTargetUid();
@@ -109,7 +109,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
     public static final int TARGET_UID_FIELD_NUMBER = 8;
     private int targetUid_;
     /**
-     * <code>uint32 target_uid = 8;</code>
+     * <code>uint32 target_uid = 14;</code>
      * @return The targetUid.
      */
     @java.lang.Override
@@ -421,7 +421,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
 
       private int targetUid_ ;
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 14;</code>
        * @return The targetUid.
        */
       @java.lang.Override
@@ -429,7 +429,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
         return targetUid_;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 14;</code>
        * @param value The targetUid to set.
        * @return This builder for chaining.
        */
@@ -440,7 +440,7 @@ public final class PlayerApplyEnterMpReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 target_uid = 8;</code>
+       * <code>uint32 target_uid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetUid() {
@@ -517,9 +517,8 @@ public final class PlayerApplyEnterMpReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerApplyEnterMpReq.proto\"+\n\025PlayerA" +
-      "pplyEnterMpReq\022\022\n\ntarget_uid\030\010 \001(\rB<\n\031em" +
-      "u.grasscutter.net.protoB\037PlayerApplyEnte" +
-      "rMpReqOuterClassb\006proto3"
+      "pplyEnterMpReq\022\022\n\ntarget_uid\030\016 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

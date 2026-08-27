@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-option java_outer_classname = "DelBackupAvatarTeamRspOuterClass";
-
-message DelBackupAvatarTeamRsp {
-	uint32 backup_avatar_team_id = 5;
-	int32 retcode = 9;
-}

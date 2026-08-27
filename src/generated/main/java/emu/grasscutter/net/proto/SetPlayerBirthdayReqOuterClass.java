@@ -18,22 +18,17 @@ public final class SetPlayerBirthdayReqOuterClass {
       // @@protoc_insertion_point(interface_extends:SetPlayerBirthdayReq)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     * @return Whether the birthday field is set.
-     */
     boolean hasBirthday();
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     * @return The birthday.
-     */
+
     emu.grasscutter.net.proto.BirthdayOuterClass.Birthday getBirthday();
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     */
+
     emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder getBirthdayOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 27104
+   * </pre>
+   *
    * Protobuf type {@code SetPlayerBirthdayReq}
    */
   public static final class SetPlayerBirthdayReq extends
@@ -125,25 +120,17 @@ public final class SetPlayerBirthdayReqOuterClass {
 
     public static final int BIRTHDAY_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.BirthdayOuterClass.Birthday birthday_;
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     * @return Whether the birthday field is set.
-     */
+
     @java.lang.Override
     public boolean hasBirthday() {
       return birthday_ != null;
     }
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     * @return The birthday.
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.BirthdayOuterClass.Birthday getBirthday() {
       return birthday_ == null ? emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.getDefaultInstance() : birthday_;
     }
-    /**
-     * <code>.Birthday birthday = 13;</code>
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder getBirthdayOrBuilder() {
       return getBirthday();
@@ -310,6 +297,10 @@ public final class SetPlayerBirthdayReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27104
+     * </pre>
+     *
      * Protobuf type {@code SetPlayerBirthdayReq}
      */
     public static final class Builder extends
@@ -467,17 +458,11 @@ public final class SetPlayerBirthdayReqOuterClass {
       private emu.grasscutter.net.proto.BirthdayOuterClass.Birthday birthday_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.BirthdayOuterClass.Birthday, emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder, emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder> birthdayBuilder_;
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       * @return Whether the birthday field is set.
-       */
+
       public boolean hasBirthday() {
         return birthdayBuilder_ != null || birthday_ != null;
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       * @return The birthday.
-       */
+
       public emu.grasscutter.net.proto.BirthdayOuterClass.Birthday getBirthday() {
         if (birthdayBuilder_ == null) {
           return birthday_ == null ? emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.getDefaultInstance() : birthday_;
@@ -485,9 +470,7 @@ public final class SetPlayerBirthdayReqOuterClass {
           return birthdayBuilder_.getMessage();
         }
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public Builder setBirthday(emu.grasscutter.net.proto.BirthdayOuterClass.Birthday value) {
         if (birthdayBuilder_ == null) {
           if (value == null) {
@@ -501,9 +484,7 @@ public final class SetPlayerBirthdayReqOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public Builder setBirthday(
           emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder builderForValue) {
         if (birthdayBuilder_ == null) {
@@ -515,9 +496,7 @@ public final class SetPlayerBirthdayReqOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public Builder mergeBirthday(emu.grasscutter.net.proto.BirthdayOuterClass.Birthday value) {
         if (birthdayBuilder_ == null) {
           if (birthday_ != null) {
@@ -533,9 +512,7 @@ public final class SetPlayerBirthdayReqOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public Builder clearBirthday() {
         if (birthdayBuilder_ == null) {
           birthday_ = null;
@@ -547,17 +524,13 @@ public final class SetPlayerBirthdayReqOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder getBirthdayBuilder() {
-        
+
         onChanged();
         return getBirthdayFieldBuilder().getBuilder();
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       public emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder getBirthdayOrBuilder() {
         if (birthdayBuilder_ != null) {
           return birthdayBuilder_.getMessageOrBuilder();
@@ -566,11 +539,9 @@ public final class SetPlayerBirthdayReqOuterClass {
               emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.getDefaultInstance() : birthday_;
         }
       }
-      /**
-       * <code>.Birthday birthday = 13;</code>
-       */
+
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.BirthdayOuterClass.Birthday, emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder, emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder> 
+          emu.grasscutter.net.proto.BirthdayOuterClass.Birthday, emu.grasscutter.net.proto.BirthdayOuterClass.Birthday.Builder, emu.grasscutter.net.proto.BirthdayOuterClass.BirthdayOrBuilder>
           getBirthdayFieldBuilder() {
         if (birthdayBuilder_ == null) {
           birthdayBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -593,7 +564,6 @@ public final class SetPlayerBirthdayReqOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:SetPlayerBirthdayReq)
     }
@@ -637,7 +607,7 @@ public final class SetPlayerBirthdayReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SetPlayerBirthdayReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SetPlayerBirthdayReq_fieldAccessorTable;
 
@@ -651,9 +621,8 @@ public final class SetPlayerBirthdayReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032SetPlayerBirthdayReq.proto\032\016Birthday.p" +
       "roto\"3\n\024SetPlayerBirthdayReq\022\033\n\010birthday" +
-      "\030\r \001(\0132\t.BirthdayB;\n\031emu.grasscutter.net" +
-      ".protoB\036SetPlayerBirthdayReqOuterClassb\006" +
-      "proto3"
+      "\030\013 \001(\0132\t.BirthdayB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

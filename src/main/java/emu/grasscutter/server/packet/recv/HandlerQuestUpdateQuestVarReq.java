@@ -32,8 +32,18 @@ public class HandlerQuestUpdateQuestVarReq extends PacketHandler {
             return;
         }
 
-        // 7.0's QuestUpdateQuestVarReq carries no quest_var_op_list under any recoverable
-        // name, so there is nothing to apply here yet.
+        for (var questVar : req.getQuestVarOpListList()) {
+            var value = questVar.getValue();
+            if (questVar.getIsAdd()) {
+                if (value >= 0) {
+                    mainQuest.incQuestVar(questVar.getIndex(), value);
+                } else {
+                    mainQuest.decQuestVar(questVar.getIndex(), value);
+                }
+            } else {
+                mainQuest.setQuestVar(questVar.getIndex(), value);
+            }
+        }
 
         session.send(new PacketQuestUpdateQuestVarRsp(req));
     }

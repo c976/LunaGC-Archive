@@ -69,17 +69,17 @@ public final class SetOpenStateRspOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 24: {
 
               value_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 80: {
 
               key_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
@@ -116,7 +116,7 @@ public final class SetOpenStateRspOuterClass {
               emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.class, emu.grasscutter.net.proto.SetOpenStateRspOuterClass.SetOpenStateRsp.Builder.class);
     }
 
-    public static final int VALUE_FIELD_NUMBER = 12;
+    public static final int VALUE_FIELD_NUMBER = 3;
     private int value_;
 
     @java.lang.Override
@@ -124,7 +124,7 @@ public final class SetOpenStateRspOuterClass {
       return value_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 9;
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
 
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class SetOpenStateRspOuterClass {
       return retcode_;
     }
 
-    public static final int KEY_FIELD_NUMBER = 6;
+    public static final int KEY_FIELD_NUMBER = 10;
     private int key_;
 
     @java.lang.Override
@@ -155,13 +155,13 @@ public final class SetOpenStateRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (value_ != 0) {
-        output.writeUInt32(12, value_);
+        output.writeUInt32(3, value_);
       }
       if (key_ != 0) {
-        output.writeUInt32(6, key_);
+        output.writeUInt32(10, key_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(9, retcode_);
+        output.writeInt32(12, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,15 +174,15 @@ public final class SetOpenStateRspOuterClass {
       size = 0;
       if (value_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, value_);
+          .computeUInt32Size(3, value_);
       }
       if (key_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, key_);
+          .computeUInt32Size(10, key_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(9, retcode_);
+          .computeInt32Size(12, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

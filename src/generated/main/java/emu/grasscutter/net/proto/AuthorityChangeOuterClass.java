@@ -73,12 +73,12 @@ public final class AuthorityChangeOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 58: {
+            case 98: {
               emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo.Builder subBuilder = null;
               if (entityAuthorityInfo_ != null) {
                 subBuilder = entityAuthorityInfo_.toBuilder();
@@ -91,7 +91,7 @@ public final class AuthorityChangeOuterClass {
 
               break;
             }
-            case 96: {
+            case 40: {
 
               authorityPeerId_ = input.readUInt32();
               break;
@@ -128,7 +128,7 @@ public final class AuthorityChangeOuterClass {
               emu.grasscutter.net.proto.AuthorityChangeOuterClass.AuthorityChange.class, emu.grasscutter.net.proto.AuthorityChangeOuterClass.AuthorityChange.Builder.class);
     }
 
-    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 7;
+    public static final int ENTITY_AUTHORITY_INFO_FIELD_NUMBER = 12;
     private emu.grasscutter.net.proto.EntityAuthorityInfoOuterClass.EntityAuthorityInfo entityAuthorityInfo_;
 
     @java.lang.Override
@@ -146,7 +146,7 @@ public final class AuthorityChangeOuterClass {
       return getEntityAuthorityInfo();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    public static final int ENTITY_ID_FIELD_NUMBER = 6;
     private int entityId_;
 
     @java.lang.Override
@@ -154,7 +154,7 @@ public final class AuthorityChangeOuterClass {
       return entityId_;
     }
 
-    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 12;
+    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 5;
     private int authorityPeerId_;
 
     @java.lang.Override
@@ -177,13 +177,13 @@ public final class AuthorityChangeOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
+        output.writeUInt32(6, entityId_);
       }
       if (entityAuthorityInfo_ != null) {
-        output.writeMessage(7, getEntityAuthorityInfo());
+        output.writeMessage(12, getEntityAuthorityInfo());
       }
       if (authorityPeerId_ != 0) {
-        output.writeUInt32(12, authorityPeerId_);
+        output.writeUInt32(5, authorityPeerId_);
       }
       unknownFields.writeTo(output);
     }
@@ -196,15 +196,15 @@ public final class AuthorityChangeOuterClass {
       size = 0;
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
+          .computeUInt32Size(6, entityId_);
       }
       if (entityAuthorityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getEntityAuthorityInfo());
+          .computeMessageSize(12, getEntityAuthorityInfo());
       }
       if (authorityPeerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, authorityPeerId_);
+          .computeUInt32Size(5, authorityPeerId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

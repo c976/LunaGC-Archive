@@ -18,50 +18,20 @@ public final class MassivePropParamOuterClass {
       // @@protoc_insertion_point(interface_extends:MassivePropParam)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>int32 type = 1;</code>
-     * @return The type.
-     */
-    int getType();
-
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @return A list containing the reactionInfoList.
-     */
     java.util.List<java.lang.Integer> getReactionInfoListList();
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @return The count of reactionInfoList.
-     */
+
     int getReactionInfoListCount();
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @param index The index of the element to return.
-     * @return The reactionInfoList at the given index.
-     */
+
     int getReactionInfoList(int index);
 
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @return A list containing the paramList.
-     */
     java.util.List<java.lang.Float> getParamListList();
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @return The count of paramList.
-     */
+
     int getParamListCount();
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The paramList at the given index.
-     */
+
     float getParamList(int index);
 
-    /**
-     * <code>uint32 sync_flag = 4;</code>
-     * @return The syncFlag.
-     */
+    int getType();
+
     int getSyncFlag();
   }
   /**
@@ -202,40 +172,19 @@ public final class MassivePropParamOuterClass {
               emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam.class, emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 1;
-    private int type_;
-    /**
-     * <code>int32 type = 1;</code>
-     * @return The type.
-     */
-    @java.lang.Override
-    public int getType() {
-      return type_;
-    }
-
     public static final int REACTION_INFO_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList reactionInfoList_;
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @return A list containing the reactionInfoList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Integer>
         getReactionInfoListList() {
       return reactionInfoList_;
     }
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @return The count of reactionInfoList.
-     */
+
     public int getReactionInfoListCount() {
       return reactionInfoList_.size();
     }
-    /**
-     * <code>repeated uint32 reaction_info_list = 2;</code>
-     * @param index The index of the element to return.
-     * @return The reactionInfoList at the given index.
-     */
+
     public int getReactionInfoList(int index) {
       return reactionInfoList_.getInt(index);
     }
@@ -243,38 +192,33 @@ public final class MassivePropParamOuterClass {
 
     public static final int PARAM_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.FloatList paramList_;
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @return A list containing the paramList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Float>
         getParamListList() {
       return paramList_;
     }
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @return The count of paramList.
-     */
+
     public int getParamListCount() {
       return paramList_.size();
     }
-    /**
-     * <code>repeated float param_list = 3;</code>
-     * @param index The index of the element to return.
-     * @return The paramList at the given index.
-     */
+
     public float getParamList(int index) {
       return paramList_.getFloat(index);
     }
     private int paramListMemoizedSerializedSize = -1;
 
+    public static final int TYPE_FIELD_NUMBER = 1;
+    private int type_;
+
+    @java.lang.Override
+    public int getType() {
+      return type_;
+    }
+
     public static final int SYNC_FLAG_FIELD_NUMBER = 4;
     private int syncFlag_;
-    /**
-     * <code>uint32 sync_flag = 4;</code>
-     * @return The syncFlag.
-     */
+
     @java.lang.Override
     public int getSyncFlag() {
       return syncFlag_;
@@ -372,12 +316,12 @@ public final class MassivePropParamOuterClass {
       }
       emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam other = (emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam) obj;
 
-      if (getType()
-          != other.getType()) return false;
       if (!getReactionInfoListList()
           .equals(other.getReactionInfoListList())) return false;
       if (!getParamListList()
           .equals(other.getParamListList())) return false;
+      if (getType()
+          != other.getType()) return false;
       if (getSyncFlag()
           != other.getSyncFlag()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -391,8 +335,6 @@ public final class MassivePropParamOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType();
       if (getReactionInfoListCount() > 0) {
         hash = (37 * hash) + REACTION_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getReactionInfoListList().hashCode();
@@ -401,6 +343,8 @@ public final class MassivePropParamOuterClass {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getType();
       hash = (37 * hash) + SYNC_FLAG_FIELD_NUMBER;
       hash = (53 * hash) + getSyncFlag();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -536,12 +480,12 @@ public final class MassivePropParamOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        type_ = 0;
-
         reactionInfoList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         paramList_ = emptyFloatList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        type_ = 0;
+
         syncFlag_ = 0;
 
         return this;
@@ -571,7 +515,6 @@ public final class MassivePropParamOuterClass {
       public emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam buildPartial() {
         emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam result = new emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam(this);
         int from_bitField0_ = bitField0_;
-        result.type_ = type_;
         if (((bitField0_ & 0x00000001) != 0)) {
           reactionInfoList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -582,6 +525,7 @@ public final class MassivePropParamOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.paramList_ = paramList_;
+        result.type_ = type_;
         result.syncFlag_ = syncFlag_;
         onBuilt();
         return result;
@@ -631,9 +575,6 @@ public final class MassivePropParamOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam other) {
         if (other == emu.grasscutter.net.proto.MassivePropParamOuterClass.MassivePropParam.getDefaultInstance()) return this;
-        if (other.getType() != 0) {
-          setType(other.getType());
-        }
         if (!other.reactionInfoList_.isEmpty()) {
           if (reactionInfoList_.isEmpty()) {
             reactionInfoList_ = other.reactionInfoList_;
@@ -653,6 +594,9 @@ public final class MassivePropParamOuterClass {
             paramList_.addAll(other.paramList_);
           }
           onChanged();
+        }
+        if (other.getType() != 0) {
+          setType(other.getType());
         }
         if (other.getSyncFlag() != 0) {
           setSyncFlag(other.getSyncFlag());
@@ -687,37 +631,6 @@ public final class MassivePropParamOuterClass {
       }
       private int bitField0_;
 
-      private int type_ ;
-      /**
-       * <code>int32 type = 1;</code>
-       * @return The type.
-       */
-      @java.lang.Override
-      public int getType() {
-        return type_;
-      }
-      /**
-       * <code>int32 type = 1;</code>
-       * @param value The type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setType(int value) {
-        
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 type = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearType() {
-        
-        type_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList reactionInfoList_ = emptyIntList();
       private void ensureReactionInfoListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -725,36 +638,21 @@ public final class MassivePropParamOuterClass {
           bitField0_ |= 0x00000001;
          }
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @return A list containing the reactionInfoList.
-       */
+
       public java.util.List<java.lang.Integer>
           getReactionInfoListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(reactionInfoList_) : reactionInfoList_;
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @return The count of reactionInfoList.
-       */
+
       public int getReactionInfoListCount() {
         return reactionInfoList_.size();
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @param index The index of the element to return.
-       * @return The reactionInfoList at the given index.
-       */
+
       public int getReactionInfoList(int index) {
         return reactionInfoList_.getInt(index);
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @param index The index to set the value at.
-       * @param value The reactionInfoList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setReactionInfoList(
           int index, int value) {
         ensureReactionInfoListIsMutable();
@@ -762,22 +660,14 @@ public final class MassivePropParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @param value The reactionInfoList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addReactionInfoList(int value) {
         ensureReactionInfoListIsMutable();
         reactionInfoList_.addInt(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @param values The reactionInfoList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllReactionInfoList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureReactionInfoListIsMutable();
@@ -786,10 +676,7 @@ public final class MassivePropParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 reaction_info_list = 2;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearReactionInfoList() {
         reactionInfoList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -804,36 +691,21 @@ public final class MassivePropParamOuterClass {
           bitField0_ |= 0x00000002;
          }
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @return A list containing the paramList.
-       */
+
       public java.util.List<java.lang.Float>
           getParamListList() {
         return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(paramList_) : paramList_;
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @return The count of paramList.
-       */
+
       public int getParamListCount() {
         return paramList_.size();
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @param index The index of the element to return.
-       * @return The paramList at the given index.
-       */
+
       public float getParamList(int index) {
         return paramList_.getFloat(index);
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @param index The index to set the value at.
-       * @param value The paramList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setParamList(
           int index, float value) {
         ensureParamListIsMutable();
@@ -841,22 +713,14 @@ public final class MassivePropParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @param value The paramList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addParamList(float value) {
         ensureParamListIsMutable();
         paramList_.addFloat(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @param values The paramList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllParamList(
           java.lang.Iterable<? extends java.lang.Float> values) {
         ensureParamListIsMutable();
@@ -865,10 +729,7 @@ public final class MassivePropParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated float param_list = 3;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearParamList() {
         paramList_ = emptyFloatList();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -876,32 +737,43 @@ public final class MassivePropParamOuterClass {
         return this;
       }
 
+      private int type_ ;
+
+      @java.lang.Override
+      public int getType() {
+        return type_;
+      }
+
+      public Builder setType(int value) {
+
+        type_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearType() {
+
+        type_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int syncFlag_ ;
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @return The syncFlag.
-       */
+
       @java.lang.Override
       public int getSyncFlag() {
         return syncFlag_;
       }
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @param value The syncFlag to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setSyncFlag(int value) {
-        
+
         syncFlag_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 sync_flag = 4;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearSyncFlag() {
-        
+
         syncFlag_ = 0;
         onChanged();
         return this;
@@ -917,7 +789,6 @@ public final class MassivePropParamOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:MassivePropParam)
     }
@@ -961,7 +832,7 @@ public final class MassivePropParamOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_MassivePropParam_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_MassivePropParam_fieldAccessorTable;
 
@@ -974,10 +845,10 @@ public final class MassivePropParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026MassivePropParam.proto\"c\n\020MassivePropP" +
-      "aram\022\014\n\004type\030\001 \001(\005\022\032\n\022reaction_info_list" +
-      "\030\002 \003(\r\022\022\n\nparam_list\030\003 \003(\002\022\021\n\tsync_flag\030" +
-      "\004 \001(\rB7\n\031emu.grasscutter.net.protoB\032Mass" +
-      "ivePropParamOuterClassb\006proto3"
+      "aram\022\032\n\022reaction_info_list\030\002 \003(\r\022\022\n\npara" +
+      "m_list\030\003 \003(\002\022\014\n\004type\030\001 \001(\005\022\021\n\tsync_flag\030" +
+      "\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -988,7 +859,7 @@ public final class MassivePropParamOuterClass {
     internal_static_MassivePropParam_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MassivePropParam_descriptor,
-        new java.lang.String[] { "Type", "ReactionInfoList", "ParamList", "SyncFlag", });
+        new java.lang.String[] { "ReactionInfoList", "ParamList", "Type", "SyncFlag", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

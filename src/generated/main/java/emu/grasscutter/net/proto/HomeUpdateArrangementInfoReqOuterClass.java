@@ -19,21 +19,26 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return Whether the sceneArrangementInfo field is set.
      */
     boolean hasSceneArrangementInfo();
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return The sceneArrangementInfo.
      */
     emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo();
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      */
     emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder();
   }
   /**
+   * <pre>
+   * CmdId: 4976
+   * Obf: LBFIBLCPDEL
+   * </pre>
+   *
    * Protobuf type {@code HomeUpdateArrangementInfoReq}
    */
   public static final class HomeUpdateArrangementInfoReq extends
@@ -126,7 +131,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
     public static final int SCENE_ARRANGEMENT_INFO_FIELD_NUMBER = 2;
     private emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo sceneArrangementInfo_;
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return Whether the sceneArrangementInfo field is set.
      */
     @java.lang.Override
@@ -134,7 +139,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return sceneArrangementInfo_ != null;
     }
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      * @return The sceneArrangementInfo.
      */
     @java.lang.Override
@@ -142,7 +147,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return sceneArrangementInfo_ == null ? emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.getDefaultInstance() : sceneArrangementInfo_;
     }
     /**
-     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+     * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
@@ -310,6 +315,11 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4976
+     * Obf: LBFIBLCPDEL
+     * </pre>
+     *
      * Protobuf type {@code HomeUpdateArrangementInfoReq}
      */
     public static final class Builder extends
@@ -468,14 +478,14 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> sceneArrangementInfoBuilder_;
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        * @return Whether the sceneArrangementInfo field is set.
        */
       public boolean hasSceneArrangementInfo() {
         return sceneArrangementInfoBuilder_ != null || sceneArrangementInfo_ != null;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        * @return The sceneArrangementInfo.
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo getSceneArrangementInfo() {
@@ -486,7 +496,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder setSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -502,7 +512,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder setSceneArrangementInfo(
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder builderForValue) {
@@ -516,7 +526,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder mergeSceneArrangementInfo(emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo value) {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -534,7 +544,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public Builder clearSceneArrangementInfo() {
         if (sceneArrangementInfoBuilder_ == null) {
@@ -548,7 +558,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder getSceneArrangementInfoBuilder() {
         
@@ -556,7 +566,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         return getSceneArrangementInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       public emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder getSceneArrangementInfoOrBuilder() {
         if (sceneArrangementInfoBuilder_ != null) {
@@ -567,7 +577,7 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
         }
       }
       /**
-       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 2;</code>
+       * <code>.HomeSceneArrangementInfo scene_arrangement_info = 15;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfo.Builder, emu.grasscutter.net.proto.HomeSceneArrangementInfoOuterClass.HomeSceneArrangementInfoOrBuilder> 
@@ -652,9 +662,8 @@ public final class HomeUpdateArrangementInfoReqOuterClass {
       "\n\"HomeUpdateArrangementInfoReq.proto\032\036Ho" +
       "meSceneArrangementInfo.proto\"Y\n\034HomeUpda" +
       "teArrangementInfoReq\0229\n\026scene_arrangemen" +
-      "t_info\030\002 \001(\0132\031.HomeSceneArrangementInfoB" +
-      "C\n\031emu.grasscutter.net.protoB&HomeUpdate" +
-      "ArrangementInfoReqOuterClassb\006proto3"
+      "t_info\030\017 \001(\0132\031.HomeSceneArrangementInfoB" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,12 +19,17 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 trial_avatar_index_id = 4;</code>
+     * <code>uint32 trial_avatar_index_id = 7;</code>
      * @return The trialAvatarIndexId.
      */
     int getTrialAvatarIndexId();
   }
   /**
+   * <pre>
+   * CmdId: 8615
+   * Obf: DGNFHHHNOAJ
+   * </pre>
+   *
    * Protobuf type {@code ReceivedTrialAvatarActivityRewardReq}
    */
   public static final class ReceivedTrialAvatarActivityRewardReq extends
@@ -109,7 +114,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
     public static final int TRIAL_AVATAR_INDEX_ID_FIELD_NUMBER = 4;
     private int trialAvatarIndexId_;
     /**
-     * <code>uint32 trial_avatar_index_id = 4;</code>
+     * <code>uint32 trial_avatar_index_id = 7;</code>
      * @return The trialAvatarIndexId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8615
+     * Obf: DGNFHHHNOAJ
+     * </pre>
+     *
      * Protobuf type {@code ReceivedTrialAvatarActivityRewardReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
 
       private int trialAvatarIndexId_ ;
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 7;</code>
        * @return The trialAvatarIndexId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
         return trialAvatarIndexId_;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 7;</code>
        * @param value The trialAvatarIndexId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 trial_avatar_index_id = 4;</code>
+       * <code>uint32 trial_avatar_index_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearTrialAvatarIndexId() {
@@ -518,9 +528,8 @@ public final class ReceivedTrialAvatarActivityRewardReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n*ReceivedTrialAvatarActivityRewardReq.p" +
       "roto\"E\n$ReceivedTrialAvatarActivityRewar" +
-      "dReq\022\035\n\025trial_avatar_index_id\030\004 \001(\rBK\n\031e" +
-      "mu.grasscutter.net.protoB.ReceivedTrialA" +
-      "vatarActivityRewardReqOuterClassb\006proto3"
+      "dReq\022\035\n\025trial_avatar_index_id\030\007 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

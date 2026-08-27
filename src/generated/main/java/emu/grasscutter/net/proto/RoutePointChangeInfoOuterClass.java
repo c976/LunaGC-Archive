@@ -69,7 +69,7 @@ public final class RoutePointChangeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 117: {
+            case 77: {
 
               targetVelocity_ = input.readFloat();
               break;
@@ -79,7 +79,7 @@ public final class RoutePointChangeInfoOuterClass {
               pointIndex_ = input.readUInt32();
               break;
             }
-            case 29: {
+            case 101: {
 
               waitTime_ = input.readFloat();
               break;
@@ -124,7 +124,7 @@ public final class RoutePointChangeInfoOuterClass {
       return pointIndex_;
     }
 
-    public static final int TARGET_VELOCITY_FIELD_NUMBER = 14;
+    public static final int TARGET_VELOCITY_FIELD_NUMBER = 9;
     private float targetVelocity_;
 
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class RoutePointChangeInfoOuterClass {
       return targetVelocity_;
     }
 
-    public static final int WAIT_TIME_FIELD_NUMBER = 3;
+    public static final int WAIT_TIME_FIELD_NUMBER = 12;
     private float waitTime_;
 
     @java.lang.Override
@@ -155,13 +155,13 @@ public final class RoutePointChangeInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetVelocity_ != 0F) {
-        output.writeFloat(14, targetVelocity_);
+        output.writeFloat(9, targetVelocity_);
       }
       if (pointIndex_ != 0) {
         output.writeUInt32(2, pointIndex_);
       }
       if (waitTime_ != 0F) {
-        output.writeFloat(3, waitTime_);
+        output.writeFloat(12, waitTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,7 +174,7 @@ public final class RoutePointChangeInfoOuterClass {
       size = 0;
       if (targetVelocity_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(14, targetVelocity_);
+          .computeFloatSize(9, targetVelocity_);
       }
       if (pointIndex_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -182,7 +182,7 @@ public final class RoutePointChangeInfoOuterClass {
       }
       if (waitTime_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, waitTime_);
+          .computeFloatSize(12, waitTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

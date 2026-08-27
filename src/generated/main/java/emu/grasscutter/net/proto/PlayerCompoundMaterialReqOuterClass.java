@@ -19,18 +19,23 @@ public final class PlayerCompoundMaterialReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 compound_id = 1;</code>
+     * <code>uint32 compound_id = 2;</code>
      * @return The compoundId.
      */
     int getCompoundId();
 
     /**
-     * <code>uint32 count = 4;</code>
+     * <code>uint32 count = 11;</code>
      * @return The count.
      */
     int getCount();
   }
   /**
+   * <pre>
+   * CmdId: 7541
+   * Obf: AILEMFGGGHN
+   * </pre>
+   *
    * Protobuf type {@code PlayerCompoundMaterialReq}
    */
   public static final class PlayerCompoundMaterialReq extends
@@ -120,7 +125,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
     public static final int COMPOUND_ID_FIELD_NUMBER = 1;
     private int compoundId_;
     /**
-     * <code>uint32 compound_id = 1;</code>
+     * <code>uint32 compound_id = 2;</code>
      * @return The compoundId.
      */
     @java.lang.Override
@@ -131,7 +136,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
     public static final int COUNT_FIELD_NUMBER = 4;
     private int count_;
     /**
-     * <code>uint32 count = 4;</code>
+     * <code>uint32 count = 11;</code>
      * @return The count.
      */
     @java.lang.Override
@@ -306,6 +311,11 @@ public final class PlayerCompoundMaterialReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7541
+     * Obf: AILEMFGGGHN
+     * </pre>
+     *
      * Protobuf type {@code PlayerCompoundMaterialReq}
      */
     public static final class Builder extends
@@ -460,7 +470,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
 
       private int compoundId_ ;
       /**
-       * <code>uint32 compound_id = 1;</code>
+       * <code>uint32 compound_id = 2;</code>
        * @return The compoundId.
        */
       @java.lang.Override
@@ -468,7 +478,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
         return compoundId_;
       }
       /**
-       * <code>uint32 compound_id = 1;</code>
+       * <code>uint32 compound_id = 2;</code>
        * @param value The compoundId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +489,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 compound_id = 1;</code>
+       * <code>uint32 compound_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCompoundId() {
@@ -491,7 +501,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
 
       private int count_ ;
       /**
-       * <code>uint32 count = 4;</code>
+       * <code>uint32 count = 11;</code>
        * @return The count.
        */
       @java.lang.Override
@@ -499,7 +509,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
         return count_;
       }
       /**
-       * <code>uint32 count = 4;</code>
+       * <code>uint32 count = 11;</code>
        * @param value The count to set.
        * @return This builder for chaining.
        */
@@ -510,7 +520,7 @@ public final class PlayerCompoundMaterialReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count = 4;</code>
+       * <code>uint32 count = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearCount() {
@@ -587,10 +597,9 @@ public final class PlayerCompoundMaterialReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037PlayerCompoundMaterialReq.proto\"?\n\031Pla" +
-      "yerCompoundMaterialReq\022\023\n\013compound_id\030\001 " +
-      "\001(\r\022\r\n\005count\030\004 \001(\rB@\n\031emu.grasscutter.ne" +
-      "t.protoB#PlayerCompoundMaterialReqOuterC" +
-      "lassb\006proto3"
+      "yerCompoundMaterialReq\022\023\n\013compound_id\030\002 " +
+      "\001(\r\022\r\n\005count\030\013 \001(\rB\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,24 +19,28 @@ public final class ChannellerSlabAssistInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 avatar_id = 9;</code>
+     * @return The avatarId.
+     */
+    int getAvatarId();
+
+    /**
      * <code>uint32 avatar_level = 5;</code>
      * @return The avatarLevel.
      */
     int getAvatarLevel();
 
     /**
-     * <code>uint32 avatar_id = 11;</code>
-     * @return The avatarId.
-     */
-    int getAvatarId();
-
-    /**
-     * <code>uint32 uid = 15;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     int getUid();
   }
   /**
+   * <pre>
+   * Obf: EKJCNEMMJDA
+   * </pre>
+   *
    * Protobuf type {@code ChannellerSlabAssistInfo}
    */
   public static final class ChannellerSlabAssistInfo extends
@@ -86,14 +90,14 @@ public final class ChannellerSlabAssistInfoOuterClass {
               avatarLevel_ = input.readUInt32();
               break;
             }
-            case 88: {
-
-              avatarId_ = input.readUInt32();
-              break;
-            }
             case 120: {
 
               uid_ = input.readUInt32();
+              break;
+            }
+            case 88: {
+
+              avatarId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,6 +132,17 @@ public final class ChannellerSlabAssistInfoOuterClass {
               emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo.class, emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo.Builder.class);
     }
 
+    public static final int AVATAR_ID_FIELD_NUMBER = 11;
+    private int avatarId_;
+    /**
+     * <code>uint32 avatar_id = 9;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public int getAvatarId() {
+      return avatarId_;
+    }
+
     public static final int AVATAR_LEVEL_FIELD_NUMBER = 5;
     private int avatarLevel_;
     /**
@@ -139,21 +154,10 @@ public final class ChannellerSlabAssistInfoOuterClass {
       return avatarLevel_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 11;
-    private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 11;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
-    }
-
     public static final int UID_FIELD_NUMBER = 15;
     private int uid_;
     /**
-     * <code>uint32 uid = 15;</code>
+     * <code>uint32 uid = 6;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -178,11 +182,11 @@ public final class ChannellerSlabAssistInfoOuterClass {
       if (avatarLevel_ != 0) {
         output.writeUInt32(5, avatarLevel_);
       }
-      if (avatarId_ != 0) {
-        output.writeUInt32(11, avatarId_);
-      }
       if (uid_ != 0) {
         output.writeUInt32(15, uid_);
+      }
+      if (avatarId_ != 0) {
+        output.writeUInt32(11, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -197,13 +201,13 @@ public final class ChannellerSlabAssistInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, avatarLevel_);
       }
-      if (avatarId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, avatarId_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(15, uid_);
+      }
+      if (avatarId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,10 +224,10 @@ public final class ChannellerSlabAssistInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo other = (emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo) obj;
 
-      if (getAvatarLevel()
-          != other.getAvatarLevel()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
+      if (getAvatarLevel()
+          != other.getAvatarLevel()) return false;
       if (getUid()
           != other.getUid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -237,10 +241,10 @@ public final class ChannellerSlabAssistInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarLevel();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + AVATAR_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getAvatarLevel();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -339,6 +343,10 @@ public final class ChannellerSlabAssistInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: EKJCNEMMJDA
+     * </pre>
+     *
      * Protobuf type {@code ChannellerSlabAssistInfo}
      */
     public static final class Builder extends
@@ -376,9 +384,9 @@ public final class ChannellerSlabAssistInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarLevel_ = 0;
-
         avatarId_ = 0;
+
+        avatarLevel_ = 0;
 
         uid_ = 0;
 
@@ -408,8 +416,8 @@ public final class ChannellerSlabAssistInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo buildPartial() {
         emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo result = new emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo(this);
-        result.avatarLevel_ = avatarLevel_;
         result.avatarId_ = avatarId_;
+        result.avatarLevel_ = avatarLevel_;
         result.uid_ = uid_;
         onBuilt();
         return result;
@@ -459,11 +467,11 @@ public final class ChannellerSlabAssistInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo other) {
         if (other == emu.grasscutter.net.proto.ChannellerSlabAssistInfoOuterClass.ChannellerSlabAssistInfo.getDefaultInstance()) return this;
-        if (other.getAvatarLevel() != 0) {
-          setAvatarLevel(other.getAvatarLevel());
-        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
+        }
+        if (other.getAvatarLevel() != 0) {
+          setAvatarLevel(other.getAvatarLevel());
         }
         if (other.getUid() != 0) {
           setUid(other.getUid());
@@ -494,6 +502,37 @@ public final class ChannellerSlabAssistInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int avatarId_ ;
+      /**
+       * <code>uint32 avatar_id = 9;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint32 avatar_id = 9;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(int value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 avatar_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0;
+        onChanged();
         return this;
       }
 
@@ -528,40 +567,9 @@ public final class ChannellerSlabAssistInfoOuterClass {
         return this;
       }
 
-      private int avatarId_ ;
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 avatar_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int uid_ ;
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 6;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -569,7 +577,7 @@ public final class ChannellerSlabAssistInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 6;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -580,7 +588,7 @@ public final class ChannellerSlabAssistInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 15;</code>
+       * <code>uint32 uid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -657,10 +665,9 @@ public final class ChannellerSlabAssistInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036ChannellerSlabAssistInfo.proto\"P\n\030Chan" +
-      "nellerSlabAssistInfo\022\024\n\014avatar_level\030\005 \001" +
-      "(\r\022\021\n\tavatar_id\030\013 \001(\r\022\013\n\003uid\030\017 \001(\rB?\n\031em" +
-      "u.grasscutter.net.protoB\"ChannellerSlabA" +
-      "ssistInfoOuterClassb\006proto3"
+      "nellerSlabAssistInfo\022\021\n\tavatar_id\030\t \001(\r\022" +
+      "\024\n\014avatar_level\030\005 \001(\r\022\013\n\003uid\030\006 \001(\rB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -671,7 +678,7 @@ public final class ChannellerSlabAssistInfoOuterClass {
     internal_static_ChannellerSlabAssistInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChannellerSlabAssistInfo_descriptor,
-        new java.lang.String[] { "AvatarLevel", "AvatarId", "Uid", });
+        new java.lang.String[] { "AvatarId", "AvatarLevel", "Uid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

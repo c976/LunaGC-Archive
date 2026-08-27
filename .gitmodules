@@ -4,6 +4,3 @@
 [submodule "src/handbook/data/assets"]
 	path = src/handbook/data/assets
 	url = https://github.com/genshitters/gm-handbook-assets.git
-[submodule "patch"]
-	path = patch
-	url = https://github.com/capyb2222/animegamepatch.git

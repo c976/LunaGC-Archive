@@ -18,10 +18,6 @@ public final class FurnitureOuterClass {
       // @@protoc_insertion_point(interface_extends:Furniture)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 count = 1;</code>
-     * @return The count.
-     */
     int getCount();
   }
   /**
@@ -108,10 +104,7 @@ public final class FurnitureOuterClass {
 
     public static final int COUNT_FIELD_NUMBER = 1;
     private int count_;
-    /**
-     * <code>uint32 count = 1;</code>
-     * @return The count.
-     */
+
     @java.lang.Override
     public int getCount() {
       return count_;
@@ -420,31 +413,21 @@ public final class FurnitureOuterClass {
       }
 
       private int count_ ;
-      /**
-       * <code>uint32 count = 1;</code>
-       * @return The count.
-       */
+
       @java.lang.Override
       public int getCount() {
         return count_;
       }
-      /**
-       * <code>uint32 count = 1;</code>
-       * @param value The count to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setCount(int value) {
-        
+
         count_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 count = 1;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearCount() {
-        
+
         count_ = 0;
         onChanged();
         return this;
@@ -460,7 +443,6 @@ public final class FurnitureOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:Furniture)
     }
@@ -504,7 +486,7 @@ public final class FurnitureOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_Furniture_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Furniture_fieldAccessorTable;
 
@@ -517,8 +499,8 @@ public final class FurnitureOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\017Furniture.proto\"\032\n\tFurniture\022\r\n\005count\030" +
-      "\001 \001(\rB0\n\031emu.grasscutter.net.protoB\023Furn" +
-      "itureOuterClassb\006proto3"
+      "\001 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

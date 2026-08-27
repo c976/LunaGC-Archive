@@ -19,24 +19,28 @@ public final class WindFieldStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <code>bool is_open = 8;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>uint32 stage_id = 2;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>uint32 open_time = 2;</code>
+     * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
     int getOpenTime();
-
-    /**
-     * <code>bool is_open = 13;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
   }
   /**
+   * <pre>
+   * Obf: KHPJGGFDAFC
+   * </pre>
+   *
    * Protobuf type {@code WindFieldStageInfo}
    */
   public static final class WindFieldStageInfo extends
@@ -128,10 +132,21 @@ public final class WindFieldStageInfoOuterClass {
               emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo.class, emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo.Builder.class);
     }
 
+    public static final int IS_OPEN_FIELD_NUMBER = 13;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 8;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
     public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 1;</code>
+     * <code>uint32 stage_id = 2;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -142,23 +157,12 @@ public final class WindFieldStageInfoOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 2;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 2;</code>
+     * <code>uint32 open_time = 4;</code>
      * @return The openTime.
      */
     @java.lang.Override
     public int getOpenTime() {
       return openTime_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 13;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 13;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -220,12 +224,12 @@ public final class WindFieldStageInfoOuterClass {
       }
       emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo other = (emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo) obj;
 
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
       if (getStageId()
           != other.getStageId()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,13 +241,13 @@ public final class WindFieldStageInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOpen());
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -340,6 +344,10 @@ public final class WindFieldStageInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: KHPJGGFDAFC
+     * </pre>
+     *
      * Protobuf type {@code WindFieldStageInfo}
      */
     public static final class Builder extends
@@ -377,11 +385,11 @@ public final class WindFieldStageInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isOpen_ = false;
+
         stageId_ = 0;
 
         openTime_ = 0;
-
-        isOpen_ = false;
 
         return this;
       }
@@ -409,9 +417,9 @@ public final class WindFieldStageInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo buildPartial() {
         emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo result = new emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo(this);
+        result.isOpen_ = isOpen_;
         result.stageId_ = stageId_;
         result.openTime_ = openTime_;
-        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -460,14 +468,14 @@ public final class WindFieldStageInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo other) {
         if (other == emu.grasscutter.net.proto.WindFieldStageInfoOuterClass.WindFieldStageInfo.getDefaultInstance()) return this;
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
         if (other.getOpenTime() != 0) {
           setOpenTime(other.getOpenTime());
-        }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -498,9 +506,40 @@ public final class WindFieldStageInfoOuterClass {
         return this;
       }
 
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 8;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 8;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -508,7 +547,7 @@ public final class WindFieldStageInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -519,7 +558,7 @@ public final class WindFieldStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 1;</code>
+       * <code>uint32 stage_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -531,7 +570,7 @@ public final class WindFieldStageInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 2;</code>
+       * <code>uint32 open_time = 4;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -539,7 +578,7 @@ public final class WindFieldStageInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 2;</code>
+       * <code>uint32 open_time = 4;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -550,43 +589,12 @@ public final class WindFieldStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 2;</code>
+       * <code>uint32 open_time = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
         
         openTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 13;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 13;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
         onChanged();
         return this;
       }
@@ -658,10 +666,9 @@ public final class WindFieldStageInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030WindFieldStageInfo.proto\"J\n\022WindFieldS" +
-      "tageInfo\022\020\n\010stage_id\030\001 \001(\r\022\021\n\topen_time\030" +
-      "\002 \001(\r\022\017\n\007is_open\030\r \001(\010B9\n\031emu.grasscutte" +
-      "r.net.protoB\034WindFieldStageInfoOuterClas" +
-      "sb\006proto3"
+      "tageInfo\022\017\n\007is_open\030\010 \001(\010\022\020\n\010stage_id\030\002 " +
+      "\001(\r\022\021\n\topen_time\030\004 \001(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +679,7 @@ public final class WindFieldStageInfoOuterClass {
     internal_static_WindFieldStageInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WindFieldStageInfo_descriptor,
-        new java.lang.String[] { "StageId", "OpenTime", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "StageId", "OpenTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

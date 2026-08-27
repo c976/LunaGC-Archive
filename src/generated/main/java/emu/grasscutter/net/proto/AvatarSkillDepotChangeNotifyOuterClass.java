@@ -18,59 +18,20 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:AvatarSkillDepotChangeNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 core_proud_skill_level = 1;</code>
-     * @return The coreProudSkillLevel.
-     */
-    int getCoreProudSkillLevel();
+    java.util.List<java.lang.Integer> getTalentIdListList();
 
-    /**
-     * <code>uint64 avatar_guid = 4;</code>
-     * @return The avatarGuid.
-     */
-    long getAvatarGuid();
+    int getTalentIdListCount();
 
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    int getProudSkillExtraLevelMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    boolean containsProudSkillExtraLevelMap(
-        int key);
-    /**
-     * Use {@link #getProudSkillExtraLevelMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getProudSkillExtraLevelMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getProudSkillExtraLevelMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
+    int getTalentIdList(int index);
 
-    int getProudSkillExtraLevelMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
+    java.util.List<java.lang.Integer> getProudSkillListList();
 
-    int getProudSkillExtraLevelMapOrThrow(
-        int key);
+    int getProudSkillListCount();
 
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+    int getProudSkillList(int index);
+
     int getSkillLevelMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+
     boolean containsSkillLevelMap(
         int key);
     /**
@@ -79,106 +40,51 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillLevelMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getSkillLevelMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
 
     int getSkillLevelMapOrDefault(
         int key,
         int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
 
     int getSkillLevelMapOrThrow(
         int key);
 
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @return A list containing the talentIdList.
-     */
-    java.util.List<java.lang.Integer> getTalentIdListList();
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @return The count of talentIdList.
-     */
-    int getTalentIdListCount();
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
-     */
-    int getTalentIdList(int index);
+    int getProudSkillExtraLevelMapCount();
 
+    boolean containsProudSkillExtraLevelMap(
+        int key);
     /**
-     * <code>uint32 entity_id = 10;</code>
-     * @return The entityId.
+     * Use {@link #getProudSkillExtraLevelMapMap()} instead.
      */
-    int getEntityId();
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getProudSkillExtraLevelMap();
 
-    /**
-     * <code>uint32 skill_depot_id = 12;</code>
-     * @return The skillDepotId.
-     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getProudSkillExtraLevelMapMap();
+
+    int getProudSkillExtraLevelMapOrDefault(
+        int key,
+        int defaultValue);
+
+    int getProudSkillExtraLevelMapOrThrow(
+        int key);
+
     int getSkillDepotId();
 
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @return A list containing the unlockedSkillDepotIdList.
-     */
-    java.util.List<java.lang.Integer> getUnlockedSkillDepotIdListList();
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @return The count of unlockedSkillDepotIdList.
-     */
-    int getUnlockedSkillDepotIdListCount();
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @param index The index of the element to return.
-     * @return The unlockedSkillDepotIdList at the given index.
-     */
-    int getUnlockedSkillDepotIdList(int index);
+    int getCoreProudSkillLevel();
 
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @return A list containing the specialProudSkillList.
-     */
-    java.util.List<java.lang.Integer> getSpecialProudSkillListList();
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @return The count of specialProudSkillList.
-     */
-    int getSpecialProudSkillListCount();
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The specialProudSkillList at the given index.
-     */
-    int getSpecialProudSkillList(int index);
+    int getEntityId();
 
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @return A list containing the proudSkillList.
-     */
-    java.util.List<java.lang.Integer> getProudSkillListList();
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @return The count of proudSkillList.
-     */
-    int getProudSkillListCount();
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The proudSkillList at the given index.
-     */
-    int getProudSkillList(int index);
+    long getAvatarGuid();
   }
   /**
+   * <pre>
+   * CmdId: 590
+   * </pre>
+   *
    * Protobuf type {@code AvatarSkillDepotChangeNotify}
    */
   public static final class AvatarSkillDepotChangeNotify extends
@@ -192,8 +98,6 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     }
     private AvatarSkillDepotChangeNotify() {
       talentIdList_ = emptyIntList();
-      UnlockedSkillDepotIdList_ = emptyIntList();
-      SpecialProudSkillList_ = emptyIntList();
       proudSkillList_ = emptyIntList();
     }
 
@@ -228,21 +132,47 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              coreProudSkillLevel_ = input.readUInt32();
-              break;
-            }
             case 32: {
 
               avatarGuid_ = input.readUInt64();
               break;
             }
-            case 50: {
+            case 72: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                talentIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              talentIdList_.addInt(input.readUInt32());
+              break;
+            }
+            case 74: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                talentIdList_ = newIntList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                talentIdList_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 8: {
+
+              coreProudSkillLevel_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              skillDepotId_ = input.readUInt32();
+              break;
+            }
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
                 proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
                     ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000008;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               proudSkillExtraLevelMap__ = input.readMessage(
@@ -252,10 +182,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 skillLevelMap_ = com.google.protobuf.MapField.newMapField(
                     SkillLevelMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               skillLevelMap__ = input.readMessage(
@@ -264,83 +194,15 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
                   skillLevelMap__.getKey(), skillLevelMap__.getValue());
               break;
             }
-            case 72: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              talentIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 74: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                talentIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                talentIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
             case 80: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 96: {
-
-              skillDepotId_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                UnlockedSkillDepotIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              UnlockedSkillDepotIdList_.addInt(input.readUInt32());
-              break;
-            }
-            case 106: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                UnlockedSkillDepotIdList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                UnlockedSkillDepotIdList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
-            case 112: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                SpecialProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              SpecialProudSkillList_.addInt(input.readUInt32());
-              break;
-            }
-            case 114: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000010) != 0) && input.getBytesUntilLimit() > 0) {
-                SpecialProudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000010;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                SpecialProudSkillList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
-              break;
-            }
             case 120: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 proudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000002;
               }
               proudSkillList_.addInt(input.readUInt32());
               break;
@@ -348,9 +210,9 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
             case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000020) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
                 proudSkillList_ = newIntList();
-                mutable_bitField0_ |= 0x00000020;
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
                 proudSkillList_.addInt(input.readUInt32());
@@ -373,17 +235,11 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          talentIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          UnlockedSkillDepotIdList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000010) != 0)) {
-          SpecialProudSkillList_.makeImmutable(); // C
-        }
-        if (((mutable_bitField0_ & 0x00000020) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           proudSkillList_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          talentIdList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -399,10 +255,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 6:
-          return internalGetProudSkillExtraLevelMap();
-        case 7:
+        case 8:
           return internalGetSkillLevelMap();
+        case 5:
+          return internalGetProudSkillExtraLevelMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -416,108 +272,41 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
               emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify.class, emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify.Builder.class);
     }
 
-    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 1;
-    private int coreProudSkillLevel_;
-    /**
-     * <code>uint32 core_proud_skill_level = 1;</code>
-     * @return The coreProudSkillLevel.
-     */
-    @java.lang.Override
-    public int getCoreProudSkillLevel() {
-      return coreProudSkillLevel_;
-    }
-
-    public static final int AVATAR_GUID_FIELD_NUMBER = 4;
-    private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 4;</code>
-     * @return The avatarGuid.
-     */
-    @java.lang.Override
-    public long getAvatarGuid() {
-      return avatarGuid_;
-    }
-
-    public static final int PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER = 6;
-    private static final class ProudSkillExtraLevelMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetProudSkillExtraLevelMap() {
-      if (proudSkillExtraLevelMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-      }
-      return proudSkillExtraLevelMap_;
-    }
-
-    public int getProudSkillExtraLevelMapCount() {
-      return internalGetProudSkillExtraLevelMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
+    public static final int TALENT_ID_LIST_FIELD_NUMBER = 9;
+    private com.google.protobuf.Internal.IntList talentIdList_;
 
     @java.lang.Override
-    public boolean containsProudSkillExtraLevelMap(
-        int key) {
-      
-      return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
+    public java.util.List<java.lang.Integer>
+        getTalentIdListList() {
+      return talentIdList_;
     }
-    /**
-     * Use {@link #getProudSkillExtraLevelMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
-      return getProudSkillExtraLevelMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
-      return internalGetProudSkillExtraLevelMap().getMap();
+    public int getTalentIdListCount() {
+      return talentIdList_.size();
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    @java.lang.Override
 
-    public int getProudSkillExtraLevelMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetProudSkillExtraLevelMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
+    public int getTalentIdList(int index) {
+      return talentIdList_.getInt(index);
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-     */
-    @java.lang.Override
+    private int talentIdListMemoizedSerializedSize = -1;
 
-    public int getProudSkillExtraLevelMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetProudSkillExtraLevelMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
+    public static final int PROUD_SKILL_LIST_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList proudSkillList_;
+
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getProudSkillListList() {
+      return proudSkillList_;
     }
+
+    public int getProudSkillListCount() {
+      return proudSkillList_.size();
+    }
+
+    public int getProudSkillList(int index) {
+      return proudSkillList_.getInt(index);
+    }
+    private int proudSkillListMemoizedSerializedSize = -1;
 
     public static final int SKILL_LEVEL_MAP_FIELD_NUMBER = 7;
     private static final class SkillLevelMapDefaultEntryHolder {
@@ -525,7 +314,7 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
@@ -545,14 +334,11 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     public int getSkillLevelMapCount() {
       return internalGetSkillLevelMap().getMap().size();
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
 
     @java.lang.Override
     public boolean containsSkillLevelMap(
         int key) {
-      
+
       return internalGetSkillLevelMap().getMap().containsKey(key);
     }
     /**
@@ -563,35 +349,29 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
       return getSkillLevelMapMap();
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+
     @java.lang.Override
 
     public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
       return internalGetSkillLevelMap().getMap();
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+
     @java.lang.Override
 
     public int getSkillLevelMapOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetSkillLevelMap().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
-    /**
-     * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-     */
+
     @java.lang.Override
 
     public int getSkillLevelMapOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
           internalGetSkillLevelMap().getMap();
       if (!map.containsKey(key)) {
@@ -600,139 +380,109 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int TALENT_ID_LIST_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList talentIdList_;
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @return A list containing the talentIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getTalentIdListList() {
-      return talentIdList_;
+    public static final int PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER = 6;
+    private static final class ProudSkillExtraLevelMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
     }
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @return The count of talentIdList.
-     */
-    public int getTalentIdListCount() {
-      return talentIdList_.size();
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetProudSkillExtraLevelMap() {
+      if (proudSkillExtraLevelMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
+      }
+      return proudSkillExtraLevelMap_;
     }
-    /**
-     * <code>repeated uint32 talent_id_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The talentIdList at the given index.
-     */
-    public int getTalentIdList(int index) {
-      return talentIdList_.getInt(index);
-    }
-    private int talentIdListMemoizedSerializedSize = -1;
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
-    private int entityId_;
+    public int getProudSkillExtraLevelMapCount() {
+      return internalGetProudSkillExtraLevelMap().getMap().size();
+    }
+
+    @java.lang.Override
+    public boolean containsProudSkillExtraLevelMap(
+        int key) {
+
+      return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
+    }
     /**
-     * <code>uint32 entity_id = 10;</code>
-     * @return The entityId.
+     * Use {@link #getProudSkillExtraLevelMapMap()} instead.
      */
     @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
+      return getProudSkillExtraLevelMapMap();
+    }
+
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
+      return internalGetProudSkillExtraLevelMap().getMap();
+    }
+
+    @java.lang.Override
+
+    public int getProudSkillExtraLevelMapOrDefault(
+        int key,
+        int defaultValue) {
+
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetProudSkillExtraLevelMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+
+    @java.lang.Override
+
+    public int getProudSkillExtraLevelMapOrThrow(
+        int key) {
+
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetProudSkillExtraLevelMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
     }
 
     public static final int SKILL_DEPOT_ID_FIELD_NUMBER = 12;
     private int skillDepotId_;
-    /**
-     * <code>uint32 skill_depot_id = 12;</code>
-     * @return The skillDepotId.
-     */
+
     @java.lang.Override
     public int getSkillDepotId() {
       return skillDepotId_;
     }
 
-    public static final int _UNLOCKED_SKILL_DEPOT_ID_LIST_FIELD_NUMBER = 13;
-    private com.google.protobuf.Internal.IntList UnlockedSkillDepotIdList_;
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @return A list containing the unlockedSkillDepotIdList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getUnlockedSkillDepotIdListList() {
-      return UnlockedSkillDepotIdList_;
-    }
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @return The count of unlockedSkillDepotIdList.
-     */
-    public int getUnlockedSkillDepotIdListCount() {
-      return UnlockedSkillDepotIdList_.size();
-    }
-    /**
-     * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-     * @param index The index of the element to return.
-     * @return The unlockedSkillDepotIdList at the given index.
-     */
-    public int getUnlockedSkillDepotIdList(int index) {
-      return UnlockedSkillDepotIdList_.getInt(index);
-    }
-    private int UnlockedSkillDepotIdListMemoizedSerializedSize = -1;
+    public static final int CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER = 1;
+    private int coreProudSkillLevel_;
 
-    public static final int _SPECIAL_PROUD_SKILL_LIST_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.IntList SpecialProudSkillList_;
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @return A list containing the specialProudSkillList.
-     */
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getSpecialProudSkillListList() {
-      return SpecialProudSkillList_;
+    public int getCoreProudSkillLevel() {
+      return coreProudSkillLevel_;
     }
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @return The count of specialProudSkillList.
-     */
-    public int getSpecialProudSkillListCount() {
-      return SpecialProudSkillList_.size();
-    }
-    /**
-     * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-     * @param index The index of the element to return.
-     * @return The specialProudSkillList at the given index.
-     */
-    public int getSpecialProudSkillList(int index) {
-      return SpecialProudSkillList_.getInt(index);
-    }
-    private int SpecialProudSkillListMemoizedSerializedSize = -1;
 
-    public static final int PROUD_SKILL_LIST_FIELD_NUMBER = 15;
-    private com.google.protobuf.Internal.IntList proudSkillList_;
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @return A list containing the proudSkillList.
-     */
+    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    private int entityId_;
+
     @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getProudSkillListList() {
-      return proudSkillList_;
+    public int getEntityId() {
+      return entityId_;
     }
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @return The count of proudSkillList.
-     */
-    public int getProudSkillListCount() {
-      return proudSkillList_.size();
+
+    public static final int AVATAR_GUID_FIELD_NUMBER = 4;
+    private long avatarGuid_;
+
+    @java.lang.Override
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
-    /**
-     * <code>repeated uint32 proud_skill_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The proudSkillList at the given index.
-     */
-    public int getProudSkillList(int index) {
-      return proudSkillList_.getInt(index);
-    }
-    private int proudSkillListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -749,51 +499,6 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (coreProudSkillLevel_ != 0) {
-        output.writeUInt32(1, coreProudSkillLevel_);
-      }
-      if (avatarGuid_ != 0L) {
-        output.writeUInt64(4, avatarGuid_);
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetProudSkillExtraLevelMap(),
-          ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry,
-          6);
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetSkillLevelMap(),
-          SkillLevelMapDefaultEntryHolder.defaultEntry,
-          7);
-      if (getTalentIdListList().size() > 0) {
-        output.writeUInt32NoTag(74);
-        output.writeUInt32NoTag(talentIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < talentIdList_.size(); i++) {
-        output.writeUInt32NoTag(talentIdList_.getInt(i));
-      }
-      if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
-      }
-      if (skillDepotId_ != 0) {
-        output.writeUInt32(12, skillDepotId_);
-      }
-      if (getUnlockedSkillDepotIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
-        output.writeUInt32NoTag(UnlockedSkillDepotIdListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < UnlockedSkillDepotIdList_.size(); i++) {
-        output.writeUInt32NoTag(UnlockedSkillDepotIdList_.getInt(i));
-      }
-      if (getSpecialProudSkillListList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(SpecialProudSkillListMemoizedSerializedSize);
-      }
-      for (int i = 0; i < SpecialProudSkillList_.size(); i++) {
-        output.writeUInt32NoTag(SpecialProudSkillList_.getInt(i));
-      }
       if (getProudSkillListList().size() > 0) {
         output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(proudSkillListMemoizedSerializedSize);
@@ -801,6 +506,37 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       for (int i = 0; i < proudSkillList_.size(); i++) {
         output.writeUInt32NoTag(proudSkillList_.getInt(i));
       }
+      if (skillDepotId_ != 0) {
+        output.writeUInt32(12, skillDepotId_);
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetSkillLevelMap(),
+          SkillLevelMapDefaultEntryHolder.defaultEntry,
+          7);
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(4, avatarGuid_);
+      }
+      if (entityId_ != 0) {
+        output.writeUInt32(10, entityId_);
+      }
+      if (coreProudSkillLevel_ != 0) {
+        output.writeUInt32(1, coreProudSkillLevel_);
+      }
+      if (getTalentIdListList().size() > 0) {
+        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(talentIdListMemoizedSerializedSize);
+      }
+      for (int i = 0; i < talentIdList_.size(); i++) {
+        output.writeUInt32NoTag(talentIdList_.getInt(i));
+      }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetProudSkillExtraLevelMap(),
+          ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry,
+          6);
       unknownFields.writeTo(output);
     }
 
@@ -810,23 +546,23 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (coreProudSkillLevel_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, coreProudSkillLevel_);
+      {
+        int dataSize = 0;
+        for (int i = 0; i < proudSkillList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(proudSkillList_.getInt(i));
+        }
+        size += dataSize;
+        if (!getProudSkillListList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        proudSkillListMemoizedSerializedSize = dataSize;
       }
-      if (avatarGuid_ != 0L) {
+      if (skillDepotId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(4, avatarGuid_);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetProudSkillExtraLevelMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        proudSkillExtraLevelMap__ = ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(6, proudSkillExtraLevelMap__);
+          .computeUInt32Size(12, skillDepotId_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetSkillLevelMap().getMap().entrySet()) {
@@ -837,6 +573,18 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
             .build();
         size += com.google.protobuf.CodedOutputStream
             .computeMessageSize(7, skillLevelMap__);
+      }
+      if (avatarGuid_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(4, avatarGuid_);
+      }
+      if (entityId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, entityId_);
+      }
+      if (coreProudSkillLevel_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, coreProudSkillLevel_);
       }
       {
         int dataSize = 0;
@@ -852,55 +600,15 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
         }
         talentIdListMemoizedSerializedSize = dataSize;
       }
-      if (entityId_ != 0) {
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetProudSkillExtraLevelMap().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        proudSkillExtraLevelMap__ = ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
-      }
-      if (skillDepotId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, skillDepotId_);
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < UnlockedSkillDepotIdList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(UnlockedSkillDepotIdList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getUnlockedSkillDepotIdListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        UnlockedSkillDepotIdListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < SpecialProudSkillList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(SpecialProudSkillList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getSpecialProudSkillListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        SpecialProudSkillListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < proudSkillList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(proudSkillList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getProudSkillListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        proudSkillListMemoizedSerializedSize = dataSize;
+            .computeMessageSize(6, proudSkillExtraLevelMap__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -917,26 +625,22 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify other = (emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify) obj;
 
-      if (getCoreProudSkillLevel()
-          != other.getCoreProudSkillLevel()) return false;
-      if (getAvatarGuid()
-          != other.getAvatarGuid()) return false;
-      if (!internalGetProudSkillExtraLevelMap().equals(
-          other.internalGetProudSkillExtraLevelMap())) return false;
-      if (!internalGetSkillLevelMap().equals(
-          other.internalGetSkillLevelMap())) return false;
       if (!getTalentIdListList()
           .equals(other.getTalentIdListList())) return false;
-      if (getEntityId()
-          != other.getEntityId()) return false;
-      if (getSkillDepotId()
-          != other.getSkillDepotId()) return false;
-      if (!getUnlockedSkillDepotIdListList()
-          .equals(other.getUnlockedSkillDepotIdListList())) return false;
-      if (!getSpecialProudSkillListList()
-          .equals(other.getSpecialProudSkillListList())) return false;
       if (!getProudSkillListList()
           .equals(other.getProudSkillListList())) return false;
+      if (!internalGetSkillLevelMap().equals(
+          other.internalGetSkillLevelMap())) return false;
+      if (!internalGetProudSkillExtraLevelMap().equals(
+          other.internalGetProudSkillExtraLevelMap())) return false;
+      if (getSkillDepotId()
+          != other.getSkillDepotId()) return false;
+      if (getCoreProudSkillLevel()
+          != other.getCoreProudSkillLevel()) return false;
+      if (getEntityId()
+          != other.getEntityId()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -948,39 +652,31 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getCoreProudSkillLevel();
-      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarGuid());
-      if (!internalGetProudSkillExtraLevelMap().getMap().isEmpty()) {
-        hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
-      }
-      if (!internalGetSkillLevelMap().getMap().isEmpty()) {
-        hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
-      }
       if (getTalentIdListCount() > 0) {
         hash = (37 * hash) + TALENT_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTalentIdListList().hashCode();
-      }
-      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSkillDepotId();
-      if (getUnlockedSkillDepotIdListCount() > 0) {
-        hash = (37 * hash) + _UNLOCKED_SKILL_DEPOT_ID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getUnlockedSkillDepotIdListList().hashCode();
-      }
-      if (getSpecialProudSkillListCount() > 0) {
-        hash = (37 * hash) + _SPECIAL_PROUD_SKILL_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getSpecialProudSkillListList().hashCode();
       }
       if (getProudSkillListCount() > 0) {
         hash = (37 * hash) + PROUD_SKILL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getProudSkillListList().hashCode();
       }
+      if (!internalGetSkillLevelMap().getMap().isEmpty()) {
+        hash = (37 * hash) + SKILL_LEVEL_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetSkillLevelMap().hashCode();
+      }
+      if (!internalGetProudSkillExtraLevelMap().getMap().isEmpty()) {
+        hash = (37 * hash) + PROUD_SKILL_EXTRA_LEVEL_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetProudSkillExtraLevelMap().hashCode();
+      }
+      hash = (37 * hash) + SKILL_DEPOT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSkillDepotId();
+      hash = (37 * hash) + CORE_PROUD_SKILL_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getCoreProudSkillLevel();
+      hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1077,6 +773,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 590
+     * </pre>
+     *
      * Protobuf type {@code AvatarSkillDepotChangeNotify}
      */
     public static final class Builder extends
@@ -1092,10 +792,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 6:
-            return internalGetProudSkillExtraLevelMap();
-          case 7:
+          case 8:
             return internalGetSkillLevelMap();
+          case 5:
+            return internalGetProudSkillExtraLevelMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1105,10 +805,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 6:
-            return internalGetMutableProudSkillExtraLevelMap();
-          case 7:
+          case 8:
             return internalGetMutableSkillLevelMap();
+          case 5:
+            return internalGetMutableProudSkillExtraLevelMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -1140,24 +840,20 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        talentIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        proudSkillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        internalGetMutableSkillLevelMap().clear();
+        internalGetMutableProudSkillExtraLevelMap().clear();
+        skillDepotId_ = 0;
+
         coreProudSkillLevel_ = 0;
+
+        entityId_ = 0;
 
         avatarGuid_ = 0L;
 
-        internalGetMutableProudSkillExtraLevelMap().clear();
-        internalGetMutableSkillLevelMap().clear();
-        talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        entityId_ = 0;
-
-        skillDepotId_ = 0;
-
-        UnlockedSkillDepotIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
-        SpecialProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000010);
-        proudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
 
@@ -1185,34 +881,24 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       public emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify buildPartial() {
         emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify result = new emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify(this);
         int from_bitField0_ = bitField0_;
-        result.coreProudSkillLevel_ = coreProudSkillLevel_;
-        result.avatarGuid_ = avatarGuid_;
-        result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
-        result.proudSkillExtraLevelMap_.makeImmutable();
-        result.skillLevelMap_ = internalGetSkillLevelMap();
-        result.skillLevelMap_.makeImmutable();
-        if (((bitField0_ & 0x00000004) != 0)) {
+        if (((bitField0_ & 0x00000001) != 0)) {
           talentIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
+          bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.talentIdList_ = talentIdList_;
-        result.entityId_ = entityId_;
-        result.skillDepotId_ = skillDepotId_;
-        if (((bitField0_ & 0x00000008) != 0)) {
-          UnlockedSkillDepotIdList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000008);
-        }
-        result.UnlockedSkillDepotIdList_ = UnlockedSkillDepotIdList_;
-        if (((bitField0_ & 0x00000010) != 0)) {
-          SpecialProudSkillList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000010);
-        }
-        result.SpecialProudSkillList_ = SpecialProudSkillList_;
-        if (((bitField0_ & 0x00000020) != 0)) {
+        if (((bitField0_ & 0x00000002) != 0)) {
           proudSkillList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000020);
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.proudSkillList_ = proudSkillList_;
+        result.skillLevelMap_ = internalGetSkillLevelMap();
+        result.skillLevelMap_.makeImmutable();
+        result.proudSkillExtraLevelMap_ = internalGetProudSkillExtraLevelMap();
+        result.proudSkillExtraLevelMap_.makeImmutable();
+        result.skillDepotId_ = skillDepotId_;
+        result.coreProudSkillLevel_ = coreProudSkillLevel_;
+        result.entityId_ = entityId_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -1261,61 +947,41 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify other) {
         if (other == emu.grasscutter.net.proto.AvatarSkillDepotChangeNotifyOuterClass.AvatarSkillDepotChangeNotify.getDefaultInstance()) return this;
-        if (other.getCoreProudSkillLevel() != 0) {
-          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
-        }
-        if (other.getAvatarGuid() != 0L) {
-          setAvatarGuid(other.getAvatarGuid());
-        }
-        internalGetMutableProudSkillExtraLevelMap().mergeFrom(
-            other.internalGetProudSkillExtraLevelMap());
-        internalGetMutableSkillLevelMap().mergeFrom(
-            other.internalGetSkillLevelMap());
         if (!other.talentIdList_.isEmpty()) {
           if (talentIdList_.isEmpty()) {
             talentIdList_ = other.talentIdList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureTalentIdListIsMutable();
             talentIdList_.addAll(other.talentIdList_);
           }
           onChanged();
         }
-        if (other.getEntityId() != 0) {
-          setEntityId(other.getEntityId());
-        }
-        if (other.getSkillDepotId() != 0) {
-          setSkillDepotId(other.getSkillDepotId());
-        }
-        if (!other.UnlockedSkillDepotIdList_.isEmpty()) {
-          if (UnlockedSkillDepotIdList_.isEmpty()) {
-            UnlockedSkillDepotIdList_ = other.UnlockedSkillDepotIdList_;
-            bitField0_ = (bitField0_ & ~0x00000008);
-          } else {
-            ensureUnlockedSkillDepotIdListIsMutable();
-            UnlockedSkillDepotIdList_.addAll(other.UnlockedSkillDepotIdList_);
-          }
-          onChanged();
-        }
-        if (!other.SpecialProudSkillList_.isEmpty()) {
-          if (SpecialProudSkillList_.isEmpty()) {
-            SpecialProudSkillList_ = other.SpecialProudSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000010);
-          } else {
-            ensureSpecialProudSkillListIsMutable();
-            SpecialProudSkillList_.addAll(other.SpecialProudSkillList_);
-          }
-          onChanged();
-        }
         if (!other.proudSkillList_.isEmpty()) {
           if (proudSkillList_.isEmpty()) {
             proudSkillList_ = other.proudSkillList_;
-            bitField0_ = (bitField0_ & ~0x00000020);
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureProudSkillListIsMutable();
             proudSkillList_.addAll(other.proudSkillList_);
           }
           onChanged();
+        }
+        internalGetMutableSkillLevelMap().mergeFrom(
+            other.internalGetSkillLevelMap());
+        internalGetMutableProudSkillExtraLevelMap().mergeFrom(
+            other.internalGetProudSkillExtraLevelMap());
+        if (other.getSkillDepotId() != 0) {
+          setSkillDepotId(other.getSkillDepotId());
+        }
+        if (other.getCoreProudSkillLevel() != 0) {
+          setCoreProudSkillLevel(other.getCoreProudSkillLevel());
+        }
+        if (other.getEntityId() != 0) {
+          setEntityId(other.getEntityId());
+        }
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1347,193 +1013,109 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int coreProudSkillLevel_ ;
-      /**
-       * <code>uint32 core_proud_skill_level = 1;</code>
-       * @return The coreProudSkillLevel.
-       */
-      @java.lang.Override
-      public int getCoreProudSkillLevel() {
-        return coreProudSkillLevel_;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 1;</code>
-       * @param value The coreProudSkillLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCoreProudSkillLevel(int value) {
-        
-        coreProudSkillLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 core_proud_skill_level = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCoreProudSkillLevel() {
-        
-        coreProudSkillLevel_ = 0;
-        onChanged();
-        return this;
+      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
+      private void ensureTalentIdListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          talentIdList_ = mutableCopy(talentIdList_);
+          bitField0_ |= 0x00000001;
+         }
       }
 
-      private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @return The avatarGuid.
-       */
-      @java.lang.Override
-      public long getAvatarGuid() {
-        return avatarGuid_;
+      public java.util.List<java.lang.Integer>
+          getTalentIdListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
       }
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarGuid(long value) {
-        
-        avatarGuid_ = value;
-        onChanged();
-        return this;
+
+      public int getTalentIdListCount() {
+        return talentIdList_.size();
       }
-      /**
-       * <code>uint64 avatar_guid = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarGuid() {
-        
-        avatarGuid_ = 0L;
+
+      public int getTalentIdList(int index) {
+        return talentIdList_.getInt(index);
+      }
+
+      public Builder setTalentIdList(
+          int index, int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.setInt(index, value);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetProudSkillExtraLevelMap() {
-        if (proudSkillExtraLevelMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        return proudSkillExtraLevelMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableProudSkillExtraLevelMap() {
-        onChanged();;
-        if (proudSkillExtraLevelMap_ == null) {
-          proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
-              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!proudSkillExtraLevelMap_.isMutable()) {
-          proudSkillExtraLevelMap_ = proudSkillExtraLevelMap_.copy();
-        }
-        return proudSkillExtraLevelMap_;
-      }
-
-      public int getProudSkillExtraLevelMapCount() {
-        return internalGetProudSkillExtraLevelMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsProudSkillExtraLevelMap(
-          int key) {
-        
-        return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getProudSkillExtraLevelMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
-        return getProudSkillExtraLevelMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
-        return internalGetProudSkillExtraLevelMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public int getProudSkillExtraLevelMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetProudSkillExtraLevelMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
-      @java.lang.Override
-
-      public int getProudSkillExtraLevelMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetProudSkillExtraLevelMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearProudSkillExtraLevelMap() {
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .clear();
+      public Builder addTalentIdList(int value) {
+        ensureTalentIdListIsMutable();
+        talentIdList_.addInt(value);
+        onChanged();
         return this;
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
 
-      public Builder removeProudSkillExtraLevelMap(
-          int key) {
-        
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .remove(key);
+      public Builder addAllTalentIdList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureTalentIdListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, talentIdList_);
+        onChanged();
         return this;
       }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableProudSkillExtraLevelMap() {
-        return internalGetMutableProudSkillExtraLevelMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
-      public Builder putProudSkillExtraLevelMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .put(key, value);
+
+      public Builder clearTalentIdList() {
+        talentIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
         return this;
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; proud_skill_extra_level_map = 6;</code>
-       */
 
-      public Builder putAllProudSkillExtraLevelMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
-            .putAll(values);
+      private com.google.protobuf.Internal.IntList proudSkillList_ = emptyIntList();
+      private void ensureProudSkillListIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          proudSkillList_ = mutableCopy(proudSkillList_);
+          bitField0_ |= 0x00000002;
+         }
+      }
+
+      public java.util.List<java.lang.Integer>
+          getProudSkillListList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(proudSkillList_) : proudSkillList_;
+      }
+
+      public int getProudSkillListCount() {
+        return proudSkillList_.size();
+      }
+
+      public int getProudSkillList(int index) {
+        return proudSkillList_.getInt(index);
+      }
+
+      public Builder setProudSkillList(
+          int index, int value) {
+        ensureProudSkillListIsMutable();
+        proudSkillList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+
+      public Builder addProudSkillList(int value) {
+        ensureProudSkillListIsMutable();
+        proudSkillList_.addInt(value);
+        onChanged();
+        return this;
+      }
+
+      public Builder addAllProudSkillList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureProudSkillListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, proudSkillList_);
+        onChanged();
+        return this;
+      }
+
+      public Builder clearProudSkillList() {
+        proudSkillList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
+        onChanged();
         return this;
       }
 
@@ -1563,14 +1145,11 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       public int getSkillLevelMapCount() {
         return internalGetSkillLevelMap().getMap().size();
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
 
       @java.lang.Override
       public boolean containsSkillLevelMap(
           int key) {
-        
+
         return internalGetSkillLevelMap().getMap().containsKey(key);
       }
       /**
@@ -1581,35 +1160,29 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMap() {
         return getSkillLevelMapMap();
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
+
       @java.lang.Override
 
       public java.util.Map<java.lang.Integer, java.lang.Integer> getSkillLevelMapMap() {
         return internalGetSkillLevelMap().getMap();
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
+
       @java.lang.Override
 
       public int getSkillLevelMapOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetSkillLevelMap().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
+
       @java.lang.Override
 
       public int getSkillLevelMapOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
             internalGetSkillLevelMap().getMap();
         if (!map.containsKey(key)) {
@@ -1623,13 +1196,10 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
             .clear();
         return this;
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
 
       public Builder removeSkillLevelMap(
           int key) {
-        
+
         internalGetMutableSkillLevelMap().getMutableMap()
             .remove(key);
         return this;
@@ -1642,21 +1212,15 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       getMutableSkillLevelMap() {
         return internalGetMutableSkillLevelMap().getMutableMap();
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
+
       public Builder putSkillLevelMap(
           int key,
           int value) {
-        
-        
+
         internalGetMutableSkillLevelMap().getMutableMap()
             .put(key, value);
         return this;
       }
-      /**
-       * <code>map&lt;uint32, uint32&gt; skill_level_map = 7;</code>
-       */
 
       public Builder putAllSkillLevelMap(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
@@ -1665,380 +1229,196 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList talentIdList_ = emptyIntList();
-      private void ensureTalentIdListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          talentIdList_ = mutableCopy(talentIdList_);
-          bitField0_ |= 0x00000004;
-         }
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> proudSkillExtraLevelMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetProudSkillExtraLevelMap() {
+        if (proudSkillExtraLevelMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        return proudSkillExtraLevelMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableProudSkillExtraLevelMap() {
+        onChanged();;
+        if (proudSkillExtraLevelMap_ == null) {
+          proudSkillExtraLevelMap_ = com.google.protobuf.MapField.newMapField(
+              ProudSkillExtraLevelMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!proudSkillExtraLevelMap_.isMutable()) {
+          proudSkillExtraLevelMap_ = proudSkillExtraLevelMap_.copy();
+        }
+        return proudSkillExtraLevelMap_;
+      }
+
+      public int getProudSkillExtraLevelMapCount() {
+        return internalGetProudSkillExtraLevelMap().getMap().size();
+      }
+
+      @java.lang.Override
+      public boolean containsProudSkillExtraLevelMap(
+          int key) {
+
+        return internalGetProudSkillExtraLevelMap().getMap().containsKey(key);
       }
       /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @return A list containing the talentIdList.
+       * Use {@link #getProudSkillExtraLevelMapMap()} instead.
        */
-      public java.util.List<java.lang.Integer>
-          getTalentIdListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(talentIdList_) : talentIdList_;
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMap() {
+        return getProudSkillExtraLevelMapMap();
       }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @return The count of talentIdList.
-       */
-      public int getTalentIdListCount() {
-        return talentIdList_.size();
+
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getProudSkillExtraLevelMapMap() {
+        return internalGetProudSkillExtraLevelMap().getMap();
       }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The talentIdList at the given index.
-       */
-      public int getTalentIdList(int index) {
-        return talentIdList_.getInt(index);
+
+      @java.lang.Override
+
+      public int getProudSkillExtraLevelMapOrDefault(
+          int key,
+          int defaultValue) {
+
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetProudSkillExtraLevelMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
       }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The talentIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTalentIdList(
-          int index, int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.setInt(index, value);
-        onChanged();
-        return this;
+
+      @java.lang.Override
+
+      public int getProudSkillExtraLevelMapOrThrow(
+          int key) {
+
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetProudSkillExtraLevelMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
       }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @param value The talentIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addTalentIdList(int value) {
-        ensureTalentIdListIsMutable();
-        talentIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @param values The talentIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllTalentIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureTalentIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, talentIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 talent_id_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTalentIdList() {
-        talentIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
-        onChanged();
+
+      public Builder clearProudSkillExtraLevelMap() {
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .clear();
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 10;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 10;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
+      public Builder removeProudSkillExtraLevelMap(
+          int key) {
+
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .remove(key);
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
-       * @return This builder for chaining.
+       * Use alternate mutation accessors instead.
        */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableProudSkillExtraLevelMap() {
+        return internalGetMutableProudSkillExtraLevelMap().getMutableMap();
+      }
+
+      public Builder putProudSkillExtraLevelMap(
+          int key,
+          int value) {
+
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+
+      public Builder putAllProudSkillExtraLevelMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableProudSkillExtraLevelMap().getMutableMap()
+            .putAll(values);
         return this;
       }
 
       private int skillDepotId_ ;
-      /**
-       * <code>uint32 skill_depot_id = 12;</code>
-       * @return The skillDepotId.
-       */
+
       @java.lang.Override
       public int getSkillDepotId() {
         return skillDepotId_;
       }
-      /**
-       * <code>uint32 skill_depot_id = 12;</code>
-       * @param value The skillDepotId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setSkillDepotId(int value) {
-        
+
         skillDepotId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 skill_depot_id = 12;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearSkillDepotId() {
-        
+
         skillDepotId_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList UnlockedSkillDepotIdList_ = emptyIntList();
-      private void ensureUnlockedSkillDepotIdListIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
-          UnlockedSkillDepotIdList_ = mutableCopy(UnlockedSkillDepotIdList_);
-          bitField0_ |= 0x00000008;
-         }
+      private int coreProudSkillLevel_ ;
+
+      @java.lang.Override
+      public int getCoreProudSkillLevel() {
+        return coreProudSkillLevel_;
       }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @return A list containing the unlockedSkillDepotIdList.
-       */
-      public java.util.List<java.lang.Integer>
-          getUnlockedSkillDepotIdListList() {
-        return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(UnlockedSkillDepotIdList_) : UnlockedSkillDepotIdList_;
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @return The count of unlockedSkillDepotIdList.
-       */
-      public int getUnlockedSkillDepotIdListCount() {
-        return UnlockedSkillDepotIdList_.size();
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @param index The index of the element to return.
-       * @return The unlockedSkillDepotIdList at the given index.
-       */
-      public int getUnlockedSkillDepotIdList(int index) {
-        return UnlockedSkillDepotIdList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @param index The index to set the value at.
-       * @param value The unlockedSkillDepotIdList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnlockedSkillDepotIdList(
-          int index, int value) {
-        ensureUnlockedSkillDepotIdListIsMutable();
-        UnlockedSkillDepotIdList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @param value The unlockedSkillDepotIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addUnlockedSkillDepotIdList(int value) {
-        ensureUnlockedSkillDepotIdListIsMutable();
-        UnlockedSkillDepotIdList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @param values The unlockedSkillDepotIdList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllUnlockedSkillDepotIdList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureUnlockedSkillDepotIdListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, UnlockedSkillDepotIdList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _unlocked_skill_depot_id_list = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnlockedSkillDepotIdList() {
-        UnlockedSkillDepotIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000008);
+
+      public Builder setCoreProudSkillLevel(int value) {
+
+        coreProudSkillLevel_ = value;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList SpecialProudSkillList_ = emptyIntList();
-      private void ensureSpecialProudSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
-          SpecialProudSkillList_ = mutableCopy(SpecialProudSkillList_);
-          bitField0_ |= 0x00000010;
-         }
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @return A list containing the specialProudSkillList.
-       */
-      public java.util.List<java.lang.Integer>
-          getSpecialProudSkillListList() {
-        return ((bitField0_ & 0x00000010) != 0) ?
-                 java.util.Collections.unmodifiableList(SpecialProudSkillList_) : SpecialProudSkillList_;
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @return The count of specialProudSkillList.
-       */
-      public int getSpecialProudSkillListCount() {
-        return SpecialProudSkillList_.size();
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @param index The index of the element to return.
-       * @return The specialProudSkillList at the given index.
-       */
-      public int getSpecialProudSkillList(int index) {
-        return SpecialProudSkillList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @param index The index to set the value at.
-       * @param value The specialProudSkillList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSpecialProudSkillList(
-          int index, int value) {
-        ensureSpecialProudSkillListIsMutable();
-        SpecialProudSkillList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @param value The specialProudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addSpecialProudSkillList(int value) {
-        ensureSpecialProudSkillListIsMutable();
-        SpecialProudSkillList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @param values The specialProudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllSpecialProudSkillList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureSpecialProudSkillListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, SpecialProudSkillList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 _special_proud_skill_list = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSpecialProudSkillList() {
-        SpecialProudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000010);
+      public Builder clearCoreProudSkillLevel() {
+
+        coreProudSkillLevel_ = 0;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList proudSkillList_ = emptyIntList();
-      private void ensureProudSkillListIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
-          proudSkillList_ = mutableCopy(proudSkillList_);
-          bitField0_ |= 0x00000020;
-         }
+      private int entityId_ ;
+
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
       }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @return A list containing the proudSkillList.
-       */
-      public java.util.List<java.lang.Integer>
-          getProudSkillListList() {
-        return ((bitField0_ & 0x00000020) != 0) ?
-                 java.util.Collections.unmodifiableList(proudSkillList_) : proudSkillList_;
-      }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @return The count of proudSkillList.
-       */
-      public int getProudSkillListCount() {
-        return proudSkillList_.size();
-      }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @param index The index of the element to return.
-       * @return The proudSkillList at the given index.
-       */
-      public int getProudSkillList(int index) {
-        return proudSkillList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @param index The index to set the value at.
-       * @param value The proudSkillList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setProudSkillList(
-          int index, int value) {
-        ensureProudSkillListIsMutable();
-        proudSkillList_.setInt(index, value);
+
+      public Builder setEntityId(int value) {
+
+        entityId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @param value The proudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addProudSkillList(int value) {
-        ensureProudSkillListIsMutable();
-        proudSkillList_.addInt(value);
+
+      public Builder clearEntityId() {
+
+        entityId_ = 0;
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @param values The proudSkillList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllProudSkillList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureProudSkillListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, proudSkillList_);
+
+      private long avatarGuid_ ;
+
+      @java.lang.Override
+      public long getAvatarGuid() {
+        return avatarGuid_;
+      }
+
+      public Builder setAvatarGuid(long value) {
+
+        avatarGuid_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 proud_skill_list = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearProudSkillList() {
-        proudSkillList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000020);
+
+      public Builder clearAvatarGuid() {
+
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -2053,7 +1433,6 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:AvatarSkillDepotChangeNotify)
     }
@@ -2097,19 +1476,19 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AvatarSkillDepotChangeNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarSkillDepotChangeNotify_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor;
+  private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -2119,23 +1498,20 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\"AvatarSkillDepotChangeNotify.proto\"\234\004\n" +
-      "\034AvatarSkillDepotChangeNotify\022\036\n\026core_pr" +
-      "oud_skill_level\030\001 \001(\r\022\023\n\013avatar_guid\030\004 \001" +
-      "(\004\022_\n\033proud_skill_extra_level_map\030\006 \003(\0132" +
-      ":.AvatarSkillDepotChangeNotify.ProudSkil" +
-      "lExtraLevelMapEntry\022I\n\017skill_level_map\030\007" +
-      " \003(\01320.AvatarSkillDepotChangeNotify.Skil" +
-      "lLevelMapEntry\022\026\n\016talent_id_list\030\t \003(\r\022\021" +
-      "\n\tentity_id\030\n \001(\r\022\026\n\016skill_depot_id\030\014 \001(" +
-      "\r\022%\n\035_unlocked_skill_depot_id_list\030\r \003(\r" +
-      "\022!\n\031_special_proud_skill_list\030\016 \003(\r\022\030\n\020p" +
-      "roud_skill_list\030\017 \003(\r\032>\n\034ProudSkillExtra" +
-      "LevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
-      "\r:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key\030\001 \001(\r" +
-      "\022\r\n\005value\030\002 \001(\r:\0028\001BC\n\031emu.grasscutter.n" +
-      "et.protoB&AvatarSkillDepotChangeNotifyOu" +
-      "terClassb\006proto3"
+      "\n\"AvatarSkillDepotChangeNotify.proto\"\322\003\n" +
+      "\034AvatarSkillDepotChangeNotify\022\026\n\016talent_" +
+      "id_list\030\r \003(\r\022\030\n\020proud_skill_list\030\005 \003(\r\022" +
+      "I\n\017skill_level_map\030\007 \003(\01320.AvatarSkillDe" +
+      "potChangeNotify.SkillLevelMapEntry\022_\n\033pr" +
+      "oud_skill_extra_level_map\030\016 \003(\0132:.Avatar" +
+      "SkillDepotChangeNotify.ProudSkillExtraLe" +
+      "velMapEntry\022\026\n\016skill_depot_id\030\006 \001(\r\022\036\n\026c" +
+      "ore_proud_skill_level\030\n \001(\r\022\021\n\tentity_id" +
+      "\030\t \001(\r\022\023\n\013avatar_guid\030\010 \001(\004\0324\n\022SkillLeve" +
+      "lMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028" +
+      "\001\032>\n\034ProudSkillExtraLevelMapEntry\022\013\n\003key" +
+      "\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2146,18 +1522,18 @@ public final class AvatarSkillDepotChangeNotifyOuterClass {
     internal_static_AvatarSkillDepotChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarSkillDepotChangeNotify_descriptor,
-        new java.lang.String[] { "CoreProudSkillLevel", "AvatarGuid", "ProudSkillExtraLevelMap", "SkillLevelMap", "TalentIdList", "EntityId", "SkillDepotId", "UnlockedSkillDepotIdList", "SpecialProudSkillList", "ProudSkillList", });
-    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor =
-      internal_static_AvatarSkillDepotChangeNotify_descriptor.getNestedTypes().get(0);
-    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "TalentIdList", "ProudSkillList", "SkillLevelMap", "ProudSkillExtraLevelMap", "SkillDepotId", "CoreProudSkillLevel", "EntityId", "AvatarGuid", });
     internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_descriptor =
-      internal_static_AvatarSkillDepotChangeNotify_descriptor.getNestedTypes().get(1);
+      internal_static_AvatarSkillDepotChangeNotify_descriptor.getNestedTypes().get(0);
     internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarSkillDepotChangeNotify_SkillLevelMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor =
+      internal_static_AvatarSkillDepotChangeNotify_descriptor.getNestedTypes().get(1);
+    internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_AvatarSkillDepotChangeNotify_ProudSkillExtraLevelMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

@@ -19,12 +19,17 @@ public final class HomeChangeBgmRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 6476
+   * Obf: NPEEIJGNCBG
+   * </pre>
+   *
    * Protobuf type {@code HomeChangeBgmRsp}
    */
   public static final class HomeChangeBgmRsp extends
@@ -109,7 +114,7 @@ public final class HomeChangeBgmRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 10;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class HomeChangeBgmRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 6476
+     * Obf: NPEEIJGNCBG
+     * </pre>
+     *
      * Protobuf type {@code HomeChangeBgmRsp}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class HomeChangeBgmRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class HomeChangeBgmRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class HomeChangeBgmRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,9 +527,8 @@ public final class HomeChangeBgmRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeChangeBgmRsp.proto\"#\n\020HomeChangeBg" +
-      "mRsp\022\017\n\007retcode\030\r \001(\005B7\n\031emu.grasscutter" +
-      ".net.protoB\032HomeChangeBgmRspOuterClassb\006" +
-      "proto3"
+      "mRsp\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

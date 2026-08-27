@@ -19,48 +19,52 @@ public final class DuelHeartLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_cg_viewed = 1;</code>
+     * <code>bool is_cg_viewed = 13;</code>
      * @return The isCgViewed.
      */
     boolean getIsCgViewed();
 
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo> 
         getDifficultyInfoListList();
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo getDifficultyInfoList(int index);
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     int getDifficultyInfoListCount();
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder> 
         getDifficultyInfoListOrBuilderList();
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder getDifficultyInfoListOrBuilder(
         int index);
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     int getLevelId();
   }
   /**
+   * <pre>
+   * Obf: GBABBOEHLPP
+   * </pre>
+   *
    * Protobuf type {@code DuelHeartLevelInfo}
    */
   public static final class DuelHeartLevelInfo extends
@@ -107,14 +111,19 @@ public final class DuelHeartLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 120: {
 
-              isCgViewed_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
             case 32: {
 
               isOpen_ = input.readBool();
+              break;
+            }
+            case 8: {
+
+              isCgViewed_ = input.readBool();
               break;
             }
             case 50: {
@@ -124,11 +133,6 @@ public final class DuelHeartLevelInfoOuterClass {
               }
               difficultyInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              levelId_ = input.readUInt32();
               break;
             }
             default: {
@@ -169,7 +173,7 @@ public final class DuelHeartLevelInfoOuterClass {
     public static final int IS_CG_VIEWED_FIELD_NUMBER = 1;
     private boolean isCgViewed_;
     /**
-     * <code>bool is_cg_viewed = 1;</code>
+     * <code>bool is_cg_viewed = 13;</code>
      * @return The isCgViewed.
      */
     @java.lang.Override
@@ -180,7 +184,7 @@ public final class DuelHeartLevelInfoOuterClass {
     public static final int IS_OPEN_FIELD_NUMBER = 4;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 4;</code>
+     * <code>bool is_open = 12;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -191,14 +195,14 @@ public final class DuelHeartLevelInfoOuterClass {
     public static final int DIFFICULTY_INFO_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo> difficultyInfoList_;
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo> getDifficultyInfoListList() {
       return difficultyInfoList_;
     }
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder> 
@@ -206,21 +210,21 @@ public final class DuelHeartLevelInfoOuterClass {
       return difficultyInfoList_;
     }
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     @java.lang.Override
     public int getDifficultyInfoListCount() {
       return difficultyInfoList_.size();
     }
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo getDifficultyInfoList(int index) {
       return difficultyInfoList_.get(index);
     }
     /**
-     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+     * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder getDifficultyInfoListOrBuilder(
@@ -231,7 +235,7 @@ public final class DuelHeartLevelInfoOuterClass {
     public static final int LEVEL_ID_FIELD_NUMBER = 15;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 2;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -253,17 +257,17 @@ public final class DuelHeartLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isCgViewed_ != false) {
-        output.writeBool(1, isCgViewed_);
+      if (levelId_ != 0) {
+        output.writeUInt32(15, levelId_);
       }
       if (isOpen_ != false) {
         output.writeBool(4, isOpen_);
       }
+      if (isCgViewed_ != false) {
+        output.writeBool(1, isCgViewed_);
+      }
       for (int i = 0; i < difficultyInfoList_.size(); i++) {
         output.writeMessage(6, difficultyInfoList_.get(i));
-      }
-      if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -274,21 +278,21 @@ public final class DuelHeartLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isCgViewed_ != false) {
+      if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, isCgViewed_);
+          .computeUInt32Size(15, levelId_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(4, isOpen_);
       }
+      if (isCgViewed_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(1, isCgViewed_);
+      }
       for (int i = 0; i < difficultyInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, difficultyInfoList_.get(i));
-      }
-      if (levelId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -432,6 +436,10 @@ public final class DuelHeartLevelInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: GBABBOEHLPP
+     * </pre>
+     *
      * Protobuf type {@code DuelHeartLevelInfo}
      */
     public static final class Builder extends
@@ -636,7 +644,7 @@ public final class DuelHeartLevelInfoOuterClass {
 
       private boolean isCgViewed_ ;
       /**
-       * <code>bool is_cg_viewed = 1;</code>
+       * <code>bool is_cg_viewed = 13;</code>
        * @return The isCgViewed.
        */
       @java.lang.Override
@@ -644,7 +652,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return isCgViewed_;
       }
       /**
-       * <code>bool is_cg_viewed = 1;</code>
+       * <code>bool is_cg_viewed = 13;</code>
        * @param value The isCgViewed to set.
        * @return This builder for chaining.
        */
@@ -655,7 +663,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_cg_viewed = 1;</code>
+       * <code>bool is_cg_viewed = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsCgViewed() {
@@ -667,7 +675,7 @@ public final class DuelHeartLevelInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 12;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -675,7 +683,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 12;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -686,7 +694,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 4;</code>
+       * <code>bool is_open = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -709,7 +717,7 @@ public final class DuelHeartLevelInfoOuterClass {
           emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder> difficultyInfoListBuilder_;
 
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo> getDifficultyInfoListList() {
         if (difficultyInfoListBuilder_ == null) {
@@ -719,7 +727,7 @@ public final class DuelHeartLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public int getDifficultyInfoListCount() {
         if (difficultyInfoListBuilder_ == null) {
@@ -729,7 +737,7 @@ public final class DuelHeartLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo getDifficultyInfoList(int index) {
         if (difficultyInfoListBuilder_ == null) {
@@ -739,7 +747,7 @@ public final class DuelHeartLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder setDifficultyInfoList(
           int index, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo value) {
@@ -756,7 +764,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder setDifficultyInfoList(
           int index, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder builderForValue) {
@@ -770,7 +778,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder addDifficultyInfoList(emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo value) {
         if (difficultyInfoListBuilder_ == null) {
@@ -786,7 +794,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder addDifficultyInfoList(
           int index, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo value) {
@@ -803,7 +811,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder addDifficultyInfoList(
           emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder builderForValue) {
@@ -817,7 +825,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder addDifficultyInfoList(
           int index, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder builderForValue) {
@@ -831,7 +839,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder addAllDifficultyInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo> values) {
@@ -846,7 +854,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder clearDifficultyInfoList() {
         if (difficultyInfoListBuilder_ == null) {
@@ -859,7 +867,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public Builder removeDifficultyInfoList(int index) {
         if (difficultyInfoListBuilder_ == null) {
@@ -872,14 +880,14 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder getDifficultyInfoListBuilder(
           int index) {
         return getDifficultyInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder getDifficultyInfoListOrBuilder(
           int index) {
@@ -889,7 +897,7 @@ public final class DuelHeartLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfoOrBuilder> 
            getDifficultyInfoListOrBuilderList() {
@@ -900,14 +908,14 @@ public final class DuelHeartLevelInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder addDifficultyInfoListBuilder() {
         return getDifficultyInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder addDifficultyInfoListBuilder(
           int index) {
@@ -915,7 +923,7 @@ public final class DuelHeartLevelInfoOuterClass {
             index, emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 6;</code>
+       * <code>repeated .DuelHeartLevelDifficultyInfo difficulty_info_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.DuelHeartLevelDifficultyInfoOuterClass.DuelHeartLevelDifficultyInfo.Builder> 
            getDifficultyInfoListBuilderList() {
@@ -938,7 +946,7 @@ public final class DuelHeartLevelInfoOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -946,7 +954,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 2;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -957,7 +965,7 @@ public final class DuelHeartLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -1035,11 +1043,10 @@ public final class DuelHeartLevelInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030DuelHeartLevelInfo.proto\032\"DuelHeartLev" +
       "elDifficultyInfo.proto\"\212\001\n\022DuelHeartLeve" +
-      "lInfo\022\024\n\014is_cg_viewed\030\001 \001(\010\022\017\n\007is_open\030\004" +
-      " \001(\010\022;\n\024difficulty_info_list\030\006 \003(\0132\035.Due" +
-      "lHeartLevelDifficultyInfo\022\020\n\010level_id\030\017 " +
-      "\001(\rB9\n\031emu.grasscutter.net.protoB\034DuelHe" +
-      "artLevelInfoOuterClassb\006proto3"
+      "lInfo\022\024\n\014is_cg_viewed\030\r \001(\010\022\017\n\007is_open\030\014" +
+      " \001(\010\022;\n\024difficulty_info_list\030\016 \003(\0132\035.Due" +
+      "lHeartLevelDifficultyInfo\022\020\n\010level_id\030\002 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

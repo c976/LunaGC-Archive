@@ -134,12 +134,12 @@ public final class CustomDungeonOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.CustomDungeonRoomOuterClass.CustomDungeonRoom.parser(), extensionRegistry));
               break;
             }
-            case 8: {
+            case 96: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 34: {
+            case 114: {
               emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting.Builder subBuilder = null;
               if (setting_ != null) {
                 subBuilder = setting_.toBuilder();
@@ -187,7 +187,7 @@ public final class CustomDungeonOuterClass {
               emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.class, emu.grasscutter.net.proto.CustomDungeonOuterClass.CustomDungeon.Builder.class);
     }
 
-    public static final int SETTING_FIELD_NUMBER = 4;
+    public static final int SETTING_FIELD_NUMBER = 14;
     private emu.grasscutter.net.proto.CustomDungeonSettingOuterClass.CustomDungeonSetting setting_;
     /**
      * <code>.CustomDungeonSetting setting = 14;</code>
@@ -264,7 +264,7 @@ public final class CustomDungeonOuterClass {
       return dungeonGuid_;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 1;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
     private int dungeonId_;
     /**
      * <code>uint32 dungeon_id = 8;</code>
@@ -296,10 +296,10 @@ public final class CustomDungeonOuterClass {
         output.writeMessage(9, roomList_.get(i));
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(1, dungeonId_);
+        output.writeUInt32(12, dungeonId_);
       }
       if (setting_ != null) {
-        output.writeMessage(4, getSetting());
+        output.writeMessage(14, getSetting());
       }
       unknownFields.writeTo(output);
     }
@@ -320,11 +320,11 @@ public final class CustomDungeonOuterClass {
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dungeonId_);
+          .computeUInt32Size(12, dungeonId_);
       }
       if (setting_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getSetting());
+          .computeMessageSize(14, getSetting());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

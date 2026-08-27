@@ -84,13 +84,13 @@ public final class InBattleMechanicusCardInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 40: {
               int rawValue = input.readEnum();
 
               challengeState_ = rawValue;
               break;
             }
-            case 40: {
+            case 96: {
 
               cardId_ = input.readUInt32();
               break;
@@ -105,7 +105,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
               oFKDBMGMAAA_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 120: {
 
               costPoints_ = input.readUInt32();
               break;
@@ -153,7 +153,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       return oFKDBMGMAAA_;
     }
 
-    public static final int COST_POINTS_FIELD_NUMBER = 9;
+    public static final int COST_POINTS_FIELD_NUMBER = 15;
     private int costPoints_;
 
     @java.lang.Override
@@ -172,7 +172,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       return bBEFENDIHEG_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 5;
+    public static final int CARD_ID_FIELD_NUMBER = 12;
     private int cardId_;
 
     @java.lang.Override
@@ -180,7 +180,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       return cardId_;
     }
 
-    public static final int CHALLENGE_STATE_FIELD_NUMBER = 13;
+    public static final int CHALLENGE_STATE_FIELD_NUMBER = 5;
     private int challengeState_;
 
     @java.lang.Override public int getChallengeStateValue() {
@@ -208,10 +208,10 @@ public final class InBattleMechanicusCardInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (challengeState_ != emu.grasscutter.net.proto.InBattleMechanicusCardChallengeStateOuterClass.InBattleMechanicusCardChallengeState.InBattleMechanicusCardChallengeState_IN_BATTLE_MECHANICUS_CARD_CHALLENGE_NONE.getNumber()) {
-        output.writeEnum(13, challengeState_);
+        output.writeEnum(5, challengeState_);
       }
       if (cardId_ != 0) {
-        output.writeUInt32(5, cardId_);
+        output.writeUInt32(12, cardId_);
       }
       if (bBEFENDIHEG_ != 0) {
         output.writeUInt32(8, bBEFENDIHEG_);
@@ -220,7 +220,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
         output.writeUInt32(16000, oFKDBMGMAAA_);
       }
       if (costPoints_ != 0) {
-        output.writeUInt32(9, costPoints_);
+        output.writeUInt32(15, costPoints_);
       }
       unknownFields.writeTo(output);
     }
@@ -233,11 +233,11 @@ public final class InBattleMechanicusCardInfoOuterClass {
       size = 0;
       if (challengeState_ != emu.grasscutter.net.proto.InBattleMechanicusCardChallengeStateOuterClass.InBattleMechanicusCardChallengeState.InBattleMechanicusCardChallengeState_IN_BATTLE_MECHANICUS_CARD_CHALLENGE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, challengeState_);
+          .computeEnumSize(5, challengeState_);
       }
       if (cardId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, cardId_);
+          .computeUInt32Size(12, cardId_);
       }
       if (bBEFENDIHEG_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -249,7 +249,7 @@ public final class InBattleMechanicusCardInfoOuterClass {
       }
       if (costPoints_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, costPoints_);
+          .computeUInt32Size(15, costPoints_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

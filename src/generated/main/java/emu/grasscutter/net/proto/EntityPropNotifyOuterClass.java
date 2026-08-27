@@ -81,7 +81,7 @@ public final class EntityPropNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 66: {
+            case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 propMap_ = com.google.protobuf.MapField.newMapField(
                     PropMapDefaultEntryHolder.defaultEntry);
@@ -94,7 +94,7 @@ public final class EntityPropNotifyOuterClass {
                   propMap__.getKey(), propMap__.getValue());
               break;
             }
-            case 96: {
+            case 88: {
 
               entityId_ = input.readUInt32();
               break;
@@ -143,7 +143,7 @@ public final class EntityPropNotifyOuterClass {
               emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify.class, emu.grasscutter.net.proto.EntityPropNotifyOuterClass.EntityPropNotify.Builder.class);
     }
 
-    public static final int PROP_MAP_FIELD_NUMBER = 8;
+    public static final int PROP_MAP_FIELD_NUMBER = 4;
     private static final class PropMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, emu.grasscutter.net.proto.PropValueOuterClass.PropValue> defaultEntry =
@@ -213,7 +213,7 @@ public final class EntityPropNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 12;
+    public static final int ENTITY_ID_FIELD_NUMBER = 11;
     private int entityId_;
 
     @java.lang.Override
@@ -240,9 +240,9 @@ public final class EntityPropNotifyOuterClass {
           output,
           internalGetPropMap(),
           PropMapDefaultEntryHolder.defaultEntry,
-          8);
+          4);
       if (entityId_ != 0) {
-        output.writeUInt32(12, entityId_);
+        output.writeUInt32(11, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -261,11 +261,11 @@ public final class EntityPropNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(8, propMap__);
+            .computeMessageSize(4, propMap__);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, entityId_);
+          .computeUInt32Size(11, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

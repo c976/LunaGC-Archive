@@ -1,7 +1,6 @@
 package emu.grasscutter.utils;
 
 import com.google.gson.*;
-import com.google.gson.annotations.SerializedName;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.*;
 import emu.grasscutter.data.common.DynamicFloat;
@@ -54,111 +53,6 @@ public interface JsonAdapters {
 
         @Override
         public void write(JsonWriter writer, DynamicFloat f) {}
-    }
-
-    /**
-     * abilitySpecials is a map of named float constants, but the dumps also fold the
-     * isLimitedProperties flag into it as a boolean. Gson's default Float adapter throws on
-     * that, and loadAbilityModifiers only catches IOException, so one such entry would abort
-     * the whole ability walk. Take a boolean as one or zero the way DynamicFloat does.
-     */
-    class AbilitySpecialsAdapter extends TypeAdapter<Map<String, Float>> {
-        @Override
-        public Map<String, Float> read(JsonReader reader) throws IOException {
-            if (reader.peek() == JsonToken.NULL) {
-                reader.nextNull();
-                return null;
-            }
-            if (reader.peek() != JsonToken.BEGIN_OBJECT)
-                throw new IOException("Invalid abilitySpecials definition - " + reader.peek().name());
-
-            reader.beginObject();
-            val map = new HashMap<String, Float>();
-            while (reader.hasNext()) {
-                val key = reader.nextName();
-                switch (reader.peek()) {
-                    case NUMBER -> map.put(key, (float) reader.nextDouble());
-                    case BOOLEAN -> map.put(key, reader.nextBoolean() ? 1f : 0f);
-                    case NULL -> {
-                        reader.nextNull();
-                    }
-                    default -> reader.skipValue();
-                }
-            }
-            reader.endObject();
-
-            return map;
-        }
-
-        @Override
-        public void write(JsonWriter writer, Map<String, Float> map) throws IOException {
-            writer.beginObject();
-            for (val e : map.entrySet()) writer.name(e.getKey()).value(e.getValue());
-            writer.endObject();
-        }
-    }
-
-    /**
-     * A modifier name step is normally just the modifier's name. Newer dumps also use a richer
-     * object form that pairs the name with the value ranges it applies over, and in the 7.0.50
-     * dump that object's name key is still obfuscated as AMNKNPONLIK (it holds the name in all
-     * 47 occurrences). The server has nowhere to put the ranges, so keep the name and drop the
-     * rest rather than throw and abandon the remaining ability configs.
-     */
-    class ModifierNameStepsAdapter extends TypeAdapter<List<String>> {
-        private static final String OBF_NAME_KEY = "AMNKNPONLIK";
-
-        @Override
-        public List<String> read(JsonReader reader) throws IOException {
-            if (reader.peek() == JsonToken.NULL) {
-                reader.nextNull();
-                return null;
-            }
-            if (reader.peek() != JsonToken.BEGIN_ARRAY)
-                throw new IOException("Invalid modifierNameSteps definition - " + reader.peek().name());
-
-            reader.beginArray();
-            val steps = new ArrayList<String>();
-            while (reader.hasNext()) {
-                switch (reader.peek()) {
-                    case STRING -> steps.add(reader.nextString());
-                    case BEGIN_OBJECT -> {
-                        val name = readNamedStep(reader);
-                        if (name != null) steps.add(name);
-                    }
-                    default -> reader.skipValue();
-                }
-            }
-            reader.endArray();
-
-            return steps;
-        }
-
-        /** Pull the name out of the object form, preferring the known key. */
-        private String readNamedStep(JsonReader reader) throws IOException {
-            reader.beginObject();
-            String name = null, firstString = null;
-            while (reader.hasNext()) {
-                val key = reader.nextName();
-                if (reader.peek() != JsonToken.STRING) {
-                    reader.skipValue();
-                    continue;
-                }
-                val value = reader.nextString();
-                if (OBF_NAME_KEY.equals(key)) name = value;
-                else if (firstString == null && !"conditionType".equals(key)) firstString = value;
-            }
-            reader.endObject();
-
-            return name != null ? name : firstString;
-        }
-
-        @Override
-        public void write(JsonWriter writer, List<String> steps) throws IOException {
-            writer.beginArray();
-            for (val s : steps) writer.value(s);
-            writer.endArray();
-        }
     }
 
     class IntListAdapter extends TypeAdapter<IntList> {
@@ -226,7 +120,7 @@ public interface JsonAdapters {
                 case BEGIN_ARRAY -> {
                     reader.beginArray();
                     val array = new FloatArrayList(3);
-                    while (reader.hasNext()) array.add((float) reader.nextDouble());
+                    while (reader.hasNext()) array.add(reader.nextInt());
                     reader.endArray();
                     return new Position(array);
                 }
@@ -270,21 +164,6 @@ public interface JsonAdapters {
             val map = new HashMap<String, T>();
             val enumConstants = enumClass.getEnumConstants();
             for (val constant : enumConstants) map.put(constant.toString(), constant);
-
-            // A constant that names itself differently in the tables says so with @SerializedName,
-            // the way a field does. Reading only the Java name meant every one of those parsed as
-            // null without a word - GivingData's whole giveType column, for one.
-            for (val constant : enumConstants) {
-                try {
-                    val declared = enumClass.getField(((Enum<?>) constant).name());
-                    val named = declared.getAnnotation(SerializedName.class);
-                    if (named == null) continue;
-
-                    map.put(named.value(), constant);
-                    for (val alternate : named.alternate()) map.put(alternate, constant);
-                } catch (NoSuchFieldException ignored) {
-                }
-            }
 
             for (Field f : enumClass.getDeclaredFields()) {
                 if (switch (f.getName()) {

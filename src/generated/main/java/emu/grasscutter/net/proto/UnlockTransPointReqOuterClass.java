@@ -19,7 +19,7 @@ public final class UnlockTransPointReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     int getPointId();
@@ -31,6 +31,10 @@ public final class UnlockTransPointReqOuterClass {
     int getSceneId();
   }
   /**
+   * <pre>
+   * CmdId: 29817
+   * </pre>
+   *
    * Protobuf type {@code UnlockTransPointReq}
    */
   public static final class UnlockTransPointReq extends
@@ -120,7 +124,7 @@ public final class UnlockTransPointReqOuterClass {
     public static final int POINT_ID_FIELD_NUMBER = 12;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 12;</code>
+     * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -306,6 +310,10 @@ public final class UnlockTransPointReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29817
+     * </pre>
+     *
      * Protobuf type {@code UnlockTransPointReq}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class UnlockTransPointReqOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 9;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class UnlockTransPointReqOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 9;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class UnlockTransPointReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 12;</code>
+       * <code>uint32 point_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -587,9 +595,9 @@ public final class UnlockTransPointReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031UnlockTransPointReq.proto\"9\n\023UnlockTra" +
-      "nsPointReq\022\020\n\010point_id\030\014 \001(\r\022\020\n\010scene_id" +
-      "\030\016 \001(\rB:\n\031emu.grasscutter.net.protoB\035Unl" +
-      "ockTransPointReqOuterClassb\006proto3"
+      "nsPointReq\022\020\n\010point_id\030\t \001(\r\022\020\n\010scene_id" +
+      "\030\016 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

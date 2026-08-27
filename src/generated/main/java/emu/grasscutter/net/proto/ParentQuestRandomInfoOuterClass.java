@@ -19,10 +19,10 @@ public final class ParentQuestRandomInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entrance_id = 1;</code>
-     * @return The entranceId.
+     * <code>uint32 template_id = 10;</code>
+     * @return The templateId.
      */
-    int getEntranceId();
+    int getTemplateId();
 
     /**
      * <code>repeated uint32 factor_list = 9;</code>
@@ -42,12 +42,16 @@ public final class ParentQuestRandomInfoOuterClass {
     int getFactorList(int index);
 
     /**
-     * <code>uint32 template_id = 13;</code>
-     * @return The templateId.
+     * <code>uint32 entrance_id = 3;</code>
+     * @return The entranceId.
      */
-    int getTemplateId();
+    int getEntranceId();
   }
   /**
+   * <pre>
+   * Obf: NIGBJJFCAGF
+   * </pre>
+   *
    * Protobuf type {@code ParentQuestRandomInfo}
    */
   public static final class ParentQuestRandomInfo extends
@@ -160,15 +164,15 @@ public final class ParentQuestRandomInfoOuterClass {
               emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo.class, emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo.Builder.class);
     }
 
-    public static final int ENTRANCE_ID_FIELD_NUMBER = 1;
-    private int entranceId_;
+    public static final int TEMPLATE_ID_FIELD_NUMBER = 13;
+    private int templateId_;
     /**
-     * <code>uint32 entrance_id = 1;</code>
-     * @return The entranceId.
+     * <code>uint32 template_id = 10;</code>
+     * @return The templateId.
      */
     @java.lang.Override
-    public int getEntranceId() {
-      return entranceId_;
+    public int getTemplateId() {
+      return templateId_;
     }
 
     public static final int FACTOR_LIST_FIELD_NUMBER = 9;
@@ -199,15 +203,15 @@ public final class ParentQuestRandomInfoOuterClass {
     }
     private int factorListMemoizedSerializedSize = -1;
 
-    public static final int TEMPLATE_ID_FIELD_NUMBER = 13;
-    private int templateId_;
+    public static final int ENTRANCE_ID_FIELD_NUMBER = 1;
+    private int entranceId_;
     /**
-     * <code>uint32 template_id = 13;</code>
-     * @return The templateId.
+     * <code>uint32 entrance_id = 3;</code>
+     * @return The entranceId.
      */
     @java.lang.Override
-    public int getTemplateId() {
-      return templateId_;
+    public int getEntranceId() {
+      return entranceId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -284,12 +288,12 @@ public final class ParentQuestRandomInfoOuterClass {
       }
       emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo other = (emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo) obj;
 
-      if (getEntranceId()
-          != other.getEntranceId()) return false;
-      if (!getFactorListList()
-          .equals(other.getFactorListList())) return false;
       if (getTemplateId()
           != other.getTemplateId()) return false;
+      if (!getFactorListList()
+          .equals(other.getFactorListList())) return false;
+      if (getEntranceId()
+          != other.getEntranceId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -301,14 +305,14 @@ public final class ParentQuestRandomInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ENTRANCE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getEntranceId();
+      hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTemplateId();
       if (getFactorListCount() > 0) {
         hash = (37 * hash) + FACTOR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFactorListList().hashCode();
       }
-      hash = (37 * hash) + TEMPLATE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTemplateId();
+      hash = (37 * hash) + ENTRANCE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEntranceId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -405,6 +409,10 @@ public final class ParentQuestRandomInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: NIGBJJFCAGF
+     * </pre>
+     *
      * Protobuf type {@code ParentQuestRandomInfo}
      */
     public static final class Builder extends
@@ -442,11 +450,11 @@ public final class ParentQuestRandomInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        entranceId_ = 0;
+        templateId_ = 0;
 
         factorList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        templateId_ = 0;
+        entranceId_ = 0;
 
         return this;
       }
@@ -475,13 +483,13 @@ public final class ParentQuestRandomInfoOuterClass {
       public emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo buildPartial() {
         emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo result = new emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo(this);
         int from_bitField0_ = bitField0_;
-        result.entranceId_ = entranceId_;
+        result.templateId_ = templateId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           factorList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.factorList_ = factorList_;
-        result.templateId_ = templateId_;
+        result.entranceId_ = entranceId_;
         onBuilt();
         return result;
       }
@@ -530,8 +538,8 @@ public final class ParentQuestRandomInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo other) {
         if (other == emu.grasscutter.net.proto.ParentQuestRandomInfoOuterClass.ParentQuestRandomInfo.getDefaultInstance()) return this;
-        if (other.getEntranceId() != 0) {
-          setEntranceId(other.getEntranceId());
+        if (other.getTemplateId() != 0) {
+          setTemplateId(other.getTemplateId());
         }
         if (!other.factorList_.isEmpty()) {
           if (factorList_.isEmpty()) {
@@ -543,8 +551,8 @@ public final class ParentQuestRandomInfoOuterClass {
           }
           onChanged();
         }
-        if (other.getTemplateId() != 0) {
-          setTemplateId(other.getTemplateId());
+        if (other.getEntranceId() != 0) {
+          setEntranceId(other.getEntranceId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -576,33 +584,33 @@ public final class ParentQuestRandomInfoOuterClass {
       }
       private int bitField0_;
 
-      private int entranceId_ ;
+      private int templateId_ ;
       /**
-       * <code>uint32 entrance_id = 1;</code>
-       * @return The entranceId.
+       * <code>uint32 template_id = 10;</code>
+       * @return The templateId.
        */
       @java.lang.Override
-      public int getEntranceId() {
-        return entranceId_;
+      public int getTemplateId() {
+        return templateId_;
       }
       /**
-       * <code>uint32 entrance_id = 1;</code>
-       * @param value The entranceId to set.
+       * <code>uint32 template_id = 10;</code>
+       * @param value The templateId to set.
        * @return This builder for chaining.
        */
-      public Builder setEntranceId(int value) {
+      public Builder setTemplateId(int value) {
         
-        entranceId_ = value;
+        templateId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 entrance_id = 1;</code>
+       * <code>uint32 template_id = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearEntranceId() {
+      public Builder clearTemplateId() {
         
-        entranceId_ = 0;
+        templateId_ = 0;
         onChanged();
         return this;
       }
@@ -686,33 +694,33 @@ public final class ParentQuestRandomInfoOuterClass {
         return this;
       }
 
-      private int templateId_ ;
+      private int entranceId_ ;
       /**
-       * <code>uint32 template_id = 13;</code>
-       * @return The templateId.
+       * <code>uint32 entrance_id = 3;</code>
+       * @return The entranceId.
        */
       @java.lang.Override
-      public int getTemplateId() {
-        return templateId_;
+      public int getEntranceId() {
+        return entranceId_;
       }
       /**
-       * <code>uint32 template_id = 13;</code>
-       * @param value The templateId to set.
+       * <code>uint32 entrance_id = 3;</code>
+       * @param value The entranceId to set.
        * @return This builder for chaining.
        */
-      public Builder setTemplateId(int value) {
+      public Builder setEntranceId(int value) {
         
-        templateId_ = value;
+        entranceId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 template_id = 13;</code>
+       * <code>uint32 entrance_id = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTemplateId() {
+      public Builder clearEntranceId() {
         
-        templateId_ = 0;
+        entranceId_ = 0;
         onChanged();
         return this;
       }
@@ -784,10 +792,9 @@ public final class ParentQuestRandomInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033ParentQuestRandomInfo.proto\"V\n\025ParentQ" +
-      "uestRandomInfo\022\023\n\013entrance_id\030\001 \001(\r\022\023\n\013f" +
-      "actor_list\030\t \003(\r\022\023\n\013template_id\030\r \001(\rB<\n" +
-      "\031emu.grasscutter.net.protoB\037ParentQuestR" +
-      "andomInfoOuterClassb\006proto3"
+      "uestRandomInfo\022\023\n\013template_id\030\n \001(\r\022\023\n\013f" +
+      "actor_list\030\t \003(\r\022\023\n\013entrance_id\030\003 \001(\rB\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -798,7 +805,7 @@ public final class ParentQuestRandomInfoOuterClass {
     internal_static_ParentQuestRandomInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ParentQuestRandomInfo_descriptor,
-        new java.lang.String[] { "EntranceId", "FactorList", "TemplateId", });
+        new java.lang.String[] { "TemplateId", "FactorList", "EntranceId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

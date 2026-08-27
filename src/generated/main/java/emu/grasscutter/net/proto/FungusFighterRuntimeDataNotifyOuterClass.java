@@ -73,7 +73,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 66: {
               emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail.Builder subBuilder = null;
               if (progressDetail_ != null) {
                 subBuilder = progressDetail_.toBuilder();
@@ -118,7 +118,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
               emu.grasscutter.net.proto.FungusFighterRuntimeDataNotifyOuterClass.FungusFighterRuntimeDataNotify.class, emu.grasscutter.net.proto.FungusFighterRuntimeDataNotifyOuterClass.FungusFighterRuntimeDataNotify.Builder.class);
     }
 
-    public static final int PROGRESS_DETAIL_FIELD_NUMBER = 3;
+    public static final int PROGRESS_DETAIL_FIELD_NUMBER = 8;
     private emu.grasscutter.net.proto.FungusTrainingProgressDetailOuterClass.FungusTrainingProgressDetail progressDetail_;
 
     @java.lang.Override
@@ -151,7 +151,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (progressDetail_ != null) {
-        output.writeMessage(3, getProgressDetail());
+        output.writeMessage(8, getProgressDetail());
       }
       unknownFields.writeTo(output);
     }
@@ -164,7 +164,7 @@ public final class FungusFighterRuntimeDataNotifyOuterClass {
       size = 0;
       if (progressDetail_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, getProgressDetail());
+          .computeMessageSize(8, getProgressDetail());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

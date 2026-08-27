@@ -19,12 +19,17 @@ public final class DungeonWayPointActivateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 way_point_id = 14;</code>
+     * <code>uint32 way_point_id = 11;</code>
      * @return The wayPointId.
      */
     int getWayPointId();
   }
   /**
+   * <pre>
+   * CmdId: 7942
+   * Obf: IKEEIFMLEMK
+   * </pre>
+   *
    * Protobuf type {@code DungeonWayPointActivateReq}
    */
   public static final class DungeonWayPointActivateReq extends
@@ -109,7 +114,7 @@ public final class DungeonWayPointActivateReqOuterClass {
     public static final int WAY_POINT_ID_FIELD_NUMBER = 14;
     private int wayPointId_;
     /**
-     * <code>uint32 way_point_id = 14;</code>
+     * <code>uint32 way_point_id = 11;</code>
      * @return The wayPointId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class DungeonWayPointActivateReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7942
+     * Obf: IKEEIFMLEMK
+     * </pre>
+     *
      * Protobuf type {@code DungeonWayPointActivateReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class DungeonWayPointActivateReqOuterClass {
 
       private int wayPointId_ ;
       /**
-       * <code>uint32 way_point_id = 14;</code>
+       * <code>uint32 way_point_id = 11;</code>
        * @return The wayPointId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class DungeonWayPointActivateReqOuterClass {
         return wayPointId_;
       }
       /**
-       * <code>uint32 way_point_id = 14;</code>
+       * <code>uint32 way_point_id = 11;</code>
        * @param value The wayPointId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class DungeonWayPointActivateReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 way_point_id = 14;</code>
+       * <code>uint32 way_point_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearWayPointId() {
@@ -518,9 +528,8 @@ public final class DungeonWayPointActivateReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n DungeonWayPointActivateReq.proto\"2\n\032Du" +
       "ngeonWayPointActivateReq\022\024\n\014way_point_id" +
-      "\030\016 \001(\rBA\n\031emu.grasscutter.net.protoB$Dun" +
-      "geonWayPointActivateReqOuterClassb\006proto" +
-      "3"
+      "\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

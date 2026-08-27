@@ -112,22 +112,22 @@ public final class PathfindingEnterSceneReqOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 104: {
 
               isEditor_ = input.readBool();
               break;
             }
-            case 32: {
+            case 128008: {
 
               jJDKCJNCKEK_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 32: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 obstacles_ = new java.util.ArrayList<emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -157,7 +157,7 @@ public final class PathfindingEnterSceneReqOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 8: {
+            case 56: {
 
               version_ = input.readUInt32();
               break;
@@ -258,7 +258,7 @@ public final class PathfindingEnterSceneReqOuterClass {
     }
     private int nBFPJJIDPJBMemoizedSerializedSize = -1;
 
-    public static final int IS_EDITOR_FIELD_NUMBER = 8;
+    public static final int IS_EDITOR_FIELD_NUMBER = 13;
     private boolean isEditor_;
 
     @java.lang.Override
@@ -266,7 +266,7 @@ public final class PathfindingEnterSceneReqOuterClass {
       return isEditor_;
     }
 
-    public static final int VERSION_FIELD_NUMBER = 1;
+    public static final int VERSION_FIELD_NUMBER = 7;
     private int version_;
 
     @java.lang.Override
@@ -274,7 +274,7 @@ public final class PathfindingEnterSceneReqOuterClass {
       return version_;
     }
 
-    public static final int JJDKCJNCKEK_FIELD_NUMBER = 4;
+    public static final int JJDKCJNCKEK_FIELD_NUMBER = 16001;
     private int jJDKCJNCKEK_;
     /**
      * <code>uint32 JJDKCJNCKEK = 4;</code>
@@ -285,7 +285,7 @@ public final class PathfindingEnterSceneReqOuterClass {
       return jJDKCJNCKEK_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 12;
+    public static final int SCENE_ID_FIELD_NUMBER = 4;
     private int sceneId_;
 
     @java.lang.Override
@@ -309,16 +309,16 @@ public final class PathfindingEnterSceneReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (isEditor_ != false) {
-        output.writeBool(8, isEditor_);
+        output.writeBool(13, isEditor_);
       }
       if (jJDKCJNCKEK_ != 0) {
-        output.writeUInt32(4, jJDKCJNCKEK_);
+        output.writeUInt32(16001, jJDKCJNCKEK_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(12, sceneId_);
+        output.writeUInt32(4, sceneId_);
       }
       for (int i = 0; i < obstacles_.size(); i++) {
-        output.writeMessage(9, obstacles_.get(i));
+        output.writeMessage(2, obstacles_.get(i));
       }
       if (getNBFPJJIDPJBList().size() > 0) {
         output.writeUInt32NoTag(128002);
@@ -328,7 +328,7 @@ public final class PathfindingEnterSceneReqOuterClass {
         output.writeInt32NoTag(nBFPJJIDPJB_.getInt(i));
       }
       if (version_ != 0) {
-        output.writeUInt32(1, version_);
+        output.writeUInt32(7, version_);
       }
       unknownFields.writeTo(output);
     }
@@ -341,19 +341,19 @@ public final class PathfindingEnterSceneReqOuterClass {
       size = 0;
       if (isEditor_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isEditor_);
+          .computeBoolSize(13, isEditor_);
       }
       if (jJDKCJNCKEK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, jJDKCJNCKEK_);
+          .computeUInt32Size(16001, jJDKCJNCKEK_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, sceneId_);
+          .computeUInt32Size(4, sceneId_);
       }
       for (int i = 0; i < obstacles_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, obstacles_.get(i));
+          .computeMessageSize(2, obstacles_.get(i));
       }
       {
         int dataSize = 0;
@@ -371,7 +371,7 @@ public final class PathfindingEnterSceneReqOuterClass {
       }
       if (version_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, version_);
+          .computeUInt32Size(7, version_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

@@ -19,80 +19,68 @@ public final class BlessingActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 HLGJOMHPMDA = 1;</code>
-     * @return The hLGJOMHPMDA.
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
-    int getHLGJOMHPMDA();
-
+    int getFHPCJDBDAPCCount();
     /**
-     * <code>bool is_content_closed = 5;</code>
-     * @return The isContentClosed.
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
-    boolean getIsContentClosed();
-
-    /**
-     * <code>uint32 next_refresh_time = 7;</code>
-     * @return The nextRefreshTime.
-     */
-    int getNextRefreshTime();
-
-    /**
-     * <code>uint32 ppbchanjknf = 9;</code>
-     * @return The ppbchanjknf.
-     */
-    int getPpbchanjknf();
-
-    /**
-     * <code>bool is_activated = 11;</code>
-     * @return The isActivated.
-     */
-    boolean getIsActivated();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
-     */
-    int getPicNumMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
-     */
-    boolean containsPicNumMap(
+    boolean containsFHPCJDBDAPC(
         int key);
     /**
-     * Use {@link #getPicNumMapMap()} instead.
+     * Use {@link #getFHPCJDBDAPCMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getPicNumMap();
+    getFHPCJDBDAPC();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getPicNumMapMap();
+    getFHPCJDBDAPCMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
 
-    int getPicNumMapOrDefault(
+    int getFHPCJDBDAPCOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
 
-    int getPicNumMapOrThrow(
+    int getFHPCJDBDAPCOrThrow(
         int key);
 
     /**
-     * <code>uint32 DKHOJDNIKGN = 13;</code>
-     * @return The dKHOJDNIKGN.
+     * <code>uint32 EGBKCDHJCCL = 5;</code>
+     * @return The eGBKCDHJCCL.
      */
-    int getDKHOJDNIKGN();
+    int getEGBKCDHJCCL();
+
+    int getContentCloseTime();
 
     /**
-     * <code>uint32 content_close_time = 14;</code>
-     * @return The contentCloseTime.
+     * <code>uint32 MAKGFHFHLME = 8;</code>
+     * @return The mAKGFHFHLME.
      */
-    int getContentCloseTime();
+    int getMAKGFHFHLME();
+
+    int getNextRefreshTime();
+
+    /**
+     * <code>uint32 PPBCHANJKNF = 9;</code>
+     * @return The pPBCHANJKNF.
+     */
+    int getPPBCHANJKNF();
+
+    boolean getIsContentClosed();
+
+    /**
+     * <code>bool DHEGCNBIKIO = 12;</code>
+     * @return The dHEGCNBIKIO.
+     */
+    boolean getDHEGCNBIKIO();
   }
   /**
    * Protobuf type {@code BlessingActivityDetailInfo}
@@ -140,14 +128,24 @@ public final class BlessingActivityDetailInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              hLGJOMHPMDA_ = input.readUInt32();
-              break;
-            }
             case 40: {
 
               isContentClosed_ = input.readBool();
+              break;
+            }
+            case 128000: {
+
+              eGBKCDHJCCL_ = input.readUInt32();
+              break;
+            }
+            case 64: {
+
+              mAKGFHFHLME_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+
+              pPBCHANJKNF_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -155,37 +153,27 @@ public final class BlessingActivityDetailInfoOuterClass {
               nextRefreshTime_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 96: {
 
-              ppbchanjknf_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              isActivated_ = input.readBool();
-              break;
-            }
-            case 98: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                picNumMap_ = com.google.protobuf.MapField.newMapField(
-                    PicNumMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
-              }
-              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              picNumMap__ = input.readMessage(
-                  PicNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              picNumMap_.getMutableMap().put(
-                  picNumMap__.getKey(), picNumMap__.getValue());
-              break;
-            }
-            case 104: {
-
-              dKHOJDNIKGN_ = input.readUInt32();
+              dHEGCNBIKIO_ = input.readBool();
               break;
             }
             case 112: {
 
               contentCloseTime_ = input.readUInt32();
+              break;
+            }
+            case 130: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                fHPCJDBDAPC_ = com.google.protobuf.MapField.newMapField(
+                    FHPCJDBDAPCDefaultEntryHolder.defaultEntry);
+                mutable_bitField0_ |= 0x00000001;
+              }
+              com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+              fHPCJDBDAPC__ = input.readMessage(
+                  FHPCJDBDAPCDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              fHPCJDBDAPC_.getMutableMap().put(
+                  fHPCJDBDAPC__.getKey(), fHPCJDBDAPC__.getValue());
               break;
             }
             default: {
@@ -217,8 +205,8 @@ public final class BlessingActivityDetailInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
-          return internalGetPicNumMap();
+        case 16:
+          return internalGetFHPCJDBDAPC();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -232,162 +220,153 @@ public final class BlessingActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.class, emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.Builder.class);
     }
 
-    public static final int HLGJOMHPMDA_FIELD_NUMBER = 1;
-    private int hLGJOMHPMDA_;
-    /**
-     * <code>uint32 HLGJOMHPMDA = 1;</code>
-     * @return The hLGJOMHPMDA.
-     */
-    @java.lang.Override
-    public int getHLGJOMHPMDA() {
-      return hLGJOMHPMDA_;
-    }
-
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
-    private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 5;</code>
-     * @return The isContentClosed.
-     */
-    @java.lang.Override
-    public boolean getIsContentClosed() {
-      return isContentClosed_;
-    }
-
-    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 7;
-    private int nextRefreshTime_;
-    /**
-     * <code>uint32 next_refresh_time = 7;</code>
-     * @return The nextRefreshTime.
-     */
-    @java.lang.Override
-    public int getNextRefreshTime() {
-      return nextRefreshTime_;
-    }
-
-    public static final int PPBCHANJKNF_FIELD_NUMBER = 9;
-    private int ppbchanjknf_;
-    /**
-     * <code>uint32 ppbchanjknf = 9;</code>
-     * @return The ppbchanjknf.
-     */
-    @java.lang.Override
-    public int getPpbchanjknf() {
-      return ppbchanjknf_;
-    }
-
-    public static final int IS_ACTIVATED_FIELD_NUMBER = 11;
-    private boolean isActivated_;
-    /**
-     * <code>bool is_activated = 11;</code>
-     * @return The isActivated.
-     */
-    @java.lang.Override
-    public boolean getIsActivated() {
-      return isActivated_;
-    }
-
-    public static final int PIC_NUM_MAP_FIELD_NUMBER = 12;
-    private static final class PicNumMapDefaultEntryHolder {
+    public static final int FHPCJDBDAPC_FIELD_NUMBER = 16;
+    private static final class FHPCJDBDAPCDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
               com.google.protobuf.MapEntry
               .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.internal_static_BlessingActivityDetailInfo_PicNumMapEntry_descriptor, 
+                  emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_descriptor,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0,
                   com.google.protobuf.WireFormat.FieldType.UINT32,
                   0);
     }
     private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> picNumMap_;
+        java.lang.Integer, java.lang.Integer> fHPCJDBDAPC_;
     private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetPicNumMap() {
-      if (picNumMap_ == null) {
+    internalGetFHPCJDBDAPC() {
+      if (fHPCJDBDAPC_ == null) {
         return com.google.protobuf.MapField.emptyMapField(
-            PicNumMapDefaultEntryHolder.defaultEntry);
+            FHPCJDBDAPCDefaultEntryHolder.defaultEntry);
       }
-      return picNumMap_;
+      return fHPCJDBDAPC_;
     }
 
-    public int getPicNumMapCount() {
-      return internalGetPicNumMap().getMap().size();
+    public int getFHPCJDBDAPCCount() {
+      return internalGetFHPCJDBDAPC().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
 
     @java.lang.Override
-    public boolean containsPicNumMap(
+    public boolean containsFHPCJDBDAPC(
         int key) {
-      
-      return internalGetPicNumMap().getMap().containsKey(key);
+
+      return internalGetFHPCJDBDAPC().getMap().containsKey(key);
     }
     /**
-     * Use {@link #getPicNumMapMap()} instead.
+     * Use {@link #getFHPCJDBDAPCMap()} instead.
      */
     @java.lang.Override
     @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getPicNumMap() {
-      return getPicNumMapMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getFHPCJDBDAPC() {
+      return getFHPCJDBDAPCMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
     @java.lang.Override
 
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getPicNumMapMap() {
-      return internalGetPicNumMap().getMap();
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getFHPCJDBDAPCMap() {
+      return internalGetFHPCJDBDAPC().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
     @java.lang.Override
 
-    public int getPicNumMapOrDefault(
+    public int getFHPCJDBDAPCOrDefault(
         int key,
         int defaultValue) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetPicNumMap().getMap();
+          internalGetFHPCJDBDAPC().getMap();
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
      */
     @java.lang.Override
 
-    public int getPicNumMapOrThrow(
+    public int getFHPCJDBDAPCOrThrow(
         int key) {
-      
+
       java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetPicNumMap().getMap();
+          internalGetFHPCJDBDAPC().getMap();
       if (!map.containsKey(key)) {
         throw new java.lang.IllegalArgumentException();
       }
       return map.get(key);
     }
 
-    public static final int DKHOJDNIKGN_FIELD_NUMBER = 13;
-    private int dKHOJDNIKGN_;
+    public static final int EGBKCDHJCCL_FIELD_NUMBER = 16000;
+    private int eGBKCDHJCCL_;
     /**
-     * <code>uint32 DKHOJDNIKGN = 13;</code>
-     * @return The dKHOJDNIKGN.
+     * <code>uint32 EGBKCDHJCCL = 5;</code>
+     * @return The eGBKCDHJCCL.
      */
     @java.lang.Override
-    public int getDKHOJDNIKGN() {
-      return dKHOJDNIKGN_;
+    public int getEGBKCDHJCCL() {
+      return eGBKCDHJCCL_;
     }
 
     public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 14;
     private int contentCloseTime_;
-    /**
-     * <code>uint32 content_close_time = 14;</code>
-     * @return The contentCloseTime.
-     */
+
     @java.lang.Override
     public int getContentCloseTime() {
       return contentCloseTime_;
+    }
+
+    public static final int MAKGFHFHLME_FIELD_NUMBER = 8;
+    private int mAKGFHFHLME_;
+    /**
+     * <code>uint32 MAKGFHFHLME = 8;</code>
+     * @return The mAKGFHFHLME.
+     */
+    @java.lang.Override
+    public int getMAKGFHFHLME() {
+      return mAKGFHFHLME_;
+    }
+
+    public static final int NEXT_REFRESH_TIME_FIELD_NUMBER = 7;
+    private int nextRefreshTime_;
+
+    @java.lang.Override
+    public int getNextRefreshTime() {
+      return nextRefreshTime_;
+    }
+
+    public static final int PPBCHANJKNF_FIELD_NUMBER = 9;
+    private int pPBCHANJKNF_;
+    /**
+     * <code>uint32 PPBCHANJKNF = 9;</code>
+     * @return The pPBCHANJKNF.
+     */
+    @java.lang.Override
+    public int getPPBCHANJKNF() {
+      return pPBCHANJKNF_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
+    private boolean isContentClosed_;
+
+    @java.lang.Override
+    public boolean getIsContentClosed() {
+      return isContentClosed_;
+    }
+
+    public static final int DHEGCNBIKIO_FIELD_NUMBER = 12;
+    private boolean dHEGCNBIKIO_;
+    /**
+     * <code>bool DHEGCNBIKIO = 12;</code>
+     * @return The dHEGCNBIKIO.
+     */
+    @java.lang.Override
+    public boolean getDHEGCNBIKIO() {
+      return dHEGCNBIKIO_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -404,33 +383,33 @@ public final class BlessingActivityDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (hLGJOMHPMDA_ != 0) {
-        output.writeUInt32(1, hLGJOMHPMDA_);
-      }
       if (isContentClosed_ != false) {
         output.writeBool(5, isContentClosed_);
+      }
+      if (eGBKCDHJCCL_ != 0) {
+        output.writeUInt32(16000, eGBKCDHJCCL_);
+      }
+      if (mAKGFHFHLME_ != 0) {
+        output.writeUInt32(8, mAKGFHFHLME_);
+      }
+      if (pPBCHANJKNF_ != 0) {
+        output.writeUInt32(9, pPBCHANJKNF_);
       }
       if (nextRefreshTime_ != 0) {
         output.writeUInt32(7, nextRefreshTime_);
       }
-      if (ppbchanjknf_ != 0) {
-        output.writeUInt32(9, ppbchanjknf_);
-      }
-      if (isActivated_ != false) {
-        output.writeBool(11, isActivated_);
-      }
-      com.google.protobuf.GeneratedMessageV3
-        .serializeIntegerMapTo(
-          output,
-          internalGetPicNumMap(),
-          PicNumMapDefaultEntryHolder.defaultEntry,
-          12);
-      if (dKHOJDNIKGN_ != 0) {
-        output.writeUInt32(13, dKHOJDNIKGN_);
+      if (dHEGCNBIKIO_ != false) {
+        output.writeBool(12, dHEGCNBIKIO_);
       }
       if (contentCloseTime_ != 0) {
         output.writeUInt32(14, contentCloseTime_);
       }
+      com.google.protobuf.GeneratedMessageV3
+        .serializeIntegerMapTo(
+          output,
+          internalGetFHPCJDBDAPC(),
+          FHPCJDBDAPCDefaultEntryHolder.defaultEntry,
+          16);
       unknownFields.writeTo(output);
     }
 
@@ -440,43 +419,43 @@ public final class BlessingActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (hLGJOMHPMDA_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, hLGJOMHPMDA_);
-      }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(5, isContentClosed_);
+      }
+      if (eGBKCDHJCCL_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(16000, eGBKCDHJCCL_);
+      }
+      if (mAKGFHFHLME_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, mAKGFHFHLME_);
+      }
+      if (pPBCHANJKNF_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, pPBCHANJKNF_);
       }
       if (nextRefreshTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, nextRefreshTime_);
       }
-      if (ppbchanjknf_ != 0) {
+      if (dHEGCNBIKIO_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, ppbchanjknf_);
-      }
-      if (isActivated_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isActivated_);
-      }
-      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetPicNumMap().getMap().entrySet()) {
-        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        picNumMap__ = PicNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
-            .setKey(entry.getKey())
-            .setValue(entry.getValue())
-            .build();
-        size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, picNumMap__);
-      }
-      if (dKHOJDNIKGN_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, dKHOJDNIKGN_);
+          .computeBoolSize(12, dHEGCNBIKIO_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, contentCloseTime_);
+      }
+      for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
+           : internalGetFHPCJDBDAPC().getMap().entrySet()) {
+        com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
+        fHPCJDBDAPC__ = FHPCJDBDAPCDefaultEntryHolder.defaultEntry.newBuilderForType()
+            .setKey(entry.getKey())
+            .setValue(entry.getValue())
+            .build();
+        size += com.google.protobuf.CodedOutputStream
+            .computeMessageSize(16, fHPCJDBDAPC__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -493,22 +472,22 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo other = (emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo) obj;
 
-      if (getHLGJOMHPMDA()
-          != other.getHLGJOMHPMDA()) return false;
-      if (getIsContentClosed()
-          != other.getIsContentClosed()) return false;
-      if (getNextRefreshTime()
-          != other.getNextRefreshTime()) return false;
-      if (getPpbchanjknf()
-          != other.getPpbchanjknf()) return false;
-      if (getIsActivated()
-          != other.getIsActivated()) return false;
-      if (!internalGetPicNumMap().equals(
-          other.internalGetPicNumMap())) return false;
-      if (getDKHOJDNIKGN()
-          != other.getDKHOJDNIKGN()) return false;
+      if (!internalGetFHPCJDBDAPC().equals(
+          other.internalGetFHPCJDBDAPC())) return false;
+      if (getEGBKCDHJCCL()
+          != other.getEGBKCDHJCCL()) return false;
       if (getContentCloseTime()
           != other.getContentCloseTime()) return false;
+      if (getMAKGFHFHLME()
+          != other.getMAKGFHFHLME()) return false;
+      if (getNextRefreshTime()
+          != other.getNextRefreshTime()) return false;
+      if (getPPBCHANJKNF()
+          != other.getPPBCHANJKNF()) return false;
+      if (getIsContentClosed()
+          != other.getIsContentClosed()) return false;
+      if (getDHEGCNBIKIO()
+          != other.getDHEGCNBIKIO()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -520,26 +499,26 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + HLGJOMHPMDA_FIELD_NUMBER;
-      hash = (53 * hash) + getHLGJOMHPMDA();
-      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsContentClosed());
+      if (!internalGetFHPCJDBDAPC().getMap().isEmpty()) {
+        hash = (37 * hash) + FHPCJDBDAPC_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetFHPCJDBDAPC().hashCode();
+      }
+      hash = (37 * hash) + EGBKCDHJCCL_FIELD_NUMBER;
+      hash = (53 * hash) + getEGBKCDHJCCL();
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
+      hash = (37 * hash) + MAKGFHFHLME_FIELD_NUMBER;
+      hash = (53 * hash) + getMAKGFHFHLME();
       hash = (37 * hash) + NEXT_REFRESH_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getNextRefreshTime();
       hash = (37 * hash) + PPBCHANJKNF_FIELD_NUMBER;
-      hash = (53 * hash) + getPpbchanjknf();
-      hash = (37 * hash) + IS_ACTIVATED_FIELD_NUMBER;
+      hash = (53 * hash) + getPPBCHANJKNF();
+      hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsActivated());
-      if (!internalGetPicNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + PIC_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetPicNumMap().hashCode();
-      }
-      hash = (37 * hash) + DKHOJDNIKGN_FIELD_NUMBER;
-      hash = (53 * hash) + getDKHOJDNIKGN();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
+          getIsContentClosed());
+      hash = (37 * hash) + DHEGCNBIKIO_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getDHEGCNBIKIO());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -651,8 +630,8 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
-            return internalGetPicNumMap();
+          case 16:
+            return internalGetFHPCJDBDAPC();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -662,8 +641,8 @@ public final class BlessingActivityDetailInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
-            return internalGetMutablePicNumMap();
+          case 16:
+            return internalGetMutableFHPCJDBDAPC();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -695,20 +674,20 @@ public final class BlessingActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        hLGJOMHPMDA_ = 0;
+        internalGetMutableFHPCJDBDAPC().clear();
+        eGBKCDHJCCL_ = 0;
 
-        isContentClosed_ = false;
+        contentCloseTime_ = 0;
+
+        mAKGFHFHLME_ = 0;
 
         nextRefreshTime_ = 0;
 
-        ppbchanjknf_ = 0;
+        pPBCHANJKNF_ = 0;
 
-        isActivated_ = false;
+        isContentClosed_ = false;
 
-        internalGetMutablePicNumMap().clear();
-        dKHOJDNIKGN_ = 0;
-
-        contentCloseTime_ = 0;
+        dHEGCNBIKIO_ = false;
 
         return this;
       }
@@ -737,15 +716,15 @@ public final class BlessingActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo result = new emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.hLGJOMHPMDA_ = hLGJOMHPMDA_;
-        result.isContentClosed_ = isContentClosed_;
-        result.nextRefreshTime_ = nextRefreshTime_;
-        result.ppbchanjknf_ = ppbchanjknf_;
-        result.isActivated_ = isActivated_;
-        result.picNumMap_ = internalGetPicNumMap();
-        result.picNumMap_.makeImmutable();
-        result.dKHOJDNIKGN_ = dKHOJDNIKGN_;
+        result.fHPCJDBDAPC_ = internalGetFHPCJDBDAPC();
+        result.fHPCJDBDAPC_.makeImmutable();
+        result.eGBKCDHJCCL_ = eGBKCDHJCCL_;
         result.contentCloseTime_ = contentCloseTime_;
+        result.mAKGFHFHLME_ = mAKGFHFHLME_;
+        result.nextRefreshTime_ = nextRefreshTime_;
+        result.pPBCHANJKNF_ = pPBCHANJKNF_;
+        result.isContentClosed_ = isContentClosed_;
+        result.dHEGCNBIKIO_ = dHEGCNBIKIO_;
         onBuilt();
         return result;
       }
@@ -794,28 +773,28 @@ public final class BlessingActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.BlessingActivityDetailInfoOuterClass.BlessingActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getHLGJOMHPMDA() != 0) {
-          setHLGJOMHPMDA(other.getHLGJOMHPMDA());
+        internalGetMutableFHPCJDBDAPC().mergeFrom(
+            other.internalGetFHPCJDBDAPC());
+        if (other.getEGBKCDHJCCL() != 0) {
+          setEGBKCDHJCCL(other.getEGBKCDHJCCL());
         }
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
+        }
+        if (other.getMAKGFHFHLME() != 0) {
+          setMAKGFHFHLME(other.getMAKGFHFHLME());
         }
         if (other.getNextRefreshTime() != 0) {
           setNextRefreshTime(other.getNextRefreshTime());
         }
-        if (other.getPpbchanjknf() != 0) {
-          setPpbchanjknf(other.getPpbchanjknf());
+        if (other.getPPBCHANJKNF() != 0) {
+          setPPBCHANJKNF(other.getPPBCHANJKNF());
         }
-        if (other.getIsActivated() != false) {
-          setIsActivated(other.getIsActivated());
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
         }
-        internalGetMutablePicNumMap().mergeFrom(
-            other.internalGetPicNumMap());
-        if (other.getDKHOJDNIKGN() != 0) {
-          setDKHOJDNIKGN(other.getDKHOJDNIKGN());
-        }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
+        if (other.getDHEGCNBIKIO() != false) {
+          setDHEGCNBIKIO(other.getDHEGCNBIKIO());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -847,255 +826,100 @@ public final class BlessingActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int hLGJOMHPMDA_ ;
-      /**
-       * <code>uint32 HLGJOMHPMDA = 1;</code>
-       * @return The hLGJOMHPMDA.
-       */
-      @java.lang.Override
-      public int getHLGJOMHPMDA() {
-        return hLGJOMHPMDA_;
-      }
-      /**
-       * <code>uint32 HLGJOMHPMDA = 1;</code>
-       * @param value The hLGJOMHPMDA to set.
-       * @return This builder for chaining.
-       */
-      public Builder setHLGJOMHPMDA(int value) {
-        
-        hLGJOMHPMDA_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 HLGJOMHPMDA = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearHLGJOMHPMDA() {
-        
-        hLGJOMHPMDA_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int nextRefreshTime_ ;
-      /**
-       * <code>uint32 next_refresh_time = 7;</code>
-       * @return The nextRefreshTime.
-       */
-      @java.lang.Override
-      public int getNextRefreshTime() {
-        return nextRefreshTime_;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 7;</code>
-       * @param value The nextRefreshTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextRefreshTime(int value) {
-        
-        nextRefreshTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_refresh_time = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextRefreshTime() {
-        
-        nextRefreshTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int ppbchanjknf_ ;
-      /**
-       * <code>uint32 ppbchanjknf = 9;</code>
-       * @return The ppbchanjknf.
-       */
-      @java.lang.Override
-      public int getPpbchanjknf() {
-        return ppbchanjknf_;
-      }
-      /**
-       * <code>uint32 ppbchanjknf = 9;</code>
-       * @param value The ppbchanjknf to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPpbchanjknf(int value) {
-        
-        ppbchanjknf_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 ppbchanjknf = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPpbchanjknf() {
-        
-        ppbchanjknf_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isActivated_ ;
-      /**
-       * <code>bool is_activated = 11;</code>
-       * @return The isActivated.
-       */
-      @java.lang.Override
-      public boolean getIsActivated() {
-        return isActivated_;
-      }
-      /**
-       * <code>bool is_activated = 11;</code>
-       * @param value The isActivated to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsActivated(boolean value) {
-        
-        isActivated_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_activated = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsActivated() {
-        
-        isActivated_ = false;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> picNumMap_;
+          java.lang.Integer, java.lang.Integer> fHPCJDBDAPC_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetPicNumMap() {
-        if (picNumMap_ == null) {
+      internalGetFHPCJDBDAPC() {
+        if (fHPCJDBDAPC_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              PicNumMapDefaultEntryHolder.defaultEntry);
+              FHPCJDBDAPCDefaultEntryHolder.defaultEntry);
         }
-        return picNumMap_;
+        return fHPCJDBDAPC_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutablePicNumMap() {
+      internalGetMutableFHPCJDBDAPC() {
         onChanged();;
-        if (picNumMap_ == null) {
-          picNumMap_ = com.google.protobuf.MapField.newMapField(
-              PicNumMapDefaultEntryHolder.defaultEntry);
+        if (fHPCJDBDAPC_ == null) {
+          fHPCJDBDAPC_ = com.google.protobuf.MapField.newMapField(
+              FHPCJDBDAPCDefaultEntryHolder.defaultEntry);
         }
-        if (!picNumMap_.isMutable()) {
-          picNumMap_ = picNumMap_.copy();
+        if (!fHPCJDBDAPC_.isMutable()) {
+          fHPCJDBDAPC_ = fHPCJDBDAPC_.copy();
         }
-        return picNumMap_;
+        return fHPCJDBDAPC_;
       }
 
-      public int getPicNumMapCount() {
-        return internalGetPicNumMap().getMap().size();
+      public int getFHPCJDBDAPCCount() {
+        return internalGetFHPCJDBDAPC().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
 
       @java.lang.Override
-      public boolean containsPicNumMap(
+      public boolean containsFHPCJDBDAPC(
           int key) {
-        
-        return internalGetPicNumMap().getMap().containsKey(key);
+
+        return internalGetFHPCJDBDAPC().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getPicNumMapMap()} instead.
+       * Use {@link #getFHPCJDBDAPCMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getPicNumMap() {
-        return getPicNumMapMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getFHPCJDBDAPC() {
+        return getFHPCJDBDAPCMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getPicNumMapMap() {
-        return internalGetPicNumMap().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getFHPCJDBDAPCMap() {
+        return internalGetFHPCJDBDAPC().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
       @java.lang.Override
 
-      public int getPicNumMapOrDefault(
+      public int getFHPCJDBDAPCOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetPicNumMap().getMap();
+            internalGetFHPCJDBDAPC().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
       @java.lang.Override
 
-      public int getPicNumMapOrThrow(
+      public int getFHPCJDBDAPCOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetPicNumMap().getMap();
+            internalGetFHPCJDBDAPC().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearPicNumMap() {
-        internalGetMutablePicNumMap().getMutableMap()
+      public Builder clearFHPCJDBDAPC() {
+        internalGetMutableFHPCJDBDAPC().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
 
-      public Builder removePicNumMap(
+      public Builder removeFHPCJDBDAPC(
           int key) {
-        
-        internalGetMutablePicNumMap().getMutableMap()
+
+        internalGetMutableFHPCJDBDAPC().getMutableMap()
             .remove(key);
         return this;
       }
@@ -1104,90 +928,214 @@ public final class BlessingActivityDetailInfoOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutablePicNumMap() {
-        return internalGetMutablePicNumMap().getMutableMap();
+      getMutableFHPCJDBDAPC() {
+        return internalGetMutableFHPCJDBDAPC().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
-      public Builder putPicNumMap(
+      public Builder putFHPCJDBDAPC(
           int key,
           int value) {
-        
-        
-        internalGetMutablePicNumMap().getMutableMap()
+
+        internalGetMutableFHPCJDBDAPC().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; pic_num_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; FHPCJDBDAPC = 16;</code>
        */
 
-      public Builder putAllPicNumMap(
+      public Builder putAllFHPCJDBDAPC(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutablePicNumMap().getMutableMap()
+        internalGetMutableFHPCJDBDAPC().getMutableMap()
             .putAll(values);
         return this;
       }
 
-      private int dKHOJDNIKGN_ ;
+      private int eGBKCDHJCCL_ ;
       /**
-       * <code>uint32 DKHOJDNIKGN = 13;</code>
-       * @return The dKHOJDNIKGN.
+       * <code>uint32 EGBKCDHJCCL = 5;</code>
+       * @return The eGBKCDHJCCL.
        */
       @java.lang.Override
-      public int getDKHOJDNIKGN() {
-        return dKHOJDNIKGN_;
+      public int getEGBKCDHJCCL() {
+        return eGBKCDHJCCL_;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 13;</code>
-       * @param value The dKHOJDNIKGN to set.
+       * <code>uint32 EGBKCDHJCCL = 5;</code>
+       * @param value The eGBKCDHJCCL to set.
        * @return This builder for chaining.
        */
-      public Builder setDKHOJDNIKGN(int value) {
-        
-        dKHOJDNIKGN_ = value;
+      public Builder setEGBKCDHJCCL(int value) {
+
+        eGBKCDHJCCL_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 DKHOJDNIKGN = 13;</code>
+       * <code>uint32 EGBKCDHJCCL = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDKHOJDNIKGN() {
-        
-        dKHOJDNIKGN_ = 0;
+      public Builder clearEGBKCDHJCCL() {
+
+        eGBKCDHJCCL_ = 0;
         onChanged();
         return this;
       }
 
       private int contentCloseTime_ ;
-      /**
-       * <code>uint32 content_close_time = 14;</code>
-       * @return The contentCloseTime.
-       */
+
       @java.lang.Override
       public int getContentCloseTime() {
         return contentCloseTime_;
       }
-      /**
-       * <code>uint32 content_close_time = 14;</code>
-       * @param value The contentCloseTime to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setContentCloseTime(int value) {
-        
+
         contentCloseTime_ = value;
         onChanged();
         return this;
       }
+
+      public Builder clearContentCloseTime() {
+
+        contentCloseTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mAKGFHFHLME_ ;
       /**
-       * <code>uint32 content_close_time = 14;</code>
+       * <code>uint32 MAKGFHFHLME = 8;</code>
+       * @return The mAKGFHFHLME.
+       */
+      @java.lang.Override
+      public int getMAKGFHFHLME() {
+        return mAKGFHFHLME_;
+      }
+      /**
+       * <code>uint32 MAKGFHFHLME = 8;</code>
+       * @param value The mAKGFHFHLME to set.
        * @return This builder for chaining.
        */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
+      public Builder setMAKGFHFHLME(int value) {
+
+        mAKGFHFHLME_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 MAKGFHFHLME = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMAKGFHFHLME() {
+
+        mAKGFHFHLME_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int nextRefreshTime_ ;
+
+      @java.lang.Override
+      public int getNextRefreshTime() {
+        return nextRefreshTime_;
+      }
+
+      public Builder setNextRefreshTime(int value) {
+
+        nextRefreshTime_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearNextRefreshTime() {
+
+        nextRefreshTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pPBCHANJKNF_ ;
+      /**
+       * <code>uint32 PPBCHANJKNF = 9;</code>
+       * @return The pPBCHANJKNF.
+       */
+      @java.lang.Override
+      public int getPPBCHANJKNF() {
+        return pPBCHANJKNF_;
+      }
+      /**
+       * <code>uint32 PPBCHANJKNF = 9;</code>
+       * @param value The pPBCHANJKNF to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPPBCHANJKNF(int value) {
+
+        pPBCHANJKNF_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PPBCHANJKNF = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPPBCHANJKNF() {
+
+        pPBCHANJKNF_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isContentClosed_ ;
+
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+
+      public Builder setIsContentClosed(boolean value) {
+
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearIsContentClosed() {
+
+        isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean dHEGCNBIKIO_ ;
+      /**
+       * <code>bool DHEGCNBIKIO = 12;</code>
+       * @return The dHEGCNBIKIO.
+       */
+      @java.lang.Override
+      public boolean getDHEGCNBIKIO() {
+        return dHEGCNBIKIO_;
+      }
+      /**
+       * <code>bool DHEGCNBIKIO = 12;</code>
+       * @param value The dHEGCNBIKIO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDHEGCNBIKIO(boolean value) {
+
+        dHEGCNBIKIO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool DHEGCNBIKIO = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDHEGCNBIKIO() {
+
+        dHEGCNBIKIO_ = false;
         onChanged();
         return this;
       }
@@ -1202,7 +1150,6 @@ public final class BlessingActivityDetailInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:BlessingActivityDetailInfo)
     }
@@ -1246,14 +1193,14 @@ public final class BlessingActivityDetailInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_BlessingActivityDetailInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_BlessingActivityDetailInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_BlessingActivityDetailInfo_PicNumMapEntry_descriptor;
-  private static final 
+    internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_descriptor;
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_BlessingActivityDetailInfo_PicNumMapEntry_fieldAccessorTable;
+      internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1263,17 +1210,16 @@ public final class BlessingActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n BlessingActivityDetailInfo.proto\"\266\002\n\032B" +
-      "lessingActivityDetailInfo\022\023\n\013HLGJOMHPMDA" +
-      "\030\001 \001(\r\022\031\n\021is_content_closed\030\005 \001(\010\022\031\n\021nex" +
-      "t_refresh_time\030\007 \001(\r\022\023\n\013ppbchanjknf\030\t \001(" +
-      "\r\022\024\n\014is_activated\030\013 \001(\010\022?\n\013pic_num_map\030\014" +
-      " \003(\0132*.BlessingActivityDetailInfo.PicNum" +
-      "MapEntry\022\023\n\013DKHOJDNIKGN\030\r \001(\r\022\032\n\022content" +
-      "_close_time\030\016 \001(\r\0320\n\016PicNumMapEntry\022\013\n\003k" +
-      "ey\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001BA\n\031emu.grass" +
-      "cutter.net.protoB$BlessingActivityDetail" +
-      "InfoOuterClassb\006proto3"
+      "\n BlessingActivityDetailInfo.proto\"\271\002\n\032B" +
+      "lessingActivityDetailInfo\022A\n\013FHPCJDBDAPC" +
+      "\030\020 \003(\0132,.BlessingActivityDetailInfo.FHPC" +
+      "JDBDAPCEntry\022\023\n\013EGBKCDHJCCL\030\005 \001(\r\022\032\n\022con" +
+      "tent_close_time\030\017 \001(\r\022\023\n\013MAKGFHFHLME\030\010 \001" +
+      "(\r\022\031\n\021next_refresh_time\030\013 \001(\r\022\023\n\013PPBCHAN" +
+      "JKNF\030\t \001(\r\022\031\n\021is_content_closed\030\001 \001(\010\022\023\n" +
+      "\013DHEGCNBIKIO\030\014 \001(\010\0322\n\020FHPCJDBDAPCEntry\022\013" +
+      "\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1284,12 +1230,12 @@ public final class BlessingActivityDetailInfoOuterClass {
     internal_static_BlessingActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BlessingActivityDetailInfo_descriptor,
-        new java.lang.String[] { "HLGJOMHPMDA", "IsContentClosed", "NextRefreshTime", "Ppbchanjknf", "IsActivated", "PicNumMap", "DKHOJDNIKGN", "ContentCloseTime", });
-    internal_static_BlessingActivityDetailInfo_PicNumMapEntry_descriptor =
+        new java.lang.String[] { "FHPCJDBDAPC", "EGBKCDHJCCL", "ContentCloseTime", "MAKGFHFHLME", "NextRefreshTime", "PPBCHANJKNF", "IsContentClosed", "DHEGCNBIKIO", });
+    internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_descriptor =
       internal_static_BlessingActivityDetailInfo_descriptor.getNestedTypes().get(0);
-    internal_static_BlessingActivityDetailInfo_PicNumMapEntry_fieldAccessorTable = new
+    internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_BlessingActivityDetailInfo_PicNumMapEntry_descriptor,
+        internal_static_BlessingActivityDetailInfo_FHPCJDBDAPCEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

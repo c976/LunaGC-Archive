@@ -95,8 +95,8 @@ public final class BargainRecord {
         return BargainSnapshot.newBuilder()
                 .setBargainId(this.getBargainId())
                 .setCurMood(this.getCurrentMood())
-                .setBalopachcdb(this.getExpectedPrice())
-                .setIocnpjjnhld(this.getLowestPrice())
+                .setBALOPACHCDB(this.getExpectedPrice())
+                .setIOCNPJJNHLD(this.getLowestPrice())
                 .build();
     }
 }

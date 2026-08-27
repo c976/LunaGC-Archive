@@ -114,13 +114,6 @@
       "need_target_online": "Ta komenda wymaga ID gracza, który jest online, ale bieżący gracz docelowy jest w trybie offline. Dodaj inny argument <@ID> lub ustaw ID gracza na stałe dla każdej kolejnej komendy poleceniem \"set_target @ID\".",
       "need_target_offline": "Ta komenda wymaga ID gracza, który jest offline, ale bieżący gracz docelowy jest w trybie online. Dodaj inny argument <@ID> lub ustaw ID gracza na stałe dla każdej kolejnej komendy poleceniem \"set_target @ID\"."
     },
-    "name": {
-      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
-      "success": "Nickname updated (%s characters stored).",
-      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
-      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
-      "too_long": "Text is too long for a gradient. Maximum %s characters."
-    },
     "status": {
       "enabled": "Włączone",
       "disabled": "Wyłączone",
@@ -375,20 +368,6 @@
       "avatar_not_found": "Awatar o ID \"%d\" nie istnieje.",
       "description": "Modyfikuj zespół wybranego gracza."
     },
-    "teapot": {
-      "description": "Manipuluj funkcjami garnka Serenitea. \n\tWartości dla setLevel<1-10> \n\tWartości dla unlockModule<1-4> \n\tWartości dla lockModule<1-4> \n\tWartości dla giveAllFurniture<liczba> \n\tWartości dla odświeżeniaLimitedShop<brak >",
-      "level_range_error": "Poziom puli Serenitea musi wynosić od 1 do 10.",
-      "level_success": "Poziom puli Serenitea ustawiony na %s.",
-      "invalid_param": "Niewłaściwy parametr.",
-      "module_sumeru_error": "Moduł Sumeru nie jest obecnie obsługiwany.",
-      "module_range_error": "Numer modułu musi zawierać się w przedziale od 1 do 4.",
-      "unlock_module_contain_error": "Moduł już odblokowany.",
-      "unlock_module_success": "Odblokowany moduł %s.",
-      "lock_module_in_scene_error": "Nie można zablokować aktywnego modułu.",
-      "lock_module_contain_error": "Moduł nie istnieje.",
-      "lock_module_success": "Zablokowany moduł %s.",
-      "give_furniture_success": "Dał wszystkie meble."
-    },
     "teleportAll": {
       "success": "Przyzwano wszystkich graczy do wybranego gracza.",
       "error": "Możesz użyć tej komendy wyłącznie w trybie MP.",
@@ -492,12 +471,6 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
-    }
-  },
-  "mail": {
-    "birthday": {
-      "title": "Happy Birthday!",
-      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

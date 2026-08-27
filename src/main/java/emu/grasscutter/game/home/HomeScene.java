@@ -36,8 +36,6 @@ public class HomeScene extends Scene {
     @Override
     public void setPaused(boolean paused) {}
 
-    private long lastHomeTimeNotify = 0;
-
     @Override
     public void onTick() {
         this.getEntities()
@@ -45,12 +43,7 @@ public class HomeScene extends Scene {
                 .forEach(gameEntity -> gameEntity.onTick(this.getSceneTimeSeconds()));
 
         this.finishLoading();
-        this.tickCount++;
-        var now = System.currentTimeMillis();
-        if (now - this.lastHomeTimeNotify >= 10_000L) {
-            this.lastHomeTimeNotify = now;
-            this.broadcastPacket(new PacketSceneTimeNotify(this));
-        }
+        if (this.tickCount++ % 10 == 0) this.broadcastPacket(new PacketSceneTimeNotify(this));
     }
 
     public void onEnterEditModeFinish() {

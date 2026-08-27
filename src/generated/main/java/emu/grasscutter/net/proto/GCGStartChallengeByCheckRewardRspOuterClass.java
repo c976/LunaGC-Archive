@@ -113,17 +113,17 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 48: {
+            case 40: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 56: {
 
               configId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 112: {
 
               retcode_ = input.readInt32();
               break;
@@ -191,7 +191,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
     }
     private int jHKIIFBAHMCMemoizedSerializedSize = -1;
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 6;
+    public static final int LEVEL_ID_FIELD_NUMBER = 5;
     private int levelId_;
 
     @java.lang.Override
@@ -199,7 +199,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       return levelId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 15;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
 
     @java.lang.Override
@@ -207,7 +207,7 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       return retcode_;
     }
 
-    public static final int CONFIG_ID_FIELD_NUMBER = 4;
+    public static final int CONFIG_ID_FIELD_NUMBER = 7;
     private int configId_;
 
     @java.lang.Override
@@ -238,13 +238,13 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
         output.writeUInt32NoTag(jHKIIFBAHMC_.getInt(i));
       }
       if (levelId_ != 0) {
-        output.writeUInt32(6, levelId_);
+        output.writeUInt32(5, levelId_);
       }
       if (configId_ != 0) {
-        output.writeUInt32(4, configId_);
+        output.writeUInt32(7, configId_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -271,15 +271,15 @@ public final class GCGStartChallengeByCheckRewardRspOuterClass {
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, levelId_);
+          .computeUInt32Size(5, levelId_);
       }
       if (configId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, configId_);
+          .computeUInt32Size(7, configId_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

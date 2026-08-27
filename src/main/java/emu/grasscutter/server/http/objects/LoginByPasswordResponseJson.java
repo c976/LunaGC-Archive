@@ -18,7 +18,6 @@ public class LoginByPasswordResponseJson {
     public static class TokenData {
         public int token_type;
         public String token;
-        public int expires_in = 2592000;
     }
 
     public static class UserInfoData {

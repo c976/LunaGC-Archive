@@ -138,9 +138,7 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
     public boolean addItem(GameItem item, ActionReason reason, boolean forceNotify) {
         boolean result = addItem(item);
 
-        // putItem() bails out on a null itemData, so an unknown item id gets this far with none.
-        var itemData = item.getItemData();
-        if (itemData != null && itemData.getMaterialType() == MaterialType.MATERIAL_AVATAR) {
+        if (item.getItemData().getMaterialType() == MaterialType.MATERIAL_AVATAR) {
             getPlayer()
                     .sendPacket(
                             new PacketAddNoGachaAvatarCardNotify(
@@ -239,12 +237,6 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
                             WatcherTriggerType.TRIGGER_OBTAIN_MATERIAL_NUM,
                             result.getItemId(),
                             result.getCount());
-            getPlayer()
-                    .getActivityManager()
-                    .triggerWatcher(
-                            WatcherTriggerType.TRIGGER_OBTAIN_MATERIAL_NUM,
-                            String.valueOf(result.getItemId()),
-                            String.valueOf(result.getCount()));
             getPlayer()
                     .getQuestManager()
                     .queueEvent(
@@ -585,8 +577,6 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
             return false;
         }
 
-        int countBefore = item.getCount();
-
         if (item.getItemData().isEquip()) {
             item.setCount(0);
         } else {
@@ -608,9 +598,7 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
         }
 
         // Battle pass trigger
-        // Must be measured against the count from before the removal, otherwise this reports the
-        // leftover stack size (or a negative number) instead of how many were actually taken.
-        int removeCount = Math.min(count, countBefore);
+        int removeCount = Math.min(count, item.getCount());
         this.triggerRemItemEvents(item, removeCount);
 
         // Update in db

@@ -78,8 +78,6 @@ public class Scene {
     private Set<SceneNpcBornEntry> npcBornEntrySet;
     @Getter private boolean finishedLoading = false;
     @Getter protected int tickCount = 0;
-    private long lastTimeNotify = 0;
-    private long lastStreamCheck = 0;
     @Getter private boolean isPaused = false;
 
     private final List<Runnable> afterLoadedCallbacks = new ArrayList<>();
@@ -446,17 +444,8 @@ public class Scene {
         ElementType attackType = ElementType.getTypeByValue(result.getElementType());
 
         if (target == null) {
-            // 6000 lines of this in a single session, each one dumping a proto for a hit that was
-            // going nowhere anyway. Behind isDebugEnabled so the dump is not built when unwanted.
-            var logger = Grasscutter.getLogger();
-            if (logger.isDebugEnabled()) {
-                logger.debug(
-                        "handleAttack: target not found defenseId={} attackerId={} damage={} unknownFields={}",
-                        result.getDefenseId(),
-                        result.getAttackerId(),
-                        result.getDamage(),
-                        result.getUnknownFields().toString().replaceAll("\\s+", " "));
-            }
+            Grasscutter.getLogger().info("handleAttack: target not found defenseId={} attackerId={} damage={}", result.getDefenseId(), result.getAttackerId(), result.getDamage());
+            Grasscutter.getLogger().info("handleAttack unknownFields (defense_id = the monster entityId): {}", result.getUnknownFields().toString().replaceAll("\\s+", " "));
             return;
         }
         if (target instanceof EntityAvatar) {
@@ -568,18 +557,6 @@ public class Scene {
 
         this.broadcastPacket(new PacketLifeStateChangeNotify(attackerId, target, LifeState.LIFE_DEAD));
 
-        // Activity watchers count kills. The attacker may be a summon or a client gadget, so credit
-        // the avatar that actually owns it rather than the entity that landed the hit.
-        if (target instanceof EntityMonster killed
-                && (attacker != null ? attacker.getTrueOwner() : null)
-                        instanceof EntityAvatar avatarAttacker) {
-            var monsterId = String.valueOf(killed.getMonsterData().getId());
-            var activityManager = avatarAttacker.getPlayer().getActivityManager();
-            activityManager.triggerWatcher(WatcherTriggerType.TRIGGER_BATTLE_FOR_MONSTER_DIE_OR, monsterId);
-            activityManager.triggerWatcher(
-                    WatcherTriggerType.TRIGGER_KILL_MONSTERS_WITHOUT_VEHICLE, monsterId);
-        }
-
         var world = this.getWorld();
         if (target instanceof EntityMonster monster && this.getSceneType() != SceneType.SCENE_DUNGEON) {
             if (monster.getMetaMonster() != null
@@ -610,15 +587,6 @@ public class Scene {
         }
 
         target.onDeath(attackerId);
-
-        // A commission that asks for kills counts them here, by the group the monster belongs to.
-        if (target instanceof EntityMonster monster) {
-            var host = this.getWorld().getHost();
-            if (host != null && host.getDailyTaskManager() != null) {
-                host.getDailyTaskManager().onMonsterDeath(this, monster.getGroupId());
-            }
-        }
-
         this.triggerDungeonEvent(
                 DungeonPassConditionType.DUNGEON_COND_KILL_MONSTER_COUNT, ++killedMonsterCount);
     }
@@ -631,93 +599,46 @@ public class Scene {
             return;
         }
 
-        // Every stage stands on its own. A scene whose scripts are incomplete used to throw on the
-        // way in and never reach the entity loop below, so nothing in the scene moved, died or
-        // despawned - and the player was left in a world that had quietly stopped.
-        if (!isPaused) stage("the scheduler", () -> this.getScheduler().runTasks());
-
-        // Streaming does not need the full tick rate - it answers "which groups are near the
-        // player", and a player cannot outrun half a second of it. The timers and triggers below
-        // do need it, which is why only this part is throttled.
-        var nowMs = System.currentTimeMillis();
-        if (nowMs - this.lastStreamCheck >= 500L) {
-            this.lastStreamCheck = nowMs;
-            stage(
-                "loading groups",
-                () -> {
-                    // checkSpawns is the fallback for scenes that have no scripts, so it must not
-                    // run while the scripts are merely still loading - init() runs on its own
-                    // thread, and every spawn in Spawns.json/GadgetSpawns.json belongs to a scene
-                    // that does have scripts. Spawning during that window duplicated those
-                    // monsters and gadgets against the scripted copies, and nothing cleaned the
-                    // extras up: checkSpawns owns the removal pass, and it stops running the
-                    // moment checkGroups takes over.
-                    if (this.getScriptManager().isInit()) this.checkGroups();
-                    else if (this.getScriptManager().isInitAttempted()) this.checkSpawns();
-                });
+        if (!isPaused) {
+            this.getScheduler().runTasks();
         }
 
-        stage("checking regions", () -> this.scriptManager.checkRegions());
+        if (this.getScriptManager().isInit()) {
 
-        if (challenge != null) stage("the challenge timer", () -> challenge.onCheckTimeOut());
+            this.checkGroups();
+        } else {
+
+            this.checkSpawns();
+        }
+
+        this.scriptManager.checkRegions();
+
+        if (challenge != null) {
+            challenge.onCheckTimeOut();
+        }
 
         var sceneTime = getSceneTimeSeconds();
 
-        // getEntities() is already concurrent, so it is iterated in place rather than copied
-        // wholesale every tick - at a 200ms tick that copy was the scene's largest allocation.
-        this.getEntities()
-                .forEach(
-                        (eid, e) ->
-                                stage(
-                                        "an entity's tick",
-                                        () -> {
-                                            if (!e.isAlive()) this.getEntities().remove(eid);
-                                            else e.onTick(sceneTime);
-                                        }));
-
-        stage("the blossoms", () -> blossomManager.onTick());
-
-        stage(
-                "the tower",
-                () -> {
-                    // Ticked with nobody here this used to walk off the end of an empty list.
-                    var host = this.players.isEmpty() ? null : this.players.get(0);
-                    var towerManager = host != null ? host.getTowerManager() : null;
-                    if (towerManager != null && towerManager.isInProgress()) towerManager.onTick();
+        var entities = Map.copyOf(this.getEntities());
+        entities.forEach(
+                (eid, e) -> {
+                    if (!e.isAlive()) {
+                        this.getEntities().remove(eid);
+                    } else e.onTick(sceneTime);
                 });
 
-        stage("the npc groups", this::checkNpcGroup);
-        stage("finishing loading", this::finishLoading);
-        stage("respawning players", this::checkPlayerRespawn);
+        blossomManager.onTick();
 
-        this.tickCount++;
-        var now = System.currentTimeMillis();
-        if (now - this.lastTimeNotify >= 10_000L) {
-            this.lastTimeNotify = now;
-            stage("the time notify", () -> this.broadcastPacket(new PacketSceneTimeNotify(this)));
+        var towerManager = getPlayers().get(0).getTowerManager();
+        if (towerManager != null && towerManager.isInProgress()) {
+            towerManager.onTick();
         }
-    }
 
-    /** Stages of a tick already reported as failing, so the log says each one once. */
-    private final Set<String> reportedStages = ConcurrentHashMap.newKeySet();
+        this.checkNpcGroup();
 
-    /**
-     * Runs one stage of the tick, keeping a failure in it from stopping the others.
-     *
-     * <p>Reported once per stage per scene: a scene that throws does it every second, and the log is
-     * more useful with one copy of the reason than three thousand.
-     */
-    private void stage(String name, Runnable body) {
-        try {
-            body.run();
-        } catch (Throwable e) {
-            if (this.reportedStages.add(name)) {
-                Grasscutter.getLogger()
-                        .error("Scene {} threw during {}; the rest of the tick still ran.", this.getId(), name, e);
-            } else {
-                Grasscutter.getLogger().debug("Scene {} threw during {} again.", this.getId(), name, e);
-            }
-        }
+        this.finishLoading();
+        this.checkPlayerRespawn();
+        if (this.tickCount++ % 10 == 0) this.broadcastPacket(new PacketSceneTimeNotify(this));
     }
 
     protected void checkPlayerRespawn() {
@@ -1158,14 +1079,6 @@ public class Scene {
     }
 
     public void unloadGroup(SceneBlock block, int group_id) {
-        // Callers resolve the block via getBlocks().get(...), which yields null for a group whose
-        // block was never loaded (dynamic groups in particular). Nothing below can run without it.
-        if (block == null) {
-            Grasscutter.getLogger()
-                    .debug("unloadGroup: no block for group {} in scene {}", group_id, this.getId());
-            return;
-        }
-
         List<GameEntity> toRemove =
                 this.getEntities().values().stream()
                         .filter(e -> e != null && (e.getBlockId() == block.id && e.getGroupId() == group_id))
@@ -1177,13 +1090,7 @@ public class Scene {
                     new PacketSceneEntityDisappearNotify(toRemove, VisionType.VisionType_VISION_REMOVE));
         }
 
-        // block.groups stays null until the block is actually loaded from script.
-        var group = block.groups == null ? null : block.groups.get(group_id);
-        if (group == null) {
-            Grasscutter.getLogger()
-                    .debug("unloadGroup: group {} is not part of block {}", group_id, block.id);
-            return;
-        }
+        var group = block.groups.get(group_id);
         if (group.triggers != null) {
             group.triggers.values().forEach(getScriptManager()::deregisterTrigger);
         }
@@ -1194,17 +1101,13 @@ public class Scene {
             challenge.fail();
         }
 
-        // The per-block set is dropped from the map once it empties (below), so a later unload
-        // targeting the same block finds no entry at all.
-        var blockGroups = scriptManager.getLoadedGroupSetPerBlock().get(block.id);
-        if (blockGroups != null) {
-            blockGroups.remove(group);
-            if (blockGroups.isEmpty()) {
-                this.scriptManager.getLoadedGroupSetPerBlock().remove(block.id);
-                Grasscutter.getLogger().trace("Scene {} block {} is unloaded.", this.getId(), block.id);
-            }
-        }
+        scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
         this.loadedGroups.remove(group);
+
+        if (this.scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {
+            this.scriptManager.getLoadedGroupSetPerBlock().remove(block.id);
+            Grasscutter.getLogger().trace("Scene {} block {} is unloaded.", this.getId(), block.id);
+        }
 
         this.broadcastPacket(new PacketGroupUnloadNotify(List.of(group_id)));
         this.scriptManager.unregisterGroup(group);

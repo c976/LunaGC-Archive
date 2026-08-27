@@ -19,12 +19,17 @@ public final class DungeonShowReminderNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 reminder_id = 8;</code>
+     * <code>uint32 reminder_id = 13;</code>
      * @return The reminderId.
      */
     int getReminderId();
   }
   /**
+   * <pre>
+   * CmdId: 7524
+   * Obf: LLKABFDGMBI
+   * </pre>
+   *
    * Protobuf type {@code DungeonShowReminderNotify}
    */
   public static final class DungeonShowReminderNotify extends
@@ -109,7 +114,7 @@ public final class DungeonShowReminderNotifyOuterClass {
     public static final int REMINDER_ID_FIELD_NUMBER = 8;
     private int reminderId_;
     /**
-     * <code>uint32 reminder_id = 8;</code>
+     * <code>uint32 reminder_id = 13;</code>
      * @return The reminderId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class DungeonShowReminderNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7524
+     * Obf: LLKABFDGMBI
+     * </pre>
+     *
      * Protobuf type {@code DungeonShowReminderNotify}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class DungeonShowReminderNotifyOuterClass {
 
       private int reminderId_ ;
       /**
-       * <code>uint32 reminder_id = 8;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @return The reminderId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class DungeonShowReminderNotifyOuterClass {
         return reminderId_;
       }
       /**
-       * <code>uint32 reminder_id = 8;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @param value The reminderId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class DungeonShowReminderNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 reminder_id = 8;</code>
+       * <code>uint32 reminder_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearReminderId() {
@@ -517,9 +527,8 @@ public final class DungeonShowReminderNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037DungeonShowReminderNotify.proto\"0\n\031Dun" +
-      "geonShowReminderNotify\022\023\n\013reminder_id\030\010 " +
-      "\001(\rB@\n\031emu.grasscutter.net.protoB#Dungeo" +
-      "nShowReminderNotifyOuterClassb\006proto3"
+      "geonShowReminderNotify\022\023\n\013reminder_id\030\r " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

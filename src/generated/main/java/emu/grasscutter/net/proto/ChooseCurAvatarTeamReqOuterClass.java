@@ -18,13 +18,13 @@ public final class ChooseCurAvatarTeamReqOuterClass {
       // @@protoc_insertion_point(interface_extends:ChooseCurAvatarTeamReq)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 team_id = 3;</code>
-     * @return The teamId.
-     */
     int getTeamId();
   }
   /**
+   * <pre>
+   * CmdId: 6643
+   * </pre>
+   *
    * Protobuf type {@code ChooseCurAvatarTeamReq}
    */
   public static final class ChooseCurAvatarTeamReq extends
@@ -108,10 +108,7 @@ public final class ChooseCurAvatarTeamReqOuterClass {
 
     public static final int TEAM_ID_FIELD_NUMBER = 3;
     private int teamId_;
-    /**
-     * <code>uint32 team_id = 3;</code>
-     * @return The teamId.
-     */
+
     @java.lang.Override
     public int getTeamId() {
       return teamId_;
@@ -273,6 +270,10 @@ public final class ChooseCurAvatarTeamReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 6643
+     * </pre>
+     *
      * Protobuf type {@code ChooseCurAvatarTeamReq}
      */
     public static final class Builder extends
@@ -420,31 +421,21 @@ public final class ChooseCurAvatarTeamReqOuterClass {
       }
 
       private int teamId_ ;
-      /**
-       * <code>uint32 team_id = 3;</code>
-       * @return The teamId.
-       */
+
       @java.lang.Override
       public int getTeamId() {
         return teamId_;
       }
-      /**
-       * <code>uint32 team_id = 3;</code>
-       * @param value The teamId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setTeamId(int value) {
-        
+
         teamId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 team_id = 3;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearTeamId() {
-        
+
         teamId_ = 0;
         onChanged();
         return this;
@@ -460,7 +451,6 @@ public final class ChooseCurAvatarTeamReqOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:ChooseCurAvatarTeamReq)
     }
@@ -504,7 +494,7 @@ public final class ChooseCurAvatarTeamReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ChooseCurAvatarTeamReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ChooseCurAvatarTeamReq_fieldAccessorTable;
 
@@ -517,9 +507,8 @@ public final class ChooseCurAvatarTeamReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034ChooseCurAvatarTeamReq.proto\")\n\026Choose" +
-      "CurAvatarTeamReq\022\017\n\007team_id\030\003 \001(\rB=\n\031emu" +
-      ".grasscutter.net.protoB ChooseCurAvatarT" +
-      "eamReqOuterClassb\006proto3"
+      "CurAvatarTeamReq\022\017\n\007team_id\030\005 \001(\rB\033\n\031emu" +
+      ".grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

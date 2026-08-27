@@ -114,13 +114,6 @@
       "need_target_online": "このコマンドにはオンラインのターゲット UID が必要ですが、現在のターゲットはオフラインです。 別の <@UID> 引数を追加するか、/target @UID で永続的なターゲットを設定してください。",
       "need_target_offline": "このコマンドにはオフラインのターゲット UID が必要ですが、現在のターゲットはオンラインです。 別の <@UID> 引数を追加するか、/target @UID で永続的なターゲットを設定してください。"
     },
-    "name": {
-      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
-      "success": "Nickname updated (%s characters stored).",
-      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
-      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
-      "too_long": "Text is too long for a gradient. Maximum %s characters."
-    },
     "status": {
       "enabled": "有効",
       "disabled": "無効",
@@ -375,20 +368,6 @@
       "avatar_not_found": "キャラ %s が見つかりません。",
       "description": "チームを手動で変更します。"
     },
-    "teapot": {
-      "description": "尘歌壶の機能を操作します。 \n\tsetLevel<1-10> の値 \n\tunlockModule<1-4> の値 \n\tlockModule<1-4> の値 \n\tgiveAllFurniture<count> の値 \n\trefreshLimitedShop<none の値>",
-      "level_range_error": "尘歌壶のレベルは 1 から 10 の間でなければなりません。",
-      "level_success": "尘歌壶 レベルを %s に設定しました。",
-      "invalid_param": "無効なパラメーター。",
-      "module_sumeru_error": "須彌 モジュールは現在サポートされていません。",
-      "module_range_error": "モジュール番号は 1 から 4 の間でなければなりません。",
-      "unlock_module_contain_error": "モジュールはすでにロック解除されています。",
-      "unlock_module_success": "モジュール %s のロックを解除しました。",
-      "lock_module_in_scene_error": "アクティブなモジュールをロックできません。",
-      "lock_module_contain_error": "モジュールが存在しません。",
-      "lock_module_success": "ロックされたモジュール %s。",
-      "give_furniture_success": "すべての家具を与えた。"
-    },
     "teleportAll": {
       "success": "すべてのプレイヤーをあなたの位置にテレポートさせました。",
       "error": "このコマンドはマルチプレイでのみ使用できます。",
@@ -492,12 +471,6 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
-    }
-  },
-  "mail": {
-    "birthday": {
-      "title": "Happy Birthday!",
-      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

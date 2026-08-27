@@ -125,28 +125,8 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedScenePoints;
     @Getter @Setter private List<Integer> chatEmojiIdList;
 
-    /**
-     * Main quests marked finished for the CLIENT only, with no quest data behind them.
-     *
-     * <p>Region access is quest-gated, and a region released after this server's resource set was
-     * cut has no quest data here - the quest system cannot finish what it does not know about, so
-     * the client keeps the barrier up. These ids are replayed to the client on every login, which is
-     * what makes the unlock survive a relog.
-     */
-    @Getter private Set<Integer> forcedFinishedQuests;
-
-    /** Set the first time the opening cutscene plays, so it never plays twice. */
-    @Getter @Setter private boolean playedFirstLoginCutscene;
-
     @Transient private long nextGuid = 0;
     @Transient @Getter @Setter private int peerId;
-
-    // Fall damage is measured across two packets - the landing speed arrives before the landing.
-    // It lives here rather than on the handler because there is one handler instance for the whole
-    // server, so a shared field would let one player's plunge hurt whoever lands next.
-    @Transient @Getter @Setter private float cachedLandingSpeed = 0;
-    @Transient @Getter @Setter private long cachedLandingTimeMillisecond = 0;
-    @Transient @Getter @Setter private boolean monitorLandingEvent = false;
     @Transient private World world;
     @Transient @Getter @Setter private HomeWorld curHomeWorld;
     @Transient @Getter @Setter private boolean hasSentInitPacketInHome;
@@ -172,7 +152,6 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private transient DeforestationManager deforestationManager;
     @Getter private transient FurnitureManager furnitureManager;
     @Getter private transient BattlePassManager battlePassManager;
-    @Getter private transient emu.grasscutter.game.dailytask.DailyTaskManager dailyTaskManager;
     @Getter private transient CookingManager cookingManager;
     @Getter private transient CookingCompoundManager cookingCompoundManager;
     @Getter private transient ActivityManager activityManager;
@@ -217,7 +196,6 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter @Setter private int nextResinRefresh;
     @Getter @Setter private int resinBuyCount;
     @Getter @Setter private int lastDailyReset;
-    @Getter @Setter private int lastBirthdayMailYear;
     @Getter private transient MpSettingType mpSetting = MpSettingType.MpSettingType_MP_SETTING_ENTER_AFTER_APPLY;
     @Getter private long playerGameTime = 540000;
 
@@ -275,7 +253,6 @@ public class Player implements PlayerHook, FieldFetch {
         this.sceneTags = new HashMap<>();
         this.unlockedSceneAreas = new HashMap<>();
         this.unlockedScenePoints = new HashMap<>();
-        this.forcedFinishedQuests = new HashSet<>();
         this.chatEmojiIdList = new ArrayList<>();
         this.playerProgress = new PlayerProgress();
         this.activeQuestTimers = new HashSet<>();
@@ -1180,12 +1157,6 @@ public class Player implements PlayerHook, FieldFetch {
             .build();
     }
 
-    /** Loaded the same way the battle pass is, since both are per player and persisted. */
-    public void loadDailyTaskManager() {
-        if (this.dailyTaskManager != null) return;
-        this.dailyTaskManager = DatabaseHelper.loadDailyTaskManager(this);
-    }
-
     public void loadBattlePassManager() {
         if (this.battlePassManager != null) return;
         this.battlePassManager = DatabaseHelper.loadBattlePass(this);
@@ -1279,11 +1250,7 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getSatiationManager().reduceSatiation();
 
-        // A player who has not been through onLogin has no home yet, and this used to throw on
-        // every tick, taking the quest tick below down with it
-        if (this.getHome() != null) {
-            this.getHome().updateHourlyResources(this);
-        }
+        this.getHome().updateHourlyResources(this);
 
         this.getQuestManager().onTick();
     }
@@ -1310,14 +1277,6 @@ public class Player implements PlayerHook, FieldFetch {
         }
 
         this.setResinBuyCount(0);
-
-        BirthdayMailSystem.checkAndSend(this, currentDate);
-
-        if (this.dailyTaskManager != null) {
-            // Asked, not forced: the commissions keep their own record of which day they belong to,
-            // and only draw a new set when the one they are holding is genuinely from an older one.
-            this.dailyTaskManager.resetDailyTasksForNewDay();
-        }
 
         this.setLastDailyReset(currentTime);
     }
@@ -1360,11 +1319,6 @@ public class Player implements PlayerHook, FieldFetch {
         runner.submit(this.getQuestManager()::loadFromDatabase);
 
         runner.submit(this::loadBattlePassManager);
-        runner.submit(
-                () -> {
-                    this.loadDailyTaskManager();
-                    this.dailyTaskManager.onPlayerLogin();
-                });
 
         Utils.waitFor(() ->
             this.getAvatars().isLoaded() &&
@@ -1375,11 +1329,9 @@ public class Player implements PlayerHook, FieldFetch {
 
     public void onLogin() {
 
-        // Union the defaults in on every login, not just when the player has none. A save made
-        // against an older resource set keeps its old tag set for good otherwise, and a scene tag
-        // is what picks which variant of a map the client loads - an account missing the newer
-        // default tags loads the pre-prologue Mondstadt and replays the opening Paimon talk.
-        this.applyStartingSceneTags();
+        if (this.getSceneTags().isEmpty() || this.getSceneTags() == null) {
+            this.applyStartingSceneTags();
+        }
 
         if (GameHome.HOME_SCENE_IDS.contains(this.getSceneId())) {
             this.setSceneId(this.prevScene <= 0 ? 3 : this.prevScene);
@@ -1408,18 +1360,6 @@ public class Player implements PlayerHook, FieldFetch {
         this.getProgressManager().onPlayerLogin();
 
         session.send(new PacketFinishedParentQuestNotify(this));
-        // The client replays the opening cutscene for as long as it believes the prologue is
-        // unplayed, and it decides that for itself - no server cutscene setting reaches it. Saying
-        // every main quest is finished is the only lever there is.
-        if (emu.grasscutter.config.Configuration.GAME_OPTIONS.forceFinishMainQuestsOnLogin) {
-            emu.grasscutter.game.quest.ForcedQuests.apply(
-                    this, emu.grasscutter.game.quest.ForcedQuests.allMainQuests());
-        }
-        // Replayed every login: these have no server-side quest data, so nothing else would tell
-        // the client about them and the region would lock itself again.
-        if (this.forcedFinishedQuests != null && !this.forcedFinishedQuests.isEmpty()) {
-            emu.grasscutter.game.quest.ForcedQuests.notify(this, this.forcedFinishedQuests);
-        }
         session.send(new PacketBattlePassAllDataNotify(this));
         session.send(new PacketQuestListNotify(this));
         session.send(new PacketQuestGlobalVarNotify(this));

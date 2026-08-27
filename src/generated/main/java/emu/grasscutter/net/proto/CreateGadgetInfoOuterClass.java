@@ -45,6 +45,10 @@ public final class CreateGadgetInfoOuterClass {
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.ChestOrBuilder getChestOrBuilder();
   }
   /**
+   * <pre>
+   * Obf: NDJJNLJIAKO
+   * </pre>
+   *
    * Protobuf type {@code CreateGadgetInfo}
    */
   public static final class CreateGadgetInfo extends
@@ -158,6 +162,10 @@ public final class CreateGadgetInfoOuterClass {
       boolean getIsShowCutscene();
     }
     /**
+     * <pre>
+     * Obf: FGAGBNDOGCB
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo.Chest}
      */
     public static final class Chest extends
@@ -434,6 +442,10 @@ public final class CreateGadgetInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Obf: FGAGBNDOGCB
+       * </pre>
+       *
        * Protobuf type {@code CreateGadgetInfo.Chest}
        */
       public static final class Builder extends
@@ -601,7 +613,7 @@ public final class CreateGadgetInfoOuterClass {
          * @return This builder for chaining.
          */
         public Builder setChestDropId(int value) {
-          
+
           chestDropId_ = value;
           onChanged();
           return this;
@@ -611,7 +623,7 @@ public final class CreateGadgetInfoOuterClass {
          * @return This builder for chaining.
          */
         public Builder clearChestDropId() {
-          
+
           chestDropId_ = 0;
           onChanged();
           return this;
@@ -632,7 +644,7 @@ public final class CreateGadgetInfoOuterClass {
          * @return This builder for chaining.
          */
         public Builder setIsShowCutscene(boolean value) {
-          
+
           isShowCutscene_ = value;
           onChanged();
           return this;
@@ -642,7 +654,7 @@ public final class CreateGadgetInfoOuterClass {
          * @return This builder for chaining.
          */
         public Builder clearIsShowCutscene() {
-          
+
           isShowCutscene_ = false;
           onChanged();
           return this;
@@ -916,6 +928,10 @@ public final class CreateGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: NDJJNLJIAKO
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo}
      */
     public static final class Builder extends
@@ -1090,7 +1106,7 @@ public final class CreateGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBornTypeValue(int value) {
-        
+
         bornType_ = value;
         onChanged();
         return this;
@@ -1114,7 +1130,7 @@ public final class CreateGadgetInfoOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-        
+
         bornType_ = value.getNumber();
         onChanged();
         return this;
@@ -1124,7 +1140,7 @@ public final class CreateGadgetInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearBornType() {
-        
+
         bornType_ = 0;
         onChanged();
         return this;
@@ -1217,7 +1233,7 @@ public final class CreateGadgetInfoOuterClass {
        * <code>.CreateGadgetInfo.Chest chest = 2;</code>
        */
       public emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Chest.Builder getChestBuilder() {
-        
+
         onChanged();
         return getChestFieldBuilder().getBuilder();
       }
@@ -1236,7 +1252,7 @@ public final class CreateGadgetInfoOuterClass {
        * <code>.CreateGadgetInfo.Chest chest = 2;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Chest, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Chest.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.ChestOrBuilder> 
+          emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Chest, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.Chest.Builder, emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.ChestOrBuilder>
           getChestFieldBuilder() {
         if (chestBuilder_ == null) {
           chestBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1303,12 +1319,12 @@ public final class CreateGadgetInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CreateGadgetInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CreateGadgetInfo_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CreateGadgetInfo_Chest_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CreateGadgetInfo_Chest_fieldAccessorTable;
 
@@ -1325,8 +1341,7 @@ public final class CreateGadgetInfoOuterClass {
       "\030\001 \001(\0162\017.GadgetBornType\022&\n\005chest\030\002 \001(\0132\027" +
       ".CreateGadgetInfo.Chest\0328\n\005Chest\022\025\n\rches" +
       "t_drop_id\030\001 \001(\r\022\030\n\020is_show_cutscene\030\002 \001(" +
-      "\010B7\n\031emu.grasscutter.net.protoB\032CreateGa" +
-      "dgetInfoOuterClassb\006proto3"
+      "\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

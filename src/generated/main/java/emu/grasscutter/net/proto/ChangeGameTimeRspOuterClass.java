@@ -19,24 +19,29 @@ public final class ChangeGameTimeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 cur_game_time = 12;</code>
+     * <code>uint32 cur_game_time = 1;</code>
      * @return The curGameTime.
      */
     int getCurGameTime();
 
     /**
-     * <code>uint32 extra_days = 15;</code>
+     * <code>uint32 extra_days = 14;</code>
      * @return The extraDays.
      */
     int getExtraDays();
+
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 28316
+   * Obf: BEHKLPMPHBH
+   * </pre>
+   *
    * Protobuf type {@code ChangeGameTimeRsp}
    */
   public static final class ChangeGameTimeRsp extends
@@ -81,14 +86,14 @@ public final class ChangeGameTimeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 96: {
 
               curGameTime_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              retcode_ = input.readInt32();
               break;
             }
             case 120: {
@@ -128,21 +133,10 @@ public final class ChangeGameTimeRspOuterClass {
               emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp.class, emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 7;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int CUR_GAME_TIME_FIELD_NUMBER = 12;
     private int curGameTime_;
     /**
-     * <code>uint32 cur_game_time = 12;</code>
+     * <code>uint32 cur_game_time = 1;</code>
      * @return The curGameTime.
      */
     @java.lang.Override
@@ -153,12 +147,23 @@ public final class ChangeGameTimeRspOuterClass {
     public static final int EXTRA_DAYS_FIELD_NUMBER = 15;
     private int extraDays_;
     /**
-     * <code>uint32 extra_days = 15;</code>
+     * <code>uint32 extra_days = 14;</code>
      * @return The extraDays.
      */
     @java.lang.Override
     public int getExtraDays() {
       return extraDays_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 7;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 13;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,11 +180,11 @@ public final class ChangeGameTimeRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
-      }
       if (curGameTime_ != 0) {
         output.writeUInt32(12, curGameTime_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
       }
       if (extraDays_ != 0) {
         output.writeUInt32(15, extraDays_);
@@ -193,13 +198,13 @@ public final class ChangeGameTimeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
-      }
       if (curGameTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(12, curGameTime_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, retcode_);
       }
       if (extraDays_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -220,12 +225,12 @@ public final class ChangeGameTimeRspOuterClass {
       }
       emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp other = (emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getCurGameTime()
           != other.getCurGameTime()) return false;
       if (getExtraDays()
           != other.getExtraDays()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,12 +242,12 @@ public final class ChangeGameTimeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + CUR_GAME_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCurGameTime();
       hash = (37 * hash) + EXTRA_DAYS_FIELD_NUMBER;
       hash = (53 * hash) + getExtraDays();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -339,6 +344,11 @@ public final class ChangeGameTimeRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 28316
+     * Obf: BEHKLPMPHBH
+     * </pre>
+     *
      * Protobuf type {@code ChangeGameTimeRsp}
      */
     public static final class Builder extends
@@ -376,11 +386,11 @@ public final class ChangeGameTimeRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         curGameTime_ = 0;
 
         extraDays_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -408,9 +418,9 @@ public final class ChangeGameTimeRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp result = new emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp(this);
-        result.retcode_ = retcode_;
         result.curGameTime_ = curGameTime_;
         result.extraDays_ = extraDays_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -459,14 +469,14 @@ public final class ChangeGameTimeRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp other) {
         if (other == emu.grasscutter.net.proto.ChangeGameTimeRspOuterClass.ChangeGameTimeRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getCurGameTime() != 0) {
           setCurGameTime(other.getCurGameTime());
         }
         if (other.getExtraDays() != 0) {
           setExtraDays(other.getExtraDays());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -497,40 +507,9 @@ public final class ChangeGameTimeRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int curGameTime_ ;
       /**
-       * <code>uint32 cur_game_time = 12;</code>
+       * <code>uint32 cur_game_time = 1;</code>
        * @return The curGameTime.
        */
       @java.lang.Override
@@ -538,7 +517,7 @@ public final class ChangeGameTimeRspOuterClass {
         return curGameTime_;
       }
       /**
-       * <code>uint32 cur_game_time = 12;</code>
+       * <code>uint32 cur_game_time = 1;</code>
        * @param value The curGameTime to set.
        * @return This builder for chaining.
        */
@@ -549,7 +528,7 @@ public final class ChangeGameTimeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_game_time = 12;</code>
+       * <code>uint32 cur_game_time = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurGameTime() {
@@ -561,7 +540,7 @@ public final class ChangeGameTimeRspOuterClass {
 
       private int extraDays_ ;
       /**
-       * <code>uint32 extra_days = 15;</code>
+       * <code>uint32 extra_days = 14;</code>
        * @return The extraDays.
        */
       @java.lang.Override
@@ -569,7 +548,7 @@ public final class ChangeGameTimeRspOuterClass {
         return extraDays_;
       }
       /**
-       * <code>uint32 extra_days = 15;</code>
+       * <code>uint32 extra_days = 14;</code>
        * @param value The extraDays to set.
        * @return This builder for chaining.
        */
@@ -580,12 +559,43 @@ public final class ChangeGameTimeRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 extra_days = 15;</code>
+       * <code>uint32 extra_days = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearExtraDays() {
         
         extraDays_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -657,10 +667,9 @@ public final class ChangeGameTimeRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027ChangeGameTimeRsp.proto\"O\n\021ChangeGameT" +
-      "imeRsp\022\017\n\007retcode\030\007 \001(\005\022\025\n\rcur_game_time" +
-      "\030\014 \001(\r\022\022\n\nextra_days\030\017 \001(\rB8\n\031emu.grassc" +
-      "utter.net.protoB\033ChangeGameTimeRspOuterC" +
-      "lassb\006proto3"
+      "imeRsp\022\025\n\rcur_game_time\030\001 \001(\r\022\022\n\nextra_d" +
+      "ays\030\016 \001(\r\022\017\n\007retcode\030\r \001(\005B\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -671,7 +680,7 @@ public final class ChangeGameTimeRspOuterClass {
     internal_static_ChangeGameTimeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeGameTimeRsp_descriptor,
-        new java.lang.String[] { "Retcode", "CurGameTime", "ExtraDays", });
+        new java.lang.String[] { "CurGameTime", "ExtraDays", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,18 +19,23 @@ public final class HomeChooseModuleRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>uint32 module_id = 9;</code>
+     * <code>uint32 module_id = 7;</code>
      * @return The moduleId.
      */
     int getModuleId();
+
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 20087
+   * Obf: JHDBAFEAKGO
+   * </pre>
+   *
    * Protobuf type {@code HomeChooseModuleRsp}
    */
   public static final class HomeChooseModuleRsp extends
@@ -117,26 +122,26 @@ public final class HomeChooseModuleRspOuterClass {
               emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp.class, emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 4;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
     public static final int MODULE_ID_FIELD_NUMBER = 9;
     private int moduleId_;
     /**
-     * <code>uint32 module_id = 9;</code>
+     * <code>uint32 module_id = 7;</code>
      * @return The moduleId.
      */
     @java.lang.Override
     public int getModuleId() {
       return moduleId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +196,10 @@ public final class HomeChooseModuleRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp other = (emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getModuleId()
           != other.getModuleId()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,10 +211,10 @@ public final class HomeChooseModuleRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + MODULE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getModuleId();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -306,6 +311,11 @@ public final class HomeChooseModuleRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20087
+     * Obf: JHDBAFEAKGO
+     * </pre>
+     *
      * Protobuf type {@code HomeChooseModuleRsp}
      */
     public static final class Builder extends
@@ -343,9 +353,9 @@ public final class HomeChooseModuleRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         moduleId_ = 0;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -373,8 +383,8 @@ public final class HomeChooseModuleRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp buildPartial() {
         emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp result = new emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp(this);
-        result.retcode_ = retcode_;
         result.moduleId_ = moduleId_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -423,11 +433,11 @@ public final class HomeChooseModuleRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp other) {
         if (other == emu.grasscutter.net.proto.HomeChooseModuleRspOuterClass.HomeChooseModuleRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getModuleId() != 0) {
           setModuleId(other.getModuleId());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -458,40 +468,9 @@ public final class HomeChooseModuleRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int moduleId_ ;
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 7;</code>
        * @return The moduleId.
        */
       @java.lang.Override
@@ -499,7 +478,7 @@ public final class HomeChooseModuleRspOuterClass {
         return moduleId_;
       }
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 7;</code>
        * @param value The moduleId to set.
        * @return This builder for chaining.
        */
@@ -510,12 +489,43 @@ public final class HomeChooseModuleRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 module_id = 9;</code>
+       * <code>uint32 module_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearModuleId() {
         
         moduleId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -587,9 +597,9 @@ public final class HomeChooseModuleRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeChooseModuleRsp.proto\"9\n\023HomeChoos" +
-      "eModuleRsp\022\017\n\007retcode\030\004 \001(\005\022\021\n\tmodule_id" +
-      "\030\t \001(\rB:\n\031emu.grasscutter.net.protoB\035Hom" +
-      "eChooseModuleRspOuterClassb\006proto3"
+      "eModuleRsp\022\021\n\tmodule_id\030\007 \001(\r\022\017\n\007retcode" +
+      "\030\001 \001(\005B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -600,7 +610,7 @@ public final class HomeChooseModuleRspOuterClass {
     internal_static_HomeChooseModuleRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeChooseModuleRsp_descriptor,
-        new java.lang.String[] { "Retcode", "ModuleId", });
+        new java.lang.String[] { "ModuleId", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,31 +19,16 @@ public final class MHDOKEBFCFPOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     * @return Whether the triggerAbility field is set.
+     * <code>bool OJIOABNNHKJ = 1;</code>
+     * @return The oJIOABNNHKJ.
      */
-    boolean hasTriggerAbility();
-    /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     * @return The triggerAbility.
-     */
-    emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility getTriggerAbility();
-    /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     */
-    emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder getTriggerAbilityOrBuilder();
+    boolean getOJIOABNNHKJ();
 
     /**
-     * <code>bool KFMDCEHACKM = 1;</code>
-     * @return The kFMDCEHACKM.
+     * <code>float NJIENHPPLAK = 2;</code>
+     * @return The nJIENHPPLAK.
      */
-    boolean getKFMDCEHACKM();
-
-    /**
-     * <code>float OMPEDKKJAJD = 2;</code>
-     * @return The oMPEDKKJAJD.
-     */
-    float getOMPEDKKJAJD();
+    float getNJIENHPPLAK();
   }
   /**
    * Protobuf type {@code MHDOKEBFCFP}
@@ -80,7 +65,6 @@ public final class MHDOKEBFCFPOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
-      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -93,25 +77,12 @@ public final class MHDOKEBFCFPOuterClass {
               break;
             case 8: {
 
-              kFMDCEHACKM_ = input.readBool();
+              oJIOABNNHKJ_ = input.readBool();
               break;
             }
             case 21: {
 
-              oMPEDKKJAJD_ = input.readFloat();
-              break;
-            }
-            case 802: {
-              emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) != 0)) {
-                subBuilder = triggerAbility_.toBuilder();
-              }
-              triggerAbility_ = input.readMessage(emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(triggerAbility_);
-                triggerAbility_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
+              nJIENHPPLAK_ = input.readFloat();
               break;
             }
             default: {
@@ -146,53 +117,26 @@ public final class MHDOKEBFCFPOuterClass {
               emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP.class, emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP.Builder.class);
     }
 
-    private int bitField0_;
-    public static final int TRIGGER_ABILITY_FIELD_NUMBER = 100;
-    private emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility triggerAbility_;
+    public static final int OJIOABNNHKJ_FIELD_NUMBER = 1;
+    private boolean oJIOABNNHKJ_;
     /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     * @return Whether the triggerAbility field is set.
+     * <code>bool OJIOABNNHKJ = 1;</code>
+     * @return The oJIOABNNHKJ.
      */
     @java.lang.Override
-    public boolean hasTriggerAbility() {
-      return ((bitField0_ & 0x00000001) != 0);
-    }
-    /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     * @return The triggerAbility.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility getTriggerAbility() {
-      return triggerAbility_ == null ? emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.getDefaultInstance() : triggerAbility_;
-    }
-    /**
-     * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder getTriggerAbilityOrBuilder() {
-      return triggerAbility_ == null ? emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.getDefaultInstance() : triggerAbility_;
+    public boolean getOJIOABNNHKJ() {
+      return oJIOABNNHKJ_;
     }
 
-    public static final int KFMDCEHACKM_FIELD_NUMBER = 1;
-    private boolean kFMDCEHACKM_;
+    public static final int NJIENHPPLAK_FIELD_NUMBER = 2;
+    private float nJIENHPPLAK_;
     /**
-     * <code>bool KFMDCEHACKM = 1;</code>
-     * @return The kFMDCEHACKM.
+     * <code>float NJIENHPPLAK = 2;</code>
+     * @return The nJIENHPPLAK.
      */
     @java.lang.Override
-    public boolean getKFMDCEHACKM() {
-      return kFMDCEHACKM_;
-    }
-
-    public static final int OMPEDKKJAJD_FIELD_NUMBER = 2;
-    private float oMPEDKKJAJD_;
-    /**
-     * <code>float OMPEDKKJAJD = 2;</code>
-     * @return The oMPEDKKJAJD.
-     */
-    @java.lang.Override
-    public float getOMPEDKKJAJD() {
-      return oMPEDKKJAJD_;
+    public float getNJIENHPPLAK() {
+      return nJIENHPPLAK_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -209,14 +153,11 @@ public final class MHDOKEBFCFPOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (kFMDCEHACKM_ != false) {
-        output.writeBool(1, kFMDCEHACKM_);
+      if (oJIOABNNHKJ_ != false) {
+        output.writeBool(1, oJIOABNNHKJ_);
       }
-      if (oMPEDKKJAJD_ != 0F) {
-        output.writeFloat(2, oMPEDKKJAJD_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        output.writeMessage(100, getTriggerAbility());
+      if (nJIENHPPLAK_ != 0F) {
+        output.writeFloat(2, nJIENHPPLAK_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,17 +168,13 @@ public final class MHDOKEBFCFPOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (kFMDCEHACKM_ != false) {
+      if (oJIOABNNHKJ_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1, kFMDCEHACKM_);
+          .computeBoolSize(1, oJIOABNNHKJ_);
       }
-      if (oMPEDKKJAJD_ != 0F) {
+      if (nJIENHPPLAK_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, oMPEDKKJAJD_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(100, getTriggerAbility());
+          .computeFloatSize(2, nJIENHPPLAK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -254,16 +191,11 @@ public final class MHDOKEBFCFPOuterClass {
       }
       emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP other = (emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP) obj;
 
-      if (hasTriggerAbility() != other.hasTriggerAbility()) return false;
-      if (hasTriggerAbility()) {
-        if (!getTriggerAbility()
-            .equals(other.getTriggerAbility())) return false;
-      }
-      if (getKFMDCEHACKM()
-          != other.getKFMDCEHACKM()) return false;
-      if (java.lang.Float.floatToIntBits(getOMPEDKKJAJD())
+      if (getOJIOABNNHKJ()
+          != other.getOJIOABNNHKJ()) return false;
+      if (java.lang.Float.floatToIntBits(getNJIENHPPLAK())
           != java.lang.Float.floatToIntBits(
-              other.getOMPEDKKJAJD())) return false;
+              other.getNJIENHPPLAK())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,16 +207,12 @@ public final class MHDOKEBFCFPOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasTriggerAbility()) {
-        hash = (37 * hash) + TRIGGER_ABILITY_FIELD_NUMBER;
-        hash = (53 * hash) + getTriggerAbility().hashCode();
-      }
-      hash = (37 * hash) + KFMDCEHACKM_FIELD_NUMBER;
+      hash = (37 * hash) + OJIOABNNHKJ_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getKFMDCEHACKM());
-      hash = (37 * hash) + OMPEDKKJAJD_FIELD_NUMBER;
+          getOJIOABNNHKJ());
+      hash = (37 * hash) + NJIENHPPLAK_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getOMPEDKKJAJD());
+          getNJIENHPPLAK());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -413,21 +341,14 @@ public final class MHDOKEBFCFPOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getTriggerAbilityFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (triggerAbilityBuilder_ == null) {
-          triggerAbility_ = null;
-        } else {
-          triggerAbilityBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        kFMDCEHACKM_ = false;
+        oJIOABNNHKJ_ = false;
 
-        oMPEDKKJAJD_ = 0F;
+        nJIENHPPLAK_ = 0F;
 
         return this;
       }
@@ -455,19 +376,8 @@ public final class MHDOKEBFCFPOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP buildPartial() {
         emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP result = new emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP(this);
-        int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          if (triggerAbilityBuilder_ == null) {
-            result.triggerAbility_ = triggerAbility_;
-          } else {
-            result.triggerAbility_ = triggerAbilityBuilder_.build();
-          }
-          to_bitField0_ |= 0x00000001;
-        }
-        result.kFMDCEHACKM_ = kFMDCEHACKM_;
-        result.oMPEDKKJAJD_ = oMPEDKKJAJD_;
-        result.bitField0_ = to_bitField0_;
+        result.oJIOABNNHKJ_ = oJIOABNNHKJ_;
+        result.nJIENHPPLAK_ = nJIENHPPLAK_;
         onBuilt();
         return result;
       }
@@ -516,14 +426,11 @@ public final class MHDOKEBFCFPOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP other) {
         if (other == emu.grasscutter.net.proto.MHDOKEBFCFPOuterClass.MHDOKEBFCFP.getDefaultInstance()) return this;
-        if (other.hasTriggerAbility()) {
-          mergeTriggerAbility(other.getTriggerAbility());
+        if (other.getOJIOABNNHKJ() != false) {
+          setOJIOABNNHKJ(other.getOJIOABNNHKJ());
         }
-        if (other.getKFMDCEHACKM() != false) {
-          setKFMDCEHACKM(other.getKFMDCEHACKM());
-        }
-        if (other.getOMPEDKKJAJD() != 0F) {
-          setOMPEDKKJAJD(other.getOMPEDKKJAJD());
+        if (other.getNJIENHPPLAK() != 0F) {
+          setNJIENHPPLAK(other.getNJIENHPPLAK());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -553,186 +460,65 @@ public final class MHDOKEBFCFPOuterClass {
         }
         return this;
       }
-      private int bitField0_;
 
-      private emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility triggerAbility_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder> triggerAbilityBuilder_;
+      private boolean oJIOABNNHKJ_ ;
       /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       * @return Whether the triggerAbility field is set.
-       */
-      public boolean hasTriggerAbility() {
-        return ((bitField0_ & 0x00000001) != 0);
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       * @return The triggerAbility.
-       */
-      public emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility getTriggerAbility() {
-        if (triggerAbilityBuilder_ == null) {
-          return triggerAbility_ == null ? emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.getDefaultInstance() : triggerAbility_;
-        } else {
-          return triggerAbilityBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public Builder setTriggerAbility(emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility value) {
-        if (triggerAbilityBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          triggerAbility_ = value;
-          onChanged();
-        } else {
-          triggerAbilityBuilder_.setMessage(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public Builder setTriggerAbility(
-          emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder builderForValue) {
-        if (triggerAbilityBuilder_ == null) {
-          triggerAbility_ = builderForValue.build();
-          onChanged();
-        } else {
-          triggerAbilityBuilder_.setMessage(builderForValue.build());
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public Builder mergeTriggerAbility(emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility value) {
-        if (triggerAbilityBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
-              triggerAbility_ != null &&
-              triggerAbility_ != emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.getDefaultInstance()) {
-            triggerAbility_ =
-              emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.newBuilder(triggerAbility_).mergeFrom(value).buildPartial();
-          } else {
-            triggerAbility_ = value;
-          }
-          onChanged();
-        } else {
-          triggerAbilityBuilder_.mergeFrom(value);
-        }
-        bitField0_ |= 0x00000001;
-        return this;
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public Builder clearTriggerAbility() {
-        if (triggerAbilityBuilder_ == null) {
-          triggerAbility_ = null;
-          onChanged();
-        } else {
-          triggerAbilityBuilder_.clear();
-        }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        return this;
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder getTriggerAbilityBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getTriggerAbilityFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      public emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder getTriggerAbilityOrBuilder() {
-        if (triggerAbilityBuilder_ != null) {
-          return triggerAbilityBuilder_.getMessageOrBuilder();
-        } else {
-          return triggerAbility_ == null ?
-              emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.getDefaultInstance() : triggerAbility_;
-        }
-      }
-      /**
-       * <code>optional ._TriggerAbility trigger_ability = 100;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder> 
-          getTriggerAbilityFieldBuilder() {
-        if (triggerAbilityBuilder_ == null) {
-          triggerAbilityBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbility.Builder, emu.grasscutter.net.proto._TriggerAbilityOuterClass._TriggerAbilityOrBuilder>(
-                  getTriggerAbility(),
-                  getParentForChildren(),
-                  isClean());
-          triggerAbility_ = null;
-        }
-        return triggerAbilityBuilder_;
-      }
-
-      private boolean kFMDCEHACKM_ ;
-      /**
-       * <code>bool KFMDCEHACKM = 1;</code>
-       * @return The kFMDCEHACKM.
+       * <code>bool OJIOABNNHKJ = 1;</code>
+       * @return The oJIOABNNHKJ.
        */
       @java.lang.Override
-      public boolean getKFMDCEHACKM() {
-        return kFMDCEHACKM_;
+      public boolean getOJIOABNNHKJ() {
+        return oJIOABNNHKJ_;
       }
       /**
-       * <code>bool KFMDCEHACKM = 1;</code>
-       * @param value The kFMDCEHACKM to set.
+       * <code>bool OJIOABNNHKJ = 1;</code>
+       * @param value The oJIOABNNHKJ to set.
        * @return This builder for chaining.
        */
-      public Builder setKFMDCEHACKM(boolean value) {
+      public Builder setOJIOABNNHKJ(boolean value) {
         
-        kFMDCEHACKM_ = value;
+        oJIOABNNHKJ_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool KFMDCEHACKM = 1;</code>
+       * <code>bool OJIOABNNHKJ = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearKFMDCEHACKM() {
+      public Builder clearOJIOABNNHKJ() {
         
-        kFMDCEHACKM_ = false;
+        oJIOABNNHKJ_ = false;
         onChanged();
         return this;
       }
 
-      private float oMPEDKKJAJD_ ;
+      private float nJIENHPPLAK_ ;
       /**
-       * <code>float OMPEDKKJAJD = 2;</code>
-       * @return The oMPEDKKJAJD.
+       * <code>float NJIENHPPLAK = 2;</code>
+       * @return The nJIENHPPLAK.
        */
       @java.lang.Override
-      public float getOMPEDKKJAJD() {
-        return oMPEDKKJAJD_;
+      public float getNJIENHPPLAK() {
+        return nJIENHPPLAK_;
       }
       /**
-       * <code>float OMPEDKKJAJD = 2;</code>
-       * @param value The oMPEDKKJAJD to set.
+       * <code>float NJIENHPPLAK = 2;</code>
+       * @param value The nJIENHPPLAK to set.
        * @return This builder for chaining.
        */
-      public Builder setOMPEDKKJAJD(float value) {
+      public Builder setNJIENHPPLAK(float value) {
         
-        oMPEDKKJAJD_ = value;
+        nJIENHPPLAK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float OMPEDKKJAJD = 2;</code>
+       * <code>float NJIENHPPLAK = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOMPEDKKJAJD() {
+      public Builder clearNJIENHPPLAK() {
         
-        oMPEDKKJAJD_ = 0F;
+        nJIENHPPLAK_ = 0F;
         onChanged();
         return this;
       }
@@ -803,25 +589,20 @@ public final class MHDOKEBFCFPOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MHDOKEBFCFP.proto\032\025_TriggerAbility.pro" +
-      "to\"{\n\013MHDOKEBFCFP\022.\n\017trigger_ability\030d \001" +
-      "(\0132\020._TriggerAbilityH\000\210\001\001\022\023\n\013KFMDCEHACKM" +
-      "\030\001 \001(\010\022\023\n\013OMPEDKKJAJD\030\002 \001(\002B\022\n\020_trigger_" +
-      "abilityB2\n\031emu.grasscutter.net.protoB\025MH" +
-      "DOKEBFCFPOuterClassb\006proto3"
+      "\n\021MHDOKEBFCFP.proto\"7\n\013MHDOKEBFCFP\022\023\n\013OJ" +
+      "IOABNNHKJ\030\001 \001(\010\022\023\n\013NJIENHPPLAK\030\002 \001(\002B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto._TriggerAbilityOuterClass.getDescriptor(),
         });
     internal_static_MHDOKEBFCFP_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_MHDOKEBFCFP_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MHDOKEBFCFP_descriptor,
-        new java.lang.String[] { "TriggerAbility", "KFMDCEHACKM", "OMPEDKKJAJD", "TriggerAbility", });
-    emu.grasscutter.net.proto._TriggerAbilityOuterClass.getDescriptor();
+        new java.lang.String[] { "OJIOABNNHKJ", "NJIENHPPLAK", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

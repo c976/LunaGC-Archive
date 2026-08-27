@@ -6,11 +6,9 @@ import static emu.grasscutter.utils.lang.Language.translate;
 
 import emu.grasscutter.command.*;
 import emu.grasscutter.data.GameData;
-import emu.grasscutter.data.NameIndex;
 import emu.grasscutter.data.excels.*;
 import emu.grasscutter.data.excels.monster.MonsterData;
 import emu.grasscutter.game.entity.*;
-import emu.grasscutter.scripts.data.SceneGroup;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.world.*;
@@ -44,15 +42,6 @@ public final class SpawnCommand implements CommandHandler {
                     Map.entry(atkRegex, SpawnParameters::setAtk),
                     Map.entry(aiRegex, SpawnParameters::setAi));
 
-    private static boolean isNumber(String text) {
-        try {
-            Integer.parseInt(text);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
         SpawnParameters param = new SpawnParameters();
@@ -63,14 +52,6 @@ public final class SpawnCommand implements CommandHandler {
         if (args.size() < 1) {
             sendUsageMessage(sender); // Reachable if someone does `/give lv90` or similar
             throw new IllegalArgumentException();
-        }
-
-        // A name can run to several words, and the branching below counts arguments to decide what
-        // each one means, so fold the name back down to the single id argument it stands in for.
-        if (!isNumber(args.get(0))) {
-            var name = args.remove(0);
-            var id = NameIndex.resolveEntity(name, args);
-            args.add(0, id != 0 ? String.valueOf(id) : name);
         }
 
         Position pos = new Position(targetPlayer.getPosition());
@@ -150,7 +131,7 @@ public final class SpawnCommand implements CommandHandler {
             param.scene.addEntity(entity);
         }
         CommandHandler.sendMessage(
-                sender, translate(sender, "commands.spawn.success", param.amount, NameIndex.describe(param.id)));
+                sender, translate(sender, "commands.spawn.success", param.amount, param.id));
     }
 
     private EntityItem createItem(ItemData itemData, SpawnParameters param, Position pos) {
@@ -172,32 +153,10 @@ public final class SpawnCommand implements CommandHandler {
         if (gadgetData.getType() == EntityType.Vehicle) {
             entity = new EntityVehicle(param.scene, targetPlayer, param.id, 0, pos, param.rot);
         } else {
-            var gadget = new EntityGadget(param.scene, param.id, pos, param.rot);
-
-            // With a group and config given, attach the real SceneGadget from the map script so the
-            // gadget keeps its map identity - drop table, interaction, state - instead of spawning
-            // as a bare prop that cannot be opened.
-            if (param.groupId != -1 && param.configId != -1) {
-                var group = SceneGroup.of(param.groupId).load(param.scene.getId());
-                if (group != null && group.gadgets != null) {
-                    var sceneGadget = group.gadgets.get(param.configId);
-                    if (sceneGadget != null) {
-                        gadget.setMetaGadget(sceneGadget);
-                        gadget.setGroupId(group.id);
-                        gadget.setBlockId(param.blockId != -1 ? param.blockId : group.block_id);
-                        gadget.setConfigId(sceneGadget.config_id);
-                        if (param.state == -1) gadget.setState(sceneGadget.state);
-                    }
-                }
-            }
-
-            // Builds the Chest/Worktop/GatherPoint content, without which it is not interactive.
-            gadget.buildContent();
-
+            entity = new EntityGadget(param.scene, param.id, pos, param.rot);
             if (param.state != -1) {
-                gadget.setState(param.state);
+                ((EntityGadget) entity).setState(param.state);
             }
-            entity = gadget;
         }
         return entity;
     }

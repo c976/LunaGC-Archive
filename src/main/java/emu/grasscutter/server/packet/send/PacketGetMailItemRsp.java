@@ -55,7 +55,8 @@ public class PacketGetMailItemRsp extends BasePacket {
             }
         }
 
-        proto.addAllMailIdList(claimedMessages.stream().map(player::getMailId).map(player.getMailHandler() ::toClientMailId).collect(Collectors.toList()));
+        proto.addAllMailIdList(
+                claimedMessages.stream().map(player::getMailId).collect(Collectors.toList()));
         proto.addAllItemList(claimedItems);
 
         this.setData(proto.build());

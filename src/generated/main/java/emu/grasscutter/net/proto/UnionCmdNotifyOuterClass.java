@@ -18,31 +18,24 @@ public final class UnionCmdNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:UnionCmdNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd> 
+    java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd>
         getCmdListList();
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd getCmdList(int index);
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     int getCmdListCount();
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder> 
+
+    java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder>
         getCmdListOrBuilderList();
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder getCmdListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * CmdId: 21395
+   * </pre>
+   *
    * Protobuf type {@code UnionCmdNotify}
    */
   public static final class UnionCmdNotify extends
@@ -135,38 +128,28 @@ public final class UnionCmdNotifyOuterClass {
 
     public static final int CMD_LIST_FIELD_NUMBER = 11;
     private java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd> cmdList_;
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd> getCmdListList() {
       return cmdList_;
     }
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder> 
+    public java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder>
         getCmdListOrBuilderList() {
       return cmdList_;
     }
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     @java.lang.Override
     public int getCmdListCount() {
       return cmdList_.size();
     }
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd getCmdList(int index) {
       return cmdList_.get(index);
     }
-    /**
-     * <code>repeated .UnionCmd cmd_list = 11;</code>
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder getCmdListOrBuilder(
         int index) {
@@ -331,6 +314,10 @@ public final class UnionCmdNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21395
+     * </pre>
+     *
      * Protobuf type {@code UnionCmdNotify}
      */
     public static final class Builder extends
@@ -477,7 +464,7 @@ public final class UnionCmdNotifyOuterClass {
               cmdListBuilder_ = null;
               cmdList_ = other.cmdList_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              cmdListBuilder_ = 
+              cmdListBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getCmdListFieldBuilder() : null;
             } else {
@@ -527,9 +514,6 @@ public final class UnionCmdNotifyOuterClass {
       private com.google.protobuf.RepeatedFieldBuilderV3<
           emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder> cmdListBuilder_;
 
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
       public java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd> getCmdListList() {
         if (cmdListBuilder_ == null) {
           return java.util.Collections.unmodifiableList(cmdList_);
@@ -537,9 +521,7 @@ public final class UnionCmdNotifyOuterClass {
           return cmdListBuilder_.getMessageList();
         }
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public int getCmdListCount() {
         if (cmdListBuilder_ == null) {
           return cmdList_.size();
@@ -547,9 +529,7 @@ public final class UnionCmdNotifyOuterClass {
           return cmdListBuilder_.getCount();
         }
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd getCmdList(int index) {
         if (cmdListBuilder_ == null) {
           return cmdList_.get(index);
@@ -557,9 +537,7 @@ public final class UnionCmdNotifyOuterClass {
           return cmdListBuilder_.getMessage(index);
         }
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder setCmdList(
           int index, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd value) {
         if (cmdListBuilder_ == null) {
@@ -574,9 +552,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder setCmdList(
           int index, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder builderForValue) {
         if (cmdListBuilder_ == null) {
@@ -588,9 +564,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder addCmdList(emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd value) {
         if (cmdListBuilder_ == null) {
           if (value == null) {
@@ -604,9 +578,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder addCmdList(
           int index, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd value) {
         if (cmdListBuilder_ == null) {
@@ -621,9 +593,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder addCmdList(
           emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder builderForValue) {
         if (cmdListBuilder_ == null) {
@@ -635,9 +605,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder addCmdList(
           int index, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder builderForValue) {
         if (cmdListBuilder_ == null) {
@@ -649,9 +617,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder addAllCmdList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd> values) {
         if (cmdListBuilder_ == null) {
@@ -664,9 +630,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder clearCmdList() {
         if (cmdListBuilder_ == null) {
           cmdList_ = java.util.Collections.emptyList();
@@ -677,9 +641,7 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public Builder removeCmdList(int index) {
         if (cmdListBuilder_ == null) {
           ensureCmdListIsMutable();
@@ -690,16 +652,12 @@ public final class UnionCmdNotifyOuterClass {
         }
         return this;
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder getCmdListBuilder(
           int index) {
         return getCmdListFieldBuilder().getBuilder(index);
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder getCmdListOrBuilder(
           int index) {
         if (cmdListBuilder_ == null) {
@@ -707,10 +665,8 @@ public final class UnionCmdNotifyOuterClass {
           return cmdListBuilder_.getMessageOrBuilder(index);
         }
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
-      public java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder> 
+
+      public java.util.List<? extends emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder>
            getCmdListOrBuilderList() {
         if (cmdListBuilder_ != null) {
           return cmdListBuilder_.getMessageOrBuilderList();
@@ -718,30 +674,24 @@ public final class UnionCmdNotifyOuterClass {
           return java.util.Collections.unmodifiableList(cmdList_);
         }
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder addCmdListBuilder() {
         return getCmdListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.getDefaultInstance());
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
+
       public emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder addCmdListBuilder(
           int index) {
         return getCmdListFieldBuilder().addBuilder(
             index, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.getDefaultInstance());
       }
-      /**
-       * <code>repeated .UnionCmd cmd_list = 11;</code>
-       */
-      public java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder> 
+
+      public java.util.List<emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder>
            getCmdListBuilderList() {
         return getCmdListFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder> 
+          emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmd.Builder, emu.grasscutter.net.proto.UnionCmdOuterClass.UnionCmdOrBuilder>
           getCmdListFieldBuilder() {
         if (cmdListBuilder_ == null) {
           cmdListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
@@ -765,7 +715,6 @@ public final class UnionCmdNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:UnionCmdNotify)
     }
@@ -809,7 +758,7 @@ public final class UnionCmdNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_UnionCmdNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_UnionCmdNotify_fieldAccessorTable;
 
@@ -822,9 +771,9 @@ public final class UnionCmdNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024UnionCmdNotify.proto\032\016UnionCmd.proto\"-" +
-      "\n\016UnionCmdNotify\022\033\n\010cmd_list\030\013 \003(\0132\t.Uni" +
-      "onCmdB5\n\031emu.grasscutter.net.protoB\030Unio" +
-      "nCmdNotifyOuterClassb\006proto3"
+      "\n\016UnionCmdNotify\022\033\n\010cmd_list\030\007 \003(\0132\t.Uni" +
+      "onCmdB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

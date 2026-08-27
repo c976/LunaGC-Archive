@@ -141,7 +141,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 98: {
+            case 128002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 hFAHLONBGKL_ = com.google.protobuf.MapField.newMapField(
                     HFAHLONBGKLDefaultEntryHolder.defaultEntry);
@@ -154,7 +154,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
                   hFAHLONBGKL__.getKey(), hFAHLONBGKL__.getValue());
               break;
             }
-            case 128002: {
+            case 128010: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 nCDHBPLKPHB_ = com.google.protobuf.MapField.newMapField(
                     NCDHBPLKPHBDefaultEntryHolder.defaultEntry);
@@ -167,7 +167,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
                   nCDHBPLKPHB__.getKey(), nCDHBPLKPHB__.getValue());
               break;
             }
-            case 104: {
+            case 96: {
               int rawValue = input.readEnum();
 
               type_ = rawValue;
@@ -219,7 +219,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
               emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.class, emu.grasscutter.net.proto.MaterialDeleteReturnNotifyOuterClass.MaterialDeleteReturnNotify.Builder.class);
     }
 
-    public static final int HFAHLONBGKL_FIELD_NUMBER = 12;
+    public static final int HFAHLONBGKL_FIELD_NUMBER = 16000;
     private static final class HFAHLONBGKLDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -300,7 +300,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int NCDHBPLKPHB_FIELD_NUMBER = 16000;
+    public static final int NCDHBPLKPHB_FIELD_NUMBER = 16001;
     private static final class NCDHBPLKPHBDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -381,7 +381,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
       return map.get(key);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 13;
+    public static final int TYPE_FIELD_NUMBER = 12;
     private int type_;
 
     @java.lang.Override public int getTypeValue() {
@@ -413,15 +413,15 @@ public final class MaterialDeleteReturnNotifyOuterClass {
           output,
           internalGetHFAHLONBGKL(),
           HFAHLONBGKLDefaultEntryHolder.defaultEntry,
-          12);
+          16000);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetNCDHBPLKPHB(),
           NCDHBPLKPHBDefaultEntryHolder.defaultEntry,
-          16000);
+          16001);
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_BAG.getNumber()) {
-        output.writeEnum(13, type_);
+        output.writeEnum(12, type_);
       }
       unknownFields.writeTo(output);
     }
@@ -440,7 +440,7 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, hFAHLONBGKL__);
+            .computeMessageSize(16000, hFAHLONBGKL__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetNCDHBPLKPHB().getMap().entrySet()) {
@@ -450,11 +450,11 @@ public final class MaterialDeleteReturnNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(16000, nCDHBPLKPHB__);
+            .computeMessageSize(16001, nCDHBPLKPHB__);
       }
       if (type_ != emu.grasscutter.net.proto.MaterialDeleteReturnTypeOuterClass.MaterialDeleteReturnType.MaterialDeleteReturnType_MATERIAL_DELETE_RETURN_BAG.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, type_);
+          .computeEnumSize(12, type_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

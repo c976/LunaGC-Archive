@@ -12,15 +12,11 @@ import java.util.stream.Collectors;
 @Command(
         label = "quest",
         aliases = {"q"},
-        usage = {"(add|finish|running|talking|debug|triggers|grouptriggers) [<questId>]", "forcefinish (<questId>|all)", "dungeons"},
+        usage = {"(add|finish|running|talking|debug|triggers|grouptriggers) [<questId>]", "dungeons"},
         permission = "player.quest",
         permissionTargeted = "player.quest.others")
 public final class QuestCommand implements CommandHandler {
     private static final List<String> SINGLE_ARG = List.of("dungeons", "list");
-    /** `forcefinish all` has a word where the id goes, so the id parse must be skipped. */
-    private static boolean isWordArg(List<String> args) {
-        return args.size() > 1 && "all".equalsIgnoreCase(args.get(1));
-    }
 
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
@@ -32,7 +28,7 @@ public final class QuestCommand implements CommandHandler {
         var cmd = args.get(0).toLowerCase();
         int questId = -1;
 
-        if (!SINGLE_ARG.contains(cmd) && !isWordArg(args)) {
+        if (!SINGLE_ARG.contains(cmd)) {
             try {
                 questId = Integer.parseInt(args.get(1));
             } catch (Exception e) {
@@ -42,23 +38,6 @@ public final class QuestCommand implements CommandHandler {
         }
 
         switch (cmd) {
-            // Marks a main quest finished on the CLIENT only, for quests this server has no data
-            // for. Region barriers are quest-gated, and a region released after the resource set
-            // was cut cannot be reached with `finish`. Does not persist across a relog.
-            case "forcefinish" -> {
-                // Marks main quests finished for the CLIENT. The quest system cannot finish what it
-                // has no data for, and this resource set is older than the client, so region gates
-                // like Snezhnaya's are unreachable any other way. Persisted and replayed on login.
-                var ids =
-                        "all".equalsIgnoreCase(args.get(1))
-                                ? emu.grasscutter.game.quest.ForcedQuests.allMainQuests()
-                                : List.of(questId);
-                int added = emu.grasscutter.game.quest.ForcedQuests.apply(targetPlayer, ids);
-                CommandHandler.sendMessage(
-                        sender,
-                        "Force-finished " + ids.size() + " main quest(s), " + added + " newly."
-                                + " This is saved and re-sent on every login.");
-            }
             case "add" -> {
                 var quest = targetPlayer.getQuestManager().addQuest(questId);
 

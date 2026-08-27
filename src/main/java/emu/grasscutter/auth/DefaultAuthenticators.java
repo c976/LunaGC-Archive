@@ -59,29 +59,10 @@ public final class DefaultAuthenticators {
                                     translate(
                                             "messages.dispatch.account.account_login_create_success",
                                             address,
-                                            account.getId()));
+                                            response.data.account.uid));
                 }
-            } else if (account != null) {
-                // Lock the entered password as the account password on first login
-                // (covers both newly auto-created accounts and old accounts with an empty password).
-                String rawPassword = requestData.password;
-                if ((account.getPassword() == null || account.getPassword().isEmpty())
-                        && rawPassword != null
-                        && !rawPassword.isEmpty()) {
-                    account.setPassword(
-                            BCrypt.withDefaults().hashToString(10, rawPassword.toCharArray()));
-                    account.save();
-                }
-                // Verify the password for accounts that have one set.
-                if (account.getPassword() == null
-                        || account.getPassword().isEmpty()
-                        || account.verifyPassword(rawPassword)) {
-                    successfulLogin = true;
-                } else {
-                    responseMessage = translate("messages.dispatch.account.password_error");
-                    loggerMessage = translate("messages.dispatch.account.login_password_error", address);
-                }
-            } else
+            } else if (account != null) successfulLogin = true;
+            else
                 loggerMessage = translate("messages.dispatch.account.account_login_exist_error", address);
 
             // Set response data.
@@ -185,19 +166,10 @@ public final class DefaultAuthenticators {
                         responseMessage = translate("messages.dispatch.account.password_error");
                     }
                 } else {
-                    // Empty password account: lock the entered password on first login.
-                    if (decryptedPassword != null && !decryptedPassword.isEmpty()) {
-                        account.setPassword(
-                                BCrypt.withDefaults()
-                                        .hashToString(12, decryptedPassword.toCharArray()));
-                        account.save();
-                        successfulLogin = true;
-                    } else {
-                        successfulLogin = false;
-                        loggerMessage =
-                                translate("messages.dispatch.account.login_password_error", address);
-                        responseMessage = translate("messages.dispatch.account.password_error");
-                    }
+                    successfulLogin = false;
+                    loggerMessage =
+                            translate("messages.dispatch.account.login_password_storage_error", address);
+                    responseMessage = translate("messages.dispatch.account.password_storage_error");
                 }
             } else {
                 loggerMessage = translate("messages.dispatch.account.account_login_exist_error", address);
@@ -283,41 +255,11 @@ public final class DefaultAuthenticators {
             String address = Utils.address(request.getContext());
             String loggerMessage;
 
-            // Log the combo login attempt for diagnostics.
-            String dbKey = "";
-            Account account = DatabaseHelper.getAccountById(loginData.uid);
-            if (account != null) {
-                var sk = account.getSessionKey();
-                dbKey = sk == null ? "<null>" : sk.substring(0, Math.min(20, sk.length()));
-            }
-            Grasscutter.getLogger().info(
-                    "[Combo] login from " + address
-                            + " uid=" + loginData.uid
-                            + " token=" + (loginData.token == null ? "<null>" : loginData.token.substring(0, Math.min(20, loginData.token.length())))
-                            + " dbKey=" + dbKey
-                            + " account=" + (account != null));
-
             // Get account from database.
+            Account account = DatabaseHelper.getAccountById(loginData.uid);
+
             // Check if account exists/token is valid.
-            // Lenient mode for private servers: if the stored session key differs (e.g. the
-            // client cached a token from another server/play session), adopt the client's
-            // token so the combo login succeeds instead of failing with a "session key error".
-            if (account != null) {
-                var sk = account.getSessionKey();
-                if (sk == null || !sk.equals(loginData.token)) {
-                    Grasscutter.getLogger().info(
-                            "[Combo] adopting token for uid=" + loginData.uid
-                                    + " (old=" + (sk == null ? "null" : sk.substring(0, Math.min(12, sk.length())))
-                                    + " new=" + (loginData.token == null ? "null" : loginData.token.substring(0, Math.min(12, loginData.token.length())))
-                                    + ")");
-                    account.setSessionKey(loginData.token);
-                    account.save();
-                }
-                successfulLogin = true;
-            } else {
-                successfulLogin = false;
-            }
-            Grasscutter.getLogger().info("[Combo] verification=" + successfulLogin);
+            successfulLogin = account != null && account.getSessionKey().equals(loginData.token);
 
             // Set response data.
             if (successfulLogin) {

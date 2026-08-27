@@ -19,7 +19,13 @@ public final class TanukiTravelLevelDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 route_id = 2;</code>
+     * <code>bool is_finish = 2;</code>
+     * @return The isFinish.
+     */
+    boolean getIsFinish();
+
+    /**
+     * <code>uint32 route_id = 12;</code>
      * @return The routeId.
      */
     int getRouteId();
@@ -29,14 +35,12 @@ public final class TanukiTravelLevelDataOuterClass {
      * @return The isOpen.
      */
     boolean getIsOpen();
-
-    /**
-     * <code>bool is_finish = 15;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
   }
   /**
+   * <pre>
+   * Obf: OKBFMCFBABK
+   * </pre>
+   *
    * Protobuf type {@code TanukiTravelLevelData}
    */
   public static final class TanukiTravelLevelData extends
@@ -81,9 +85,9 @@ public final class TanukiTravelLevelDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
-              routeId_ = input.readUInt32();
+              isFinish_ = input.readBool();
               break;
             }
             case 48: {
@@ -91,9 +95,9 @@ public final class TanukiTravelLevelDataOuterClass {
               isOpen_ = input.readBool();
               break;
             }
-            case 120: {
+            case 16: {
 
-              isFinish_ = input.readBool();
+              routeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,21 @@ public final class TanukiTravelLevelDataOuterClass {
               emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData.class, emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData.Builder.class);
     }
 
+    public static final int IS_FINISH_FIELD_NUMBER = 15;
+    private boolean isFinish_;
+    /**
+     * <code>bool is_finish = 2;</code>
+     * @return The isFinish.
+     */
+    @java.lang.Override
+    public boolean getIsFinish() {
+      return isFinish_;
+    }
+
     public static final int ROUTE_ID_FIELD_NUMBER = 2;
     private int routeId_;
     /**
-     * <code>uint32 route_id = 2;</code>
+     * <code>uint32 route_id = 12;</code>
      * @return The routeId.
      */
     @java.lang.Override
@@ -150,17 +165,6 @@ public final class TanukiTravelLevelDataOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 15;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 15;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -175,14 +179,14 @@ public final class TanukiTravelLevelDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (routeId_ != 0) {
-        output.writeUInt32(2, routeId_);
+      if (isFinish_ != false) {
+        output.writeBool(15, isFinish_);
       }
       if (isOpen_ != false) {
         output.writeBool(6, isOpen_);
       }
-      if (isFinish_ != false) {
-        output.writeBool(15, isFinish_);
+      if (routeId_ != 0) {
+        output.writeUInt32(2, routeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class TanukiTravelLevelDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (routeId_ != 0) {
+      if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, routeId_);
+          .computeBoolSize(15, isFinish_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(6, isOpen_);
       }
-      if (isFinish_ != false) {
+      if (routeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinish_);
+          .computeUInt32Size(2, routeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -220,12 +224,12 @@ public final class TanukiTravelLevelDataOuterClass {
       }
       emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData other = (emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData) obj;
 
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
       if (getRouteId()
           != other.getRouteId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -237,14 +241,14 @@ public final class TanukiTravelLevelDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsFinish());
       hash = (37 * hash) + ROUTE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getRouteId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -341,6 +345,10 @@ public final class TanukiTravelLevelDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: OKBFMCFBABK
+     * </pre>
+     *
      * Protobuf type {@code TanukiTravelLevelData}
      */
     public static final class Builder extends
@@ -378,11 +386,11 @@ public final class TanukiTravelLevelDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isFinish_ = false;
+
         routeId_ = 0;
 
         isOpen_ = false;
-
-        isFinish_ = false;
 
         return this;
       }
@@ -410,9 +418,9 @@ public final class TanukiTravelLevelDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData buildPartial() {
         emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData result = new emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData(this);
+        result.isFinish_ = isFinish_;
         result.routeId_ = routeId_;
         result.isOpen_ = isOpen_;
-        result.isFinish_ = isFinish_;
         onBuilt();
         return result;
       }
@@ -461,14 +469,14 @@ public final class TanukiTravelLevelDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData other) {
         if (other == emu.grasscutter.net.proto.TanukiTravelLevelDataOuterClass.TanukiTravelLevelData.getDefaultInstance()) return this;
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
+        }
         if (other.getRouteId() != 0) {
           setRouteId(other.getRouteId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
-        }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -499,9 +507,40 @@ public final class TanukiTravelLevelDataOuterClass {
         return this;
       }
 
+      private boolean isFinish_ ;
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @return The isFinish.
+       */
+      @java.lang.Override
+      public boolean getIsFinish() {
+        return isFinish_;
+      }
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @param value The isFinish to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsFinish(boolean value) {
+        
+        isFinish_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_finish = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsFinish() {
+        
+        isFinish_ = false;
+        onChanged();
+        return this;
+      }
+
       private int routeId_ ;
       /**
-       * <code>uint32 route_id = 2;</code>
+       * <code>uint32 route_id = 12;</code>
        * @return The routeId.
        */
       @java.lang.Override
@@ -509,7 +548,7 @@ public final class TanukiTravelLevelDataOuterClass {
         return routeId_;
       }
       /**
-       * <code>uint32 route_id = 2;</code>
+       * <code>uint32 route_id = 12;</code>
        * @param value The routeId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +559,7 @@ public final class TanukiTravelLevelDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 route_id = 2;</code>
+       * <code>uint32 route_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRouteId() {
@@ -557,37 +596,6 @@ public final class TanukiTravelLevelDataOuterClass {
       public Builder clearIsOpen() {
         
         isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 15;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 15;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
         onChanged();
         return this;
       }
@@ -659,10 +667,9 @@ public final class TanukiTravelLevelDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033TanukiTravelLevelData.proto\"M\n\025TanukiT" +
-      "ravelLevelData\022\020\n\010route_id\030\002 \001(\r\022\017\n\007is_o" +
-      "pen\030\006 \001(\010\022\021\n\tis_finish\030\017 \001(\010B<\n\031emu.gras" +
-      "scutter.net.protoB\037TanukiTravelLevelData" +
-      "OuterClassb\006proto3"
+      "ravelLevelData\022\021\n\tis_finish\030\002 \001(\010\022\020\n\010rou" +
+      "te_id\030\014 \001(\r\022\017\n\007is_open\030\006 \001(\010B\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -673,7 +680,7 @@ public final class TanukiTravelLevelDataOuterClass {
     internal_static_TanukiTravelLevelData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TanukiTravelLevelData_descriptor,
-        new java.lang.String[] { "RouteId", "IsOpen", "IsFinish", });
+        new java.lang.String[] { "IsFinish", "RouteId", "IsOpen", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

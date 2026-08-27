@@ -19,11 +19,11 @@ public final class VintageMarketDealInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     int getTraderItemInfoMapCount();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     boolean containsTraderItemInfoMap(
         int key);
@@ -34,25 +34,29 @@ public final class VintageMarketDealInfoOuterClass {
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo>
     getTraderItemInfoMap();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     java.util.Map<java.lang.Integer, emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo>
     getTraderItemInfoMapMap();
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrDefault(
         int key,
         emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo defaultValue);
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
 
     emu.grasscutter.net.proto.VintageMarketTraderInfoOuterClass.VintageMarketTraderInfo getTraderItemInfoMapOrThrow(
         int key);
   }
   /**
+   * <pre>
+   * Obf: FENNPDEALKC
+   * </pre>
+   *
    * Protobuf type {@code VintageMarketDealInfo}
    */
   public static final class VintageMarketDealInfo extends
@@ -140,7 +144,7 @@ public final class VintageMarketDealInfoOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
+        case 7:
           return internalGetTraderItemInfoMap();
         default:
           throw new RuntimeException(
@@ -182,7 +186,7 @@ public final class VintageMarketDealInfoOuterClass {
       return internalGetTraderItemInfoMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
 
     @java.lang.Override
@@ -200,7 +204,7 @@ public final class VintageMarketDealInfoOuterClass {
       return getTraderItemInfoMapMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -208,7 +212,7 @@ public final class VintageMarketDealInfoOuterClass {
       return internalGetTraderItemInfoMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -221,7 +225,7 @@ public final class VintageMarketDealInfoOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+     * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
      */
     @java.lang.Override
 
@@ -403,6 +407,10 @@ public final class VintageMarketDealInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: FENNPDEALKC
+     * </pre>
+     *
      * Protobuf type {@code VintageMarketDealInfo}
      */
     public static final class Builder extends
@@ -418,7 +426,7 @@ public final class VintageMarketDealInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 7:
             return internalGetTraderItemInfoMap();
           default:
             throw new RuntimeException(
@@ -429,7 +437,7 @@ public final class VintageMarketDealInfoOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
+          case 7:
             return internalGetMutableTraderItemInfoMap();
           default:
             throw new RuntimeException(
@@ -599,7 +607,7 @@ public final class VintageMarketDealInfoOuterClass {
         return internalGetTraderItemInfoMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
 
       @java.lang.Override
@@ -617,7 +625,7 @@ public final class VintageMarketDealInfoOuterClass {
         return getTraderItemInfoMapMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -625,7 +633,7 @@ public final class VintageMarketDealInfoOuterClass {
         return internalGetTraderItemInfoMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -638,7 +646,7 @@ public final class VintageMarketDealInfoOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
       @java.lang.Override
 
@@ -659,7 +667,7 @@ public final class VintageMarketDealInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
 
       public Builder removeTraderItemInfoMap(
@@ -678,7 +686,7 @@ public final class VintageMarketDealInfoOuterClass {
         return internalGetMutableTraderItemInfoMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
       public Builder putTraderItemInfoMap(
           int key,
@@ -690,7 +698,7 @@ public final class VintageMarketDealInfoOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 2;</code>
+       * <code>map&lt;uint32, .VintageMarketTraderInfo&gt; trader_item_info_map = 7;</code>
        */
 
       public Builder putAllTraderItemInfoMap(
@@ -773,12 +781,12 @@ public final class VintageMarketDealInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033VintageMarketDealInfo.proto\032\035VintageMa" +
       "rketTraderInfo.proto\"\270\001\n\025VintageMarketDe" +
-      "alInfo\022K\n\024trader_item_info_map\030\002 \003(\0132-.V" +
+      "alInfo\022K\n\024trader_item_info_map\030\007 \003(\0132-.V" +
       "intageMarketDealInfo.TraderItemInfoMapEn" +
       "try\032R\n\026TraderItemInfoMapEntry\022\013\n\003key\030\001 \001" +
       "(\r\022\'\n\005value\030\002 \001(\0132\030.VintageMarketTraderI" +
-      "nfo:\0028\001B<\n\031emu.grasscutter.net.protoB\037Vi" +
-      "ntageMarketDealInfoOuterClassb\006proto3"
+      "nfo:\0028\001B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

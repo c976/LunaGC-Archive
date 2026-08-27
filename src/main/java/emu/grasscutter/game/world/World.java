@@ -59,8 +59,6 @@ public class World implements Iterable<Player> {
 
     private long lastUpdateTime;
     @Getter protected int tickCount = 0;
-    private long lastTimeSync = 0;
-    private long lastTimeStore = 0;
     @Getter private boolean isPaused = false;
     @Getter private long currentWorldTime;
 
@@ -343,11 +341,6 @@ public class World implements Iterable<Player> {
                                 Grasscutter.getLogger()
                                         .trace(
                                                 "queueTransferPlayerToScene: teleport to scene {} is interrupted", sceneId);
-                            } catch (Throwable e) {
-                                // submit() parks anything thrown in a Future nobody reads, so a failed
-                                // teleport just left the player standing there with nothing logged
-                                Grasscutter.getLogger()
-                                        .error("Queued teleport to scene {} failed.", sceneId, e);
                             }
                         }));
     }
@@ -571,29 +564,16 @@ public class World implements Iterable<Player> {
         this.getScenes()
                 .forEach(
                         (k, scene) -> {
-                            if (scene.getPlayerCount() == 0) return;
-
-                            try {
-                                scene.onTick();
-                            } catch (Throwable e) {
-                                // One scene's trouble is not the next one's, nor the world's clock below.
-                                Grasscutter.getLogger().error("Scene {} threw while ticking.", k, e);
-                            }
+                            if (scene.getPlayerCount() > 0) scene.onTick();
                         });
 
-        // These are wall-clock cadences, not tick counts: the tick rate is configurable, so
-        // counting ticks would sync the clock 5x too often at 200ms and not at all at 5000ms.
-        var now = System.currentTimeMillis();
-
         // sync time every 10 seconds
-        if (now - this.lastTimeSync >= 10_000L) {
-            this.lastTimeSync = now;
+        if (this.tickCount % 10 == 0) {
             this.getPlayers().forEach(p -> p.sendPacket(new PacketPlayerGameTimeNotify(p)));
         }
 
         // store updated world time every 60 seconds. (in-game hour)
-        if (now - this.lastTimeStore >= 60_000L && !this.timeLocked) {
-            this.lastTimeStore = now;
+        if (this.tickCount % 60 == 0 && !this.timeLocked) {
             this.getHost().updatePlayerGameTime(this.currentWorldTime);
         }
 

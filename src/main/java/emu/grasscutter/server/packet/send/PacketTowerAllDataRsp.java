@@ -28,21 +28,27 @@ public class PacketTowerAllDataRsp extends BasePacket {
                                                 .build())
                         .toList();
 
-        var scheduleStart = DateHelper.getUnixTime(towerScheduleManager.getScheduleStartTime());
-
         var openTimeMap =
                 towerScheduleManager.getScheduleFloors().stream()
-                        .collect(Collectors.toMap(x -> x, y -> scheduleStart));
+                        .collect(
+                                Collectors.toMap(
+                                        x -> x,
+                                        y ->
+                                                DateHelper.getUnixTime(
+                                                        towerScheduleManager.getTowerScheduleConfig().getScheduleStartTime())));
 
         TowerAllDataRsp proto =
                 TowerAllDataRsp.newBuilder()
                         .setTowerScheduleId(towerScheduleManager.getCurrentTowerScheduleData().getScheduleId())
                         .addAllTowerFloorRecordList(recordList)
-                        .setCurLevelRecord(TowerCurLevelRecord.newBuilder().setIsEmpty(true))
-                        .setScheduleStartTime(scheduleStart)
+                        //.setCurLevelRecord(TowerCurLevelRecord.newBuilder().setIsEmpty(true))
+                        //.setScheduleStartTime(
+                        //        DateHelper.getUnixTime(
+                        //                towerScheduleManager.getTowerScheduleConfig().getScheduleStartTime()))
                         .setNextScheduleChangeTime(
-                                DateHelper.getUnixTime(towerScheduleManager.getNextScheduleChangeTime()))
-                        .putAllFloorOpenTimeMap(openTimeMap)
+                                DateHelper.getUnixTime(
+                                        towerScheduleManager.getTowerScheduleConfig().getNextScheduleChangeTime()))
+                        //.putAllFloorOpenTimeMap(openTimeMap)
                         .setIsFinishedEntranceFloor(towerManager.canEnterScheduleFloor())
                         .build();
 
@@ -56,8 +62,8 @@ public class PacketTowerAllDataRsp extends BasePacket {
                         item ->
                                 TowerLevelRecordOuterClass.TowerLevelRecord.newBuilder()
                                         .setLevelId(item.getKey())
-                                        .addAllSatisfiedCondList(
-                                                IntStream.range(1, item.getValue() + 1).boxed().toList())
+                                        //.addAllSatisfiedCondList(
+                                        //        IntStream.range(1, item.getValue() + 1).boxed().toList())
                                         .build())
                 .toList();
     }

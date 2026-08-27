@@ -18,64 +18,36 @@ public final class PlayerWorldSceneInfoOuterClass {
       // @@protoc_insertion_point(interface_extends:PlayerWorldSceneInfo)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     * @return Whether the mapLayerInfo field is set.
-     */
     boolean hasMapLayerInfo();
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     * @return The mapLayerInfo.
-     */
+
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     */
+
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
 
     /**
-     * <code>uint32 scene_id = 3;</code>
-     * @return The sceneId.
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+     * @return Whether the mGEKPJHLIOJ field is set.
      */
-    int getSceneId();
+    boolean hasMGEKPJHLIOJ();
+    /**
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+     * @return The mGEKPJHLIOJ.
+     */
+    emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA getMGEKPJHLIOJ();
+    /**
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+     */
+    emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder getMGEKPJHLIOJOrBuilder();
 
-    /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-     * @return Whether the limitedRegionInfo field is set.
-     */
-    boolean hasLimitedRegionInfo();
-    /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-     * @return The limitedRegionInfo.
-     */
-    emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo getLimitedRegionInfo();
-    /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-     */
-    emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder();
+    java.util.List<java.lang.Integer> getSceneTagIdListList();
 
-    /**
-     * <code>bool is_locked = 12;</code>
-     * @return The isLocked.
-     */
+    int getSceneTagIdListCount();
+
+    int getSceneTagIdList(int index);
+
     boolean getIsLocked();
 
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @return A list containing the sceneTagIdList.
-     */
-    java.util.List<java.lang.Integer> getSceneTagIdListList();
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @return The count of sceneTagIdList.
-     */
-    int getSceneTagIdListCount();
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The sceneTagIdList at the given index.
-     */
-    int getSceneTagIdList(int index);
+    int getSceneId();
   }
   /**
    * Protobuf type {@code PlayerWorldSceneInfo}
@@ -124,37 +96,6 @@ public final class PlayerWorldSceneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
-              if (MapLayerInfo_ != null) {
-                subBuilder = MapLayerInfo_.toBuilder();
-              }
-              MapLayerInfo_ = input.readMessage(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(MapLayerInfo_);
-                MapLayerInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 24: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 58: {
-              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder subBuilder = null;
-              if (LimitedRegionInfo_ != null) {
-                subBuilder = LimitedRegionInfo_.toBuilder();
-              }
-              LimitedRegionInfo_ = input.readMessage(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(LimitedRegionInfo_);
-                LimitedRegionInfo_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
             case 96: {
 
               isLocked_ = input.readBool();
@@ -179,6 +120,37 @@ public final class PlayerWorldSceneInfoOuterClass {
                 sceneTagIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 24: {
+
+              sceneId_ = input.readUInt32();
+              break;
+            }
+            case 10: {
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
+              if (mapLayerInfo_ != null) {
+                subBuilder = mapLayerInfo_.toBuilder();
+              }
+              mapLayerInfo_ = input.readMessage(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mapLayerInfo_);
+                mapLayerInfo_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 128002: {
+              emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder subBuilder = null;
+              if (mGEKPJHLIOJ_ != null) {
+                subBuilder = mGEKPJHLIOJ_.toBuilder();
+              }
+              mGEKPJHLIOJ_ = input.readMessage(emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mGEKPJHLIOJ_);
+                mGEKPJHLIOJ_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -216,107 +188,83 @@ public final class PlayerWorldSceneInfoOuterClass {
               emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.class, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder.class);
     }
 
-    public static final int _MAP_LAYER_INFO_FIELD_NUMBER = 1;
-    private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo MapLayerInfo_;
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     * @return Whether the mapLayerInfo field is set.
-     */
+    public static final int MAP_LAYER_INFO_FIELD_NUMBER = 1;
+    private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
+
     @java.lang.Override
     public boolean hasMapLayerInfo() {
-      return MapLayerInfo_ != null;
+      return mapLayerInfo_ != null;
     }
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     * @return The mapLayerInfo.
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
-      return MapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : MapLayerInfo_;
+      return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
     }
-    /**
-     * <code>.MapLayerInfo _map_layer_info = 1;</code>
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
       return getMapLayerInfo();
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 3;
-    private int sceneId_;
+    public static final int MGEKPJHLIOJ_FIELD_NUMBER = 16000;
+    private emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA mGEKPJHLIOJ_;
     /**
-     * <code>uint32 scene_id = 3;</code>
-     * @return The sceneId.
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+     * @return Whether the mGEKPJHLIOJ field is set.
      */
     @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int _LIMITED_REGION_INFO_FIELD_NUMBER = 7;
-    private emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo LimitedRegionInfo_;
-    /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-     * @return Whether the limitedRegionInfo field is set.
-     */
-    @java.lang.Override
-    public boolean hasLimitedRegionInfo() {
-      return LimitedRegionInfo_ != null;
+    public boolean hasMGEKPJHLIOJ() {
+      return mGEKPJHLIOJ_ != null;
     }
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-     * @return The limitedRegionInfo.
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+     * @return The mGEKPJHLIOJ.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo getLimitedRegionInfo() {
-      return LimitedRegionInfo_ == null ? emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.getDefaultInstance() : LimitedRegionInfo_;
+    public emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA getMGEKPJHLIOJ() {
+      return mGEKPJHLIOJ_ == null ? emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.getDefaultInstance() : mGEKPJHLIOJ_;
     }
     /**
-     * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+     * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder() {
-      return getLimitedRegionInfo();
-    }
-
-    public static final int IS_LOCKED_FIELD_NUMBER = 12;
-    private boolean isLocked_;
-    /**
-     * <code>bool is_locked = 12;</code>
-     * @return The isLocked.
-     */
-    @java.lang.Override
-    public boolean getIsLocked() {
-      return isLocked_;
+    public emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder getMGEKPJHLIOJOrBuilder() {
+      return getMGEKPJHLIOJ();
     }
 
     public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList sceneTagIdList_;
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @return A list containing the sceneTagIdList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Integer>
         getSceneTagIdListList() {
       return sceneTagIdList_;
     }
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @return The count of sceneTagIdList.
-     */
+
     public int getSceneTagIdListCount() {
       return sceneTagIdList_.size();
     }
-    /**
-     * <code>repeated uint32 scene_tag_id_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The sceneTagIdList at the given index.
-     */
+
     public int getSceneTagIdList(int index) {
       return sceneTagIdList_.getInt(index);
     }
     private int sceneTagIdListMemoizedSerializedSize = -1;
+
+    public static final int IS_LOCKED_FIELD_NUMBER = 12;
+    private boolean isLocked_;
+
+    @java.lang.Override
+    public boolean getIsLocked() {
+      return isLocked_;
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    private int sceneId_;
+
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -333,17 +281,11 @@ public final class PlayerWorldSceneInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (MapLayerInfo_ != null) {
-        output.writeMessage(1, getMapLayerInfo());
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(3, sceneId_);
-      }
-      if (LimitedRegionInfo_ != null) {
-        output.writeMessage(7, getLimitedRegionInfo());
-      }
       if (isLocked_ != false) {
         output.writeBool(12, isLocked_);
+      }
+      if (mapLayerInfo_ != null) {
+        output.writeMessage(1, getMapLayerInfo());
       }
       if (getSceneTagIdListList().size() > 0) {
         output.writeUInt32NoTag(122);
@@ -351,6 +293,12 @@ public final class PlayerWorldSceneInfoOuterClass {
       }
       for (int i = 0; i < sceneTagIdList_.size(); i++) {
         output.writeUInt32NoTag(sceneTagIdList_.getInt(i));
+      }
+      if (mGEKPJHLIOJ_ != null) {
+        output.writeMessage(16000, getMGEKPJHLIOJ());
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(3, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -361,21 +309,13 @@ public final class PlayerWorldSceneInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (MapLayerInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getMapLayerInfo());
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneId_);
-      }
-      if (LimitedRegionInfo_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, getLimitedRegionInfo());
-      }
       if (isLocked_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isLocked_);
+      }
+      if (mapLayerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getMapLayerInfo());
       }
       {
         int dataSize = 0;
@@ -390,6 +330,14 @@ public final class PlayerWorldSceneInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         sceneTagIdListMemoizedSerializedSize = dataSize;
+      }
+      if (mGEKPJHLIOJ_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(16000, getMGEKPJHLIOJ());
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -411,17 +359,17 @@ public final class PlayerWorldSceneInfoOuterClass {
         if (!getMapLayerInfo()
             .equals(other.getMapLayerInfo())) return false;
       }
-      if (getSceneId()
-          != other.getSceneId()) return false;
-      if (hasLimitedRegionInfo() != other.hasLimitedRegionInfo()) return false;
-      if (hasLimitedRegionInfo()) {
-        if (!getLimitedRegionInfo()
-            .equals(other.getLimitedRegionInfo())) return false;
+      if (hasMGEKPJHLIOJ() != other.hasMGEKPJHLIOJ()) return false;
+      if (hasMGEKPJHLIOJ()) {
+        if (!getMGEKPJHLIOJ()
+            .equals(other.getMGEKPJHLIOJ())) return false;
       }
-      if (getIsLocked()
-          != other.getIsLocked()) return false;
       if (!getSceneTagIdListList()
           .equals(other.getSceneTagIdListList())) return false;
+      if (getIsLocked()
+          != other.getIsLocked()) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -434,22 +382,22 @@ public final class PlayerWorldSceneInfoOuterClass {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       if (hasMapLayerInfo()) {
-        hash = (37 * hash) + _MAP_LAYER_INFO_FIELD_NUMBER;
+        hash = (37 * hash) + MAP_LAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getMapLayerInfo().hashCode();
       }
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
-      if (hasLimitedRegionInfo()) {
-        hash = (37 * hash) + _LIMITED_REGION_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getLimitedRegionInfo().hashCode();
+      if (hasMGEKPJHLIOJ()) {
+        hash = (37 * hash) + MGEKPJHLIOJ_FIELD_NUMBER;
+        hash = (53 * hash) + getMGEKPJHLIOJ().hashCode();
       }
-      hash = (37 * hash) + IS_LOCKED_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsLocked());
       if (getSceneTagIdListCount() > 0) {
         hash = (37 * hash) + SCENE_TAG_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSceneTagIdListList().hashCode();
       }
+      hash = (37 * hash) + IS_LOCKED_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsLocked());
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -583,24 +531,24 @@ public final class PlayerWorldSceneInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (MapLayerInfoBuilder_ == null) {
-          MapLayerInfo_ = null;
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = null;
         } else {
-          MapLayerInfo_ = null;
-          MapLayerInfoBuilder_ = null;
+          mapLayerInfo_ = null;
+          mapLayerInfoBuilder_ = null;
         }
-        sceneId_ = 0;
-
-        if (LimitedRegionInfoBuilder_ == null) {
-          LimitedRegionInfo_ = null;
+        if (mGEKPJHLIOJBuilder_ == null) {
+          mGEKPJHLIOJ_ = null;
         } else {
-          LimitedRegionInfo_ = null;
-          LimitedRegionInfoBuilder_ = null;
+          mGEKPJHLIOJ_ = null;
+          mGEKPJHLIOJBuilder_ = null;
         }
-        isLocked_ = false;
-
         sceneTagIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        isLocked_ = false;
+
+        sceneId_ = 0;
+
         return this;
       }
 
@@ -628,23 +576,23 @@ public final class PlayerWorldSceneInfoOuterClass {
       public emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo buildPartial() {
         emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo result = new emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo(this);
         int from_bitField0_ = bitField0_;
-        if (MapLayerInfoBuilder_ == null) {
-          result.MapLayerInfo_ = MapLayerInfo_;
+        if (mapLayerInfoBuilder_ == null) {
+          result.mapLayerInfo_ = mapLayerInfo_;
         } else {
-          result.MapLayerInfo_ = MapLayerInfoBuilder_.build();
+          result.mapLayerInfo_ = mapLayerInfoBuilder_.build();
         }
-        result.sceneId_ = sceneId_;
-        if (LimitedRegionInfoBuilder_ == null) {
-          result.LimitedRegionInfo_ = LimitedRegionInfo_;
+        if (mGEKPJHLIOJBuilder_ == null) {
+          result.mGEKPJHLIOJ_ = mGEKPJHLIOJ_;
         } else {
-          result.LimitedRegionInfo_ = LimitedRegionInfoBuilder_.build();
+          result.mGEKPJHLIOJ_ = mGEKPJHLIOJBuilder_.build();
         }
-        result.isLocked_ = isLocked_;
         if (((bitField0_ & 0x00000001) != 0)) {
           sceneTagIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.sceneTagIdList_ = sceneTagIdList_;
+        result.isLocked_ = isLocked_;
+        result.sceneId_ = sceneId_;
         onBuilt();
         return result;
       }
@@ -696,14 +644,8 @@ public final class PlayerWorldSceneInfoOuterClass {
         if (other.hasMapLayerInfo()) {
           mergeMapLayerInfo(other.getMapLayerInfo());
         }
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
-        if (other.hasLimitedRegionInfo()) {
-          mergeLimitedRegionInfo(other.getLimitedRegionInfo());
-        }
-        if (other.getIsLocked() != false) {
-          setIsLocked(other.getIsLocked());
+        if (other.hasMGEKPJHLIOJ()) {
+          mergeMGEKPJHLIOJ(other.getMGEKPJHLIOJ());
         }
         if (!other.sceneTagIdList_.isEmpty()) {
           if (sceneTagIdList_.isEmpty()) {
@@ -714,6 +656,12 @@ public final class PlayerWorldSceneInfoOuterClass {
             sceneTagIdList_.addAll(other.sceneTagIdList_);
           }
           onChanged();
+        }
+        if (other.getIsLocked() != false) {
+          setIsLocked(other.getIsLocked());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -745,304 +693,222 @@ public final class PlayerWorldSceneInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo MapLayerInfo_;
+      private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> MapLayerInfoBuilder_;
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       * @return Whether the mapLayerInfo field is set.
-       */
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> mapLayerInfoBuilder_;
+
       public boolean hasMapLayerInfo() {
-        return MapLayerInfoBuilder_ != null || MapLayerInfo_ != null;
+        return mapLayerInfoBuilder_ != null || mapLayerInfo_ != null;
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       * @return The mapLayerInfo.
-       */
+
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
-        if (MapLayerInfoBuilder_ == null) {
-          return MapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : MapLayerInfo_;
+        if (mapLayerInfoBuilder_ == null) {
+          return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
         } else {
-          return MapLayerInfoBuilder_.getMessage();
+          return mapLayerInfoBuilder_.getMessage();
         }
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public Builder setMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
-        if (MapLayerInfoBuilder_ == null) {
+        if (mapLayerInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          MapLayerInfo_ = value;
+          mapLayerInfo_ = value;
           onChanged();
         } else {
-          MapLayerInfoBuilder_.setMessage(value);
+          mapLayerInfoBuilder_.setMessage(value);
         }
 
         return this;
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public Builder setMapLayerInfo(
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder builderForValue) {
-        if (MapLayerInfoBuilder_ == null) {
-          MapLayerInfo_ = builderForValue.build();
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = builderForValue.build();
           onChanged();
         } else {
-          MapLayerInfoBuilder_.setMessage(builderForValue.build());
+          mapLayerInfoBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public Builder mergeMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
-        if (MapLayerInfoBuilder_ == null) {
-          if (MapLayerInfo_ != null) {
-            MapLayerInfo_ =
-              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.newBuilder(MapLayerInfo_).mergeFrom(value).buildPartial();
+        if (mapLayerInfoBuilder_ == null) {
+          if (mapLayerInfo_ != null) {
+            mapLayerInfo_ =
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.newBuilder(mapLayerInfo_).mergeFrom(value).buildPartial();
           } else {
-            MapLayerInfo_ = value;
+            mapLayerInfo_ = value;
           }
           onChanged();
         } else {
-          MapLayerInfoBuilder_.mergeFrom(value);
+          mapLayerInfoBuilder_.mergeFrom(value);
         }
 
         return this;
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public Builder clearMapLayerInfo() {
-        if (MapLayerInfoBuilder_ == null) {
-          MapLayerInfo_ = null;
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = null;
           onChanged();
         } else {
-          MapLayerInfo_ = null;
-          MapLayerInfoBuilder_ = null;
+          mapLayerInfo_ = null;
+          mapLayerInfoBuilder_ = null;
         }
 
         return this;
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder getMapLayerInfoBuilder() {
-        
+
         onChanged();
         return getMapLayerInfoFieldBuilder().getBuilder();
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
-        if (MapLayerInfoBuilder_ != null) {
-          return MapLayerInfoBuilder_.getMessageOrBuilder();
+        if (mapLayerInfoBuilder_ != null) {
+          return mapLayerInfoBuilder_.getMessageOrBuilder();
         } else {
-          return MapLayerInfo_ == null ?
-              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : MapLayerInfo_;
+          return mapLayerInfo_ == null ?
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
         }
       }
-      /**
-       * <code>.MapLayerInfo _map_layer_info = 1;</code>
-       */
+
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> 
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder>
           getMapLayerInfoFieldBuilder() {
-        if (MapLayerInfoBuilder_ == null) {
-          MapLayerInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
               emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder>(
                   getMapLayerInfo(),
                   getParentForChildren(),
                   isClean());
-          MapLayerInfo_ = null;
+          mapLayerInfo_ = null;
         }
-        return MapLayerInfoBuilder_;
+        return mapLayerInfoBuilder_;
       }
 
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 3;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 3;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo LimitedRegionInfo_;
+      private emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA mGEKPJHLIOJ_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder> LimitedRegionInfoBuilder_;
+          emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder> mGEKPJHLIOJBuilder_;
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-       * @return Whether the limitedRegionInfo field is set.
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+       * @return Whether the mGEKPJHLIOJ field is set.
        */
-      public boolean hasLimitedRegionInfo() {
-        return LimitedRegionInfoBuilder_ != null || LimitedRegionInfo_ != null;
+      public boolean hasMGEKPJHLIOJ() {
+        return mGEKPJHLIOJBuilder_ != null || mGEKPJHLIOJ_ != null;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
-       * @return The limitedRegionInfo.
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
+       * @return The mGEKPJHLIOJ.
        */
-      public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo getLimitedRegionInfo() {
-        if (LimitedRegionInfoBuilder_ == null) {
-          return LimitedRegionInfo_ == null ? emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.getDefaultInstance() : LimitedRegionInfo_;
+      public emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA getMGEKPJHLIOJ() {
+        if (mGEKPJHLIOJBuilder_ == null) {
+          return mGEKPJHLIOJ_ == null ? emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.getDefaultInstance() : mGEKPJHLIOJ_;
         } else {
-          return LimitedRegionInfoBuilder_.getMessage();
+          return mGEKPJHLIOJBuilder_.getMessage();
         }
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public Builder setLimitedRegionInfo(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo value) {
-        if (LimitedRegionInfoBuilder_ == null) {
+      public Builder setMGEKPJHLIOJ(emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA value) {
+        if (mGEKPJHLIOJBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          LimitedRegionInfo_ = value;
+          mGEKPJHLIOJ_ = value;
           onChanged();
         } else {
-          LimitedRegionInfoBuilder_.setMessage(value);
+          mGEKPJHLIOJBuilder_.setMessage(value);
         }
 
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public Builder setLimitedRegionInfo(
-          emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder builderForValue) {
-        if (LimitedRegionInfoBuilder_ == null) {
-          LimitedRegionInfo_ = builderForValue.build();
+      public Builder setMGEKPJHLIOJ(
+          emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder builderForValue) {
+        if (mGEKPJHLIOJBuilder_ == null) {
+          mGEKPJHLIOJ_ = builderForValue.build();
           onChanged();
         } else {
-          LimitedRegionInfoBuilder_.setMessage(builderForValue.build());
+          mGEKPJHLIOJBuilder_.setMessage(builderForValue.build());
         }
 
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public Builder mergeLimitedRegionInfo(emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo value) {
-        if (LimitedRegionInfoBuilder_ == null) {
-          if (LimitedRegionInfo_ != null) {
-            LimitedRegionInfo_ =
-              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.newBuilder(LimitedRegionInfo_).mergeFrom(value).buildPartial();
+      public Builder mergeMGEKPJHLIOJ(emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA value) {
+        if (mGEKPJHLIOJBuilder_ == null) {
+          if (mGEKPJHLIOJ_ != null) {
+            mGEKPJHLIOJ_ =
+              emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.newBuilder(mGEKPJHLIOJ_).mergeFrom(value).buildPartial();
           } else {
-            LimitedRegionInfo_ = value;
+            mGEKPJHLIOJ_ = value;
           }
           onChanged();
         } else {
-          LimitedRegionInfoBuilder_.mergeFrom(value);
+          mGEKPJHLIOJBuilder_.mergeFrom(value);
         }
 
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public Builder clearLimitedRegionInfo() {
-        if (LimitedRegionInfoBuilder_ == null) {
-          LimitedRegionInfo_ = null;
+      public Builder clearMGEKPJHLIOJ() {
+        if (mGEKPJHLIOJBuilder_ == null) {
+          mGEKPJHLIOJ_ = null;
           onChanged();
         } else {
-          LimitedRegionInfo_ = null;
-          LimitedRegionInfoBuilder_ = null;
+          mGEKPJHLIOJ_ = null;
+          mGEKPJHLIOJBuilder_ = null;
         }
 
         return this;
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder getLimitedRegionInfoBuilder() {
-        
+      public emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder getMGEKPJHLIOJBuilder() {
+
         onChanged();
-        return getLimitedRegionInfoFieldBuilder().getBuilder();
+        return getMGEKPJHLIOJFieldBuilder().getBuilder();
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
-      public emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder getLimitedRegionInfoOrBuilder() {
-        if (LimitedRegionInfoBuilder_ != null) {
-          return LimitedRegionInfoBuilder_.getMessageOrBuilder();
+      public emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder getMGEKPJHLIOJOrBuilder() {
+        if (mGEKPJHLIOJBuilder_ != null) {
+          return mGEKPJHLIOJBuilder_.getMessageOrBuilder();
         } else {
-          return LimitedRegionInfo_ == null ?
-              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.getDefaultInstance() : LimitedRegionInfo_;
+          return mGEKPJHLIOJ_ == null ?
+              emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.getDefaultInstance() : mGEKPJHLIOJ_;
         }
       }
       /**
-       * <code>._LimitedRegionInfo _limited_region_info = 7;</code>
+       * <code>.BLFDGJBMBMA MGEKPJHLIOJ = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder> 
-          getLimitedRegionInfoFieldBuilder() {
-        if (LimitedRegionInfoBuilder_ == null) {
-          LimitedRegionInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfo.Builder, emu.grasscutter.net.proto._LimitedRegionInfoOuterClass._LimitedRegionInfoOrBuilder>(
-                  getLimitedRegionInfo(),
+          emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder>
+          getMGEKPJHLIOJFieldBuilder() {
+        if (mGEKPJHLIOJBuilder_ == null) {
+          mGEKPJHLIOJBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMA.Builder, emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.BLFDGJBMBMAOrBuilder>(
+                  getMGEKPJHLIOJ(),
                   getParentForChildren(),
                   isClean());
-          LimitedRegionInfo_ = null;
+          mGEKPJHLIOJ_ = null;
         }
-        return LimitedRegionInfoBuilder_;
-      }
-
-      private boolean isLocked_ ;
-      /**
-       * <code>bool is_locked = 12;</code>
-       * @return The isLocked.
-       */
-      @java.lang.Override
-      public boolean getIsLocked() {
-        return isLocked_;
-      }
-      /**
-       * <code>bool is_locked = 12;</code>
-       * @param value The isLocked to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsLocked(boolean value) {
-        
-        isLocked_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_locked = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsLocked() {
-        
-        isLocked_ = false;
-        onChanged();
-        return this;
+        return mGEKPJHLIOJBuilder_;
       }
 
       private com.google.protobuf.Internal.IntList sceneTagIdList_ = emptyIntList();
@@ -1052,36 +918,21 @@ public final class PlayerWorldSceneInfoOuterClass {
           bitField0_ |= 0x00000001;
          }
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @return A list containing the sceneTagIdList.
-       */
+
       public java.util.List<java.lang.Integer>
           getSceneTagIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(sceneTagIdList_) : sceneTagIdList_;
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @return The count of sceneTagIdList.
-       */
+
       public int getSceneTagIdListCount() {
         return sceneTagIdList_.size();
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @param index The index of the element to return.
-       * @return The sceneTagIdList at the given index.
-       */
+
       public int getSceneTagIdList(int index) {
         return sceneTagIdList_.getInt(index);
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @param index The index to set the value at.
-       * @param value The sceneTagIdList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setSceneTagIdList(
           int index, int value) {
         ensureSceneTagIdListIsMutable();
@@ -1089,22 +940,14 @@ public final class PlayerWorldSceneInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @param value The sceneTagIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addSceneTagIdList(int value) {
         ensureSceneTagIdListIsMutable();
         sceneTagIdList_.addInt(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @param values The sceneTagIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllSceneTagIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureSceneTagIdListIsMutable();
@@ -1113,13 +956,52 @@ public final class PlayerWorldSceneInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 scene_tag_id_list = 15;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearSceneTagIdList() {
         sceneTagIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private boolean isLocked_ ;
+
+      @java.lang.Override
+      public boolean getIsLocked() {
+        return isLocked_;
+      }
+
+      public Builder setIsLocked(boolean value) {
+
+        isLocked_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearIsLocked() {
+
+        isLocked_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+
+      public Builder setSceneId(int value) {
+
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearSceneId() {
+
+        sceneId_ = 0;
         onChanged();
         return this;
       }
@@ -1134,7 +1016,6 @@ public final class PlayerWorldSceneInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:PlayerWorldSceneInfo)
     }
@@ -1178,7 +1059,7 @@ public final class PlayerWorldSceneInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PlayerWorldSceneInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlayerWorldSceneInfo_fieldAccessorTable;
 
@@ -1191,29 +1072,27 @@ public final class PlayerWorldSceneInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerWorldSceneInfo.proto\032\022MapLayerIn" +
-      "fo.proto\032\030_LimitedRegionInfo.proto\"\261\001\n\024P" +
-      "layerWorldSceneInfo\022&\n\017_map_layer_info\030\001" +
-      " \001(\0132\r.MapLayerInfo\022\020\n\010scene_id\030\003 \001(\r\0221\n" +
-      "\024_limited_region_info\030\007 \001(\0132\023._LimitedRe" +
-      "gionInfo\022\021\n\tis_locked\030\014 \001(\010\022\031\n\021scene_tag" +
-      "_id_list\030\017 \003(\rB;\n\031emu.grasscutter.net.pr" +
-      "otoB\036PlayerWorldSceneInfoOuterClassb\006pro" +
-      "to3"
+      "fo.proto\032\021BLFDGJBMBMA.proto\"\240\001\n\024PlayerWo" +
+      "rldSceneInfo\022%\n\016map_layer_info\030\t \001(\0132\r.M" +
+      "apLayerInfo\022!\n\013MGEKPJHLIOJ\030\013 \001(\0132\014.BLFDG" +
+      "JBMBMA\022\031\n\021scene_tag_id_list\030\n \003(\r\022\021\n\tis_" +
+      "locked\030\010 \001(\010\022\020\n\010scene_id\030\014 \001(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto._LimitedRegionInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.getDescriptor(),
         });
     internal_static_PlayerWorldSceneInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PlayerWorldSceneInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerWorldSceneInfo_descriptor,
-        new java.lang.String[] { "MapLayerInfo", "SceneId", "LimitedRegionInfo", "IsLocked", "SceneTagIdList", });
+        new java.lang.String[] { "MapLayerInfo", "MGEKPJHLIOJ", "SceneTagIdList", "IsLocked", "SceneId", });
     emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto._LimitedRegionInfoOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.BLFDGJBMBMAOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

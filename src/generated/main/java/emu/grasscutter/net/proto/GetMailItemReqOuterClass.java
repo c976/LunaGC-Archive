@@ -18,21 +18,10 @@ public final class GetMailItemReqOuterClass {
       // @@protoc_insertion_point(interface_extends:GetMailItemReq)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @return A list containing the mailIdList.
-     */
     java.util.List<java.lang.Integer> getMailIdListList();
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @return The count of mailIdList.
-     */
+
     int getMailIdListCount();
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The mailIdList at the given index.
-     */
+
     int getMailIdList(int index);
   }
   /**
@@ -140,27 +129,17 @@ public final class GetMailItemReqOuterClass {
 
     public static final int MAIL_ID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList mailIdList_;
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @return A list containing the mailIdList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Integer>
         getMailIdListList() {
       return mailIdList_;
     }
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @return The count of mailIdList.
-     */
+
     public int getMailIdListCount() {
       return mailIdList_.size();
     }
-    /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
-     * @param index The index of the element to return.
-     * @return The mailIdList at the given index.
-     */
+
     public int getMailIdList(int index) {
       return mailIdList_.getInt(index);
     }
@@ -505,36 +484,21 @@ public final class GetMailItemReqOuterClass {
           bitField0_ |= 0x00000001;
          }
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @return A list containing the mailIdList.
-       */
+
       public java.util.List<java.lang.Integer>
           getMailIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(mailIdList_) : mailIdList_;
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @return The count of mailIdList.
-       */
+
       public int getMailIdListCount() {
         return mailIdList_.size();
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @param index The index of the element to return.
-       * @return The mailIdList at the given index.
-       */
+
       public int getMailIdList(int index) {
         return mailIdList_.getInt(index);
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @param index The index to set the value at.
-       * @param value The mailIdList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setMailIdList(
           int index, int value) {
         ensureMailIdListIsMutable();
@@ -542,22 +506,14 @@ public final class GetMailItemReqOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @param value The mailIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addMailIdList(int value) {
         ensureMailIdListIsMutable();
         mailIdList_.addInt(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @param values The mailIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllMailIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureMailIdListIsMutable();
@@ -566,10 +522,7 @@ public final class GetMailItemReqOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearMailIdList() {
         mailIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -587,7 +540,6 @@ public final class GetMailItemReqOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:GetMailItemReq)
     }
@@ -631,7 +583,7 @@ public final class GetMailItemReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GetMailItemReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GetMailItemReq_fieldAccessorTable;
 
@@ -644,9 +596,8 @@ public final class GetMailItemReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024GetMailItemReq.proto\"&\n\016GetMailItemReq" +
-      "\022\024\n\014mail_id_list\030\017 \003(\rB5\n\031emu.grasscutte" +
-      "r.net.protoB\030GetMailItemReqOuterClassb\006p" +
-      "roto3"
+      "\022\024\n\014mail_id_list\030\004 \003(\rB\033\n\031emu.grasscutte" +
+      "r.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

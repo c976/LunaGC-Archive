@@ -37,11 +37,13 @@ public class PacketGetShopRsp extends BasePacket {
                                                 .build())
                                 .setScoin(info.getScoin())
                                 .setHcoin(info.getHcoin())
+                                .setBuyLimit(info.getBuyLimit())
                                 .setBeginTime(info.getBeginTime())
                                 .setEndTime(info.getEndTime())
                                 .setMinLevel(info.getMinLevel())
                                 .setMaxLevel(info.getMaxLevel())
-                                .setMcoin(info.getMcoin());
+                                .setMcoin(info.getMcoin())
+                                .setDisableType(info.getDisableType());
 
                 if (info.getCostItemList() != null) {
                     goods.addAllCostItemList(
@@ -54,7 +56,9 @@ public class PacketGetShopRsp extends BasePacket {
                                     .collect(Collectors.toList()));
                 }
 
-                // pre_goods_id_list is unnamed in the 7.0 ShopGoods, so it is not sent.
+                if (info.getPreGoodsIdList() != null) {
+                    goods.addAllPreGoodsIdList(info.getPreGoodsIdList());
+                }
 
                 int currentTs = Utils.getCurrentSeconds();
                 ShopLimit currentShopLimit = player.getGoodsLimit(info.getGoodsId());

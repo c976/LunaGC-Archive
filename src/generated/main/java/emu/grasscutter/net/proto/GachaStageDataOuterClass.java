@@ -19,50 +19,42 @@ public final class GachaStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
      */
-    int getStageId();
-
+    int getGNCJBONIKBFCount();
     /**
-     * <code>bool is_open = 12;</code>
-     * @return The isOpen.
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
      */
-    boolean getIsOpen();
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-    int getTargetNumMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-    boolean containsTargetNumMap(
+    boolean containsGNCJBONIKBF(
         int key);
     /**
-     * Use {@link #getTargetNumMapMap()} instead.
+     * Use {@link #getGNCJBONIKBFMap()} instead.
      */
     @java.lang.Deprecated
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getTargetNumMap();
+    getGNCJBONIKBF();
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
-    getTargetNumMapMap();
+    getGNCJBONIKBFMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
      */
 
-    int getTargetNumMapOrDefault(
+    int getGNCJBONIKBFOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
      */
 
-    int getTargetNumMapOrThrow(
+    int getGNCJBONIKBFOrThrow(
         int key);
+
+    int getStageId();
+
+    boolean getIsOpen();
   }
   /**
    * Protobuf type {@code GachaStageData}
@@ -120,17 +112,17 @@ public final class GachaStageDataOuterClass {
               isOpen_ = input.readBool();
               break;
             }
-            case 106: {
+            case 128002: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                targetNumMap_ = com.google.protobuf.MapField.newMapField(
-                    TargetNumMapDefaultEntryHolder.defaultEntry);
+                gNCJBONIKBF_ = com.google.protobuf.MapField.newMapField(
+                    GNCJBONIKBFDefaultEntryHolder.defaultEntry);
                 mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-              targetNumMap__ = input.readMessage(
-                  TargetNumMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
-              targetNumMap_.getMutableMap().put(
-                  targetNumMap__.getKey(), targetNumMap__.getValue());
+              gNCJBONIKBF__ = input.readMessage(
+                  GNCJBONIKBFDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
+              gNCJBONIKBF_.getMutableMap().put(
+                  gNCJBONIKBF__.getKey(), gNCJBONIKBF__.getValue());
               break;
             }
             default: {
@@ -162,8 +154,8 @@ public final class GachaStageDataOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 13:
-          return internalGetTargetNumMap();
+        case 12:
+          return internalGetGNCJBONIKBF();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -177,12 +169,90 @@ public final class GachaStageDataOuterClass {
               emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.class, emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.Builder.class);
     }
 
+    public static final int GNCJBONIKBF_FIELD_NUMBER = 16000;
+    private static final class GNCJBONIKBFDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.GachaStageDataOuterClass.internal_static_GachaStageData_GNCJBONIKBFEntry_descriptor,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> gNCJBONIKBF_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetGNCJBONIKBF() {
+      if (gNCJBONIKBF_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            GNCJBONIKBFDefaultEntryHolder.defaultEntry);
+      }
+      return gNCJBONIKBF_;
+    }
+
+    public int getGNCJBONIKBFCount() {
+      return internalGetGNCJBONIKBF().getMap().size();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsGNCJBONIKBF(
+        int key) {
+
+      return internalGetGNCJBONIKBF().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getGNCJBONIKBFMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getGNCJBONIKBF() {
+      return getGNCJBONIKBFMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getGNCJBONIKBFMap() {
+      return internalGetGNCJBONIKBF().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
+     */
+    @java.lang.Override
+
+    public int getGNCJBONIKBFOrDefault(
+        int key,
+        int defaultValue) {
+
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetGNCJBONIKBF().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
+     */
+    @java.lang.Override
+
+    public int getGNCJBONIKBFOrThrow(
+        int key) {
+
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetGNCJBONIKBF().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
     public static final int STAGE_ID_FIELD_NUMBER = 6;
     private int stageId_;
-    /**
-     * <code>uint32 stage_id = 6;</code>
-     * @return The stageId.
-     */
+
     @java.lang.Override
     public int getStageId() {
       return stageId_;
@@ -190,94 +260,10 @@ public final class GachaStageDataOuterClass {
 
     public static final int IS_OPEN_FIELD_NUMBER = 12;
     private boolean isOpen_;
-    /**
-     * <code>bool is_open = 12;</code>
-     * @return The isOpen.
-     */
+
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
-    }
-
-    public static final int TARGET_NUM_MAP_FIELD_NUMBER = 13;
-    private static final class TargetNumMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GachaStageDataOuterClass.internal_static_GachaStageData_TargetNumMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> targetNumMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetTargetNumMap() {
-      if (targetNumMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            TargetNumMapDefaultEntryHolder.defaultEntry);
-      }
-      return targetNumMap_;
-    }
-
-    public int getTargetNumMapCount() {
-      return internalGetTargetNumMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsTargetNumMap(
-        int key) {
-      
-      return internalGetTargetNumMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getTargetNumMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getTargetNumMap() {
-      return getTargetNumMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getTargetNumMapMap() {
-      return internalGetTargetNumMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-    @java.lang.Override
-
-    public int getTargetNumMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetTargetNumMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
-     */
-    @java.lang.Override
-
-    public int getTargetNumMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetTargetNumMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -303,9 +289,9 @@ public final class GachaStageDataOuterClass {
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
-          internalGetTargetNumMap(),
-          TargetNumMapDefaultEntryHolder.defaultEntry,
-          13);
+          internalGetGNCJBONIKBF(),
+          GNCJBONIKBFDefaultEntryHolder.defaultEntry,
+          16000);
       unknownFields.writeTo(output);
     }
 
@@ -324,14 +310,14 @@ public final class GachaStageDataOuterClass {
           .computeBoolSize(12, isOpen_);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
-           : internalGetTargetNumMap().getMap().entrySet()) {
+           : internalGetGNCJBONIKBF().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
-        targetNumMap__ = TargetNumMapDefaultEntryHolder.defaultEntry.newBuilderForType()
+        gNCJBONIKBF__ = GNCJBONIKBFDefaultEntryHolder.defaultEntry.newBuilderForType()
             .setKey(entry.getKey())
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(13, targetNumMap__);
+            .computeMessageSize(16000, gNCJBONIKBF__);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -348,12 +334,12 @@ public final class GachaStageDataOuterClass {
       }
       emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData other = (emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData) obj;
 
+      if (!internalGetGNCJBONIKBF().equals(
+          other.internalGetGNCJBONIKBF())) return false;
       if (getStageId()
           != other.getStageId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
-      if (!internalGetTargetNumMap().equals(
-          other.internalGetTargetNumMap())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -365,15 +351,15 @@ public final class GachaStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (!internalGetGNCJBONIKBF().getMap().isEmpty()) {
+        hash = (37 * hash) + GNCJBONIKBF_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetGNCJBONIKBF().hashCode();
+      }
       hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getStageId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
-      if (!internalGetTargetNumMap().getMap().isEmpty()) {
-        hash = (37 * hash) + TARGET_NUM_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetTargetNumMap().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -485,8 +471,8 @@ public final class GachaStageDataOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 13:
-            return internalGetTargetNumMap();
+          case 12:
+            return internalGetGNCJBONIKBF();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -496,8 +482,8 @@ public final class GachaStageDataOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 13:
-            return internalGetMutableTargetNumMap();
+          case 12:
+            return internalGetMutableGNCJBONIKBF();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -529,11 +515,11 @@ public final class GachaStageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        internalGetMutableGNCJBONIKBF().clear();
         stageId_ = 0;
 
         isOpen_ = false;
 
-        internalGetMutableTargetNumMap().clear();
         return this;
       }
 
@@ -561,10 +547,10 @@ public final class GachaStageDataOuterClass {
       public emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData buildPartial() {
         emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData result = new emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData(this);
         int from_bitField0_ = bitField0_;
+        result.gNCJBONIKBF_ = internalGetGNCJBONIKBF();
+        result.gNCJBONIKBF_.makeImmutable();
         result.stageId_ = stageId_;
         result.isOpen_ = isOpen_;
-        result.targetNumMap_ = internalGetTargetNumMap();
-        result.targetNumMap_.makeImmutable();
         onBuilt();
         return result;
       }
@@ -613,14 +599,14 @@ public final class GachaStageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData other) {
         if (other == emu.grasscutter.net.proto.GachaStageDataOuterClass.GachaStageData.getDefaultInstance()) return this;
+        internalGetMutableGNCJBONIKBF().mergeFrom(
+            other.internalGetGNCJBONIKBF());
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        internalGetMutableTargetNumMap().mergeFrom(
-            other.internalGetTargetNumMap());
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -651,162 +637,100 @@ public final class GachaStageDataOuterClass {
       }
       private int bitField0_;
 
-      private int stageId_ ;
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @return The stageId.
-       */
-      @java.lang.Override
-      public int getStageId() {
-        return stageId_;
-      }
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @param value The stageId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setStageId(int value) {
-        
-        stageId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 stage_id = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearStageId() {
-        
-        stageId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 12;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 12;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> targetNumMap_;
+          java.lang.Integer, java.lang.Integer> gNCJBONIKBF_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetTargetNumMap() {
-        if (targetNumMap_ == null) {
+      internalGetGNCJBONIKBF() {
+        if (gNCJBONIKBF_ == null) {
           return com.google.protobuf.MapField.emptyMapField(
-              TargetNumMapDefaultEntryHolder.defaultEntry);
+              GNCJBONIKBFDefaultEntryHolder.defaultEntry);
         }
-        return targetNumMap_;
+        return gNCJBONIKBF_;
       }
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableTargetNumMap() {
+      internalGetMutableGNCJBONIKBF() {
         onChanged();;
-        if (targetNumMap_ == null) {
-          targetNumMap_ = com.google.protobuf.MapField.newMapField(
-              TargetNumMapDefaultEntryHolder.defaultEntry);
+        if (gNCJBONIKBF_ == null) {
+          gNCJBONIKBF_ = com.google.protobuf.MapField.newMapField(
+              GNCJBONIKBFDefaultEntryHolder.defaultEntry);
         }
-        if (!targetNumMap_.isMutable()) {
-          targetNumMap_ = targetNumMap_.copy();
+        if (!gNCJBONIKBF_.isMutable()) {
+          gNCJBONIKBF_ = gNCJBONIKBF_.copy();
         }
-        return targetNumMap_;
+        return gNCJBONIKBF_;
       }
 
-      public int getTargetNumMapCount() {
-        return internalGetTargetNumMap().getMap().size();
+      public int getGNCJBONIKBFCount() {
+        return internalGetGNCJBONIKBF().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
 
       @java.lang.Override
-      public boolean containsTargetNumMap(
+      public boolean containsGNCJBONIKBF(
           int key) {
-        
-        return internalGetTargetNumMap().getMap().containsKey(key);
+
+        return internalGetGNCJBONIKBF().getMap().containsKey(key);
       }
       /**
-       * Use {@link #getTargetNumMapMap()} instead.
+       * Use {@link #getGNCJBONIKBFMap()} instead.
        */
       @java.lang.Override
       @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getTargetNumMap() {
-        return getTargetNumMapMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getGNCJBONIKBF() {
+        return getGNCJBONIKBFMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
       @java.lang.Override
 
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getTargetNumMapMap() {
-        return internalGetTargetNumMap().getMap();
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getGNCJBONIKBFMap() {
+        return internalGetGNCJBONIKBF().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
       @java.lang.Override
 
-      public int getTargetNumMapOrDefault(
+      public int getGNCJBONIKBFOrDefault(
           int key,
           int defaultValue) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetTargetNumMap().getMap();
+            internalGetGNCJBONIKBF().getMap();
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
       @java.lang.Override
 
-      public int getTargetNumMapOrThrow(
+      public int getGNCJBONIKBFOrThrow(
           int key) {
-        
+
         java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetTargetNumMap().getMap();
+            internalGetGNCJBONIKBF().getMap();
         if (!map.containsKey(key)) {
           throw new java.lang.IllegalArgumentException();
         }
         return map.get(key);
       }
 
-      public Builder clearTargetNumMap() {
-        internalGetMutableTargetNumMap().getMutableMap()
+      public Builder clearGNCJBONIKBF() {
+        internalGetMutableGNCJBONIKBF().getMutableMap()
             .clear();
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
 
-      public Builder removeTargetNumMap(
+      public Builder removeGNCJBONIKBF(
           int key) {
-        
-        internalGetMutableTargetNumMap().getMutableMap()
+
+        internalGetMutableGNCJBONIKBF().getMutableMap()
             .remove(key);
         return this;
       }
@@ -815,29 +739,70 @@ public final class GachaStageDataOuterClass {
        */
       @java.lang.Deprecated
       public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableTargetNumMap() {
-        return internalGetMutableTargetNumMap().getMutableMap();
+      getMutableGNCJBONIKBF() {
+        return internalGetMutableGNCJBONIKBF().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
-      public Builder putTargetNumMap(
+      public Builder putGNCJBONIKBF(
           int key,
           int value) {
-        
-        
-        internalGetMutableTargetNumMap().getMutableMap()
+
+        internalGetMutableGNCJBONIKBF().getMutableMap()
             .put(key, value);
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; target_num_map = 13;</code>
+       * <code>map&lt;uint32, uint32&gt; GNCJBONIKBF = 12;</code>
        */
 
-      public Builder putAllTargetNumMap(
+      public Builder putAllGNCJBONIKBF(
           java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableTargetNumMap().getMutableMap()
+        internalGetMutableGNCJBONIKBF().getMutableMap()
             .putAll(values);
+        return this;
+      }
+
+      private int stageId_ ;
+
+      @java.lang.Override
+      public int getStageId() {
+        return stageId_;
+      }
+
+      public Builder setStageId(int value) {
+
+        stageId_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearStageId() {
+
+        stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isOpen_ ;
+
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+
+      public Builder setIsOpen(boolean value) {
+
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearIsOpen() {
+
+        isOpen_ = false;
+        onChanged();
         return this;
       }
       @java.lang.Override
@@ -851,7 +816,6 @@ public final class GachaStageDataOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:GachaStageData)
     }
@@ -895,14 +859,14 @@ public final class GachaStageDataOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GachaStageData_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GachaStageData_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GachaStageData_TargetNumMapEntry_descriptor;
-  private static final 
+    internal_static_GachaStageData_GNCJBONIKBFEntry_descriptor;
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GachaStageData_TargetNumMapEntry_fieldAccessorTable;
+      internal_static_GachaStageData_GNCJBONIKBFEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -912,13 +876,12 @@ public final class GachaStageDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024GachaStageData.proto\"\243\001\n\016GachaStageDat" +
-      "a\022\020\n\010stage_id\030\006 \001(\r\022\017\n\007is_open\030\014 \001(\010\0229\n\016" +
-      "target_num_map\030\r \003(\0132!.GachaStageData.Ta" +
-      "rgetNumMapEntry\0323\n\021TargetNumMapEntry\022\013\n\003" +
-      "key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B5\n\031emu.gras" +
-      "scutter.net.protoB\030GachaStageDataOuterCl" +
-      "assb\006proto3"
+      "\n\024GachaStageData.proto\"\236\001\n\016GachaStageDat" +
+      "a\0225\n\013GNCJBONIKBF\030\014 \003(\0132 .GachaStageData." +
+      "GNCJBONIKBFEntry\022\020\n\010stage_id\030\001 \001(\r\022\017\n\007is" +
+      "_open\030\t \001(\010\0322\n\020GNCJBONIKBFEntry\022\013\n\003key\030\001" +
+      " \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -929,12 +892,12 @@ public final class GachaStageDataOuterClass {
     internal_static_GachaStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaStageData_descriptor,
-        new java.lang.String[] { "StageId", "IsOpen", "TargetNumMap", });
-    internal_static_GachaStageData_TargetNumMapEntry_descriptor =
+        new java.lang.String[] { "GNCJBONIKBF", "StageId", "IsOpen", });
+    internal_static_GachaStageData_GNCJBONIKBFEntry_descriptor =
       internal_static_GachaStageData_descriptor.getNestedTypes().get(0);
-    internal_static_GachaStageData_TargetNumMapEntry_fieldAccessorTable = new
+    internal_static_GachaStageData_GNCJBONIKBFEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GachaStageData_TargetNumMapEntry_descriptor,
+        internal_static_GachaStageData_GNCJBONIKBFEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

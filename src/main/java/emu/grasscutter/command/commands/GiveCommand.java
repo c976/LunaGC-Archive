@@ -12,9 +12,6 @@ import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
-import emu.grasscutter.game.world.*;
-import emu.grasscutter.server.packet.send.PacketAvatarPropNotify;
-import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
 import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.regex.Pattern;
@@ -61,50 +58,6 @@ public final class GiveCommand implements CommandHandler {
         avatar.recalcStats(true);
         avatar.save();
         return avatar;
-    }
-
-    /**
-     * Applies the given parameters to an avatar the player already owns.
-     *
-     * <p>{@link emu.grasscutter.game.avatar.AvatarStorage#addAvatar} refuses duplicates, so without
-     * this a /give aimed at an owned character reports success and changes nothing. Only the
-     * arguments actually passed are applied: a bare {@code /give <avatar> lv90} must not reset the
-     * character's constellations and talents to the parameter defaults.
-     */
-    private static void updateAvatar(Player player, Avatar avatar, GiveItemParameters param) {
-        if (param.lvlGiven) {
-            avatar.setLevel(param.lvl);
-            avatar.setPromoteLevel(Avatar.getMinPromoteLevel(param.lvl));
-        }
-
-        if (param.skillLevelGiven) {
-            avatar
-                    .getSkillDepot()
-                    .getSkillsAndEnergySkill()
-                    .forEach(id -> avatar.setSkillLevel(id, param.skillLevel));
-        }
-
-        boolean loweredConstellation = false;
-        if (param.constellationGiven) {
-            loweredConstellation = param.constellation < avatar.getCoreProudSkillLevel();
-            avatar.forceConstellationLevel(param.constellation);
-            avatar.recalcConstellations();
-        }
-
-        avatar.recalcStats(true);
-        avatar.save();
-        player.sendPacket(new PacketAvatarPropNotify(avatar));
-
-        // Constellations that were taken away stay on screen until the scene is rebuilt, because
-        // PacketAvatarPropNotify only carries props. Same workaround SetConstCommand uses.
-        if (loweredConstellation) {
-            World world = player.getWorld();
-            Scene scene = player.getScene();
-            Position pos = player.getPosition();
-            world.transferPlayerToScene(player, 1, pos);
-            world.transferPlayerToScene(player, scene.getId(), pos);
-            scene.broadcastPacket(new PacketSceneEntityAppearNotify(player));
-        }
     }
 
     private static void giveAllAvatars(Player player, GiveItemParameters param) {
@@ -352,18 +305,9 @@ public final class GiveCommand implements CommandHandler {
                 try {
                     param.id = Integer.parseInt(id);
                 } catch (NumberFormatException e) {
-                    // Not a number, so read it as a name - and keep taking words while they still
-                    // spell one, since "crystalline sword" arrives as two arguments. An artifact
-                    // asked for by set and slot is tried first: it is the more specific reading, and
-                    // several set names are also the name of a namecard.
-                    param.setPieces = NameIndex.resolveRelicSet(id, args);
-                    if (!param.setPieces.isEmpty()) param.id = param.setPieces.get(0);
-                    else param.id = NameIndex.resolveRelic(id, args);
-                    if (param.id == 0) param.id = NameIndex.resolve(id, args);
-                    if (param.id == 0) {
-                        CommandHandler.sendTranslatedMessage(sender, "commands.generic.invalid.itemId");
-                        throw e;
-                    }
+                    // TODO: Parse from item name using GM Handbook.
+                    CommandHandler.sendTranslatedMessage(sender, "commands.generic.invalid.itemId");
+                    throw e;
                 }
                 param.data = GameData.getItemDataMap().get(param.id);
                 if ((param.id > 10_000_000) && (param.id < 12_000_000))
@@ -450,20 +394,10 @@ public final class GiveCommand implements CommandHandler {
 
             // Check if this is an avatar
             if (param.avatarData != null) {
-                // param.id may be the short form (1133), so the lookup has to go through the
-                // resolved data rather than what was typed.
-                Avatar owned = targetPlayer.getAvatars().getAvatarById(param.avatarData.getId());
-                if (owned != null) {
-                    updateAvatar(targetPlayer, owned, param);
-                } else {
-                    targetPlayer.addAvatar(makeAvatar(param));
-                }
+                Avatar avatar = makeAvatar(param);
+                targetPlayer.addAvatar(avatar);
                 CommandHandler.sendTranslatedMessage(
-                        sender,
-                        "commands.give.given_avatar",
-                        NameIndex.describe(param.id),
-                        param.lvl,
-                        targetPlayer.getUid());
+                        sender, "commands.give.given_avatar", param.id, param.lvl, targetPlayer.getUid());
                 return;
             }
             // If it's not an avatar, it needs to be a valid item
@@ -480,23 +414,18 @@ public final class GiveCommand implements CommandHandler {
                     CommandHandler.sendTranslatedMessage(
                             sender,
                             "commands.give.given_with_level_and_refinement",
-                            NameIndex.describe(param.id),
+                            param.id,
                             param.lvl,
                             param.refinement,
                             param.amount,
                             targetPlayer.getUid());
                     return;
                 case ITEM_RELIQUARY:
-                    if (!param.setPieces.isEmpty()) {
-                        giveWholeSet(sender, targetPlayer, param);
-                        return;
-                    }
-
                     targetPlayer.getInventory().addItems(makeArtifacts(param), ActionReason.SubfieldDrop);
                     CommandHandler.sendTranslatedMessage(
                             sender,
                             "commands.give.given_level",
-                            NameIndex.describe(param.id),
+                            param.id,
                             param.lvl,
                             param.amount,
                             targetPlayer.getUid());
@@ -506,11 +435,7 @@ public final class GiveCommand implements CommandHandler {
                             .getInventory()
                             .addItem(new GameItem(param.data, param.amount), ActionReason.SubfieldDrop);
                     CommandHandler.sendTranslatedMessage(
-                            sender,
-                            "commands.give.given",
-                            param.amount,
-                            NameIndex.describe(param.id),
-                            targetPlayer.getUid());
+                            sender, "commands.give.given", param.amount, param.id, targetPlayer.getUid());
             }
         } catch (IllegalArgumentException ignored) {
         }
@@ -524,71 +449,17 @@ public final class GiveCommand implements CommandHandler {
         AVATARS
     }
 
-    /**
-     * Hands over one artifact per slot.
-     *
-     * <p>Main stats and substats are left to roll: they belong to a slot, so the ones typed for a
-     * single piece cannot mean anything sensible across all five.
-     */
-    private static void giveWholeSet(Player sender, Player targetPlayer, GiveItemParameters param) {
-        // Whatever stats were typed were read against the first piece's depot, and a flower cannot
-        // carry a circlet's main stat. Let all five roll rather than force one slot's answer on the rest.
-        param.mainPropId = -1;
-        param.appendPropIdList = null;
-
-        var given = 0;
-        for (var piece : param.setPieces) {
-            var data = GameData.getItemDataMap().get(piece.intValue());
-            if (data == null) continue;
-
-            param.data = data;
-            param.id = piece;
-            targetPlayer.getInventory().addItems(makeArtifacts(param), ActionReason.SubfieldDrop);
-            given++;
-        }
-
-        CommandHandler.sendTranslatedMessage(
-                sender, "commands.give.given", given, "artifacts of the set", targetPlayer.getUid());
-    }
-
     private static class GiveItemParameters {
         public int id;
-        public int lvl = 0;
+        @Setter public int lvl = 0;
         @Setter public int amount = 1;
         @Setter public int refinement = 1;
-        public int constellation = -1;
-        public int skillLevel = 1;
+        @Setter public int constellation = -1;
+        @Setter public int skillLevel = 1;
         public int mainPropId = -1;
         public List<Integer> appendPropIdList;
-
-        /** One piece per slot, when a whole set was asked for rather than a single artifact. */
-        public List<Integer> setPieces = List.of();
         public ItemData data;
         public AvatarData avatarData;
         public GiveAllType giveAllType = GiveAllType.NONE;
-
-        /**
-         * Whether the user actually passed the argument, as opposed to it holding the default
-         * above. {@link CommandHelpers#parseIntParameters} only calls a setter when that setter's
-         * regex matched an argument, so writing these by hand instead of letting Lombok generate
-         * them is enough to record it. {@link #updateAvatar} needs the distinction to leave
-         * unmentioned properties of an existing avatar alone.
-         */
-        public boolean lvlGiven, constellationGiven, skillLevelGiven;
-
-        public void setLvl(int lvl) {
-            this.lvl = lvl;
-            this.lvlGiven = true;
-        }
-
-        public void setConstellation(int constellation) {
-            this.constellation = constellation;
-            this.constellationGiven = true;
-        }
-
-        public void setSkillLevel(int skillLevel) {
-            this.skillLevel = skillLevel;
-            this.skillLevelGiven = true;
-        }
     }
 }

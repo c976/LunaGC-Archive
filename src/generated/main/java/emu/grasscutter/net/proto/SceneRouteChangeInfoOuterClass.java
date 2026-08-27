@@ -84,7 +84,7 @@ public final class SceneRouteChangeInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 106: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 pointList_ = new java.util.ArrayList<emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo>();
                 mutable_bitField0_ |= 0x00000001;
@@ -93,12 +93,12 @@ public final class SceneRouteChangeInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 48: {
 
               routeId_ = input.readUInt32();
               break;
             }
-            case 104: {
+            case 80: {
 
               isForward_ = input.readBool();
               break;
@@ -143,7 +143,7 @@ public final class SceneRouteChangeInfoOuterClass {
               emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.class, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder.class);
     }
 
-    public static final int POINT_LIST_FIELD_NUMBER = 5;
+    public static final int POINT_LIST_FIELD_NUMBER = 13;
     private java.util.List<emu.grasscutter.net.proto.RoutePointChangeInfoOuterClass.RoutePointChangeInfo> pointList_;
 
     @java.lang.Override
@@ -173,7 +173,7 @@ public final class SceneRouteChangeInfoOuterClass {
       return pointList_.get(index);
     }
 
-    public static final int ROUTE_ID_FIELD_NUMBER = 11;
+    public static final int ROUTE_ID_FIELD_NUMBER = 6;
     private int routeId_;
 
     @java.lang.Override
@@ -181,7 +181,7 @@ public final class SceneRouteChangeInfoOuterClass {
       return routeId_;
     }
 
-    public static final int IS_FORWARD_FIELD_NUMBER = 13;
+    public static final int IS_FORWARD_FIELD_NUMBER = 10;
     private boolean isForward_;
 
     @java.lang.Override
@@ -212,13 +212,13 @@ public final class SceneRouteChangeInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       for (int i = 0; i < pointList_.size(); i++) {
-        output.writeMessage(5, pointList_.get(i));
+        output.writeMessage(13, pointList_.get(i));
       }
       if (routeId_ != 0) {
-        output.writeUInt32(11, routeId_);
+        output.writeUInt32(6, routeId_);
       }
       if (isForward_ != false) {
-        output.writeBool(13, isForward_);
+        output.writeBool(10, isForward_);
       }
       if (type_ != 0) {
         output.writeUInt32(8, type_);
@@ -234,15 +234,15 @@ public final class SceneRouteChangeInfoOuterClass {
       size = 0;
       for (int i = 0; i < pointList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, pointList_.get(i));
+          .computeMessageSize(13, pointList_.get(i));
       }
       if (routeId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, routeId_);
+          .computeUInt32Size(6, routeId_);
       }
       if (isForward_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isForward_);
+          .computeBoolSize(10, isForward_);
       }
       if (type_ != 0) {
         size += com.google.protobuf.CodedOutputStream

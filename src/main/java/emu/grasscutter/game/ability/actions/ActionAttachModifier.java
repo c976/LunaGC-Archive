@@ -30,6 +30,11 @@ public final class ActionAttachModifier extends AbilityActionHandler {
 
         ability.getModifiers().put(action.modifierName,
             new AbilityModifierController(ability, ability.getData(), modifierData));
+
+        var manager = ability.getManager();
+        if (manager != null) {
+            manager.attachModifier(target, ability, action.modifierName, abilityData, 1);
+        }
         return true;
     }
 
@@ -62,9 +67,8 @@ public final class ActionAttachModifier extends AbilityActionHandler {
                 float curHp = avatarEntity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
                 if (maxHp > 0f && curHp / maxHp <= hpFloor) continue;
             }
-            for (var a : modifierData.onAdded) {
-                manager.executeAction(ability, a, abilityData, avatarEntity);
-            }
+            // full attach: applies the modifier's properties, runs onAdded, follows its mixins
+            manager.attachModifier(avatarEntity, ability, action.modifierName, abilityData, 1);
         }
         return true;
     }

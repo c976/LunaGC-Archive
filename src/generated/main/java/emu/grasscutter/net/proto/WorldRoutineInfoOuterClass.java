@@ -71,22 +71,22 @@ public final class WorldRoutineInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 64: {
 
               finishProgress_ = input.readUInt32();
               break;
             }
-            case 32: {
+            case 96: {
 
               progress_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 8: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 40: {
+            case 56: {
 
               routineId_ = input.readUInt32();
               break;
@@ -123,7 +123,7 @@ public final class WorldRoutineInfoOuterClass {
               emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.class, emu.grasscutter.net.proto.WorldRoutineInfoOuterClass.WorldRoutineInfo.Builder.class);
     }
 
-    public static final int FINISH_PROGRESS_FIELD_NUMBER = 13;
+    public static final int FINISH_PROGRESS_FIELD_NUMBER = 8;
     private int finishProgress_;
 
     @java.lang.Override
@@ -131,7 +131,7 @@ public final class WorldRoutineInfoOuterClass {
       return finishProgress_;
     }
 
-    public static final int PROGRESS_FIELD_NUMBER = 4;
+    public static final int PROGRESS_FIELD_NUMBER = 12;
     private int progress_;
 
     @java.lang.Override
@@ -139,7 +139,7 @@ public final class WorldRoutineInfoOuterClass {
       return progress_;
     }
 
-    public static final int ROUTINE_ID_FIELD_NUMBER = 5;
+    public static final int ROUTINE_ID_FIELD_NUMBER = 7;
     private int routineId_;
 
     @java.lang.Override
@@ -147,7 +147,7 @@ public final class WorldRoutineInfoOuterClass {
       return routineId_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 15;
+    public static final int IS_FINISHED_FIELD_NUMBER = 1;
     private boolean isFinished_;
 
     @java.lang.Override
@@ -170,16 +170,16 @@ public final class WorldRoutineInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (finishProgress_ != 0) {
-        output.writeUInt32(13, finishProgress_);
+        output.writeUInt32(8, finishProgress_);
       }
       if (progress_ != 0) {
-        output.writeUInt32(4, progress_);
+        output.writeUInt32(12, progress_);
       }
       if (isFinished_ != false) {
-        output.writeBool(15, isFinished_);
+        output.writeBool(1, isFinished_);
       }
       if (routineId_ != 0) {
-        output.writeUInt32(5, routineId_);
+        output.writeUInt32(7, routineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -192,19 +192,19 @@ public final class WorldRoutineInfoOuterClass {
       size = 0;
       if (finishProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, finishProgress_);
+          .computeUInt32Size(8, finishProgress_);
       }
       if (progress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, progress_);
+          .computeUInt32Size(12, progress_);
       }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isFinished_);
+          .computeBoolSize(1, isFinished_);
       }
       if (routineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, routineId_);
+          .computeUInt32Size(7, routineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

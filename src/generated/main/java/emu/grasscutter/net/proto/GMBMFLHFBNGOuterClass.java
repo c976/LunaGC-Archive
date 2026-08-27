@@ -19,25 +19,25 @@ public final class GMBMFLHFBNGOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 NHEFNKONPEI = 8;</code>
-     * @return The nHEFNKONPEI.
+     * <code>uint32 CKOCCKMBGJN = 11;</code>
+     * @return The cKOCCKMBGJN.
      */
-    int getNHEFNKONPEI();
+    int getCKOCCKMBGJN();
 
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finish = 10;</code>
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     int getLevelId();
@@ -87,22 +87,22 @@ public final class GMBMFLHFBNGOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              nHEFNKONPEI_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 24: {
 
               isOpen_ = input.readBool();
               break;
             }
-            case 80: {
+            case 40: {
 
               isFinish_ = input.readBool();
               break;
             }
-            case 120: {
+            case 88: {
+
+              cKOCCKMBGJN_ = input.readUInt32();
+              break;
+            }
+            case 112: {
 
               levelId_ = input.readUInt32();
               break;
@@ -139,21 +139,21 @@ public final class GMBMFLHFBNGOuterClass {
               emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.class, emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.Builder.class);
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 8;
-    private int nHEFNKONPEI_;
+    public static final int CKOCCKMBGJN_FIELD_NUMBER = 11;
+    private int cKOCCKMBGJN_;
     /**
-     * <code>uint32 NHEFNKONPEI = 8;</code>
-     * @return The nHEFNKONPEI.
+     * <code>uint32 CKOCCKMBGJN = 11;</code>
+     * @return The cKOCCKMBGJN.
      */
     @java.lang.Override
-    public int getNHEFNKONPEI() {
-      return nHEFNKONPEI_;
+    public int getCKOCCKMBGJN() {
+      return cKOCCKMBGJN_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 9;
+    public static final int IS_OPEN_FIELD_NUMBER = 3;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 9;</code>
+     * <code>bool is_open = 3;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -161,10 +161,10 @@ public final class GMBMFLHFBNGOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 10;
+    public static final int IS_FINISH_FIELD_NUMBER = 5;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 10;</code>
+     * <code>bool is_finish = 5;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -172,10 +172,10 @@ public final class GMBMFLHFBNGOuterClass {
       return isFinish_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 15;
+    public static final int LEVEL_ID_FIELD_NUMBER = 14;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 15;</code>
+     * <code>uint32 level_id = 14;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -197,17 +197,17 @@ public final class GMBMFLHFBNGOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(8, nHEFNKONPEI_);
-      }
       if (isOpen_ != false) {
-        output.writeBool(9, isOpen_);
+        output.writeBool(3, isOpen_);
       }
       if (isFinish_ != false) {
-        output.writeBool(10, isFinish_);
+        output.writeBool(5, isFinish_);
+      }
+      if (cKOCCKMBGJN_ != 0) {
+        output.writeUInt32(11, cKOCCKMBGJN_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(15, levelId_);
+        output.writeUInt32(14, levelId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class GMBMFLHFBNGOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nHEFNKONPEI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, nHEFNKONPEI_);
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(9, isOpen_);
+          .computeBoolSize(3, isOpen_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isFinish_);
+          .computeBoolSize(5, isFinish_);
+      }
+      if (cKOCCKMBGJN_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(11, cKOCCKMBGJN_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, levelId_);
+          .computeUInt32Size(14, levelId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,8 +249,8 @@ public final class GMBMFLHFBNGOuterClass {
       }
       emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG other = (emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG) obj;
 
-      if (getNHEFNKONPEI()
-          != other.getNHEFNKONPEI()) return false;
+      if (getCKOCCKMBGJN()
+          != other.getCKOCCKMBGJN()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getIsFinish()
@@ -268,8 +268,8 @@ public final class GMBMFLHFBNGOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NHEFNKONPEI_FIELD_NUMBER;
-      hash = (53 * hash) + getNHEFNKONPEI();
+      hash = (37 * hash) + CKOCCKMBGJN_FIELD_NUMBER;
+      hash = (53 * hash) + getCKOCCKMBGJN();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
@@ -411,7 +411,7 @@ public final class GMBMFLHFBNGOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nHEFNKONPEI_ = 0;
+        cKOCCKMBGJN_ = 0;
 
         isOpen_ = false;
 
@@ -445,7 +445,7 @@ public final class GMBMFLHFBNGOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG buildPartial() {
         emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG result = new emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG(this);
-        result.nHEFNKONPEI_ = nHEFNKONPEI_;
+        result.cKOCCKMBGJN_ = cKOCCKMBGJN_;
         result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
         result.levelId_ = levelId_;
@@ -497,8 +497,8 @@ public final class GMBMFLHFBNGOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG other) {
         if (other == emu.grasscutter.net.proto.GMBMFLHFBNGOuterClass.GMBMFLHFBNG.getDefaultInstance()) return this;
-        if (other.getNHEFNKONPEI() != 0) {
-          setNHEFNKONPEI(other.getNHEFNKONPEI());
+        if (other.getCKOCCKMBGJN() != 0) {
+          setCKOCCKMBGJN(other.getCKOCCKMBGJN());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
@@ -538,40 +538,40 @@ public final class GMBMFLHFBNGOuterClass {
         return this;
       }
 
-      private int nHEFNKONPEI_ ;
+      private int cKOCCKMBGJN_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 8;</code>
-       * @return The nHEFNKONPEI.
+       * <code>uint32 CKOCCKMBGJN = 11;</code>
+       * @return The cKOCCKMBGJN.
        */
       @java.lang.Override
-      public int getNHEFNKONPEI() {
-        return nHEFNKONPEI_;
+      public int getCKOCCKMBGJN() {
+        return cKOCCKMBGJN_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 8;</code>
-       * @param value The nHEFNKONPEI to set.
+       * <code>uint32 CKOCCKMBGJN = 11;</code>
+       * @param value The cKOCCKMBGJN to set.
        * @return This builder for chaining.
        */
-      public Builder setNHEFNKONPEI(int value) {
+      public Builder setCKOCCKMBGJN(int value) {
         
-        nHEFNKONPEI_ = value;
+        cKOCCKMBGJN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 8;</code>
+       * <code>uint32 CKOCCKMBGJN = 11;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNHEFNKONPEI() {
+      public Builder clearCKOCCKMBGJN() {
         
-        nHEFNKONPEI_ = 0;
+        cKOCCKMBGJN_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 3;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -579,7 +579,7 @@ public final class GMBMFLHFBNGOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 3;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -590,7 +590,7 @@ public final class GMBMFLHFBNGOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 9;</code>
+       * <code>bool is_open = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -602,7 +602,7 @@ public final class GMBMFLHFBNGOuterClass {
 
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 5;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -610,7 +610,7 @@ public final class GMBMFLHFBNGOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 5;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -621,7 +621,7 @@ public final class GMBMFLHFBNGOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 10;</code>
+       * <code>bool is_finish = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -633,7 +633,7 @@ public final class GMBMFLHFBNGOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -641,7 +641,7 @@ public final class GMBMFLHFBNGOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 14;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -652,7 +652,7 @@ public final class GMBMFLHFBNGOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 15;</code>
+       * <code>uint32 level_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -728,11 +728,10 @@ public final class GMBMFLHFBNGOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021GMBMFLHFBNG.proto\"X\n\013GMBMFLHFBNG\022\023\n\013NH" +
-      "EFNKONPEI\030\010 \001(\r\022\017\n\007is_open\030\t \001(\010\022\021\n\tis_f" +
-      "inish\030\n \001(\010\022\020\n\010level_id\030\017 \001(\rB2\n\031emu.gra" +
-      "sscutter.net.protoB\025GMBMFLHFBNGOuterClas" +
-      "sb\006proto3"
+      "\n\021GMBMFLHFBNG.proto\"X\n\013GMBMFLHFBNG\022\023\n\013CK" +
+      "OCCKMBGJN\030\013 \001(\r\022\017\n\007is_open\030\003 \001(\010\022\021\n\tis_f" +
+      "inish\030\005 \001(\010\022\020\n\010level_id\030\016 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +742,7 @@ public final class GMBMFLHFBNGOuterClass {
     internal_static_GMBMFLHFBNG_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GMBMFLHFBNG_descriptor,
-        new java.lang.String[] { "NHEFNKONPEI", "IsOpen", "IsFinish", "LevelId", });
+        new java.lang.String[] { "CKOCCKMBGJN", "IsOpen", "IsFinish", "LevelId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

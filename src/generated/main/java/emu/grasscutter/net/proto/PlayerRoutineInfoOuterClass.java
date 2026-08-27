@@ -67,12 +67,12 @@ public final class PlayerRoutineInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 104: {
 
               finishedNum_ = input.readUInt32();
               break;
             }
-            case 56: {
+            case 112: {
 
               routineType_ = input.readUInt32();
               break;
@@ -109,7 +109,7 @@ public final class PlayerRoutineInfoOuterClass {
               emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo.class, emu.grasscutter.net.proto.PlayerRoutineInfoOuterClass.PlayerRoutineInfo.Builder.class);
     }
 
-    public static final int ROUTINE_TYPE_FIELD_NUMBER = 7;
+    public static final int ROUTINE_TYPE_FIELD_NUMBER = 14;
     private int routineType_;
 
     @java.lang.Override
@@ -117,7 +117,7 @@ public final class PlayerRoutineInfoOuterClass {
       return routineType_;
     }
 
-    public static final int FINISHED_NUM_FIELD_NUMBER = 10;
+    public static final int FINISHED_NUM_FIELD_NUMBER = 13;
     private int finishedNum_;
 
     @java.lang.Override
@@ -140,10 +140,10 @@ public final class PlayerRoutineInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (finishedNum_ != 0) {
-        output.writeUInt32(10, finishedNum_);
+        output.writeUInt32(13, finishedNum_);
       }
       if (routineType_ != 0) {
-        output.writeUInt32(7, routineType_);
+        output.writeUInt32(14, routineType_);
       }
       unknownFields.writeTo(output);
     }
@@ -156,11 +156,11 @@ public final class PlayerRoutineInfoOuterClass {
       size = 0;
       if (finishedNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, finishedNum_);
+          .computeUInt32Size(13, finishedNum_);
       }
       if (routineType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, routineType_);
+          .computeUInt32Size(14, routineType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

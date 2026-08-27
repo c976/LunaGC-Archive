@@ -78,23 +78,23 @@ public final class RogueCellInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 96: {
 
               dungeonId_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 128000: {
 
               eEEOIJHJIJJ_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 40: {
               int rawValue = input.readEnum();
 
               state_ = rawValue;
               break;
             }
-            case 8: {
+            case 104: {
 
               cellId_ = input.readUInt32();
               break;
@@ -131,7 +131,7 @@ public final class RogueCellInfoOuterClass {
               emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.class, emu.grasscutter.net.proto.RogueCellInfoOuterClass.RogueCellInfo.Builder.class);
     }
 
-    public static final int CELL_ID_FIELD_NUMBER = 1;
+    public static final int CELL_ID_FIELD_NUMBER = 13;
     private int cellId_;
 
     @java.lang.Override
@@ -139,7 +139,7 @@ public final class RogueCellInfoOuterClass {
       return cellId_;
     }
 
-    public static final int STATE_FIELD_NUMBER = 9;
+    public static final int STATE_FIELD_NUMBER = 5;
     private int state_;
 
     @java.lang.Override public int getStateValue() {
@@ -152,7 +152,7 @@ public final class RogueCellInfoOuterClass {
       return result == null ? emu.grasscutter.net.proto.RogueCellStateOuterClass.RogueCellState.UNRECOGNIZED : result;
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 12;
     private int dungeonId_;
 
     @java.lang.Override
@@ -160,7 +160,7 @@ public final class RogueCellInfoOuterClass {
       return dungeonId_;
     }
 
-    public static final int EEEOIJHJIJJ_FIELD_NUMBER = 5;
+    public static final int EEEOIJHJIJJ_FIELD_NUMBER = 16000;
     private int eEEOIJHJIJJ_;
     /**
      * <code>uint32 EEEOIJHJIJJ = 5;</code>
@@ -186,16 +186,16 @@ public final class RogueCellInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
+        output.writeUInt32(12, dungeonId_);
       }
       if (eEEOIJHJIJJ_ != 0) {
-        output.writeUInt32(5, eEEOIJHJIJJ_);
+        output.writeUInt32(16000, eEEOIJHJIJJ_);
       }
       if (state_ != emu.grasscutter.net.proto.RogueCellStateOuterClass.RogueCellState.RogueCellState_ROGUE_CELL_NONE.getNumber()) {
-        output.writeEnum(9, state_);
+        output.writeEnum(5, state_);
       }
       if (cellId_ != 0) {
-        output.writeUInt32(1, cellId_);
+        output.writeUInt32(13, cellId_);
       }
       unknownFields.writeTo(output);
     }
@@ -208,19 +208,19 @@ public final class RogueCellInfoOuterClass {
       size = 0;
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
+          .computeUInt32Size(12, dungeonId_);
       }
       if (eEEOIJHJIJJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, eEEOIJHJIJJ_);
+          .computeUInt32Size(16000, eEEOIJHJIJJ_);
       }
       if (state_ != emu.grasscutter.net.proto.RogueCellStateOuterClass.RogueCellState.RogueCellState_ROGUE_CELL_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(9, state_);
+          .computeEnumSize(5, state_);
       }
       if (cellId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, cellId_);
+          .computeUInt32Size(13, cellId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

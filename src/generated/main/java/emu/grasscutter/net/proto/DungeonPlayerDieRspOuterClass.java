@@ -19,12 +19,17 @@ public final class DungeonPlayerDieRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 29888
+   * Obf: OAJOHKDAIJF
+   * </pre>
+   *
    * Protobuf type {@code DungeonPlayerDieRsp}
    */
   public static final class DungeonPlayerDieRsp extends
@@ -109,7 +114,7 @@ public final class DungeonPlayerDieRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 6;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class DungeonPlayerDieRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29888
+     * Obf: OAJOHKDAIJF
+     * </pre>
+     *
      * Protobuf type {@code DungeonPlayerDieRsp}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class DungeonPlayerDieRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class DungeonPlayerDieRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class DungeonPlayerDieRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,9 +527,8 @@ public final class DungeonPlayerDieRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031DungeonPlayerDieRsp.proto\"&\n\023DungeonPl" +
-      "ayerDieRsp\022\017\n\007retcode\030\006 \001(\005B:\n\031emu.grass" +
-      "cutter.net.protoB\035DungeonPlayerDieRspOut" +
-      "erClassb\006proto3"
+      "ayerDieRsp\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

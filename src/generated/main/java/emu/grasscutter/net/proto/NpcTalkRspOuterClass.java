@@ -18,31 +18,19 @@ public final class NpcTalkRspOuterClass {
       // @@protoc_insertion_point(interface_extends:NpcTalkRsp)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 cur_talk_id = 2;</code>
-     * @return The curTalkId.
-     */
-    int getCurTalkId();
-
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
     int getRetcode();
 
-    /**
-     * <code>uint32 npc_entity_id = 13;</code>
-     * @return The npcEntityId.
-     */
+    int getCurTalkId();
+
     int getNpcEntityId();
 
-    /**
-     * <code>uint32 entity_id = 15;</code>
-     * @return The entityId.
-     */
     int getEntityId();
   }
   /**
+   * <pre>
+   * CmdId: 23286
+   * </pre>
+   *
    * Protobuf type {@code NpcTalkRsp}
    */
   public static final class NpcTalkRsp extends
@@ -87,14 +75,9 @@ public final class NpcTalkRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 120: {
 
-              curTalkId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              retcode_ = input.readInt32();
+              entityId_ = input.readUInt32();
               break;
             }
             case 104: {
@@ -102,9 +85,14 @@ public final class NpcTalkRspOuterClass {
               npcEntityId_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 56: {
 
-              entityId_ = input.readUInt32();
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 16: {
+
+              curTalkId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,34 +127,25 @@ public final class NpcTalkRspOuterClass {
               emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp.class, emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp.Builder.class);
     }
 
-    public static final int CUR_TALK_ID_FIELD_NUMBER = 2;
-    private int curTalkId_;
-    /**
-     * <code>uint32 cur_talk_id = 2;</code>
-     * @return The curTalkId.
-     */
-    @java.lang.Override
-    public int getCurTalkId() {
-      return curTalkId_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 7;
     private int retcode_;
-    /**
-     * <code>int32 retcode = 7;</code>
-     * @return The retcode.
-     */
+
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
     }
 
+    public static final int CUR_TALK_ID_FIELD_NUMBER = 2;
+    private int curTalkId_;
+
+    @java.lang.Override
+    public int getCurTalkId() {
+      return curTalkId_;
+    }
+
     public static final int NPC_ENTITY_ID_FIELD_NUMBER = 13;
     private int npcEntityId_;
-    /**
-     * <code>uint32 npc_entity_id = 13;</code>
-     * @return The npcEntityId.
-     */
+
     @java.lang.Override
     public int getNpcEntityId() {
       return npcEntityId_;
@@ -174,10 +153,7 @@ public final class NpcTalkRspOuterClass {
 
     public static final int ENTITY_ID_FIELD_NUMBER = 15;
     private int entityId_;
-    /**
-     * <code>uint32 entity_id = 15;</code>
-     * @return The entityId.
-     */
+
     @java.lang.Override
     public int getEntityId() {
       return entityId_;
@@ -197,17 +173,17 @@ public final class NpcTalkRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (curTalkId_ != 0) {
-        output.writeUInt32(2, curTalkId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(7, retcode_);
+      if (entityId_ != 0) {
+        output.writeUInt32(15, entityId_);
       }
       if (npcEntityId_ != 0) {
         output.writeUInt32(13, npcEntityId_);
       }
-      if (entityId_ != 0) {
-        output.writeUInt32(15, entityId_);
+      if (retcode_ != 0) {
+        output.writeInt32(7, retcode_);
+      }
+      if (curTalkId_ != 0) {
+        output.writeUInt32(2, curTalkId_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +194,21 @@ public final class NpcTalkRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (curTalkId_ != 0) {
+      if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, curTalkId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, retcode_);
+          .computeUInt32Size(15, entityId_);
       }
       if (npcEntityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(13, npcEntityId_);
       }
-      if (entityId_ != 0) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, entityId_);
+          .computeInt32Size(7, retcode_);
+      }
+      if (curTalkId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, curTalkId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,10 +225,10 @@ public final class NpcTalkRspOuterClass {
       }
       emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp other = (emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp) obj;
 
-      if (getCurTalkId()
-          != other.getCurTalkId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getCurTalkId()
+          != other.getCurTalkId()) return false;
       if (getNpcEntityId()
           != other.getNpcEntityId()) return false;
       if (getEntityId()
@@ -268,10 +244,10 @@ public final class NpcTalkRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CUR_TALK_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCurTalkId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + CUR_TALK_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCurTalkId();
       hash = (37 * hash) + NPC_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getNpcEntityId();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
@@ -372,6 +348,10 @@ public final class NpcTalkRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 23286
+     * </pre>
+     *
      * Protobuf type {@code NpcTalkRsp}
      */
     public static final class Builder extends
@@ -409,9 +389,9 @@ public final class NpcTalkRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        curTalkId_ = 0;
-
         retcode_ = 0;
+
+        curTalkId_ = 0;
 
         npcEntityId_ = 0;
 
@@ -443,8 +423,8 @@ public final class NpcTalkRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp buildPartial() {
         emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp result = new emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp(this);
-        result.curTalkId_ = curTalkId_;
         result.retcode_ = retcode_;
+        result.curTalkId_ = curTalkId_;
         result.npcEntityId_ = npcEntityId_;
         result.entityId_ = entityId_;
         onBuilt();
@@ -495,11 +475,11 @@ public final class NpcTalkRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp other) {
         if (other == emu.grasscutter.net.proto.NpcTalkRspOuterClass.NpcTalkRsp.getDefaultInstance()) return this;
-        if (other.getCurTalkId() != 0) {
-          setCurTalkId(other.getCurTalkId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getCurTalkId() != 0) {
+          setCurTalkId(other.getCurTalkId());
         }
         if (other.getNpcEntityId() != 0) {
           setNpcEntityId(other.getNpcEntityId());
@@ -536,125 +516,85 @@ public final class NpcTalkRspOuterClass {
         return this;
       }
 
-      private int curTalkId_ ;
-      /**
-       * <code>uint32 cur_talk_id = 2;</code>
-       * @return The curTalkId.
-       */
-      @java.lang.Override
-      public int getCurTalkId() {
-        return curTalkId_;
-      }
-      /**
-       * <code>uint32 cur_talk_id = 2;</code>
-       * @param value The curTalkId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCurTalkId(int value) {
-        
-        curTalkId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 cur_talk_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCurTalkId() {
-        
-        curTalkId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return The retcode.
-       */
+
       @java.lang.Override
       public int getRetcode() {
         return retcode_;
       }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>int32 retcode = 7;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearRetcode() {
-        
+
         retcode_ = 0;
         onChanged();
         return this;
       }
 
+      private int curTalkId_ ;
+
+      @java.lang.Override
+      public int getCurTalkId() {
+        return curTalkId_;
+      }
+
+      public Builder setCurTalkId(int value) {
+
+        curTalkId_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearCurTalkId() {
+
+        curTalkId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int npcEntityId_ ;
-      /**
-       * <code>uint32 npc_entity_id = 13;</code>
-       * @return The npcEntityId.
-       */
+
       @java.lang.Override
       public int getNpcEntityId() {
         return npcEntityId_;
       }
-      /**
-       * <code>uint32 npc_entity_id = 13;</code>
-       * @param value The npcEntityId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setNpcEntityId(int value) {
-        
+
         npcEntityId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 npc_entity_id = 13;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearNpcEntityId() {
-        
+
         npcEntityId_ = 0;
         onChanged();
         return this;
       }
 
       private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @return The entityId.
-       */
+
       @java.lang.Override
       public int getEntityId() {
         return entityId_;
       }
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setEntityId(int value) {
-        
+
         entityId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 entity_id = 15;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearEntityId() {
-        
+
         entityId_ = 0;
         onChanged();
         return this;
@@ -670,7 +610,6 @@ public final class NpcTalkRspOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:NpcTalkRsp)
     }
@@ -714,7 +653,7 @@ public final class NpcTalkRspOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_NpcTalkRsp_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_NpcTalkRsp_fieldAccessorTable;
 
@@ -726,11 +665,10 @@ public final class NpcTalkRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020NpcTalkRsp.proto\"\\\n\nNpcTalkRsp\022\023\n\013cur_" +
-      "talk_id\030\002 \001(\r\022\017\n\007retcode\030\007 \001(\005\022\025\n\rnpc_en" +
-      "tity_id\030\r \001(\r\022\021\n\tentity_id\030\017 \001(\rB1\n\031emu." +
-      "grasscutter.net.protoB\024NpcTalkRspOuterCl" +
-      "assb\006proto3"
+      "\n\020NpcTalkRsp.proto\"\\\n\nNpcTalkRsp\022\017\n\007retc" +
+      "ode\030\004 \001(\005\022\023\n\013cur_talk_id\030\010 \001(\r\022\025\n\rnpc_en" +
+      "tity_id\030\003 \001(\r\022\021\n\tentity_id\030\002 \001(\rB\033\n\031emu." +
+      "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -741,7 +679,7 @@ public final class NpcTalkRspOuterClass {
     internal_static_NpcTalkRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_NpcTalkRsp_descriptor,
-        new java.lang.String[] { "CurTalkId", "Retcode", "NpcEntityId", "EntityId", });
+        new java.lang.String[] { "Retcode", "CurTalkId", "NpcEntityId", "EntityId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

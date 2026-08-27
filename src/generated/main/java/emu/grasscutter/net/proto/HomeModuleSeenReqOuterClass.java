@@ -36,6 +36,11 @@ public final class HomeModuleSeenReqOuterClass {
     int getSeenModuleIdList(int index);
   }
   /**
+   * <pre>
+   * CmdId: 27692
+   * Obf: KNOGFPMPFGK
+   * </pre>
+   *
    * Protobuf type {@code HomeModuleSeenReq}
    */
   public static final class HomeModuleSeenReq extends
@@ -339,6 +344,11 @@ public final class HomeModuleSeenReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 27692
+     * Obf: KNOGFPMPFGK
+     * </pre>
+     *
      * Protobuf type {@code HomeModuleSeenReq}
      */
     public static final class Builder extends
@@ -644,9 +654,8 @@ public final class HomeModuleSeenReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027HomeModuleSeenReq.proto\"0\n\021HomeModuleS" +
-      "eenReq\022\033\n\023seen_module_id_list\030\010 \003(\rB8\n\031e" +
-      "mu.grasscutter.net.protoB\033HomeModuleSeen" +
-      "ReqOuterClassb\006proto3"
+      "eenReq\022\033\n\023seen_module_id_list\030\010 \003(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

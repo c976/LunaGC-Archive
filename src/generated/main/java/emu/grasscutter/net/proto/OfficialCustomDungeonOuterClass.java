@@ -19,18 +19,22 @@ public final class OfficialCustomDungeonOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 1;</code>
+     * <code>uint32 dungeon_id = 9;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 win_times = 11;</code>
+     * <code>uint32 win_times = 6;</code>
      * @return The winTimes.
      */
     int getWinTimes();
   }
   /**
+   * <pre>
+   * Obf: KCPCLEFJLPB
+   * </pre>
+   *
    * Protobuf type {@code OfficialCustomDungeon}
    */
   public static final class OfficialCustomDungeon extends
@@ -75,14 +79,14 @@ public final class OfficialCustomDungeonOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              dungeonId_ = input.readUInt32();
-              break;
-            }
             case 88: {
 
               winTimes_ = input.readUInt32();
+              break;
+            }
+            case 8: {
+
+              dungeonId_ = input.readUInt32();
               break;
             }
             default: {
@@ -120,7 +124,7 @@ public final class OfficialCustomDungeonOuterClass {
     public static final int DUNGEON_ID_FIELD_NUMBER = 1;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 1;</code>
+     * <code>uint32 dungeon_id = 9;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -131,7 +135,7 @@ public final class OfficialCustomDungeonOuterClass {
     public static final int WIN_TIMES_FIELD_NUMBER = 11;
     private int winTimes_;
     /**
-     * <code>uint32 win_times = 11;</code>
+     * <code>uint32 win_times = 6;</code>
      * @return The winTimes.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class OfficialCustomDungeonOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (dungeonId_ != 0) {
-        output.writeUInt32(1, dungeonId_);
-      }
       if (winTimes_ != 0) {
         output.writeUInt32(11, winTimes_);
+      }
+      if (dungeonId_ != 0) {
+        output.writeUInt32(1, dungeonId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class OfficialCustomDungeonOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (dungeonId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, dungeonId_);
-      }
       if (winTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, winTimes_);
+      }
+      if (dungeonId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, dungeonId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class OfficialCustomDungeonOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: KCPCLEFJLPB
+     * </pre>
+     *
      * Protobuf type {@code OfficialCustomDungeon}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class OfficialCustomDungeonOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class OfficialCustomDungeonOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class OfficialCustomDungeonOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 1;</code>
+       * <code>uint32 dungeon_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -491,7 +499,7 @@ public final class OfficialCustomDungeonOuterClass {
 
       private int winTimes_ ;
       /**
-       * <code>uint32 win_times = 11;</code>
+       * <code>uint32 win_times = 6;</code>
        * @return The winTimes.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class OfficialCustomDungeonOuterClass {
         return winTimes_;
       }
       /**
-       * <code>uint32 win_times = 11;</code>
+       * <code>uint32 win_times = 6;</code>
        * @param value The winTimes to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class OfficialCustomDungeonOuterClass {
         return this;
       }
       /**
-       * <code>uint32 win_times = 11;</code>
+       * <code>uint32 win_times = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearWinTimes() {
@@ -587,10 +595,9 @@ public final class OfficialCustomDungeonOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033OfficialCustomDungeon.proto\">\n\025Officia" +
-      "lCustomDungeon\022\022\n\ndungeon_id\030\001 \001(\r\022\021\n\twi" +
-      "n_times\030\013 \001(\rB<\n\031emu.grasscutter.net.pro" +
-      "toB\037OfficialCustomDungeonOuterClassb\006pro" +
-      "to3"
+      "lCustomDungeon\022\022\n\ndungeon_id\030\t \001(\r\022\021\n\twi" +
+      "n_times\030\006 \001(\rB\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

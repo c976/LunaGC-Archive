@@ -19,12 +19,17 @@ public final class MonsterForceAlertNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 monster_entity_id = 11;</code>
+     * <code>uint32 monster_entity_id = 8;</code>
      * @return The monsterEntityId.
      */
     int getMonsterEntityId();
   }
   /**
+   * <pre>
+   * CmdId: 3111
+   * Obf: PKIMGJKJMFE
+   * </pre>
+   *
    * Protobuf type {@code MonsterForceAlertNotify}
    */
   public static final class MonsterForceAlertNotify extends
@@ -109,7 +114,7 @@ public final class MonsterForceAlertNotifyOuterClass {
     public static final int MONSTER_ENTITY_ID_FIELD_NUMBER = 11;
     private int monsterEntityId_;
     /**
-     * <code>uint32 monster_entity_id = 11;</code>
+     * <code>uint32 monster_entity_id = 8;</code>
      * @return The monsterEntityId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class MonsterForceAlertNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3111
+     * Obf: PKIMGJKJMFE
+     * </pre>
+     *
      * Protobuf type {@code MonsterForceAlertNotify}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class MonsterForceAlertNotifyOuterClass {
 
       private int monsterEntityId_ ;
       /**
-       * <code>uint32 monster_entity_id = 11;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @return The monsterEntityId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class MonsterForceAlertNotifyOuterClass {
         return monsterEntityId_;
       }
       /**
-       * <code>uint32 monster_entity_id = 11;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @param value The monsterEntityId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class MonsterForceAlertNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 monster_entity_id = 11;</code>
+       * <code>uint32 monster_entity_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearMonsterEntityId() {
@@ -518,8 +528,8 @@ public final class MonsterForceAlertNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\035MonsterForceAlertNotify.proto\"4\n\027Monst" +
       "erForceAlertNotify\022\031\n\021monster_entity_id\030" +
-      "\013 \001(\rB>\n\031emu.grasscutter.net.protoB!Mons" +
-      "terForceAlertNotifyOuterClassb\006proto3"
+      "\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

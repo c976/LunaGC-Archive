@@ -97,7 +97,7 @@ public final class RequestLiveInfoRspOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 40: {
 
               retcode_ = input.readInt32();
               break;
@@ -114,7 +114,7 @@ public final class RequestLiveInfoRspOuterClass {
               spareLiveUrl_ = s;
               break;
             }
-            case 80: {
+            case 16: {
 
               liveId_ = input.readUInt32();
               break;
@@ -227,7 +227,7 @@ public final class RequestLiveInfoRspOuterClass {
       }
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 5;
     private int retcode_;
 
     @java.lang.Override
@@ -235,7 +235,7 @@ public final class RequestLiveInfoRspOuterClass {
       return retcode_;
     }
 
-    public static final int LIVE_ID_FIELD_NUMBER = 10;
+    public static final int LIVE_ID_FIELD_NUMBER = 2;
     private int liveId_;
 
     @java.lang.Override
@@ -258,7 +258,7 @@ public final class RequestLiveInfoRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(5, retcode_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(liveUrl_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, liveUrl_);
@@ -267,7 +267,7 @@ public final class RequestLiveInfoRspOuterClass {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 16000, spareLiveUrl_);
       }
       if (liveId_ != 0) {
-        output.writeUInt32(10, liveId_);
+        output.writeUInt32(2, liveId_);
       }
       unknownFields.writeTo(output);
     }
@@ -280,7 +280,7 @@ public final class RequestLiveInfoRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(5, retcode_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(liveUrl_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, liveUrl_);
@@ -290,7 +290,7 @@ public final class RequestLiveInfoRspOuterClass {
       }
       if (liveId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, liveId_);
+          .computeUInt32Size(2, liveId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

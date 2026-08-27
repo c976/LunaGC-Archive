@@ -75,12 +75,12 @@ public final class ActivityBannerNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 120: {
 
               activityId_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 48: {
 
               scheduleId_ = input.readUInt32();
               break;
@@ -117,7 +117,7 @@ public final class ActivityBannerNotifyOuterClass {
               emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify.class, emu.grasscutter.net.proto.ActivityBannerNotifyOuterClass.ActivityBannerNotify.Builder.class);
     }
 
-    public static final int ACTIVITY_ID_FIELD_NUMBER = 7;
+    public static final int ACTIVITY_ID_FIELD_NUMBER = 15;
     private int activityId_;
     /**
      * <code>uint32 activity_id = 4;</code>
@@ -128,7 +128,7 @@ public final class ActivityBannerNotifyOuterClass {
       return activityId_;
     }
 
-    public static final int SCHEDULE_ID_FIELD_NUMBER = 8;
+    public static final int SCHEDULE_ID_FIELD_NUMBER = 6;
     private int scheduleId_;
     /**
      * <code>uint32 schedule_id = 9;</code>
@@ -154,10 +154,10 @@ public final class ActivityBannerNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (activityId_ != 0) {
-        output.writeUInt32(7, activityId_);
+        output.writeUInt32(15, activityId_);
       }
       if (scheduleId_ != 0) {
-        output.writeUInt32(8, scheduleId_);
+        output.writeUInt32(6, scheduleId_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +170,11 @@ public final class ActivityBannerNotifyOuterClass {
       size = 0;
       if (activityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, activityId_);
+          .computeUInt32Size(15, activityId_);
       }
       if (scheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, scheduleId_);
+          .computeUInt32Size(6, scheduleId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

@@ -1,0 +1,1676 @@
+5-STAR ARTIFACTS  (grouped by set, ordered Flower>Plume>Sands>Goblet>Circlet)
+=============================================================================================
+ID        Slot     Name                                             MainStat         Substats
+---------------------------------------------------------------------------------------------
+51540     Flower   Heart of Comradeship                             Flat HP          0
+51541     Flower   Heart of Comradeship                             Flat HP          1
+51542     Flower   Heart of Comradeship                             Flat HP          2
+51543     Flower   Heart of Comradeship                             Flat HP          3
+51544     Flower   Heart of Comradeship                             Flat HP          4
+51520     Plume    Feather of Homecoming                            Flat ATK         0
+51521     Plume    Feather of Homecoming                            Flat ATK         1
+51522     Plume    Feather of Homecoming                            Flat ATK         2
+51523     Plume    Feather of Homecoming                            Flat ATK         3
+51524     Plume    Feather of Homecoming                            Flat ATK         4
+51550     Sands    Sundial of the Sojourner                         Any              0
+51551     Sands    Sundial of the Sojourner                         Any              1
+51552     Sands    Sundial of the Sojourner                         Any              2
+51553     Sands    Sundial of the Sojourner                         Any              3
+51554     Sands    Sundial of the Sojourner                         Any              4
+51510     Goblet   Goblet of the Sojourner                          Any              0
+51511     Goblet   Goblet of the Sojourner                          Any              1
+51512     Goblet   Goblet of the Sojourner                          Any              2
+51513     Goblet   Goblet of the Sojourner                          Any              3
+51514     Goblet   Goblet of the Sojourner                          Any              4
+51530     Circlet  Crown of Parting                                 Any              0
+51531     Circlet  Crown of Parting                                 Any              1
+51532     Circlet  Crown of Parting                                 Any              2
+51533     Circlet  Crown of Parting                                 Any              3
+51534     Circlet  Crown of Parting                                 Any              4
+
+52540     Flower   Medal of the Brave                               Flat HP          0
+52541     Flower   Medal of the Brave                               Flat HP          1
+52542     Flower   Medal of the Brave                               Flat HP          2
+52543     Flower   Medal of the Brave                               Flat HP          3
+52544     Flower   Medal of the Brave                               Flat HP          4
+52520     Plume    Prospect of the Brave                            Flat ATK         0
+52521     Plume    Prospect of the Brave                            Flat ATK         1
+52522     Plume    Prospect of the Brave                            Flat ATK         2
+52523     Plume    Prospect of the Brave                            Flat ATK         3
+52524     Plume    Prospect of the Brave                            Flat ATK         4
+52550     Sands    Fortitude of the Brave                           Any              0
+52551     Sands    Fortitude of the Brave                           Any              1
+52552     Sands    Fortitude of the Brave                           Any              2
+52553     Sands    Fortitude of the Brave                           Any              3
+52554     Sands    Fortitude of the Brave                           Any              4
+52510     Goblet   Outset of the Brave                              Any              0
+52511     Goblet   Outset of the Brave                              Any              1
+52512     Goblet   Outset of the Brave                              Any              2
+52513     Goblet   Outset of the Brave                              Any              3
+52514     Goblet   Outset of the Brave                              Any              4
+52530     Circlet  Crown of the Brave                               Any              0
+52531     Circlet  Crown of the Brave                               Any              1
+52532     Circlet  Crown of the Brave                               Any              2
+52533     Circlet  Crown of the Brave                               Any              3
+52534     Circlet  Crown of the Brave                               Any              4
+
+53540     Flower   Guardian's Flower                                Flat HP          0
+53541     Flower   Guardian's Flower                                Flat HP          1
+53542     Flower   Guardian's Flower                                Flat HP          2
+53543     Flower   Guardian's Flower                                Flat HP          3
+23484     Flower   Guardian's Flower                                Flat HP          4
+53544     Flower   Guardian's Flower                                Flat HP          4
+53520     Plume    Guardian's Sigil                                 Flat ATK         0
+53521     Plume    Guardian's Sigil                                 Flat ATK         1
+53522     Plume    Guardian's Sigil                                 Flat ATK         2
+53523     Plume    Guardian's Sigil                                 Flat ATK         3
+23482     Plume    Guardian's Sigil                                 Flat ATK         4
+53524     Plume    Guardian's Sigil                                 Flat ATK         4
+23485     Sands    Guardian's Clock                                 ATK%             4
+53550     Sands    Guardian's Clock                                 Any              0
+53551     Sands    Guardian's Clock                                 Any              1
+53552     Sands    Guardian's Clock                                 Any              2
+53553     Sands    Guardian's Clock                                 Any              3
+53554     Sands    Guardian's Clock                                 Any              4
+23481     Goblet   Guardian's Vessel                                ATK%             4
+53510     Goblet   Guardian's Vessel                                Any              0
+53511     Goblet   Guardian's Vessel                                Any              1
+53512     Goblet   Guardian's Vessel                                Any              2
+53513     Goblet   Guardian's Vessel                                Any              3
+53514     Goblet   Guardian's Vessel                                Any              4
+53530     Circlet  Guardian's Band                                  Any              0
+53531     Circlet  Guardian's Band                                  Any              1
+53532     Circlet  Guardian's Band                                  Any              2
+53533     Circlet  Guardian's Band                                  Any              3
+53534     Circlet  Guardian's Band                                  Any              4
+23483     Circlet  Guardian's Band                                  CRIT DMG         4
+
+54540     Flower   Tiny Miracle's Flower                            Flat HP          0
+54541     Flower   Tiny Miracle's Flower                            Flat HP          1
+54542     Flower   Tiny Miracle's Flower                            Flat HP          2
+54543     Flower   Tiny Miracle's Flower                            Flat HP          3
+54544     Flower   Tiny Miracle's Flower                            Flat HP          4
+54520     Plume    Tiny Miracle's Feather                           Flat ATK         0
+54521     Plume    Tiny Miracle's Feather                           Flat ATK         1
+54522     Plume    Tiny Miracle's Feather                           Flat ATK         2
+54523     Plume    Tiny Miracle's Feather                           Flat ATK         3
+54524     Plume    Tiny Miracle's Feather                           Flat ATK         4
+54550     Sands    Tiny Miracle's Hourglass                         Any              0
+54551     Sands    Tiny Miracle's Hourglass                         Any              1
+54552     Sands    Tiny Miracle's Hourglass                         Any              2
+54553     Sands    Tiny Miracle's Hourglass                         Any              3
+54554     Sands    Tiny Miracle's Hourglass                         Any              4
+54510     Goblet   Tiny Miracle's Goblet                            Any              0
+54511     Goblet   Tiny Miracle's Goblet                            Any              1
+54512     Goblet   Tiny Miracle's Goblet                            Any              2
+54513     Goblet   Tiny Miracle's Goblet                            Any              3
+54514     Goblet   Tiny Miracle's Goblet                            Any              4
+54530     Circlet  Tiny Miracle's Earrings                          Any              0
+54531     Circlet  Tiny Miracle's Earrings                          Any              1
+54532     Circlet  Tiny Miracle's Earrings                          Any              2
+54533     Circlet  Tiny Miracle's Earrings                          Any              3
+54534     Circlet  Tiny Miracle's Earrings                          Any              4
+
+55540     Flower   Berserker's Rose                                 Flat HP          0
+55541     Flower   Berserker's Rose                                 Flat HP          1
+55542     Flower   Berserker's Rose                                 Flat HP          2
+55543     Flower   Berserker's Rose                                 Flat HP          3
+23524     Flower   Berserker's Rose                                 Flat HP          4
+55544     Flower   Berserker's Rose                                 Flat HP          4
+55520     Plume    Berserker's Indigo Feather                       Flat ATK         0
+55521     Plume    Berserker's Indigo Feather                       Flat ATK         1
+55522     Plume    Berserker's Indigo Feather                       Flat ATK         2
+55523     Plume    Berserker's Indigo Feather                       Flat ATK         3
+23522     Plume    Berserker's Indigo Feather                       Flat ATK         4
+55524     Plume    Berserker's Indigo Feather                       Flat ATK         4
+23525     Sands    Berserker's Timepiece                            ATK%             4
+55550     Sands    Berserker's Timepiece                            Any              0
+55551     Sands    Berserker's Timepiece                            Any              1
+55552     Sands    Berserker's Timepiece                            Any              2
+55553     Sands    Berserker's Timepiece                            Any              3
+55554     Sands    Berserker's Timepiece                            Any              4
+23521     Goblet   Berserker's Bone Goblet                          ATK%             4
+55510     Goblet   Berserker's Bone Goblet                          Any              0
+55511     Goblet   Berserker's Bone Goblet                          Any              1
+55512     Goblet   Berserker's Bone Goblet                          Any              2
+55513     Goblet   Berserker's Bone Goblet                          Any              3
+55514     Goblet   Berserker's Bone Goblet                          Any              4
+55530     Circlet  Berserker's Battle Mask                          Any              0
+55531     Circlet  Berserker's Battle Mask                          Any              1
+55532     Circlet  Berserker's Battle Mask                          Any              2
+55533     Circlet  Berserker's Battle Mask                          Any              3
+55534     Circlet  Berserker's Battle Mask                          Any              4
+23523     Circlet  Berserker's Battle Mask                          CRIT DMG         4
+
+56540     Flower   Martial Artist's Red Flower                      Flat HP          0
+56541     Flower   Martial Artist's Red Flower                      Flat HP          1
+56542     Flower   Martial Artist's Red Flower                      Flat HP          2
+56543     Flower   Martial Artist's Red Flower                      Flat HP          3
+56544     Flower   Martial Artist's Red Flower                      Flat HP          4
+56520     Plume    Martial Artist's Feather Accessory               Flat ATK         0
+56521     Plume    Martial Artist's Feather Accessory               Flat ATK         1
+56522     Plume    Martial Artist's Feather Accessory               Flat ATK         2
+56523     Plume    Martial Artist's Feather Accessory               Flat ATK         3
+56524     Plume    Martial Artist's Feather Accessory               Flat ATK         4
+56550     Sands    Martial Artist's Water Hourglass                 Any              0
+56551     Sands    Martial Artist's Water Hourglass                 Any              1
+56552     Sands    Martial Artist's Water Hourglass                 Any              2
+56553     Sands    Martial Artist's Water Hourglass                 Any              3
+56554     Sands    Martial Artist's Water Hourglass                 Any              4
+56510     Goblet   Martial Artist's Wine Cup                        Any              0
+56511     Goblet   Martial Artist's Wine Cup                        Any              1
+56512     Goblet   Martial Artist's Wine Cup                        Any              2
+56513     Goblet   Martial Artist's Wine Cup                        Any              3
+56514     Goblet   Martial Artist's Wine Cup                        Any              4
+56530     Circlet  Martial Artist's Bandana                         Any              0
+56531     Circlet  Martial Artist's Bandana                         Any              1
+56532     Circlet  Martial Artist's Bandana                         Any              2
+56533     Circlet  Martial Artist's Bandana                         Any              3
+56534     Circlet  Martial Artist's Bandana                         Any              4
+
+57540     Flower   Instructor's Brooch                              Flat HP          0
+57541     Flower   Instructor's Brooch                              Flat HP          1
+57542     Flower   Instructor's Brooch                              Flat HP          2
+57543     Flower   Instructor's Brooch                              Flat HP          3
+23514     Flower   Instructor's Brooch                              Flat HP          4
+57544     Flower   Instructor's Brooch                              Flat HP          4
+57520     Plume    Instructor's Feather Accessory                   Flat ATK         0
+57521     Plume    Instructor's Feather Accessory                   Flat ATK         1
+57522     Plume    Instructor's Feather Accessory                   Flat ATK         2
+57523     Plume    Instructor's Feather Accessory                   Flat ATK         3
+23512     Plume    Instructor's Feather Accessory                   Flat ATK         4
+57524     Plume    Instructor's Feather Accessory                   Flat ATK         4
+57550     Sands    Instructor's Pocket Watch                        Any              0
+57551     Sands    Instructor's Pocket Watch                        Any              1
+57552     Sands    Instructor's Pocket Watch                        Any              2
+57553     Sands    Instructor's Pocket Watch                        Any              3
+57554     Sands    Instructor's Pocket Watch                        Any              4
+23515     Sands    Instructor's Pocket Watch                        Elemental Mastery 4
+57510     Goblet   Instructor's Tea Cup                             Any              0
+57511     Goblet   Instructor's Tea Cup                             Any              1
+57512     Goblet   Instructor's Tea Cup                             Any              2
+57513     Goblet   Instructor's Tea Cup                             Any              3
+57514     Goblet   Instructor's Tea Cup                             Any              4
+23511     Goblet   Instructor's Tea Cup                             Elemental Mastery 4
+57530     Circlet  Instructor's Cap                                 Any              0
+57531     Circlet  Instructor's Cap                                 Any              1
+57532     Circlet  Instructor's Cap                                 Any              2
+57533     Circlet  Instructor's Cap                                 Any              3
+57534     Circlet  Instructor's Cap                                 Any              4
+23513     Circlet  Instructor's Cap                                 Elemental Mastery 4
+
+58540     Flower   Gambler's Brooch                                 Flat HP          0
+58541     Flower   Gambler's Brooch                                 Flat HP          1
+58542     Flower   Gambler's Brooch                                 Flat HP          2
+58543     Flower   Gambler's Brooch                                 Flat HP          3
+58544     Flower   Gambler's Brooch                                 Flat HP          4
+58520     Plume    Gambler's Feather Accessory                      Flat ATK         0
+58521     Plume    Gambler's Feather Accessory                      Flat ATK         1
+58522     Plume    Gambler's Feather Accessory                      Flat ATK         2
+58523     Plume    Gambler's Feather Accessory                      Flat ATK         3
+58524     Plume    Gambler's Feather Accessory                      Flat ATK         4
+58550     Sands    Gambler's Pocket Watch                           Any              0
+58551     Sands    Gambler's Pocket Watch                           Any              1
+58552     Sands    Gambler's Pocket Watch                           Any              2
+58553     Sands    Gambler's Pocket Watch                           Any              3
+58554     Sands    Gambler's Pocket Watch                           Any              4
+58510     Goblet   Gambler's Dice Cup                               Any              0
+58511     Goblet   Gambler's Dice Cup                               Any              1
+58512     Goblet   Gambler's Dice Cup                               Any              2
+58513     Goblet   Gambler's Dice Cup                               Any              3
+58514     Goblet   Gambler's Dice Cup                               Any              4
+58530     Circlet  Gambler's Earrings                               Any              0
+58531     Circlet  Gambler's Earrings                               Any              1
+58532     Circlet  Gambler's Earrings                               Any              2
+58533     Circlet  Gambler's Earrings                               Any              3
+58534     Circlet  Gambler's Earrings                               Any              4
+
+59540     Flower   Exile's Flower                                   Flat HP          0
+59541     Flower   Exile's Flower                                   Flat HP          1
+59542     Flower   Exile's Flower                                   Flat HP          2
+59543     Flower   Exile's Flower                                   Flat HP          3
+59544     Flower   Exile's Flower                                   Flat HP          4
+59520     Plume    Exile's Feather                                  Flat ATK         0
+59521     Plume    Exile's Feather                                  Flat ATK         1
+59522     Plume    Exile's Feather                                  Flat ATK         2
+59523     Plume    Exile's Feather                                  Flat ATK         3
+59524     Plume    Exile's Feather                                  Flat ATK         4
+59550     Sands    Exile's Pocket Watch                             Any              0
+59551     Sands    Exile's Pocket Watch                             Any              1
+59552     Sands    Exile's Pocket Watch                             Any              2
+59553     Sands    Exile's Pocket Watch                             Any              3
+59554     Sands    Exile's Pocket Watch                             Any              4
+59510     Goblet   Exile's Goblet                                   Any              0
+59511     Goblet   Exile's Goblet                                   Any              1
+59512     Goblet   Exile's Goblet                                   Any              2
+59513     Goblet   Exile's Goblet                                   Any              3
+59514     Goblet   Exile's Goblet                                   Any              4
+59530     Circlet  Exile's Circlet                                  Any              0
+59531     Circlet  Exile's Circlet                                  Any              1
+59532     Circlet  Exile's Circlet                                  Any              2
+59533     Circlet  Exile's Circlet                                  Any              3
+59534     Circlet  Exile's Circlet                                  Any              4
+
+62540     Flower   Scholar's Bookmark                               Flat HP          0
+62541     Flower   Scholar's Bookmark                               Flat HP          1
+62542     Flower   Scholar's Bookmark                               Flat HP          2
+62543     Flower   Scholar's Bookmark                               Flat HP          3
+62544     Flower   Scholar's Bookmark                               Flat HP          4
+62520     Plume    Scholar's Quill Pen                              Flat ATK         0
+62521     Plume    Scholar's Quill Pen                              Flat ATK         1
+62522     Plume    Scholar's Quill Pen                              Flat ATK         2
+62523     Plume    Scholar's Quill Pen                              Flat ATK         3
+62524     Plume    Scholar's Quill Pen                              Flat ATK         4
+62550     Sands    Scholar's Clock                                  Any              0
+62551     Sands    Scholar's Clock                                  Any              1
+62552     Sands    Scholar's Clock                                  Any              2
+62553     Sands    Scholar's Clock                                  Any              3
+62554     Sands    Scholar's Clock                                  Any              4
+62510     Goblet   Scholar's Ink Cup                                Any              0
+62511     Goblet   Scholar's Ink Cup                                Any              1
+62512     Goblet   Scholar's Ink Cup                                Any              2
+62513     Goblet   Scholar's Ink Cup                                Any              3
+62514     Goblet   Scholar's Ink Cup                                Any              4
+62530     Circlet  Scholar's Lens                                   Any              0
+62531     Circlet  Scholar's Lens                                   Any              1
+62532     Circlet  Scholar's Lens                                   Any              2
+62533     Circlet  Scholar's Lens                                   Any              3
+62534     Circlet  Scholar's Lens                                   Any              4
+
+71540     Flower   Snowswept Memory                                 Flat HP          0
+71541     Flower   Snowswept Memory                                 Flat HP          1
+71542     Flower   Snowswept Memory                                 Flat HP          2
+71543     Flower   Snowswept Memory                                 Flat HP          3
+23454     Flower   Snowswept Memory                                 Flat HP          4
+24134     Flower   Snowswept Memory                                 Flat HP          4
+24184     Flower   Snowswept Memory                                 Flat HP          4
+71544     Flower   Snowswept Memory                                 Flat HP          4
+71520     Plume    Icebreaker's Resolve                             Flat ATK         0
+71521     Plume    Icebreaker's Resolve                             Flat ATK         1
+71522     Plume    Icebreaker's Resolve                             Flat ATK         2
+71523     Plume    Icebreaker's Resolve                             Flat ATK         3
+23452     Plume    Icebreaker's Resolve                             Flat ATK         4
+24132     Plume    Icebreaker's Resolve                             Flat ATK         4
+24182     Plume    Icebreaker's Resolve                             Flat ATK         4
+71524     Plume    Icebreaker's Resolve                             Flat ATK         4
+23455     Sands    Frozen Homeland's Demise                         ATK%             4
+24135     Sands    Frozen Homeland's Demise                         ATK%             4
+24185     Sands    Frozen Homeland's Demise                         ATK%             4
+71550     Sands    Frozen Homeland's Demise                         Any              0
+71551     Sands    Frozen Homeland's Demise                         Any              1
+71552     Sands    Frozen Homeland's Demise                         Any              2
+71553     Sands    Frozen Homeland's Demise                         Any              3
+71554     Sands    Frozen Homeland's Demise                         Any              4
+71510     Goblet   Frost-Weaved Dignity                             Any              0
+71511     Goblet   Frost-Weaved Dignity                             Any              1
+71512     Goblet   Frost-Weaved Dignity                             Any              2
+71513     Goblet   Frost-Weaved Dignity                             Any              3
+71514     Goblet   Frost-Weaved Dignity                             Any              4
+23451     Goblet   Frost-Weaved Dignity                             Cryo DMG         4
+24131     Goblet   Frost-Weaved Dignity                             Cryo DMG         4
+24181     Goblet   Frost-Weaved Dignity                             Cryo DMG         4
+71530     Circlet  Broken Rime's Echo                               Any              0
+71531     Circlet  Broken Rime's Echo                               Any              1
+71532     Circlet  Broken Rime's Echo                               Any              2
+71533     Circlet  Broken Rime's Echo                               Any              3
+71534     Circlet  Broken Rime's Echo                               Any              4
+23453     Circlet  Broken Rime's Echo                               CRIT DMG         4
+24133     Circlet  Broken Rime's Echo                               CRIT DMG         4
+24183     Circlet  Broken Rime's Echo                               CRIT DMG         4
+23458     Circlet  Broken Rime's Echo                               CRIT Rate        4
+
+72540     Flower   Thundersoother's Heart                           Flat HP          0
+72541     Flower   Thundersoother's Heart                           Flat HP          1
+72542     Flower   Thundersoother's Heart                           Flat HP          2
+72543     Flower   Thundersoother's Heart                           Flat HP          3
+23444     Flower   Thundersoother's Heart                           Flat HP          4
+72544     Flower   Thundersoother's Heart                           Flat HP          4
+72520     Plume    Thundersoother's Plume                           Flat ATK         0
+72521     Plume    Thundersoother's Plume                           Flat ATK         1
+72522     Plume    Thundersoother's Plume                           Flat ATK         2
+72523     Plume    Thundersoother's Plume                           Flat ATK         3
+23442     Plume    Thundersoother's Plume                           Flat ATK         4
+72524     Plume    Thundersoother's Plume                           Flat ATK         4
+23445     Sands    Hour of Soothing Thunder                         ATK%             4
+72550     Sands    Hour of Soothing Thunder                         Any              0
+72551     Sands    Hour of Soothing Thunder                         Any              1
+72552     Sands    Hour of Soothing Thunder                         Any              2
+72553     Sands    Hour of Soothing Thunder                         Any              3
+72554     Sands    Hour of Soothing Thunder                         Any              4
+72510     Goblet   Thundersoother's Goblet                          Any              0
+72511     Goblet   Thundersoother's Goblet                          Any              1
+72512     Goblet   Thundersoother's Goblet                          Any              2
+72513     Goblet   Thundersoother's Goblet                          Any              3
+72514     Goblet   Thundersoother's Goblet                          Any              4
+23441     Goblet   Thundersoother's Goblet                          Electro DMG      4
+72530     Circlet  Thundersoother's Diadem                          Any              0
+72531     Circlet  Thundersoother's Diadem                          Any              1
+72532     Circlet  Thundersoother's Diadem                          Any              2
+72533     Circlet  Thundersoother's Diadem                          Any              3
+72534     Circlet  Thundersoother's Diadem                          Any              4
+23443     Circlet  Thundersoother's Diadem                          CRIT Rate        4
+
+73540     Flower   Lavawalker's Resolution                          Flat HP          0
+73541     Flower   Lavawalker's Resolution                          Flat HP          1
+73542     Flower   Lavawalker's Resolution                          Flat HP          2
+73543     Flower   Lavawalker's Resolution                          Flat HP          3
+23434     Flower   Lavawalker's Resolution                          Flat HP          4
+73544     Flower   Lavawalker's Resolution                          Flat HP          4
+73520     Plume    Lavawalker's Salvation                           Flat ATK         0
+73521     Plume    Lavawalker's Salvation                           Flat ATK         1
+73522     Plume    Lavawalker's Salvation                           Flat ATK         2
+73523     Plume    Lavawalker's Salvation                           Flat ATK         3
+23432     Plume    Lavawalker's Salvation                           Flat ATK         4
+73524     Plume    Lavawalker's Salvation                           Flat ATK         4
+23435     Sands    Lavawalker's Torment                             ATK%             4
+73550     Sands    Lavawalker's Torment                             Any              0
+73551     Sands    Lavawalker's Torment                             Any              1
+73552     Sands    Lavawalker's Torment                             Any              2
+73553     Sands    Lavawalker's Torment                             Any              3
+73554     Sands    Lavawalker's Torment                             Any              4
+73510     Goblet   Lavawalker's Epiphany                            Any              0
+73511     Goblet   Lavawalker's Epiphany                            Any              1
+73512     Goblet   Lavawalker's Epiphany                            Any              2
+73513     Goblet   Lavawalker's Epiphany                            Any              3
+73514     Goblet   Lavawalker's Epiphany                            Any              4
+23431     Goblet   Lavawalker's Epiphany                            Pyro DMG         4
+73530     Circlet  Lavawalker's Wisdom                              Any              0
+73531     Circlet  Lavawalker's Wisdom                              Any              1
+73532     Circlet  Lavawalker's Wisdom                              Any              2
+73533     Circlet  Lavawalker's Wisdom                              Any              3
+73534     Circlet  Lavawalker's Wisdom                              Any              4
+23433     Circlet  Lavawalker's Wisdom                              CRIT Rate        4
+
+74540     Flower   Maiden's Distant Love                            Flat HP          0
+74541     Flower   Maiden's Distant Love                            Flat HP          1
+74542     Flower   Maiden's Distant Love                            Flat HP          2
+74543     Flower   Maiden's Distant Love                            Flat HP          3
+23424     Flower   Maiden's Distant Love                            Flat HP          4
+23464     Flower   Maiden's Distant Love                            Flat HP          4
+23474     Flower   Maiden's Distant Love                            Flat HP          4
+24284     Flower   Maiden's Distant Love                            Flat HP          4
+24794     Flower   Maiden's Distant Love                            Flat HP          4
+74544     Flower   Maiden's Distant Love                            Flat HP          4
+74520     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         0
+74521     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         1
+74522     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         2
+74523     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         3
+23422     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+23462     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+23472     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+24282     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+24792     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+74524     Plume    Maiden's Heart-Stricken Infatuation              Flat ATK         4
+23425     Sands    Maiden's Passing Youth                           ATK%             4
+24285     Sands    Maiden's Passing Youth                           ATK%             4
+74550     Sands    Maiden's Passing Youth                           Any              0
+74551     Sands    Maiden's Passing Youth                           Any              1
+74552     Sands    Maiden's Passing Youth                           Any              2
+74553     Sands    Maiden's Passing Youth                           Any              3
+74554     Sands    Maiden's Passing Youth                           Any              4
+23475     Sands    Maiden's Passing Youth                           DEF%             4
+23430     Sands    Maiden's Passing Youth                           HP%              4
+23465     Sands    Maiden's Passing Youth                           HP%              4
+24795     Sands    Maiden's Passing Youth                           HP%              4
+23421     Goblet   Maiden's Fleeting Leisure                        ATK%             4
+24281     Goblet   Maiden's Fleeting Leisure                        ATK%             4
+74510     Goblet   Maiden's Fleeting Leisure                        Any              0
+74511     Goblet   Maiden's Fleeting Leisure                        Any              1
+74512     Goblet   Maiden's Fleeting Leisure                        Any              2
+74513     Goblet   Maiden's Fleeting Leisure                        Any              3
+74514     Goblet   Maiden's Fleeting Leisure                        Any              4
+23471     Goblet   Maiden's Fleeting Leisure                        DEF%             4
+23426     Goblet   Maiden's Fleeting Leisure                        HP%              4
+23461     Goblet   Maiden's Fleeting Leisure                        HP%              4
+24791     Goblet   Maiden's Fleeting Leisure                        HP%              4
+74530     Circlet  Maiden's Fading Beauty                           Any              0
+74531     Circlet  Maiden's Fading Beauty                           Any              1
+74532     Circlet  Maiden's Fading Beauty                           Any              2
+74533     Circlet  Maiden's Fading Beauty                           Any              3
+74534     Circlet  Maiden's Fading Beauty                           Any              4
+23423     Circlet  Maiden's Fading Beauty                           Healing Bonus    4
+23463     Circlet  Maiden's Fading Beauty                           Healing Bonus    4
+23473     Circlet  Maiden's Fading Beauty                           Healing Bonus    4
+24283     Circlet  Maiden's Fading Beauty                           Healing Bonus    4
+24793     Circlet  Maiden's Fading Beauty                           Healing Bonus    4
+
+99540     Flower   Lord of Wind over Firmament's Flower             Flat HP          0
+99541     Flower   Lord of Wind over Firmament's Flower             Flat HP          1
+99542     Flower   Lord of Wind over Firmament's Flower             Flat HP          2
+99543     Flower   Lord of Wind over Firmament's Flower             Flat HP          3
+99544     Flower   Lord of Wind over Firmament's Flower             Flat HP          4
+99520     Plume    Lord of Wind over Firmament's Feather            Flat ATK         0
+99521     Plume    Lord of Wind over Firmament's Feather            Flat ATK         1
+99522     Plume    Lord of Wind over Firmament's Feather            Flat ATK         2
+99523     Plume    Lord of Wind over Firmament's Feather            Flat ATK         3
+99524     Plume    Lord of Wind over Firmament's Feather            Flat ATK         4
+99550     Sands    Lord of Wind over Firmament's Hourglass          Any              0
+99551     Sands    Lord of Wind over Firmament's Hourglass          Any              1
+99552     Sands    Lord of Wind over Firmament's Hourglass          Any              2
+99553     Sands    Lord of Wind over Firmament's Hourglass          Any              3
+99554     Sands    Lord of Wind over Firmament's Hourglass          Any              4
+99510     Goblet   Lord of Wind over Firmament's Cup                Any              0
+99511     Goblet   Lord of Wind over Firmament's Cup                Any              1
+99512     Goblet   Lord of Wind over Firmament's Cup                Any              2
+99513     Goblet   Lord of Wind over Firmament's Cup                Any              3
+99514     Goblet   Lord of Wind over Firmament's Cup                Any              4
+99530     Circlet  Lord of Wind over Firmament's Crown              Any              0
+99531     Circlet  Lord of Wind over Firmament's Crown              Any              1
+99532     Circlet  Lord of Wind over Firmament's Crown              Any              2
+99533     Circlet  Lord of Wind over Firmament's Crown              Any              3
+99534     Circlet  Lord of Wind over Firmament's Crown              Any              4
+
+75540     Flower   Gladiator's Nostalgia                            Flat HP          0
+75541     Flower   Gladiator's Nostalgia                            Flat HP          1
+75542     Flower   Gladiator's Nostalgia                            Flat HP          2
+75543     Flower   Gladiator's Nostalgia                            Flat HP          3
+23414     Flower   Gladiator's Nostalgia                            Flat HP          4
+24124     Flower   Gladiator's Nostalgia                            Flat HP          4
+24244     Flower   Gladiator's Nostalgia                            Flat HP          4
+24334     Flower   Gladiator's Nostalgia                            Flat HP          4
+24344     Flower   Gladiator's Nostalgia                            Flat HP          4
+24354     Flower   Gladiator's Nostalgia                            Flat HP          4
+24364     Flower   Gladiator's Nostalgia                            Flat HP          4
+24764     Flower   Gladiator's Nostalgia                            Flat HP          4
+75544     Flower   Gladiator's Nostalgia                            Flat HP          4
+75520     Plume    Gladiator's Destiny                              Flat ATK         0
+75521     Plume    Gladiator's Destiny                              Flat ATK         1
+75522     Plume    Gladiator's Destiny                              Flat ATK         2
+75523     Plume    Gladiator's Destiny                              Flat ATK         3
+23412     Plume    Gladiator's Destiny                              Flat ATK         4
+24102     Plume    Gladiator's Destiny                              Flat ATK         4
+24322     Plume    Gladiator's Destiny                              Flat ATK         4
+24332     Plume    Gladiator's Destiny                              Flat ATK         4
+24342     Plume    Gladiator's Destiny                              Flat ATK         4
+24352     Plume    Gladiator's Destiny                              Flat ATK         4
+24362     Plume    Gladiator's Destiny                              Flat ATK         4
+24742     Plume    Gladiator's Destiny                              Flat ATK         4
+24752     Plume    Gladiator's Destiny                              Flat ATK         4
+24762     Plume    Gladiator's Destiny                              Flat ATK         4
+75524     Plume    Gladiator's Destiny                              Flat ATK         4
+23415     Sands    Gladiator's Longing                              ATK%             4
+24125     Sands    Gladiator's Longing                              ATK%             4
+24245     Sands    Gladiator's Longing                              ATK%             4
+24335     Sands    Gladiator's Longing                              ATK%             4
+24355     Sands    Gladiator's Longing                              ATK%             4
+24365     Sands    Gladiator's Longing                              ATK%             4
+24765     Sands    Gladiator's Longing                              ATK%             4
+75550     Sands    Gladiator's Longing                              Any              0
+75551     Sands    Gladiator's Longing                              Any              1
+75552     Sands    Gladiator's Longing                              Any              2
+75553     Sands    Gladiator's Longing                              Any              3
+75554     Sands    Gladiator's Longing                              Any              4
+24345     Sands    Gladiator's Longing                              Energy Recharge  4
+23411     Goblet   Gladiator's Intoxication                         ATK%             4
+24101     Goblet   Gladiator's Intoxication                         ATK%             4
+24321     Goblet   Gladiator's Intoxication                         ATK%             4
+24341     Goblet   Gladiator's Intoxication                         ATK%             4
+24361     Goblet   Gladiator's Intoxication                         ATK%             4
+24351     Goblet   Gladiator's Intoxication                         Anemo DMG        4
+75510     Goblet   Gladiator's Intoxication                         Any              0
+75511     Goblet   Gladiator's Intoxication                         Any              1
+75512     Goblet   Gladiator's Intoxication                         Any              2
+75513     Goblet   Gladiator's Intoxication                         Any              3
+75514     Goblet   Gladiator's Intoxication                         Any              4
+24751     Goblet   Gladiator's Intoxication                         Electro DMG      4
+24741     Goblet   Gladiator's Intoxication                         Geo DMG          4
+23416     Goblet   Gladiator's Intoxication                         Physical DMG     4
+24761     Goblet   Gladiator's Intoxication                         Physical DMG     4
+24331     Goblet   Gladiator's Intoxication                         Pyro DMG         4
+75530     Circlet  Gladiator's Triumphus                            Any              0
+75531     Circlet  Gladiator's Triumphus                            Any              1
+75532     Circlet  Gladiator's Triumphus                            Any              2
+75533     Circlet  Gladiator's Triumphus                            Any              3
+75534     Circlet  Gladiator's Triumphus                            Any              4
+23418     Circlet  Gladiator's Triumphus                            CRIT DMG         4
+24123     Circlet  Gladiator's Triumphus                            CRIT DMG         4
+23413     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24243     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24333     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24343     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24353     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24763     Circlet  Gladiator's Triumphus                            CRIT Rate        4
+24323     Circlet  Gladiator's Triumphus                            Healing Bonus    4
+24363     Circlet  Gladiator's Triumphus                            Healing Bonus    4
+
+76540     Flower   In Remembrance of Viridescent Fields             Flat HP          0
+76541     Flower   In Remembrance of Viridescent Fields             Flat HP          1
+76542     Flower   In Remembrance of Viridescent Fields             Flat HP          2
+76543     Flower   In Remembrance of Viridescent Fields             Flat HP          3
+23404     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+24144     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+24174     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+24274     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+24654     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+24694     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+76544     Flower   In Remembrance of Viridescent Fields             Flat HP          4
+76520     Plume    Viridescent Arrow Feather                        Flat ATK         0
+76521     Plume    Viridescent Arrow Feather                        Flat ATK         1
+76522     Plume    Viridescent Arrow Feather                        Flat ATK         2
+76523     Plume    Viridescent Arrow Feather                        Flat ATK         3
+23402     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24122     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24142     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24172     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24272     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24652     Plume    Viridescent Arrow Feather                        Flat ATK         4
+24692     Plume    Viridescent Arrow Feather                        Flat ATK         4
+76524     Plume    Viridescent Arrow Feather                        Flat ATK         4
+23405     Sands    Viridescent Venerer's Determination              ATK%             4
+24275     Sands    Viridescent Venerer's Determination              ATK%             4
+76550     Sands    Viridescent Venerer's Determination              Any              0
+76551     Sands    Viridescent Venerer's Determination              Any              1
+76552     Sands    Viridescent Venerer's Determination              Any              2
+76553     Sands    Viridescent Venerer's Determination              Any              3
+76554     Sands    Viridescent Venerer's Determination              Any              4
+23409     Sands    Viridescent Venerer's Determination              Elemental Mastery 4
+24175     Sands    Viridescent Venerer's Determination              Elemental Mastery 4
+23410     Sands    Viridescent Venerer's Determination              Energy Recharge  4
+24145     Sands    Viridescent Venerer's Determination              Energy Recharge  4
+24655     Sands    Viridescent Venerer's Determination              Energy Recharge  4
+24695     Sands    Viridescent Venerer's Determination              Energy Recharge  4
+23401     Goblet   Viridescent Venerer's Vessel                     Anemo DMG        4
+24121     Goblet   Viridescent Venerer's Vessel                     Anemo DMG        4
+24271     Goblet   Viridescent Venerer's Vessel                     Anemo DMG        4
+76510     Goblet   Viridescent Venerer's Vessel                     Any              0
+76511     Goblet   Viridescent Venerer's Vessel                     Any              1
+76512     Goblet   Viridescent Venerer's Vessel                     Any              2
+76513     Goblet   Viridescent Venerer's Vessel                     Any              3
+76514     Goblet   Viridescent Venerer's Vessel                     Any              4
+23406     Goblet   Viridescent Venerer's Vessel                     Elemental Mastery 4
+24141     Goblet   Viridescent Venerer's Vessel                     Elemental Mastery 4
+24171     Goblet   Viridescent Venerer's Vessel                     Elemental Mastery 4
+24651     Goblet   Viridescent Venerer's Vessel                     Elemental Mastery 4
+24691     Goblet   Viridescent Venerer's Vessel                     Elemental Mastery 4
+76530     Circlet  Viridescent Venerer's Diadem                     Any              0
+76531     Circlet  Viridescent Venerer's Diadem                     Any              1
+76532     Circlet  Viridescent Venerer's Diadem                     Any              2
+76533     Circlet  Viridescent Venerer's Diadem                     Any              3
+76534     Circlet  Viridescent Venerer's Diadem                     Any              4
+23403     Circlet  Viridescent Venerer's Diadem                     CRIT Rate        4
+24273     Circlet  Viridescent Venerer's Diadem                     CRIT Rate        4
+23408     Circlet  Viridescent Venerer's Diadem                     Elemental Mastery 4
+24143     Circlet  Viridescent Venerer's Diadem                     Elemental Mastery 4
+24173     Circlet  Viridescent Venerer's Diadem                     Elemental Mastery 4
+24693     Circlet  Viridescent Venerer's Diadem                     Elemental Mastery 4
+24653     Circlet  Viridescent Venerer's Diadem                     HP%              4
+
+77540     Flower   Troupe's Dawnlight                               Flat HP          0
+77541     Flower   Troupe's Dawnlight                               Flat HP          1
+77542     Flower   Troupe's Dawnlight                               Flat HP          2
+77543     Flower   Troupe's Dawnlight                               Flat HP          3
+23394     Flower   Troupe's Dawnlight                               Flat HP          4
+77544     Flower   Troupe's Dawnlight                               Flat HP          4
+77520     Plume    Bard's Arrow Feather                             Flat ATK         0
+77521     Plume    Bard's Arrow Feather                             Flat ATK         1
+77522     Plume    Bard's Arrow Feather                             Flat ATK         2
+77523     Plume    Bard's Arrow Feather                             Flat ATK         3
+23392     Plume    Bard's Arrow Feather                             Flat ATK         4
+77524     Plume    Bard's Arrow Feather                             Flat ATK         4
+23395     Sands    Concert's Final Hour                             ATK%             4
+77550     Sands    Concert's Final Hour                             Any              0
+77551     Sands    Concert's Final Hour                             Any              1
+77552     Sands    Concert's Final Hour                             Any              2
+77553     Sands    Concert's Final Hour                             Any              3
+77554     Sands    Concert's Final Hour                             Any              4
+23400     Sands    Concert's Final Hour                             Elemental Mastery 4
+23391     Goblet   Wanderer's String-Kettle                         ATK%             4
+77510     Goblet   Wanderer's String-Kettle                         Any              0
+77511     Goblet   Wanderer's String-Kettle                         Any              1
+77512     Goblet   Wanderer's String-Kettle                         Any              2
+77513     Goblet   Wanderer's String-Kettle                         Any              3
+77514     Goblet   Wanderer's String-Kettle                         Any              4
+23396     Goblet   Wanderer's String-Kettle                         Dendro DMG       4
+77530     Circlet  Conductor's Top Hat                              Any              0
+77531     Circlet  Conductor's Top Hat                              Any              1
+77532     Circlet  Conductor's Top Hat                              Any              2
+77533     Circlet  Conductor's Top Hat                              Any              3
+77534     Circlet  Conductor's Top Hat                              Any              4
+23393     Circlet  Conductor's Top Hat                              CRIT Rate        4
+
+78540     Flower   Heart of Frost                                   Flat HP          0
+78541     Flower   Heart of Frost                                   Flat HP          1
+78542     Flower   Heart of Frost                                   Flat HP          2
+78543     Flower   Heart of Frost                                   Flat HP          3
+23384     Flower   Heart of Frost                                   Flat HP          4
+78544     Flower   Heart of Frost                                   Flat HP          4
+78520     Plume    Plume of Snow                                    Flat ATK         0
+78521     Plume    Plume of Snow                                    Flat ATK         1
+78522     Plume    Plume of Snow                                    Flat ATK         2
+78523     Plume    Plume of Snow                                    Flat ATK         3
+23382     Plume    Plume of Snow                                    Flat ATK         4
+78524     Plume    Plume of Snow                                    Flat ATK         4
+23385     Sands    Glacial Sand                                     ATK%             4
+78550     Sands    Glacial Sand                                     Any              0
+78551     Sands    Glacial Sand                                     Any              1
+78552     Sands    Glacial Sand                                     Any              2
+78553     Sands    Glacial Sand                                     Any              3
+78554     Sands    Glacial Sand                                     Any              4
+78510     Goblet   Goblet of Aquilo                                 Any              0
+78511     Goblet   Goblet of Aquilo                                 Any              1
+78512     Goblet   Goblet of Aquilo                                 Any              2
+78513     Goblet   Goblet of Aquilo                                 Any              3
+78514     Goblet   Goblet of Aquilo                                 Any              4
+23381     Goblet   Goblet of Aquilo                                 Cryo DMG         4
+78530     Circlet  Crown of Glacier                                 Any              0
+78531     Circlet  Crown of Glacier                                 Any              1
+78532     Circlet  Crown of Glacier                                 Any              2
+78533     Circlet  Crown of Glacier                                 Any              3
+78534     Circlet  Crown of Glacier                                 Any              4
+23383     Circlet  Crown of Glacier                                 CRIT Rate        4
+
+79540     Flower   Thunderbird's Mercy                              Flat HP          0
+79541     Flower   Thunderbird's Mercy                              Flat HP          1
+79542     Flower   Thunderbird's Mercy                              Flat HP          2
+79543     Flower   Thunderbird's Mercy                              Flat HP          3
+23374     Flower   Thunderbird's Mercy                              Flat HP          4
+24324     Flower   Thunderbird's Mercy                              Flat HP          4
+24724     Flower   Thunderbird's Mercy                              Flat HP          4
+24754     Flower   Thunderbird's Mercy                              Flat HP          4
+79544     Flower   Thunderbird's Mercy                              Flat HP          4
+79520     Plume    Survivor of Catastrophe                          Flat ATK         0
+79521     Plume    Survivor of Catastrophe                          Flat ATK         1
+79522     Plume    Survivor of Catastrophe                          Flat ATK         2
+79523     Plume    Survivor of Catastrophe                          Flat ATK         3
+23372     Plume    Survivor of Catastrophe                          Flat ATK         4
+24242     Plume    Survivor of Catastrophe                          Flat ATK         4
+24722     Plume    Survivor of Catastrophe                          Flat ATK         4
+79524     Plume    Survivor of Catastrophe                          Flat ATK         4
+23375     Sands    Hourglass of Thunder                             ATK%             4
+24325     Sands    Hourglass of Thunder                             ATK%             4
+24725     Sands    Hourglass of Thunder                             ATK%             4
+24755     Sands    Hourglass of Thunder                             ATK%             4
+79550     Sands    Hourglass of Thunder                             Any              0
+79551     Sands    Hourglass of Thunder                             Any              1
+79552     Sands    Hourglass of Thunder                             Any              2
+79553     Sands    Hourglass of Thunder                             Any              3
+79554     Sands    Hourglass of Thunder                             Any              4
+79510     Goblet   Omen of Thunderstorm                             Any              0
+79511     Goblet   Omen of Thunderstorm                             Any              1
+79512     Goblet   Omen of Thunderstorm                             Any              2
+79513     Goblet   Omen of Thunderstorm                             Any              3
+79514     Goblet   Omen of Thunderstorm                             Any              4
+23371     Goblet   Omen of Thunderstorm                             Electro DMG      4
+24241     Goblet   Omen of Thunderstorm                             Electro DMG      4
+24721     Goblet   Omen of Thunderstorm                             Electro DMG      4
+79530     Circlet  Thunder Summoner's Crown                         Any              0
+79531     Circlet  Thunder Summoner's Crown                         Any              1
+79532     Circlet  Thunder Summoner's Crown                         Any              2
+79533     Circlet  Thunder Summoner's Crown                         Any              3
+79534     Circlet  Thunder Summoner's Crown                         Any              4
+23373     Circlet  Thunder Summoner's Crown                         CRIT Rate        4
+24723     Circlet  Thunder Summoner's Crown                         CRIT Rate        4
+24753     Circlet  Thunder Summoner's Crown                         CRIT Rate        4
+
+80540     Flower   Witch's Flower of Blaze                          Flat HP          0
+80541     Flower   Witch's Flower of Blaze                          Flat HP          1
+80542     Flower   Witch's Flower of Blaze                          Flat HP          2
+80543     Flower   Witch's Flower of Blaze                          Flat HP          3
+23364     Flower   Witch's Flower of Blaze                          Flat HP          4
+24114     Flower   Witch's Flower of Blaze                          Flat HP          4
+24234     Flower   Witch's Flower of Blaze                          Flat HP          4
+24254     Flower   Witch's Flower of Blaze                          Flat HP          4
+24684     Flower   Witch's Flower of Blaze                          Flat HP          4
+80544     Flower   Witch's Flower of Blaze                          Flat HP          4
+80520     Plume    Witch's Ever-Burning Plume                       Flat ATK         0
+80521     Plume    Witch's Ever-Burning Plume                       Flat ATK         1
+80522     Plume    Witch's Ever-Burning Plume                       Flat ATK         2
+80523     Plume    Witch's Ever-Burning Plume                       Flat ATK         3
+23362     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+24112     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+24232     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+24252     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+24682     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+80524     Plume    Witch's Ever-Burning Plume                       Flat ATK         4
+23365     Sands    Witch's End Time                                 ATK%             4
+24235     Sands    Witch's End Time                                 ATK%             4
+24255     Sands    Witch's End Time                                 ATK%             4
+24685     Sands    Witch's End Time                                 ATK%             4
+80550     Sands    Witch's End Time                                 Any              0
+80551     Sands    Witch's End Time                                 Any              1
+80552     Sands    Witch's End Time                                 Any              2
+80553     Sands    Witch's End Time                                 Any              3
+80554     Sands    Witch's End Time                                 Any              4
+23370     Sands    Witch's End Time                                 HP%              4
+24115     Sands    Witch's End Time                                 HP%              4
+80510     Goblet   Witch's Heart Flames                             Any              0
+80511     Goblet   Witch's Heart Flames                             Any              1
+80512     Goblet   Witch's Heart Flames                             Any              2
+80513     Goblet   Witch's Heart Flames                             Any              3
+80514     Goblet   Witch's Heart Flames                             Any              4
+23361     Goblet   Witch's Heart Flames                             Pyro DMG         4
+24111     Goblet   Witch's Heart Flames                             Pyro DMG         4
+24231     Goblet   Witch's Heart Flames                             Pyro DMG         4
+24251     Goblet   Witch's Heart Flames                             Pyro DMG         4
+24681     Goblet   Witch's Heart Flames                             Pyro DMG         4
+80530     Circlet  Witch's Scorching Hat                            Any              0
+80531     Circlet  Witch's Scorching Hat                            Any              1
+80532     Circlet  Witch's Scorching Hat                            Any              2
+80533     Circlet  Witch's Scorching Hat                            Any              3
+80534     Circlet  Witch's Scorching Hat                            Any              4
+23368     Circlet  Witch's Scorching Hat                            CRIT DMG         4
+24233     Circlet  Witch's Scorching Hat                            CRIT DMG         4
+24253     Circlet  Witch's Scorching Hat                            CRIT DMG         4
+24683     Circlet  Witch's Scorching Hat                            CRIT DMG         4
+23363     Circlet  Witch's Scorching Hat                            CRIT Rate        4
+24113     Circlet  Witch's Scorching Hat                            CRIT Rate        4
+
+81540     Flower   Royal Flora                                      Flat HP          0
+81541     Flower   Royal Flora                                      Flat HP          1
+81542     Flower   Royal Flora                                      Flat HP          2
+81543     Flower   Royal Flora                                      Flat HP          3
+23354     Flower   Royal Flora                                      Flat HP          4
+24264     Flower   Royal Flora                                      Flat HP          4
+24634     Flower   Royal Flora                                      Flat HP          4
+24644     Flower   Royal Flora                                      Flat HP          4
+24674     Flower   Royal Flora                                      Flat HP          4
+81544     Flower   Royal Flora                                      Flat HP          4
+81520     Plume    Royal Plume                                      Flat ATK         0
+81521     Plume    Royal Plume                                      Flat ATK         1
+81522     Plume    Royal Plume                                      Flat ATK         2
+81523     Plume    Royal Plume                                      Flat ATK         3
+23352     Plume    Royal Plume                                      Flat ATK         4
+24262     Plume    Royal Plume                                      Flat ATK         4
+24632     Plume    Royal Plume                                      Flat ATK         4
+24642     Plume    Royal Plume                                      Flat ATK         4
+24672     Plume    Royal Plume                                      Flat ATK         4
+81524     Plume    Royal Plume                                      Flat ATK         4
+23360     Sands    Royal Pocket Watch                               ATK%             4
+81550     Sands    Royal Pocket Watch                               Any              0
+81551     Sands    Royal Pocket Watch                               Any              1
+81552     Sands    Royal Pocket Watch                               Any              2
+81553     Sands    Royal Pocket Watch                               Any              3
+81554     Sands    Royal Pocket Watch                               Any              4
+23355     Sands    Royal Pocket Watch                               Energy Recharge  4
+24265     Sands    Royal Pocket Watch                               Energy Recharge  4
+24635     Sands    Royal Pocket Watch                               Energy Recharge  4
+24645     Sands    Royal Pocket Watch                               Energy Recharge  4
+24675     Sands    Royal Pocket Watch                               Energy Recharge  4
+23351     Goblet   Royal Silver Urn                                 ATK%             4
+24261     Goblet   Royal Silver Urn                                 ATK%             4
+81510     Goblet   Royal Silver Urn                                 Any              0
+81511     Goblet   Royal Silver Urn                                 Any              1
+81512     Goblet   Royal Silver Urn                                 Any              2
+81513     Goblet   Royal Silver Urn                                 Any              3
+81514     Goblet   Royal Silver Urn                                 Any              4
+24671     Goblet   Royal Silver Urn                                 Electro DMG      4
+23356     Goblet   Royal Silver Urn                                 HP%              4
+24631     Goblet   Royal Silver Urn                                 HP%              4
+24641     Goblet   Royal Silver Urn                                 HP%              4
+81530     Circlet  Royal Masque                                     Any              0
+81531     Circlet  Royal Masque                                     Any              1
+81532     Circlet  Royal Masque                                     Any              2
+81533     Circlet  Royal Masque                                     Any              3
+81534     Circlet  Royal Masque                                     Any              4
+23353     Circlet  Royal Masque                                     CRIT Rate        4
+24263     Circlet  Royal Masque                                     CRIT Rate        4
+24673     Circlet  Royal Masque                                     CRIT Rate        4
+23358     Circlet  Royal Masque                                     HP%              4
+24633     Circlet  Royal Masque                                     HP%              4
+24643     Circlet  Royal Masque                                     HP%              4
+
+82540     Flower   Bloodstained Flower of Iron                      Flat HP          0
+82541     Flower   Bloodstained Flower of Iron                      Flat HP          1
+82542     Flower   Bloodstained Flower of Iron                      Flat HP          2
+82543     Flower   Bloodstained Flower of Iron                      Flat HP          3
+23344     Flower   Bloodstained Flower of Iron                      Flat HP          4
+24714     Flower   Bloodstained Flower of Iron                      Flat HP          4
+82544     Flower   Bloodstained Flower of Iron                      Flat HP          4
+82520     Plume    Bloodstained Black Plume                         Flat ATK         0
+82521     Plume    Bloodstained Black Plume                         Flat ATK         1
+82522     Plume    Bloodstained Black Plume                         Flat ATK         2
+82523     Plume    Bloodstained Black Plume                         Flat ATK         3
+23342     Plume    Bloodstained Black Plume                         Flat ATK         4
+24712     Plume    Bloodstained Black Plume                         Flat ATK         4
+82524     Plume    Bloodstained Black Plume                         Flat ATK         4
+23345     Sands    Bloodstained Final Hour                          ATK%             4
+82550     Sands    Bloodstained Final Hour                          Any              0
+82551     Sands    Bloodstained Final Hour                          Any              1
+82552     Sands    Bloodstained Final Hour                          Any              2
+82553     Sands    Bloodstained Final Hour                          Any              3
+82554     Sands    Bloodstained Final Hour                          Any              4
+23350     Sands    Bloodstained Final Hour                          DEF%             4
+24715     Sands    Bloodstained Final Hour                          DEF%             4
+82510     Goblet   Bloodstained Chevalier's Goblet                  Any              0
+82511     Goblet   Bloodstained Chevalier's Goblet                  Any              1
+82512     Goblet   Bloodstained Chevalier's Goblet                  Any              2
+82513     Goblet   Bloodstained Chevalier's Goblet                  Any              3
+82514     Goblet   Bloodstained Chevalier's Goblet                  Any              4
+23341     Goblet   Bloodstained Chevalier's Goblet                  Physical DMG     4
+24711     Goblet   Bloodstained Chevalier's Goblet                  Physical DMG     4
+82530     Circlet  Bloodstained Iron Mask                           Any              0
+82531     Circlet  Bloodstained Iron Mask                           Any              1
+82532     Circlet  Bloodstained Iron Mask                           Any              2
+82533     Circlet  Bloodstained Iron Mask                           Any              3
+82534     Circlet  Bloodstained Iron Mask                           Any              4
+23348     Circlet  Bloodstained Iron Mask                           CRIT DMG         4
+23343     Circlet  Bloodstained Iron Mask                           CRIT Rate        4
+24713     Circlet  Bloodstained Iron Mask                           CRIT Rate        4
+
+83530     Circlet  Tiara of Flame                                   Any              0
+83531     Circlet  Tiara of Flame                                   Any              1
+83532     Circlet  Tiara of Flame                                   Any              2
+83533     Circlet  Tiara of Flame                                   Any              3
+83534     Circlet  Tiara of Flame                                   Any              4
+
+84530     Circlet  Tiara of Torrents                                Any              0
+84531     Circlet  Tiara of Torrents                                Any              1
+84532     Circlet  Tiara of Torrents                                Any              2
+84533     Circlet  Tiara of Torrents                                Any              3
+84534     Circlet  Tiara of Torrents                                Any              4
+
+85530     Circlet  Tiara of Thunder                                 Any              0
+85531     Circlet  Tiara of Thunder                                 Any              1
+85532     Circlet  Tiara of Thunder                                 Any              2
+85533     Circlet  Tiara of Thunder                                 Any              3
+85534     Circlet  Tiara of Thunder                                 Any              4
+
+86530     Circlet  Tiara of Gales                                   Any              0
+86531     Circlet  Tiara of Gales                                   Any              1
+86532     Circlet  Tiara of Gales                                   Any              2
+86533     Circlet  Tiara of Gales                                   Any              3
+86534     Circlet  Tiara of Gales                                   Any              4
+
+87530     Circlet  Tiara of Frost                                   Any              0
+87531     Circlet  Tiara of Frost                                   Any              1
+87532     Circlet  Tiara of Frost                                   Any              2
+87533     Circlet  Tiara of Frost                                   Any              3
+87534     Circlet  Tiara of Frost                                   Any              4
+
+88540     Flower   Flower of Creviced Cliff                         Flat HP          0
+88541     Flower   Flower of Creviced Cliff                         Flat HP          1
+88542     Flower   Flower of Creviced Cliff                         Flat HP          2
+88543     Flower   Flower of Creviced Cliff                         Flat HP          3
+23494     Flower   Flower of Creviced Cliff                         Flat HP          4
+24744     Flower   Flower of Creviced Cliff                         Flat HP          4
+88544     Flower   Flower of Creviced Cliff                         Flat HP          4
+88520     Plume    Feather of Jagged Peaks                          Flat ATK         0
+88521     Plume    Feather of Jagged Peaks                          Flat ATK         1
+88522     Plume    Feather of Jagged Peaks                          Flat ATK         2
+88523     Plume    Feather of Jagged Peaks                          Flat ATK         3
+23492     Plume    Feather of Jagged Peaks                          Flat ATK         4
+88524     Plume    Feather of Jagged Peaks                          Flat ATK         4
+23495     Sands    Sundial of Enduring Jade                         ATK%             4
+24745     Sands    Sundial of Enduring Jade                         ATK%             4
+88550     Sands    Sundial of Enduring Jade                         Any              0
+88551     Sands    Sundial of Enduring Jade                         Any              1
+88552     Sands    Sundial of Enduring Jade                         Any              2
+88553     Sands    Sundial of Enduring Jade                         Any              3
+88554     Sands    Sundial of Enduring Jade                         Any              4
+88510     Goblet   Goblet of Chiseled Crag                          Any              0
+88511     Goblet   Goblet of Chiseled Crag                          Any              1
+88512     Goblet   Goblet of Chiseled Crag                          Any              2
+88513     Goblet   Goblet of Chiseled Crag                          Any              3
+88514     Goblet   Goblet of Chiseled Crag                          Any              4
+23491     Goblet   Goblet of Chiseled Crag                          Geo DMG          4
+88530     Circlet  Mask of Solitude Basalt                          Any              0
+88531     Circlet  Mask of Solitude Basalt                          Any              1
+88532     Circlet  Mask of Solitude Basalt                          Any              2
+88533     Circlet  Mask of Solitude Basalt                          Any              3
+88534     Circlet  Mask of Solitude Basalt                          Any              4
+23493     Circlet  Mask of Solitude Basalt                          CRIT Rate        4
+24743     Circlet  Mask of Solitude Basalt                          CRIT Rate        4
+
+89540     Flower   Summer Night's Bloom                             Flat HP          0
+89541     Flower   Summer Night's Bloom                             Flat HP          1
+89542     Flower   Summer Night's Bloom                             Flat HP          2
+89543     Flower   Summer Night's Bloom                             Flat HP          3
+23504     Flower   Summer Night's Bloom                             Flat HP          4
+24784     Flower   Summer Night's Bloom                             Flat HP          4
+89544     Flower   Summer Night's Bloom                             Flat HP          4
+89520     Plume    Summer Night's Finale                            Flat ATK         0
+89521     Plume    Summer Night's Finale                            Flat ATK         1
+89522     Plume    Summer Night's Finale                            Flat ATK         2
+89523     Plume    Summer Night's Finale                            Flat ATK         3
+23502     Plume    Summer Night's Finale                            Flat ATK         4
+24782     Plume    Summer Night's Finale                            Flat ATK         4
+89524     Plume    Summer Night's Finale                            Flat ATK         4
+23505     Sands    Summer Night's Moment                            ATK%             4
+89550     Sands    Summer Night's Moment                            Any              0
+89551     Sands    Summer Night's Moment                            Any              1
+89552     Sands    Summer Night's Moment                            Any              2
+89553     Sands    Summer Night's Moment                            Any              3
+89554     Sands    Summer Night's Moment                            Any              4
+23510     Sands    Summer Night's Moment                            DEF%             4
+24785     Sands    Summer Night's Moment                            DEF%             4
+23501     Goblet   Summer Night's Waterballoon                      ATK%             4
+89510     Goblet   Summer Night's Waterballoon                      Any              0
+89511     Goblet   Summer Night's Waterballoon                      Any              1
+89512     Goblet   Summer Night's Waterballoon                      Any              2
+89513     Goblet   Summer Night's Waterballoon                      Any              3
+89514     Goblet   Summer Night's Waterballoon                      Any              4
+23506     Goblet   Summer Night's Waterballoon                      Geo DMG          4
+24781     Goblet   Summer Night's Waterballoon                      Geo DMG          4
+89530     Circlet  Summer Night's Mask                              Any              0
+89531     Circlet  Summer Night's Mask                              Any              1
+89532     Circlet  Summer Night's Mask                              Any              2
+89533     Circlet  Summer Night's Mask                              Any              3
+89534     Circlet  Summer Night's Mask                              Any              4
+23503     Circlet  Summer Night's Mask                              CRIT Rate        4
+24783     Circlet  Summer Night's Mask                              CRIT Rate        4
+
+90540     Flower   Gilded Corsage                                   Flat HP          0
+90541     Flower   Gilded Corsage                                   Flat HP          1
+90542     Flower   Gilded Corsage                                   Flat HP          2
+90543     Flower   Gilded Corsage                                   Flat HP          3
+23534     Flower   Gilded Corsage                                   Flat HP          4
+24164     Flower   Gilded Corsage                                   Flat HP          4
+24214     Flower   Gilded Corsage                                   Flat HP          4
+90544     Flower   Gilded Corsage                                   Flat HP          4
+90520     Plume    Gust of Nostalgia                                Flat ATK         0
+90521     Plume    Gust of Nostalgia                                Flat ATK         1
+90522     Plume    Gust of Nostalgia                                Flat ATK         2
+90523     Plume    Gust of Nostalgia                                Flat ATK         3
+23532     Plume    Gust of Nostalgia                                Flat ATK         4
+24162     Plume    Gust of Nostalgia                                Flat ATK         4
+24212     Plume    Gust of Nostalgia                                Flat ATK         4
+90524     Plume    Gust of Nostalgia                                Flat ATK         4
+23535     Sands    Copper Compass                                   ATK%             4
+24165     Sands    Copper Compass                                   ATK%             4
+90550     Sands    Copper Compass                                   Any              0
+90551     Sands    Copper Compass                                   Any              1
+90552     Sands    Copper Compass                                   Any              2
+90553     Sands    Copper Compass                                   Any              3
+90554     Sands    Copper Compass                                   Any              4
+23540     Sands    Copper Compass                                   HP%              4
+24215     Sands    Copper Compass                                   HP%              4
+90510     Goblet   Goblet of Thundering Deep                        Any              0
+90511     Goblet   Goblet of Thundering Deep                        Any              1
+90512     Goblet   Goblet of Thundering Deep                        Any              2
+90513     Goblet   Goblet of Thundering Deep                        Any              3
+90514     Goblet   Goblet of Thundering Deep                        Any              4
+23531     Goblet   Goblet of Thundering Deep                        Hydro DMG        4
+24161     Goblet   Goblet of Thundering Deep                        Hydro DMG        4
+24211     Goblet   Goblet of Thundering Deep                        Hydro DMG        4
+90530     Circlet  Wine-Stained Tricorne                            Any              0
+90531     Circlet  Wine-Stained Tricorne                            Any              1
+90532     Circlet  Wine-Stained Tricorne                            Any              2
+90533     Circlet  Wine-Stained Tricorne                            Any              3
+90534     Circlet  Wine-Stained Tricorne                            Any              4
+23538     Circlet  Wine-Stained Tricorne                            CRIT DMG         4
+24163     Circlet  Wine-Stained Tricorne                            CRIT DMG         4
+23533     Circlet  Wine-Stained Tricorne                            CRIT Rate        4
+23537     Circlet  Wine-Stained Tricorne                            Healing Bonus    4
+24213     Circlet  Wine-Stained Tricorne                            Healing Bonus    4
+
+91540     Flower   Flower of Accolades                              Flat HP          0
+91541     Flower   Flower of Accolades                              Flat HP          1
+91542     Flower   Flower of Accolades                              Flat HP          2
+91543     Flower   Flower of Accolades                              Flat HP          3
+23544     Flower   Flower of Accolades                              Flat HP          4
+24224     Flower   Flower of Accolades                              Flat HP          4
+24704     Flower   Flower of Accolades                              Flat HP          4
+91544     Flower   Flower of Accolades                              Flat HP          4
+91520     Plume    Ceremonial War-Plume                             Flat ATK         0
+91521     Plume    Ceremonial War-Plume                             Flat ATK         1
+91522     Plume    Ceremonial War-Plume                             Flat ATK         2
+91523     Plume    Ceremonial War-Plume                             Flat ATK         3
+23542     Plume    Ceremonial War-Plume                             Flat ATK         4
+24222     Plume    Ceremonial War-Plume                             Flat ATK         4
+24702     Plume    Ceremonial War-Plume                             Flat ATK         4
+91524     Plume    Ceremonial War-Plume                             Flat ATK         4
+91550     Sands    Orichalceous Time-Dial                           Any              0
+91551     Sands    Orichalceous Time-Dial                           Any              1
+91552     Sands    Orichalceous Time-Dial                           Any              2
+91553     Sands    Orichalceous Time-Dial                           Any              3
+91554     Sands    Orichalceous Time-Dial                           Any              4
+23545     Sands    Orichalceous Time-Dial                           Energy Recharge  4
+24705     Sands    Orichalceous Time-Dial                           Energy Recharge  4
+23550     Sands    Orichalceous Time-Dial                           HP%              4
+24225     Sands    Orichalceous Time-Dial                           HP%              4
+91510     Goblet   Noble's Pledging Vessel                          Any              0
+91511     Goblet   Noble's Pledging Vessel                          Any              1
+91512     Goblet   Noble's Pledging Vessel                          Any              2
+91513     Goblet   Noble's Pledging Vessel                          Any              3
+91514     Goblet   Noble's Pledging Vessel                          Any              4
+23546     Goblet   Noble's Pledging Vessel                          Geo DMG          4
+24221     Goblet   Noble's Pledging Vessel                          Geo DMG          4
+23541     Goblet   Noble's Pledging Vessel                          HP%              4
+24701     Goblet   Noble's Pledging Vessel                          HP%              4
+91530     Circlet  General's Ancient Helm                           Any              0
+91531     Circlet  General's Ancient Helm                           Any              1
+91532     Circlet  General's Ancient Helm                           Any              2
+91533     Circlet  General's Ancient Helm                           Any              3
+91534     Circlet  General's Ancient Helm                           Any              4
+23548     Circlet  General's Ancient Helm                           CRIT Rate        4
+24223     Circlet  General's Ancient Helm                           CRIT Rate        4
+23543     Circlet  General's Ancient Helm                           HP%              4
+24703     Circlet  General's Ancient Helm                           HP%              4
+
+92540     Flower   Stainless Bloom                                  Flat HP          0
+92541     Flower   Stainless Bloom                                  Flat HP          1
+92542     Flower   Stainless Bloom                                  Flat HP          2
+92543     Flower   Stainless Bloom                                  Flat HP          3
+23554     Flower   Stainless Bloom                                  Flat HP          4
+24154     Flower   Stainless Bloom                                  Flat HP          4
+24664     Flower   Stainless Bloom                                  Flat HP          4
+92544     Flower   Stainless Bloom                                  Flat HP          4
+92520     Plume    Wise Doctor's Pinion                             Flat ATK         0
+92521     Plume    Wise Doctor's Pinion                             Flat ATK         1
+92522     Plume    Wise Doctor's Pinion                             Flat ATK         2
+92523     Plume    Wise Doctor's Pinion                             Flat ATK         3
+23552     Plume    Wise Doctor's Pinion                             Flat ATK         4
+24152     Plume    Wise Doctor's Pinion                             Flat ATK         4
+24662     Plume    Wise Doctor's Pinion                             Flat ATK         4
+92524     Plume    Wise Doctor's Pinion                             Flat ATK         4
+23555     Sands    Moment of Cessation                              ATK%             4
+24155     Sands    Moment of Cessation                              ATK%             4
+24665     Sands    Moment of Cessation                              ATK%             4
+92550     Sands    Moment of Cessation                              Any              0
+92551     Sands    Moment of Cessation                              Any              1
+92552     Sands    Moment of Cessation                              Any              2
+92553     Sands    Moment of Cessation                              Any              3
+92554     Sands    Moment of Cessation                              Any              4
+92510     Goblet   Surpassing Cup                                   Any              0
+92511     Goblet   Surpassing Cup                                   Any              1
+92512     Goblet   Surpassing Cup                                   Any              2
+92513     Goblet   Surpassing Cup                                   Any              3
+92514     Goblet   Surpassing Cup                                   Any              4
+23551     Goblet   Surpassing Cup                                   Physical DMG     4
+24151     Goblet   Surpassing Cup                                   Physical DMG     4
+24661     Goblet   Surpassing Cup                                   Physical DMG     4
+92530     Circlet  Mocking Mask                                     Any              0
+92531     Circlet  Mocking Mask                                     Any              1
+92532     Circlet  Mocking Mask                                     Any              2
+92533     Circlet  Mocking Mask                                     Any              3
+92534     Circlet  Mocking Mask                                     Any              4
+23558     Circlet  Mocking Mask                                     CRIT DMG         4
+24663     Circlet  Mocking Mask                                     CRIT DMG         4
+23553     Circlet  Mocking Mask                                     CRIT Rate        4
+24153     Circlet  Mocking Mask                                     CRIT Rate        4
+
+93543     Flower   Entangling Bloom                                 Flat HP          3
+23564     Flower   Entangling Bloom                                 Flat HP          4
+24194     Flower   Entangling Bloom                                 Flat HP          4
+93544     Flower   Entangling Bloom                                 Flat HP          4
+93523     Plume    Shaft of Remembrance                             Flat ATK         3
+23562     Plume    Shaft of Remembrance                             Flat ATK         4
+24192     Plume    Shaft of Remembrance                             Flat ATK         4
+93524     Plume    Shaft of Remembrance                             Flat ATK         4
+23565     Sands    Morning Dew's Moment                             ATK%             4
+24195     Sands    Morning Dew's Moment                             ATK%             4
+93553     Sands    Morning Dew's Moment                             Any              3
+93554     Sands    Morning Dew's Moment                             Any              4
+23561     Goblet   Hopeful Heart                                    ATK%             4
+93513     Goblet   Hopeful Heart                                    Any              3
+93514     Goblet   Hopeful Heart                                    Any              4
+24191     Goblet   Hopeful Heart                                    Pyro DMG         4
+93533     Circlet  Capricious Visage                                Any              3
+93534     Circlet  Capricious Visage                                Any              4
+23563     Circlet  Capricious Visage                                CRIT Rate        4
+24193     Circlet  Capricious Visage                                CRIT Rate        4
+
+94543     Flower   Magnificent Tsuba                                Flat HP          3
+23574     Flower   Magnificent Tsuba                                Flat HP          4
+24104     Flower   Magnificent Tsuba                                Flat HP          4
+24204     Flower   Magnificent Tsuba                                Flat HP          4
+24314     Flower   Magnificent Tsuba                                Flat HP          4
+24604     Flower   Magnificent Tsuba                                Flat HP          4
+24614     Flower   Magnificent Tsuba                                Flat HP          4
+24624     Flower   Magnificent Tsuba                                Flat HP          4
+24734     Flower   Magnificent Tsuba                                Flat HP          4
+24774     Flower   Magnificent Tsuba                                Flat HP          4
+24804     Flower   Magnificent Tsuba                                Flat HP          4
+94544     Flower   Magnificent Tsuba                                Flat HP          4
+94523     Plume    Sundered Feather                                 Flat ATK         3
+23572     Plume    Sundered Feather                                 Flat ATK         4
+24202     Plume    Sundered Feather                                 Flat ATK         4
+24312     Plume    Sundered Feather                                 Flat ATK         4
+24602     Plume    Sundered Feather                                 Flat ATK         4
+24612     Plume    Sundered Feather                                 Flat ATK         4
+24622     Plume    Sundered Feather                                 Flat ATK         4
+24732     Plume    Sundered Feather                                 Flat ATK         4
+24772     Plume    Sundered Feather                                 Flat ATK         4
+24802     Plume    Sundered Feather                                 Flat ATK         4
+94524     Plume    Sundered Feather                                 Flat ATK         4
+23580     Sands    Storm Cage                                       ATK%             4
+24105     Sands    Storm Cage                                       ATK%             4
+94553     Sands    Storm Cage                                       Any              3
+94554     Sands    Storm Cage                                       Any              4
+23575     Sands    Storm Cage                                       Energy Recharge  4
+24205     Sands    Storm Cage                                       Energy Recharge  4
+24315     Sands    Storm Cage                                       Energy Recharge  4
+24605     Sands    Storm Cage                                       Energy Recharge  4
+24615     Sands    Storm Cage                                       Energy Recharge  4
+24625     Sands    Storm Cage                                       Energy Recharge  4
+24735     Sands    Storm Cage                                       Energy Recharge  4
+24775     Sands    Storm Cage                                       Energy Recharge  4
+24805     Sands    Storm Cage                                       Energy Recharge  4
+23571     Goblet   Scarlet Vessel                                   ATK%             4
+24201     Goblet   Scarlet Vessel                                   ATK%             4
+24311     Goblet   Scarlet Vessel                                   ATK%             4
+24601     Goblet   Scarlet Vessel                                   ATK%             4
+24611     Goblet   Scarlet Vessel                                   ATK%             4
+24621     Goblet   Scarlet Vessel                                   ATK%             4
+24731     Goblet   Scarlet Vessel                                   ATK%             4
+24771     Goblet   Scarlet Vessel                                   ATK%             4
+24801     Goblet   Scarlet Vessel                                   ATK%             4
+94513     Goblet   Scarlet Vessel                                   Any              3
+94514     Goblet   Scarlet Vessel                                   Any              4
+23576     Goblet   Scarlet Vessel                                   HP%              4
+23578     Circlet  Ornate Kabuto                                    ATK%             4
+24313     Circlet  Ornate Kabuto                                    ATK%             4
+94533     Circlet  Ornate Kabuto                                    Any              3
+94534     Circlet  Ornate Kabuto                                    Any              4
+23573     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24103     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24203     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24603     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24613     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24623     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24733     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24773     Circlet  Ornate Kabuto                                    CRIT Rate        4
+24803     Circlet  Ornate Kabuto                                    CRIT Rate        4
+
+95543     Flower   Bloom Times                                      Flat HP          3
+23584     Flower   Bloom Times                                      Flat HP          4
+24294     Flower   Bloom Times                                      Flat HP          4
+24304     Flower   Bloom Times                                      Flat HP          4
+24814     Flower   Bloom Times                                      Flat HP          4
+24824     Flower   Bloom Times                                      Flat HP          4
+95544     Flower   Bloom Times                                      Flat HP          4
+95523     Plume    Plume of Luxury                                  Flat ATK         3
+23582     Plume    Plume of Luxury                                  Flat ATK         4
+24292     Plume    Plume of Luxury                                  Flat ATK         4
+24302     Plume    Plume of Luxury                                  Flat ATK         4
+24812     Plume    Plume of Luxury                                  Flat ATK         4
+24822     Plume    Plume of Luxury                                  Flat ATK         4
+95524     Plume    Plume of Luxury                                  Flat ATK         4
+95553     Sands    Song of Life                                     Any              3
+95554     Sands    Song of Life                                     Any              4
+23585     Sands    Song of Life                                     DEF%             4
+24295     Sands    Song of Life                                     DEF%             4
+24305     Sands    Song of Life                                     DEF%             4
+24815     Sands    Song of Life                                     DEF%             4
+24825     Sands    Song of Life                                     DEF%             4
+95513     Goblet   Calabash of Awakening                            Any              3
+95514     Goblet   Calabash of Awakening                            Any              4
+23586     Goblet   Calabash of Awakening                            DEF%             4
+24821     Goblet   Calabash of Awakening                            DEF%             4
+23581     Goblet   Calabash of Awakening                            Geo DMG          4
+24291     Goblet   Calabash of Awakening                            Geo DMG          4
+24301     Goblet   Calabash of Awakening                            Geo DMG          4
+24811     Goblet   Calabash of Awakening                            Geo DMG          4
+95533     Circlet  Skeletal Hat                                     Any              3
+95534     Circlet  Skeletal Hat                                     Any              4
+23583     Circlet  Skeletal Hat                                     CRIT Rate        4
+24293     Circlet  Skeletal Hat                                     CRIT Rate        4
+24303     Circlet  Skeletal Hat                                     CRIT Rate        4
+24813     Circlet  Skeletal Hat                                     CRIT Rate        4
+23588     Circlet  Skeletal Hat                                     DEF%             4
+24823     Circlet  Skeletal Hat                                     DEF%             4
+
+96543     Flower   Sea-Dyed Blossom                                 Flat HP          3
+23594     Flower   Sea-Dyed Blossom                                 Flat HP          4
+96544     Flower   Sea-Dyed Blossom                                 Flat HP          4
+96523     Plume    Deep Palace's Plume                              Flat ATK         3
+23592     Plume    Deep Palace's Plume                              Flat ATK         4
+96524     Plume    Deep Palace's Plume                              Flat ATK         4
+96553     Sands    Cowry of Parting                                 Any              3
+96554     Sands    Cowry of Parting                                 Any              4
+23595     Sands    Cowry of Parting                                 Energy Recharge  4
+23600     Sands    Cowry of Parting                                 HP%              4
+96513     Goblet   Pearl Cage                                       Any              3
+96514     Goblet   Pearl Cage                                       Any              4
+23591     Goblet   Pearl Cage                                       HP%              4
+96533     Circlet  Crown of Watatsumi                               Any              3
+96534     Circlet  Crown of Watatsumi                               Any              4
+23593     Circlet  Crown of Watatsumi                               Healing Bonus    4
+
+97543     Flower   Flowering Life                                   Flat HP          3
+23604     Flower   Flowering Life                                   Flat HP          4
+97544     Flower   Flowering Life                                   Flat HP          4
+97523     Plume    Feather of Nascent Light                         Flat ATK         3
+23602     Plume    Feather of Nascent Light                         Flat ATK         4
+97524     Plume    Feather of Nascent Light                         Flat ATK         4
+23605     Sands    Solar Relic                                      ATK%             4
+97553     Sands    Solar Relic                                      Any              3
+97554     Sands    Solar Relic                                      Any              4
+23601     Goblet   Moment of the Pact                               Anemo DMG        4
+97513     Goblet   Moment of the Pact                               Any              3
+97514     Goblet   Moment of the Pact                               Any              4
+97533     Circlet  Thundering Poise                                 Any              3
+97534     Circlet  Thundering Poise                                 Any              4
+23603     Circlet  Thundering Poise                                 CRIT DMG         4
+
+98543     Flower   Soulscent Bloom                                  Flat HP          3
+23614     Flower   Soulscent Bloom                                  Flat HP          4
+98544     Flower   Soulscent Bloom                                  Flat HP          4
+98523     Plume    Jade Leaf                                        Flat ATK         3
+23612     Plume    Jade Leaf                                        Flat ATK         4
+98524     Plume    Jade Leaf                                        Flat ATK         4
+23615     Sands    Symbol of Felicitation                           ATK%             4
+98553     Sands    Symbol of Felicitation                           Any              3
+98554     Sands    Symbol of Felicitation                           Any              4
+98513     Goblet   Chalice of the Font                              Any              3
+98514     Goblet   Chalice of the Font                              Any              4
+23611     Goblet   Chalice of the Font                              Hydro DMG        4
+98533     Circlet  Flowing Rings                                    Any              3
+98534     Circlet  Flowing Rings                                    Any              4
+23613     Circlet  Flowing Rings                                    CRIT DMG         4
+
+20543     Flower   Labyrinth Wayfarer                               Flat HP          3
+20544     Flower   Labyrinth Wayfarer                               Flat HP          4
+23624     Flower   Labyrinth Wayfarer                               Flat HP          4
+20523     Plume    Scholar of Vines                                 Flat ATK         3
+20524     Plume    Scholar of Vines                                 Flat ATK         4
+23622     Plume    Scholar of Vines                                 Flat ATK         4
+20553     Sands    A Time of Insight                                Any              3
+20554     Sands    A Time of Insight                                Any              4
+23625     Sands    A Time of Insight                                Energy Recharge  4
+20513     Goblet   Lamp of the Lost                                 Any              3
+20514     Goblet   Lamp of the Lost                                 Any              4
+23626     Goblet   Lamp of the Lost                                 Dendro DMG       4
+23621     Goblet   Lamp of the Lost                                 Elemental Mastery 4
+20533     Circlet  Laurel Coronet                                   Any              3
+20534     Circlet  Laurel Coronet                                   Any              4
+23623     Circlet  Laurel Coronet                                   CRIT Rate        4
+
+21543     Flower   Dreaming Steelbloom                              Flat HP          3
+21544     Flower   Dreaming Steelbloom                              Flat HP          4
+23634     Flower   Dreaming Steelbloom                              Flat HP          4
+21523     Plume    Feather of Judgment                              Flat ATK         3
+21524     Plume    Feather of Judgment                              Flat ATK         4
+23632     Plume    Feather of Judgment                              Flat ATK         4
+21553     Sands    The Sunken Years                                 Any              3
+21554     Sands    The Sunken Years                                 Any              4
+23635     Sands    The Sunken Years                                 Elemental Mastery 4
+23631     Goblet   Honeyed Final Feast                              ATK%             4
+21513     Goblet   Honeyed Final Feast                              Any              3
+21514     Goblet   Honeyed Final Feast                              Any              4
+21533     Circlet  Shadow of the Sand King                          Any              3
+21534     Circlet  Shadow of the Sand King                          Any              4
+23638     Circlet  Shadow of the Sand King                          CRIT DMG         4
+23633     Circlet  Shadow of the Sand King                          CRIT Rate        4
+
+27543     Flower   The First Days of the City of Kings              Flat HP          3
+23644     Flower   The First Days of the City of Kings              Flat HP          4
+27544     Flower   The First Days of the City of Kings              Flat HP          4
+27523     Plume    End of the Golden Realm                          Flat ATK         3
+23642     Plume    End of the Golden Realm                          Flat ATK         4
+27524     Plume    End of the Golden Realm                          Flat ATK         4
+23645     Sands    Timepiece of the Lost Path                       ATK%             4
+27553     Sands    Timepiece of the Lost Path                       Any              3
+27554     Sands    Timepiece of the Lost Path                       Any              4
+23641     Goblet   Defender of the Enchanting Dream                 Anemo DMG        4
+27513     Goblet   Defender of the Enchanting Dream                 Any              3
+27514     Goblet   Defender of the Enchanting Dream                 Any              4
+27533     Circlet  Legacy of the Desert High-Born                   Any              3
+27534     Circlet  Legacy of the Desert High-Born                   Any              4
+23643     Circlet  Legacy of the Desert High-Born                   CRIT DMG         4
+
+28543     Flower   Ay-Khanoum's Myriad                              Flat HP          3
+23654     Flower   Ay-Khanoum's Myriad                              Flat HP          4
+28544     Flower   Ay-Khanoum's Myriad                              Flat HP          4
+28523     Plume    Wilting Feast                                    Flat ATK         3
+23652     Plume    Wilting Feast                                    Flat ATK         4
+28524     Plume    Wilting Feast                                    Flat ATK         4
+28553     Sands    A Moment Congealed                               Any              3
+28554     Sands    A Moment Congealed                               Any              4
+23655     Sands    A Moment Congealed                               Elemental Mastery 4
+28513     Goblet   Secret-Keeper's Magic Bottle                     Any              3
+28514     Goblet   Secret-Keeper's Magic Bottle                     Any              4
+23651     Goblet   Secret-Keeper's Magic Bottle                     Elemental Mastery 4
+28533     Circlet  Amethyst Crown                                   Any              3
+28534     Circlet  Amethyst Crown                                   Any              4
+23653     Circlet  Amethyst Crown                                   Elemental Mastery 4
+
+29543     Flower   Odyssean Flower                                  Flat HP          3
+23664     Flower   Odyssean Flower                                  Flat HP          4
+29544     Flower   Odyssean Flower                                  Flat HP          4
+29523     Plume    Wicked Mage's Plumule                            Flat ATK         3
+23662     Plume    Wicked Mage's Plumule                            Flat ATK         4
+29524     Plume    Wicked Mage's Plumule                            Flat ATK         4
+23665     Sands    Nymph's Constancy                                ATK%             4
+29553     Sands    Nymph's Constancy                                Any              3
+29554     Sands    Nymph's Constancy                                Any              4
+23670     Sands    Nymph's Constancy                                HP%              4
+29513     Goblet   Heroes' Tea Party                                Any              3
+29514     Goblet   Heroes' Tea Party                                Any              4
+23661     Goblet   Heroes' Tea Party                                Hydro DMG        4
+29533     Circlet  Fell Dragon's Monocle                            Any              3
+29534     Circlet  Fell Dragon's Monocle                            Any              4
+23663     Circlet  Fell Dragon's Monocle                            CRIT DMG         4
+23668     Circlet  Fell Dragon's Monocle                            CRIT Rate        4
+
+30543     Flower   Stamen of Khvarena's Origin                      Flat HP          3
+23674     Flower   Stamen of Khvarena's Origin                      Flat HP          4
+30544     Flower   Stamen of Khvarena's Origin                      Flat HP          4
+30523     Plume    Vibrant Pinion                                   Flat ATK         3
+23672     Plume    Vibrant Pinion                                   Flat ATK         4
+30524     Plume    Vibrant Pinion                                   Flat ATK         4
+23680     Sands    Ancient Abscission                               ATK%             4
+30553     Sands    Ancient Abscission                               Any              3
+30554     Sands    Ancient Abscission                               Any              4
+23675     Sands    Ancient Abscission                               HP%              4
+30513     Goblet   Feast of Boundless Joy                           Any              3
+30514     Goblet   Feast of Boundless Joy                           Any              4
+23671     Goblet   Feast of Boundless Joy                           Pyro DMG         4
+30533     Circlet  Heart of Khvarena's Brilliance                   Any              3
+30534     Circlet  Heart of Khvarena's Brilliance                   Any              4
+23673     Circlet  Heart of Khvarena's Brilliance                   CRIT DMG         4
+23678     Circlet  Heart of Khvarena's Brilliance                   CRIT Rate        4
+
+31543     Flower   Hunter's Brooch                                  Flat HP          3
+23684     Flower   Hunter's Brooch                                  Flat HP          4
+31544     Flower   Hunter's Brooch                                  Flat HP          4
+31523     Plume    Masterpiece's Overture                           Flat ATK         3
+23682     Plume    Masterpiece's Overture                           Flat ATK         4
+31524     Plume    Masterpiece's Overture                           Flat ATK         4
+23685     Sands    Moment of Judgment                               ATK%             4
+31553     Sands    Moment of Judgment                               Any              3
+31554     Sands    Moment of Judgment                               Any              4
+23690     Sands    Moment of Judgment                               HP%              4
+23681     Goblet   Forgotten Vessel                                 ATK%             4
+31513     Goblet   Forgotten Vessel                                 Any              3
+31514     Goblet   Forgotten Vessel                                 Any              4
+31533     Circlet  Veteran's Visage                                 Any              3
+31534     Circlet  Veteran's Visage                                 Any              4
+23688     Circlet  Veteran's Visage                                 CRIT DMG         4
+23683     Circlet  Veteran's Visage                                 CRIT Rate        4
+
+32543     Flower   Golden Song's Variation                          Flat HP          3
+23694     Flower   Golden Song's Variation                          Flat HP          4
+32544     Flower   Golden Song's Variation                          Flat HP          4
+32523     Plume    Golden Bird's Shedding                           Flat ATK         3
+23692     Plume    Golden Bird's Shedding                           Flat ATK         4
+32524     Plume    Golden Bird's Shedding                           Flat ATK         4
+23700     Sands    Golden Era's Prelude                             ATK%             4
+32553     Sands    Golden Era's Prelude                             Any              3
+32554     Sands    Golden Era's Prelude                             Any              4
+23699     Sands    Golden Era's Prelude                             DEF%             4
+23695     Sands    Golden Era's Prelude                             HP%              4
+32513     Goblet   Golden Night's Bustle                            Any              3
+32514     Goblet   Golden Night's Bustle                            Any              4
+23696     Goblet   Golden Night's Bustle                            Electro DMG      4
+23691     Goblet   Golden Night's Bustle                            Hydro DMG        4
+32533     Circlet  Golden Troupe's Reward                           Any              3
+32534     Circlet  Golden Troupe's Reward                           Any              4
+23693     Circlet  Golden Troupe's Reward                           CRIT Rate        4
+
+33543     Flower   Forgotten Oath of Days Past                      Flat HP          3
+23704     Flower   Forgotten Oath of Days Past                      Flat HP          4
+33544     Flower   Forgotten Oath of Days Past                      Flat HP          4
+33523     Plume    Recollection of Days Past                        Flat ATK         3
+23702     Plume    Recollection of Days Past                        Flat ATK         4
+33524     Plume    Recollection of Days Past                        Flat ATK         4
+33553     Sands    Echoing Sound From Days Past                     Any              3
+33554     Sands    Echoing Sound From Days Past                     Any              4
+23705     Sands    Echoing Sound From Days Past                     Energy Recharge  4
+23710     Sands    Echoing Sound From Days Past                     HP%              4
+23706     Goblet   Promised Dream of Days Past                      ATK%             4
+33513     Goblet   Promised Dream of Days Past                      Any              3
+33514     Goblet   Promised Dream of Days Past                      Any              4
+23701     Goblet   Promised Dream of Days Past                      HP%              4
+23708     Circlet  Poetry of Days Past                              ATK%             4
+33533     Circlet  Poetry of Days Past                              Any              3
+33534     Circlet  Poetry of Days Past                              Any              4
+23703     Circlet  Poetry of Days Past                              Healing Bonus    4
+
+34543     Flower   Selfless Floral Accessory                        Flat HP          3
+23714     Flower   Selfless Floral Accessory                        Flat HP          4
+34544     Flower   Selfless Floral Accessory                        Flat HP          4
+34523     Plume    Honest Quill                                     Flat ATK         3
+23712     Plume    Honest Quill                                     Flat ATK         4
+34524     Plume    Honest Quill                                     Flat ATK         4
+23715     Sands    Faithful Hourglass                               ATK%             4
+34553     Sands    Faithful Hourglass                               Any              3
+34554     Sands    Faithful Hourglass                               Any              4
+34513     Goblet   Magnanimous Ink Bottle                           Any              3
+34514     Goblet   Magnanimous Ink Bottle                           Any              4
+23711     Goblet   Magnanimous Ink Bottle                           Geo DMG          4
+34533     Circlet  Compassionate Ladies' Hat                        Any              3
+34534     Circlet  Compassionate Ladies' Hat                        Any              4
+23718     Circlet  Compassionate Ladies' Hat                        CRIT DMG         4
+23713     Circlet  Compassionate Ladies' Hat                        CRIT Rate        4
+
+35543     Flower   Harmonious Symphony Prelude                      Flat HP          3
+23724     Flower   Harmonious Symphony Prelude                      Flat HP          4
+35544     Flower   Harmonious Symphony Prelude                      Flat HP          4
+35523     Plume    Ancient Sea's Nocturnal Musing                   Flat ATK         3
+23722     Plume    Ancient Sea's Nocturnal Musing                   Flat ATK         4
+35524     Plume    Ancient Sea's Nocturnal Musing                   Flat ATK         4
+23725     Sands    The Grand Jape of the Turning of Fate            ATK%             4
+35553     Sands    The Grand Jape of the Turning of Fate            Any              3
+35554     Sands    The Grand Jape of the Turning of Fate            Any              4
+35513     Goblet   Ichor Shower Rhapsody                            Any              3
+35514     Goblet   Ichor Shower Rhapsody                            Any              4
+23726     Goblet   Ichor Shower Rhapsody                            Electro DMG      4
+23721     Goblet   Ichor Shower Rhapsody                            Pyro DMG         4
+35533     Circlet  Whimsical Dance of the Withered                  Any              3
+35534     Circlet  Whimsical Dance of the Withered                  Any              4
+23723     Circlet  Whimsical Dance of the Withered                  CRIT Rate        4
+
+36543     Flower   Dark Fruit of Bright Flowers                     Flat HP          3
+23734     Flower   Dark Fruit of Bright Flowers                     Flat HP          4
+36544     Flower   Dark Fruit of Bright Flowers                     Flat HP          4
+36523     Plume    Faded Emerald Tail                               Flat ATK         3
+23732     Plume    Faded Emerald Tail                               Flat ATK         4
+36524     Plume    Faded Emerald Tail                               Flat ATK         4
+23735     Sands    Moment of Attainment                             ATK%             4
+36553     Sands    Moment of Attainment                             Any              3
+36554     Sands    Moment of Attainment                             Any              4
+36513     Goblet   The Wine-Flask Over Which the Plan Was Hatched   Any              3
+36514     Goblet   The Wine-Flask Over Which the Plan Was Hatched   Any              4
+23731     Goblet   The Wine-Flask Over Which the Plan Was Hatched   Dendro DMG       4
+23736     Goblet   The Wine-Flask Over Which the Plan Was Hatched   Pyro DMG         4
+36533     Circlet  Crownless Crown                                  Any              3
+36534     Circlet  Crownless Crown                                  Any              4
+23733     Circlet  Crownless Crown                                  CRIT Rate        4
+
+37543     Flower   Beast Tamer's Talisman                           Flat HP          3
+23744     Flower   Beast Tamer's Talisman                           Flat HP          4
+37544     Flower   Beast Tamer's Talisman                           Flat HP          4
+37523     Plume    Mountain Ranger's Marker                         Flat ATK         3
+23742     Plume    Mountain Ranger's Marker                         Flat ATK         4
+37524     Plume    Mountain Ranger's Marker                         Flat ATK         4
+37553     Sands    Mystic's Gold Dial                               Any              3
+37554     Sands    Mystic's Gold Dial                               Any              4
+23745     Sands    Mystic's Gold Dial                               Energy Recharge  4
+23747     Goblet   Mountain Ranger's Marker                         ATK%             4
+37513     Goblet   Wandering Scholar's Claw Cup                     Any              3
+37514     Goblet   Wandering Scholar's Claw Cup                     Any              4
+23741     Goblet   Wandering Scholar's Claw Cup                     DEF%             4
+23746     Goblet   Wandering Scholar's Claw Cup                     Elemental Mastery 4
+23748     Circlet  Demon-Warrior's Feather Mask                     ATK%             4
+37533     Circlet  Demon-Warrior's Feather Mask                     Any              3
+37534     Circlet  Demon-Warrior's Feather Mask                     Any              4
+23743     Circlet  Demon-Warrior's Feather Mask                     DEF%             4
+
+38543     Flower   Reckoning of the Xenogenic                       Flat HP          3
+23754     Flower   Reckoning of the Xenogenic                       Flat HP          4
+38544     Flower   Reckoning of the Xenogenic                       Flat HP          4
+38523     Plume    Root of the Spirit-Marrow                        Flat ATK         3
+23752     Plume    Root of the Spirit-Marrow                        Flat ATK         4
+38524     Plume    Root of the Spirit-Marrow                        Flat ATK         4
+23755     Sands    Myths of the Night Realm                         ATK%             4
+38553     Sands    Myths of the Night Realm                         Any              3
+38554     Sands    Myths of the Night Realm                         Any              4
+23760     Sands    Myths of the Night Realm                         HP%              4
+23751     Goblet   Pre-Banquet of the Contenders                    ATK%             4
+38513     Goblet   Pre-Banquet of the Contenders                    Any              3
+38514     Goblet   Pre-Banquet of the Contenders                    Any              4
+38533     Circlet  Crown of the Saints                              Any              3
+38534     Circlet  Crown of the Saints                              Any              4
+23753     Circlet  Crown of the Saints                              CRIT DMG         4
+
+39543     Flower   Lightkeeper's Pledge                             Flat HP          3
+23764     Flower   Lightkeeper's Pledge                             Flat HP          4
+39544     Flower   Lightkeeper's Pledge                             Flat HP          4
+39523     Plume    Nightingale's Tail Feather                       Flat ATK         3
+23762     Plume    Nightingale's Tail Feather                       Flat ATK         4
+39524     Plume    Nightingale's Tail Feather                       Flat ATK         4
+23765     Sands    Undying One's Mourning Bell                      ATK%             4
+39553     Sands    Undying One's Mourning Bell                      Any              3
+39554     Sands    Undying One's Mourning Bell                      Any              4
+39513     Goblet   A Horn Unwinded                                  Any              3
+39514     Goblet   A Horn Unwinded                                  Any              4
+23761     Goblet   A Horn Unwinded                                  Electro DMG      4
+39533     Circlet  Dyed Tassel                                      Any              3
+39534     Circlet  Dyed Tassel                                      Any              4
+23768     Circlet  Dyed Tassel                                      CRIT DMG         4
+23763     Circlet  Dyed Tassel                                      CRIT Rate        4
+
+40543     Flower   Deep Gallery's Echoing Song                      Flat HP          3
+23774     Flower   Deep Gallery's Echoing Song                      Flat HP          4
+40544     Flower   Deep Gallery's Echoing Song                      Flat HP          4
+40523     Plume    Deep Gallery's Distant Pact                      Flat ATK         3
+23772     Plume    Deep Gallery's Distant Pact                      Flat ATK         4
+40524     Plume    Deep Gallery's Distant Pact                      Flat ATK         4
+23775     Sands    Deep Gallery's Moment of Oblivion                ATK%             4
+40553     Sands    Deep Gallery's Moment of Oblivion                Any              3
+40554     Sands    Deep Gallery's Moment of Oblivion                Any              4
+40513     Goblet   Deep Gallery's Bestowed Banquet                  Any              3
+40514     Goblet   Deep Gallery's Bestowed Banquet                  Any              4
+23771     Goblet   Deep Gallery's Bestowed Banquet                  Cryo DMG         4
+40533     Circlet  Deep Gallery's Lost Crown                        Any              3
+40534     Circlet  Deep Gallery's Lost Crown                        Any              4
+23773     Circlet  Deep Gallery's Lost Crown                        CRIT Rate        4
+
+41543     Flower   Bloom of the Mind's Desire                       Flat HP          3
+23784     Flower   Bloom of the Mind's Desire                       Flat HP          4
+41544     Flower   Bloom of the Mind's Desire                       Flat HP          4
+41523     Plume    Feather of Indelible Sin                         Flat ATK         3
+23782     Plume    Feather of Indelible Sin                         Flat ATK         4
+41524     Plume    Feather of Indelible Sin                         Flat ATK         4
+23785     Sands    Revelation's Toll                                ATK%             4
+41553     Sands    Revelation's Toll                                Any              3
+41554     Sands    Revelation's Toll                                Any              4
+23790     Sands    Revelation's Toll                                Elemental Mastery 4
+23781     Goblet   Vessel of Plenty                                 ATK%             4
+41513     Goblet   Vessel of Plenty                                 Any              3
+41514     Goblet   Vessel of Plenty                                 Any              4
+23786     Goblet   Vessel of Plenty                                 Elemental Mastery 4
+41533     Circlet  Crown of the Befallen                            Any              3
+41534     Circlet  Crown of the Befallen                            Any              4
+23788     Circlet  Crown of the Befallen                            CRIT DMG         4
+23783     Circlet  Crown of the Befallen                            CRIT Rate        4
+
+42543     Flower   Crystal Tear of the Wanderer                     Flat HP          3
+23794     Flower   Crystal Tear of the Wanderer                     Flat HP          4
+42544     Flower   Crystal Tear of the Wanderer                     Flat HP          4
+42523     Plume    Pristine Plume of the Blessed                    Flat ATK         3
+23792     Plume    Pristine Plume of the Blessed                    Flat ATK         4
+42524     Plume    Pristine Plume of the Blessed                    Flat ATK         4
+42553     Sands    Frost Devotee's Delirium                         Any              3
+42554     Sands    Frost Devotee's Delirium                         Any              4
+23800     Sands    Frost Devotee's Delirium                         Elemental Mastery 4
+23795     Sands    Frost Devotee's Delirium                         Energy Recharge  4
+42513     Goblet   Joyous Glory of the Pure                         Any              3
+42514     Goblet   Joyous Glory of the Pure                         Any              4
+23791     Goblet   Joyous Glory of the Pure                         Elemental Mastery 4
+42533     Circlet  Holy Crown of the Believer                       Any              3
+42534     Circlet  Holy Crown of the Believer                       Any              4
+23793     Circlet  Holy Crown of the Believer                       Elemental Mastery 4
+
+43543     Flower   Moonlit Offering's Opulent Dream                 Flat HP          3
+23804     Flower   Moonlit Offering's Opulent Dream                 Flat HP          4
+43544     Flower   Moonlit Offering's Opulent Dream                 Flat HP          4
+43523     Plume    Moonlit Offering's Parting Light                 Flat ATK         3
+23802     Plume    Moonlit Offering's Parting Light                 Flat ATK         4
+43524     Plume    Moonlit Offering's Parting Light                 Flat ATK         4
+23810     Sands    Moonlit Offering's Final Hour                    ATK%             4
+43553     Sands    Moonlit Offering's Final Hour                    Any              3
+43554     Sands    Moonlit Offering's Final Hour                    Any              4
+23809     Sands    Moonlit Offering's Final Hour                    DEF%             4
+23805     Sands    Moonlit Offering's Final Hour                    HP%              4
+23807     Goblet   Moonlit Offering's Libation                      ATK%             4
+43513     Goblet   Moonlit Offering's Libation                      Any              3
+43514     Goblet   Moonlit Offering's Libation                      Any              4
+23806     Goblet   Moonlit Offering's Libation                      DEF%             4
+23801     Goblet   Moonlit Offering's Libation                      HP%              4
+43533     Circlet  Moonlit Offering's Silver Crown                  Any              3
+43534     Circlet  Moonlit Offering's Silver Crown                  Any              4
+23808     Circlet  Moonlit Offering's Silver Crown                  CRIT DMG         4
+23803     Circlet  Moonlit Offering's Silver Crown                  CRIT Rate        4
+
+44543     Flower   Windborne Flower's Spruchdichtung                Flat HP          3
+23814     Flower   Windborne Flower's Spruchdichtung                Flat HP          4
+44544     Flower   Windborne Flower's Spruchdichtung                Flat HP          4
+44523     Plume    Dawn's Brilliant Oath                            Flat ATK         3
+23812     Plume    Dawn's Brilliant Oath                            Flat ATK         4
+44524     Plume    Dawn's Brilliant Oath                            Flat ATK         4
+23815     Sands    A Note in Spring's Leich                         ATK%             4
+44553     Sands    A Note in Spring's Leich                         Any              3
+44554     Sands    A Note in Spring's Leich                         Any              4
+23811     Goblet   Heldenepos's Unspoken Tale                       ATK%             4
+23818     Goblet   Heldenepos's Unspoken Tale                       Anemo DMG        4
+44513     Goblet   Heldenepos's Unspoken Tale                       Any              3
+44514     Goblet   Heldenepos's Unspoken Tale                       Any              4
+23817     Goblet   Heldenepos's Unspoken Tale                       Cryo DMG         4
+23816     Goblet   Heldenepos's Unspoken Tale                       Pyro DMG         4
+44533     Circlet  Minnesang of Love and Lament                     Any              3
+44534     Circlet  Minnesang of Love and Lament                     Any              4
+23813     Circlet  Minnesang of Love and Lament                     CRIT DMG         4
+23819     Circlet  Minnesang of Love and Lament                     CRIT Rate        4
+
+45543     Flower   Heavensent Fragrance                             Flat HP          3
+23824     Flower   Heavensent Fragrance                             Flat HP          4
+45544     Flower   Heavensent Fragrance                             Flat HP          4
+45523     Plume    Heavensent Demise                                Flat ATK         3
+23822     Plume    Heavensent Demise                                Flat ATK         4
+45524     Plume    Heavensent Demise                                Flat ATK         4
+45553     Sands    Heavensent Decree                                Any              3
+45554     Sands    Heavensent Decree                                Any              4
+23825     Sands    Heavensent Decree                                Energy Recharge  4
+23821     Goblet   Heavensent Reward                                ATK%             4
+45513     Goblet   Heavensent Reward                                Any              3
+45514     Goblet   Heavensent Reward                                Any              4
+23823     Circlet  Heavensent Crown                                 ATK%             4
+45533     Circlet  Heavensent Crown                                 Any              3
+45534     Circlet  Heavensent Crown                                 Any              4
+
+46543     Flower   Iridescence That Ceased Amidst Glory             Flat HP          3
+23834     Flower   Iridescence That Ceased Amidst Glory             Flat HP          4
+46544     Flower   Iridescence That Ceased Amidst Glory             Flat HP          4
+46523     Plume    Sharpness That Ceased Upon Wondrous Creation     Flat ATK         3
+23832     Plume    Sharpness That Ceased Upon Wondrous Creation     Flat ATK         4
+46524     Plume    Sharpness That Ceased Upon Wondrous Creation     Flat ATK         4
+23835     Sands    Moment That Ceased Upon Waking From Grand Dreams ATK%             4
+46553     Sands    Moment That Ceased Upon Waking From Grand Dreams Any              3
+46554     Sands    Moment That Ceased Upon Waking From Grand Dreams Any              4
+23831     Goblet   Ovations That Ceased Upon Festivity              ATK%             4
+46513     Goblet   Ovations That Ceased Upon Festivity              Any              3
+46514     Goblet   Ovations That Ceased Upon Festivity              Any              4
+46533     Circlet  Pendulum That Ceased Amidst a Great Fall         Any              3
+46534     Circlet  Pendulum That Ceased Amidst a Great Fall         Any              4
+23838     Circlet  Pendulum That Ceased Amidst a Great Fall         CRIT DMG         4
+23833     Circlet  Pendulum That Ceased Amidst a Great Fall         CRIT Rate        4
+
+23844     Flower   Honor to Your Devotion                           Flat HP          4
+47543     Flower   Honor to Your Devotion                           Flat HP          3
+47544     Flower   Honor to Your Devotion                           Flat HP          4
+23842     Plume    Glory to Your Legacy                             Flat ATK         4
+47523     Plume    Glory to Your Legacy                             Flat ATK         3
+47524     Plume    Glory to Your Legacy                             Flat ATK         4
+23845     Sands    Time Gifted Unto You                             ATK%             4
+23850     Sands    Time Gifted Unto You                             Elemental Mastery4
+47553     Sands    Time Gifted Unto You                             Any              3
+47554     Sands    Time Gifted Unto You                             Any              4
+23841     Goblet   Chalice of Your Blood and Sorrow                 ATK%             4
+23846     Goblet   Chalice of Your Blood and Sorrow                 Elemental Mastery4
+47513     Goblet   Chalice of Your Blood and Sorrow                 Any              3
+47514     Goblet   Chalice of Your Blood and Sorrow                 Any              4
+23843     Circlet  Testament to Your Faith                          CRIT Rate        4
+23848     Circlet  Testament to Your Faith                          CRIT DMG         4
+47533     Circlet  Testament to Your Faith                          Any              3
+47534     Circlet  Testament to Your Faith                          Any              4
+
+23854     Flower   Foundryman's Conjecture                          Flat HP          4
+48543     Flower   Foundryman's Conjecture                          Flat HP          3
+48544     Flower   Foundryman's Conjecture                          Flat HP          4
+23852     Plume    Foundryman's Observation                         Flat ATK         4
+48523     Plume    Foundryman's Observation                         Flat ATK         3
+48524     Plume    Foundryman's Observation                         Flat ATK         4
+23855     Sands    Foundryman's Calculus                            ATK%             4
+23860     Sands    Foundryman's Calculus                            Energy Recharge  4
+48553     Sands    Foundryman's Calculus                            Any              3
+48554     Sands    Foundryman's Calculus                            Any              4
+23851     Goblet   Foundryman's Magnanimity                         ATK%             4
+48513     Goblet   Foundryman's Magnanimity                         Any              3
+48514     Goblet   Foundryman's Magnanimity                         Any              4
+23853     Circlet  Foundryman's Legacy                              CRIT Rate        4
+23858     Circlet  Foundryman's Legacy                              CRIT DMG         4
+23859     Circlet  Foundryman's Legacy                              ATK%             4
+48533     Circlet  Foundryman's Legacy                              Any              3
+48534     Circlet  Foundryman's Legacy                              Any              4

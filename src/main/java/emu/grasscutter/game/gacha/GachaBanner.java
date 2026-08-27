@@ -32,11 +32,6 @@ public class GachaBanner {
         11501, 11502, 12501, 12502, 13502, 13505, 14501, 14502, 15501, 15502
     }; // Default weapons
     static final int[] EMPTY_POOL = {}; // Used to remove a type of fallback
-    // Capturing Radiance (5.0+): chance in % for a lost coinflip to still hand out a featured item,
-    // indexed by how many coinflips were lost in a row before it. So the first 50/50 is a plain
-    // 50/50, the one after a single loss is 55/45, the one after two losses is 75/25, and a fourth
-    // loss in a row cannot happen. Character banners only.
-    static final int[] DEFAULT_CAPTURING_RADIANCE = {0, 10, 50, 100};
     @Getter int scheduleId = -1;
     @Getter int sortId = -1;
     @Getter private int gachaType = -1;
@@ -70,7 +65,6 @@ public class GachaBanner {
     private int[][] weights5;
     private int eventChance4 = -1; // Chance to win a featured event item
     private int eventChance5 = -1; // Chance to win a featured event item
-    private int[] capturingRadianceChances = null; // Defaults to the banner type, see onLoad()
     //
     @Getter private boolean removeC6FromPool = false;
 
@@ -141,15 +135,8 @@ public class GachaBanner {
             this.fallbackItems5Pool1 = this.bannerType.fallbackItems5Pool1;
         if (this.fallbackItems5Pool2 == null)
             this.fallbackItems5Pool2 = this.bannerType.fallbackItems5Pool2;
-        if (this.capturingRadianceChances == null)
-            this.capturingRadianceChances =
-                    switch (this.bannerType) {
-                        case EVENT, CHARACTER, CHARACTER2 -> DEFAULT_CAPTURING_RADIANCE;
-                        default -> EMPTY_POOL; // Capturing Radiance only exists on character banners
-                    };
-        // Set max wish progress based on wish type, otherwise its 0.
-        // The Epitomized Path costs one Fate Point since 5.0; it was two from 2.0 to 4.8.
-        if (this.bannerType.equals(BannerType.WEAPON)) this.wishMaxProgress = 1;
+        // Set max wish progress based on wish type, otherwise its 0
+        if (this.bannerType.equals(BannerType.WEAPON)) this.wishMaxProgress = 2;
         if (this.bannerType.equals(BannerType.CHRONICLE)) this.wishMaxProgress = 1;
     }
 
@@ -181,13 +168,6 @@ public class GachaBanner {
             case 4 -> Utils.lerp(pity, poolBalanceWeights4);
             default -> Utils.lerp(pity, poolBalanceWeights5);
         };
-    }
-
-    public int getCapturingRadianceChance(int consecutiveLosses) {
-        if (capturingRadianceChances == null || capturingRadianceChances.length == 0) return 0;
-        // Streaks longer than the table keep the last (guaranteed) entry
-        int index = Math.min(Math.max(consecutiveLosses, 0), capturingRadianceChances.length - 1);
-        return capturingRadianceChances[index];
     }
 
     public int getEventChance(int rarity) {
@@ -245,7 +225,7 @@ public class GachaBanner {
                         .setCostItemId(this.costItemId)
                         .setCostItemNum(this.costItemAmount)
                         .setTenCostItemNum(this.costItemAmount10)
-                        .setTenCostItemId(this.costItemId10)
+                        .setTenCostItemId(this.costItemId)
                         .setGachaPrefabPath(this.getPrefabPath())
                         .setGachaPreviewPrefabPath(previewPath)
                         .setGachaProbUrl(details)

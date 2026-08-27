@@ -19,12 +19,17 @@ public final class BargainTerminateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bargain_id = 13;</code>
+     * <code>uint32 bargain_id = 1;</code>
      * @return The bargainId.
      */
     int getBargainId();
   }
   /**
+   * <pre>
+   * CmdId: 28886
+   * Obf: IKMJMAHLHBE
+   * </pre>
+   *
    * Protobuf type {@code BargainTerminateNotify}
    */
   public static final class BargainTerminateNotify extends
@@ -109,7 +114,7 @@ public final class BargainTerminateNotifyOuterClass {
     public static final int BARGAIN_ID_FIELD_NUMBER = 13;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 13;</code>
+     * <code>uint32 bargain_id = 1;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class BargainTerminateNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 28886
+     * Obf: IKMJMAHLHBE
+     * </pre>
+     *
      * Protobuf type {@code BargainTerminateNotify}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class BargainTerminateNotifyOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 1;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class BargainTerminateNotifyOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 1;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class BargainTerminateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 13;</code>
+       * <code>uint32 bargain_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -517,9 +527,8 @@ public final class BargainTerminateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034BargainTerminateNotify.proto\",\n\026Bargai" +
-      "nTerminateNotify\022\022\n\nbargain_id\030\r \001(\rB=\n\031" +
-      "emu.grasscutter.net.protoB BargainTermin" +
-      "ateNotifyOuterClassb\006proto3"
+      "nTerminateNotify\022\022\n\nbargain_id\030\001 \001(\rB\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

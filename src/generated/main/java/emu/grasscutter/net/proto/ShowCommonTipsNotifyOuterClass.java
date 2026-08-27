@@ -19,36 +19,41 @@ public final class ShowCommonTipsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string title = 1;</code>
+     * <code>string title = 13;</code>
      * @return The title.
      */
     java.lang.String getTitle();
     /**
-     * <code>string title = 1;</code>
+     * <code>string title = 13;</code>
      * @return The bytes for title.
      */
     com.google.protobuf.ByteString
         getTitleBytes();
 
     /**
-     * <code>string content = 9;</code>
+     * <code>uint32 close_time = 1;</code>
+     * @return The closeTime.
+     */
+    int getCloseTime();
+
+    /**
+     * <code>string content = 7;</code>
      * @return The content.
      */
     java.lang.String getContent();
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 7;</code>
      * @return The bytes for content.
      */
     com.google.protobuf.ByteString
         getContentBytes();
-
-    /**
-     * <code>uint32 close_time = 10;</code>
-     * @return The closeTime.
-     */
-    int getCloseTime();
   }
   /**
+   * <pre>
+   * CmdId: 28414
+   * Obf: APCMNECPKCJ
+   * </pre>
+   *
    * Protobuf type {@code ShowCommonTipsNotify}
    */
   public static final class ShowCommonTipsNotify extends
@@ -95,10 +100,9 @@ public final class ShowCommonTipsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 80: {
 
-              title_ = s;
+              closeTime_ = input.readUInt32();
               break;
             }
             case 74: {
@@ -107,9 +111,10 @@ public final class ShowCommonTipsNotifyOuterClass {
               content_ = s;
               break;
             }
-            case 80: {
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              closeTime_ = input.readUInt32();
+              title_ = s;
               break;
             }
             default: {
@@ -147,7 +152,7 @@ public final class ShowCommonTipsNotifyOuterClass {
     public static final int TITLE_FIELD_NUMBER = 1;
     private volatile java.lang.Object title_;
     /**
-     * <code>string title = 1;</code>
+     * <code>string title = 13;</code>
      * @return The title.
      */
     @java.lang.Override
@@ -164,7 +169,7 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
     /**
-     * <code>string title = 1;</code>
+     * <code>string title = 13;</code>
      * @return The bytes for title.
      */
     @java.lang.Override
@@ -182,10 +187,21 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
 
+    public static final int CLOSE_TIME_FIELD_NUMBER = 10;
+    private int closeTime_;
+    /**
+     * <code>uint32 close_time = 1;</code>
+     * @return The closeTime.
+     */
+    @java.lang.Override
+    public int getCloseTime() {
+      return closeTime_;
+    }
+
     public static final int CONTENT_FIELD_NUMBER = 9;
     private volatile java.lang.Object content_;
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 7;</code>
      * @return The content.
      */
     @java.lang.Override
@@ -202,7 +218,7 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
     /**
-     * <code>string content = 9;</code>
+     * <code>string content = 7;</code>
      * @return The bytes for content.
      */
     @java.lang.Override
@@ -220,17 +236,6 @@ public final class ShowCommonTipsNotifyOuterClass {
       }
     }
 
-    public static final int CLOSE_TIME_FIELD_NUMBER = 10;
-    private int closeTime_;
-    /**
-     * <code>uint32 close_time = 10;</code>
-     * @return The closeTime.
-     */
-    @java.lang.Override
-    public int getCloseTime() {
-      return closeTime_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -245,14 +250,14 @@ public final class ShowCommonTipsNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, title_);
+      if (closeTime_ != 0) {
+        output.writeUInt32(10, closeTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 9, content_);
       }
-      if (closeTime_ != 0) {
-        output.writeUInt32(10, closeTime_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, title_);
       }
       unknownFields.writeTo(output);
     }
@@ -263,15 +268,15 @@ public final class ShowCommonTipsNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, title_);
+      if (closeTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, closeTime_);
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, content_);
       }
-      if (closeTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, closeTime_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, title_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -290,10 +295,10 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       if (!getTitle()
           .equals(other.getTitle())) return false;
-      if (!getContent()
-          .equals(other.getContent())) return false;
       if (getCloseTime()
           != other.getCloseTime()) return false;
+      if (!getContent()
+          .equals(other.getContent())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -307,10 +312,10 @@ public final class ShowCommonTipsNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TITLE_FIELD_NUMBER;
       hash = (53 * hash) + getTitle().hashCode();
-      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
-      hash = (53 * hash) + getContent().hashCode();
       hash = (37 * hash) + CLOSE_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getCloseTime();
+      hash = (37 * hash) + CONTENT_FIELD_NUMBER;
+      hash = (53 * hash) + getContent().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -407,6 +412,11 @@ public final class ShowCommonTipsNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 28414
+     * Obf: APCMNECPKCJ
+     * </pre>
+     *
      * Protobuf type {@code ShowCommonTipsNotify}
      */
     public static final class Builder extends
@@ -446,9 +456,9 @@ public final class ShowCommonTipsNotifyOuterClass {
         super.clear();
         title_ = "";
 
-        content_ = "";
-
         closeTime_ = 0;
+
+        content_ = "";
 
         return this;
       }
@@ -477,8 +487,8 @@ public final class ShowCommonTipsNotifyOuterClass {
       public emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify buildPartial() {
         emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify result = new emu.grasscutter.net.proto.ShowCommonTipsNotifyOuterClass.ShowCommonTipsNotify(this);
         result.title_ = title_;
-        result.content_ = content_;
         result.closeTime_ = closeTime_;
+        result.content_ = content_;
         onBuilt();
         return result;
       }
@@ -531,12 +541,12 @@ public final class ShowCommonTipsNotifyOuterClass {
           title_ = other.title_;
           onChanged();
         }
+        if (other.getCloseTime() != 0) {
+          setCloseTime(other.getCloseTime());
+        }
         if (!other.getContent().isEmpty()) {
           content_ = other.content_;
           onChanged();
-        }
-        if (other.getCloseTime() != 0) {
-          setCloseTime(other.getCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -569,7 +579,7 @@ public final class ShowCommonTipsNotifyOuterClass {
 
       private java.lang.Object title_ = "";
       /**
-       * <code>string title = 1;</code>
+       * <code>string title = 13;</code>
        * @return The title.
        */
       public java.lang.String getTitle() {
@@ -585,7 +595,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string title = 1;</code>
+       * <code>string title = 13;</code>
        * @return The bytes for title.
        */
       public com.google.protobuf.ByteString
@@ -602,7 +612,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string title = 1;</code>
+       * <code>string title = 13;</code>
        * @param value The title to set.
        * @return This builder for chaining.
        */
@@ -617,7 +627,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string title = 1;</code>
+       * <code>string title = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTitle() {
@@ -627,7 +637,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string title = 1;</code>
+       * <code>string title = 13;</code>
        * @param value The bytes for title to set.
        * @return This builder for chaining.
        */
@@ -643,9 +653,40 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
 
+      private int closeTime_ ;
+      /**
+       * <code>uint32 close_time = 1;</code>
+       * @return The closeTime.
+       */
+      @java.lang.Override
+      public int getCloseTime() {
+        return closeTime_;
+      }
+      /**
+       * <code>uint32 close_time = 1;</code>
+       * @param value The closeTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCloseTime(int value) {
+        
+        closeTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 close_time = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCloseTime() {
+        
+        closeTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.lang.Object content_ = "";
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 7;</code>
        * @return The content.
        */
       public java.lang.String getContent() {
@@ -661,7 +702,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 7;</code>
        * @return The bytes for content.
        */
       public com.google.protobuf.ByteString
@@ -678,7 +719,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         }
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 7;</code>
        * @param value The content to set.
        * @return This builder for chaining.
        */
@@ -693,7 +734,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearContent() {
@@ -703,7 +744,7 @@ public final class ShowCommonTipsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>string content = 9;</code>
+       * <code>string content = 7;</code>
        * @param value The bytes for content to set.
        * @return This builder for chaining.
        */
@@ -715,37 +756,6 @@ public final class ShowCommonTipsNotifyOuterClass {
   checkByteStringIsUtf8(value);
         
         content_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int closeTime_ ;
-      /**
-       * <code>uint32 close_time = 10;</code>
-       * @return The closeTime.
-       */
-      @java.lang.Override
-      public int getCloseTime() {
-        return closeTime_;
-      }
-      /**
-       * <code>uint32 close_time = 10;</code>
-       * @param value The closeTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCloseTime(int value) {
-        
-        closeTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 close_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCloseTime() {
-        
-        closeTime_ = 0;
         onChanged();
         return this;
       }
@@ -817,10 +827,9 @@ public final class ShowCommonTipsNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ShowCommonTipsNotify.proto\"J\n\024ShowComm" +
-      "onTipsNotify\022\r\n\005title\030\001 \001(\t\022\017\n\007content\030\t" +
-      " \001(\t\022\022\n\nclose_time\030\n \001(\rB;\n\031emu.grasscut" +
-      "ter.net.protoB\036ShowCommonTipsNotifyOuter" +
-      "Classb\006proto3"
+      "onTipsNotify\022\r\n\005title\030\r \001(\t\022\022\n\nclose_tim" +
+      "e\030\001 \001(\r\022\017\n\007content\030\007 \001(\tB\033\n\031emu.grasscut" +
+      "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -831,7 +840,7 @@ public final class ShowCommonTipsNotifyOuterClass {
     internal_static_ShowCommonTipsNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ShowCommonTipsNotify_descriptor,
-        new java.lang.String[] { "Title", "Content", "CloseTime", });
+        new java.lang.String[] { "Title", "CloseTime", "Content", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

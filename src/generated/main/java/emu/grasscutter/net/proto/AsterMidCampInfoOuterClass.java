@@ -18,25 +18,12 @@ public final class AsterMidCampInfoOuterClass {
       // @@protoc_insertion_point(interface_extends:AsterMidCampInfo)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return Whether the pos field is set.
-     */
     boolean hasPos();
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return The pos.
-     */
+
     emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 5;</code>
-     */
+
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
 
-    /**
-     * <code>uint32 camp_id = 11;</code>
-     * @return The campId.
-     */
     int getCampId();
   }
   /**
@@ -136,25 +123,17 @@ public final class AsterMidCampInfoOuterClass {
 
     public static final int POS_FIELD_NUMBER = 5;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return Whether the pos field is set.
-     */
+
     @java.lang.Override
     public boolean hasPos() {
       return pos_ != null;
     }
-    /**
-     * <code>.Vector pos = 5;</code>
-     * @return The pos.
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
       return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
     }
-    /**
-     * <code>.Vector pos = 5;</code>
-     */
+
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
       return getPos();
@@ -162,10 +141,7 @@ public final class AsterMidCampInfoOuterClass {
 
     public static final int CAMP_ID_FIELD_NUMBER = 11;
     private int campId_;
-    /**
-     * <code>uint32 camp_id = 11;</code>
-     * @return The campId.
-     */
+
     @java.lang.Override
     public int getCampId() {
       return campId_;
@@ -506,17 +482,11 @@ public final class AsterMidCampInfoOuterClass {
       private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
-      /**
-       * <code>.Vector pos = 5;</code>
-       * @return Whether the pos field is set.
-       */
+
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       * @return The pos.
-       */
+
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
         if (posBuilder_ == null) {
           return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
@@ -524,9 +494,7 @@ public final class AsterMidCampInfoOuterClass {
           return posBuilder_.getMessage();
         }
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
           if (value == null) {
@@ -540,9 +508,7 @@ public final class AsterMidCampInfoOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
         if (posBuilder_ == null) {
@@ -554,9 +520,7 @@ public final class AsterMidCampInfoOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
           if (pos_ != null) {
@@ -572,9 +536,7 @@ public final class AsterMidCampInfoOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public Builder clearPos() {
         if (posBuilder_ == null) {
           pos_ = null;
@@ -586,17 +548,13 @@ public final class AsterMidCampInfoOuterClass {
 
         return this;
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
-        
+
         onChanged();
         return getPosFieldBuilder().getBuilder();
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
           return posBuilder_.getMessageOrBuilder();
@@ -605,11 +563,9 @@ public final class AsterMidCampInfoOuterClass {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
         }
       }
-      /**
-       * <code>.Vector pos = 5;</code>
-       */
+
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
+          emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder>
           getPosFieldBuilder() {
         if (posBuilder_ == null) {
           posBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -623,31 +579,21 @@ public final class AsterMidCampInfoOuterClass {
       }
 
       private int campId_ ;
-      /**
-       * <code>uint32 camp_id = 11;</code>
-       * @return The campId.
-       */
+
       @java.lang.Override
       public int getCampId() {
         return campId_;
       }
-      /**
-       * <code>uint32 camp_id = 11;</code>
-       * @param value The campId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setCampId(int value) {
-        
+
         campId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 camp_id = 11;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearCampId() {
-        
+
         campId_ = 0;
         onChanged();
         return this;
@@ -663,7 +609,6 @@ public final class AsterMidCampInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:AsterMidCampInfo)
     }
@@ -707,7 +652,7 @@ public final class AsterMidCampInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AsterMidCampInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AsterMidCampInfo_fieldAccessorTable;
 
@@ -720,10 +665,9 @@ public final class AsterMidCampInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AsterMidCampInfo.proto\032\014Vector.proto\"9" +
-      "\n\020AsterMidCampInfo\022\024\n\003pos\030\005 \001(\0132\007.Vector" +
-      "\022\017\n\007camp_id\030\013 \001(\rB7\n\031emu.grasscutter.net" +
-      ".protoB\032AsterMidCampInfoOuterClassb\006prot" +
-      "o3"
+      "\n\020AsterMidCampInfo\022\024\n\003pos\030\006 \001(\0132\007.Vector" +
+      "\022\017\n\007camp_id\030\014 \001(\rB\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

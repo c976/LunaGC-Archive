@@ -19,34 +19,22 @@ public final class SocialShowAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
+     * <code>uint32 GIPGDBJOHAK = 5;</code>
+     * @return The gIPGDBJOHAK.
      */
+    int getGIPGDBJOHAK();
+
+    /**
+     * <code>uint32 DJMKCNBDGAJ = 4;</code>
+     * @return The dJMKCNBDGAJ.
+     */
+    int getDJMKCNBDGAJ();
+
     int getAvatarId();
 
-    /**
-     * <code>uint32 level = 2;</code>
-     * @return The level.
-     */
     int getLevel();
 
-    /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
     int getCostumeId();
-
-    /**
-     * <code>uint32 _talent_level = 4;</code>
-     * @return The talentLevel.
-     */
-    int getTalentLevel();
-
-    /**
-     * <code>uint32 _avatar_element_type = 5;</code>
-     * @return The avatarElementType.
-     */
-    int getAvatarElementType();
   }
   /**
    * Protobuf type {@code SocialShowAvatarInfo}
@@ -110,12 +98,12 @@ public final class SocialShowAvatarInfoOuterClass {
             }
             case 32: {
 
-              TalentLevel_ = input.readUInt32();
+              dJMKCNBDGAJ_ = input.readUInt32();
               break;
             }
             case 40: {
 
-              AvatarElementType_ = input.readUInt32();
+              gIPGDBJOHAK_ = input.readUInt32();
               break;
             }
             default: {
@@ -150,12 +138,31 @@ public final class SocialShowAvatarInfoOuterClass {
               emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.class, emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder.class);
     }
 
+    public static final int GIPGDBJOHAK_FIELD_NUMBER = 5;
+    private int gIPGDBJOHAK_;
+    /**
+     * <code>uint32 GIPGDBJOHAK = 5;</code>
+     * @return The gIPGDBJOHAK.
+     */
+    @java.lang.Override
+    public int getGIPGDBJOHAK() {
+      return gIPGDBJOHAK_;
+    }
+
+    public static final int DJMKCNBDGAJ_FIELD_NUMBER = 4;
+    private int dJMKCNBDGAJ_;
+    /**
+     * <code>uint32 DJMKCNBDGAJ = 4;</code>
+     * @return The dJMKCNBDGAJ.
+     */
+    @java.lang.Override
+    public int getDJMKCNBDGAJ() {
+      return dJMKCNBDGAJ_;
+    }
+
     public static final int AVATAR_ID_FIELD_NUMBER = 1;
     private int avatarId_;
-    /**
-     * <code>uint32 avatar_id = 1;</code>
-     * @return The avatarId.
-     */
+
     @java.lang.Override
     public int getAvatarId() {
       return avatarId_;
@@ -163,10 +170,7 @@ public final class SocialShowAvatarInfoOuterClass {
 
     public static final int LEVEL_FIELD_NUMBER = 2;
     private int level_;
-    /**
-     * <code>uint32 level = 2;</code>
-     * @return The level.
-     */
+
     @java.lang.Override
     public int getLevel() {
       return level_;
@@ -174,35 +178,10 @@ public final class SocialShowAvatarInfoOuterClass {
 
     public static final int COSTUME_ID_FIELD_NUMBER = 3;
     private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 3;</code>
-     * @return The costumeId.
-     */
+
     @java.lang.Override
     public int getCostumeId() {
       return costumeId_;
-    }
-
-    public static final int _TALENT_LEVEL_FIELD_NUMBER = 4;
-    private int TalentLevel_;
-    /**
-     * <code>uint32 _talent_level = 4;</code>
-     * @return The talentLevel.
-     */
-    @java.lang.Override
-    public int getTalentLevel() {
-      return TalentLevel_;
-    }
-
-    public static final int _AVATAR_ELEMENT_TYPE_FIELD_NUMBER = 5;
-    private int AvatarElementType_;
-    /**
-     * <code>uint32 _avatar_element_type = 5;</code>
-     * @return The avatarElementType.
-     */
-    @java.lang.Override
-    public int getAvatarElementType() {
-      return AvatarElementType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -228,11 +207,11 @@ public final class SocialShowAvatarInfoOuterClass {
       if (costumeId_ != 0) {
         output.writeUInt32(3, costumeId_);
       }
-      if (TalentLevel_ != 0) {
-        output.writeUInt32(4, TalentLevel_);
+      if (dJMKCNBDGAJ_ != 0) {
+        output.writeUInt32(4, dJMKCNBDGAJ_);
       }
-      if (AvatarElementType_ != 0) {
-        output.writeUInt32(5, AvatarElementType_);
+      if (gIPGDBJOHAK_ != 0) {
+        output.writeUInt32(5, gIPGDBJOHAK_);
       }
       unknownFields.writeTo(output);
     }
@@ -255,13 +234,13 @@ public final class SocialShowAvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, costumeId_);
       }
-      if (TalentLevel_ != 0) {
+      if (dJMKCNBDGAJ_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, TalentLevel_);
+          .computeUInt32Size(4, dJMKCNBDGAJ_);
       }
-      if (AvatarElementType_ != 0) {
+      if (gIPGDBJOHAK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, AvatarElementType_);
+          .computeUInt32Size(5, gIPGDBJOHAK_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,16 +257,16 @@ public final class SocialShowAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo other = (emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo) obj;
 
+      if (getGIPGDBJOHAK()
+          != other.getGIPGDBJOHAK()) return false;
+      if (getDJMKCNBDGAJ()
+          != other.getDJMKCNBDGAJ()) return false;
       if (getAvatarId()
           != other.getAvatarId()) return false;
       if (getLevel()
           != other.getLevel()) return false;
       if (getCostumeId()
           != other.getCostumeId()) return false;
-      if (getTalentLevel()
-          != other.getTalentLevel()) return false;
-      if (getAvatarElementType()
-          != other.getAvatarElementType()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -299,16 +278,16 @@ public final class SocialShowAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GIPGDBJOHAK_FIELD_NUMBER;
+      hash = (53 * hash) + getGIPGDBJOHAK();
+      hash = (37 * hash) + DJMKCNBDGAJ_FIELD_NUMBER;
+      hash = (53 * hash) + getDJMKCNBDGAJ();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
       hash = (37 * hash) + LEVEL_FIELD_NUMBER;
       hash = (53 * hash) + getLevel();
       hash = (37 * hash) + COSTUME_ID_FIELD_NUMBER;
       hash = (53 * hash) + getCostumeId();
-      hash = (37 * hash) + _TALENT_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getTalentLevel();
-      hash = (37 * hash) + _AVATAR_ELEMENT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getAvatarElementType();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -442,15 +421,15 @@ public final class SocialShowAvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        gIPGDBJOHAK_ = 0;
+
+        dJMKCNBDGAJ_ = 0;
+
         avatarId_ = 0;
 
         level_ = 0;
 
         costumeId_ = 0;
-
-        TalentLevel_ = 0;
-
-        AvatarElementType_ = 0;
 
         return this;
       }
@@ -478,11 +457,11 @@ public final class SocialShowAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo result = new emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo(this);
+        result.gIPGDBJOHAK_ = gIPGDBJOHAK_;
+        result.dJMKCNBDGAJ_ = dJMKCNBDGAJ_;
         result.avatarId_ = avatarId_;
         result.level_ = level_;
         result.costumeId_ = costumeId_;
-        result.TalentLevel_ = TalentLevel_;
-        result.AvatarElementType_ = AvatarElementType_;
         onBuilt();
         return result;
       }
@@ -531,6 +510,12 @@ public final class SocialShowAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.getDefaultInstance()) return this;
+        if (other.getGIPGDBJOHAK() != 0) {
+          setGIPGDBJOHAK(other.getGIPGDBJOHAK());
+        }
+        if (other.getDJMKCNBDGAJ() != 0) {
+          setDJMKCNBDGAJ(other.getDJMKCNBDGAJ());
+        }
         if (other.getAvatarId() != 0) {
           setAvatarId(other.getAvatarId());
         }
@@ -539,12 +524,6 @@ public final class SocialShowAvatarInfoOuterClass {
         }
         if (other.getCostumeId() != 0) {
           setCostumeId(other.getCostumeId());
-        }
-        if (other.getTalentLevel() != 0) {
-          setTalentLevel(other.getTalentLevel());
-        }
-        if (other.getAvatarElementType() != 0) {
-          setAvatarElementType(other.getAvatarElementType());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -575,157 +554,127 @@ public final class SocialShowAvatarInfoOuterClass {
         return this;
       }
 
-      private int avatarId_ ;
+      private int gIPGDBJOHAK_ ;
       /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @return The avatarId.
+       * <code>uint32 GIPGDBJOHAK = 5;</code>
+       * @return The gIPGDBJOHAK.
        */
       @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
+      public int getGIPGDBJOHAK() {
+        return gIPGDBJOHAK_;
       }
       /**
-       * <code>uint32 avatar_id = 1;</code>
-       * @param value The avatarId to set.
+       * <code>uint32 GIPGDBJOHAK = 5;</code>
+       * @param value The gIPGDBJOHAK to set.
        * @return This builder for chaining.
        */
-      public Builder setAvatarId(int value) {
-        
-        avatarId_ = value;
+      public Builder setGIPGDBJOHAK(int value) {
+
+        gIPGDBJOHAK_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 1;</code>
+       * <code>uint32 GIPGDBJOHAK = 5;</code>
        * @return This builder for chaining.
        */
+      public Builder clearGIPGDBJOHAK() {
+
+        gIPGDBJOHAK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int dJMKCNBDGAJ_ ;
+      /**
+       * <code>uint32 DJMKCNBDGAJ = 4;</code>
+       * @return The dJMKCNBDGAJ.
+       */
+      @java.lang.Override
+      public int getDJMKCNBDGAJ() {
+        return dJMKCNBDGAJ_;
+      }
+      /**
+       * <code>uint32 DJMKCNBDGAJ = 4;</code>
+       * @param value The dJMKCNBDGAJ to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDJMKCNBDGAJ(int value) {
+
+        dJMKCNBDGAJ_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 DJMKCNBDGAJ = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDJMKCNBDGAJ() {
+
+        dJMKCNBDGAJ_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int avatarId_ ;
+
+      @java.lang.Override
+      public int getAvatarId() {
+        return avatarId_;
+      }
+
+      public Builder setAvatarId(int value) {
+
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+
       public Builder clearAvatarId() {
-        
+
         avatarId_ = 0;
         onChanged();
         return this;
       }
 
       private int level_ ;
-      /**
-       * <code>uint32 level = 2;</code>
-       * @return The level.
-       */
+
       @java.lang.Override
       public int getLevel() {
         return level_;
       }
-      /**
-       * <code>uint32 level = 2;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setLevel(int value) {
-        
+
         level_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 level = 2;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearLevel() {
-        
+
         level_ = 0;
         onChanged();
         return this;
       }
 
       private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return The costumeId.
-       */
+
       @java.lang.Override
       public int getCostumeId() {
         return costumeId_;
       }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setCostumeId(int value) {
-        
+
         costumeId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 costume_id = 3;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearCostumeId() {
-        
+
         costumeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int TalentLevel_ ;
-      /**
-       * <code>uint32 _talent_level = 4;</code>
-       * @return The talentLevel.
-       */
-      @java.lang.Override
-      public int getTalentLevel() {
-        return TalentLevel_;
-      }
-      /**
-       * <code>uint32 _talent_level = 4;</code>
-       * @param value The talentLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTalentLevel(int value) {
-        
-        TalentLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 _talent_level = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTalentLevel() {
-        
-        TalentLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int AvatarElementType_ ;
-      /**
-       * <code>uint32 _avatar_element_type = 5;</code>
-       * @return The avatarElementType.
-       */
-      @java.lang.Override
-      public int getAvatarElementType() {
-        return AvatarElementType_;
-      }
-      /**
-       * <code>uint32 _avatar_element_type = 5;</code>
-       * @param value The avatarElementType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarElementType(int value) {
-        
-        AvatarElementType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 _avatar_element_type = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarElementType() {
-        
-        AvatarElementType_ = 0;
         onChanged();
         return this;
       }
@@ -740,7 +689,6 @@ public final class SocialShowAvatarInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:SocialShowAvatarInfo)
     }
@@ -784,7 +732,7 @@ public final class SocialShowAvatarInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_SocialShowAvatarInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_SocialShowAvatarInfo_fieldAccessorTable;
 
@@ -796,12 +744,11 @@ public final class SocialShowAvatarInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\032SocialShowAvatarInfo.proto\"\201\001\n\024SocialS" +
-      "howAvatarInfo\022\021\n\tavatar_id\030\001 \001(\r\022\r\n\005leve" +
-      "l\030\002 \001(\r\022\022\n\ncostume_id\030\003 \001(\r\022\025\n\r_talent_l" +
-      "evel\030\004 \001(\r\022\034\n\024_avatar_element_type\030\005 \001(\r" +
-      "B;\n\031emu.grasscutter.net.protoB\036SocialSho" +
-      "wAvatarInfoOuterClassb\006proto3"
+      "\n\032SocialShowAvatarInfo.proto\"v\n\024SocialSh" +
+      "owAvatarInfo\022\023\n\013GIPGDBJOHAK\030\005 \001(\r\022\023\n\013DJM" +
+      "KCNBDGAJ\030\004 \001(\r\022\021\n\tavatar_id\030\001 \001(\r\022\r\n\005lev" +
+      "el\030\002 \001(\r\022\022\n\ncostume_id\030\003 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -812,7 +759,7 @@ public final class SocialShowAvatarInfoOuterClass {
     internal_static_SocialShowAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SocialShowAvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Level", "CostumeId", "TalentLevel", "AvatarElementType", });
+        new java.lang.String[] { "GIPGDBJOHAK", "DJMKCNBDGAJ", "AvatarId", "Level", "CostumeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

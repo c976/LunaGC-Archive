@@ -18,13 +18,13 @@ public final class AvatarGainCostumeNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:AvatarGainCostumeNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 costume_id = 6;</code>
-     * @return The costumeId.
-     */
     int getCostumeId();
   }
   /**
+   * <pre>
+   * CmdId: 3806
+   * </pre>
+   *
    * Protobuf type {@code AvatarGainCostumeNotify}
    */
   public static final class AvatarGainCostumeNotify extends
@@ -108,10 +108,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
 
     public static final int COSTUME_ID_FIELD_NUMBER = 6;
     private int costumeId_;
-    /**
-     * <code>uint32 costume_id = 6;</code>
-     * @return The costumeId.
-     */
+
     @java.lang.Override
     public int getCostumeId() {
       return costumeId_;
@@ -273,6 +270,10 @@ public final class AvatarGainCostumeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3806
+     * </pre>
+     *
      * Protobuf type {@code AvatarGainCostumeNotify}
      */
     public static final class Builder extends
@@ -420,31 +421,21 @@ public final class AvatarGainCostumeNotifyOuterClass {
       }
 
       private int costumeId_ ;
-      /**
-       * <code>uint32 costume_id = 6;</code>
-       * @return The costumeId.
-       */
+
       @java.lang.Override
       public int getCostumeId() {
         return costumeId_;
       }
-      /**
-       * <code>uint32 costume_id = 6;</code>
-       * @param value The costumeId to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setCostumeId(int value) {
-        
+
         costumeId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 costume_id = 6;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearCostumeId() {
-        
+
         costumeId_ = 0;
         onChanged();
         return this;
@@ -460,7 +451,6 @@ public final class AvatarGainCostumeNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:AvatarGainCostumeNotify)
     }
@@ -504,7 +494,7 @@ public final class AvatarGainCostumeNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AvatarGainCostumeNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarGainCostumeNotify_fieldAccessorTable;
 
@@ -517,9 +507,8 @@ public final class AvatarGainCostumeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035AvatarGainCostumeNotify.proto\"-\n\027Avata" +
-      "rGainCostumeNotify\022\022\n\ncostume_id\030\006 \001(\rB>" +
-      "\n\031emu.grasscutter.net.protoB!AvatarGainC" +
-      "ostumeNotifyOuterClassb\006proto3"
+      "rGainCostumeNotify\022\022\n\ncostume_id\030\010 \001(\rB\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

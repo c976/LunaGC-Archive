@@ -39,10 +39,6 @@ public class PlayerActivityData {
     }
 
     public synchronized void addWatcherProgress(int watcherId) {
-        addWatcherProgress(watcherId, 1);
-    }
-
-    public synchronized void addWatcherProgress(int watcherId, int delta) {
         var watcherInfo = watcherInfoMap.get(watcherId);
         if (watcherInfo == null) {
             return;
@@ -52,8 +48,7 @@ public class PlayerActivityData {
             return;
         }
 
-        watcherInfo.curProgress =
-                Math.min(watcherInfo.curProgress + Math.max(delta, 1), watcherInfo.totalProgress);
+        watcherInfo.curProgress++;
         getPlayer().sendPacket(new PacketActivityUpdateWatcherNotify(activityId, watcherInfo));
     }
 

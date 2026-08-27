@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-option java_outer_classname = "GetAreaExplorePointReqOuterClass";
-
-message GetAreaExplorePointReq {
-	repeated uint32 area_id_list = 8;
-}

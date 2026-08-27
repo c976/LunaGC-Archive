@@ -114,13 +114,6 @@
       "need_target_online": "Questo comando richiede un UID bersaglio online, ma il bersaglio corrente è offline. Aggiungi un argomento <@UID> diverso o imposta un target persistente con /target @UID.",
       "need_target_offline": "Questo comando richiede un UID bersaglio offline, ma il bersaglio corrente è online. Aggiungi un argomento <@UID> diverso o imposta un target persistente con /target @UID."
     },
-    "name": {
-      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
-      "success": "Nickname updated (%s characters stored).",
-      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
-      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
-      "too_long": "Text is too long for a gradient. Maximum %s characters."
-    },
     "status": {
       "enabled": "Abilitato",
       "disabled": "Disabilitato",
@@ -478,12 +471,6 @@
       "not_present": "Il plugin %s non ha una versione API specifica.",
       "lower": "Il plugin %s sta usando la versione API %s, mentre il server sta usando la versione API %s.",
       "outdated": "Il plugin %s sta usando un metodo API obsoleto."
-    }
-  },
-  "mail": {
-    "birthday": {
-      "title": "Happy Birthday!",
-      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

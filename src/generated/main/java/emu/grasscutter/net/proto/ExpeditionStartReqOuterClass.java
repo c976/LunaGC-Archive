@@ -105,7 +105,7 @@ public final class ExpeditionStartReqOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 avatarIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -113,7 +113,7 @@ public final class ExpeditionStartReqOuterClass {
               avatarIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -176,7 +176,7 @@ public final class ExpeditionStartReqOuterClass {
               emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.class, emu.grasscutter.net.proto.ExpeditionStartReqOuterClass.ExpeditionStartReq.Builder.class);
     }
 
-    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 13;
+    public static final int AVATAR_ID_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList avatarIdList_;
     /**
      * <code>repeated uint32 avatar_id_list = 3;</code>
@@ -253,7 +253,7 @@ public final class ExpeditionStartReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getAvatarIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(avatarIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < avatarIdList_.size(); i++) {

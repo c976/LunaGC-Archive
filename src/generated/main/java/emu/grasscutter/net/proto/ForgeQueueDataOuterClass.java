@@ -19,48 +19,52 @@ public final class ForgeQueueDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_finish_timestamp = 2;</code>
+     * <code>uint32 total_finish_timestamp = 13;</code>
      * @return The totalFinishTimestamp.
      */
     int getTotalFinishTimestamp();
 
     /**
-     * <code>uint32 forge_id = 4;</code>
-     * @return The forgeId.
+     * <code>uint32 avatar_id = 8;</code>
+     * @return The avatarId.
      */
-    int getForgeId();
+    int getAvatarId();
 
     /**
-     * <code>uint32 next_finish_timestamp = 5;</code>
-     * @return The nextFinishTimestamp.
-     */
-    int getNextFinishTimestamp();
-
-    /**
-     * <code>uint32 finish_count = 6;</code>
+     * <code>uint32 finish_count = 3;</code>
      * @return The finishCount.
      */
     int getFinishCount();
 
     /**
-     * <code>uint32 queue_id = 7;</code>
+     * <code>uint32 queueId = 14;</code>
      * @return The queueId.
      */
     int getQueueId();
 
     /**
-     * <code>uint32 unfinish_count = 9;</code>
+     * <code>uint32 unfinishCount = 11;</code>
      * @return The unfinishCount.
      */
     int getUnfinishCount();
 
     /**
-     * <code>uint32 avatar_id = 14;</code>
-     * @return The avatarId.
+     * <code>uint32 next_finish_timestamp = 4;</code>
+     * @return The nextFinishTimestamp.
      */
-    int getAvatarId();
+    int getNextFinishTimestamp();
+
+    /**
+     * <code>uint32 forge_id = 15;</code>
+     * @return The forgeId.
+     */
+    int getForgeId();
   }
   /**
+   * <pre>
+   * Obf: NBNGELFILMP
+   * </pre>
+   *
    * Protobuf type {@code ForgeQueueData}
    */
   public static final class ForgeQueueData extends
@@ -105,14 +109,9 @@ public final class ForgeQueueDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
 
-              totalFinishTimestamp_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              forgeId_ = input.readUInt32();
+              finishCount_ = input.readUInt32();
               break;
             }
             case 40: {
@@ -120,14 +119,9 @@ public final class ForgeQueueDataOuterClass {
               nextFinishTimestamp_ = input.readUInt32();
               break;
             }
-            case 48: {
+            case 112: {
 
-              finishCount_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              queueId_ = input.readUInt32();
+              avatarId_ = input.readUInt32();
               break;
             }
             case 72: {
@@ -135,9 +129,19 @@ public final class ForgeQueueDataOuterClass {
               unfinishCount_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 16: {
 
-              avatarId_ = input.readUInt32();
+              totalFinishTimestamp_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              queueId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+
+              forgeId_ = input.readUInt32();
               break;
             }
             default: {
@@ -175,7 +179,7 @@ public final class ForgeQueueDataOuterClass {
     public static final int TOTAL_FINISH_TIMESTAMP_FIELD_NUMBER = 2;
     private int totalFinishTimestamp_;
     /**
-     * <code>uint32 total_finish_timestamp = 2;</code>
+     * <code>uint32 total_finish_timestamp = 13;</code>
      * @return The totalFinishTimestamp.
      */
     @java.lang.Override
@@ -183,32 +187,21 @@ public final class ForgeQueueDataOuterClass {
       return totalFinishTimestamp_;
     }
 
-    public static final int FORGE_ID_FIELD_NUMBER = 4;
-    private int forgeId_;
+    public static final int AVATAR_ID_FIELD_NUMBER = 14;
+    private int avatarId_;
     /**
-     * <code>uint32 forge_id = 4;</code>
-     * @return The forgeId.
+     * <code>uint32 avatar_id = 8;</code>
+     * @return The avatarId.
      */
     @java.lang.Override
-    public int getForgeId() {
-      return forgeId_;
-    }
-
-    public static final int NEXT_FINISH_TIMESTAMP_FIELD_NUMBER = 5;
-    private int nextFinishTimestamp_;
-    /**
-     * <code>uint32 next_finish_timestamp = 5;</code>
-     * @return The nextFinishTimestamp.
-     */
-    @java.lang.Override
-    public int getNextFinishTimestamp() {
-      return nextFinishTimestamp_;
+    public int getAvatarId() {
+      return avatarId_;
     }
 
     public static final int FINISH_COUNT_FIELD_NUMBER = 6;
     private int finishCount_;
     /**
-     * <code>uint32 finish_count = 6;</code>
+     * <code>uint32 finish_count = 3;</code>
      * @return The finishCount.
      */
     @java.lang.Override
@@ -216,10 +209,10 @@ public final class ForgeQueueDataOuterClass {
       return finishCount_;
     }
 
-    public static final int QUEUE_ID_FIELD_NUMBER = 7;
+    public static final int QUEUEID_FIELD_NUMBER = 7;
     private int queueId_;
     /**
-     * <code>uint32 queue_id = 7;</code>
+     * <code>uint32 queueId = 14;</code>
      * @return The queueId.
      */
     @java.lang.Override
@@ -227,10 +220,10 @@ public final class ForgeQueueDataOuterClass {
       return queueId_;
     }
 
-    public static final int UNFINISH_COUNT_FIELD_NUMBER = 9;
+    public static final int UNFINISHCOUNT_FIELD_NUMBER = 9;
     private int unfinishCount_;
     /**
-     * <code>uint32 unfinish_count = 9;</code>
+     * <code>uint32 unfinishCount = 11;</code>
      * @return The unfinishCount.
      */
     @java.lang.Override
@@ -238,15 +231,26 @@ public final class ForgeQueueDataOuterClass {
       return unfinishCount_;
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 14;
-    private int avatarId_;
+    public static final int NEXT_FINISH_TIMESTAMP_FIELD_NUMBER = 5;
+    private int nextFinishTimestamp_;
     /**
-     * <code>uint32 avatar_id = 14;</code>
-     * @return The avatarId.
+     * <code>uint32 next_finish_timestamp = 4;</code>
+     * @return The nextFinishTimestamp.
      */
     @java.lang.Override
-    public int getAvatarId() {
-      return avatarId_;
+    public int getNextFinishTimestamp() {
+      return nextFinishTimestamp_;
+    }
+
+    public static final int FORGE_ID_FIELD_NUMBER = 4;
+    private int forgeId_;
+    /**
+     * <code>uint32 forge_id = 15;</code>
+     * @return The forgeId.
+     */
+    @java.lang.Override
+    public int getForgeId() {
+      return forgeId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -263,26 +267,26 @@ public final class ForgeQueueDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (totalFinishTimestamp_ != 0) {
-        output.writeUInt32(2, totalFinishTimestamp_);
-      }
-      if (forgeId_ != 0) {
-        output.writeUInt32(4, forgeId_);
+      if (finishCount_ != 0) {
+        output.writeUInt32(6, finishCount_);
       }
       if (nextFinishTimestamp_ != 0) {
         output.writeUInt32(5, nextFinishTimestamp_);
       }
-      if (finishCount_ != 0) {
-        output.writeUInt32(6, finishCount_);
-      }
-      if (queueId_ != 0) {
-        output.writeUInt32(7, queueId_);
+      if (avatarId_ != 0) {
+        output.writeUInt32(14, avatarId_);
       }
       if (unfinishCount_ != 0) {
         output.writeUInt32(9, unfinishCount_);
       }
-      if (avatarId_ != 0) {
-        output.writeUInt32(14, avatarId_);
+      if (totalFinishTimestamp_ != 0) {
+        output.writeUInt32(2, totalFinishTimestamp_);
+      }
+      if (queueId_ != 0) {
+        output.writeUInt32(7, queueId_);
+      }
+      if (forgeId_ != 0) {
+        output.writeUInt32(4, forgeId_);
       }
       unknownFields.writeTo(output);
     }
@@ -293,33 +297,33 @@ public final class ForgeQueueDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (totalFinishTimestamp_ != 0) {
+      if (finishCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, totalFinishTimestamp_);
-      }
-      if (forgeId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, forgeId_);
+          .computeUInt32Size(6, finishCount_);
       }
       if (nextFinishTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, nextFinishTimestamp_);
       }
-      if (finishCount_ != 0) {
+      if (avatarId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, finishCount_);
-      }
-      if (queueId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, queueId_);
+          .computeUInt32Size(14, avatarId_);
       }
       if (unfinishCount_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(9, unfinishCount_);
       }
-      if (avatarId_ != 0) {
+      if (totalFinishTimestamp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, avatarId_);
+          .computeUInt32Size(2, totalFinishTimestamp_);
+      }
+      if (queueId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(7, queueId_);
+      }
+      if (forgeId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, forgeId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -338,18 +342,18 @@ public final class ForgeQueueDataOuterClass {
 
       if (getTotalFinishTimestamp()
           != other.getTotalFinishTimestamp()) return false;
-      if (getForgeId()
-          != other.getForgeId()) return false;
-      if (getNextFinishTimestamp()
-          != other.getNextFinishTimestamp()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
       if (getFinishCount()
           != other.getFinishCount()) return false;
       if (getQueueId()
           != other.getQueueId()) return false;
       if (getUnfinishCount()
           != other.getUnfinishCount()) return false;
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
+      if (getNextFinishTimestamp()
+          != other.getNextFinishTimestamp()) return false;
+      if (getForgeId()
+          != other.getForgeId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -363,18 +367,18 @@ public final class ForgeQueueDataOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + TOTAL_FINISH_TIMESTAMP_FIELD_NUMBER;
       hash = (53 * hash) + getTotalFinishTimestamp();
-      hash = (37 * hash) + FORGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getForgeId();
-      hash = (37 * hash) + NEXT_FINISH_TIMESTAMP_FIELD_NUMBER;
-      hash = (53 * hash) + getNextFinishTimestamp();
-      hash = (37 * hash) + FINISH_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishCount();
-      hash = (37 * hash) + QUEUE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQueueId();
-      hash = (37 * hash) + UNFINISH_COUNT_FIELD_NUMBER;
-      hash = (53 * hash) + getUnfinishCount();
       hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
       hash = (53 * hash) + getAvatarId();
+      hash = (37 * hash) + FINISH_COUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishCount();
+      hash = (37 * hash) + QUEUEID_FIELD_NUMBER;
+      hash = (53 * hash) + getQueueId();
+      hash = (37 * hash) + UNFINISHCOUNT_FIELD_NUMBER;
+      hash = (53 * hash) + getUnfinishCount();
+      hash = (37 * hash) + NEXT_FINISH_TIMESTAMP_FIELD_NUMBER;
+      hash = (53 * hash) + getNextFinishTimestamp();
+      hash = (37 * hash) + FORGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getForgeId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -471,6 +475,10 @@ public final class ForgeQueueDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: NBNGELFILMP
+     * </pre>
+     *
      * Protobuf type {@code ForgeQueueData}
      */
     public static final class Builder extends
@@ -510,9 +518,7 @@ public final class ForgeQueueDataOuterClass {
         super.clear();
         totalFinishTimestamp_ = 0;
 
-        forgeId_ = 0;
-
-        nextFinishTimestamp_ = 0;
+        avatarId_ = 0;
 
         finishCount_ = 0;
 
@@ -520,7 +526,9 @@ public final class ForgeQueueDataOuterClass {
 
         unfinishCount_ = 0;
 
-        avatarId_ = 0;
+        nextFinishTimestamp_ = 0;
+
+        forgeId_ = 0;
 
         return this;
       }
@@ -549,12 +557,12 @@ public final class ForgeQueueDataOuterClass {
       public emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData buildPartial() {
         emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData result = new emu.grasscutter.net.proto.ForgeQueueDataOuterClass.ForgeQueueData(this);
         result.totalFinishTimestamp_ = totalFinishTimestamp_;
-        result.forgeId_ = forgeId_;
-        result.nextFinishTimestamp_ = nextFinishTimestamp_;
+        result.avatarId_ = avatarId_;
         result.finishCount_ = finishCount_;
         result.queueId_ = queueId_;
         result.unfinishCount_ = unfinishCount_;
-        result.avatarId_ = avatarId_;
+        result.nextFinishTimestamp_ = nextFinishTimestamp_;
+        result.forgeId_ = forgeId_;
         onBuilt();
         return result;
       }
@@ -606,11 +614,8 @@ public final class ForgeQueueDataOuterClass {
         if (other.getTotalFinishTimestamp() != 0) {
           setTotalFinishTimestamp(other.getTotalFinishTimestamp());
         }
-        if (other.getForgeId() != 0) {
-          setForgeId(other.getForgeId());
-        }
-        if (other.getNextFinishTimestamp() != 0) {
-          setNextFinishTimestamp(other.getNextFinishTimestamp());
+        if (other.getAvatarId() != 0) {
+          setAvatarId(other.getAvatarId());
         }
         if (other.getFinishCount() != 0) {
           setFinishCount(other.getFinishCount());
@@ -621,8 +626,11 @@ public final class ForgeQueueDataOuterClass {
         if (other.getUnfinishCount() != 0) {
           setUnfinishCount(other.getUnfinishCount());
         }
-        if (other.getAvatarId() != 0) {
-          setAvatarId(other.getAvatarId());
+        if (other.getNextFinishTimestamp() != 0) {
+          setNextFinishTimestamp(other.getNextFinishTimestamp());
+        }
+        if (other.getForgeId() != 0) {
+          setForgeId(other.getForgeId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -655,7 +663,7 @@ public final class ForgeQueueDataOuterClass {
 
       private int totalFinishTimestamp_ ;
       /**
-       * <code>uint32 total_finish_timestamp = 2;</code>
+       * <code>uint32 total_finish_timestamp = 13;</code>
        * @return The totalFinishTimestamp.
        */
       @java.lang.Override
@@ -663,7 +671,7 @@ public final class ForgeQueueDataOuterClass {
         return totalFinishTimestamp_;
       }
       /**
-       * <code>uint32 total_finish_timestamp = 2;</code>
+       * <code>uint32 total_finish_timestamp = 13;</code>
        * @param value The totalFinishTimestamp to set.
        * @return This builder for chaining.
        */
@@ -674,7 +682,7 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 total_finish_timestamp = 2;</code>
+       * <code>uint32 total_finish_timestamp = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearTotalFinishTimestamp() {
@@ -684,71 +692,40 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
 
-      private int forgeId_ ;
+      private int avatarId_ ;
       /**
-       * <code>uint32 forge_id = 4;</code>
-       * @return The forgeId.
+       * <code>uint32 avatar_id = 8;</code>
+       * @return The avatarId.
        */
       @java.lang.Override
-      public int getForgeId() {
-        return forgeId_;
+      public int getAvatarId() {
+        return avatarId_;
       }
       /**
-       * <code>uint32 forge_id = 4;</code>
-       * @param value The forgeId to set.
+       * <code>uint32 avatar_id = 8;</code>
+       * @param value The avatarId to set.
        * @return This builder for chaining.
        */
-      public Builder setForgeId(int value) {
+      public Builder setAvatarId(int value) {
         
-        forgeId_ = value;
+        avatarId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 forge_id = 4;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearForgeId() {
+      public Builder clearAvatarId() {
         
-        forgeId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int nextFinishTimestamp_ ;
-      /**
-       * <code>uint32 next_finish_timestamp = 5;</code>
-       * @return The nextFinishTimestamp.
-       */
-      @java.lang.Override
-      public int getNextFinishTimestamp() {
-        return nextFinishTimestamp_;
-      }
-      /**
-       * <code>uint32 next_finish_timestamp = 5;</code>
-       * @param value The nextFinishTimestamp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNextFinishTimestamp(int value) {
-        
-        nextFinishTimestamp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 next_finish_timestamp = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNextFinishTimestamp() {
-        
-        nextFinishTimestamp_ = 0;
+        avatarId_ = 0;
         onChanged();
         return this;
       }
 
       private int finishCount_ ;
       /**
-       * <code>uint32 finish_count = 6;</code>
+       * <code>uint32 finish_count = 3;</code>
        * @return The finishCount.
        */
       @java.lang.Override
@@ -756,7 +733,7 @@ public final class ForgeQueueDataOuterClass {
         return finishCount_;
       }
       /**
-       * <code>uint32 finish_count = 6;</code>
+       * <code>uint32 finish_count = 3;</code>
        * @param value The finishCount to set.
        * @return This builder for chaining.
        */
@@ -767,7 +744,7 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 finish_count = 6;</code>
+       * <code>uint32 finish_count = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishCount() {
@@ -779,7 +756,7 @@ public final class ForgeQueueDataOuterClass {
 
       private int queueId_ ;
       /**
-       * <code>uint32 queue_id = 7;</code>
+       * <code>uint32 queueId = 14;</code>
        * @return The queueId.
        */
       @java.lang.Override
@@ -787,7 +764,7 @@ public final class ForgeQueueDataOuterClass {
         return queueId_;
       }
       /**
-       * <code>uint32 queue_id = 7;</code>
+       * <code>uint32 queueId = 14;</code>
        * @param value The queueId to set.
        * @return This builder for chaining.
        */
@@ -798,7 +775,7 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 queue_id = 7;</code>
+       * <code>uint32 queueId = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearQueueId() {
@@ -810,7 +787,7 @@ public final class ForgeQueueDataOuterClass {
 
       private int unfinishCount_ ;
       /**
-       * <code>uint32 unfinish_count = 9;</code>
+       * <code>uint32 unfinishCount = 11;</code>
        * @return The unfinishCount.
        */
       @java.lang.Override
@@ -818,7 +795,7 @@ public final class ForgeQueueDataOuterClass {
         return unfinishCount_;
       }
       /**
-       * <code>uint32 unfinish_count = 9;</code>
+       * <code>uint32 unfinishCount = 11;</code>
        * @param value The unfinishCount to set.
        * @return This builder for chaining.
        */
@@ -829,7 +806,7 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 unfinish_count = 9;</code>
+       * <code>uint32 unfinishCount = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearUnfinishCount() {
@@ -839,33 +816,64 @@ public final class ForgeQueueDataOuterClass {
         return this;
       }
 
-      private int avatarId_ ;
+      private int nextFinishTimestamp_ ;
       /**
-       * <code>uint32 avatar_id = 14;</code>
-       * @return The avatarId.
+       * <code>uint32 next_finish_timestamp = 4;</code>
+       * @return The nextFinishTimestamp.
        */
       @java.lang.Override
-      public int getAvatarId() {
-        return avatarId_;
+      public int getNextFinishTimestamp() {
+        return nextFinishTimestamp_;
       }
       /**
-       * <code>uint32 avatar_id = 14;</code>
-       * @param value The avatarId to set.
+       * <code>uint32 next_finish_timestamp = 4;</code>
+       * @param value The nextFinishTimestamp to set.
        * @return This builder for chaining.
        */
-      public Builder setAvatarId(int value) {
+      public Builder setNextFinishTimestamp(int value) {
         
-        avatarId_ = value;
+        nextFinishTimestamp_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 14;</code>
+       * <code>uint32 next_finish_timestamp = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearAvatarId() {
+      public Builder clearNextFinishTimestamp() {
         
-        avatarId_ = 0;
+        nextFinishTimestamp_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int forgeId_ ;
+      /**
+       * <code>uint32 forge_id = 15;</code>
+       * @return The forgeId.
+       */
+      @java.lang.Override
+      public int getForgeId() {
+        return forgeId_;
+      }
+      /**
+       * <code>uint32 forge_id = 15;</code>
+       * @param value The forgeId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setForgeId(int value) {
+        
+        forgeId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 forge_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearForgeId() {
+        
+        forgeId_ = 0;
         onChanged();
         return this;
       }
@@ -936,13 +944,12 @@ public final class ForgeQueueDataOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024ForgeQueueData.proto\"\264\001\n\016ForgeQueueDat" +
-      "a\022\036\n\026total_finish_timestamp\030\002 \001(\r\022\020\n\010for" +
-      "ge_id\030\004 \001(\r\022\035\n\025next_finish_timestamp\030\005 \001" +
-      "(\r\022\024\n\014finish_count\030\006 \001(\r\022\020\n\010queue_id\030\007 \001" +
-      "(\r\022\026\n\016unfinish_count\030\t \001(\r\022\021\n\tavatar_id\030" +
-      "\016 \001(\rB5\n\031emu.grasscutter.net.protoB\030Forg" +
-      "eQueueDataOuterClassb\006proto3"
+      "\n\024ForgeQueueData.proto\"\262\001\n\016ForgeQueueDat" +
+      "a\022\036\n\026total_finish_timestamp\030\r \001(\r\022\021\n\tava" +
+      "tar_id\030\010 \001(\r\022\024\n\014finish_count\030\003 \001(\r\022\017\n\007qu" +
+      "eueId\030\016 \001(\r\022\025\n\runfinishCount\030\013 \001(\r\022\035\n\025ne" +
+      "xt_finish_timestamp\030\004 \001(\r\022\020\n\010forge_id\030\017 " +
+      "\001(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -953,7 +960,7 @@ public final class ForgeQueueDataOuterClass {
     internal_static_ForgeQueueData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ForgeQueueData_descriptor,
-        new java.lang.String[] { "TotalFinishTimestamp", "ForgeId", "NextFinishTimestamp", "FinishCount", "QueueId", "UnfinishCount", "AvatarId", });
+        new java.lang.String[] { "TotalFinishTimestamp", "AvatarId", "FinishCount", "QueueId", "UnfinishCount", "NextFinishTimestamp", "ForgeId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

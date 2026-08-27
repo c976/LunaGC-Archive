@@ -19,57 +19,61 @@ public final class CrucibleBattleUidInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string nickname = 1;</code>
-     * @return The nickname.
-     */
-    java.lang.String getNickname();
-    /**
-     * <code>string nickname = 1;</code>
-     * @return The bytes for nickname.
-     */
-    com.google.protobuf.ByteString
-        getNicknameBytes();
-
-    /**
      * <code>uint32 uid = 3;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 4;</code>
      * @return The onlineId.
      */
     java.lang.String getOnlineId();
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 4;</code>
      * @return The bytes for onlineId.
      */
     com.google.protobuf.ByteString
         getOnlineIdBytes();
 
     /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    boolean hasProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
-
-    /**
      * <code>uint32 icon = 14;</code>
      * @return The icon.
      */
     int getIcon();
+
+    /**
+     * <code>string nickname = 10;</code>
+     * @return The nickname.
+     */
+    java.lang.String getNickname();
+    /**
+     * <code>string nickname = 10;</code>
+     * @return The bytes for nickname.
+     */
+    com.google.protobuf.ByteString
+        getNicknameBytes();
+
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    boolean hasProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     * @return The profilePicture.
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     */
+    emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
   }
   /**
+   * <pre>
+   * Obf: LCFEBPAKLPL
+   * </pre>
+   *
    * Protobuf type {@code CrucibleBattleUidInfo}
    */
   public static final class CrucibleBattleUidInfo extends
@@ -82,8 +86,8 @@ public final class CrucibleBattleUidInfoOuterClass {
       super(builder);
     }
     private CrucibleBattleUidInfo() {
-      nickname_ = "";
       onlineId_ = "";
+      nickname_ = "";
     }
 
     @java.lang.Override
@@ -116,12 +120,6 @@ public final class CrucibleBattleUidInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              nickname_ = s;
-              break;
-            }
             case 24: {
 
               uid_ = input.readUInt32();
@@ -144,6 +142,12 @@ public final class CrucibleBattleUidInfoOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              nickname_ = s;
               break;
             }
             case 112: {
@@ -183,44 +187,6 @@ public final class CrucibleBattleUidInfoOuterClass {
               emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.class, emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.Builder.class);
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 1;
-    private volatile java.lang.Object nickname_;
-    /**
-     * <code>string nickname = 1;</code>
-     * @return The nickname.
-     */
-    @java.lang.Override
-    public java.lang.String getNickname() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        nickname_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string nickname = 1;</code>
-     * @return The bytes for nickname.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getNicknameBytes() {
-      java.lang.Object ref = nickname_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        nickname_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
     public static final int UID_FIELD_NUMBER = 3;
     private int uid_;
     /**
@@ -235,7 +201,7 @@ public final class CrucibleBattleUidInfoOuterClass {
     public static final int ONLINE_ID_FIELD_NUMBER = 6;
     private volatile java.lang.Object onlineId_;
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 4;</code>
      * @return The onlineId.
      */
     @java.lang.Override
@@ -252,7 +218,7 @@ public final class CrucibleBattleUidInfoOuterClass {
       }
     }
     /**
-     * <code>string online_id = 6;</code>
+     * <code>string online_id = 4;</code>
      * @return The bytes for onlineId.
      */
     @java.lang.Override
@@ -270,32 +236,6 @@ public final class CrucibleBattleUidInfoOuterClass {
       }
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
-    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return Whether the profilePicture field is set.
-     */
-    @java.lang.Override
-    public boolean hasProfilePicture() {
-      return profilePicture_ != null;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     * @return The profilePicture.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-    }
-    /**
-     * <code>.ProfilePicture profile_picture = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-      return getProfilePicture();
-    }
-
     public static final int ICON_FIELD_NUMBER = 14;
     private int icon_;
     /**
@@ -305,6 +245,70 @@ public final class CrucibleBattleUidInfoOuterClass {
     @java.lang.Override
     public int getIcon() {
       return icon_;
+    }
+
+    public static final int NICKNAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object nickname_;
+    /**
+     * <code>string nickname = 10;</code>
+     * @return The nickname.
+     */
+    @java.lang.Override
+    public java.lang.String getNickname() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        nickname_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string nickname = 10;</code>
+     * @return The bytes for nickname.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNicknameBytes() {
+      java.lang.Object ref = nickname_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        nickname_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 12;
+    private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     * @return Whether the profilePicture field is set.
+     */
+    @java.lang.Override
+    public boolean hasProfilePicture() {
+      return profilePicture_ != null;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     * @return The profilePicture.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+      return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+    }
+    /**
+     * <code>.ProfilePicture profile_picture = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+      return getProfilePicture();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -321,9 +325,6 @@ public final class CrucibleBattleUidInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, nickname_);
-      }
       if (uid_ != 0) {
         output.writeUInt32(3, uid_);
       }
@@ -332,6 +333,9 @@ public final class CrucibleBattleUidInfoOuterClass {
       }
       if (profilePicture_ != null) {
         output.writeMessage(12, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, nickname_);
       }
       if (icon_ != 0) {
         output.writeUInt32(14, icon_);
@@ -345,9 +349,6 @@ public final class CrucibleBattleUidInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, nickname_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(3, uid_);
@@ -358,6 +359,9 @@ public final class CrucibleBattleUidInfoOuterClass {
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getProfilePicture());
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, nickname_);
       }
       if (icon_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -378,19 +382,19 @@ public final class CrucibleBattleUidInfoOuterClass {
       }
       emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo other = (emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo) obj;
 
-      if (!getNickname()
-          .equals(other.getNickname())) return false;
       if (getUid()
           != other.getUid()) return false;
       if (!getOnlineId()
           .equals(other.getOnlineId())) return false;
+      if (getIcon()
+          != other.getIcon()) return false;
+      if (!getNickname()
+          .equals(other.getNickname())) return false;
       if (hasProfilePicture() != other.hasProfilePicture()) return false;
       if (hasProfilePicture()) {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (getIcon()
-          != other.getIcon()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -402,18 +406,18 @@ public final class CrucibleBattleUidInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
-      hash = (53 * hash) + getNickname().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
       hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOnlineId().hashCode();
+      hash = (37 * hash) + ICON_FIELD_NUMBER;
+      hash = (53 * hash) + getIcon();
+      hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
+      hash = (53 * hash) + getNickname().hashCode();
       if (hasProfilePicture()) {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
-      hash = (37 * hash) + ICON_FIELD_NUMBER;
-      hash = (53 * hash) + getIcon();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,6 +514,10 @@ public final class CrucibleBattleUidInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: LCFEBPAKLPL
+     * </pre>
+     *
      * Protobuf type {@code CrucibleBattleUidInfo}
      */
     public static final class Builder extends
@@ -547,11 +555,13 @@ public final class CrucibleBattleUidInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        nickname_ = "";
-
         uid_ = 0;
 
         onlineId_ = "";
+
+        icon_ = 0;
+
+        nickname_ = "";
 
         if (profilePictureBuilder_ == null) {
           profilePicture_ = null;
@@ -559,8 +569,6 @@ public final class CrucibleBattleUidInfoOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
-        icon_ = 0;
-
         return this;
       }
 
@@ -587,15 +595,15 @@ public final class CrucibleBattleUidInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo buildPartial() {
         emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo result = new emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo(this);
-        result.nickname_ = nickname_;
         result.uid_ = uid_;
         result.onlineId_ = onlineId_;
+        result.icon_ = icon_;
+        result.nickname_ = nickname_;
         if (profilePictureBuilder_ == null) {
           result.profilePicture_ = profilePicture_;
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.icon_ = icon_;
         onBuilt();
         return result;
       }
@@ -644,10 +652,6 @@ public final class CrucibleBattleUidInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo other) {
         if (other == emu.grasscutter.net.proto.CrucibleBattleUidInfoOuterClass.CrucibleBattleUidInfo.getDefaultInstance()) return this;
-        if (!other.getNickname().isEmpty()) {
-          nickname_ = other.nickname_;
-          onChanged();
-        }
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
@@ -655,11 +659,15 @@ public final class CrucibleBattleUidInfoOuterClass {
           onlineId_ = other.onlineId_;
           onChanged();
         }
-        if (other.hasProfilePicture()) {
-          mergeProfilePicture(other.getProfilePicture());
-        }
         if (other.getIcon() != 0) {
           setIcon(other.getIcon());
+        }
+        if (!other.getNickname().isEmpty()) {
+          nickname_ = other.nickname_;
+          onChanged();
+        }
+        if (other.hasProfilePicture()) {
+          mergeProfilePicture(other.getProfilePicture());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -687,82 +695,6 @@ public final class CrucibleBattleUidInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
-        return this;
-      }
-
-      private java.lang.Object nickname_ = "";
-      /**
-       * <code>string nickname = 1;</code>
-       * @return The nickname.
-       */
-      public java.lang.String getNickname() {
-        java.lang.Object ref = nickname_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          nickname_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string nickname = 1;</code>
-       * @return The bytes for nickname.
-       */
-      public com.google.protobuf.ByteString
-          getNicknameBytes() {
-        java.lang.Object ref = nickname_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          nickname_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string nickname = 1;</code>
-       * @param value The nickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNickname(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        nickname_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nickname = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearNickname() {
-        
-        nickname_ = getDefaultInstance().getNickname();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string nickname = 1;</code>
-       * @param value The bytes for nickname to set.
-       * @return This builder for chaining.
-       */
-      public Builder setNicknameBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        nickname_ = value;
-        onChanged();
         return this;
       }
 
@@ -799,7 +731,7 @@ public final class CrucibleBattleUidInfoOuterClass {
 
       private java.lang.Object onlineId_ = "";
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 4;</code>
        * @return The onlineId.
        */
       public java.lang.String getOnlineId() {
@@ -815,7 +747,7 @@ public final class CrucibleBattleUidInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 4;</code>
        * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
@@ -832,7 +764,7 @@ public final class CrucibleBattleUidInfoOuterClass {
         }
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 4;</code>
        * @param value The onlineId to set.
        * @return This builder for chaining.
        */
@@ -847,7 +779,7 @@ public final class CrucibleBattleUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearOnlineId() {
@@ -857,7 +789,7 @@ public final class CrucibleBattleUidInfoOuterClass {
         return this;
       }
       /**
-       * <code>string online_id = 6;</code>
+       * <code>string online_id = 4;</code>
        * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
@@ -871,125 +803,6 @@ public final class CrucibleBattleUidInfoOuterClass {
         onlineId_ = value;
         onChanged();
         return this;
-      }
-
-      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       * @return Whether the profilePicture field is set.
-       */
-      public boolean hasProfilePicture() {
-        return profilePictureBuilder_ != null || profilePicture_ != null;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       * @return The profilePicture.
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        } else {
-          return profilePictureBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          profilePicture_ = value;
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder setProfilePicture(
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = builderForValue.build();
-          onChanged();
-        } else {
-          profilePictureBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
-        if (profilePictureBuilder_ == null) {
-          if (profilePicture_ != null) {
-            profilePicture_ =
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
-          } else {
-            profilePicture_ = value;
-          }
-          onChanged();
-        } else {
-          profilePictureBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public Builder clearProfilePicture() {
-        if (profilePictureBuilder_ == null) {
-          profilePicture_ = null;
-          onChanged();
-        } else {
-          profilePicture_ = null;
-          profilePictureBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
-        
-        onChanged();
-        return getProfilePictureFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
-        if (profilePictureBuilder_ != null) {
-          return profilePictureBuilder_.getMessageOrBuilder();
-        } else {
-          return profilePicture_ == null ?
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
-        }
-      }
-      /**
-       * <code>.ProfilePicture profile_picture = 12;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
-          getProfilePictureFieldBuilder() {
-        if (profilePictureBuilder_ == null) {
-          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
-                  getProfilePicture(),
-                  getParentForChildren(),
-                  isClean());
-          profilePicture_ = null;
-        }
-        return profilePictureBuilder_;
       }
 
       private int icon_ ;
@@ -1021,6 +834,201 @@ public final class CrucibleBattleUidInfoOuterClass {
         icon_ = 0;
         onChanged();
         return this;
+      }
+
+      private java.lang.Object nickname_ = "";
+      /**
+       * <code>string nickname = 10;</code>
+       * @return The nickname.
+       */
+      public java.lang.String getNickname() {
+        java.lang.Object ref = nickname_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          nickname_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 10;</code>
+       * @return The bytes for nickname.
+       */
+      public com.google.protobuf.ByteString
+          getNicknameBytes() {
+        java.lang.Object ref = nickname_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          nickname_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string nickname = 10;</code>
+       * @param value The nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNickname(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        nickname_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearNickname() {
+        
+        nickname_ = getDefaultInstance().getNickname();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string nickname = 10;</code>
+       * @param value The bytes for nickname to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNicknameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        nickname_ = value;
+        onChanged();
+        return this;
+      }
+
+      private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       * @return Whether the profilePicture field is set.
+       */
+      public boolean hasProfilePicture() {
+        return profilePictureBuilder_ != null || profilePicture_ != null;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       * @return The profilePicture.
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        } else {
+          return profilePictureBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          profilePicture_ = value;
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public Builder setProfilePicture(
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = builderForValue.build();
+          onChanged();
+        } else {
+          profilePictureBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
+        if (profilePictureBuilder_ == null) {
+          if (profilePicture_ != null) {
+            profilePicture_ =
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.newBuilder(profilePicture_).mergeFrom(value).buildPartial();
+          } else {
+            profilePicture_ = value;
+          }
+          onChanged();
+        } else {
+          profilePictureBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public Builder clearProfilePicture() {
+        if (profilePictureBuilder_ == null) {
+          profilePicture_ = null;
+          onChanged();
+        } else {
+          profilePicture_ = null;
+          profilePictureBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
+        
+        onChanged();
+        return getProfilePictureFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
+        if (profilePictureBuilder_ != null) {
+          return profilePictureBuilder_.getMessageOrBuilder();
+        } else {
+          return profilePicture_ == null ?
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
+        }
+      }
+      /**
+       * <code>.ProfilePicture profile_picture = 6;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
+          getProfilePictureFieldBuilder() {
+        if (profilePictureBuilder_ == null) {
+          profilePictureBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder>(
+                  getProfilePicture(),
+                  getParentForChildren(),
+                  isClean());
+          profilePicture_ = null;
+        }
+        return profilePictureBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1090,12 +1098,11 @@ public final class CrucibleBattleUidInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033CrucibleBattleUidInfo.proto\032\024ProfilePi" +
-      "cture.proto\"\201\001\n\025CrucibleBattleUidInfo\022\020\n" +
-      "\010nickname\030\001 \001(\t\022\013\n\003uid\030\003 \001(\r\022\021\n\tonline_i" +
-      "d\030\006 \001(\t\022(\n\017profile_picture\030\014 \001(\0132\017.Profi" +
-      "lePicture\022\014\n\004icon\030\016 \001(\rB<\n\031emu.grasscutt" +
-      "er.net.protoB\037CrucibleBattleUidInfoOuter" +
-      "Classb\006proto3"
+      "cture.proto\"\201\001\n\025CrucibleBattleUidInfo\022\013\n" +
+      "\003uid\030\003 \001(\r\022\021\n\tonline_id\030\004 \001(\t\022\014\n\004icon\030\016 " +
+      "\001(\r\022\020\n\010nickname\030\n \001(\t\022(\n\017profile_picture" +
+      "\030\006 \001(\0132\017.ProfilePictureB\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1107,7 +1114,7 @@ public final class CrucibleBattleUidInfoOuterClass {
     internal_static_CrucibleBattleUidInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CrucibleBattleUidInfo_descriptor,
-        new java.lang.String[] { "Nickname", "Uid", "OnlineId", "ProfilePicture", "Icon", });
+        new java.lang.String[] { "Uid", "OnlineId", "Icon", "Nickname", "ProfilePicture", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 

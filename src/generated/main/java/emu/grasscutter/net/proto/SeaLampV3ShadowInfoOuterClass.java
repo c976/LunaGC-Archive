@@ -19,30 +19,34 @@ public final class SeaLampV3ShadowInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo> 
         getStageInfoListList();
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo getStageInfoList(int index);
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     int getStageInfoListCount();
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder> 
         getStageInfoListOrBuilderList();
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder getStageInfoListOrBuilder(
         int index);
   }
   /**
+   * <pre>
+   * Obf: CDNDGGOEPCJ
+   * </pre>
+   *
    * Protobuf type {@code SeaLampV3ShadowInfo}
    */
   public static final class SeaLampV3ShadowInfo extends
@@ -136,14 +140,14 @@ public final class SeaLampV3ShadowInfoOuterClass {
     public static final int STAGE_INFO_LIST_FIELD_NUMBER = 2;
     private java.util.List<emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo> stageInfoList_;
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo> getStageInfoListList() {
       return stageInfoList_;
     }
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder> 
@@ -151,21 +155,21 @@ public final class SeaLampV3ShadowInfoOuterClass {
       return stageInfoList_;
     }
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     @java.lang.Override
     public int getStageInfoListCount() {
       return stageInfoList_.size();
     }
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo getStageInfoList(int index) {
       return stageInfoList_.get(index);
     }
     /**
-     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+     * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder getStageInfoListOrBuilder(
@@ -331,6 +335,10 @@ public final class SeaLampV3ShadowInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CDNDGGOEPCJ
+     * </pre>
+     *
      * Protobuf type {@code SeaLampV3ShadowInfo}
      */
     public static final class Builder extends
@@ -528,7 +536,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
           emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder> stageInfoListBuilder_;
 
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo> getStageInfoListList() {
         if (stageInfoListBuilder_ == null) {
@@ -538,7 +546,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public int getStageInfoListCount() {
         if (stageInfoListBuilder_ == null) {
@@ -548,7 +556,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo getStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -558,7 +566,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo value) {
@@ -575,7 +583,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder setStageInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder builderForValue) {
@@ -589,7 +597,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder addStageInfoList(emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo value) {
         if (stageInfoListBuilder_ == null) {
@@ -605,7 +613,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo value) {
@@ -622,7 +630,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder addStageInfoList(
           emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder builderForValue) {
@@ -636,7 +644,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder addStageInfoList(
           int index, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder builderForValue) {
@@ -650,7 +658,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder addAllStageInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo> values) {
@@ -665,7 +673,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder clearStageInfoList() {
         if (stageInfoListBuilder_ == null) {
@@ -678,7 +686,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public Builder removeStageInfoList(int index) {
         if (stageInfoListBuilder_ == null) {
@@ -691,14 +699,14 @@ public final class SeaLampV3ShadowInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder getStageInfoListBuilder(
           int index) {
         return getStageInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder getStageInfoListOrBuilder(
           int index) {
@@ -708,7 +716,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfoOrBuilder> 
            getStageInfoListOrBuilderList() {
@@ -719,14 +727,14 @@ public final class SeaLampV3ShadowInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder addStageInfoListBuilder() {
         return getStageInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder addStageInfoListBuilder(
           int index) {
@@ -734,7 +742,7 @@ public final class SeaLampV3ShadowInfoOuterClass {
             index, emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 2;</code>
+       * <code>repeated .SeaLampV3ShadowStageInfo stage_info_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SeaLampV3ShadowStageInfoOuterClass.SeaLampV3ShadowStageInfo.Builder> 
            getStageInfoListBuilderList() {
@@ -823,10 +831,9 @@ public final class SeaLampV3ShadowInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031SeaLampV3ShadowInfo.proto\032\036SeaLampV3Sh" +
       "adowStageInfo.proto\"I\n\023SeaLampV3ShadowIn" +
-      "fo\0222\n\017stage_info_list\030\002 \003(\0132\031.SeaLampV3S" +
-      "hadowStageInfoB:\n\031emu.grasscutter.net.pr" +
-      "otoB\035SeaLampV3ShadowInfoOuterClassb\006prot" +
-      "o3"
+      "fo\0222\n\017stage_info_list\030\010 \003(\0132\031.SeaLampV3S" +
+      "hadowStageInfoB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

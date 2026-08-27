@@ -36,14 +36,11 @@ public class ShopInfo {
 
         this.minLevel = sgd.getMinPlayerLevel();
         this.maxLevel = sgd.getMaxPlayerLevel();
-        var costItems = sgd.getCostItems();
         this.costItemList =
-                costItems == null
-                        ? new ArrayList<>()
-                        : costItems.stream()
-                                .filter(x -> x != null && x.getId() != 0)
-                                .map(x -> new ItemParamData(x.getId(), x.getCount()))
-                                .toList();
+                sgd.getCostItems().stream()
+                        .filter(x -> x.getId() != 0)
+                        .map(x -> new ItemParamData(x.getId(), x.getCount()))
+                        .toList();
         this.secondarySheetId = sgd.getSubTabId();
         this.shopRefreshType = sgd.getRefreshType();
         this.shopRefreshParam = sgd.getRefreshParam();

@@ -19,34 +19,30 @@ public final class PhotoActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_content_closed = 9;</code>
-     * @return The isContentClosed.
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
      */
-    boolean getIsContentClosed();
-
+    java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE>
+        getABOMJJKGODKList();
     /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
      */
-    java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> 
-        getPhotoPosDataListList();
+    emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE getABOMJJKGODK(int index);
     /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
      */
-    emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData getPhotoPosDataList(int index);
+    int getABOMJJKGODKCount();
     /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
      */
-    int getPhotoPosDataListCount();
+    java.util.List<? extends emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder>
+        getABOMJJKGODKOrBuilderList();
     /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
      */
-    java.util.List<? extends emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder> 
-        getPhotoPosDataListOrBuilderList();
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder getPhotoPosDataListOrBuilder(
+    emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder getABOMJJKGODKOrBuilder(
         int index);
+
+    boolean getIsContentClosed();
   }
   /**
    * Protobuf type {@code PhotoActivityDetailInfo}
@@ -61,7 +57,7 @@ public final class PhotoActivityDetailInfoOuterClass {
       super(builder);
     }
     private PhotoActivityDetailInfo() {
-      photoPosDataList_ = java.util.Collections.emptyList();
+      aBOMJJKGODK_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -102,11 +98,11 @@ public final class PhotoActivityDetailInfoOuterClass {
             }
             case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                photoPosDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData>();
+                aBOMJJKGODK_ = new java.util.ArrayList<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              photoPosDataList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.parser(), extensionRegistry));
+              aBOMJJKGODK_.add(
+                  input.readMessage(emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -125,7 +121,7 @@ public final class PhotoActivityDetailInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          photoPosDataList_ = java.util.Collections.unmodifiableList(photoPosDataList_);
+          aBOMJJKGODK_ = java.util.Collections.unmodifiableList(aBOMJJKGODK_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -144,55 +140,52 @@ public final class PhotoActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo.class, emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo.Builder.class);
     }
 
+    public static final int ABOMJJKGODK_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE> aBOMJJKGODK_;
+    /**
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE> getABOMJJKGODKList() {
+      return aBOMJJKGODK_;
+    }
+    /**
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder>
+        getABOMJJKGODKOrBuilderList() {
+      return aBOMJJKGODK_;
+    }
+    /**
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
+     */
+    @java.lang.Override
+    public int getABOMJJKGODKCount() {
+      return aBOMJJKGODK_.size();
+    }
+    /**
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE getABOMJJKGODK(int index) {
+      return aBOMJJKGODK_.get(index);
+    }
+    /**
+     * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder getABOMJJKGODKOrBuilder(
+        int index) {
+      return aBOMJJKGODK_.get(index);
+    }
+
     public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 9;
     private boolean isContentClosed_;
-    /**
-     * <code>bool is_content_closed = 9;</code>
-     * @return The isContentClosed.
-     */
+
     @java.lang.Override
     public boolean getIsContentClosed() {
       return isContentClosed_;
-    }
-
-    public static final int PHOTO_POS_DATA_LIST_FIELD_NUMBER = 12;
-    private java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> photoPosDataList_;
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> getPhotoPosDataListList() {
-      return photoPosDataList_;
-    }
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder> 
-        getPhotoPosDataListOrBuilderList() {
-      return photoPosDataList_;
-    }
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public int getPhotoPosDataListCount() {
-      return photoPosDataList_.size();
-    }
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData getPhotoPosDataList(int index) {
-      return photoPosDataList_.get(index);
-    }
-    /**
-     * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder getPhotoPosDataListOrBuilder(
-        int index) {
-      return photoPosDataList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -212,8 +205,8 @@ public final class PhotoActivityDetailInfoOuterClass {
       if (isContentClosed_ != false) {
         output.writeBool(9, isContentClosed_);
       }
-      for (int i = 0; i < photoPosDataList_.size(); i++) {
-        output.writeMessage(12, photoPosDataList_.get(i));
+      for (int i = 0; i < aBOMJJKGODK_.size(); i++) {
+        output.writeMessage(12, aBOMJJKGODK_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -228,9 +221,9 @@ public final class PhotoActivityDetailInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(9, isContentClosed_);
       }
-      for (int i = 0; i < photoPosDataList_.size(); i++) {
+      for (int i = 0; i < aBOMJJKGODK_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, photoPosDataList_.get(i));
+          .computeMessageSize(12, aBOMJJKGODK_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -247,10 +240,10 @@ public final class PhotoActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo other = (emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo) obj;
 
+      if (!getABOMJJKGODKList()
+          .equals(other.getABOMJJKGODKList())) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
-      if (!getPhotoPosDataListList()
-          .equals(other.getPhotoPosDataListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -262,13 +255,13 @@ public final class PhotoActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (getABOMJJKGODKCount() > 0) {
+        hash = (37 * hash) + ABOMJJKGODK_FIELD_NUMBER;
+        hash = (53 * hash) + getABOMJJKGODKList().hashCode();
+      }
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
-      if (getPhotoPosDataListCount() > 0) {
-        hash = (37 * hash) + PHOTO_POS_DATA_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getPhotoPosDataListList().hashCode();
-      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -397,20 +390,20 @@ public final class PhotoActivityDetailInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getPhotoPosDataListFieldBuilder();
+          getABOMJJKGODKFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isContentClosed_ = false;
-
-        if (photoPosDataListBuilder_ == null) {
-          photoPosDataList_ = java.util.Collections.emptyList();
+        if (aBOMJJKGODKBuilder_ == null) {
+          aBOMJJKGODK_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          photoPosDataListBuilder_.clear();
+          aBOMJJKGODKBuilder_.clear();
         }
+        isContentClosed_ = false;
+
         return this;
       }
 
@@ -438,16 +431,16 @@ public final class PhotoActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo result = new emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.isContentClosed_ = isContentClosed_;
-        if (photoPosDataListBuilder_ == null) {
+        if (aBOMJJKGODKBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            photoPosDataList_ = java.util.Collections.unmodifiableList(photoPosDataList_);
+            aBOMJJKGODK_ = java.util.Collections.unmodifiableList(aBOMJJKGODK_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.photoPosDataList_ = photoPosDataList_;
+          result.aBOMJJKGODK_ = aBOMJJKGODK_;
         } else {
-          result.photoPosDataList_ = photoPosDataListBuilder_.build();
+          result.aBOMJJKGODK_ = aBOMJJKGODKBuilder_.build();
         }
+        result.isContentClosed_ = isContentClosed_;
         onBuilt();
         return result;
       }
@@ -496,34 +489,34 @@ public final class PhotoActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.PhotoActivityDetailInfoOuterClass.PhotoActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getIsContentClosed() != false) {
-          setIsContentClosed(other.getIsContentClosed());
-        }
-        if (photoPosDataListBuilder_ == null) {
-          if (!other.photoPosDataList_.isEmpty()) {
-            if (photoPosDataList_.isEmpty()) {
-              photoPosDataList_ = other.photoPosDataList_;
+        if (aBOMJJKGODKBuilder_ == null) {
+          if (!other.aBOMJJKGODK_.isEmpty()) {
+            if (aBOMJJKGODK_.isEmpty()) {
+              aBOMJJKGODK_ = other.aBOMJJKGODK_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensurePhotoPosDataListIsMutable();
-              photoPosDataList_.addAll(other.photoPosDataList_);
+              ensureABOMJJKGODKIsMutable();
+              aBOMJJKGODK_.addAll(other.aBOMJJKGODK_);
             }
             onChanged();
           }
         } else {
-          if (!other.photoPosDataList_.isEmpty()) {
-            if (photoPosDataListBuilder_.isEmpty()) {
-              photoPosDataListBuilder_.dispose();
-              photoPosDataListBuilder_ = null;
-              photoPosDataList_ = other.photoPosDataList_;
+          if (!other.aBOMJJKGODK_.isEmpty()) {
+            if (aBOMJJKGODKBuilder_.isEmpty()) {
+              aBOMJJKGODKBuilder_.dispose();
+              aBOMJJKGODKBuilder_ = null;
+              aBOMJJKGODK_ = other.aBOMJJKGODK_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              photoPosDataListBuilder_ = 
+              aBOMJJKGODKBuilder_ =
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getPhotoPosDataListFieldBuilder() : null;
+                   getABOMJJKGODKFieldBuilder() : null;
             } else {
-              photoPosDataListBuilder_.addAllMessages(other.photoPosDataList_);
+              aBOMJJKGODKBuilder_.addAllMessages(other.aBOMJJKGODK_);
             }
           }
+        }
+        if (other.getIsContentClosed() != false) {
+          setIsContentClosed(other.getIsContentClosed());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -555,275 +548,265 @@ public final class PhotoActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private boolean isContentClosed_ ;
-      /**
-       * <code>bool is_content_closed = 9;</code>
-       * @return The isContentClosed.
-       */
-      @java.lang.Override
-      public boolean getIsContentClosed() {
-        return isContentClosed_;
-      }
-      /**
-       * <code>bool is_content_closed = 9;</code>
-       * @param value The isContentClosed to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsContentClosed(boolean value) {
-        
-        isContentClosed_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_content_closed = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsContentClosed() {
-        
-        isContentClosed_ = false;
-        onChanged();
-        return this;
-      }
-
-      private java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> photoPosDataList_ =
+      private java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE> aBOMJJKGODK_ =
         java.util.Collections.emptyList();
-      private void ensurePhotoPosDataListIsMutable() {
+      private void ensureABOMJJKGODKIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          photoPosDataList_ = new java.util.ArrayList<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData>(photoPosDataList_);
+          aBOMJJKGODK_ = new java.util.ArrayList<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE>(aBOMJJKGODK_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder> photoPosDataListBuilder_;
+          emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder> aBOMJJKGODKBuilder_;
 
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> getPhotoPosDataListList() {
-        if (photoPosDataListBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(photoPosDataList_);
+      public java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE> getABOMJJKGODKList() {
+        if (aBOMJJKGODKBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(aBOMJJKGODK_);
         } else {
-          return photoPosDataListBuilder_.getMessageList();
+          return aBOMJJKGODKBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public int getPhotoPosDataListCount() {
-        if (photoPosDataListBuilder_ == null) {
-          return photoPosDataList_.size();
+      public int getABOMJJKGODKCount() {
+        if (aBOMJJKGODKBuilder_ == null) {
+          return aBOMJJKGODK_.size();
         } else {
-          return photoPosDataListBuilder_.getCount();
+          return aBOMJJKGODKBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData getPhotoPosDataList(int index) {
-        if (photoPosDataListBuilder_ == null) {
-          return photoPosDataList_.get(index);
+      public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE getABOMJJKGODK(int index) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          return aBOMJJKGODK_.get(index);
         } else {
-          return photoPosDataListBuilder_.getMessage(index);
+          return aBOMJJKGODKBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder setPhotoPosDataList(
-          int index, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData value) {
-        if (photoPosDataListBuilder_ == null) {
+      public Builder setABOMJJKGODK(
+          int index, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE value) {
+        if (aBOMJJKGODKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.set(index, value);
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.set(index, value);
           onChanged();
         } else {
-          photoPosDataListBuilder_.setMessage(index, value);
+          aBOMJJKGODKBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder setPhotoPosDataList(
-          int index, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder builderForValue) {
-        if (photoPosDataListBuilder_ == null) {
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.set(index, builderForValue.build());
+      public Builder setABOMJJKGODK(
+          int index, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder builderForValue) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.set(index, builderForValue.build());
           onChanged();
         } else {
-          photoPosDataListBuilder_.setMessage(index, builderForValue.build());
+          aBOMJJKGODKBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder addPhotoPosDataList(emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData value) {
-        if (photoPosDataListBuilder_ == null) {
+      public Builder addABOMJJKGODK(emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE value) {
+        if (aBOMJJKGODKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.add(value);
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.add(value);
           onChanged();
         } else {
-          photoPosDataListBuilder_.addMessage(value);
+          aBOMJJKGODKBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder addPhotoPosDataList(
-          int index, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData value) {
-        if (photoPosDataListBuilder_ == null) {
+      public Builder addABOMJJKGODK(
+          int index, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE value) {
+        if (aBOMJJKGODKBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.add(index, value);
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.add(index, value);
           onChanged();
         } else {
-          photoPosDataListBuilder_.addMessage(index, value);
+          aBOMJJKGODKBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder addPhotoPosDataList(
-          emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder builderForValue) {
-        if (photoPosDataListBuilder_ == null) {
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.add(builderForValue.build());
+      public Builder addABOMJJKGODK(
+          emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder builderForValue) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.add(builderForValue.build());
           onChanged();
         } else {
-          photoPosDataListBuilder_.addMessage(builderForValue.build());
+          aBOMJJKGODKBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder addPhotoPosDataList(
-          int index, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder builderForValue) {
-        if (photoPosDataListBuilder_ == null) {
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.add(index, builderForValue.build());
+      public Builder addABOMJJKGODK(
+          int index, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder builderForValue) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.add(index, builderForValue.build());
           onChanged();
         } else {
-          photoPosDataListBuilder_.addMessage(index, builderForValue.build());
+          aBOMJJKGODKBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder addAllPhotoPosDataList(
-          java.lang.Iterable<? extends emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData> values) {
-        if (photoPosDataListBuilder_ == null) {
-          ensurePhotoPosDataListIsMutable();
+      public Builder addAllABOMJJKGODK(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE> values) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          ensureABOMJJKGODKIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, photoPosDataList_);
+              values, aBOMJJKGODK_);
           onChanged();
         } else {
-          photoPosDataListBuilder_.addAllMessages(values);
+          aBOMJJKGODKBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder clearPhotoPosDataList() {
-        if (photoPosDataListBuilder_ == null) {
-          photoPosDataList_ = java.util.Collections.emptyList();
+      public Builder clearABOMJJKGODK() {
+        if (aBOMJJKGODKBuilder_ == null) {
+          aBOMJJKGODK_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          photoPosDataListBuilder_.clear();
+          aBOMJJKGODKBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public Builder removePhotoPosDataList(int index) {
-        if (photoPosDataListBuilder_ == null) {
-          ensurePhotoPosDataListIsMutable();
-          photoPosDataList_.remove(index);
+      public Builder removeABOMJJKGODK(int index) {
+        if (aBOMJJKGODKBuilder_ == null) {
+          ensureABOMJJKGODKIsMutable();
+          aBOMJJKGODK_.remove(index);
           onChanged();
         } else {
-          photoPosDataListBuilder_.remove(index);
+          aBOMJJKGODKBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder getPhotoPosDataListBuilder(
+      public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder getABOMJJKGODKBuilder(
           int index) {
-        return getPhotoPosDataListFieldBuilder().getBuilder(index);
+        return getABOMJJKGODKFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder getPhotoPosDataListOrBuilder(
+      public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder getABOMJJKGODKOrBuilder(
           int index) {
-        if (photoPosDataListBuilder_ == null) {
-          return photoPosDataList_.get(index);  } else {
-          return photoPosDataListBuilder_.getMessageOrBuilder(index);
+        if (aBOMJJKGODKBuilder_ == null) {
+          return aBOMJJKGODK_.get(index);  } else {
+          return aBOMJJKGODKBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public java.util.List<? extends emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder> 
-           getPhotoPosDataListOrBuilderList() {
-        if (photoPosDataListBuilder_ != null) {
-          return photoPosDataListBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder>
+           getABOMJJKGODKOrBuilderList() {
+        if (aBOMJJKGODKBuilder_ != null) {
+          return aBOMJJKGODKBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(photoPosDataList_);
+          return java.util.Collections.unmodifiableList(aBOMJJKGODK_);
         }
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder addPhotoPosDataListBuilder() {
-        return getPhotoPosDataListFieldBuilder().addBuilder(
-            emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.getDefaultInstance());
+      public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder addABOMJJKGODKBuilder() {
+        return getABOMJJKGODKFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.getDefaultInstance());
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder addPhotoPosDataListBuilder(
+      public emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder addABOMJJKGODKBuilder(
           int index) {
-        return getPhotoPosDataListFieldBuilder().addBuilder(
-            index, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.getDefaultInstance());
+        return getABOMJJKGODKFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.getDefaultInstance());
       }
       /**
-       * <code>repeated .PhotoPosData photo_pos_data_list = 12;</code>
+       * <code>repeated .NCMCKALPEEE ABOMJJKGODK = 12;</code>
        */
-      public java.util.List<emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder> 
-           getPhotoPosDataListBuilderList() {
-        return getPhotoPosDataListFieldBuilder().getBuilderList();
+      public java.util.List<emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder>
+           getABOMJJKGODKBuilderList() {
+        return getABOMJJKGODKFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder> 
-          getPhotoPosDataListFieldBuilder() {
-        if (photoPosDataListBuilder_ == null) {
-          photoPosDataListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosData.Builder, emu.grasscutter.net.proto.PhotoPosDataOuterClass.PhotoPosDataOrBuilder>(
-                  photoPosDataList_,
+          emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder>
+          getABOMJJKGODKFieldBuilder() {
+        if (aBOMJJKGODKBuilder_ == null) {
+          aBOMJJKGODKBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEE.Builder, emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.NCMCKALPEEEOrBuilder>(
+                  aBOMJJKGODK_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          photoPosDataList_ = null;
+          aBOMJJKGODK_ = null;
         }
-        return photoPosDataListBuilder_;
+        return aBOMJJKGODKBuilder_;
+      }
+
+      private boolean isContentClosed_ ;
+
+      @java.lang.Override
+      public boolean getIsContentClosed() {
+        return isContentClosed_;
+      }
+
+      public Builder setIsContentClosed(boolean value) {
+
+        isContentClosed_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearIsContentClosed() {
+
+        isContentClosed_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -836,7 +819,6 @@ public final class PhotoActivityDetailInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:PhotoActivityDetailInfo)
     }
@@ -880,7 +862,7 @@ public final class PhotoActivityDetailInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PhotoActivityDetailInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PhotoActivityDetailInfo_fieldAccessorTable;
 
@@ -892,25 +874,24 @@ public final class PhotoActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035PhotoActivityDetailInfo.proto\032\022PhotoPo" +
-      "sData.proto\"`\n\027PhotoActivityDetailInfo\022\031" +
-      "\n\021is_content_closed\030\t \001(\010\022*\n\023photo_pos_d" +
-      "ata_list\030\014 \003(\0132\r.PhotoPosDataB>\n\031emu.gra" +
-      "sscutter.net.protoB!PhotoActivityDetailI" +
-      "nfoOuterClassb\006proto3"
+      "\n\035PhotoActivityDetailInfo.proto\032\021NCMCKAL" +
+      "PEEE.proto\"W\n\027PhotoActivityDetailInfo\022!\n" +
+      "\013ABOMJJKGODK\030\014 \003(\0132\014.NCMCKALPEEE\022\031\n\021is_c" +
+      "ontent_closed\030\004 \001(\010B\033\n\031emu.grasscutter.n" +
+      "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.PhotoPosDataOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.getDescriptor(),
         });
     internal_static_PhotoActivityDetailInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_PhotoActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PhotoActivityDetailInfo_descriptor,
-        new java.lang.String[] { "IsContentClosed", "PhotoPosDataList", });
-    emu.grasscutter.net.proto.PhotoPosDataOuterClass.getDescriptor();
+        new java.lang.String[] { "ABOMJJKGODK", "IsContentClosed", });
+    emu.grasscutter.net.proto.NCMCKALPEEEOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

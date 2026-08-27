@@ -19,7 +19,7 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>float random_value = 4;</code>
+     * <code>float random_value = 1;</code>
      * @return The randomValue.
      */
     float getRandomValue();
@@ -109,7 +109,7 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
     public static final int RANDOM_VALUE_FIELD_NUMBER = 4;
     private float randomValue_;
     /**
-     * <code>float random_value = 4;</code>
+     * <code>float random_value = 1;</code>
      * @return The randomValue.
      */
     @java.lang.Override
@@ -423,7 +423,7 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
 
       private float randomValue_ ;
       /**
-       * <code>float random_value = 4;</code>
+       * <code>float random_value = 1;</code>
        * @return The randomValue.
        */
       @java.lang.Override
@@ -431,7 +431,7 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
         return randomValue_;
       }
       /**
-       * <code>float random_value = 4;</code>
+       * <code>float random_value = 1;</code>
        * @param value The randomValue to set.
        * @return This builder for chaining.
        */
@@ -442,7 +442,7 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
         return this;
       }
       /**
-       * <code>float random_value = 4;</code>
+       * <code>float random_value = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearRandomValue() {
@@ -520,9 +520,8 @@ public final class AbilityActionSetRandomOverrideMapValueOuterClass {
     java.lang.String[] descriptorData = {
       "\n,AbilityActionSetRandomOverrideMapValue" +
       ".proto\">\n&AbilityActionSetRandomOverride" +
-      "MapValue\022\024\n\014random_value\030\004 \001(\002BM\n\031emu.gr" +
-      "asscutter.net.protoB0AbilityActionSetRan" +
-      "domOverrideMapValueOuterClassb\006proto3"
+      "MapValue\022\024\n\014random_value\030\001 \001(\002B\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

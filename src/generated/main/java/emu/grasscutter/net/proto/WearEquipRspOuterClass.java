@@ -18,25 +18,17 @@ public final class WearEquipRspOuterClass {
       // @@protoc_insertion_point(interface_extends:WearEquipRsp)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint64 equip_guid = 3;</code>
-     * @return The equipGuid.
-     */
     long getEquipGuid();
 
-    /**
-     * <code>uint64 avatar_guid = 7;</code>
-     * @return The avatarGuid.
-     */
     long getAvatarGuid();
 
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 4288
+   * </pre>
+   *
    * Protobuf type {@code WearEquipRsp}
    */
   public static final class WearEquipRsp extends
@@ -130,10 +122,7 @@ public final class WearEquipRspOuterClass {
 
     public static final int EQUIP_GUID_FIELD_NUMBER = 3;
     private long equipGuid_;
-    /**
-     * <code>uint64 equip_guid = 3;</code>
-     * @return The equipGuid.
-     */
+
     @java.lang.Override
     public long getEquipGuid() {
       return equipGuid_;
@@ -141,10 +130,7 @@ public final class WearEquipRspOuterClass {
 
     public static final int AVATAR_GUID_FIELD_NUMBER = 7;
     private long avatarGuid_;
-    /**
-     * <code>uint64 avatar_guid = 7;</code>
-     * @return The avatarGuid.
-     */
+
     @java.lang.Override
     public long getAvatarGuid() {
       return avatarGuid_;
@@ -152,10 +138,7 @@ public final class WearEquipRspOuterClass {
 
     public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
-    /**
-     * <code>int32 retcode = 13;</code>
-     * @return The retcode.
-     */
+
     @java.lang.Override
     public int getRetcode() {
       return retcode_;
@@ -341,6 +324,10 @@ public final class WearEquipRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 4288
+     * </pre>
+     *
      * Protobuf type {@code WearEquipRsp}
      */
     public static final class Builder extends
@@ -500,93 +487,63 @@ public final class WearEquipRspOuterClass {
       }
 
       private long equipGuid_ ;
-      /**
-       * <code>uint64 equip_guid = 3;</code>
-       * @return The equipGuid.
-       */
+
       @java.lang.Override
       public long getEquipGuid() {
         return equipGuid_;
       }
-      /**
-       * <code>uint64 equip_guid = 3;</code>
-       * @param value The equipGuid to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setEquipGuid(long value) {
-        
+
         equipGuid_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint64 equip_guid = 3;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearEquipGuid() {
-        
+
         equipGuid_ = 0L;
         onChanged();
         return this;
       }
 
       private long avatarGuid_ ;
-      /**
-       * <code>uint64 avatar_guid = 7;</code>
-       * @return The avatarGuid.
-       */
+
       @java.lang.Override
       public long getAvatarGuid() {
         return avatarGuid_;
       }
-      /**
-       * <code>uint64 avatar_guid = 7;</code>
-       * @param value The avatarGuid to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setAvatarGuid(long value) {
-        
+
         avatarGuid_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint64 avatar_guid = 7;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearAvatarGuid() {
-        
+
         avatarGuid_ = 0L;
         onChanged();
         return this;
       }
 
       private int retcode_ ;
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return The retcode.
-       */
+
       @java.lang.Override
       public int getRetcode() {
         return retcode_;
       }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setRetcode(int value) {
-        
+
         retcode_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>int32 retcode = 13;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearRetcode() {
-        
+
         retcode_ = 0;
         onChanged();
         return this;
@@ -602,7 +559,6 @@ public final class WearEquipRspOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:WearEquipRsp)
     }
@@ -646,7 +602,7 @@ public final class WearEquipRspOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WearEquipRsp_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WearEquipRsp_fieldAccessorTable;
 
@@ -659,9 +615,9 @@ public final class WearEquipRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\022WearEquipRsp.proto\"H\n\014WearEquipRsp\022\022\n\n" +
-      "equip_guid\030\003 \001(\004\022\023\n\013avatar_guid\030\007 \001(\004\022\017\n" +
-      "\007retcode\030\r \001(\005B3\n\031emu.grasscutter.net.pr" +
-      "otoB\026WearEquipRspOuterClassb\006proto3"
+      "equip_guid\030\004 \001(\004\022\023\n\013avatar_guid\030\005 \001(\004\022\017\n" +
+      "\007retcode\030\t \001(\005B\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

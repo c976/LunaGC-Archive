@@ -15,13 +15,13 @@ public class HomeWorldNPCData extends GameResource {
     int avatarID;
 
     @SerializedName(
-            value = "npcID",
-            alternate = {"npcId", "HDLJMOGHICL"})
+            value = "npcId",
+            alternate = {"HDLJMOGHICL"})
     int npcId;
 
     @SerializedName(
-            value = "talkIDs",
-            alternate = {"talkIdList", "CKMCLCNIBLD"})
+            value = "talkIdList",
+            alternate = {"CKMCLCNIBLD"})
     List<Integer> talkIdList;
 
     @SerializedName(
@@ -30,8 +30,8 @@ public class HomeWorldNPCData extends GameResource {
     boolean isTalkRandomly;
 
     @SerializedName(
-            value = "quality",
-            alternate = {"npcQuality", "BHJOIKFHIBD"})
+            value = "npcQuality",
+            alternate = {"BHJOIKFHIBD"})
     ItemQuality npcQuality;
 
     @SerializedName(

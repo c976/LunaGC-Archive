@@ -19,12 +19,17 @@ public final class PlayerSetPauseRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 1771
+   * Obf: DJHGLEGIDAC
+   * </pre>
+   *
    * Protobuf type {@code PlayerSetPauseRsp}
    */
   public static final class PlayerSetPauseRsp extends
@@ -109,7 +114,7 @@ public final class PlayerSetPauseRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 4;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class PlayerSetPauseRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 1771
+     * Obf: DJHGLEGIDAC
+     * </pre>
+     *
      * Protobuf type {@code PlayerSetPauseRsp}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class PlayerSetPauseRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class PlayerSetPauseRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class PlayerSetPauseRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,9 +527,8 @@ public final class PlayerSetPauseRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027PlayerSetPauseRsp.proto\"$\n\021PlayerSetPa" +
-      "useRsp\022\017\n\007retcode\030\004 \001(\005B8\n\031emu.grasscutt" +
-      "er.net.protoB\033PlayerSetPauseRspOuterClas" +
-      "sb\006proto3"
+      "useRsp\022\017\n\007retcode\030\003 \001(\005B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

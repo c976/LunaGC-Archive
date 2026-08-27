@@ -19,12 +19,17 @@ public final class GetBargainDataReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bargain_id = 12;</code>
+     * <code>uint32 bargain_id = 13;</code>
      * @return The bargainId.
      */
     int getBargainId();
   }
   /**
+   * <pre>
+   * CmdId: 7358
+   * Obf: FPNNGBLHLDM
+   * </pre>
+   *
    * Protobuf type {@code GetBargainDataReq}
    */
   public static final class GetBargainDataReq extends
@@ -109,7 +114,7 @@ public final class GetBargainDataReqOuterClass {
     public static final int BARGAIN_ID_FIELD_NUMBER = 12;
     private int bargainId_;
     /**
-     * <code>uint32 bargain_id = 12;</code>
+     * <code>uint32 bargain_id = 13;</code>
      * @return The bargainId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class GetBargainDataReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 7358
+     * Obf: FPNNGBLHLDM
+     * </pre>
+     *
      * Protobuf type {@code GetBargainDataReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class GetBargainDataReqOuterClass {
 
       private int bargainId_ ;
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 13;</code>
        * @return The bargainId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class GetBargainDataReqOuterClass {
         return bargainId_;
       }
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 13;</code>
        * @param value The bargainId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class GetBargainDataReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bargain_id = 12;</code>
+       * <code>uint32 bargain_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearBargainId() {
@@ -517,9 +527,8 @@ public final class GetBargainDataReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027GetBargainDataReq.proto\"\'\n\021GetBargainD" +
-      "ataReq\022\022\n\nbargain_id\030\014 \001(\rB8\n\031emu.grassc" +
-      "utter.net.protoB\033GetBargainDataReqOuterC" +
-      "lassb\006proto3"
+      "ataReq\022\022\n\nbargain_id\030\r \001(\rB\033\n\031emu.grassc" +
+      "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -13,7 +13,7 @@ import java.util.*;
 @ResourceType(name = "AvatarExcelConfigData.json", loadPriority = LoadPriority.LOW)
 public class AvatarData extends GameResource {
 
-    @Getter private String iconName;
+    private String iconName;
     @Getter private String bodyType;
     @Getter private String useType;
     @Getter private String qualityType;
@@ -149,13 +149,12 @@ public class AvatarData extends GameResource {
             }
         }
 
-        // Left commented out for a long while against a field name that no longer exists, so the map
-        // stayed null and getGrowthCurveById would have thrown at whoever called it first.
-        this.growthCurveMap = new Int2ObjectOpenHashMap<>();
-        for (PropGrowCurve growCurve : this.propGrowCurves) {
+        /*
+        for (PropGrowCurve growCurve : this.PropGrowCurves) {
             FightProperty prop = FightProperty.getPropByName(growCurve.getType());
-            if (prop != null) this.growthCurveMap.put(prop.getId(), growCurve.getGrowCurve());
+            this.growthCurveMap.put(prop.getId(), growCurve.getGrowCurve());
         }
+        */
 
         // Cache abilities
         this.buildEmbryo();
@@ -177,13 +176,6 @@ public class AvatarData extends GameResource {
                     this.abilitieNames.add(ability);
                 }
             }
-        }
-
-        // An avatar whose ability config is absent from the resource dump gets no embryo at all.
-        // TeamManager appends to this list without a null check, so hand back an empty one rather
-        // than null and let such an avatar simply have no abilities.
-        if (this.abilities == null) {
-            this.abilities = new IntArrayList();
         }
     }
 }

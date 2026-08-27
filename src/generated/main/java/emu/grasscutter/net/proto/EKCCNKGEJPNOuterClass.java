@@ -19,28 +19,28 @@ public final class EKCCNKGEJPNOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
-     */
-    int getLevelId();
-
-    /**
-     * <code>bool is_open = 5;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
-
-    /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
 
     /**
-     * <code>uint32 NHEFNKONPEI = 10;</code>
-     * @return The nHEFNKONPEI.
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
      */
-    int getNHEFNKONPEI();
+    boolean getIsOpen();
+
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    int getLevelId();
+
+    /**
+     * <code>uint32 CKOCCKMBGJN = 8;</code>
+     * @return The cKOCCKMBGJN.
+     */
+    int getCKOCCKMBGJN();
   }
   /**
    * Protobuf type {@code EKCCNKGEJPN}
@@ -87,24 +87,24 @@ public final class EKCCNKGEJPNOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 64: {
 
-              levelId_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 48: {
-
-              isFinish_ = input.readBool();
+              cKOCCKMBGJN_ = input.readUInt32();
               break;
             }
             case 80: {
 
-              nHEFNKONPEI_ = input.readUInt32();
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 96: {
+
+              levelId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isFinish_ = input.readBool();
               break;
             }
             default: {
@@ -139,32 +139,10 @@ public final class EKCCNKGEJPNOuterClass {
               emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN.class, emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN.Builder.class);
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 2;
-    private int levelId_;
-    /**
-     * <code>uint32 level_id = 2;</code>
-     * @return The levelId.
-     */
-    @java.lang.Override
-    public int getLevelId() {
-      return levelId_;
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 5;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 5;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
-    }
-
-    public static final int IS_FINISH_FIELD_NUMBER = 6;
+    public static final int IS_FINISH_FIELD_NUMBER = 14;
     private boolean isFinish_;
     /**
-     * <code>bool is_finish = 6;</code>
+     * <code>bool is_finish = 14;</code>
      * @return The isFinish.
      */
     @java.lang.Override
@@ -172,15 +150,37 @@ public final class EKCCNKGEJPNOuterClass {
       return isFinish_;
     }
 
-    public static final int NHEFNKONPEI_FIELD_NUMBER = 10;
-    private int nHEFNKONPEI_;
+    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    private boolean isOpen_;
     /**
-     * <code>uint32 NHEFNKONPEI = 10;</code>
-     * @return The nHEFNKONPEI.
+     * <code>bool is_open = 10;</code>
+     * @return The isOpen.
      */
     @java.lang.Override
-    public int getNHEFNKONPEI() {
-      return nHEFNKONPEI_;
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    private int levelId_;
+    /**
+     * <code>uint32 level_id = 12;</code>
+     * @return The levelId.
+     */
+    @java.lang.Override
+    public int getLevelId() {
+      return levelId_;
+    }
+
+    public static final int CKOCCKMBGJN_FIELD_NUMBER = 8;
+    private int cKOCCKMBGJN_;
+    /**
+     * <code>uint32 CKOCCKMBGJN = 8;</code>
+     * @return The cKOCCKMBGJN.
+     */
+    @java.lang.Override
+    public int getCKOCCKMBGJN() {
+      return cKOCCKMBGJN_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -197,17 +197,17 @@ public final class EKCCNKGEJPNOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (levelId_ != 0) {
-        output.writeUInt32(2, levelId_);
+      if (cKOCCKMBGJN_ != 0) {
+        output.writeUInt32(8, cKOCCKMBGJN_);
       }
       if (isOpen_ != false) {
-        output.writeBool(5, isOpen_);
+        output.writeBool(10, isOpen_);
+      }
+      if (levelId_ != 0) {
+        output.writeUInt32(12, levelId_);
       }
       if (isFinish_ != false) {
-        output.writeBool(6, isFinish_);
-      }
-      if (nHEFNKONPEI_ != 0) {
-        output.writeUInt32(10, nHEFNKONPEI_);
+        output.writeBool(14, isFinish_);
       }
       unknownFields.writeTo(output);
     }
@@ -218,21 +218,21 @@ public final class EKCCNKGEJPNOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (levelId_ != 0) {
+      if (cKOCCKMBGJN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, levelId_);
+          .computeUInt32Size(8, cKOCCKMBGJN_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isOpen_);
+          .computeBoolSize(10, isOpen_);
+      }
+      if (levelId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, levelId_);
       }
       if (isFinish_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isFinish_);
-      }
-      if (nHEFNKONPEI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, nHEFNKONPEI_);
+          .computeBoolSize(14, isFinish_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -249,14 +249,14 @@ public final class EKCCNKGEJPNOuterClass {
       }
       emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN other = (emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN) obj;
 
-      if (getLevelId()
-          != other.getLevelId()) return false;
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
       if (getIsFinish()
           != other.getIsFinish()) return false;
-      if (getNHEFNKONPEI()
-          != other.getNHEFNKONPEI()) return false;
+      if (getIsOpen()
+          != other.getIsOpen()) return false;
+      if (getLevelId()
+          != other.getLevelId()) return false;
+      if (getCKOCCKMBGJN()
+          != other.getCKOCCKMBGJN()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -268,16 +268,16 @@ public final class EKCCNKGEJPNOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getLevelId();
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + NHEFNKONPEI_FIELD_NUMBER;
-      hash = (53 * hash) + getNHEFNKONPEI();
+      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOpen());
+      hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + CKOCCKMBGJN_FIELD_NUMBER;
+      hash = (53 * hash) + getCKOCCKMBGJN();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,13 +411,13 @@ public final class EKCCNKGEJPNOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        levelId_ = 0;
+        isFinish_ = false;
 
         isOpen_ = false;
 
-        isFinish_ = false;
+        levelId_ = 0;
 
-        nHEFNKONPEI_ = 0;
+        cKOCCKMBGJN_ = 0;
 
         return this;
       }
@@ -445,10 +445,10 @@ public final class EKCCNKGEJPNOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN buildPartial() {
         emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN result = new emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN(this);
-        result.levelId_ = levelId_;
-        result.isOpen_ = isOpen_;
         result.isFinish_ = isFinish_;
-        result.nHEFNKONPEI_ = nHEFNKONPEI_;
+        result.isOpen_ = isOpen_;
+        result.levelId_ = levelId_;
+        result.cKOCCKMBGJN_ = cKOCCKMBGJN_;
         onBuilt();
         return result;
       }
@@ -497,17 +497,17 @@ public final class EKCCNKGEJPNOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN other) {
         if (other == emu.grasscutter.net.proto.EKCCNKGEJPNOuterClass.EKCCNKGEJPN.getDefaultInstance()) return this;
-        if (other.getLevelId() != 0) {
-          setLevelId(other.getLevelId());
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
         }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
         }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
+        if (other.getLevelId() != 0) {
+          setLevelId(other.getLevelId());
         }
-        if (other.getNHEFNKONPEI() != 0) {
-          setNHEFNKONPEI(other.getNHEFNKONPEI());
+        if (other.getCKOCCKMBGJN() != 0) {
+          setCKOCCKMBGJN(other.getCKOCCKMBGJN());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -538,71 +538,9 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
 
-      private int levelId_ ;
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return The levelId.
-       */
-      @java.lang.Override
-      public int getLevelId() {
-        return levelId_;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @param value The levelId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevelId(int value) {
-        
-        levelId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevelId() {
-        
-        levelId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 5;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 5;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
       private boolean isFinish_ ;
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 14;</code>
        * @return The isFinish.
        */
       @java.lang.Override
@@ -610,7 +548,7 @@ public final class EKCCNKGEJPNOuterClass {
         return isFinish_;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 14;</code>
        * @param value The isFinish to set.
        * @return This builder for chaining.
        */
@@ -621,7 +559,7 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finish = 6;</code>
+       * <code>bool is_finish = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinish() {
@@ -631,33 +569,95 @@ public final class EKCCNKGEJPNOuterClass {
         return this;
       }
 
-      private int nHEFNKONPEI_ ;
+      private boolean isOpen_ ;
       /**
-       * <code>uint32 NHEFNKONPEI = 10;</code>
-       * @return The nHEFNKONPEI.
+       * <code>bool is_open = 10;</code>
+       * @return The isOpen.
        */
       @java.lang.Override
-      public int getNHEFNKONPEI() {
-        return nHEFNKONPEI_;
+      public boolean getIsOpen() {
+        return isOpen_;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 10;</code>
-       * @param value The nHEFNKONPEI to set.
+       * <code>bool is_open = 10;</code>
+       * @param value The isOpen to set.
        * @return This builder for chaining.
        */
-      public Builder setNHEFNKONPEI(int value) {
+      public Builder setIsOpen(boolean value) {
         
-        nHEFNKONPEI_ = value;
+        isOpen_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NHEFNKONPEI = 10;</code>
+       * <code>bool is_open = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNHEFNKONPEI() {
+      public Builder clearIsOpen() {
         
-        nHEFNKONPEI_ = 0;
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int levelId_ ;
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return The levelId.
+       */
+      @java.lang.Override
+      public int getLevelId() {
+        return levelId_;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @param value The levelId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevelId(int value) {
+        
+        levelId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevelId() {
+        
+        levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int cKOCCKMBGJN_ ;
+      /**
+       * <code>uint32 CKOCCKMBGJN = 8;</code>
+       * @return The cKOCCKMBGJN.
+       */
+      @java.lang.Override
+      public int getCKOCCKMBGJN() {
+        return cKOCCKMBGJN_;
+      }
+      /**
+       * <code>uint32 CKOCCKMBGJN = 8;</code>
+       * @param value The cKOCCKMBGJN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setCKOCCKMBGJN(int value) {
+        
+        cKOCCKMBGJN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 CKOCCKMBGJN = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearCKOCCKMBGJN() {
+        
+        cKOCCKMBGJN_ = 0;
         onChanged();
         return this;
       }
@@ -728,11 +728,10 @@ public final class EKCCNKGEJPNOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021EKCCNKGEJPN.proto\"X\n\013EKCCNKGEJPN\022\020\n\010le" +
-      "vel_id\030\002 \001(\r\022\017\n\007is_open\030\005 \001(\010\022\021\n\tis_fini" +
-      "sh\030\006 \001(\010\022\023\n\013NHEFNKONPEI\030\n \001(\rB2\n\031emu.gra" +
-      "sscutter.net.protoB\025EKCCNKGEJPNOuterClas" +
-      "sb\006proto3"
+      "\n\021EKCCNKGEJPN.proto\"X\n\013EKCCNKGEJPN\022\021\n\tis" +
+      "_finish\030\016 \001(\010\022\017\n\007is_open\030\n \001(\010\022\020\n\010level_" +
+      "id\030\014 \001(\r\022\023\n\013CKOCCKMBGJN\030\010 \001(\rB\033\n\031emu.gra" +
+      "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -743,7 +742,7 @@ public final class EKCCNKGEJPNOuterClass {
     internal_static_EKCCNKGEJPN_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EKCCNKGEJPN_descriptor,
-        new java.lang.String[] { "LevelId", "IsOpen", "IsFinish", "NHEFNKONPEI", });
+        new java.lang.String[] { "IsFinish", "IsOpen", "LevelId", "CKOCCKMBGJN", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

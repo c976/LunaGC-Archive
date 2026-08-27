@@ -116,7 +116,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
               msgType_ = rawValue;
               break;
             }
-            case 32: {
+            case 40: {
 
               isDrop_ = input.readBool();
               break;
@@ -210,7 +210,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
     }
     private int jHKIIFBAHMCMemoizedSerializedSize = -1;
 
-    public static final int IS_DROP_FIELD_NUMBER = 4;
+    public static final int IS_DROP_FIELD_NUMBER = 5;
     private boolean isDrop_;
     /**
      * <code>bool is_drop = 9;</code>
@@ -270,7 +270,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
         output.writeEnum(11, msgType_);
       }
       if (isDrop_ != false) {
-        output.writeBool(4, isDrop_);
+        output.writeBool(5, isDrop_);
       }
       if (getJHKIIFBAHMCList().size() > 0) {
         output.writeUInt32NoTag(128002);
@@ -297,7 +297,7 @@ public final class CheckAddItemExceedLimitNotifyOuterClass {
       }
       if (isDrop_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isDrop_);
+          .computeBoolSize(5, isDrop_);
       }
       {
         int dataSize = 0;

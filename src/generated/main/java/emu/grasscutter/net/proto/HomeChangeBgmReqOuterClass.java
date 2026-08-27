@@ -19,12 +19,17 @@ public final class HomeChangeBgmReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bgm_id = 13;</code>
+     * <code>uint32 bgm_id = 1;</code>
      * @return The bgmId.
      */
     int getBgmId();
   }
   /**
+   * <pre>
+   * CmdId: 28739
+   * Obf: EONIDLEEINE
+   * </pre>
+   *
    * Protobuf type {@code HomeChangeBgmReq}
    */
   public static final class HomeChangeBgmReq extends
@@ -109,7 +114,7 @@ public final class HomeChangeBgmReqOuterClass {
     public static final int BGM_ID_FIELD_NUMBER = 13;
     private int bgmId_;
     /**
-     * <code>uint32 bgm_id = 13;</code>
+     * <code>uint32 bgm_id = 1;</code>
      * @return The bgmId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class HomeChangeBgmReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 28739
+     * Obf: EONIDLEEINE
+     * </pre>
+     *
      * Protobuf type {@code HomeChangeBgmReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class HomeChangeBgmReqOuterClass {
 
       private int bgmId_ ;
       /**
-       * <code>uint32 bgm_id = 13;</code>
+       * <code>uint32 bgm_id = 1;</code>
        * @return The bgmId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class HomeChangeBgmReqOuterClass {
         return bgmId_;
       }
       /**
-       * <code>uint32 bgm_id = 13;</code>
+       * <code>uint32 bgm_id = 1;</code>
        * @param value The bgmId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class HomeChangeBgmReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bgm_id = 13;</code>
+       * <code>uint32 bgm_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearBgmId() {
@@ -517,9 +527,8 @@ public final class HomeChangeBgmReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeChangeBgmReq.proto\"\"\n\020HomeChangeBg" +
-      "mReq\022\016\n\006bgm_id\030\r \001(\rB7\n\031emu.grasscutter." +
-      "net.protoB\032HomeChangeBgmReqOuterClassb\006p" +
-      "roto3"
+      "mReq\022\016\n\006bgm_id\030\001 \001(\rB\033\n\031emu.grasscutter." +
+      "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

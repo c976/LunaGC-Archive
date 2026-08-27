@@ -37,10 +37,6 @@ public final class PlayerProgressManager extends BasePlayerDataManager {
                     // player at the start of the game.
                     // This should be removed when city reputation is implemented.
                     );
-
-    // Open states 7.0 added that sit behind OPEN_STATE_COND_QUEST and nothing else. With questing
-    // off nothing ever satisfies that condition, so the features stay locked for good rather than
-    // just unlocking late - the Nod-Krai and Natlan menu entries among them. Unlocked outright.
     public static final Set<Integer> QUEST_GATED_7_0_OPEN_STATES =
             Set.of(6701, 6702, 6706, 7011, 7014, 7015, 7016, 7021, 7025, 7055, 7056, 7059);
 

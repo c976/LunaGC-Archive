@@ -19,34 +19,28 @@ public final class DKKMKBDDLOJOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 3;</code>
-     * @return The isOpen.
+     * <code>uint32 OMEBOHLACPH = 2;</code>
+     * @return The oMEBOHLACPH.
      */
-    boolean getIsOpen();
+    int getOMEBOHLACPH();
 
     /**
-     * <code>bool is_finish = 8;</code>
-     * @return The isFinish.
-     */
-    boolean getIsFinish();
-
-    /**
-     * <code>uint32 PAGGBIOEHOO = 9;</code>
-     * @return The pAGGBIOEHOO.
-     */
-    int getPAGGBIOEHOO();
-
-    /**
-     * <code>float CJFPPKKJLMK = 11;</code>
-     * @return The cJFPPKKJLMK.
-     */
-    float getCJFPPKKJLMK();
-
-    /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     int getLevelId();
+
+    /**
+     * <code>bool FLALDNALPJN = 8;</code>
+     * @return The fLALDNALPJN.
+     */
+    boolean getFLALDNALPJN();
+
+    /**
+     * <code>bool FDDKJDOMCBM = 15;</code>
+     * @return The fDDKJDOMCBM.
+     */
+    boolean getFDDKJDOMCBM();
   }
   /**
    * Protobuf type {@code DKKMKBDDLOJ}
@@ -93,29 +87,24 @@ public final class DKKMKBDDLOJOuterClass {
             case 0:
               done = true;
               break;
+            case 16: {
+
+              oMEBOHLACPH_ = input.readUInt32();
+              break;
+            }
             case 24: {
 
-              isOpen_ = input.readBool();
+              levelId_ = input.readUInt32();
               break;
             }
             case 64: {
 
-              isFinish_ = input.readBool();
+              fLALDNALPJN_ = input.readBool();
               break;
             }
-            case 72: {
+            case 120: {
 
-              pAGGBIOEHOO_ = input.readUInt32();
-              break;
-            }
-            case 93: {
-
-              cJFPPKKJLMK_ = input.readFloat();
-              break;
-            }
-            case 96: {
-
-              levelId_ = input.readUInt32();
+              fDDKJDOMCBM_ = input.readBool();
               break;
             }
             default: {
@@ -150,59 +139,48 @@ public final class DKKMKBDDLOJOuterClass {
               emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ.class, emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 3;
-    private boolean isOpen_;
+    public static final int OMEBOHLACPH_FIELD_NUMBER = 2;
+    private int oMEBOHLACPH_;
     /**
-     * <code>bool is_open = 3;</code>
-     * @return The isOpen.
+     * <code>uint32 OMEBOHLACPH = 2;</code>
+     * @return The oMEBOHLACPH.
      */
     @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
+    public int getOMEBOHLACPH() {
+      return oMEBOHLACPH_;
     }
 
-    public static final int IS_FINISH_FIELD_NUMBER = 8;
-    private boolean isFinish_;
-    /**
-     * <code>bool is_finish = 8;</code>
-     * @return The isFinish.
-     */
-    @java.lang.Override
-    public boolean getIsFinish() {
-      return isFinish_;
-    }
-
-    public static final int PAGGBIOEHOO_FIELD_NUMBER = 9;
-    private int pAGGBIOEHOO_;
-    /**
-     * <code>uint32 PAGGBIOEHOO = 9;</code>
-     * @return The pAGGBIOEHOO.
-     */
-    @java.lang.Override
-    public int getPAGGBIOEHOO() {
-      return pAGGBIOEHOO_;
-    }
-
-    public static final int CJFPPKKJLMK_FIELD_NUMBER = 11;
-    private float cJFPPKKJLMK_;
-    /**
-     * <code>float CJFPPKKJLMK = 11;</code>
-     * @return The cJFPPKKJLMK.
-     */
-    @java.lang.Override
-    public float getCJFPPKKJLMK() {
-      return cJFPPKKJLMK_;
-    }
-
-    public static final int LEVEL_ID_FIELD_NUMBER = 12;
+    public static final int LEVEL_ID_FIELD_NUMBER = 3;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 12;</code>
+     * <code>uint32 level_id = 3;</code>
      * @return The levelId.
      */
     @java.lang.Override
     public int getLevelId() {
       return levelId_;
+    }
+
+    public static final int FLALDNALPJN_FIELD_NUMBER = 8;
+    private boolean fLALDNALPJN_;
+    /**
+     * <code>bool FLALDNALPJN = 8;</code>
+     * @return The fLALDNALPJN.
+     */
+    @java.lang.Override
+    public boolean getFLALDNALPJN() {
+      return fLALDNALPJN_;
+    }
+
+    public static final int FDDKJDOMCBM_FIELD_NUMBER = 15;
+    private boolean fDDKJDOMCBM_;
+    /**
+     * <code>bool FDDKJDOMCBM = 15;</code>
+     * @return The fDDKJDOMCBM.
+     */
+    @java.lang.Override
+    public boolean getFDDKJDOMCBM() {
+      return fDDKJDOMCBM_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -219,20 +197,17 @@ public final class DKKMKBDDLOJOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(3, isOpen_);
-      }
-      if (isFinish_ != false) {
-        output.writeBool(8, isFinish_);
-      }
-      if (pAGGBIOEHOO_ != 0) {
-        output.writeUInt32(9, pAGGBIOEHOO_);
-      }
-      if (cJFPPKKJLMK_ != 0F) {
-        output.writeFloat(11, cJFPPKKJLMK_);
+      if (oMEBOHLACPH_ != 0) {
+        output.writeUInt32(2, oMEBOHLACPH_);
       }
       if (levelId_ != 0) {
-        output.writeUInt32(12, levelId_);
+        output.writeUInt32(3, levelId_);
+      }
+      if (fLALDNALPJN_ != false) {
+        output.writeBool(8, fLALDNALPJN_);
+      }
+      if (fDDKJDOMCBM_ != false) {
+        output.writeBool(15, fDDKJDOMCBM_);
       }
       unknownFields.writeTo(output);
     }
@@ -243,25 +218,21 @@ public final class DKKMKBDDLOJOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
+      if (oMEBOHLACPH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isOpen_);
-      }
-      if (isFinish_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isFinish_);
-      }
-      if (pAGGBIOEHOO_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, pAGGBIOEHOO_);
-      }
-      if (cJFPPKKJLMK_ != 0F) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(11, cJFPPKKJLMK_);
+          .computeUInt32Size(2, oMEBOHLACPH_);
       }
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, levelId_);
+          .computeUInt32Size(3, levelId_);
+      }
+      if (fLALDNALPJN_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, fLALDNALPJN_);
+      }
+      if (fDDKJDOMCBM_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(15, fDDKJDOMCBM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -278,17 +249,14 @@ public final class DKKMKBDDLOJOuterClass {
       }
       emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ other = (emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ) obj;
 
-      if (getIsOpen()
-          != other.getIsOpen()) return false;
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
-      if (getPAGGBIOEHOO()
-          != other.getPAGGBIOEHOO()) return false;
-      if (java.lang.Float.floatToIntBits(getCJFPPKKJLMK())
-          != java.lang.Float.floatToIntBits(
-              other.getCJFPPKKJLMK())) return false;
+      if (getOMEBOHLACPH()
+          != other.getOMEBOHLACPH()) return false;
       if (getLevelId()
           != other.getLevelId()) return false;
+      if (getFLALDNALPJN()
+          != other.getFLALDNALPJN()) return false;
+      if (getFDDKJDOMCBM()
+          != other.getFDDKJDOMCBM()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -300,19 +268,16 @@ public final class DKKMKBDDLOJOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
-      hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsFinish());
-      hash = (37 * hash) + PAGGBIOEHOO_FIELD_NUMBER;
-      hash = (53 * hash) + getPAGGBIOEHOO();
-      hash = (37 * hash) + CJFPPKKJLMK_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getCJFPPKKJLMK());
+      hash = (37 * hash) + OMEBOHLACPH_FIELD_NUMBER;
+      hash = (53 * hash) + getOMEBOHLACPH();
       hash = (37 * hash) + LEVEL_ID_FIELD_NUMBER;
       hash = (53 * hash) + getLevelId();
+      hash = (37 * hash) + FLALDNALPJN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFLALDNALPJN());
+      hash = (37 * hash) + FDDKJDOMCBM_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getFDDKJDOMCBM());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -446,15 +411,13 @@ public final class DKKMKBDDLOJOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isOpen_ = false;
-
-        isFinish_ = false;
-
-        pAGGBIOEHOO_ = 0;
-
-        cJFPPKKJLMK_ = 0F;
+        oMEBOHLACPH_ = 0;
 
         levelId_ = 0;
+
+        fLALDNALPJN_ = false;
+
+        fDDKJDOMCBM_ = false;
 
         return this;
       }
@@ -482,11 +445,10 @@ public final class DKKMKBDDLOJOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ buildPartial() {
         emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ result = new emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ(this);
-        result.isOpen_ = isOpen_;
-        result.isFinish_ = isFinish_;
-        result.pAGGBIOEHOO_ = pAGGBIOEHOO_;
-        result.cJFPPKKJLMK_ = cJFPPKKJLMK_;
+        result.oMEBOHLACPH_ = oMEBOHLACPH_;
         result.levelId_ = levelId_;
+        result.fLALDNALPJN_ = fLALDNALPJN_;
+        result.fDDKJDOMCBM_ = fDDKJDOMCBM_;
         onBuilt();
         return result;
       }
@@ -535,20 +497,17 @@ public final class DKKMKBDDLOJOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ other) {
         if (other == emu.grasscutter.net.proto.DKKMKBDDLOJOuterClass.DKKMKBDDLOJ.getDefaultInstance()) return this;
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
-        }
-        if (other.getPAGGBIOEHOO() != 0) {
-          setPAGGBIOEHOO(other.getPAGGBIOEHOO());
-        }
-        if (other.getCJFPPKKJLMK() != 0F) {
-          setCJFPPKKJLMK(other.getCJFPPKKJLMK());
+        if (other.getOMEBOHLACPH() != 0) {
+          setOMEBOHLACPH(other.getOMEBOHLACPH());
         }
         if (other.getLevelId() != 0) {
           setLevelId(other.getLevelId());
+        }
+        if (other.getFLALDNALPJN() != false) {
+          setFLALDNALPJN(other.getFLALDNALPJN());
+        }
+        if (other.getFDDKJDOMCBM() != false) {
+          setFDDKJDOMCBM(other.getFDDKJDOMCBM());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -579,133 +538,40 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
 
-      private boolean isOpen_ ;
+      private int oMEBOHLACPH_ ;
       /**
-       * <code>bool is_open = 3;</code>
-       * @return The isOpen.
+       * <code>uint32 OMEBOHLACPH = 2;</code>
+       * @return The oMEBOHLACPH.
        */
       @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
+      public int getOMEBOHLACPH() {
+        return oMEBOHLACPH_;
       }
       /**
-       * <code>bool is_open = 3;</code>
-       * @param value The isOpen to set.
+       * <code>uint32 OMEBOHLACPH = 2;</code>
+       * @param value The oMEBOHLACPH to set.
        * @return This builder for chaining.
        */
-      public Builder setIsOpen(boolean value) {
+      public Builder setOMEBOHLACPH(int value) {
         
-        isOpen_ = value;
+        oMEBOHLACPH_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_open = 3;</code>
+       * <code>uint32 OMEBOHLACPH = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsOpen() {
+      public Builder clearOMEBOHLACPH() {
         
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isFinish_ ;
-      /**
-       * <code>bool is_finish = 8;</code>
-       * @return The isFinish.
-       */
-      @java.lang.Override
-      public boolean getIsFinish() {
-        return isFinish_;
-      }
-      /**
-       * <code>bool is_finish = 8;</code>
-       * @param value The isFinish to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsFinish(boolean value) {
-        
-        isFinish_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_finish = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsFinish() {
-        
-        isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int pAGGBIOEHOO_ ;
-      /**
-       * <code>uint32 PAGGBIOEHOO = 9;</code>
-       * @return The pAGGBIOEHOO.
-       */
-      @java.lang.Override
-      public int getPAGGBIOEHOO() {
-        return pAGGBIOEHOO_;
-      }
-      /**
-       * <code>uint32 PAGGBIOEHOO = 9;</code>
-       * @param value The pAGGBIOEHOO to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPAGGBIOEHOO(int value) {
-        
-        pAGGBIOEHOO_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 PAGGBIOEHOO = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPAGGBIOEHOO() {
-        
-        pAGGBIOEHOO_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private float cJFPPKKJLMK_ ;
-      /**
-       * <code>float CJFPPKKJLMK = 11;</code>
-       * @return The cJFPPKKJLMK.
-       */
-      @java.lang.Override
-      public float getCJFPPKKJLMK() {
-        return cJFPPKKJLMK_;
-      }
-      /**
-       * <code>float CJFPPKKJLMK = 11;</code>
-       * @param value The cJFPPKKJLMK to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCJFPPKKJLMK(float value) {
-        
-        cJFPPKKJLMK_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>float CJFPPKKJLMK = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCJFPPKKJLMK() {
-        
-        cJFPPKKJLMK_ = 0F;
+        oMEBOHLACPH_ = 0;
         onChanged();
         return this;
       }
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -713,7 +579,7 @@ public final class DKKMKBDDLOJOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 3;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -724,12 +590,74 @@ public final class DKKMKBDDLOJOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 12;</code>
+       * <code>uint32 level_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
         
         levelId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean fLALDNALPJN_ ;
+      /**
+       * <code>bool FLALDNALPJN = 8;</code>
+       * @return The fLALDNALPJN.
+       */
+      @java.lang.Override
+      public boolean getFLALDNALPJN() {
+        return fLALDNALPJN_;
+      }
+      /**
+       * <code>bool FLALDNALPJN = 8;</code>
+       * @param value The fLALDNALPJN to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFLALDNALPJN(boolean value) {
+        
+        fLALDNALPJN_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool FLALDNALPJN = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFLALDNALPJN() {
+        
+        fLALDNALPJN_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean fDDKJDOMCBM_ ;
+      /**
+       * <code>bool FDDKJDOMCBM = 15;</code>
+       * @return The fDDKJDOMCBM.
+       */
+      @java.lang.Override
+      public boolean getFDDKJDOMCBM() {
+        return fDDKJDOMCBM_;
+      }
+      /**
+       * <code>bool FDDKJDOMCBM = 15;</code>
+       * @param value The fDDKJDOMCBM to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFDDKJDOMCBM(boolean value) {
+        
+        fDDKJDOMCBM_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool FDDKJDOMCBM = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFDDKJDOMCBM() {
+        
+        fDDKJDOMCBM_ = false;
         onChanged();
         return this;
       }
@@ -800,11 +728,10 @@ public final class DKKMKBDDLOJOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021DKKMKBDDLOJ.proto\"m\n\013DKKMKBDDLOJ\022\017\n\007is" +
-      "_open\030\003 \001(\010\022\021\n\tis_finish\030\010 \001(\010\022\023\n\013PAGGBI" +
-      "OEHOO\030\t \001(\r\022\023\n\013CJFPPKKJLMK\030\013 \001(\002\022\020\n\010leve" +
-      "l_id\030\014 \001(\rB2\n\031emu.grasscutter.net.protoB" +
-      "\025DKKMKBDDLOJOuterClassb\006proto3"
+      "\n\021DKKMKBDDLOJ.proto\"^\n\013DKKMKBDDLOJ\022\023\n\013OM" +
+      "EBOHLACPH\030\002 \001(\r\022\020\n\010level_id\030\003 \001(\r\022\023\n\013FLA" +
+      "LDNALPJN\030\010 \001(\010\022\023\n\013FDDKJDOMCBM\030\017 \001(\010B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -815,7 +742,7 @@ public final class DKKMKBDDLOJOuterClass {
     internal_static_DKKMKBDDLOJ_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DKKMKBDDLOJ_descriptor,
-        new java.lang.String[] { "IsOpen", "IsFinish", "PAGGBIOEHOO", "CJFPPKKJLMK", "LevelId", });
+        new java.lang.String[] { "OMEBOHLACPH", "LevelId", "FLALDNALPJN", "FDDKJDOMCBM", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,7 +19,7 @@ public final class SetEquipLockStateReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_locked = 8;</code>
+     * <code>bool is_locked = 2;</code>
      * @return The isLocked.
      */
     boolean getIsLocked();
@@ -31,6 +31,11 @@ public final class SetEquipLockStateReqOuterClass {
     long getTargetEquipGuid();
   }
   /**
+   * <pre>
+   * CmdId: 8002
+   * Obf: POOALLFACLH
+   * </pre>
+   *
    * Protobuf type {@code SetEquipLockStateReq}
    */
   public static final class SetEquipLockStateReq extends
@@ -120,7 +125,7 @@ public final class SetEquipLockStateReqOuterClass {
     public static final int IS_LOCKED_FIELD_NUMBER = 8;
     private boolean isLocked_;
     /**
-     * <code>bool is_locked = 8;</code>
+     * <code>bool is_locked = 2;</code>
      * @return The isLocked.
      */
     @java.lang.Override
@@ -308,6 +313,11 @@ public final class SetEquipLockStateReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 8002
+     * Obf: POOALLFACLH
+     * </pre>
+     *
      * Protobuf type {@code SetEquipLockStateReq}
      */
     public static final class Builder extends
@@ -462,7 +472,7 @@ public final class SetEquipLockStateReqOuterClass {
 
       private boolean isLocked_ ;
       /**
-       * <code>bool is_locked = 8;</code>
+       * <code>bool is_locked = 2;</code>
        * @return The isLocked.
        */
       @java.lang.Override
@@ -470,7 +480,7 @@ public final class SetEquipLockStateReqOuterClass {
         return isLocked_;
       }
       /**
-       * <code>bool is_locked = 8;</code>
+       * <code>bool is_locked = 2;</code>
        * @param value The isLocked to set.
        * @return This builder for chaining.
        */
@@ -481,7 +491,7 @@ public final class SetEquipLockStateReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_locked = 8;</code>
+       * <code>bool is_locked = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLocked() {
@@ -589,10 +599,9 @@ public final class SetEquipLockStateReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032SetEquipLockStateReq.proto\"D\n\024SetEquip" +
-      "LockStateReq\022\021\n\tis_locked\030\010 \001(\010\022\031\n\021targe" +
-      "t_equip_guid\030\014 \001(\004B;\n\031emu.grasscutter.ne" +
-      "t.protoB\036SetEquipLockStateReqOuterClassb" +
-      "\006proto3"
+      "LockStateReq\022\021\n\tis_locked\030\002 \001(\010\022\031\n\021targe" +
+      "t_equip_guid\030\014 \001(\004B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

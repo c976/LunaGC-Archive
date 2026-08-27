@@ -19,12 +19,17 @@ public final class TowerTeamSelectRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 21023
+   * Obf: INPKIDGHCKO
+   * </pre>
+   *
    * Protobuf type {@code TowerTeamSelectRsp}
    */
   public static final class TowerTeamSelectRsp extends
@@ -109,7 +114,7 @@ public final class TowerTeamSelectRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 3;</code>
+     * <code>int32 retcode = 8;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class TowerTeamSelectRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21023
+     * Obf: INPKIDGHCKO
+     * </pre>
+     *
      * Protobuf type {@code TowerTeamSelectRsp}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class TowerTeamSelectRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 8;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class TowerTeamSelectRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 8;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class TowerTeamSelectRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 3;</code>
+       * <code>int32 retcode = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -517,9 +527,8 @@ public final class TowerTeamSelectRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030TowerTeamSelectRsp.proto\"%\n\022TowerTeamS" +
-      "electRsp\022\017\n\007retcode\030\003 \001(\005B9\n\031emu.grasscu" +
-      "tter.net.protoB\034TowerTeamSelectRspOuterC" +
-      "lassb\006proto3"
+      "electRsp\022\017\n\007retcode\030\010 \001(\005B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

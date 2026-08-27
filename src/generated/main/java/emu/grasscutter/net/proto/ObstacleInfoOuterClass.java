@@ -126,12 +126,12 @@ public final class ObstacleInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 120: {
 
               obstacleId_ = input.readInt32();
               break;
             }
-            case 80: {
+            case 40: {
               int rawValue = input.readEnum();
 
               shape_ = rawValue;
@@ -150,7 +150,7 @@ public final class ObstacleInfoOuterClass {
 
               break;
             }
-            case 122: {
+            case 26: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (center_ != null) {
                 subBuilder = center_.toBuilder();
@@ -163,7 +163,7 @@ public final class ObstacleInfoOuterClass {
 
               break;
             }
-            case 98: {
+            case 58: {
               emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion.Builder subBuilder = null;
               if (rotation_ != null) {
                 subBuilder = rotation_.toBuilder();
@@ -208,7 +208,7 @@ public final class ObstacleInfoOuterClass {
               emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.class, emu.grasscutter.net.proto.ObstacleInfoOuterClass.ObstacleInfo.Builder.class);
     }
 
-    public static final int CENTER_FIELD_NUMBER = 15;
+    public static final int CENTER_FIELD_NUMBER = 3;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector center_;
     /**
      * <code>.Vector center = 10;</code>
@@ -260,7 +260,7 @@ public final class ObstacleInfoOuterClass {
       return getExtents();
     }
 
-    public static final int ROTATION_FIELD_NUMBER = 12;
+    public static final int ROTATION_FIELD_NUMBER = 7;
     private emu.grasscutter.net.proto.MathQuaternionOuterClass.MathQuaternion rotation_;
     /**
      * <code>.MathQuaternion rotation = 12;</code>
@@ -286,7 +286,7 @@ public final class ObstacleInfoOuterClass {
       return getRotation();
     }
 
-    public static final int OBSTACLE_ID_FIELD_NUMBER = 7;
+    public static final int OBSTACLE_ID_FIELD_NUMBER = 15;
     private int obstacleId_;
     /**
      * <code>int32 obstacle_id = 1;</code>
@@ -297,7 +297,7 @@ public final class ObstacleInfoOuterClass {
       return obstacleId_;
     }
 
-    public static final int SHAPE_FIELD_NUMBER = 10;
+    public static final int SHAPE_FIELD_NUMBER = 5;
     private int shape_;
     /**
      * <code>.ShapeType shape = 4;</code>
@@ -331,19 +331,19 @@ public final class ObstacleInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (obstacleId_ != 0) {
-        output.writeInt32(7, obstacleId_);
+        output.writeInt32(15, obstacleId_);
       }
       if (shape_ != emu.grasscutter.net.proto.ShapeTypeOuterClass.ShapeType.ShapeType_OBSTACLE_SHAPE_CAPSULE.getNumber()) {
-        output.writeEnum(10, shape_);
+        output.writeEnum(5, shape_);
       }
       if (extents_ != null) {
         output.writeMessage(11, getExtents());
       }
       if (center_ != null) {
-        output.writeMessage(15, getCenter());
+        output.writeMessage(3, getCenter());
       }
       if (rotation_ != null) {
-        output.writeMessage(12, getRotation());
+        output.writeMessage(7, getRotation());
       }
       unknownFields.writeTo(output);
     }
@@ -356,11 +356,11 @@ public final class ObstacleInfoOuterClass {
       size = 0;
       if (obstacleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(7, obstacleId_);
+          .computeInt32Size(15, obstacleId_);
       }
       if (shape_ != emu.grasscutter.net.proto.ShapeTypeOuterClass.ShapeType.ShapeType_OBSTACLE_SHAPE_CAPSULE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(10, shape_);
+          .computeEnumSize(5, shape_);
       }
       if (extents_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -368,11 +368,11 @@ public final class ObstacleInfoOuterClass {
       }
       if (center_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getCenter());
+          .computeMessageSize(3, getCenter());
       }
       if (rotation_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(12, getRotation());
+          .computeMessageSize(7, getRotation());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

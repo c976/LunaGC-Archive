@@ -92,12 +92,12 @@ public final class HomeLimitedShopGoodsOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 80: {
 
               goodsId_ = input.readUInt32();
               break;
             }
-            case 80: {
+            case 128000: {
 
               buyLimit_ = input.readUInt32();
               break;
@@ -111,7 +111,7 @@ public final class HomeLimitedShopGoodsOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.parser(), extensionRegistry));
               break;
             }
-            case 114: {
+            case 74: {
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder subBuilder = null;
               if (goodsItem_ != null) {
                 subBuilder = goodsItem_.toBuilder();
@@ -124,12 +124,12 @@ public final class HomeLimitedShopGoodsOuterClass {
 
               break;
             }
-            case 72: {
+            case 32: {
 
               boughtNum_ = input.readUInt32();
               break;
             }
-            case 128000: {
+            case 128008: {
 
               disableType_ = input.readUInt32();
               break;
@@ -169,7 +169,7 @@ public final class HomeLimitedShopGoodsOuterClass {
               emu.grasscutter.net.proto.HomeLimitedShopGoodsOuterClass.HomeLimitedShopGoods.class, emu.grasscutter.net.proto.HomeLimitedShopGoodsOuterClass.HomeLimitedShopGoods.Builder.class);
     }
 
-    public static final int GOODS_ITEM_FIELD_NUMBER = 14;
+    public static final int GOODS_ITEM_FIELD_NUMBER = 9;
     private emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam goodsItem_;
 
     @java.lang.Override
@@ -217,7 +217,7 @@ public final class HomeLimitedShopGoodsOuterClass {
       return costItemList_.get(index);
     }
 
-    public static final int BUY_LIMIT_FIELD_NUMBER = 10;
+    public static final int BUY_LIMIT_FIELD_NUMBER = 16000;
     private int buyLimit_;
 
     @java.lang.Override
@@ -225,7 +225,7 @@ public final class HomeLimitedShopGoodsOuterClass {
       return buyLimit_;
     }
 
-    public static final int DISABLE_TYPE_FIELD_NUMBER = 16000;
+    public static final int DISABLE_TYPE_FIELD_NUMBER = 16001;
     private int disableType_;
 
     @java.lang.Override
@@ -233,7 +233,7 @@ public final class HomeLimitedShopGoodsOuterClass {
       return disableType_;
     }
 
-    public static final int GOODS_ID_FIELD_NUMBER = 3;
+    public static final int GOODS_ID_FIELD_NUMBER = 10;
     private int goodsId_;
 
     @java.lang.Override
@@ -241,7 +241,7 @@ public final class HomeLimitedShopGoodsOuterClass {
       return goodsId_;
     }
 
-    public static final int BOUGHT_NUM_FIELD_NUMBER = 9;
+    public static final int BOUGHT_NUM_FIELD_NUMBER = 4;
     private int boughtNum_;
 
     @java.lang.Override
@@ -264,22 +264,22 @@ public final class HomeLimitedShopGoodsOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (goodsId_ != 0) {
-        output.writeUInt32(3, goodsId_);
+        output.writeUInt32(10, goodsId_);
       }
       if (buyLimit_ != 0) {
-        output.writeUInt32(10, buyLimit_);
+        output.writeUInt32(16000, buyLimit_);
       }
       for (int i = 0; i < costItemList_.size(); i++) {
         output.writeMessage(8, costItemList_.get(i));
       }
       if (goodsItem_ != null) {
-        output.writeMessage(14, getGoodsItem());
+        output.writeMessage(9, getGoodsItem());
       }
       if (boughtNum_ != 0) {
-        output.writeUInt32(9, boughtNum_);
+        output.writeUInt32(4, boughtNum_);
       }
       if (disableType_ != 0) {
-        output.writeUInt32(16000, disableType_);
+        output.writeUInt32(16001, disableType_);
       }
       unknownFields.writeTo(output);
     }
@@ -292,11 +292,11 @@ public final class HomeLimitedShopGoodsOuterClass {
       size = 0;
       if (goodsId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, goodsId_);
+          .computeUInt32Size(10, goodsId_);
       }
       if (buyLimit_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, buyLimit_);
+          .computeUInt32Size(16000, buyLimit_);
       }
       for (int i = 0; i < costItemList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -304,15 +304,15 @@ public final class HomeLimitedShopGoodsOuterClass {
       }
       if (goodsItem_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, getGoodsItem());
+          .computeMessageSize(9, getGoodsItem());
       }
       if (boughtNum_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, boughtNum_);
+          .computeUInt32Size(4, boughtNum_);
       }
       if (disableType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(16000, disableType_);
+          .computeUInt32Size(16001, disableType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

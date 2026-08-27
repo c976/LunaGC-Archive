@@ -19,18 +19,23 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 slip_revive_point_id = 3;</code>
+     * <code>uint32 slip_revive_point_id = 5;</code>
      * @return The slipRevivePointId.
      */
     int getSlipRevivePointId();
 
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 1980
+   * Obf: CNEDCJKENNB
+   * </pre>
+   *
    * Protobuf type {@code DungeonSlipRevivePointActivateRsp}
    */
   public static final class DungeonSlipRevivePointActivateRsp extends
@@ -120,7 +125,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
     public static final int SLIP_REVIVE_POINT_ID_FIELD_NUMBER = 3;
     private int slipRevivePointId_;
     /**
-     * <code>uint32 slip_revive_point_id = 3;</code>
+     * <code>uint32 slip_revive_point_id = 5;</code>
      * @return The slipRevivePointId.
      */
     @java.lang.Override
@@ -131,7 +136,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 9;</code>
+     * <code>int32 retcode = 6;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -306,6 +311,11 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 1980
+     * Obf: CNEDCJKENNB
+     * </pre>
+     *
      * Protobuf type {@code DungeonSlipRevivePointActivateRsp}
      */
     public static final class Builder extends
@@ -460,7 +470,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
 
       private int slipRevivePointId_ ;
       /**
-       * <code>uint32 slip_revive_point_id = 3;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @return The slipRevivePointId.
        */
       @java.lang.Override
@@ -468,7 +478,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return slipRevivePointId_;
       }
       /**
-       * <code>uint32 slip_revive_point_id = 3;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @param value The slipRevivePointId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +489,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 slip_revive_point_id = 3;</code>
+       * <code>uint32 slip_revive_point_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearSlipRevivePointId() {
@@ -491,7 +501,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -499,7 +509,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -510,7 +520,7 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 9;</code>
+       * <code>int32 retcode = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,10 +598,9 @@ public final class DungeonSlipRevivePointActivateRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\'DungeonSlipRevivePointActivateRsp.prot" +
       "o\"R\n!DungeonSlipRevivePointActivateRsp\022\034" +
-      "\n\024slip_revive_point_id\030\003 \001(\r\022\017\n\007retcode\030" +
-      "\t \001(\005BH\n\031emu.grasscutter.net.protoB+Dung" +
-      "eonSlipRevivePointActivateRspOuterClassb" +
-      "\006proto3"
+      "\n\024slip_revive_point_id\030\005 \001(\r\022\017\n\007retcode\030" +
+      "\006 \001(\005B\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

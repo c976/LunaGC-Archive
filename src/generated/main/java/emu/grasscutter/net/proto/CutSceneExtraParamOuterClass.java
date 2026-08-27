@@ -18,24 +18,17 @@ public final class CutSceneExtraParamOuterClass {
       // @@protoc_insertion_point(interface_extends:CutSceneExtraParam)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @return A list containing the detailParamList.
-     */
     java.util.List<java.lang.Double> getDetailParamListList();
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @return The count of detailParamList.
-     */
+
     int getDetailParamListCount();
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The detailParamList at the given index.
-     */
+
     double getDetailParamList(int index);
   }
   /**
+   * <pre>
+   * Version: 5.8
+   * </pre>
+   *
    * Protobuf type {@code CutSceneExtraParam}
    */
   public static final class CutSceneExtraParam extends
@@ -140,27 +133,17 @@ public final class CutSceneExtraParamOuterClass {
 
     public static final int DETAIL_PARAM_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.DoubleList detailParamList_;
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @return A list containing the detailParamList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Double>
         getDetailParamListList() {
       return detailParamList_;
     }
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @return The count of detailParamList.
-     */
+
     public int getDetailParamListCount() {
       return detailParamList_.size();
     }
-    /**
-     * <code>repeated double detail_param_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The detailParamList at the given index.
-     */
+
     public double getDetailParamList(int index) {
       return detailParamList_.getDouble(index);
     }
@@ -336,6 +319,10 @@ public final class CutSceneExtraParamOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Version: 5.8
+     * </pre>
+     *
      * Protobuf type {@code CutSceneExtraParam}
      */
     public static final class Builder extends
@@ -502,36 +489,21 @@ public final class CutSceneExtraParamOuterClass {
           bitField0_ |= 0x00000001;
          }
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @return A list containing the detailParamList.
-       */
+
       public java.util.List<java.lang.Double>
           getDetailParamListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(detailParamList_) : detailParamList_;
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @return The count of detailParamList.
-       */
+
       public int getDetailParamListCount() {
         return detailParamList_.size();
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The detailParamList at the given index.
-       */
+
       public double getDetailParamList(int index) {
         return detailParamList_.getDouble(index);
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The detailParamList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setDetailParamList(
           int index, double value) {
         ensureDetailParamListIsMutable();
@@ -539,22 +511,14 @@ public final class CutSceneExtraParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @param value The detailParamList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addDetailParamList(double value) {
         ensureDetailParamListIsMutable();
         detailParamList_.addDouble(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @param values The detailParamList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllDetailParamList(
           java.lang.Iterable<? extends java.lang.Double> values) {
         ensureDetailParamListIsMutable();
@@ -563,10 +527,7 @@ public final class CutSceneExtraParamOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated double detail_param_list = 9;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearDetailParamList() {
         detailParamList_ = emptyDoubleList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -584,7 +545,6 @@ public final class CutSceneExtraParamOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:CutSceneExtraParam)
     }
@@ -628,7 +588,7 @@ public final class CutSceneExtraParamOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CutSceneExtraParam_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_CutSceneExtraParam_fieldAccessorTable;
 
@@ -641,9 +601,8 @@ public final class CutSceneExtraParamOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030CutSceneExtraParam.proto\"/\n\022CutSceneEx" +
-      "traParam\022\031\n\021detail_param_list\030\t \003(\001B9\n\031e" +
-      "mu.grasscutter.net.protoB\034CutSceneExtraP" +
-      "aramOuterClassb\006proto3"
+      "traParam\022\031\n\021detail_param_list\030\n \003(\001B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -76,17 +76,17 @@ public final class DropItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 32: {
 
               guid_ = input.readUInt64();
               break;
             }
-            case 104: {
+            case 64: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 8: {
+            case 80: {
               int rawValue = input.readEnum();
 
               storeType_ = rawValue;
@@ -124,7 +124,7 @@ public final class DropItemRspOuterClass {
               emu.grasscutter.net.proto.DropItemRspOuterClass.DropItemRsp.class, emu.grasscutter.net.proto.DropItemRspOuterClass.DropItemRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 13;
+    public static final int RETCODE_FIELD_NUMBER = 8;
     private int retcode_;
 
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class DropItemRspOuterClass {
       return retcode_;
     }
 
-    public static final int STORE_TYPE_FIELD_NUMBER = 1;
+    public static final int STORE_TYPE_FIELD_NUMBER = 10;
     private int storeType_;
 
     @java.lang.Override public int getStoreTypeValue() {
@@ -145,7 +145,7 @@ public final class DropItemRspOuterClass {
       return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
     }
 
-    public static final int GUID_FIELD_NUMBER = 5;
+    public static final int GUID_FIELD_NUMBER = 4;
     private long guid_;
 
     @java.lang.Override
@@ -168,13 +168,13 @@ public final class DropItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (guid_ != 0L) {
-        output.writeUInt64(5, guid_);
+        output.writeUInt64(4, guid_);
       }
       if (retcode_ != 0) {
-        output.writeInt32(13, retcode_);
+        output.writeInt32(8, retcode_);
       }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.StoreType_STORE_NONE.getNumber()) {
-        output.writeEnum(1, storeType_);
+        output.writeEnum(10, storeType_);
       }
       unknownFields.writeTo(output);
     }
@@ -187,15 +187,15 @@ public final class DropItemRspOuterClass {
       size = 0;
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, guid_);
+          .computeUInt64Size(4, guid_);
       }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(13, retcode_);
+          .computeInt32Size(8, retcode_);
       }
       if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.StoreType_STORE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(1, storeType_);
+          .computeEnumSize(10, storeType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

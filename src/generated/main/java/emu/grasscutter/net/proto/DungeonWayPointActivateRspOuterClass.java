@@ -19,18 +19,23 @@ public final class DungeonWayPointActivateRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 way_point_id = 9;</code>
+     * <code>uint32 way_point_id = 3;</code>
      * @return The wayPointId.
      */
     int getWayPointId();
 
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 21846
+   * Obf: IGKIPPJIMAJ
+   * </pre>
+   *
    * Protobuf type {@code DungeonWayPointActivateRsp}
    */
   public static final class DungeonWayPointActivateRsp extends
@@ -120,7 +125,7 @@ public final class DungeonWayPointActivateRspOuterClass {
     public static final int WAY_POINT_ID_FIELD_NUMBER = 9;
     private int wayPointId_;
     /**
-     * <code>uint32 way_point_id = 9;</code>
+     * <code>uint32 way_point_id = 3;</code>
      * @return The wayPointId.
      */
     @java.lang.Override
@@ -131,7 +136,7 @@ public final class DungeonWayPointActivateRspOuterClass {
     public static final int RETCODE_FIELD_NUMBER = 13;
     private int retcode_;
     /**
-     * <code>int32 retcode = 13;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -306,6 +311,11 @@ public final class DungeonWayPointActivateRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 21846
+     * Obf: IGKIPPJIMAJ
+     * </pre>
+     *
      * Protobuf type {@code DungeonWayPointActivateRsp}
      */
     public static final class Builder extends
@@ -460,7 +470,7 @@ public final class DungeonWayPointActivateRspOuterClass {
 
       private int wayPointId_ ;
       /**
-       * <code>uint32 way_point_id = 9;</code>
+       * <code>uint32 way_point_id = 3;</code>
        * @return The wayPointId.
        */
       @java.lang.Override
@@ -468,7 +478,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return wayPointId_;
       }
       /**
-       * <code>uint32 way_point_id = 9;</code>
+       * <code>uint32 way_point_id = 3;</code>
        * @param value The wayPointId to set.
        * @return This builder for chaining.
        */
@@ -479,7 +489,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 way_point_id = 9;</code>
+       * <code>uint32 way_point_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearWayPointId() {
@@ -491,7 +501,7 @@ public final class DungeonWayPointActivateRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -499,7 +509,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -510,7 +520,7 @@ public final class DungeonWayPointActivateRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 13;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -588,9 +598,8 @@ public final class DungeonWayPointActivateRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n DungeonWayPointActivateRsp.proto\"C\n\032Du" +
       "ngeonWayPointActivateRsp\022\024\n\014way_point_id" +
-      "\030\t \001(\r\022\017\n\007retcode\030\r \001(\005BA\n\031emu.grasscutt" +
-      "er.net.protoB$DungeonWayPointActivateRsp" +
-      "OuterClassb\006proto3"
+      "\030\003 \001(\r\022\017\n\007retcode\030\016 \001(\005B\033\n\031emu.grasscutt" +
+      "er.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

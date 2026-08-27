@@ -106,7 +106,7 @@ public final class AiSkillCdInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 82: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 skillCdMap_ = com.google.protobuf.MapField.newMapField(
                     SkillCdMapDefaultEntryHolder.defaultEntry);
@@ -250,7 +250,7 @@ public final class AiSkillCdInfoOuterClass {
       return map.get(key);
     }
 
-    public static final int SKILL_CD_MAP_FIELD_NUMBER = 1;
+    public static final int SKILL_CD_MAP_FIELD_NUMBER = 10;
     private static final class SkillCdMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -341,7 +341,7 @@ public final class AiSkillCdInfoOuterClass {
           output,
           internalGetSkillCdMap(),
           SkillCdMapDefaultEntryHolder.defaultEntry,
-          1);
+          10);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
@@ -365,7 +365,7 @@ public final class AiSkillCdInfoOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(1, skillCdMap__);
+            .computeMessageSize(10, skillCdMap__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetSkillGroupCdMap().getMap().entrySet()) {

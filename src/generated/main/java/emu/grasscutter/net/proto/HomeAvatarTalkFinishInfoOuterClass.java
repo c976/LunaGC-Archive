@@ -19,29 +19,33 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @return A list containing the finishTalkIdList.
      */
     java.util.List<java.lang.Integer> getFinishTalkIdListList();
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @return The count of finishTalkIdList.
      */
     int getFinishTalkIdListCount();
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The finishTalkIdList at the given index.
      */
     int getFinishTalkIdList(int index);
 
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     int getAvatarId();
   }
   /**
+   * <pre>
+   * Obf: HLKGIAEKCLP
+   * </pre>
+   *
    * Protobuf type {@code HomeAvatarTalkFinishInfo}
    */
   public static final class HomeAvatarTalkFinishInfo extends
@@ -152,7 +156,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
     public static final int FINISH_TALK_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList finishTalkIdList_;
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @return A list containing the finishTalkIdList.
      */
     @java.lang.Override
@@ -161,14 +165,14 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
       return finishTalkIdList_;
     }
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @return The count of finishTalkIdList.
      */
     public int getFinishTalkIdListCount() {
       return finishTalkIdList_.size();
     }
     /**
-     * <code>repeated uint32 finish_talk_id_list = 5;</code>
+     * <code>repeated uint32 finish_talk_id_list = 4;</code>
      * @param index The index of the element to return.
      * @return The finishTalkIdList at the given index.
      */
@@ -180,7 +184,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
     public static final int AVATAR_ID_FIELD_NUMBER = 12;
     private int avatarId_;
     /**
-     * <code>uint32 avatar_id = 12;</code>
+     * <code>uint32 avatar_id = 8;</code>
      * @return The avatarId.
      */
     @java.lang.Override
@@ -372,6 +376,10 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: HLKGIAEKCLP
+     * </pre>
+     *
      * Protobuf type {@code HomeAvatarTalkFinishInfo}
      */
     public static final class Builder extends
@@ -545,7 +553,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @return A list containing the finishTalkIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -554,14 +562,14 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
                  java.util.Collections.unmodifiableList(finishTalkIdList_) : finishTalkIdList_;
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @return The count of finishTalkIdList.
        */
       public int getFinishTalkIdListCount() {
         return finishTalkIdList_.size();
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @param index The index of the element to return.
        * @return The finishTalkIdList at the given index.
        */
@@ -569,7 +577,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return finishTalkIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @param index The index to set the value at.
        * @param value The finishTalkIdList to set.
        * @return This builder for chaining.
@@ -582,7 +590,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @param value The finishTalkIdList to add.
        * @return This builder for chaining.
        */
@@ -593,7 +601,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @param values The finishTalkIdList to add.
        * @return This builder for chaining.
        */
@@ -606,7 +614,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finish_talk_id_list = 5;</code>
+       * <code>repeated uint32 finish_talk_id_list = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishTalkIdList() {
@@ -618,7 +626,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
 
       private int avatarId_ ;
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return The avatarId.
        */
       @java.lang.Override
@@ -626,7 +634,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return avatarId_;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @param value The avatarId to set.
        * @return This builder for chaining.
        */
@@ -637,7 +645,7 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 avatar_id = 12;</code>
+       * <code>uint32 avatar_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearAvatarId() {
@@ -715,9 +723,8 @@ public final class HomeAvatarTalkFinishInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036HomeAvatarTalkFinishInfo.proto\"J\n\030Home" +
       "AvatarTalkFinishInfo\022\033\n\023finish_talk_id_l" +
-      "ist\030\005 \003(\r\022\021\n\tavatar_id\030\014 \001(\rB?\n\031emu.gras" +
-      "scutter.net.protoB\"HomeAvatarTalkFinishI" +
-      "nfoOuterClassb\006proto3"
+      "ist\030\004 \003(\r\022\021\n\tavatar_id\030\010 \001(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

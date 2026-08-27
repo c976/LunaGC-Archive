@@ -18,19 +18,15 @@ public final class PlayerPropChangeNotifyOuterClass {
       // @@protoc_insertion_point(interface_extends:PlayerPropChangeNotify)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 prop_type = 4;</code>
-     * @return The propType.
-     */
     int getPropType();
 
-    /**
-     * <code>uint32 prop_delta = 8;</code>
-     * @return The propDelta.
-     */
     int getPropDelta();
   }
   /**
+   * <pre>
+   * CmdId: 3321
+   * </pre>
+   *
    * Protobuf type {@code PlayerPropChangeNotify}
    */
   public static final class PlayerPropChangeNotify extends
@@ -119,10 +115,7 @@ public final class PlayerPropChangeNotifyOuterClass {
 
     public static final int PROP_TYPE_FIELD_NUMBER = 4;
     private int propType_;
-    /**
-     * <code>uint32 prop_type = 4;</code>
-     * @return The propType.
-     */
+
     @java.lang.Override
     public int getPropType() {
       return propType_;
@@ -130,10 +123,7 @@ public final class PlayerPropChangeNotifyOuterClass {
 
     public static final int PROP_DELTA_FIELD_NUMBER = 8;
     private int propDelta_;
-    /**
-     * <code>uint32 prop_delta = 8;</code>
-     * @return The propDelta.
-     */
+
     @java.lang.Override
     public int getPropDelta() {
       return propDelta_;
@@ -306,6 +296,10 @@ public final class PlayerPropChangeNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 3321
+     * </pre>
+     *
      * Protobuf type {@code PlayerPropChangeNotify}
      */
     public static final class Builder extends
@@ -459,62 +453,42 @@ public final class PlayerPropChangeNotifyOuterClass {
       }
 
       private int propType_ ;
-      /**
-       * <code>uint32 prop_type = 4;</code>
-       * @return The propType.
-       */
+
       @java.lang.Override
       public int getPropType() {
         return propType_;
       }
-      /**
-       * <code>uint32 prop_type = 4;</code>
-       * @param value The propType to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setPropType(int value) {
-        
+
         propType_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 prop_type = 4;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearPropType() {
-        
+
         propType_ = 0;
         onChanged();
         return this;
       }
 
       private int propDelta_ ;
-      /**
-       * <code>uint32 prop_delta = 8;</code>
-       * @return The propDelta.
-       */
+
       @java.lang.Override
       public int getPropDelta() {
         return propDelta_;
       }
-      /**
-       * <code>uint32 prop_delta = 8;</code>
-       * @param value The propDelta to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setPropDelta(int value) {
-        
+
         propDelta_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 prop_delta = 8;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearPropDelta() {
-        
+
         propDelta_ = 0;
         onChanged();
         return this;
@@ -530,7 +504,6 @@ public final class PlayerPropChangeNotifyOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:PlayerPropChangeNotify)
     }
@@ -574,7 +547,7 @@ public final class PlayerPropChangeNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_PlayerPropChangeNotify_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_PlayerPropChangeNotify_fieldAccessorTable;
 
@@ -587,10 +560,9 @@ public final class PlayerPropChangeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034PlayerPropChangeNotify.proto\"?\n\026Player" +
-      "PropChangeNotify\022\021\n\tprop_type\030\004 \001(\r\022\022\n\np" +
-      "rop_delta\030\010 \001(\rB=\n\031emu.grasscutter.net.p" +
-      "rotoB PlayerPropChangeNotifyOuterClassb\006" +
-      "proto3"
+      "PropChangeNotify\022\021\n\tprop_type\030\n \001(\r\022\022\n\np" +
+      "rop_delta\030\013 \001(\rB\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

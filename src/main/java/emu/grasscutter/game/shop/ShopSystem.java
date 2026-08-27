@@ -59,20 +59,15 @@ public class ShopSystem extends BaseGameSystem {
             }
 
             if (GAME_OPTIONS.enableShopItems) {
-                // Shop.json is the curated source and every one of its shops also exists in the
-                // excel data, so appending there would list those items twice. Fill only the
-                // shops it does not define.
                 GameData.getShopGoodsDataEntries()
                         .forEach(
                                 (k, v) -> {
-                                    int shopId = k.intValue();
-                                    if (getShopData().containsKey(shopId)) return;
-
-                                    var items = new ArrayList<ShopInfo>(v.size());
+                                    if (!getShopData().containsKey(k.intValue()))
+                                        getShopData().put(k.intValue(), new ArrayList<>());
                                     for (ShopGoodsData sgd : v) {
-                                        items.add(new ShopInfo(sgd));
+                                        var shopInfo = new ShopInfo(sgd);
+                                        getShopData().get(k.intValue()).add(shopInfo);
                                     }
-                                    getShopData().put(shopId, items);
                                 });
             }
         } catch (Exception e) {

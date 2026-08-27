@@ -31,11 +31,6 @@ import lombok.*;
 
 @Entity
 public final class TeamManager extends BasePlayerDataManager {
-    // Both from MoonPhaseConstValueExcelConfigData. Verdant Dew is "MoonOvergrow" in the configs.
-    public static final int MOONSIGN_MAX_LEVEL = 2;
-    public static final String VERDANT_DEW = "MoonOvergrowPoint_All";
-    public static final int VERDANT_DEW_CAP = 3;
-
     @Transient private final List<EntityAvatar> avatars;
     @Transient @Getter private final Set<EntityBaseGadget> gadgets;
     @Transient @Getter private final IntSet teamResonances;
@@ -162,14 +157,7 @@ public final class TeamManager extends BasePlayerDataManager {
     }
 
     public TeamInfo getCurrentTeamInfo() {
-        // The index and the list are both transient and set by different packets - the abyss picks
-        // teams in TowerTeamSelectReq and uses one in TowerEnterLevelReq - so a client that enters
-        // without selecting first, or that restarts a floor, can leave the index set with no list
-        // behind it. Falling through to the normal team is the right answer there; dereferencing is
-        // not.
-        if (temporaryTeam != null
-                && useTemporarilyTeamIndex >= 0
-                && useTemporarilyTeamIndex < temporaryTeam.size()) {
+        if (useTemporarilyTeamIndex >= 0 && useTemporarilyTeamIndex < temporaryTeam.size()) {
             return temporaryTeam.get(useTemporarilyTeamIndex);
         }
         if (this.getPlayer().isInMultiplayer()) {
@@ -343,32 +331,6 @@ public final class TeamManager extends BasePlayerDataManager {
         }
     }
 
-    /** Nod-Krai characters in the party, capped: 1 is Nascent Gleam, 2 Ascendant Gleam. */
-    public int getMoonsignLevel() {
-        long count = this.getActiveTeam().stream()
-            .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(e.getAvatar().getAvatarId()))
-            .count();
-
-        return (int) Math.min(count, MOONSIGN_MAX_LEVEL);
-    }
-
-    /** Seeds the dew only; from the first Lunar-Bloom onwards the client's own count wins. */
-    public void sendMoonsignState() {
-        int level = this.getMoonsignLevel();
-        int teamEntityId = this.getEntity().getId();
-
-        this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
-            teamEntityId, "SGV_MoonPhaseLevel", (float) level));
-
-        if (level > 0) {
-            this.getEntity().getGlobalAbilityValues().put(VERDANT_DEW, (float) VERDANT_DEW_CAP);
-            this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
-                teamEntityId, VERDANT_DEW, (float) VERDANT_DEW_CAP));
-        }
-
-        this.getPlayer().sendPacket(new PacketTeamMoonPhaseChangeNotify(level));
-    }
-
     public void updateTeamProperties() {
         this.updateTeamResonances();
         this.getWorld()
@@ -380,14 +342,34 @@ public final class TeamManager extends BasePlayerDataManager {
             .map(EntityAvatar::getAvatar)
             .forEach(Avatar::sendSkillExtraChargeMap);
 
-        this.sendMoonsignState();
+        long moonPhaseCount = this.getActiveTeam().stream()
+            .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(e.getAvatar().getAvatarId()))
+            .count();
+        this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
+            this.getEntity().getId(), "SGV_MoonPhaseLevel", (float) moonPhaseCount));
+        this.getEntity().getGlobalAbilityValues().put("SGV_MoonPhaseLevel", (float) moonPhaseCount);
+
+        if (moonPhaseCount > 0) {
+            this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
+                this.getEntity().getId(), "MoonOvergrowPoint_All", 100f));
+        }
+
+        this.getPlayer().sendPacket(new PacketTeamMoonPhaseChangeNotify((int) moonPhaseCount));
 
         long hexenzirkelCount = this.getActiveTeam().stream()
             .filter(e -> PacketPlayerEnterSceneInfoNotify.getHexenzirkelIds().contains(e.getAvatar().getAvatarId()))
             .count();
+        this.getEntity().getGlobalAbilityValues().put("SGV_HexenzirkelLevel", (float) hexenzirkelCount);
         this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
             this.getEntity().getId(), "SGV_HexenzirkelLevel", (float) hexenzirkelCount));
         this.getPlayer().sendPacket(new PacketTeamHexenzirkelChangeNotify((int) hexenzirkelCount));
+
+        var abilityManager = this.getPlayer().getAbilityManager();
+        if (abilityManager != null) {
+            for (var avatarEntity : this.getActiveTeam()) {
+                abilityManager.refreshGlobalValueWatchers(avatarEntity);
+            }
+        }
     }
 
     public void updateTeamEntities(BasePacket responsePacket) {
@@ -668,85 +650,35 @@ public final class TeamManager extends BasePlayerDataManager {
     }
 
     public void setupTemporaryTeam(List<List<Long>> guidList) {
-        var teams = new ArrayList<TeamInfo>(guidList.size());
+        this.temporaryTeam =
+            guidList.stream()
+                .map(
+                    list -> {
 
-        for (int i = 0; i < guidList.size(); i++) {
-            var guids = guidList.get(i);
-            String rejected = null;
-            List<Integer> avatarIds = null;
+                        if (list.size() == 0 || list.size() > this.getMaxTeamSize()) {
+                            return null;
+                        }
 
-            if (guids.isEmpty()) {
-                rejected = "it is empty";
-            } else if (guids.size() > this.getMaxTeamSize()) {
-                rejected = guids.size() + " avatars, over the limit of " + this.getMaxTeamSize();
-            } else {
-                var newTeam = new LinkedHashSet<Avatar>();
-                for (Long guid : guids) {
-                    Avatar avatar = this.getPlayer().getAvatars().getAvatarByGuid(guid);
-                    if (avatar == null) {
-                        rejected = "no avatar with guid " + guid;
-                        break;
-                    }
-                    if (!newTeam.add(avatar)) {
-                        rejected = "avatar " + avatar.getAvatarId() + " is listed twice";
-                        break;
-                    }
-                }
-                if (rejected == null) {
-                    avatarIds = newTeam.stream().map(Avatar::getAvatarId).toList();
-                }
-            }
+                        LinkedHashSet<Avatar> newTeam = new LinkedHashSet<>();
+                        for (Long aLong : list) {
+                            Avatar avatar = this.getPlayer().getAvatars().getAvatarByGuid(aLong);
+                            if (avatar == null || newTeam.contains(avatar)) {
 
-            if (rejected != null) {
-                // Keep the slot rather than dropping it. The abyss picks its second half by INDEX,
-                // so removing a rejected team renumbers the ones behind it and seats the wrong half
-                // - and an empty result falls back to the overworld team with nothing said. An
-                // empty slot leaves the previous team in place, same as before, but aligned.
-                Grasscutter.getLogger().warn("Temporary team {} rejected: {}", i + 1, rejected);
-                teams.add(new TeamInfo());
-            } else {
-                teams.add(new TeamInfo(avatarIds));
-            }
-        }
+                                return null;
+                            }
+                            newTeam.add(avatar);
+                        }
 
-        this.temporaryTeam = teams;
+                        return newTeam.stream().map(Avatar::getAvatarId).toList();
+                    })
+                .filter(Objects::nonNull)
+                .map(TeamInfo::new)
+                .toList();
     }
 
     public void useTemporaryTeam(int index) {
-        int available = this.temporaryTeam == null ? 0 : this.temporaryTeam.size();
-        if (index < 0 || index >= available) {
-            // getCurrentTeamInfo falls back to the overworld team here, which is exactly what the
-            // abyss looks like when the selection never landed. Do not let that happen quietly.
-            Grasscutter.getLogger()
-                    .warn(
-                            "Asked to use temporary team {} but only {} are set up; the current team stays",
-                            index + 1,
-                            available);
-        }
-        var scene = this.getPlayer().getScene();
-        // Not getCurrentAvatarEntity(): on an empty team that builds a fresh main character and
-        // files it in the avatar list, which is not something reading the current avatar should do.
-        var previous =
-                scene == null || this.getActiveTeam().isEmpty()
-                        ? null
-                        : this.getActiveTeam().get(Math.min(this.currentCharacterIndex, this.getActiveTeam().size() - 1));
-
         this.useTemporarilyTeamIndex = index;
         this.updateTeamEntities(null);
-
-        if (scene == null) return;
-
-        // updateTeamEntities keeps whichever avatar was selected even when the new team has no slot
-        // for it, so the half that just finished would otherwise stay standing in the chamber.
-        if (previous != null && !this.getActiveTeam().contains(previous)) {
-            scene.removeEntity(previous);
-        }
-
-        // Nothing else puts the new half into the scene: the chamber does not reload across the
-        // swap, and the team packet alone only tells the client who is on the team. Without an
-        // avatar entity actually in the world the client has nothing to drive - no skills, no
-        // burst, no switching - and the monsters have nothing to aim at.
-        scene.spawnPlayer(this.getPlayer());
     }
 
     public boolean cleanTemporaryTeam() {

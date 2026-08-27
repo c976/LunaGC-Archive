@@ -19,54 +19,58 @@ public final class SumoStageDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 2;</code>
-     * @return The stageId.
-     */
-    int getStageId();
-
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> 
-        getTeamListList();
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index);
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    int getTeamListCount();
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-        getTeamListOrBuilderList();
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
-        int index);
-
-    /**
-     * <code>uint32 max_score = 4;</code>
-     * @return The maxScore.
-     */
-    int getMaxScore();
-
-    /**
-     * <code>bool is_open = 13;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 open_time = 15;</code>
+     * <code>uint32 open_time = 11;</code>
      * @return The openTime.
      */
     int getOpenTime();
+
+    /**
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    int getStageId();
+
+    /**
+     * <code>uint32 max_score = 2;</code>
+     * @return The maxScore.
+     */
+    int getMaxScore();
+
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> 
+        getTeamListList();
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index);
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    int getTeamListCount();
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+        getTeamListOrBuilderList();
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
+        int index);
   }
   /**
+   * <pre>
+   * Obf: MILCOABCLEP
+   * </pre>
+   *
    * Protobuf type {@code SumoStageData}
    */
   public static final class SumoStageData extends
@@ -113,9 +117,14 @@ public final class SumoStageDataOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 104: {
 
-              stageId_ = input.readUInt32();
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 32: {
+
+              maxScore_ = input.readUInt32();
               break;
             }
             case 26: {
@@ -127,14 +136,9 @@ public final class SumoStageDataOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.parser(), extensionRegistry));
               break;
             }
-            case 32: {
+            case 16: {
 
-              maxScore_ = input.readUInt32();
-              break;
-            }
-            case 104: {
-
-              isOpen_ = input.readBool();
+              stageId_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -177,72 +181,10 @@ public final class SumoStageDataOuterClass {
               emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData.class, emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 2;
-    private int stageId_;
-    /**
-     * <code>uint32 stage_id = 2;</code>
-     * @return The stageId.
-     */
-    @java.lang.Override
-    public int getStageId() {
-      return stageId_;
-    }
-
-    public static final int TEAM_LIST_FIELD_NUMBER = 3;
-    private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_;
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
-      return teamList_;
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
-        getTeamListOrBuilderList() {
-      return teamList_;
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    @java.lang.Override
-    public int getTeamListCount() {
-      return teamList_.size();
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
-      return teamList_.get(index);
-    }
-    /**
-     * <code>repeated .SumoTeamData team_list = 3;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
-        int index) {
-      return teamList_.get(index);
-    }
-
-    public static final int MAX_SCORE_FIELD_NUMBER = 4;
-    private int maxScore_;
-    /**
-     * <code>uint32 max_score = 4;</code>
-     * @return The maxScore.
-     */
-    @java.lang.Override
-    public int getMaxScore() {
-      return maxScore_;
-    }
-
     public static final int IS_OPEN_FIELD_NUMBER = 13;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 13;</code>
+     * <code>bool is_open = 1;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -253,12 +195,74 @@ public final class SumoStageDataOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 15;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 15;</code>
+     * <code>uint32 open_time = 11;</code>
      * @return The openTime.
      */
     @java.lang.Override
     public int getOpenTime() {
       return openTime_;
+    }
+
+    public static final int STAGE_ID_FIELD_NUMBER = 2;
+    private int stageId_;
+    /**
+     * <code>uint32 stage_id = 10;</code>
+     * @return The stageId.
+     */
+    @java.lang.Override
+    public int getStageId() {
+      return stageId_;
+    }
+
+    public static final int MAX_SCORE_FIELD_NUMBER = 4;
+    private int maxScore_;
+    /**
+     * <code>uint32 max_score = 2;</code>
+     * @return The maxScore.
+     */
+    @java.lang.Override
+    public int getMaxScore() {
+      return maxScore_;
+    }
+
+    public static final int TEAM_LIST_FIELD_NUMBER = 3;
+    private java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> teamList_;
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
+      return teamList_;
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
+        getTeamListOrBuilderList() {
+      return teamList_;
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    @java.lang.Override
+    public int getTeamListCount() {
+      return teamList_.size();
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
+      return teamList_.get(index);
+    }
+    /**
+     * <code>repeated .SumoTeamData team_list = 6;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
+        int index) {
+      return teamList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -275,17 +279,17 @@ public final class SumoStageDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (stageId_ != 0) {
-        output.writeUInt32(2, stageId_);
-      }
-      for (int i = 0; i < teamList_.size(); i++) {
-        output.writeMessage(3, teamList_.get(i));
+      if (isOpen_ != false) {
+        output.writeBool(13, isOpen_);
       }
       if (maxScore_ != 0) {
         output.writeUInt32(4, maxScore_);
       }
-      if (isOpen_ != false) {
-        output.writeBool(13, isOpen_);
+      for (int i = 0; i < teamList_.size(); i++) {
+        output.writeMessage(3, teamList_.get(i));
+      }
+      if (stageId_ != 0) {
+        output.writeUInt32(2, stageId_);
       }
       if (openTime_ != 0) {
         output.writeUInt32(15, openTime_);
@@ -299,21 +303,21 @@ public final class SumoStageDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (stageId_ != 0) {
+      if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, stageId_);
-      }
-      for (int i = 0; i < teamList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, teamList_.get(i));
+          .computeBoolSize(13, isOpen_);
       }
       if (maxScore_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, maxScore_);
       }
-      if (isOpen_ != false) {
+      for (int i = 0; i < teamList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isOpen_);
+          .computeMessageSize(3, teamList_.get(i));
+      }
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(2, stageId_);
       }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -334,16 +338,16 @@ public final class SumoStageDataOuterClass {
       }
       emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData other = (emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData) obj;
 
-      if (getStageId()
-          != other.getStageId()) return false;
-      if (!getTeamListList()
-          .equals(other.getTeamListList())) return false;
-      if (getMaxScore()
-          != other.getMaxScore()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
       if (getOpenTime()
           != other.getOpenTime()) return false;
+      if (getStageId()
+          != other.getStageId()) return false;
+      if (getMaxScore()
+          != other.getMaxScore()) return false;
+      if (!getTeamListList()
+          .equals(other.getTeamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -355,19 +359,19 @@ public final class SumoStageDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getStageId();
-      if (getTeamListCount() > 0) {
-        hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getTeamListList().hashCode();
-      }
-      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
-      hash = (53 * hash) + getMaxScore();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
       hash = (37 * hash) + OPEN_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getOpenTime();
+      hash = (37 * hash) + STAGE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getStageId();
+      hash = (37 * hash) + MAX_SCORE_FIELD_NUMBER;
+      hash = (53 * hash) + getMaxScore();
+      if (getTeamListCount() > 0) {
+        hash = (37 * hash) + TEAM_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getTeamListList().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -464,6 +468,10 @@ public final class SumoStageDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: MILCOABCLEP
+     * </pre>
+     *
      * Protobuf type {@code SumoStageData}
      */
     public static final class Builder extends
@@ -502,7 +510,13 @@ public final class SumoStageDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isOpen_ = false;
+
+        openTime_ = 0;
+
         stageId_ = 0;
+
+        maxScore_ = 0;
 
         if (teamListBuilder_ == null) {
           teamList_ = java.util.Collections.emptyList();
@@ -510,12 +524,6 @@ public final class SumoStageDataOuterClass {
         } else {
           teamListBuilder_.clear();
         }
-        maxScore_ = 0;
-
-        isOpen_ = false;
-
-        openTime_ = 0;
-
         return this;
       }
 
@@ -543,7 +551,10 @@ public final class SumoStageDataOuterClass {
       public emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData buildPartial() {
         emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData result = new emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData(this);
         int from_bitField0_ = bitField0_;
+        result.isOpen_ = isOpen_;
+        result.openTime_ = openTime_;
         result.stageId_ = stageId_;
+        result.maxScore_ = maxScore_;
         if (teamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             teamList_ = java.util.Collections.unmodifiableList(teamList_);
@@ -553,9 +564,6 @@ public final class SumoStageDataOuterClass {
         } else {
           result.teamList_ = teamListBuilder_.build();
         }
-        result.maxScore_ = maxScore_;
-        result.isOpen_ = isOpen_;
-        result.openTime_ = openTime_;
         onBuilt();
         return result;
       }
@@ -604,8 +612,17 @@ public final class SumoStageDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData other) {
         if (other == emu.grasscutter.net.proto.SumoStageDataOuterClass.SumoStageData.getDefaultInstance()) return this;
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
+        if (other.getOpenTime() != 0) {
+          setOpenTime(other.getOpenTime());
+        }
         if (other.getStageId() != 0) {
           setStageId(other.getStageId());
+        }
+        if (other.getMaxScore() != 0) {
+          setMaxScore(other.getMaxScore());
         }
         if (teamListBuilder_ == null) {
           if (!other.teamList_.isEmpty()) {
@@ -632,15 +649,6 @@ public final class SumoStageDataOuterClass {
               teamListBuilder_.addAllMessages(other.teamList_);
             }
           }
-        }
-        if (other.getMaxScore() != 0) {
-          setMaxScore(other.getMaxScore());
-        }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
-        }
-        if (other.getOpenTime() != 0) {
-          setOpenTime(other.getOpenTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -672,9 +680,71 @@ public final class SumoStageDataOuterClass {
       }
       private int bitField0_;
 
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 1;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 1;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int openTime_ ;
+      /**
+       * <code>uint32 open_time = 11;</code>
+       * @return The openTime.
+       */
+      @java.lang.Override
+      public int getOpenTime() {
+        return openTime_;
+      }
+      /**
+       * <code>uint32 open_time = 11;</code>
+       * @param value The openTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setOpenTime(int value) {
+        
+        openTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 open_time = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearOpenTime() {
+        
+        openTime_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 10;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -682,7 +752,7 @@ public final class SumoStageDataOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 10;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -693,12 +763,43 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 2;</code>
+       * <code>uint32 stage_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
         
         stageId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int maxScore_ ;
+      /**
+       * <code>uint32 max_score = 2;</code>
+       * @return The maxScore.
+       */
+      @java.lang.Override
+      public int getMaxScore() {
+        return maxScore_;
+      }
+      /**
+       * <code>uint32 max_score = 2;</code>
+       * @param value The maxScore to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMaxScore(int value) {
+        
+        maxScore_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 max_score = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMaxScore() {
+        
+        maxScore_ = 0;
         onChanged();
         return this;
       }
@@ -716,7 +817,7 @@ public final class SumoStageDataOuterClass {
           emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> teamListBuilder_;
 
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> getTeamListList() {
         if (teamListBuilder_ == null) {
@@ -726,7 +827,7 @@ public final class SumoStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public int getTeamListCount() {
         if (teamListBuilder_ == null) {
@@ -736,7 +837,7 @@ public final class SumoStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData getTeamList(int index) {
         if (teamListBuilder_ == null) {
@@ -746,7 +847,7 @@ public final class SumoStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder setTeamList(
           int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
@@ -763,7 +864,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder setTeamList(
           int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
@@ -777,7 +878,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder addTeamList(emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
         if (teamListBuilder_ == null) {
@@ -793,7 +894,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder addTeamList(
           int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData value) {
@@ -810,7 +911,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder addTeamList(
           emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
@@ -824,7 +925,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder addTeamList(
           int index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder builderForValue) {
@@ -838,7 +939,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder addAllTeamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData> values) {
@@ -853,7 +954,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder clearTeamList() {
         if (teamListBuilder_ == null) {
@@ -866,7 +967,7 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public Builder removeTeamList(int index) {
         if (teamListBuilder_ == null) {
@@ -879,14 +980,14 @@ public final class SumoStageDataOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder getTeamListBuilder(
           int index) {
         return getTeamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder getTeamListOrBuilder(
           int index) {
@@ -896,7 +997,7 @@ public final class SumoStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamDataOrBuilder> 
            getTeamListOrBuilderList() {
@@ -907,14 +1008,14 @@ public final class SumoStageDataOuterClass {
         }
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder() {
         return getTeamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder addTeamListBuilder(
           int index) {
@@ -922,7 +1023,7 @@ public final class SumoStageDataOuterClass {
             index, emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.getDefaultInstance());
       }
       /**
-       * <code>repeated .SumoTeamData team_list = 3;</code>
+       * <code>repeated .SumoTeamData team_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SumoTeamDataOuterClass.SumoTeamData.Builder> 
            getTeamListBuilderList() {
@@ -941,99 +1042,6 @@ public final class SumoStageDataOuterClass {
           teamList_ = null;
         }
         return teamListBuilder_;
-      }
-
-      private int maxScore_ ;
-      /**
-       * <code>uint32 max_score = 4;</code>
-       * @return The maxScore.
-       */
-      @java.lang.Override
-      public int getMaxScore() {
-        return maxScore_;
-      }
-      /**
-       * <code>uint32 max_score = 4;</code>
-       * @param value The maxScore to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMaxScore(int value) {
-        
-        maxScore_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 max_score = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMaxScore() {
-        
-        maxScore_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 13;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 13;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int openTime_ ;
-      /**
-       * <code>uint32 open_time = 15;</code>
-       * @return The openTime.
-       */
-      @java.lang.Override
-      public int getOpenTime() {
-        return openTime_;
-      }
-      /**
-       * <code>uint32 open_time = 15;</code>
-       * @param value The openTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOpenTime(int value) {
-        
-        openTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 open_time = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOpenTime() {
-        
-        openTime_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1103,11 +1111,11 @@ public final class SumoStageDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\023SumoStageData.proto\032\022SumoTeamData.prot" +
-      "o\"z\n\rSumoStageData\022\020\n\010stage_id\030\002 \001(\r\022 \n\t" +
-      "team_list\030\003 \003(\0132\r.SumoTeamData\022\021\n\tmax_sc" +
-      "ore\030\004 \001(\r\022\017\n\007is_open\030\r \001(\010\022\021\n\topen_time\030" +
-      "\017 \001(\rB4\n\031emu.grasscutter.net.protoB\027Sumo" +
-      "StageDataOuterClassb\006proto3"
+      "o\"z\n\rSumoStageData\022\017\n\007is_open\030\001 \001(\010\022\021\n\to" +
+      "pen_time\030\013 \001(\r\022\020\n\010stage_id\030\n \001(\r\022\021\n\tmax_" +
+      "score\030\002 \001(\r\022 \n\tteam_list\030\006 \003(\0132\r.SumoTea" +
+      "mDataB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1119,7 +1127,7 @@ public final class SumoStageDataOuterClass {
     internal_static_SumoStageData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SumoStageData_descriptor,
-        new java.lang.String[] { "StageId", "TeamList", "MaxScore", "IsOpen", "OpenTime", });
+        new java.lang.String[] { "IsOpen", "OpenTime", "StageId", "MaxScore", "TeamList", });
     emu.grasscutter.net.proto.SumoTeamDataOuterClass.getDescriptor();
   }
 

@@ -41,19 +41,6 @@ public final class Tools {
      * @param message Should a message be printed to the console?
      * @throws Exception If an error occurs while generating the handbooks.
      */
-    private static final String MISSING = "[N/A]";
-
-    /**
-     * Never null, so a hash no text map knows cannot stall the caller. getTextMapKey returns null
-     * for those, and reloading cannot conjure one - the resource set simply has no string for it.
-     */
-    private static TextStrings translate(long hash) {
-        val strings = getTextMapKey(hash);
-        return strings != null
-                ? strings
-                : new TextStrings("%s %d".formatted(MISSING, hash & 0xFFFFFFFFL));
-    }
-
     public static void createGmHandbooks(boolean message) throws Exception {
         // Check if the GM Handbook directory exists.
         val handbookDir = new File("GM Handbook");
@@ -75,7 +62,6 @@ public final class Tools {
         val itemDataMap = new Int2ObjectRBTreeMap<>(GameData.getItemDataMap());
         val monsterDataMap = new Int2ObjectRBTreeMap<>(GameData.getMonsterDataMap());
         val sceneDataMap = new Int2ObjectRBTreeMap<>(GameData.getSceneDataMap());
-        val cutsceneDataMap = new Int2ObjectRBTreeMap<>(GameData.getCutsceneDataMap());
         val questDataMap = new Int2ObjectRBTreeMap<>(GameData.getQuestDataMap());
         val achievementDataMap = new Int2ObjectRBTreeMap<>(GameData.getAchievementDataMap());
 
@@ -97,10 +83,14 @@ public final class Tools {
                     void newTranslatedLine(String template, TextStrings... textstrings) {
                         for (int i = 0; i < TextStrings.NUM_LANGUAGES; i++) {
                             String s = template;
-                            for (int j = 0; j < textstrings.length; j++) {
-                                val strings = textstrings[j];
-                                s = s.replace("{" + j + "}", strings == null ? MISSING : strings.strings[i]);
-                            }
+                            for (int j = 0; j < textstrings.length; j++)
+                                try {
+                                    s = s.replace("{" + j + "}", textstrings[j].strings[i]);
+                                } catch (NullPointerException ignored) {
+                                    // TextMap cache is outdated.
+                                    j--; // Retry the action.
+                                    Language.loadTextMaps(true);
+                                }
                             handbookBuilders.get(i).append(s + "\n");
                         }
                     }
@@ -109,7 +99,7 @@ public final class Tools {
                         newTranslatedLine(
                                 template,
                                 LongStream.of(hashes)
-                                        .mapToObj(Tools::translate)
+                                        .mapToObj(hash -> getTextMapKey(hash))
                                         .toArray(TextStrings[]::new));
                     }
                 };
@@ -184,11 +174,6 @@ public final class Tools {
         h.newSection("Scenes");
         val padSceneId = getPad.apply(sceneDataMap);
         sceneDataMap.forEach((id, data) -> h.newLine(padSceneId.formatted(id) + data.getScriptData()));
-        // Cutscenes - the asset path is the only name they have
-        h.newSection("Cutscenes");
-        val padCutsceneId = getPad.apply(cutsceneDataMap);
-        cutsceneDataMap.forEach(
-                (id, data) -> h.newLine(padCutsceneId.formatted(id) + data.getPath()));
         // Quests
         h.newSection("Quests");
         val padQuestId = getPad.apply(questDataMap);
@@ -226,19 +211,6 @@ public final class Tools {
         }
 
         if (message) Grasscutter.getLogger().info("GM Handbooks generated!");
-    }
-
-    /**
-     * Maps an avatar id onto the id of the MATERIAL_AVATAR "card" item that the gacha actually hands
-     * out, which is what the wish history is keyed on.
-     *
-     * <p>Avatars 10000002-10000099 use 1002-1099, but the block ran out at Emilie, so everything from
-     * Kachina (10000100) on uses 4100+ instead. Assuming 1000+ for all of them made every character
-     * released since 5.0 show up as "[N/A]" in the wish history.
-     */
-    private static int avatarCardId(int avatarId) {
-        int index = avatarId % 1000;
-        return index + (index >= 100 ? 4000 : 1000);
     }
 
     public static List<String> createGachaMappingJsons() {
@@ -280,7 +252,7 @@ public final class Tools {
                             for (int langIdx = 0; langIdx < NUM_LANGUAGES; langIdx++) {
                                 sbs.get(langIdx)
                                         .append("\t\"")
-                                        .append(avatarCardId(avatarID))
+                                        .append(avatarID % 1000 + 1000)
                                         .append("\": [\"")
                                         .append(avatarName.get(langIdx))
                                         .append(" (")
@@ -377,8 +349,9 @@ public final class Tools {
 
     public static List<String> getAvailableLanguage() {
         List<String> availableLangList = new ArrayList<>();
-        try (var stream = Files.newDirectoryStream(getResourcePath("TextMap"), "TextMap*.json")) {
-            stream.forEach(
+        try {
+            Files.newDirectoryStream(getResourcePath("TextMap"), "TextMap*.json")
+                    .forEach(
                             path -> {
                                 availableLangList.add(
                                         path.getFileName()

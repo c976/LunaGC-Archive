@@ -76,18 +76,18 @@ public final class FishBattleEndReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 8: {
 
               maxBonusTime_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 32: {
               int rawValue = input.readEnum();
 
               battleResult_ = rawValue;
               break;
             }
-            case 104: {
+            case 88: {
 
               isAlwaysBonus_ = input.readBool();
               break;
@@ -124,7 +124,7 @@ public final class FishBattleEndReqOuterClass {
               emu.grasscutter.net.proto.FishBattleEndReqOuterClass.FishBattleEndReq.class, emu.grasscutter.net.proto.FishBattleEndReqOuterClass.FishBattleEndReq.Builder.class);
     }
 
-    public static final int IS_ALWAYS_BONUS_FIELD_NUMBER = 13;
+    public static final int IS_ALWAYS_BONUS_FIELD_NUMBER = 11;
     private boolean isAlwaysBonus_;
 
     @java.lang.Override
@@ -132,7 +132,7 @@ public final class FishBattleEndReqOuterClass {
       return isAlwaysBonus_;
     }
 
-    public static final int MAX_BONUS_TIME_FIELD_NUMBER = 3;
+    public static final int MAX_BONUS_TIME_FIELD_NUMBER = 1;
     private int maxBonusTime_;
 
     @java.lang.Override
@@ -140,7 +140,7 @@ public final class FishBattleEndReqOuterClass {
       return maxBonusTime_;
     }
 
-    public static final int BATTLE_RESULT_FIELD_NUMBER = 12;
+    public static final int BATTLE_RESULT_FIELD_NUMBER = 4;
     private int battleResult_;
 
     @java.lang.Override public int getBattleResultValue() {
@@ -168,13 +168,13 @@ public final class FishBattleEndReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (maxBonusTime_ != 0) {
-        output.writeUInt32(3, maxBonusTime_);
+        output.writeUInt32(1, maxBonusTime_);
       }
       if (battleResult_ != emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult.FishBattleResult_NONE.getNumber()) {
-        output.writeEnum(12, battleResult_);
+        output.writeEnum(4, battleResult_);
       }
       if (isAlwaysBonus_ != false) {
-        output.writeBool(13, isAlwaysBonus_);
+        output.writeBool(11, isAlwaysBonus_);
       }
       unknownFields.writeTo(output);
     }
@@ -187,15 +187,15 @@ public final class FishBattleEndReqOuterClass {
       size = 0;
       if (maxBonusTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, maxBonusTime_);
+          .computeUInt32Size(1, maxBonusTime_);
       }
       if (battleResult_ != emu.grasscutter.net.proto.FishBattleResultOuterClass.FishBattleResult.FishBattleResult_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(12, battleResult_);
+          .computeEnumSize(4, battleResult_);
       }
       if (isAlwaysBonus_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isAlwaysBonus_);
+          .computeBoolSize(11, isAlwaysBonus_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

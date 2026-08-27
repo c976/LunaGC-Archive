@@ -13,8 +13,8 @@ import lombok.experimental.FieldDefaults;
 @Getter
 public class HomeWorldEventData extends GameResource {
     @SerializedName(
-            value = "eventID",
-            alternate = {"id", "BBEIIPEFDPE"})
+            value = "id",
+            alternate = {"BBEIIPEFDPE"})
     int id;
 
     @SerializedName(
@@ -25,14 +25,14 @@ public class HomeWorldEventData extends GameResource {
     int avatarID;
 
     @SerializedName(
-            value = "talkID",
-            alternate = {"talkId", "IGNJAICDFPD"})
+            value = "talkId",
+            alternate = {"IGNJAICDFPD"})
     int talkId;
 
     int rewardID;
 
     @SerializedName(
-            value = "furnitureSuitID",
-            alternate = {"suiteId", "FEHOKMJPOED"})
+            value = "suiteId",
+            alternate = {"FEHOKMJPOED"})
     int suiteId;
 }

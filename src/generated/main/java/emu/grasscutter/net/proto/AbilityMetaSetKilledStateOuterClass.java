@@ -19,7 +19,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool killed = 9;</code>
+     * <code>bool killed = 6;</code>
      * @return The killed.
      */
     boolean getKilled();
@@ -109,7 +109,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
     public static final int KILLED_FIELD_NUMBER = 9;
     private boolean killed_;
     /**
-     * <code>bool killed = 9;</code>
+     * <code>bool killed = 6;</code>
      * @return The killed.
      */
     @java.lang.Override
@@ -422,7 +422,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
 
       private boolean killed_ ;
       /**
-       * <code>bool killed = 9;</code>
+       * <code>bool killed = 6;</code>
        * @return The killed.
        */
       @java.lang.Override
@@ -430,7 +430,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
         return killed_;
       }
       /**
-       * <code>bool killed = 9;</code>
+       * <code>bool killed = 6;</code>
        * @param value The killed to set.
        * @return This builder for chaining.
        */
@@ -441,7 +441,7 @@ public final class AbilityMetaSetKilledStateOuterClass {
         return this;
       }
       /**
-       * <code>bool killed = 9;</code>
+       * <code>bool killed = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearKilled() {
@@ -518,9 +518,8 @@ public final class AbilityMetaSetKilledStateOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037AbilityMetaSetKilledState.proto\"+\n\031Abi" +
-      "lityMetaSetKilledState\022\016\n\006killed\030\t \001(\010B@" +
-      "\n\031emu.grasscutter.net.protoB#AbilityMeta" +
-      "SetKilledStateOuterClassb\006proto3"
+      "lityMetaSetKilledState\022\016\n\006killed\030\006 \001(\010B\033" +
+      "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -19,18 +19,22 @@ public final class VintageBoothUsedItemDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 gadget_id = 9;</code>
-     * @return The gadgetId.
-     */
-    int getGadgetId();
-
-    /**
-     * <code>bool is_open = 13;</code>
+     * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
+
+    /**
+     * <code>uint32 gadget_id = 8;</code>
+     * @return The gadgetId.
+     */
+    int getGadgetId();
   }
   /**
+   * <pre>
+   * Obf: CIBMOLOFPCO
+   * </pre>
+   *
    * Protobuf type {@code VintageBoothUsedItemData}
    */
   public static final class VintageBoothUsedItemData extends
@@ -117,26 +121,26 @@ public final class VintageBoothUsedItemDataOuterClass {
               emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.class, emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.Builder.class);
     }
 
-    public static final int GADGET_ID_FIELD_NUMBER = 9;
-    private int gadgetId_;
-    /**
-     * <code>uint32 gadget_id = 9;</code>
-     * @return The gadgetId.
-     */
-    @java.lang.Override
-    public int getGadgetId() {
-      return gadgetId_;
-    }
-
     public static final int IS_OPEN_FIELD_NUMBER = 13;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 13;</code>
+     * <code>bool is_open = 15;</code>
      * @return The isOpen.
      */
     @java.lang.Override
     public boolean getIsOpen() {
       return isOpen_;
+    }
+
+    public static final int GADGET_ID_FIELD_NUMBER = 9;
+    private int gadgetId_;
+    /**
+     * <code>uint32 gadget_id = 8;</code>
+     * @return The gadgetId.
+     */
+    @java.lang.Override
+    public int getGadgetId() {
+      return gadgetId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +195,10 @@ public final class VintageBoothUsedItemDataOuterClass {
       }
       emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData other = (emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData) obj;
 
-      if (getGadgetId()
-          != other.getGadgetId()) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (getGadgetId()
+          != other.getGadgetId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +210,11 @@ public final class VintageBoothUsedItemDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getGadgetId();
       hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsOpen());
+      hash = (37 * hash) + GADGET_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getGadgetId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -307,6 +311,10 @@ public final class VintageBoothUsedItemDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: CIBMOLOFPCO
+     * </pre>
+     *
      * Protobuf type {@code VintageBoothUsedItemData}
      */
     public static final class Builder extends
@@ -344,9 +352,9 @@ public final class VintageBoothUsedItemDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gadgetId_ = 0;
-
         isOpen_ = false;
+
+        gadgetId_ = 0;
 
         return this;
       }
@@ -374,8 +382,8 @@ public final class VintageBoothUsedItemDataOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData buildPartial() {
         emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData result = new emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData(this);
-        result.gadgetId_ = gadgetId_;
         result.isOpen_ = isOpen_;
+        result.gadgetId_ = gadgetId_;
         onBuilt();
         return result;
       }
@@ -424,11 +432,11 @@ public final class VintageBoothUsedItemDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData other) {
         if (other == emu.grasscutter.net.proto.VintageBoothUsedItemDataOuterClass.VintageBoothUsedItemData.getDefaultInstance()) return this;
-        if (other.getGadgetId() != 0) {
-          setGadgetId(other.getGadgetId());
-        }
         if (other.getIsOpen() != false) {
           setIsOpen(other.getIsOpen());
+        }
+        if (other.getGadgetId() != 0) {
+          setGadgetId(other.getGadgetId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,40 +467,9 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
 
-      private int gadgetId_ ;
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @return The gadgetId.
-       */
-      @java.lang.Override
-      public int getGadgetId() {
-        return gadgetId_;
-      }
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @param value The gadgetId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGadgetId(int value) {
-        
-        gadgetId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gadget_id = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGadgetId() {
-        
-        gadgetId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 13;</code>
+       * <code>bool is_open = 15;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -500,7 +477,7 @@ public final class VintageBoothUsedItemDataOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 13;</code>
+       * <code>bool is_open = 15;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -511,12 +488,43 @@ public final class VintageBoothUsedItemDataOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 13;</code>
+       * <code>bool is_open = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
         
         isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int gadgetId_ ;
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @return The gadgetId.
+       */
+      @java.lang.Override
+      public int getGadgetId() {
+        return gadgetId_;
+      }
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @param value The gadgetId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGadgetId(int value) {
+        
+        gadgetId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gadget_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGadgetId() {
+        
+        gadgetId_ = 0;
         onChanged();
         return this;
       }
@@ -588,10 +596,9 @@ public final class VintageBoothUsedItemDataOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036VintageBoothUsedItemData.proto\">\n\030Vint" +
-      "ageBoothUsedItemData\022\021\n\tgadget_id\030\t \001(\r\022" +
-      "\017\n\007is_open\030\r \001(\010B?\n\031emu.grasscutter.net." +
-      "protoB\"VintageBoothUsedItemDataOuterClas" +
-      "sb\006proto3"
+      "ageBoothUsedItemData\022\017\n\007is_open\030\017 \001(\010\022\021\n" +
+      "\tgadget_id\030\010 \001(\rB\033\n\031emu.grasscutter.net." +
+      "protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -602,7 +609,7 @@ public final class VintageBoothUsedItemDataOuterClass {
     internal_static_VintageBoothUsedItemData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VintageBoothUsedItemData_descriptor,
-        new java.lang.String[] { "GadgetId", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "GadgetId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

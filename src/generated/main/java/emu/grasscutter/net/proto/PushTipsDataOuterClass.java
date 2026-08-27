@@ -79,12 +79,12 @@ public final class PushTipsDataOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 96: {
 
               state_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 56: {
 
               pushTipsId_ = input.readUInt32();
               break;
@@ -121,7 +121,7 @@ public final class PushTipsDataOuterClass {
               emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.class, emu.grasscutter.net.proto.PushTipsDataOuterClass.PushTipsData.Builder.class);
     }
 
-    public static final int STATE_FIELD_NUMBER = 3;
+    public static final int STATE_FIELD_NUMBER = 12;
     private int state_;
     /**
      * <code>uint32 state = 2;</code>
@@ -132,7 +132,7 @@ public final class PushTipsDataOuterClass {
       return state_;
     }
 
-    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 8;
+    public static final int PUSH_TIPS_ID_FIELD_NUMBER = 7;
     private int pushTipsId_;
     /**
      * <code>uint32 push_tips_id = 4;</code>
@@ -158,10 +158,10 @@ public final class PushTipsDataOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (state_ != 0) {
-        output.writeUInt32(3, state_);
+        output.writeUInt32(12, state_);
       }
       if (pushTipsId_ != 0) {
-        output.writeUInt32(8, pushTipsId_);
+        output.writeUInt32(7, pushTipsId_);
       }
       unknownFields.writeTo(output);
     }
@@ -174,11 +174,11 @@ public final class PushTipsDataOuterClass {
       size = 0;
       if (state_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, state_);
+          .computeUInt32Size(12, state_);
       }
       if (pushTipsId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, pushTipsId_);
+          .computeUInt32Size(7, pushTipsId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;

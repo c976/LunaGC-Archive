@@ -18,102 +18,31 @@ public final class ClientGadgetInfoOuterClass {
       // @@protoc_insertion_point(interface_extends:ClientGadgetInfo)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 camp_id = 1;</code>
-     * @return The campId.
-     */
-    int getCampId();
-
-    /**
-     * <code>uint32 camp_type = 2;</code>
-     * @return The campType.
-     */
-    int getCampType();
-
-    /**
-     * <code>uint64 guid = 3;</code>
-     * @return The guid.
-     */
-    long getGuid();
-
-    /**
-     * <code>uint32 owner_entity_id = 4;</code>
-     * @return The ownerEntityId.
-     */
-    int getOwnerEntityId();
-
-    /**
-     * <code>uint32 target_entity_id = 5;</code>
-     * @return The targetEntityId.
-     */
-    int getTargetEntityId();
-
-    /**
-     * <code>bool async_load = 6;</code>
-     * @return The asyncLoad.
-     */
-    boolean getAsyncLoad();
-
-    /**
-     * <code>bool is_peer_id_from_player = 7;</code>
-     * @return The isPeerIdFromPlayer.
-     */
-    boolean getIsPeerIdFromPlayer();
-
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return A list containing the targetEntityIdList.
-     */
     java.util.List<java.lang.Integer> getTargetEntityIdListList();
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return The count of targetEntityIdList.
-     */
+
     int getTargetEntityIdListCount();
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The targetEntityIdList at the given index.
-     */
+
     int getTargetEntityIdList(int index);
 
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return A list containing the targetLockPointIndexList.
-     */
     java.util.List<java.lang.Integer> getTargetLockPointIndexListList();
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return The count of targetLockPointIndexList.
-     */
+
     int getTargetLockPointIndexListCount();
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The targetLockPointIndexList at the given index.
-     */
+
     int getTargetLockPointIndexList(int index);
 
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     * @return Whether the bHJNCGINIJB field is set.
-     */
-    boolean hasBHJNCGINIJB();
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     * @return The bHJNCGINIJB.
-     */
-    emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE getBHJNCGINIJB();
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     */
-    emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder getBHJNCGINIJBOrBuilder();
+    int getTargetEntityId();
 
-    /**
-     * <code>uint32 KMDOFBPMGAI = 11;</code>
-     * @return The kMDOFBPMGAI.
-     */
-    int getKMDOFBPMGAI();
+    int getOwnerEntityId();
+
+    int getCampType();
+
+    int getCampId();
+
+    long getGuid();
+
+    boolean getAsyncLoad();
+
+    boolean getIsPeerIdFromPlayer();
   }
   /**
    * Protobuf type {@code ClientGadgetInfo}
@@ -240,24 +169,6 @@ public final class ClientGadgetInfoOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 82: {
-              emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder subBuilder = null;
-              if (bHJNCGINIJB_ != null) {
-                subBuilder = bHJNCGINIJB_.toBuilder();
-              }
-              bHJNCGINIJB_ = input.readMessage(emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(bHJNCGINIJB_);
-                bHJNCGINIJB_ = subBuilder.buildPartial();
-              }
-
-              break;
-            }
-            case 88: {
-
-              kMDOFBPMGAI_ = input.readUInt32();
-              break;
-            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -296,106 +207,19 @@ public final class ClientGadgetInfoOuterClass {
               emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.class, emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.Builder.class);
     }
 
-    public static final int CAMP_ID_FIELD_NUMBER = 1;
-    private int campId_;
-    /**
-     * <code>uint32 camp_id = 1;</code>
-     * @return The campId.
-     */
-    @java.lang.Override
-    public int getCampId() {
-      return campId_;
-    }
-
-    public static final int CAMP_TYPE_FIELD_NUMBER = 2;
-    private int campType_;
-    /**
-     * <code>uint32 camp_type = 2;</code>
-     * @return The campType.
-     */
-    @java.lang.Override
-    public int getCampType() {
-      return campType_;
-    }
-
-    public static final int GUID_FIELD_NUMBER = 3;
-    private long guid_;
-    /**
-     * <code>uint64 guid = 3;</code>
-     * @return The guid.
-     */
-    @java.lang.Override
-    public long getGuid() {
-      return guid_;
-    }
-
-    public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 4;
-    private int ownerEntityId_;
-    /**
-     * <code>uint32 owner_entity_id = 4;</code>
-     * @return The ownerEntityId.
-     */
-    @java.lang.Override
-    public int getOwnerEntityId() {
-      return ownerEntityId_;
-    }
-
-    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
-    private int targetEntityId_;
-    /**
-     * <code>uint32 target_entity_id = 5;</code>
-     * @return The targetEntityId.
-     */
-    @java.lang.Override
-    public int getTargetEntityId() {
-      return targetEntityId_;
-    }
-
-    public static final int ASYNC_LOAD_FIELD_NUMBER = 6;
-    private boolean asyncLoad_;
-    /**
-     * <code>bool async_load = 6;</code>
-     * @return The asyncLoad.
-     */
-    @java.lang.Override
-    public boolean getAsyncLoad() {
-      return asyncLoad_;
-    }
-
-    public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 7;
-    private boolean isPeerIdFromPlayer_;
-    /**
-     * <code>bool is_peer_id_from_player = 7;</code>
-     * @return The isPeerIdFromPlayer.
-     */
-    @java.lang.Override
-    public boolean getIsPeerIdFromPlayer() {
-      return isPeerIdFromPlayer_;
-    }
-
     public static final int TARGET_ENTITY_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList targetEntityIdList_;
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return A list containing the targetEntityIdList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Integer>
         getTargetEntityIdListList() {
       return targetEntityIdList_;
     }
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @return The count of targetEntityIdList.
-     */
+
     public int getTargetEntityIdListCount() {
       return targetEntityIdList_.size();
     }
-    /**
-     * <code>repeated uint32 target_entity_id_list = 8;</code>
-     * @param index The index of the element to return.
-     * @return The targetEntityIdList at the given index.
-     */
+
     public int getTargetEntityIdList(int index) {
       return targetEntityIdList_.getInt(index);
     }
@@ -403,67 +227,76 @@ public final class ClientGadgetInfoOuterClass {
 
     public static final int TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList targetLockPointIndexList_;
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return A list containing the targetLockPointIndexList.
-     */
+
     @java.lang.Override
     public java.util.List<java.lang.Integer>
         getTargetLockPointIndexListList() {
       return targetLockPointIndexList_;
     }
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @return The count of targetLockPointIndexList.
-     */
+
     public int getTargetLockPointIndexListCount() {
       return targetLockPointIndexList_.size();
     }
-    /**
-     * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The targetLockPointIndexList at the given index.
-     */
+
     public int getTargetLockPointIndexList(int index) {
       return targetLockPointIndexList_.getInt(index);
     }
     private int targetLockPointIndexListMemoizedSerializedSize = -1;
 
-    public static final int BHJNCGINIJB_FIELD_NUMBER = 10;
-    private emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE bHJNCGINIJB_;
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     * @return Whether the bHJNCGINIJB field is set.
-     */
+    public static final int TARGET_ENTITY_ID_FIELD_NUMBER = 5;
+    private int targetEntityId_;
+
     @java.lang.Override
-    public boolean hasBHJNCGINIJB() {
-      return bHJNCGINIJB_ != null;
-    }
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     * @return The bHJNCGINIJB.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE getBHJNCGINIJB() {
-      return bHJNCGINIJB_ == null ? emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.getDefaultInstance() : bHJNCGINIJB_;
-    }
-    /**
-     * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder getBHJNCGINIJBOrBuilder() {
-      return getBHJNCGINIJB();
+    public int getTargetEntityId() {
+      return targetEntityId_;
     }
 
-    public static final int KMDOFBPMGAI_FIELD_NUMBER = 11;
-    private int kMDOFBPMGAI_;
-    /**
-     * <code>uint32 KMDOFBPMGAI = 11;</code>
-     * @return The kMDOFBPMGAI.
-     */
+    public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 4;
+    private int ownerEntityId_;
+
     @java.lang.Override
-    public int getKMDOFBPMGAI() {
-      return kMDOFBPMGAI_;
+    public int getOwnerEntityId() {
+      return ownerEntityId_;
+    }
+
+    public static final int CAMP_TYPE_FIELD_NUMBER = 2;
+    private int campType_;
+
+    @java.lang.Override
+    public int getCampType() {
+      return campType_;
+    }
+
+    public static final int CAMP_ID_FIELD_NUMBER = 1;
+    private int campId_;
+
+    @java.lang.Override
+    public int getCampId() {
+      return campId_;
+    }
+
+    public static final int GUID_FIELD_NUMBER = 3;
+    private long guid_;
+
+    @java.lang.Override
+    public long getGuid() {
+      return guid_;
+    }
+
+    public static final int ASYNC_LOAD_FIELD_NUMBER = 6;
+    private boolean asyncLoad_;
+
+    @java.lang.Override
+    public boolean getAsyncLoad() {
+      return asyncLoad_;
+    }
+
+    public static final int IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER = 7;
+    private boolean isPeerIdFromPlayer_;
+
+    @java.lang.Override
+    public boolean getIsPeerIdFromPlayer() {
+      return isPeerIdFromPlayer_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -515,12 +348,6 @@ public final class ClientGadgetInfoOuterClass {
       }
       for (int i = 0; i < targetLockPointIndexList_.size(); i++) {
         output.writeUInt32NoTag(targetLockPointIndexList_.getInt(i));
-      }
-      if (bHJNCGINIJB_ != null) {
-        output.writeMessage(10, getBHJNCGINIJB());
-      }
-      if (kMDOFBPMGAI_ != 0) {
-        output.writeUInt32(11, kMDOFBPMGAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -587,14 +414,6 @@ public final class ClientGadgetInfoOuterClass {
         }
         targetLockPointIndexListMemoizedSerializedSize = dataSize;
       }
-      if (bHJNCGINIJB_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, getBHJNCGINIJB());
-      }
-      if (kMDOFBPMGAI_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, kMDOFBPMGAI_);
-      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -610,31 +429,24 @@ public final class ClientGadgetInfoOuterClass {
       }
       emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo other = (emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo) obj;
 
-      if (getCampId()
-          != other.getCampId()) return false;
-      if (getCampType()
-          != other.getCampType()) return false;
-      if (getGuid()
-          != other.getGuid()) return false;
-      if (getOwnerEntityId()
-          != other.getOwnerEntityId()) return false;
-      if (getTargetEntityId()
-          != other.getTargetEntityId()) return false;
-      if (getAsyncLoad()
-          != other.getAsyncLoad()) return false;
-      if (getIsPeerIdFromPlayer()
-          != other.getIsPeerIdFromPlayer()) return false;
       if (!getTargetEntityIdListList()
           .equals(other.getTargetEntityIdListList())) return false;
       if (!getTargetLockPointIndexListList()
           .equals(other.getTargetLockPointIndexListList())) return false;
-      if (hasBHJNCGINIJB() != other.hasBHJNCGINIJB()) return false;
-      if (hasBHJNCGINIJB()) {
-        if (!getBHJNCGINIJB()
-            .equals(other.getBHJNCGINIJB())) return false;
-      }
-      if (getKMDOFBPMGAI()
-          != other.getKMDOFBPMGAI()) return false;
+      if (getTargetEntityId()
+          != other.getTargetEntityId()) return false;
+      if (getOwnerEntityId()
+          != other.getOwnerEntityId()) return false;
+      if (getCampType()
+          != other.getCampType()) return false;
+      if (getCampId()
+          != other.getCampId()) return false;
+      if (getGuid()
+          != other.getGuid()) return false;
+      if (getAsyncLoad()
+          != other.getAsyncLoad()) return false;
+      if (getIsPeerIdFromPlayer()
+          != other.getIsPeerIdFromPlayer()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -646,23 +458,6 @@ public final class ClientGadgetInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCampId();
-      hash = (37 * hash) + CAMP_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getCampType();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
-      hash = (37 * hash) + OWNER_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOwnerEntityId();
-      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getTargetEntityId();
-      hash = (37 * hash) + ASYNC_LOAD_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAsyncLoad());
-      hash = (37 * hash) + IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsPeerIdFromPlayer());
       if (getTargetEntityIdListCount() > 0) {
         hash = (37 * hash) + TARGET_ENTITY_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTargetEntityIdListList().hashCode();
@@ -671,12 +466,23 @@ public final class ClientGadgetInfoOuterClass {
         hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTargetLockPointIndexListList().hashCode();
       }
-      if (hasBHJNCGINIJB()) {
-        hash = (37 * hash) + BHJNCGINIJB_FIELD_NUMBER;
-        hash = (53 * hash) + getBHJNCGINIJB().hashCode();
-      }
-      hash = (37 * hash) + KMDOFBPMGAI_FIELD_NUMBER;
-      hash = (53 * hash) + getKMDOFBPMGAI();
+      hash = (37 * hash) + TARGET_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getTargetEntityId();
+      hash = (37 * hash) + OWNER_ENTITY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOwnerEntityId();
+      hash = (37 * hash) + CAMP_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getCampType();
+      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCampId();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getGuid());
+      hash = (37 * hash) + ASYNC_LOAD_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getAsyncLoad());
+      hash = (37 * hash) + IS_PEER_ID_FROM_PLAYER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsPeerIdFromPlayer());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -810,31 +616,23 @@ public final class ClientGadgetInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        campId_ = 0;
-
-        campType_ = 0;
-
-        guid_ = 0L;
-
-        ownerEntityId_ = 0;
-
-        targetEntityId_ = 0;
-
-        asyncLoad_ = false;
-
-        isPeerIdFromPlayer_ = false;
-
         targetEntityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         targetLockPointIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
-        if (bHJNCGINIJBBuilder_ == null) {
-          bHJNCGINIJB_ = null;
-        } else {
-          bHJNCGINIJB_ = null;
-          bHJNCGINIJBBuilder_ = null;
-        }
-        kMDOFBPMGAI_ = 0;
+        targetEntityId_ = 0;
+
+        ownerEntityId_ = 0;
+
+        campType_ = 0;
+
+        campId_ = 0;
+
+        guid_ = 0L;
+
+        asyncLoad_ = false;
+
+        isPeerIdFromPlayer_ = false;
 
         return this;
       }
@@ -863,13 +661,6 @@ public final class ClientGadgetInfoOuterClass {
       public emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo buildPartial() {
         emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo result = new emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo(this);
         int from_bitField0_ = bitField0_;
-        result.campId_ = campId_;
-        result.campType_ = campType_;
-        result.guid_ = guid_;
-        result.ownerEntityId_ = ownerEntityId_;
-        result.targetEntityId_ = targetEntityId_;
-        result.asyncLoad_ = asyncLoad_;
-        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
         if (((bitField0_ & 0x00000001) != 0)) {
           targetEntityIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
@@ -880,12 +671,13 @@ public final class ClientGadgetInfoOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.targetLockPointIndexList_ = targetLockPointIndexList_;
-        if (bHJNCGINIJBBuilder_ == null) {
-          result.bHJNCGINIJB_ = bHJNCGINIJB_;
-        } else {
-          result.bHJNCGINIJB_ = bHJNCGINIJBBuilder_.build();
-        }
-        result.kMDOFBPMGAI_ = kMDOFBPMGAI_;
+        result.targetEntityId_ = targetEntityId_;
+        result.ownerEntityId_ = ownerEntityId_;
+        result.campType_ = campType_;
+        result.campId_ = campId_;
+        result.guid_ = guid_;
+        result.asyncLoad_ = asyncLoad_;
+        result.isPeerIdFromPlayer_ = isPeerIdFromPlayer_;
         onBuilt();
         return result;
       }
@@ -934,27 +726,6 @@ public final class ClientGadgetInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo other) {
         if (other == emu.grasscutter.net.proto.ClientGadgetInfoOuterClass.ClientGadgetInfo.getDefaultInstance()) return this;
-        if (other.getCampId() != 0) {
-          setCampId(other.getCampId());
-        }
-        if (other.getCampType() != 0) {
-          setCampType(other.getCampType());
-        }
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
-        }
-        if (other.getOwnerEntityId() != 0) {
-          setOwnerEntityId(other.getOwnerEntityId());
-        }
-        if (other.getTargetEntityId() != 0) {
-          setTargetEntityId(other.getTargetEntityId());
-        }
-        if (other.getAsyncLoad() != false) {
-          setAsyncLoad(other.getAsyncLoad());
-        }
-        if (other.getIsPeerIdFromPlayer() != false) {
-          setIsPeerIdFromPlayer(other.getIsPeerIdFromPlayer());
-        }
         if (!other.targetEntityIdList_.isEmpty()) {
           if (targetEntityIdList_.isEmpty()) {
             targetEntityIdList_ = other.targetEntityIdList_;
@@ -975,11 +746,26 @@ public final class ClientGadgetInfoOuterClass {
           }
           onChanged();
         }
-        if (other.hasBHJNCGINIJB()) {
-          mergeBHJNCGINIJB(other.getBHJNCGINIJB());
+        if (other.getTargetEntityId() != 0) {
+          setTargetEntityId(other.getTargetEntityId());
         }
-        if (other.getKMDOFBPMGAI() != 0) {
-          setKMDOFBPMGAI(other.getKMDOFBPMGAI());
+        if (other.getOwnerEntityId() != 0) {
+          setOwnerEntityId(other.getOwnerEntityId());
+        }
+        if (other.getCampType() != 0) {
+          setCampType(other.getCampType());
+        }
+        if (other.getCampId() != 0) {
+          setCampId(other.getCampId());
+        }
+        if (other.getGuid() != 0L) {
+          setGuid(other.getGuid());
+        }
+        if (other.getAsyncLoad() != false) {
+          setAsyncLoad(other.getAsyncLoad());
+        }
+        if (other.getIsPeerIdFromPlayer() != false) {
+          setIsPeerIdFromPlayer(other.getIsPeerIdFromPlayer());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1011,223 +797,6 @@ public final class ClientGadgetInfoOuterClass {
       }
       private int bitField0_;
 
-      private int campId_ ;
-      /**
-       * <code>uint32 camp_id = 1;</code>
-       * @return The campId.
-       */
-      @java.lang.Override
-      public int getCampId() {
-        return campId_;
-      }
-      /**
-       * <code>uint32 camp_id = 1;</code>
-       * @param value The campId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCampId(int value) {
-        
-        campId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 camp_id = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCampId() {
-        
-        campId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int campType_ ;
-      /**
-       * <code>uint32 camp_type = 2;</code>
-       * @return The campType.
-       */
-      @java.lang.Override
-      public int getCampType() {
-        return campType_;
-      }
-      /**
-       * <code>uint32 camp_type = 2;</code>
-       * @param value The campType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setCampType(int value) {
-        
-        campType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 camp_type = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearCampType() {
-        
-        campType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private long guid_ ;
-      /**
-       * <code>uint64 guid = 3;</code>
-       * @return The guid.
-       */
-      @java.lang.Override
-      public long getGuid() {
-        return guid_;
-      }
-      /**
-       * <code>uint64 guid = 3;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGuid(long value) {
-        
-        guid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 guid = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGuid() {
-        
-        guid_ = 0L;
-        onChanged();
-        return this;
-      }
-
-      private int ownerEntityId_ ;
-      /**
-       * <code>uint32 owner_entity_id = 4;</code>
-       * @return The ownerEntityId.
-       */
-      @java.lang.Override
-      public int getOwnerEntityId() {
-        return ownerEntityId_;
-      }
-      /**
-       * <code>uint32 owner_entity_id = 4;</code>
-       * @param value The ownerEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOwnerEntityId(int value) {
-        
-        ownerEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 owner_entity_id = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOwnerEntityId() {
-        
-        ownerEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int targetEntityId_ ;
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @return The targetEntityId.
-       */
-      @java.lang.Override
-      public int getTargetEntityId() {
-        return targetEntityId_;
-      }
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @param value The targetEntityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTargetEntityId(int value) {
-        
-        targetEntityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 target_entity_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearTargetEntityId() {
-        
-        targetEntityId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private boolean asyncLoad_ ;
-      /**
-       * <code>bool async_load = 6;</code>
-       * @return The asyncLoad.
-       */
-      @java.lang.Override
-      public boolean getAsyncLoad() {
-        return asyncLoad_;
-      }
-      /**
-       * <code>bool async_load = 6;</code>
-       * @param value The asyncLoad to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAsyncLoad(boolean value) {
-        
-        asyncLoad_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool async_load = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAsyncLoad() {
-        
-        asyncLoad_ = false;
-        onChanged();
-        return this;
-      }
-
-      private boolean isPeerIdFromPlayer_ ;
-      /**
-       * <code>bool is_peer_id_from_player = 7;</code>
-       * @return The isPeerIdFromPlayer.
-       */
-      @java.lang.Override
-      public boolean getIsPeerIdFromPlayer() {
-        return isPeerIdFromPlayer_;
-      }
-      /**
-       * <code>bool is_peer_id_from_player = 7;</code>
-       * @param value The isPeerIdFromPlayer to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsPeerIdFromPlayer(boolean value) {
-        
-        isPeerIdFromPlayer_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_peer_id_from_player = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsPeerIdFromPlayer() {
-        
-        isPeerIdFromPlayer_ = false;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList targetEntityIdList_ = emptyIntList();
       private void ensureTargetEntityIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -1235,36 +804,21 @@ public final class ClientGadgetInfoOuterClass {
           bitField0_ |= 0x00000001;
          }
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return A list containing the targetEntityIdList.
-       */
+
       public java.util.List<java.lang.Integer>
           getTargetEntityIdListList() {
         return ((bitField0_ & 0x00000001) != 0) ?
                  java.util.Collections.unmodifiableList(targetEntityIdList_) : targetEntityIdList_;
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return The count of targetEntityIdList.
-       */
+
       public int getTargetEntityIdListCount() {
         return targetEntityIdList_.size();
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param index The index of the element to return.
-       * @return The targetEntityIdList at the given index.
-       */
+
       public int getTargetEntityIdList(int index) {
         return targetEntityIdList_.getInt(index);
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param index The index to set the value at.
-       * @param value The targetEntityIdList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setTargetEntityIdList(
           int index, int value) {
         ensureTargetEntityIdListIsMutable();
@@ -1272,22 +826,14 @@ public final class ClientGadgetInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param value The targetEntityIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addTargetEntityIdList(int value) {
         ensureTargetEntityIdListIsMutable();
         targetEntityIdList_.addInt(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @param values The targetEntityIdList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllTargetEntityIdList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureTargetEntityIdListIsMutable();
@@ -1296,10 +842,7 @@ public final class ClientGadgetInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_entity_id_list = 8;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearTargetEntityIdList() {
         targetEntityIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
@@ -1314,36 +857,21 @@ public final class ClientGadgetInfoOuterClass {
           bitField0_ |= 0x00000002;
          }
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @return A list containing the targetLockPointIndexList.
-       */
+
       public java.util.List<java.lang.Integer>
           getTargetLockPointIndexListList() {
         return ((bitField0_ & 0x00000002) != 0) ?
                  java.util.Collections.unmodifiableList(targetLockPointIndexList_) : targetLockPointIndexList_;
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @return The count of targetLockPointIndexList.
-       */
+
       public int getTargetLockPointIndexListCount() {
         return targetLockPointIndexList_.size();
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The targetLockPointIndexList at the given index.
-       */
+
       public int getTargetLockPointIndexList(int index) {
         return targetLockPointIndexList_.getInt(index);
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The targetLockPointIndexList to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setTargetLockPointIndexList(
           int index, int value) {
         ensureTargetLockPointIndexListIsMutable();
@@ -1351,22 +879,14 @@ public final class ClientGadgetInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param value The targetLockPointIndexList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addTargetLockPointIndexList(int value) {
         ensureTargetLockPointIndexListIsMutable();
         targetLockPointIndexList_.addInt(value);
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @param values The targetLockPointIndexList to add.
-       * @return This builder for chaining.
-       */
+
       public Builder addAllTargetLockPointIndexList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureTargetLockPointIndexListIsMutable();
@@ -1375,10 +895,7 @@ public final class ClientGadgetInfoOuterClass {
         onChanged();
         return this;
       }
-      /**
-       * <code>repeated uint32 target_lock_point_index_list = 9;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearTargetLockPointIndexList() {
         targetLockPointIndexList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
@@ -1386,152 +903,149 @@ public final class ClientGadgetInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE bHJNCGINIJB_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder> bHJNCGINIJBBuilder_;
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       * @return Whether the bHJNCGINIJB field is set.
-       */
-      public boolean hasBHJNCGINIJB() {
-        return bHJNCGINIJBBuilder_ != null || bHJNCGINIJB_ != null;
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       * @return The bHJNCGINIJB.
-       */
-      public emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE getBHJNCGINIJB() {
-        if (bHJNCGINIJBBuilder_ == null) {
-          return bHJNCGINIJB_ == null ? emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.getDefaultInstance() : bHJNCGINIJB_;
-        } else {
-          return bHJNCGINIJBBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public Builder setBHJNCGINIJB(emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE value) {
-        if (bHJNCGINIJBBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          bHJNCGINIJB_ = value;
-          onChanged();
-        } else {
-          bHJNCGINIJBBuilder_.setMessage(value);
-        }
+      private int targetEntityId_ ;
 
-        return this;
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public Builder setBHJNCGINIJB(
-          emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder builderForValue) {
-        if (bHJNCGINIJBBuilder_ == null) {
-          bHJNCGINIJB_ = builderForValue.build();
-          onChanged();
-        } else {
-          bHJNCGINIJBBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public Builder mergeBHJNCGINIJB(emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE value) {
-        if (bHJNCGINIJBBuilder_ == null) {
-          if (bHJNCGINIJB_ != null) {
-            bHJNCGINIJB_ =
-              emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.newBuilder(bHJNCGINIJB_).mergeFrom(value).buildPartial();
-          } else {
-            bHJNCGINIJB_ = value;
-          }
-          onChanged();
-        } else {
-          bHJNCGINIJBBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public Builder clearBHJNCGINIJB() {
-        if (bHJNCGINIJBBuilder_ == null) {
-          bHJNCGINIJB_ = null;
-          onChanged();
-        } else {
-          bHJNCGINIJB_ = null;
-          bHJNCGINIJBBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder getBHJNCGINIJBBuilder() {
-        
-        onChanged();
-        return getBHJNCGINIJBFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      public emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder getBHJNCGINIJBOrBuilder() {
-        if (bHJNCGINIJBBuilder_ != null) {
-          return bHJNCGINIJBBuilder_.getMessageOrBuilder();
-        } else {
-          return bHJNCGINIJB_ == null ?
-              emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.getDefaultInstance() : bHJNCGINIJB_;
-        }
-      }
-      /**
-       * <code>.CEAFBJOBFJE BHJNCGINIJB = 10;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder> 
-          getBHJNCGINIJBFieldBuilder() {
-        if (bHJNCGINIJBBuilder_ == null) {
-          bHJNCGINIJBBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJE.Builder, emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.CEAFBJOBFJEOrBuilder>(
-                  getBHJNCGINIJB(),
-                  getParentForChildren(),
-                  isClean());
-          bHJNCGINIJB_ = null;
-        }
-        return bHJNCGINIJBBuilder_;
-      }
-
-      private int kMDOFBPMGAI_ ;
-      /**
-       * <code>uint32 KMDOFBPMGAI = 11;</code>
-       * @return The kMDOFBPMGAI.
-       */
       @java.lang.Override
-      public int getKMDOFBPMGAI() {
-        return kMDOFBPMGAI_;
+      public int getTargetEntityId() {
+        return targetEntityId_;
       }
-      /**
-       * <code>uint32 KMDOFBPMGAI = 11;</code>
-       * @param value The kMDOFBPMGAI to set.
-       * @return This builder for chaining.
-       */
-      public Builder setKMDOFBPMGAI(int value) {
-        
-        kMDOFBPMGAI_ = value;
+
+      public Builder setTargetEntityId(int value) {
+
+        targetEntityId_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 KMDOFBPMGAI = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearKMDOFBPMGAI() {
-        
-        kMDOFBPMGAI_ = 0;
+
+      public Builder clearTargetEntityId() {
+
+        targetEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int ownerEntityId_ ;
+
+      @java.lang.Override
+      public int getOwnerEntityId() {
+        return ownerEntityId_;
+      }
+
+      public Builder setOwnerEntityId(int value) {
+
+        ownerEntityId_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearOwnerEntityId() {
+
+        ownerEntityId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int campType_ ;
+
+      @java.lang.Override
+      public int getCampType() {
+        return campType_;
+      }
+
+      public Builder setCampType(int value) {
+
+        campType_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearCampType() {
+
+        campType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int campId_ ;
+
+      @java.lang.Override
+      public int getCampId() {
+        return campId_;
+      }
+
+      public Builder setCampId(int value) {
+
+        campId_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearCampId() {
+
+        campId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long guid_ ;
+
+      @java.lang.Override
+      public long getGuid() {
+        return guid_;
+      }
+
+      public Builder setGuid(long value) {
+
+        guid_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearGuid() {
+
+        guid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private boolean asyncLoad_ ;
+
+      @java.lang.Override
+      public boolean getAsyncLoad() {
+        return asyncLoad_;
+      }
+
+      public Builder setAsyncLoad(boolean value) {
+
+        asyncLoad_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearAsyncLoad() {
+
+        asyncLoad_ = false;
+        onChanged();
+        return this;
+      }
+
+      private boolean isPeerIdFromPlayer_ ;
+
+      @java.lang.Override
+      public boolean getIsPeerIdFromPlayer() {
+        return isPeerIdFromPlayer_;
+      }
+
+      public Builder setIsPeerIdFromPlayer(boolean value) {
+
+        isPeerIdFromPlayer_ = value;
+        onChanged();
+        return this;
+      }
+
+      public Builder clearIsPeerIdFromPlayer() {
+
+        isPeerIdFromPlayer_ = false;
         onChanged();
         return this;
       }
@@ -1546,7 +1060,6 @@ public final class ClientGadgetInfoOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:ClientGadgetInfo)
     }
@@ -1590,7 +1103,7 @@ public final class ClientGadgetInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ClientGadgetInfo_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ClientGadgetInfo_fieldAccessorTable;
 
@@ -1602,30 +1115,25 @@ public final class ClientGadgetInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026ClientGadgetInfo.proto\032\021CEAFBJOBFJE.pr" +
-      "oto\"\250\002\n\020ClientGadgetInfo\022\017\n\007camp_id\030\001 \001(" +
-      "\r\022\021\n\tcamp_type\030\002 \001(\r\022\014\n\004guid\030\003 \001(\004\022\027\n\017ow" +
-      "ner_entity_id\030\004 \001(\r\022\030\n\020target_entity_id\030" +
-      "\005 \001(\r\022\022\n\nasync_load\030\006 \001(\010\022\036\n\026is_peer_id_" +
-      "from_player\030\007 \001(\010\022\035\n\025target_entity_id_li" +
-      "st\030\010 \003(\r\022$\n\034target_lock_point_index_list" +
-      "\030\t \003(\r\022!\n\013BHJNCGINIJB\030\n \001(\0132\014.CEAFBJOBFJ" +
-      "E\022\023\n\013KMDOFBPMGAI\030\013 \001(\rB7\n\031emu.grasscutte" +
-      "r.net.protoB\032ClientGadgetInfoOuterClassb" +
-      "\006proto3"
+      "\n\026ClientGadgetInfo.proto\"\360\001\n\020ClientGadge" +
+      "tInfo\022\035\n\025target_entity_id_list\030\010 \003(\r\022$\n\034" +
+      "target_lock_point_index_list\030\t \003(\r\022\030\n\020ta" +
+      "rget_entity_id\030\005 \001(\r\022\027\n\017owner_entity_id\030" +
+      "\004 \001(\r\022\021\n\tcamp_type\030\002 \001(\r\022\017\n\007camp_id\030\001 \001(" +
+      "\r\022\014\n\004guid\030\003 \001(\004\022\022\n\nasync_load\030\006 \001(\010\022\036\n\026i" +
+      "s_peer_id_from_player\030\007 \001(\010B\033\n\031emu.grass" +
+      "cutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.getDescriptor(),
         });
     internal_static_ClientGadgetInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ClientGadgetInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientGadgetInfo_descriptor,
-        new java.lang.String[] { "CampId", "CampType", "Guid", "OwnerEntityId", "TargetEntityId", "AsyncLoad", "IsPeerIdFromPlayer", "TargetEntityIdList", "TargetLockPointIndexList", "BHJNCGINIJB", "KMDOFBPMGAI", });
-    emu.grasscutter.net.proto.CEAFBJOBFJEOuterClass.getDescriptor();
+        new java.lang.String[] { "TargetEntityIdList", "TargetLockPointIndexList", "TargetEntityId", "OwnerEntityId", "CampType", "CampId", "Guid", "AsyncLoad", "IsPeerIdFromPlayer", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

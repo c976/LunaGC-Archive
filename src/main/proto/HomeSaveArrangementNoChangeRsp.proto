@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-option java_package = "emu.grasscutter.net.proto";
-option java_outer_classname = "HomeSaveArrangementNoChangeRspOuterClass";
-
-message HomeSaveArrangementNoChangeRsp {
-	int32 retcode = 5;
-	uint32 scene_id = 14;
-}

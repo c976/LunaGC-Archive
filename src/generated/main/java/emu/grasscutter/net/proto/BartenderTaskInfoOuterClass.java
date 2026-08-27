@@ -19,18 +19,22 @@ public final class BartenderTaskInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 id = 15;</code>
+     * @return The id.
+     */
+    int getId();
+
+    /**
      * <code>bool is_finish = 9;</code>
      * @return The isFinish.
      */
     boolean getIsFinish();
-
-    /**
-     * <code>uint32 id = 14;</code>
-     * @return The id.
-     */
-    int getId();
   }
   /**
+   * <pre>
+   * Obf: BLDJHMOIKLC
+   * </pre>
+   *
    * Protobuf type {@code BartenderTaskInfo}
    */
   public static final class BartenderTaskInfo extends
@@ -117,6 +121,17 @@ public final class BartenderTaskInfoOuterClass {
               emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.class, emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.Builder.class);
     }
 
+    public static final int ID_FIELD_NUMBER = 14;
+    private int id_;
+    /**
+     * <code>uint32 id = 15;</code>
+     * @return The id.
+     */
+    @java.lang.Override
+    public int getId() {
+      return id_;
+    }
+
     public static final int IS_FINISH_FIELD_NUMBER = 9;
     private boolean isFinish_;
     /**
@@ -126,17 +141,6 @@ public final class BartenderTaskInfoOuterClass {
     @java.lang.Override
     public boolean getIsFinish() {
       return isFinish_;
-    }
-
-    public static final int ID_FIELD_NUMBER = 14;
-    private int id_;
-    /**
-     * <code>uint32 id = 14;</code>
-     * @return The id.
-     */
-    @java.lang.Override
-    public int getId() {
-      return id_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -191,10 +195,10 @@ public final class BartenderTaskInfoOuterClass {
       }
       emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo other = (emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo) obj;
 
-      if (getIsFinish()
-          != other.getIsFinish()) return false;
       if (getId()
           != other.getId()) return false;
+      if (getIsFinish()
+          != other.getIsFinish()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,11 +210,11 @@ public final class BartenderTaskInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
       hash = (37 * hash) + IS_FINISH_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsFinish());
-      hash = (37 * hash) + ID_FIELD_NUMBER;
-      hash = (53 * hash) + getId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -307,6 +311,10 @@ public final class BartenderTaskInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: BLDJHMOIKLC
+     * </pre>
+     *
      * Protobuf type {@code BartenderTaskInfo}
      */
     public static final class Builder extends
@@ -344,9 +352,9 @@ public final class BartenderTaskInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isFinish_ = false;
-
         id_ = 0;
+
+        isFinish_ = false;
 
         return this;
       }
@@ -374,8 +382,8 @@ public final class BartenderTaskInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo buildPartial() {
         emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo result = new emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo(this);
-        result.isFinish_ = isFinish_;
         result.id_ = id_;
+        result.isFinish_ = isFinish_;
         onBuilt();
         return result;
       }
@@ -424,11 +432,11 @@ public final class BartenderTaskInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo other) {
         if (other == emu.grasscutter.net.proto.BartenderTaskInfoOuterClass.BartenderTaskInfo.getDefaultInstance()) return this;
-        if (other.getIsFinish() != false) {
-          setIsFinish(other.getIsFinish());
-        }
         if (other.getId() != 0) {
           setId(other.getId());
+        }
+        if (other.getIsFinish() != false) {
+          setIsFinish(other.getIsFinish());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -459,6 +467,37 @@ public final class BartenderTaskInfoOuterClass {
         return this;
       }
 
+      private int id_ ;
+      /**
+       * <code>uint32 id = 15;</code>
+       * @return The id.
+       */
+      @java.lang.Override
+      public int getId() {
+        return id_;
+      }
+      /**
+       * <code>uint32 id = 15;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(int value) {
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isFinish_ ;
       /**
        * <code>bool is_finish = 9;</code>
@@ -486,37 +525,6 @@ public final class BartenderTaskInfoOuterClass {
       public Builder clearIsFinish() {
         
         isFinish_ = false;
-        onChanged();
-        return this;
-      }
-
-      private int id_ ;
-      /**
-       * <code>uint32 id = 14;</code>
-       * @return The id.
-       */
-      @java.lang.Override
-      public int getId() {
-        return id_;
-      }
-      /**
-       * <code>uint32 id = 14;</code>
-       * @param value The id to set.
-       * @return This builder for chaining.
-       */
-      public Builder setId(int value) {
-        
-        id_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearId() {
-        
-        id_ = 0;
         onChanged();
         return this;
       }
@@ -588,9 +596,8 @@ public final class BartenderTaskInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BartenderTaskInfo.proto\"2\n\021BartenderTa" +
-      "skInfo\022\021\n\tis_finish\030\t \001(\010\022\n\n\002id\030\016 \001(\rB8\n" +
-      "\031emu.grasscutter.net.protoB\033BartenderTas" +
-      "kInfoOuterClassb\006proto3"
+      "skInfo\022\n\n\002id\030\017 \001(\r\022\021\n\tis_finish\030\t \001(\010B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -601,7 +608,7 @@ public final class BartenderTaskInfoOuterClass {
     internal_static_BartenderTaskInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderTaskInfo_descriptor,
-        new java.lang.String[] { "IsFinish", "Id", });
+        new java.lang.String[] { "Id", "IsFinish", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

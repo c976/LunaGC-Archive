@@ -19,25 +19,28 @@ public final class BubbleDramaPlayInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-     * @return Whether the effigyChallengeV5SocialInfo field is set.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
-    boolean hasEffigyChallengeV5SocialInfo();
+    java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> 
+        getPlayInfoListList();
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-     * @return The effigyChallengeV5SocialInfo.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo getEffigyChallengeV5SocialInfo();
+    emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo getPlayInfoList(int index);
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
-    emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder getEffigyChallengeV5SocialInfoOrBuilder();
-
+    int getPlayInfoListCount();
     /**
-     * <code>bool APBIKEACDGL = 3;</code>
-     * @return The aPBIKEACDGL.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
-    boolean getAPBIKEACDGL();
+    java.util.List<? extends emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder> 
+        getPlayInfoListOrBuilderList();
+    /**
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+     */
+    emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder getPlayInfoListOrBuilder(
+        int index);
   }
   /**
    * Protobuf type {@code BubbleDramaPlayInfo}
@@ -52,6 +55,7 @@ public final class BubbleDramaPlayInfoOuterClass {
       super(builder);
     }
     private BubbleDramaPlayInfo() {
+      playInfoList_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -85,22 +89,13 @@ public final class BubbleDramaPlayInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              aPBIKEACDGL_ = input.readBool();
-              break;
-            }
-            case 14786: {
-              emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder subBuilder = null;
-              if (((bitField0_ & 0x00000001) != 0)) {
-                subBuilder = effigyChallengeV5SocialInfo_.toBuilder();
+            case 98: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                playInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo>();
+                mutable_bitField0_ |= 0x00000001;
               }
-              effigyChallengeV5SocialInfo_ = input.readMessage(emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(effigyChallengeV5SocialInfo_);
-                effigyChallengeV5SocialInfo_ = subBuilder.buildPartial();
-              }
-              bitField0_ |= 0x00000001;
+              playInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -118,6 +113,9 @@ public final class BubbleDramaPlayInfoOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          playInfoList_ = java.util.Collections.unmodifiableList(playInfoList_);
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -135,42 +133,44 @@ public final class BubbleDramaPlayInfoOuterClass {
               emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo.class, emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo.Builder.class);
     }
 
-    private int bitField0_;
-    public static final int EFFIGY_CHALLENGE_V5_SOCIAL_INFO_FIELD_NUMBER = 1848;
-    private emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo effigyChallengeV5SocialInfo_;
+    public static final int PLAY_INFO_LIST_FIELD_NUMBER = 12;
+    private java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> playInfoList_;
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-     * @return Whether the effigyChallengeV5SocialInfo field is set.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
     @java.lang.Override
-    public boolean hasEffigyChallengeV5SocialInfo() {
-      return ((bitField0_ & 0x00000001) != 0);
+    public java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> getPlayInfoListList() {
+      return playInfoList_;
     }
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-     * @return The effigyChallengeV5SocialInfo.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo getEffigyChallengeV5SocialInfo() {
-      return effigyChallengeV5SocialInfo_ == null ? emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.getDefaultInstance() : effigyChallengeV5SocialInfo_;
+    public java.util.List<? extends emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder> 
+        getPlayInfoListOrBuilderList() {
+      return playInfoList_;
     }
     /**
-     * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder getEffigyChallengeV5SocialInfoOrBuilder() {
-      return effigyChallengeV5SocialInfo_ == null ? emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.getDefaultInstance() : effigyChallengeV5SocialInfo_;
+    public int getPlayInfoListCount() {
+      return playInfoList_.size();
     }
-
-    public static final int APBIKEACDGL_FIELD_NUMBER = 3;
-    private boolean aPBIKEACDGL_;
     /**
-     * <code>bool APBIKEACDGL = 3;</code>
-     * @return The aPBIKEACDGL.
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
      */
     @java.lang.Override
-    public boolean getAPBIKEACDGL() {
-      return aPBIKEACDGL_;
+    public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo getPlayInfoList(int index) {
+      return playInfoList_.get(index);
+    }
+    /**
+     * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder getPlayInfoListOrBuilder(
+        int index) {
+      return playInfoList_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -187,11 +187,8 @@ public final class BubbleDramaPlayInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (aPBIKEACDGL_ != false) {
-        output.writeBool(3, aPBIKEACDGL_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        output.writeMessage(1848, getEffigyChallengeV5SocialInfo());
+      for (int i = 0; i < playInfoList_.size(); i++) {
+        output.writeMessage(12, playInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -202,13 +199,9 @@ public final class BubbleDramaPlayInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (aPBIKEACDGL_ != false) {
+      for (int i = 0; i < playInfoList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, aPBIKEACDGL_);
-      }
-      if (((bitField0_ & 0x00000001) != 0)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1848, getEffigyChallengeV5SocialInfo());
+          .computeMessageSize(12, playInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -225,13 +218,8 @@ public final class BubbleDramaPlayInfoOuterClass {
       }
       emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo other = (emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo) obj;
 
-      if (hasEffigyChallengeV5SocialInfo() != other.hasEffigyChallengeV5SocialInfo()) return false;
-      if (hasEffigyChallengeV5SocialInfo()) {
-        if (!getEffigyChallengeV5SocialInfo()
-            .equals(other.getEffigyChallengeV5SocialInfo())) return false;
-      }
-      if (getAPBIKEACDGL()
-          != other.getAPBIKEACDGL()) return false;
+      if (!getPlayInfoListList()
+          .equals(other.getPlayInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -243,13 +231,10 @@ public final class BubbleDramaPlayInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasEffigyChallengeV5SocialInfo()) {
-        hash = (37 * hash) + EFFIGY_CHALLENGE_V5_SOCIAL_INFO_FIELD_NUMBER;
-        hash = (53 * hash) + getEffigyChallengeV5SocialInfo().hashCode();
+      if (getPlayInfoListCount() > 0) {
+        hash = (37 * hash) + PLAY_INFO_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getPlayInfoListList().hashCode();
       }
-      hash = (37 * hash) + APBIKEACDGL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getAPBIKEACDGL());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -378,20 +363,18 @@ public final class BubbleDramaPlayInfoOuterClass {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getEffigyChallengeV5SocialInfoFieldBuilder();
+          getPlayInfoListFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          effigyChallengeV5SocialInfo_ = null;
+        if (playInfoListBuilder_ == null) {
+          playInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          effigyChallengeV5SocialInfoBuilder_.clear();
+          playInfoListBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
-        aPBIKEACDGL_ = false;
-
         return this;
       }
 
@@ -419,17 +402,15 @@ public final class BubbleDramaPlayInfoOuterClass {
       public emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo buildPartial() {
         emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo result = new emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo(this);
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          if (effigyChallengeV5SocialInfoBuilder_ == null) {
-            result.effigyChallengeV5SocialInfo_ = effigyChallengeV5SocialInfo_;
-          } else {
-            result.effigyChallengeV5SocialInfo_ = effigyChallengeV5SocialInfoBuilder_.build();
+        if (playInfoListBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            playInfoList_ = java.util.Collections.unmodifiableList(playInfoList_);
+            bitField0_ = (bitField0_ & ~0x00000001);
           }
-          to_bitField0_ |= 0x00000001;
+          result.playInfoList_ = playInfoList_;
+        } else {
+          result.playInfoList_ = playInfoListBuilder_.build();
         }
-        result.aPBIKEACDGL_ = aPBIKEACDGL_;
-        result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
       }
@@ -478,11 +459,31 @@ public final class BubbleDramaPlayInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo other) {
         if (other == emu.grasscutter.net.proto.BubbleDramaPlayInfoOuterClass.BubbleDramaPlayInfo.getDefaultInstance()) return this;
-        if (other.hasEffigyChallengeV5SocialInfo()) {
-          mergeEffigyChallengeV5SocialInfo(other.getEffigyChallengeV5SocialInfo());
-        }
-        if (other.getAPBIKEACDGL() != false) {
-          setAPBIKEACDGL(other.getAPBIKEACDGL());
+        if (playInfoListBuilder_ == null) {
+          if (!other.playInfoList_.isEmpty()) {
+            if (playInfoList_.isEmpty()) {
+              playInfoList_ = other.playInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensurePlayInfoListIsMutable();
+              playInfoList_.addAll(other.playInfoList_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.playInfoList_.isEmpty()) {
+            if (playInfoListBuilder_.isEmpty()) {
+              playInfoListBuilder_.dispose();
+              playInfoListBuilder_ = null;
+              playInfoList_ = other.playInfoList_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              playInfoListBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getPlayInfoListFieldBuilder() : null;
+            } else {
+              playInfoListBuilder_.addAllMessages(other.playInfoList_);
+            }
+          }
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -514,155 +515,244 @@ public final class BubbleDramaPlayInfoOuterClass {
       }
       private int bitField0_;
 
-      private emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo effigyChallengeV5SocialInfo_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder> effigyChallengeV5SocialInfoBuilder_;
-      /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-       * @return Whether the effigyChallengeV5SocialInfo field is set.
-       */
-      public boolean hasEffigyChallengeV5SocialInfo() {
-        return ((bitField0_ & 0x00000001) != 0);
+      private java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> playInfoList_ =
+        java.util.Collections.emptyList();
+      private void ensurePlayInfoListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          playInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo>(playInfoList_);
+          bitField0_ |= 0x00000001;
+         }
       }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder> playInfoListBuilder_;
+
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
-       * @return The effigyChallengeV5SocialInfo.
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo getEffigyChallengeV5SocialInfo() {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          return effigyChallengeV5SocialInfo_ == null ? emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.getDefaultInstance() : effigyChallengeV5SocialInfo_;
+      public java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> getPlayInfoListList() {
+        if (playInfoListBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(playInfoList_);
         } else {
-          return effigyChallengeV5SocialInfoBuilder_.getMessage();
+          return playInfoListBuilder_.getMessageList();
         }
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public Builder setEffigyChallengeV5SocialInfo(emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo value) {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
+      public int getPlayInfoListCount() {
+        if (playInfoListBuilder_ == null) {
+          return playInfoList_.size();
+        } else {
+          return playInfoListBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo getPlayInfoList(int index) {
+        if (playInfoListBuilder_ == null) {
+          return playInfoList_.get(index);
+        } else {
+          return playInfoListBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public Builder setPlayInfoList(
+          int index, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo value) {
+        if (playInfoListBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          effigyChallengeV5SocialInfo_ = value;
+          ensurePlayInfoListIsMutable();
+          playInfoList_.set(index, value);
           onChanged();
         } else {
-          effigyChallengeV5SocialInfoBuilder_.setMessage(value);
+          playInfoListBuilder_.setMessage(index, value);
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public Builder setEffigyChallengeV5SocialInfo(
-          emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder builderForValue) {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          effigyChallengeV5SocialInfo_ = builderForValue.build();
+      public Builder setPlayInfoList(
+          int index, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder builderForValue) {
+        if (playInfoListBuilder_ == null) {
+          ensurePlayInfoListIsMutable();
+          playInfoList_.set(index, builderForValue.build());
           onChanged();
         } else {
-          effigyChallengeV5SocialInfoBuilder_.setMessage(builderForValue.build());
+          playInfoListBuilder_.setMessage(index, builderForValue.build());
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public Builder mergeEffigyChallengeV5SocialInfo(emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo value) {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0) &&
-              effigyChallengeV5SocialInfo_ != null &&
-              effigyChallengeV5SocialInfo_ != emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.getDefaultInstance()) {
-            effigyChallengeV5SocialInfo_ =
-              emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.newBuilder(effigyChallengeV5SocialInfo_).mergeFrom(value).buildPartial();
-          } else {
-            effigyChallengeV5SocialInfo_ = value;
+      public Builder addPlayInfoList(emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo value) {
+        if (playInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
           }
+          ensurePlayInfoListIsMutable();
+          playInfoList_.add(value);
           onChanged();
         } else {
-          effigyChallengeV5SocialInfoBuilder_.mergeFrom(value);
+          playInfoListBuilder_.addMessage(value);
         }
-        bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public Builder clearEffigyChallengeV5SocialInfo() {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          effigyChallengeV5SocialInfo_ = null;
+      public Builder addPlayInfoList(
+          int index, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo value) {
+        if (playInfoListBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensurePlayInfoListIsMutable();
+          playInfoList_.add(index, value);
           onChanged();
         } else {
-          effigyChallengeV5SocialInfoBuilder_.clear();
+          playInfoListBuilder_.addMessage(index, value);
         }
-        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder getEffigyChallengeV5SocialInfoBuilder() {
-        bitField0_ |= 0x00000001;
-        onChanged();
-        return getEffigyChallengeV5SocialInfoFieldBuilder().getBuilder();
+      public Builder addPlayInfoList(
+          emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder builderForValue) {
+        if (playInfoListBuilder_ == null) {
+          ensurePlayInfoListIsMutable();
+          playInfoList_.add(builderForValue.build());
+          onChanged();
+        } else {
+          playInfoListBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      public emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder getEffigyChallengeV5SocialInfoOrBuilder() {
-        if (effigyChallengeV5SocialInfoBuilder_ != null) {
-          return effigyChallengeV5SocialInfoBuilder_.getMessageOrBuilder();
+      public Builder addPlayInfoList(
+          int index, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder builderForValue) {
+        if (playInfoListBuilder_ == null) {
+          ensurePlayInfoListIsMutable();
+          playInfoList_.add(index, builderForValue.build());
+          onChanged();
         } else {
-          return effigyChallengeV5SocialInfo_ == null ?
-              emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.getDefaultInstance() : effigyChallengeV5SocialInfo_;
+          playInfoListBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public Builder addAllPlayInfoList(
+          java.lang.Iterable<? extends emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo> values) {
+        if (playInfoListBuilder_ == null) {
+          ensurePlayInfoListIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, playInfoList_);
+          onChanged();
+        } else {
+          playInfoListBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public Builder clearPlayInfoList() {
+        if (playInfoListBuilder_ == null) {
+          playInfoList_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          playInfoListBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public Builder removePlayInfoList(int index) {
+        if (playInfoListBuilder_ == null) {
+          ensurePlayInfoListIsMutable();
+          playInfoList_.remove(index);
+          onChanged();
+        } else {
+          playInfoListBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder getPlayInfoListBuilder(
+          int index) {
+        return getPlayInfoListFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder getPlayInfoListOrBuilder(
+          int index) {
+        if (playInfoListBuilder_ == null) {
+          return playInfoList_.get(index);  } else {
+          return playInfoListBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>optional ._EffigyChallengeV5SocialInfo effigy_challenge_v5_social_info = 1848;</code>
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
        */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder> 
-          getEffigyChallengeV5SocialInfoFieldBuilder() {
-        if (effigyChallengeV5SocialInfoBuilder_ == null) {
-          effigyChallengeV5SocialInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfo.Builder, emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass._EffigyChallengeV5SocialInfoOrBuilder>(
-                  getEffigyChallengeV5SocialInfo(),
+      public java.util.List<? extends emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder> 
+           getPlayInfoListOrBuilderList() {
+        if (playInfoListBuilder_ != null) {
+          return playInfoListBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(playInfoList_);
+        }
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder addPlayInfoListBuilder() {
+        return getPlayInfoListFieldBuilder().addBuilder(
+            emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder addPlayInfoListBuilder(
+          int index) {
+        return getPlayInfoListFieldBuilder().addBuilder(
+            index, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .BubbleDramaPlayTypeInfo play_info_list = 12;</code>
+       */
+      public java.util.List<emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder> 
+           getPlayInfoListBuilderList() {
+        return getPlayInfoListFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder> 
+          getPlayInfoListFieldBuilder() {
+        if (playInfoListBuilder_ == null) {
+          playInfoListBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfo.Builder, emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.BubbleDramaPlayTypeInfoOrBuilder>(
+                  playInfoList_,
+                  ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          effigyChallengeV5SocialInfo_ = null;
+          playInfoList_ = null;
         }
-        return effigyChallengeV5SocialInfoBuilder_;
-      }
-
-      private boolean aPBIKEACDGL_ ;
-      /**
-       * <code>bool APBIKEACDGL = 3;</code>
-       * @return The aPBIKEACDGL.
-       */
-      @java.lang.Override
-      public boolean getAPBIKEACDGL() {
-        return aPBIKEACDGL_;
-      }
-      /**
-       * <code>bool APBIKEACDGL = 3;</code>
-       * @param value The aPBIKEACDGL to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAPBIKEACDGL(boolean value) {
-        
-        aPBIKEACDGL_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool APBIKEACDGL = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAPBIKEACDGL() {
-        
-        aPBIKEACDGL_ = false;
-        onChanged();
-        return this;
+        return playInfoListBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -731,27 +821,24 @@ public final class BubbleDramaPlayInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\031BubbleDramaPlayInfo.proto\032\"_EffigyChal" +
-      "lengeV5SocialInfo.proto\"\234\001\n\023BubbleDramaP" +
-      "layInfo\022L\n\037effigy_challenge_v5_social_in" +
-      "fo\030\270\016 \001(\0132\035._EffigyChallengeV5SocialInfo" +
-      "H\000\210\001\001\022\023\n\013APBIKEACDGL\030\003 \001(\010B\"\n _effigy_ch" +
-      "allenge_v5_social_infoB:\n\031emu.grasscutte" +
-      "r.net.protoB\035BubbleDramaPlayInfoOuterCla" +
-      "ssb\006proto3"
+      "\n\031BubbleDramaPlayInfo.proto\032\035BubbleDrama" +
+      "PlayTypeInfo.proto\"G\n\023BubbleDramaPlayInf" +
+      "o\0220\n\016play_info_list\030\014 \003(\0132\030.BubbleDramaP" +
+      "layTypeInfoB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.getDescriptor(),
         });
     internal_static_BubbleDramaPlayInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_BubbleDramaPlayInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BubbleDramaPlayInfo_descriptor,
-        new java.lang.String[] { "EffigyChallengeV5SocialInfo", "APBIKEACDGL", "EffigyChallengeV5SocialInfo", });
-    emu.grasscutter.net.proto._EffigyChallengeV5SocialInfoOuterClass.getDescriptor();
+        new java.lang.String[] { "PlayInfoList", });
+    emu.grasscutter.net.proto.BubbleDramaPlayTypeInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

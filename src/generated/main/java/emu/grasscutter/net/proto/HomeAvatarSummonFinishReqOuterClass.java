@@ -19,12 +19,17 @@ public final class HomeAvatarSummonFinishReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 event_id = 8;</code>
+     * <code>uint32 event_id = 11;</code>
      * @return The eventId.
      */
     int getEventId();
   }
   /**
+   * <pre>
+   * CmdId: 24791
+   * Obf: OJLLDCGAIDJ
+   * </pre>
+   *
    * Protobuf type {@code HomeAvatarSummonFinishReq}
    */
   public static final class HomeAvatarSummonFinishReq extends
@@ -109,7 +114,7 @@ public final class HomeAvatarSummonFinishReqOuterClass {
     public static final int EVENT_ID_FIELD_NUMBER = 8;
     private int eventId_;
     /**
-     * <code>uint32 event_id = 8;</code>
+     * <code>uint32 event_id = 11;</code>
      * @return The eventId.
      */
     @java.lang.Override
@@ -273,6 +278,11 @@ public final class HomeAvatarSummonFinishReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 24791
+     * Obf: OJLLDCGAIDJ
+     * </pre>
+     *
      * Protobuf type {@code HomeAvatarSummonFinishReq}
      */
     public static final class Builder extends
@@ -421,7 +431,7 @@ public final class HomeAvatarSummonFinishReqOuterClass {
 
       private int eventId_ ;
       /**
-       * <code>uint32 event_id = 8;</code>
+       * <code>uint32 event_id = 11;</code>
        * @return The eventId.
        */
       @java.lang.Override
@@ -429,7 +439,7 @@ public final class HomeAvatarSummonFinishReqOuterClass {
         return eventId_;
       }
       /**
-       * <code>uint32 event_id = 8;</code>
+       * <code>uint32 event_id = 11;</code>
        * @param value The eventId to set.
        * @return This builder for chaining.
        */
@@ -440,7 +450,7 @@ public final class HomeAvatarSummonFinishReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 event_id = 8;</code>
+       * <code>uint32 event_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEventId() {
@@ -517,9 +527,8 @@ public final class HomeAvatarSummonFinishReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037HomeAvatarSummonFinishReq.proto\"-\n\031Hom" +
-      "eAvatarSummonFinishReq\022\020\n\010event_id\030\010 \001(\r" +
-      "B@\n\031emu.grasscutter.net.protoB#HomeAvata" +
-      "rSummonFinishReqOuterClassb\006proto3"
+      "eAvatarSummonFinishReq\022\020\n\010event_id\030\013 \001(\r" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

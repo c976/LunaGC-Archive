@@ -576,14 +576,8 @@ public class Avatar {
         this.setFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 1f);
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, specialEnergy);
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP, nyxValue);
-        // The burst's own specialEnergyMin, not a flat 200: Mavuika's Fighting Spirit does want 200
-        // but Skirk's wants 100, and a doubled bar never fills.
-        float maxSpecialEnergy = 0f;
-        if (this.getSkillDepot() != null && this.getSkillDepot().getEnergySkillData() != null) {
-            maxSpecialEnergy = this.getSkillDepot().getEnergySkillData().getSpecialEnergyMin();
-        }
-        this.setFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY, maxSpecialEnergy);
-        this.setFightProperty(FightProperty.FIGHT_PROP_START_SPECIAL_ENERGY, maxSpecialEnergy / 2f);
+        this.setFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY, 200);
+        this.setFightProperty(FightProperty.FIGHT_PROP_START_SPECIAL_ENERGY, 100);
 
         if (promoteData != null) {
             for (FightPropData fightPropData : promoteData.getAddProps()) {
@@ -740,6 +734,20 @@ public class Avatar {
 
             // Add any embryos from this proud skill
             this.addToExtraAbilityEmbryos(proudSkillData.getOpenConfig());
+        }
+
+        if (skillDepot != null) {
+            skillDepot
+                    .getSkillsAndEnergySkill()
+                    .mapToObj(GameData.getAvatarSkillDataMap()::get)
+                    .filter(Objects::nonNull)
+                    .mapToInt(AvatarSkillData::getProudSkillGroupId)
+                    .filter(groupId -> groupId > 0)
+                    .mapToObj(groupId -> GameData.getProudSkillDataMap().get((groupId * 100) + 1))
+                    .filter(Objects::nonNull)
+                    .map(ProudSkillData::getOpenConfig)
+                    .filter(Objects::nonNull)
+                    .forEach(this::addToExtraAbilityEmbryos);
         }
 
         // Constellations

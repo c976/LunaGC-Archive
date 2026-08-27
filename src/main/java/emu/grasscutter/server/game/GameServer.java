@@ -304,35 +304,14 @@ public final class GameServer extends KcpServer implements Iterable<Player> {
     public synchronized void onTick() {
         var tickStart = Instant.now();
 
-        // Each of these is guarded on its own. One world or one player throwing used to abandon the
-        // whole tick, so everybody else's world stopped moving for reasons that had nothing to do
-        // with them - and the scheduler at the end never ran at all.
-        this.worlds.removeIf(
-                world -> {
-                    try {
-                        return world.onTick();
-                    } catch (Throwable e) {
-                        Grasscutter.getLogger().error("A world threw while ticking.", e);
-                        return false;
-                    }
-                });
+        // Tick worlds and home worlds.
+        this.worlds.removeIf(World::onTick);
 
-        this.players
-                .values()
-                .forEach(
-                        player -> {
-                            try {
-                                player.onTick();
-                            } catch (Throwable e) {
-                                Grasscutter.getLogger().error("Player {} threw while ticking.", player.getUid(), e);
-                            }
-                        });
+        // Tick players.
+        this.players.values().forEach(Player::onTick);
 
-        try {
-            this.getScheduler().runTasks();
-        } catch (Throwable e) {
-            Grasscutter.getLogger().error("A scheduled task threw.", e);
-        }
+        // Tick scheduler.
+        this.getScheduler().runTasks();
 
         // Call server tick event.
         ServerTickEvent event = new ServerTickEvent(tickStart, Instant.now());
@@ -359,11 +338,6 @@ public final class GameServer extends KcpServer implements Iterable<Player> {
             this.dispatchClient.connect();
         }
 
-        // Settle which Spiral Abyss rotation is live now that the resources are in. Doing it here
-        // rather than on the first abyss screen means a resource set that cannot build any rotation
-        // says so at boot, not to whoever opens the abyss first.
-        this.announceTowerRotation();
-
         // Schedule game loop.
         Timer gameLoop = new Timer();
         gameLoop.scheduleAtFixedRate(
@@ -372,37 +346,18 @@ public final class GameServer extends KcpServer implements Iterable<Player> {
                     public void run() {
                         try {
                             onTick();
-                        } catch (Throwable e) {
-                            // A Timer thread dies on anything it does not catch, and it is the only
-                            // thing driving the world - so the game would simply stop, quietly.
+                        } catch (Exception e) {
                             Grasscutter.getLogger().error(translate("messages.game.game_update_error"), e);
                         }
                     }
                 },
                 new Date(),
-                Math.max(1, GAME_INFO.tickRateMs));
+                1000L);
         Grasscutter.getLogger().info(translate("messages.status.free_software"));
         Grasscutter.getLogger()
                 .info(translate("messages.game.address_bind", GAME_INFO.accessAddress, address.getPort()));
         ServerStartEvent event = new ServerStartEvent(ServerEvent.Type.GAME, OffsetDateTime.now());
         event.call();
-    }
-
-    private void announceTowerRotation() {
-        try {
-            var schedule = this.towerSystem.getCurrentTowerScheduleData();
-            if (schedule == null) return;
-
-            var floors = this.towerSystem.getScheduleFloors();
-            Grasscutter.getLogger()
-                    .info(
-                            "Spiral Abyss: rotation {} is live, floors 9-12 are {}, next change {}.",
-                            schedule.getScheduleId(),
-                            floors,
-                            this.towerSystem.getNextScheduleChangeTime());
-        } catch (Throwable e) {
-            Grasscutter.getLogger().error("Could not settle the Spiral Abyss rotation.", e);
-        }
     }
 
     public void onServerShutdown() {

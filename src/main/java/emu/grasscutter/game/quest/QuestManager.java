@@ -32,11 +32,10 @@ public final class QuestManager extends BasePlayerManager {
     private long lastHourCheck = 0;
     private long lastDayCheck = 0;
 
-    // One thread, not four: quest events mutate shared quest state and racing them corrupted it.
     public static final ExecutorService eventExecutor =
             new ThreadPoolExecutor(
-                    1,
-                    1,
+                    4,
+                    4,
                     60,
                     TimeUnit.SECONDS,
                     new LinkedBlockingDeque<>(1000),

@@ -19,35 +19,40 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
+     */
+    int getUid();
+
+    /**
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @return A list containing the showNameCardIdList.
      */
     java.util.List<java.lang.Integer> getShowNameCardIdListList();
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @return The count of showNameCardIdList.
      */
     int getShowNameCardIdListCount();
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The showNameCardIdList at the given index.
      */
     int getShowNameCardIdList(int index);
 
     /**
-     * <code>uint32 uid = 13;</code>
-     * @return The uid.
-     */
-    int getUid();
-
-    /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
+   * <pre>
+   * CmdId: 20479
+   * Obf: LLJDGCBCJMB
+   * </pre>
+   *
    * Protobuf type {@code GetFriendShowNameCardInfoRsp}
    */
   public static final class GetFriendShowNameCardInfoRsp extends
@@ -115,14 +120,14 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 104: {
-
-              uid_ = input.readUInt32();
-              break;
-            }
             case 112: {
 
               retcode_ = input.readInt32();
+              break;
+            }
+            case 104: {
+
+              uid_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +165,21 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
               emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp.class, emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp.Builder.class);
     }
 
+    public static final int UID_FIELD_NUMBER = 13;
+    private int uid_;
+    /**
+     * <code>uint32 uid = 12;</code>
+     * @return The uid.
+     */
+    @java.lang.Override
+    public int getUid() {
+      return uid_;
+    }
+
     public static final int SHOW_NAME_CARD_ID_LIST_FIELD_NUMBER = 8;
     private com.google.protobuf.Internal.IntList showNameCardIdList_;
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @return A list containing the showNameCardIdList.
      */
     @java.lang.Override
@@ -172,14 +188,14 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       return showNameCardIdList_;
     }
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @return The count of showNameCardIdList.
      */
     public int getShowNameCardIdListCount() {
       return showNameCardIdList_.size();
     }
     /**
-     * <code>repeated uint32 show_name_card_id_list = 8;</code>
+     * <code>repeated uint32 show_name_card_id_list = 1;</code>
      * @param index The index of the element to return.
      * @return The showNameCardIdList at the given index.
      */
@@ -188,21 +204,10 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
     }
     private int showNameCardIdListMemoizedSerializedSize = -1;
 
-    public static final int UID_FIELD_NUMBER = 13;
-    private int uid_;
-    /**
-     * <code>uint32 uid = 13;</code>
-     * @return The uid.
-     */
-    @java.lang.Override
-    public int getUid() {
-      return uid_;
-    }
-
     public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 14;</code>
+     * <code>int32 retcode = 2;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -232,11 +237,11 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       for (int i = 0; i < showNameCardIdList_.size(); i++) {
         output.writeUInt32NoTag(showNameCardIdList_.getInt(i));
       }
-      if (uid_ != 0) {
-        output.writeUInt32(13, uid_);
-      }
       if (retcode_ != 0) {
         output.writeInt32(14, retcode_);
+      }
+      if (uid_ != 0) {
+        output.writeUInt32(13, uid_);
       }
       unknownFields.writeTo(output);
     }
@@ -261,13 +266,13 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         }
         showNameCardIdListMemoizedSerializedSize = dataSize;
       }
-      if (uid_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, uid_);
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(14, retcode_);
+      }
+      if (uid_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, uid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,10 +289,10 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       }
       emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp other = (emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp) obj;
 
-      if (!getShowNameCardIdListList()
-          .equals(other.getShowNameCardIdListList())) return false;
       if (getUid()
           != other.getUid()) return false;
+      if (!getShowNameCardIdListList()
+          .equals(other.getShowNameCardIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -301,12 +306,12 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + UID_FIELD_NUMBER;
+      hash = (53 * hash) + getUid();
       if (getShowNameCardIdListCount() > 0) {
         hash = (37 * hash) + SHOW_NAME_CARD_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShowNameCardIdListList().hashCode();
       }
-      hash = (37 * hash) + UID_FIELD_NUMBER;
-      hash = (53 * hash) + getUid();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -405,6 +410,11 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 20479
+     * Obf: LLJDGCBCJMB
+     * </pre>
+     *
      * Protobuf type {@code GetFriendShowNameCardInfoRsp}
      */
     public static final class Builder extends
@@ -442,10 +452,10 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        showNameCardIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         uid_ = 0;
 
+        showNameCardIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
         return this;
@@ -475,12 +485,12 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       public emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp buildPartial() {
         emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp result = new emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp(this);
         int from_bitField0_ = bitField0_;
+        result.uid_ = uid_;
         if (((bitField0_ & 0x00000001) != 0)) {
           showNameCardIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.showNameCardIdList_ = showNameCardIdList_;
-        result.uid_ = uid_;
         result.retcode_ = retcode_;
         onBuilt();
         return result;
@@ -530,6 +540,9 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp other) {
         if (other == emu.grasscutter.net.proto.GetFriendShowNameCardInfoRspOuterClass.GetFriendShowNameCardInfoRsp.getDefaultInstance()) return this;
+        if (other.getUid() != 0) {
+          setUid(other.getUid());
+        }
         if (!other.showNameCardIdList_.isEmpty()) {
           if (showNameCardIdList_.isEmpty()) {
             showNameCardIdList_ = other.showNameCardIdList_;
@@ -539,9 +552,6 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
             showNameCardIdList_.addAll(other.showNameCardIdList_);
           }
           onChanged();
-        }
-        if (other.getUid() != 0) {
-          setUid(other.getUid());
         }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
@@ -576,6 +586,37 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
       }
       private int bitField0_;
 
+      private int uid_ ;
+      /**
+       * <code>uint32 uid = 12;</code>
+       * @return The uid.
+       */
+      @java.lang.Override
+      public int getUid() {
+        return uid_;
+      }
+      /**
+       * <code>uint32 uid = 12;</code>
+       * @param value The uid to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUid(int value) {
+        
+        uid_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 uid = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearUid() {
+        
+        uid_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList showNameCardIdList_ = emptyIntList();
       private void ensureShowNameCardIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -584,7 +625,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @return A list containing the showNameCardIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -593,14 +634,14 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
                  java.util.Collections.unmodifiableList(showNameCardIdList_) : showNameCardIdList_;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @return The count of showNameCardIdList.
        */
       public int getShowNameCardIdListCount() {
         return showNameCardIdList_.size();
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @param index The index of the element to return.
        * @return The showNameCardIdList at the given index.
        */
@@ -608,7 +649,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return showNameCardIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @param index The index to set the value at.
        * @param value The showNameCardIdList to set.
        * @return This builder for chaining.
@@ -621,7 +662,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @param value The showNameCardIdList to add.
        * @return This builder for chaining.
        */
@@ -632,7 +673,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @param values The showNameCardIdList to add.
        * @return This builder for chaining.
        */
@@ -645,7 +686,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 show_name_card_id_list = 8;</code>
+       * <code>repeated uint32 show_name_card_id_list = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearShowNameCardIdList() {
@@ -655,40 +696,9 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return this;
       }
 
-      private int uid_ ;
-      /**
-       * <code>uint32 uid = 13;</code>
-       * @return The uid.
-       */
-      @java.lang.Override
-      public int getUid() {
-        return uid_;
-      }
-      /**
-       * <code>uint32 uid = 13;</code>
-       * @param value The uid to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUid(int value) {
-        
-        uid_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 uid = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUid() {
-        
-        uid_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -696,7 +706,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -707,7 +717,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 14;</code>
+       * <code>int32 retcode = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -784,10 +794,9 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\"GetFriendShowNameCardInfoRsp.proto\"\\\n\034" +
-      "GetFriendShowNameCardInfoRsp\022\036\n\026show_nam" +
-      "e_card_id_list\030\010 \003(\r\022\013\n\003uid\030\r \001(\r\022\017\n\007ret" +
-      "code\030\016 \001(\005BC\n\031emu.grasscutter.net.protoB" +
-      "&GetFriendShowNameCardInfoRspOuterClassb" +
+      "GetFriendShowNameCardInfoRsp\022\013\n\003uid\030\014 \001(" +
+      "\r\022\036\n\026show_name_card_id_list\030\001 \003(\r\022\017\n\007ret" +
+      "code\030\002 \001(\005B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -799,7 +808,7 @@ public final class GetFriendShowNameCardInfoRspOuterClass {
     internal_static_GetFriendShowNameCardInfoRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetFriendShowNameCardInfoRsp_descriptor,
-        new java.lang.String[] { "ShowNameCardIdList", "Uid", "Retcode", });
+        new java.lang.String[] { "Uid", "ShowNameCardIdList", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

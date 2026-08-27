@@ -9,8 +9,6 @@ import emu.grasscutter.net.packet.*;
 import emu.grasscutter.server.event.game.ReceivePacketEvent;
 import emu.grasscutter.server.game.GameSession.SessionState;
 import it.unimi.dsi.fastutil.ints.*;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
 public final class GameServerPacketHandler {
 
     private final Int2ObjectMap<PacketHandler> handlers;
@@ -49,29 +47,6 @@ public final class GameServerPacketHandler {
     public void handle(GameSession session, int opcode, byte[] header, byte[] payload) {
         PacketHandler handler = this.handlers.get(opcode);
 
-        // This used to announce every opcode that arrived along with a dump of its fields, which is
-        // how the 7.0 inbound map was recovered from a single client launch. That job is done, so it
-        // is down to debug: only unhandled opcodes, once each, and no payload dump.
-        if (handler == null && unannounced.add(opcode)) {
-            // The field numbers are what identify the message: a Req we have no 7.0 CmdId for still
-            // has a known 6.7 shape, so the numbers on the wire name it without any guessing. Said
-            // once per opcode, so walking through a feature lists exactly what it needs.
-            String fields;
-            try {
-                fields =
-                        com.google.protobuf.UnknownFieldSet.parseFrom(payload).asMap().keySet().toString();
-            } catch (Exception e) {
-                fields = "<unparsed>";
-            }
-            Grasscutter.getLogger()
-                    .info(
-                            "{} ({}) arrived and nothing handles it - {} bytes, fields {}",
-                            PacketOpcodesUtils.getOpcodeName(opcode),
-                            opcode,
-                            payload.length,
-                            fields);
-        }
-
         if (handler != null) {
             try {
 
@@ -104,28 +79,13 @@ public final class GameServerPacketHandler {
                 event.call();
                 if (!event.isCanceled())
                 handler.handle(session, header, event.getPacketData());
-            } catch (Throwable ex) {
-                // Printed to the console it never reached the log file, so an action that quietly did
-                // nothing left nothing behind to explain it. Throwable rather than Exception because
-                // one malformed packet should not be able to take a player's connection with it.
-                Grasscutter.getLogger()
-                        .error(
-                                "{} threw while handling {} for {}.",
-                                handler.getClass().getSimpleName(),
-                                PacketOpcodesUtils.getOpcodeName(opcode),
-                                session.getPlayer() != null ? session.getPlayer().getUid() : "an unlogged session",
-                                ex);
+            } catch (Exception ex) {
+
+                ex.printStackTrace();
             }
             return;
         }
-
-        // Nothing answers this one, so the player's action does nothing - already reported above,
-        // along with the fields, which is how the CmdId of an unimplemented feature is discovered:
-        // go and use the feature in game, and the client names the packet it wanted.
     }
-
-    /** Opcodes already reported as unhandled, so the log says it once rather than every packet. */
-    private final Set<Integer> unannounced = ConcurrentHashMap.newKeySet();
 
     private static boolean shouldDump(GameSession session, int opcode) {
         if (PacketOpcodes.BANNED_PACKETS.contains(opcode)) return false;

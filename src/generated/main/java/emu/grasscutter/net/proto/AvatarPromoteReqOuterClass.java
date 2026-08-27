@@ -18,13 +18,13 @@ public final class AvatarPromoteReqOuterClass {
       // @@protoc_insertion_point(interface_extends:AvatarPromoteReq)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint64 guid = 12;</code>
-     * @return The guid.
-     */
     long getGuid();
   }
   /**
+   * <pre>
+   * CmdId: 1249
+   * </pre>
+   *
    * Protobuf type {@code AvatarPromoteReq}
    */
   public static final class AvatarPromoteReq extends
@@ -108,10 +108,7 @@ public final class AvatarPromoteReqOuterClass {
 
     public static final int GUID_FIELD_NUMBER = 12;
     private long guid_;
-    /**
-     * <code>uint64 guid = 12;</code>
-     * @return The guid.
-     */
+
     @java.lang.Override
     public long getGuid() {
       return guid_;
@@ -274,6 +271,10 @@ public final class AvatarPromoteReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 1249
+     * </pre>
+     *
      * Protobuf type {@code AvatarPromoteReq}
      */
     public static final class Builder extends
@@ -421,31 +422,21 @@ public final class AvatarPromoteReqOuterClass {
       }
 
       private long guid_ ;
-      /**
-       * <code>uint64 guid = 12;</code>
-       * @return The guid.
-       */
+
       @java.lang.Override
       public long getGuid() {
         return guid_;
       }
-      /**
-       * <code>uint64 guid = 12;</code>
-       * @param value The guid to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setGuid(long value) {
-        
+
         guid_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint64 guid = 12;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearGuid() {
-        
+
         guid_ = 0L;
         onChanged();
         return this;
@@ -461,7 +452,6 @@ public final class AvatarPromoteReqOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:AvatarPromoteReq)
     }
@@ -505,7 +495,7 @@ public final class AvatarPromoteReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_AvatarPromoteReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_AvatarPromoteReq_fieldAccessorTable;
 
@@ -518,9 +508,8 @@ public final class AvatarPromoteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026AvatarPromoteReq.proto\" \n\020AvatarPromot" +
-      "eReq\022\014\n\004guid\030\014 \001(\004B7\n\031emu.grasscutter.ne" +
-      "t.protoB\032AvatarPromoteReqOuterClassb\006pro" +
-      "to3"
+      "eReq\022\014\n\004guid\030\004 \001(\004B\033\n\031emu.grasscutter.ne" +
+      "t.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

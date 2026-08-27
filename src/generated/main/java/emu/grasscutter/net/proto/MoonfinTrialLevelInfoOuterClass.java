@@ -19,18 +19,22 @@ public final class MoonfinTrialLevelInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 best_record = 6;</code>
+     * <code>uint32 best_record = 7;</code>
      * @return The bestRecord.
      */
     int getBestRecord();
 
     /**
-     * <code>uint32 open_time = 10;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     int getOpenTime();
   }
   /**
+   * <pre>
+   * Obf: EGNPAEHGJIF
+   * </pre>
+   *
    * Protobuf type {@code MoonfinTrialLevelInfo}
    */
   public static final class MoonfinTrialLevelInfo extends
@@ -75,14 +79,14 @@ public final class MoonfinTrialLevelInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
-
-              bestRecord_ = input.readUInt32();
-              break;
-            }
             case 80: {
 
               openTime_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              bestRecord_ = input.readUInt32();
               break;
             }
             default: {
@@ -120,7 +124,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
     public static final int BEST_RECORD_FIELD_NUMBER = 6;
     private int bestRecord_;
     /**
-     * <code>uint32 best_record = 6;</code>
+     * <code>uint32 best_record = 7;</code>
      * @return The bestRecord.
      */
     @java.lang.Override
@@ -131,7 +135,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
     public static final int OPEN_TIME_FIELD_NUMBER = 10;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 10;</code>
+     * <code>uint32 open_time = 2;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class MoonfinTrialLevelInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bestRecord_ != 0) {
-        output.writeUInt32(6, bestRecord_);
-      }
       if (openTime_ != 0) {
         output.writeUInt32(10, openTime_);
+      }
+      if (bestRecord_ != 0) {
+        output.writeUInt32(6, bestRecord_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class MoonfinTrialLevelInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bestRecord_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, bestRecord_);
-      }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(10, openTime_);
+      }
+      if (bestRecord_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, bestRecord_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class MoonfinTrialLevelInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Obf: EGNPAEHGJIF
+     * </pre>
+     *
      * Protobuf type {@code MoonfinTrialLevelInfo}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
 
       private int bestRecord_ ;
       /**
-       * <code>uint32 best_record = 6;</code>
+       * <code>uint32 best_record = 7;</code>
        * @return The bestRecord.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return bestRecord_;
       }
       /**
-       * <code>uint32 best_record = 6;</code>
+       * <code>uint32 best_record = 7;</code>
        * @param value The bestRecord to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 best_record = 6;</code>
+       * <code>uint32 best_record = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearBestRecord() {
@@ -491,7 +499,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 open_time = 2;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class MoonfinTrialLevelInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 10;</code>
+       * <code>uint32 open_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -587,10 +595,9 @@ public final class MoonfinTrialLevelInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033MoonfinTrialLevelInfo.proto\"?\n\025Moonfin" +
-      "TrialLevelInfo\022\023\n\013best_record\030\006 \001(\r\022\021\n\to" +
-      "pen_time\030\n \001(\rB<\n\031emu.grasscutter.net.pr" +
-      "otoB\037MoonfinTrialLevelInfoOuterClassb\006pr" +
-      "oto3"
+      "TrialLevelInfo\022\023\n\013best_record\030\007 \001(\r\022\021\n\to" +
+      "pen_time\030\002 \001(\rB\033\n\031emu.grasscutter.net.pr" +
+      "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

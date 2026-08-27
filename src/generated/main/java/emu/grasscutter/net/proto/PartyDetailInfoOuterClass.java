@@ -19,16 +19,16 @@ public final class PartyDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool moclfelkkhb = 2;</code>
-     * @return The moclfelkkhb.
+     * <code>bool JNODMGMBNCM = 3;</code>
+     * @return The jNODMGMBNCM.
      */
-    boolean getMoclfelkkhb();
+    boolean getJNODMGMBNCM();
 
     /**
-     * <code>bool jnodmgmbncm = 10;</code>
-     * @return The jnodmgmbncm.
+     * <code>bool MOCLFELKKHB = 2;</code>
+     * @return The mOCLFELKKHB.
      */
-    boolean getJnodmgmbncm();
+    boolean getMOCLFELKKHB();
   }
   /**
    * Protobuf type {@code PartyDetailInfo}
@@ -77,12 +77,12 @@ public final class PartyDetailInfoOuterClass {
               break;
             case 16: {
 
-              moclfelkkhb_ = input.readBool();
+              mOCLFELKKHB_ = input.readBool();
               break;
             }
-            case 80: {
+            case 24: {
 
-              jnodmgmbncm_ = input.readBool();
+              jNODMGMBNCM_ = input.readBool();
               break;
             }
             default: {
@@ -117,26 +117,26 @@ public final class PartyDetailInfoOuterClass {
               emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo.class, emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo.Builder.class);
     }
 
-    public static final int MOCLFELKKHB_FIELD_NUMBER = 2;
-    private boolean moclfelkkhb_;
+    public static final int JNODMGMBNCM_FIELD_NUMBER = 3;
+    private boolean jNODMGMBNCM_;
     /**
-     * <code>bool moclfelkkhb = 2;</code>
-     * @return The moclfelkkhb.
+     * <code>bool JNODMGMBNCM = 3;</code>
+     * @return The jNODMGMBNCM.
      */
     @java.lang.Override
-    public boolean getMoclfelkkhb() {
-      return moclfelkkhb_;
+    public boolean getJNODMGMBNCM() {
+      return jNODMGMBNCM_;
     }
 
-    public static final int JNODMGMBNCM_FIELD_NUMBER = 10;
-    private boolean jnodmgmbncm_;
+    public static final int MOCLFELKKHB_FIELD_NUMBER = 2;
+    private boolean mOCLFELKKHB_;
     /**
-     * <code>bool jnodmgmbncm = 10;</code>
-     * @return The jnodmgmbncm.
+     * <code>bool MOCLFELKKHB = 2;</code>
+     * @return The mOCLFELKKHB.
      */
     @java.lang.Override
-    public boolean getJnodmgmbncm() {
-      return jnodmgmbncm_;
+    public boolean getMOCLFELKKHB() {
+      return mOCLFELKKHB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +153,11 @@ public final class PartyDetailInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (moclfelkkhb_ != false) {
-        output.writeBool(2, moclfelkkhb_);
+      if (mOCLFELKKHB_ != false) {
+        output.writeBool(2, mOCLFELKKHB_);
       }
-      if (jnodmgmbncm_ != false) {
-        output.writeBool(10, jnodmgmbncm_);
+      if (jNODMGMBNCM_ != false) {
+        output.writeBool(3, jNODMGMBNCM_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +168,13 @@ public final class PartyDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (moclfelkkhb_ != false) {
+      if (mOCLFELKKHB_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, moclfelkkhb_);
+          .computeBoolSize(2, mOCLFELKKHB_);
       }
-      if (jnodmgmbncm_ != false) {
+      if (jNODMGMBNCM_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, jnodmgmbncm_);
+          .computeBoolSize(3, jNODMGMBNCM_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +191,10 @@ public final class PartyDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo other = (emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo) obj;
 
-      if (getMoclfelkkhb()
-          != other.getMoclfelkkhb()) return false;
-      if (getJnodmgmbncm()
-          != other.getJnodmgmbncm()) return false;
+      if (getJNODMGMBNCM()
+          != other.getJNODMGMBNCM()) return false;
+      if (getMOCLFELKKHB()
+          != other.getMOCLFELKKHB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,12 +206,12 @@ public final class PartyDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MOCLFELKKHB_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getMoclfelkkhb());
       hash = (37 * hash) + JNODMGMBNCM_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getJnodmgmbncm());
+          getJNODMGMBNCM());
+      hash = (37 * hash) + MOCLFELKKHB_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getMOCLFELKKHB());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -345,9 +345,9 @@ public final class PartyDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        moclfelkkhb_ = false;
+        jNODMGMBNCM_ = false;
 
-        jnodmgmbncm_ = false;
+        mOCLFELKKHB_ = false;
 
         return this;
       }
@@ -375,8 +375,8 @@ public final class PartyDetailInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo buildPartial() {
         emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo result = new emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo(this);
-        result.moclfelkkhb_ = moclfelkkhb_;
-        result.jnodmgmbncm_ = jnodmgmbncm_;
+        result.jNODMGMBNCM_ = jNODMGMBNCM_;
+        result.mOCLFELKKHB_ = mOCLFELKKHB_;
         onBuilt();
         return result;
       }
@@ -425,11 +425,11 @@ public final class PartyDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo other) {
         if (other == emu.grasscutter.net.proto.PartyDetailInfoOuterClass.PartyDetailInfo.getDefaultInstance()) return this;
-        if (other.getMoclfelkkhb() != false) {
-          setMoclfelkkhb(other.getMoclfelkkhb());
+        if (other.getJNODMGMBNCM() != false) {
+          setJNODMGMBNCM(other.getJNODMGMBNCM());
         }
-        if (other.getJnodmgmbncm() != false) {
-          setJnodmgmbncm(other.getJnodmgmbncm());
+        if (other.getMOCLFELKKHB() != false) {
+          setMOCLFELKKHB(other.getMOCLFELKKHB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,64 +460,64 @@ public final class PartyDetailInfoOuterClass {
         return this;
       }
 
-      private boolean moclfelkkhb_ ;
+      private boolean jNODMGMBNCM_ ;
       /**
-       * <code>bool moclfelkkhb = 2;</code>
-       * @return The moclfelkkhb.
+       * <code>bool JNODMGMBNCM = 3;</code>
+       * @return The jNODMGMBNCM.
        */
       @java.lang.Override
-      public boolean getMoclfelkkhb() {
-        return moclfelkkhb_;
+      public boolean getJNODMGMBNCM() {
+        return jNODMGMBNCM_;
       }
       /**
-       * <code>bool moclfelkkhb = 2;</code>
-       * @param value The moclfelkkhb to set.
+       * <code>bool JNODMGMBNCM = 3;</code>
+       * @param value The jNODMGMBNCM to set.
        * @return This builder for chaining.
        */
-      public Builder setMoclfelkkhb(boolean value) {
+      public Builder setJNODMGMBNCM(boolean value) {
         
-        moclfelkkhb_ = value;
+        jNODMGMBNCM_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool moclfelkkhb = 2;</code>
+       * <code>bool JNODMGMBNCM = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearMoclfelkkhb() {
+      public Builder clearJNODMGMBNCM() {
         
-        moclfelkkhb_ = false;
+        jNODMGMBNCM_ = false;
         onChanged();
         return this;
       }
 
-      private boolean jnodmgmbncm_ ;
+      private boolean mOCLFELKKHB_ ;
       /**
-       * <code>bool jnodmgmbncm = 10;</code>
-       * @return The jnodmgmbncm.
+       * <code>bool MOCLFELKKHB = 2;</code>
+       * @return The mOCLFELKKHB.
        */
       @java.lang.Override
-      public boolean getJnodmgmbncm() {
-        return jnodmgmbncm_;
+      public boolean getMOCLFELKKHB() {
+        return mOCLFELKKHB_;
       }
       /**
-       * <code>bool jnodmgmbncm = 10;</code>
-       * @param value The jnodmgmbncm to set.
+       * <code>bool MOCLFELKKHB = 2;</code>
+       * @param value The mOCLFELKKHB to set.
        * @return This builder for chaining.
        */
-      public Builder setJnodmgmbncm(boolean value) {
+      public Builder setMOCLFELKKHB(boolean value) {
         
-        jnodmgmbncm_ = value;
+        mOCLFELKKHB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool jnodmgmbncm = 10;</code>
+       * <code>bool MOCLFELKKHB = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJnodmgmbncm() {
+      public Builder clearMOCLFELKKHB() {
         
-        jnodmgmbncm_ = false;
+        mOCLFELKKHB_ = false;
         onChanged();
         return this;
       }
@@ -589,9 +589,9 @@ public final class PartyDetailInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025PartyDetailInfo.proto\";\n\017PartyDetailIn" +
-      "fo\022\023\n\013moclfelkkhb\030\002 \001(\010\022\023\n\013jnodmgmbncm\030\n" +
-      " \001(\010B6\n\031emu.grasscutter.net.protoB\031Party" +
-      "DetailInfoOuterClassb\006proto3"
+      "fo\022\023\n\013JNODMGMBNCM\030\003 \001(\010\022\023\n\013MOCLFELKKHB\030\002" +
+      " \001(\010B\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -602,7 +602,7 @@ public final class PartyDetailInfoOuterClass {
     internal_static_PartyDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PartyDetailInfo_descriptor,
-        new java.lang.String[] { "Moclfelkkhb", "Jnodmgmbncm", });
+        new java.lang.String[] { "JNODMGMBNCM", "MOCLFELKKHB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

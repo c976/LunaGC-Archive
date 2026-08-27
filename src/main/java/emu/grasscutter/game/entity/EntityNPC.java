@@ -5,7 +5,6 @@ import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.*;
 import emu.grasscutter.scripts.data.SceneNPC;
 import it.unimi.dsi.fastutil.ints.Int2FloatMap;
-import it.unimi.dsi.fastutil.ints.Int2FloatOpenHashMap;
 import lombok.Getter;
 
 public class EntityNPC extends GameEntity {
@@ -35,16 +34,10 @@ public class EntityNPC extends GameEntity {
         return this.metaNpc.npc_id;
     }
 
-    /**
-     * Nothing fights this entity, but an ability attached to one reads the whole FightProperty set
-     * off its owner, and a null threw right through the action instead of reading zeroes.
-     */
     @Override
     public Int2FloatMap getFightProperties() {
-        return this.fightProperties;
+        return null;
     }
-
-    private final Int2FloatMap fightProperties = new Int2FloatOpenHashMap();
 
     @Override
     public SceneEntityInfoOuterClass.SceneEntityInfo toProto() {

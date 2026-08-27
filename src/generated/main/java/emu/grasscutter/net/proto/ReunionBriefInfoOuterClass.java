@@ -204,23 +204,23 @@ public final class ReunionBriefInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
+            case 58: {
               java.lang.String s = input.readStringRequireUtf8();
 
               version_ = s;
               break;
             }
-            case 128000: {
+            case 128008: {
 
               dCFLMEMCBFI_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 24: {
 
               startTime_ = input.readUInt32();
               break;
             }
-            case 64: {
+            case 128000: {
 
               fGJAEAJGGMI_ = input.readUInt32();
               break;
@@ -261,12 +261,12 @@ public final class ReunionBriefInfoOuterClass {
 
               break;
             }
-            case 16: {
+            case 64: {
 
               finishTime_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 16: {
 
               firstDayStartTime_ = input.readUInt32();
               break;
@@ -493,7 +493,7 @@ public final class ReunionBriefInfoOuterClass {
       return getOMPMBGFABEN();
     }
 
-    public static final int VERSION_FIELD_NUMBER = 1;
+    public static final int VERSION_FIELD_NUMBER = 7;
     private volatile java.lang.Object version_;
 
     @java.lang.Override
@@ -579,7 +579,7 @@ public final class ReunionBriefInfoOuterClass {
       return getBFDOPIBBLII();
     }
 
-    public static final int START_TIME_FIELD_NUMBER = 5;
+    public static final int START_TIME_FIELD_NUMBER = 3;
     private int startTime_;
 
     @java.lang.Override
@@ -587,7 +587,7 @@ public final class ReunionBriefInfoOuterClass {
       return startTime_;
     }
 
-    public static final int FINISH_TIME_FIELD_NUMBER = 2;
+    public static final int FINISH_TIME_FIELD_NUMBER = 8;
     private int finishTime_;
 
     @java.lang.Override
@@ -603,7 +603,7 @@ public final class ReunionBriefInfoOuterClass {
       return missionId_;
     }
 
-    public static final int FGJAEAJGGMI_FIELD_NUMBER = 8;
+    public static final int FGJAEAJGGMI_FIELD_NUMBER = 16000;
     private int fGJAEAJGGMI_;
     /**
      * <code>uint32 FGJAEAJGGMI = 8;</code>
@@ -625,7 +625,7 @@ public final class ReunionBriefInfoOuterClass {
       return aEKADMBGKBI_;
     }
 
-    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 15;
+    public static final int FIRST_DAY_START_TIME_FIELD_NUMBER = 2;
     private int firstDayStartTime_;
 
     @java.lang.Override
@@ -655,7 +655,7 @@ public final class ReunionBriefInfoOuterClass {
       return jCMAMEJKFJP_;
     }
 
-    public static final int DCFLMEMCBFI_FIELD_NUMBER = 16000;
+    public static final int DCFLMEMCBFI_FIELD_NUMBER = 16001;
     private int dCFLMEMCBFI_;
     /**
      * <code>uint32 DCFLMEMCBFI = 5;</code>
@@ -682,16 +682,16 @@ public final class ReunionBriefInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(version_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, version_);
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 7, version_);
       }
       if (dCFLMEMCBFI_ != 0) {
-        output.writeUInt32(16000, dCFLMEMCBFI_);
+        output.writeUInt32(16001, dCFLMEMCBFI_);
       }
       if (startTime_ != 0) {
-        output.writeUInt32(5, startTime_);
+        output.writeUInt32(3, startTime_);
       }
       if (fGJAEAJGGMI_ != 0) {
-        output.writeUInt32(8, fGJAEAJGGMI_);
+        output.writeUInt32(16000, fGJAEAJGGMI_);
       }
       if (bFDOPIBBLII_ != null) {
         output.writeMessage(9, getBFDOPIBBLII());
@@ -706,10 +706,10 @@ public final class ReunionBriefInfoOuterClass {
         output.writeMessage(13, getOAEJHHNMLJA());
       }
       if (finishTime_ != 0) {
-        output.writeUInt32(2, finishTime_);
+        output.writeUInt32(8, finishTime_);
       }
       if (firstDayStartTime_ != 0) {
-        output.writeUInt32(15, firstDayStartTime_);
+        output.writeUInt32(2, firstDayStartTime_);
       }
       if (jCMAMEJKFJP_ != false) {
         output.writeBool(16, jCMAMEJKFJP_);
@@ -747,19 +747,19 @@ public final class ReunionBriefInfoOuterClass {
 
       size = 0;
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(version_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, version_);
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, version_);
       }
       if (dCFLMEMCBFI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(16000, dCFLMEMCBFI_);
+          .computeUInt32Size(16001, dCFLMEMCBFI_);
       }
       if (startTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, startTime_);
+          .computeUInt32Size(3, startTime_);
       }
       if (fGJAEAJGGMI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, fGJAEAJGGMI_);
+          .computeUInt32Size(16000, fGJAEAJGGMI_);
       }
       if (bFDOPIBBLII_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -779,11 +779,11 @@ public final class ReunionBriefInfoOuterClass {
       }
       if (finishTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, finishTime_);
+          .computeUInt32Size(8, finishTime_);
       }
       if (firstDayStartTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, firstDayStartTime_);
+          .computeUInt32Size(2, firstDayStartTime_);
       }
       if (jCMAMEJKFJP_ != false) {
         size += com.google.protobuf.CodedOutputStream

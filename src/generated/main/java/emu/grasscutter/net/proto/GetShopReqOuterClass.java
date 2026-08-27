@@ -18,13 +18,13 @@ public final class GetShopReqOuterClass {
       // @@protoc_insertion_point(interface_extends:GetShopReq)
       com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
-     */
     int getShopType();
   }
   /**
+   * <pre>
+   * CmdId: 29344
+   * </pre>
+   *
    * Protobuf type {@code GetShopReq}
    */
   public static final class GetShopReq extends
@@ -108,10 +108,7 @@ public final class GetShopReqOuterClass {
 
     public static final int SHOP_TYPE_FIELD_NUMBER = 10;
     private int shopType_;
-    /**
-     * <code>uint32 shop_type = 10;</code>
-     * @return The shopType.
-     */
+
     @java.lang.Override
     public int getShopType() {
       return shopType_;
@@ -273,6 +270,10 @@ public final class GetShopReqOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29344
+     * </pre>
+     *
      * Protobuf type {@code GetShopReq}
      */
     public static final class Builder extends
@@ -420,31 +421,21 @@ public final class GetShopReqOuterClass {
       }
 
       private int shopType_ ;
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @return The shopType.
-       */
+
       @java.lang.Override
       public int getShopType() {
         return shopType_;
       }
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @param value The shopType to set.
-       * @return This builder for chaining.
-       */
+
       public Builder setShopType(int value) {
-        
+
         shopType_ = value;
         onChanged();
         return this;
       }
-      /**
-       * <code>uint32 shop_type = 10;</code>
-       * @return This builder for chaining.
-       */
+
       public Builder clearShopType() {
-        
+
         shopType_ = 0;
         onChanged();
         return this;
@@ -460,7 +451,6 @@ public final class GetShopReqOuterClass {
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
-
 
       // @@protoc_insertion_point(builder_scope:GetShopReq)
     }
@@ -504,7 +494,7 @@ public final class GetShopReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GetShopReq_descriptor;
-  private static final 
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GetShopReq_fieldAccessorTable;
 
@@ -517,8 +507,8 @@ public final class GetShopReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\020GetShopReq.proto\"\037\n\nGetShopReq\022\021\n\tshop" +
-      "_type\030\n \001(\rB1\n\031emu.grasscutter.net.proto" +
-      "B\024GetShopReqOuterClassb\006proto3"
+      "_type\030\017 \001(\rB\033\n\031emu.grasscutter.net.proto" +
+      "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
