@@ -1,0 +1,12 @@
+.{
+    .name = .hipa_patch,
+    .version = "0.0.0",
+    .fingerprint = 0x893a16c585ecb8ec,
+    .minimum_zig_version = "0.16.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "third_party",
+    },
+}

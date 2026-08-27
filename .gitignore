@@ -1,3 +1,8 @@
-.idea
-/target
-Cargo.lock
+build/
+zig-out/
+.zig-cache/
+.DS_Store
+*.o
+*.obj
+CMakeCache.txt
+CMakeFiles/
