@@ -135,8 +135,18 @@ public class Player implements PlayerHook, FieldFetch {
      */
     @Getter private Set<Integer> forcedFinishedQuests;
 
+    /** Set the first time the opening cutscene plays, so it never plays twice. */
+    @Getter @Setter private boolean playedFirstLoginCutscene;
+
     @Transient private long nextGuid = 0;
     @Transient @Getter @Setter private int peerId;
+
+    // Fall damage is measured across two packets - the landing speed arrives before the landing.
+    // It lives here rather than on the handler because there is one handler instance for the whole
+    // server, so a shared field would let one player's plunge hurt whoever lands next.
+    @Transient @Getter @Setter private float cachedLandingSpeed = 0;
+    @Transient @Getter @Setter private long cachedLandingTimeMillisecond = 0;
+    @Transient @Getter @Setter private boolean monitorLandingEvent = false;
     @Transient private World world;
     @Transient @Getter @Setter private HomeWorld curHomeWorld;
     @Transient @Getter @Setter private boolean hasSentInitPacketInHome;
@@ -1269,7 +1279,11 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getSatiationManager().reduceSatiation();
 
-        this.getHome().updateHourlyResources(this);
+        // A player who has not been through onLogin has no home yet, and this used to throw on
+        // every tick, taking the quest tick below down with it
+        if (this.getHome() != null) {
+            this.getHome().updateHourlyResources(this);
+        }
 
         this.getQuestManager().onTick();
     }
@@ -1361,9 +1375,11 @@ public class Player implements PlayerHook, FieldFetch {
 
     public void onLogin() {
 
-        if (this.getSceneTags().isEmpty() || this.getSceneTags() == null) {
-            this.applyStartingSceneTags();
-        }
+        // Union the defaults in on every login, not just when the player has none. A save made
+        // against an older resource set keeps its old tag set for good otherwise, and a scene tag
+        // is what picks which variant of a map the client loads - an account missing the newer
+        // default tags loads the pre-prologue Mondstadt and replays the opening Paimon talk.
+        this.applyStartingSceneTags();
 
         if (GameHome.HOME_SCENE_IDS.contains(this.getSceneId())) {
             this.setSceneId(this.prevScene <= 0 ? 3 : this.prevScene);
@@ -1392,6 +1408,13 @@ public class Player implements PlayerHook, FieldFetch {
         this.getProgressManager().onPlayerLogin();
 
         session.send(new PacketFinishedParentQuestNotify(this));
+        // The client replays the opening cutscene for as long as it believes the prologue is
+        // unplayed, and it decides that for itself - no server cutscene setting reaches it. Saying
+        // every main quest is finished is the only lever there is.
+        if (emu.grasscutter.config.Configuration.GAME_OPTIONS.forceFinishMainQuestsOnLogin) {
+            emu.grasscutter.game.quest.ForcedQuests.apply(
+                    this, emu.grasscutter.game.quest.ForcedQuests.allMainQuests());
+        }
         // Replayed every login: these have no server-side quest data, so nothing else would tell
         // the client about them and the region would lock itself again.
         if (this.forcedFinishedQuests != null && !this.forcedFinishedQuests.isEmpty()) {

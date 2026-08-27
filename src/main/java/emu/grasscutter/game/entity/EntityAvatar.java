@@ -81,7 +81,7 @@ public class EntityAvatar extends GameEntity {
             if (this.getGlobalAbilityValues().containsKey("NyxValue")) {
                 return this.getGlobalAbilityValues().get("NyxValue");
             } else {
-                Grasscutter.getLogger().info("NyxValue from entityavatar not found");
+                Grasscutter.getLogger().debug("NyxValue from entityavatar not found");
                 return 0f;
             }
         }
@@ -124,14 +124,6 @@ public class EntityAvatar extends GameEntity {
 
     @Override
     public void onDeath(int killerId) {
-        var st = Thread.currentThread().getStackTrace();
-        Grasscutter.getLogger().info("[DEATH] avatarId={} entityId={} killerId={} | {}  {}  {}  {}  {}",
-            this.getAvatar().getAvatarId(), this.getId(), killerId,
-            st.length > 2 ? st[2] : "-",
-            st.length > 3 ? st[3] : "-",
-            st.length > 4 ? st[4] : "-",
-            st.length > 5 ? st[5] : "-",
-            st.length > 6 ? st[6] : "-");
         super.onDeath(killerId);
 
         this.killedType = PlayerDieType.PlayerDieType_PLAYER_DIE_KILL_BY_MONSTER;
@@ -191,19 +183,20 @@ public class EntityAvatar extends GameEntity {
         return this.heal(amount, false);
     }
         public FightProperty GetEnergyProp(Avatar avatar) {
-        if(avatar.getSkillDepot().getEnergySkillData().getSpecialEnergyMin() > 0){
+        // A depot without an energy skill leaves energySkillData null - the element-less Traveler
+        // has one - and this used to dereference it straight away.
+        val energySkill = avatar.getSkillDepot().getEnergySkillData();
+        if (energySkill != null && energySkill.getSpecialEnergyMin() > 0) {
             return FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY;
-        }else{
-            return avatar.getSkillDepot().getElementType().getCurEnergyProp();
         }
-
+        return avatar.getSkillDepot().getElementType().getCurEnergyProp();
     }
 
     public void clearEnergy(ChangeEnergyReason reason) {
 
         val curEnergyProp = GetEnergyProp(this.getAvatar());
         float curEnergy = this.getFightProperty(curEnergyProp);
-        Grasscutter.getLogger().info("EnergyProp: "+curEnergyProp.name());
+        Grasscutter.getLogger().debug("EnergyProp: {}", curEnergyProp.name());
 
         this.avatar.setCurrentEnergy(curEnergyProp, 0);
         getPlayer().sendPacket(new PacketAvatarFightPropNotify(this.getAvatar()));

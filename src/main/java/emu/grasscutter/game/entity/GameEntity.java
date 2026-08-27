@@ -31,6 +31,7 @@ import emu.grasscutter.data.GameData;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.google.protobuf.ByteString;
 import com.google.protobuf.CodedOutputStream;
@@ -78,7 +79,9 @@ public abstract class GameEntity {
     private Int2ObjectMap<AbilityModifierController> instancedModifiers =
             new Int2ObjectOpenHashMap<>();
 
-    @Getter private Map<String, Float> globalAbilityValues = new HashMap<>();
+    // Abilities run on a thread pool, so a plain HashMap here threw ConcurrentModificationException
+    // out of whichever action happened to be reading the values while another wrote them
+    @Getter private Map<String, Float> globalAbilityValues = new ConcurrentHashMap<>();
 
     public GameEntity(Scene scene) {
         this.scene = scene;
@@ -98,7 +101,7 @@ public abstract class GameEntity {
         if (this.getGlobalAbilityValues().containsKey("NyxValue")) {
             return this.getGlobalAbilityValues().get("NyxValue");
         } else {
-            Grasscutter.getLogger().info("NyxValue not found");
+            Grasscutter.getLogger().debug("NyxValue not found");
             return 0f;
         }
     }
@@ -133,29 +136,38 @@ public abstract class GameEntity {
 
     public abstract Position getRotation();
 
+    // Not every entity carries fight properties, and the ones that do can be asked for them before
+    // they are built. Reading one used to throw straight out of whatever ability action asked.
     public void setFightProperty(FightProperty prop, float value) {
-        this.getFightProperties().put(prop.getId(), value);
+        this.setFightProperty(prop.getId(), value);
     }
 
     public void setFightProperty(int id, float value) {
-        this.getFightProperties().put(id, value);
+        var properties = this.getFightProperties();
+        if (properties == null) return;
+
+        properties.put(id, value);
     }
 
     public void addFightProperty(FightProperty prop, float value) {
-        this.getFightProperties().put(prop.getId(), this.getFightProperty(prop) + value);
+        this.setFightProperty(prop.getId(), this.getFightProperty(prop) + value);
     }
 
     public float getFightProperty(FightProperty prop) {
-        return this.getFightProperties().getOrDefault(prop.getId(), 0f);
+        var properties = this.getFightProperties();
+        return properties == null ? 0f : properties.getOrDefault(prop.getId(), 0f);
     }
 
     public boolean hasFightProperty(FightProperty prop) {
-        return this.getFightProperties().containsKey(prop.getId());
+        var properties = this.getFightProperties();
+        return properties != null && properties.containsKey(prop.getId());
     }
 
     public void addAllFightPropsToEntityInfo(SceneEntityInfo.Builder entityInfo) {
-        this.getFightProperties()
-                .forEach(
+        var properties = this.getFightProperties();
+        if (properties == null) return;
+
+        properties.forEach(
                         (key, value) -> {
                             if (key == 0) return;
                             entityInfo.addFightPropList(
@@ -180,13 +192,13 @@ public abstract class GameEntity {
         if (data.properties == null) {
             return;
         }
-        float hpThresholdRatio = data.properties.Actor_HpThresholdRatio;
+        // No ability instance here to resolve a named special against, so an unresolvable
+        // one reads as zero and simply leaves the Limbo threshold unset.
+        float hpThresholdRatio = data.properties.Actor_HpThresholdRatio.get(0f);
 
-        if (data.properties != null) {
-            if (data.state == AbilityModifier.State.Limbo && hpThresholdRatio > 0.0f) {
-                Grasscutter.getLogger().info("Limbo set to " + hpThresholdRatio);
-                this.setLimbo(hpThresholdRatio);
-            }
+        if (data.state == AbilityModifier.State.Limbo && hpThresholdRatio > 0.0f) {
+            Grasscutter.getLogger().debug("Limbo set to {}", hpThresholdRatio);
+            this.setLimbo(hpThresholdRatio);
         }
     }
 
@@ -312,10 +324,8 @@ public abstract class GameEntity {
       public void addSpecialEnergy(float energy){
        float curSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
        float maxSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY);
-       curSpecialEnergy+=energy;
-       if (curSpecialEnergy >= maxSpecialEnergy){
-            curSpecialEnergy = maxSpecialEnergy;
-       }
+       // Nightsoul is spent through here too, as a negative, so it needs a floor as well as a cap.
+       curSpecialEnergy = Math.max(0, Math.min(maxSpecialEnergy, curSpecialEnergy + energy));
        setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, curSpecialEnergy);
        this.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(this, FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY));
     }
@@ -330,7 +340,7 @@ public abstract class GameEntity {
     }
 
     public void damage(float amount, int killerId, ElementType attackType) {
-        this.damage(amount, 0, attackType, PropChangeReason.PropChangeReason_PROP_CHANGE_NONE, ChangeHpReason.ChangeHpReason_CHANGE_HP_NONE);
+        this.damage(amount, killerId, attackType, PropChangeReason.PropChangeReason_PROP_CHANGE_NONE, ChangeHpReason.ChangeHpReason_CHANGE_HP_NONE);
     }
 
     public void damage(float amount, PropChangeReason propChangeReason, ChangeHpReason changeHpReason) {
@@ -341,17 +351,6 @@ public abstract class GameEntity {
 
         if (this.getFightProperties() == null || !hasFightProperty(FightProperty.FIGHT_PROP_CUR_HP)) {
             return;
-        }
-
-        if (this instanceof EntityAvatar) {
-            float curHpBefore = getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
-            var st = Thread.currentThread().getStackTrace();
-            Grasscutter.getLogger().info("[DMG] EntityAvatar id={} amount={} curHP={} | {}  {}  {}  {}",
-                this.getId(), amount, curHpBefore,
-                st.length > 2 ? st[2] : "-",
-                st.length > 3 ? st[3] : "-",
-                st.length > 4 ? st[4] : "-",
-                st.length > 5 ? st[5] : "-");
         }
 
         EntityDamageEvent event =

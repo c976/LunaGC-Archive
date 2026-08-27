@@ -78,6 +78,8 @@ public class Scene {
     private Set<SceneNpcBornEntry> npcBornEntrySet;
     @Getter private boolean finishedLoading = false;
     @Getter protected int tickCount = 0;
+    private long lastTimeNotify = 0;
+    private long lastStreamCheck = 0;
     @Getter private boolean isPaused = false;
 
     private final List<Runnable> afterLoadedCallbacks = new ArrayList<>();
@@ -444,8 +446,17 @@ public class Scene {
         ElementType attackType = ElementType.getTypeByValue(result.getElementType());
 
         if (target == null) {
-            Grasscutter.getLogger().info("handleAttack: target not found defenseId={} attackerId={} damage={}", result.getDefenseId(), result.getAttackerId(), result.getDamage());
-            Grasscutter.getLogger().info("handleAttack unknownFields (defense_id = the monster entityId): {}", result.getUnknownFields().toString().replaceAll("\\s+", " "));
+            // 6000 lines of this in a single session, each one dumping a proto for a hit that was
+            // going nowhere anyway. Behind isDebugEnabled so the dump is not built when unwanted.
+            var logger = Grasscutter.getLogger();
+            if (logger.isDebugEnabled()) {
+                logger.debug(
+                        "handleAttack: target not found defenseId={} attackerId={} damage={} unknownFields={}",
+                        result.getDefenseId(),
+                        result.getAttackerId(),
+                        result.getDamage(),
+                        result.getUnknownFields().toString().replaceAll("\\s+", " "));
+            }
             return;
         }
         if (target instanceof EntityAvatar) {
@@ -557,6 +568,18 @@ public class Scene {
 
         this.broadcastPacket(new PacketLifeStateChangeNotify(attackerId, target, LifeState.LIFE_DEAD));
 
+        // Activity watchers count kills. The attacker may be a summon or a client gadget, so credit
+        // the avatar that actually owns it rather than the entity that landed the hit.
+        if (target instanceof EntityMonster killed
+                && (attacker != null ? attacker.getTrueOwner() : null)
+                        instanceof EntityAvatar avatarAttacker) {
+            var monsterId = String.valueOf(killed.getMonsterData().getId());
+            var activityManager = avatarAttacker.getPlayer().getActivityManager();
+            activityManager.triggerWatcher(WatcherTriggerType.TRIGGER_BATTLE_FOR_MONSTER_DIE_OR, monsterId);
+            activityManager.triggerWatcher(
+                    WatcherTriggerType.TRIGGER_KILL_MONSTERS_WITHOUT_VEHICLE, monsterId);
+        }
+
         var world = this.getWorld();
         if (target instanceof EntityMonster monster && this.getSceneType() != SceneType.SCENE_DUNGEON) {
             if (monster.getMetaMonster() != null
@@ -613,12 +636,26 @@ public class Scene {
         // despawned - and the player was left in a world that had quietly stopped.
         if (!isPaused) stage("the scheduler", () -> this.getScheduler().runTasks());
 
-        stage(
+        // Streaming does not need the full tick rate - it answers "which groups are near the
+        // player", and a player cannot outrun half a second of it. The timers and triggers below
+        // do need it, which is why only this part is throttled.
+        var nowMs = System.currentTimeMillis();
+        if (nowMs - this.lastStreamCheck >= 500L) {
+            this.lastStreamCheck = nowMs;
+            stage(
                 "loading groups",
                 () -> {
+                    // checkSpawns is the fallback for scenes that have no scripts, so it must not
+                    // run while the scripts are merely still loading - init() runs on its own
+                    // thread, and every spawn in Spawns.json/GadgetSpawns.json belongs to a scene
+                    // that does have scripts. Spawning during that window duplicated those
+                    // monsters and gadgets against the scripted copies, and nothing cleaned the
+                    // extras up: checkSpawns owns the removal pass, and it stops running the
+                    // moment checkGroups takes over.
                     if (this.getScriptManager().isInit()) this.checkGroups();
-                    else this.checkSpawns();
+                    else if (this.getScriptManager().isInitAttempted()) this.checkSpawns();
                 });
+        }
 
         stage("checking regions", () -> this.scriptManager.checkRegions());
 
@@ -626,15 +663,17 @@ public class Scene {
 
         var sceneTime = getSceneTimeSeconds();
 
-        var entities = Map.copyOf(this.getEntities());
-        entities.forEach(
-                (eid, e) ->
-                        stage(
-                                "an entity's tick",
-                                () -> {
-                                    if (!e.isAlive()) this.getEntities().remove(eid);
-                                    else e.onTick(sceneTime);
-                                }));
+        // getEntities() is already concurrent, so it is iterated in place rather than copied
+        // wholesale every tick - at a 200ms tick that copy was the scene's largest allocation.
+        this.getEntities()
+                .forEach(
+                        (eid, e) ->
+                                stage(
+                                        "an entity's tick",
+                                        () -> {
+                                            if (!e.isAlive()) this.getEntities().remove(eid);
+                                            else e.onTick(sceneTime);
+                                        }));
 
         stage("the blossoms", () -> blossomManager.onTick());
 
@@ -651,7 +690,10 @@ public class Scene {
         stage("finishing loading", this::finishLoading);
         stage("respawning players", this::checkPlayerRespawn);
 
-        if (this.tickCount++ % 10 == 0) {
+        this.tickCount++;
+        var now = System.currentTimeMillis();
+        if (now - this.lastTimeNotify >= 10_000L) {
+            this.lastTimeNotify = now;
             stage("the time notify", () -> this.broadcastPacket(new PacketSceneTimeNotify(this)));
         }
     }

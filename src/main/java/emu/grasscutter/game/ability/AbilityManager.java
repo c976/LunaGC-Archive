@@ -25,6 +25,7 @@ import emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMeta
 import emu.grasscutter.server.packet.send.PacketMonsterSummonTagNotify;
 import emu.grasscutter.net.proto.AbilityMetaReInitOverrideMapOuterClass.AbilityMetaReInitOverrideMap;
 import emu.grasscutter.net.proto.AbilityMetaSetKilledStateOuterClass.AbilityMetaSetKilledState;
+import emu.grasscutter.net.proto.AbilityMetaUpdateMoonOvergrowValueOuterClass.AbilityMetaUpdateMoonOvergrowValue;
 import emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType;
 import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
@@ -411,6 +412,8 @@ public final class AbilityManager extends BasePlayerManager {
 
             case AbilityInvokeArgument_ABILITY_META_SET_KILLED_SETATE -> this.handleKillState(invoke);
             case AbilityInvokeArgument_ABILITY_META_ADD_SPECIAL_ENERGY_VALUE -> this.handleAddSpecialEnergy(invoke);
+            case ABILITY_META_UPDATE_MOON_OVERGROW_VALUE ->
+                this.handleUpdateMoonOvergrowValue(invoke);
 
             default -> {
                 int typeVal = invoke.getArgumentTypeValue();
@@ -446,6 +449,22 @@ public final class AbilityManager extends BasePlayerManager {
         if (key == null) return;
 
         entity.getGlobalAbilityValues().remove(key);
+        entity.onAbilityValueUpdate();
+    }
+
+    /**
+     * Mirrors the party's Verdant Dew, which the client owns. Recorded, never echoed: the server
+     * evaluates ByTargetGlobalValue(MoonOvergrowPoint_All, Team) and would otherwise read zero.
+     */
+    private void handleUpdateMoonOvergrowValue(AbilityInvokeEntry invoke)
+        throws InvalidProtocolBufferException {
+        var update = AbilityMetaUpdateMoonOvergrowValue.parseFrom(invoke.getAbilityData());
+        if (update.getUpdateType() != AbilityMetaUpdateMoonOvergrowValue._UpdateType.SET) return;
+
+        var entity = this.player.getScene().getEntityById(invoke.getEntityId());
+        if (entity == null) entity = this.player.getTeamManager().getEntity();
+
+        entity.getGlobalAbilityValues().put(TeamManager.VERDANT_DEW, update.getFOMPMBNENPH());
         entity.onAbilityValueUpdate();
     }
 
@@ -827,8 +846,11 @@ public final class AbilityManager extends BasePlayerManager {
                 if (head.getTargetId() != 0) {
                     var targetEntity = this.player.getScene().getEntityById(head.getTargetId());
                     if (targetEntity != null) {
-                        if ((head.getInstancedAbilityId() - 1) < targetEntity.getInstancedAbilities().size()) {
-                            instancedAbility = targetEntity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+                        // An id of 0 means "no instanced ability" and is common - without the lower
+                        // bound that becomes get(-1) rather than a miss.
+                        var index = head.getInstancedAbilityId() - 1;
+                        if (index >= 0 && index < targetEntity.getInstancedAbilities().size()) {
+                            instancedAbility = targetEntity.getInstancedAbilities().get(index);
                             if (instancedAbility != null) instancedAbilityData = instancedAbility.getData();
                         }
                     }
@@ -836,8 +858,9 @@ public final class AbilityManager extends BasePlayerManager {
             }
 
             if (instancedAbilityData == null) {
-                if ((head.getInstancedAbilityId() - 1) < entity.getInstancedAbilities().size()) {
-                    instancedAbility = entity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+                var index = head.getInstancedAbilityId() - 1;
+                if (index >= 0 && index < entity.getInstancedAbilities().size()) {
+                    instancedAbility = entity.getInstancedAbilities().get(index);
                     if (instancedAbility != null) instancedAbilityData = instancedAbility.getData();
                 }
             }
@@ -1203,38 +1226,12 @@ public final class AbilityManager extends BasePlayerManager {
             (abilityName != null && abilityName.startsWith("Avatar_") && abilityName.endsWith("_MoonLight"))
             || getMoonLightAbilityHashes().contains(abHash);
 
-        if (isTeamMoonPhase) {
-            long moonCount = this.player.getTeamManager().getActiveTeam().stream()
-                .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(
-                    e.getAvatar().getAvatarId()))
-                .count();
-            var teamEntity = this.player.getTeamManager().getEntity();
-            int teamEntityId = teamEntity.getId();
-            this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                teamEntityId, "SGV_MoonPhaseLevel", (float) moonCount));
-            if (moonCount > 0) {
-                teamEntity.getGlobalAbilityValues().put("MoonOvergrowPoint_All", 50f);
-                this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                    teamEntityId, "MoonOvergrowPoint_All", 50f));
-            }
-            log.debug("TeamAbility_MoonPhase loaded: sent SGV_MoonPhaseLevel={}, MoonOvergrowPoint_All={}",
-                moonCount, moonCount > 0 ? 50 : 0);
-        }
-
-        if (isMoonLightAbility) {
-            long moonCount = this.player.getTeamManager().getActiveTeam().stream()
-                .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(
-                    e.getAvatar().getAvatarId()))
-                .count();
-            if (moonCount > 0) {
-                var teamEntity = this.player.getTeamManager().getEntity();
-                int teamEntityId = teamEntity.getId();
-                teamEntity.getGlobalAbilityValues().put("MoonOvergrowPoint_All", 50f);
-                this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                    teamEntityId, "MoonOvergrowPoint_All", 50f));
-                log.debug("MoonLight ability {} loaded: re-sent MoonOvergrowPoint_All=50 to team entity={}",
-                    abilityName, teamEntityId);
-            }
+        // Repeated here: the client only wires the Moonsign up once its ability exists.
+        if (isTeamMoonPhase || isMoonLightAbility) {
+            var teamManager = this.player.getTeamManager();
+            teamManager.sendMoonsignState();
+            log.debug("{} loaded: re-sent Moonsign level={} to team entity={}",
+                abilityName, teamManager.getMoonsignLevel(), teamManager.getEntity().getId());
         }
 
         if (abilityData == null) {

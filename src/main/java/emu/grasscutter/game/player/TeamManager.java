@@ -31,6 +31,11 @@ import lombok.*;
 
 @Entity
 public final class TeamManager extends BasePlayerDataManager {
+    // Both from MoonPhaseConstValueExcelConfigData. Verdant Dew is "MoonOvergrow" in the configs.
+    public static final int MOONSIGN_MAX_LEVEL = 2;
+    public static final String VERDANT_DEW = "MoonOvergrowPoint_All";
+    public static final int VERDANT_DEW_CAP = 3;
+
     @Transient private final List<EntityAvatar> avatars;
     @Transient @Getter private final Set<EntityBaseGadget> gadgets;
     @Transient @Getter private final IntSet teamResonances;
@@ -338,6 +343,32 @@ public final class TeamManager extends BasePlayerDataManager {
         }
     }
 
+    /** Nod-Krai characters in the party, capped: 1 is Nascent Gleam, 2 Ascendant Gleam. */
+    public int getMoonsignLevel() {
+        long count = this.getActiveTeam().stream()
+            .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(e.getAvatar().getAvatarId()))
+            .count();
+
+        return (int) Math.min(count, MOONSIGN_MAX_LEVEL);
+    }
+
+    /** Seeds the dew only; from the first Lunar-Bloom onwards the client's own count wins. */
+    public void sendMoonsignState() {
+        int level = this.getMoonsignLevel();
+        int teamEntityId = this.getEntity().getId();
+
+        this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
+            teamEntityId, "SGV_MoonPhaseLevel", (float) level));
+
+        if (level > 0) {
+            this.getEntity().getGlobalAbilityValues().put(VERDANT_DEW, (float) VERDANT_DEW_CAP);
+            this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
+                teamEntityId, VERDANT_DEW, (float) VERDANT_DEW_CAP));
+        }
+
+        this.getPlayer().sendPacket(new PacketTeamMoonPhaseChangeNotify(level));
+    }
+
     public void updateTeamProperties() {
         this.updateTeamResonances();
         this.getWorld()
@@ -349,18 +380,7 @@ public final class TeamManager extends BasePlayerDataManager {
             .map(EntityAvatar::getAvatar)
             .forEach(Avatar::sendSkillExtraChargeMap);
 
-        long moonPhaseCount = this.getActiveTeam().stream()
-            .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(e.getAvatar().getAvatarId()))
-            .count();
-        this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
-            this.getEntity().getId(), "SGV_MoonPhaseLevel", (float) moonPhaseCount));
-
-        if (moonPhaseCount > 0) {
-            this.getPlayer().sendPacket(new PacketServerGlobalValueChangeNotify(
-                this.getEntity().getId(), "MoonOvergrowPoint_All", 100f));
-        }
-
-        this.getPlayer().sendPacket(new PacketTeamMoonPhaseChangeNotify((int) moonPhaseCount));
+        this.sendMoonsignState();
 
         long hexenzirkelCount = this.getActiveTeam().stream()
             .filter(e -> PacketPlayerEnterSceneInfoNotify.getHexenzirkelIds().contains(e.getAvatar().getAvatarId()))
@@ -703,8 +723,30 @@ public final class TeamManager extends BasePlayerDataManager {
                             index + 1,
                             available);
         }
+        var scene = this.getPlayer().getScene();
+        // Not getCurrentAvatarEntity(): on an empty team that builds a fresh main character and
+        // files it in the avatar list, which is not something reading the current avatar should do.
+        var previous =
+                scene == null || this.getActiveTeam().isEmpty()
+                        ? null
+                        : this.getActiveTeam().get(Math.min(this.currentCharacterIndex, this.getActiveTeam().size() - 1));
+
         this.useTemporarilyTeamIndex = index;
         this.updateTeamEntities(null);
+
+        if (scene == null) return;
+
+        // updateTeamEntities keeps whichever avatar was selected even when the new team has no slot
+        // for it, so the half that just finished would otherwise stay standing in the chamber.
+        if (previous != null && !this.getActiveTeam().contains(previous)) {
+            scene.removeEntity(previous);
+        }
+
+        // Nothing else puts the new half into the scene: the chamber does not reload across the
+        // swap, and the team packet alone only tells the client who is on the team. Without an
+        // avatar entity actually in the world the client has nothing to drive - no skills, no
+        // burst, no switching - and the monsters have nothing to aim at.
+        scene.spawnPlayer(this.getPlayer());
     }
 
     public boolean cleanTemporaryTeam() {
