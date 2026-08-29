@@ -78,10 +78,10 @@ public class PacketWindSeedClientNotify extends BasePacket {
         try {
             data = Files.readAllBytes(path);
         } catch (Exception e) {
-            data = FileUtils.readResource("/lua/UID.luac");
+           // data = FileUtils.readResource("/lua/UID.luac");
         }
 
-        this.setData(encode(data));
+        //this.setData(encode(data));
     }
 
     public PacketWindSeedClientNotify(byte[] data) {

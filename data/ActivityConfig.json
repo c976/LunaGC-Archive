@@ -1,20 +1,145 @@
 [
   {
+    "activityId": 5068,
+    "activityType": 2603,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5326,
+    "activityType": 8,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5002,
+    "activityType": 4,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5060,
+    "activityType": 2100,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
     "activityId": 5072,
     "activityType": 2202,
     "scheduleId": 5072001,
-    "meetCondList": [
-      5072001,
-      5072002,
-      5072003,
-      5072004,
-      5072005,
-      5072006,
-      5072007,
-      5072008,
-      5072009,
-      5072013
-    ],
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5107,
+    "activityType": 3203,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5325,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5330,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5329,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5327,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 2048,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5322,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5323,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5321,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5320,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5319,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5316,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
+    "beginTime": "2022-05-01T00:00:00+08:00",
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 2047,
+    "activityType": 0,
+    "scheduleId": 5072001,
+    "meetCondList": [],
     "beginTime": "2022-05-01T00:00:00+08:00",
     "endTime": "2999-05-01T23:59:59+08:00"
   }
