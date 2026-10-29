@@ -14,14 +14,19 @@ public final class ActionTriggerAbility extends AbilityActionHandler {
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
         Grasscutter.getLogger().debug("[Ability] TriggerAbility: {}", action.abilityName);
         
-        // Access the player's AbilityManager using the host method.
         var player = ability.getPlayerOwner();
         if (player == null) {
             Grasscutter.getLogger().error("No player owner found for ability {}", ability);
             return false;
         }
         
-        // Add the ability (specified by action.abilityName) to the target entity.
+        if (target == null || action.abilityName == null) return false;
+        if (target == ability.getOwner()
+                && ability.getData() != null
+                && action.abilityName.equals(ability.getData().abilityName)) {
+            return true;
+        }
+
         player.getWorld().getHost().getAbilityManager().addAbilityToEntity(target, action.abilityName);
         
         return true;

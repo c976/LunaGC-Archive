@@ -53,21 +53,13 @@ public final class DungeonSystem extends BaseGameSystem {
         }
     }
 
-    /**
-     * Sends the entry info for the given dungeon point to the player.
-     *
-     * @param player The player to send the entry info to.
-     * @param pointId The dungeon point ID.
-     */
     public void sendEntryInfoFor(Player player, int pointId, int sceneId) {
         var entry = GameData.getScenePointEntryById(sceneId, pointId);
         if (entry == null) {
-            // An invalid point ID was sent.
             player.sendPacket(new PacketDungeonEntryInfoRsp());
             return;
         }
 
-        // Check if the player has quests with dungeon IDs.
         var questDungeons = player.getQuestManager().questsForDungeon(entry);
         if (questDungeons.size() > 0) {
             player.sendPacket(new PacketDungeonEntryInfoRsp(entry.getPointData(), questDungeons));
@@ -117,7 +109,6 @@ public final class DungeonSystem extends BaseGameSystem {
         return true;
     }
 
-    /** used in tower dungeons handoff */
     public boolean handoffDungeon(
             Player player, int dungeonId, List<DungeonSettleListener> dungeonSettleListeners) {
         DungeonData data = GameData.getDungeonDataMap().get(dungeonId);
@@ -149,10 +140,8 @@ public final class DungeonSystem extends BaseGameSystem {
             return;
         }
 
-        // Get previous scene
         int prevScene = scene.getPrevScene() > 0 ? scene.getPrevScene() : 3;
 
-        // Get previous position
         val dungeonManager = scene.getDungeonManager();
         DungeonData dungeonData = dungeonManager != null ? dungeonManager.getDungeonData() : null;
         Position prevPos = new Position(GameConstants.START_POSITION);
@@ -169,10 +158,7 @@ public final class DungeonSystem extends BaseGameSystem {
 
             dungeonManager.unsetTrialTeam(player);
         }
-        // clean temp team if it has
         if (!player.getTeamManager().cleanTemporaryTeam()) {
-            // no temp team. Will use real current team, but check
-            // for any dead avatar to prevent switching into them.
             player.getTeamManager().checkCurrentAvatarIsAlive(null);
         }
         player.getTowerManager().clearEntry();
@@ -180,11 +166,6 @@ public final class DungeonSystem extends BaseGameSystem {
             dungeonManager.setTowerDungeon(false);
         }
 
-        // Transfer player back to world after a small delay.
-        // This wait is important for avoiding double teleports,
-        // which specifically happen when player quits a dungeon
-        // by teleporting to map waypoints.
-        // From testing, 200ms seem reasonable.
         player.getWorld().queueTransferPlayerToScene(player, prevScene, prevPos, 200);
     }
 
@@ -201,11 +182,9 @@ public final class DungeonSystem extends BaseGameSystem {
         var sceneId = dungeonData.getSceneId();
         var isTower = dungeonManager.isTowerDungeon();
 
-        // Forward over previous scene and scene point
         var prevScene = scene.getPrevScene();
         var pointId = scene.getPrevScenePoint();
 
-        // Force teardown so the scene is rebuilt fresh instead of reused stale.
         scene.setDontDestroyWhenEmpty(false);
         scene.getPlayers().forEach(scene::removePlayer);
 

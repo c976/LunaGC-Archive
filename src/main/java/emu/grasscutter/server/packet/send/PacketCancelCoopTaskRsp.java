@@ -6,7 +6,7 @@ import emu.grasscutter.net.proto.CancelCoopTaskRspOuterClass;
 public class PacketCancelCoopTaskRsp extends BasePacket {
 
     public PacketCancelCoopTaskRsp(int chapterId) {
-        super(PacketOpcodes.SetCoopChapterViewedRsp);
+        super(PacketOpcodes.CancelCoopTaskRsp);
 
         CancelCoopTaskRspOuterClass.CancelCoopTaskRsp proto =
                 CancelCoopTaskRspOuterClass.CancelCoopTaskRsp.newBuilder().setChapterId(chapterId).build();

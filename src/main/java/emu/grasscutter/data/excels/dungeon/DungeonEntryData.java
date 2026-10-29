@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.dungeon;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.game.dungeons.enums.*;
 import java.util.List;
@@ -7,7 +8,7 @@ import lombok.*;
 
 @ResourceType(name = "DungeonEntryExcelConfigData.json")
 @Getter
-@Setter // TODO: remove this next API break
+@Setter
 public class DungeonEntryData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
@@ -16,6 +17,7 @@ public class DungeonEntryData extends GameResource {
     private int sceneId;
     private DungunEntryType type;
     private DungeonEntryCondCombType condComb;
+    @SerializedName(value = "satisfiedCond", alternate = {"NCPHMNJMPKB"})
     private List<DungeonEntryCondition> satisfiedCond;
 
     public static class DungeonEntryCondition {

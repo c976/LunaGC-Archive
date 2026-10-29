@@ -19,9 +19,6 @@ public final class ActionPredicated extends AbilityActionHandler {
         AbilityManager mgr = ability != null ? ability.getManager() : null;
         if (mgr == null) return true;
 
-        // A block with otherTargets asks a question about something else in the scene - the nearest
-        // enemy, say - so its predicates and actions run against whatever that picks out, not
-        // against the entity carrying the modifier.
         List<GameEntity> selected = AbilityTargetSelector.select(action.otherTargets, ability, target);
         if (selected == null) {
             run(mgr, ability, action, abilityData, target, target);
@@ -40,16 +37,6 @@ public final class ActionPredicated extends AbilityActionHandler {
 
         if (any) return true;
 
-        // Scenes whose group scripts are missing hold no monsters on this side, so "is an enemy
-        // nearby" is answered no however many the player can see, and anything gated behind it -
-        // an avatar's summon, most visibly - would never happen there. Take the block as passing,
-        // but only the bookkeeping half of it: actions naming Target are skipped, since there is no
-        // target to name and pointing them at the caster would turn a hit into self harm.
-        //
-        // It runs as the server's own chain, so the marks it writes stay here. They are a guess -
-        // this branch fires precisely because the server cannot see what the player is fighting -
-        // and a guessed "_HasTarget_Mark = 1" pushed to the client tells it every enemy is a valid
-        // one, however far away, which is how out of range attacks started landing.
         if (blindScene(target)) {
             AbilityManager.runServerOwned(
                     () -> dispatchOwnerOnly(mgr, ability, action.successActions, abilityData, target));
@@ -66,7 +53,6 @@ public final class ActionPredicated extends AbilityActionHandler {
         dispatch(mgr, ability, pass ? action.successActions : action.failActions, abilityData, self, candidate);
     }
 
-    /** True when the scene holds no living monster at all, i.e. the server cannot see enemies here. */
     private boolean blindScene(GameEntity self) {
         var scene = self != null ? self.getScene() : null;
         if (scene == null) return false;
@@ -85,26 +71,15 @@ public final class ActionPredicated extends AbilityActionHandler {
         }
     }
 
-    /**
-     * Children that name Target explicitly act on the picked entity; the rest act on the entity the
-     * modifier is attached to, which is what keeps a summon's bookkeeping on its owner rather than
-     * on whatever it happened to aim at.
-     */
     private void dispatch(AbilityManager mgr, Ability ability, AbilityModifierAction[] actions,
                           ByteString abilityData, GameEntity self, GameEntity candidate) {
         if (actions == null) return;
         for (var child : actions) {
             if (child == null || !allowed(child)) continue;
-            // In order, on this thread: a later block reads what an earlier one writes.
             mgr.executeActionNow(ability, child, abilityData, "Target".equals(child.target) ? candidate : self);
         }
     }
 
-    /**
-     * A chain the client never asked the server to run stays within state and spawning, however deep
-     * it nests. Everything else - damage, healing, killing - belongs to the invocations the client
-     * actually sends, where the target is the one it aimed at rather than the one we picked.
-     */
     private boolean allowed(AbilityModifierAction action) {
         return !AbilityManager.isServerOwnedChain()
                 || AbilityManager.isAllowedInServerOwnedChain(action.type);

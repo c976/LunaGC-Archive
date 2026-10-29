@@ -22,17 +22,15 @@ import lombok.EqualsAndHashCode;
 
 public final class Language {
     private static final Map<String, Language> cachedLanguages = new ConcurrentHashMap<>();
-    // Bumped so the caches written before names were filled in are thrown away once.
     private static final int TEXTMAP_CACHE_VERSION = 0x9CCACE07;
     private static final Pattern textMapKeyValueRegex = Pattern.compile("\"(\\d+)\": \"(.+)\"");
     private static final Path TEXTMAP_CACHE_PATH = getCachePath("TextMap/TextMapCache.bin");
     private static boolean scannedTextmaps =
-            false; // Ensure that we don't infinitely rescan on cache misses that don't exist
+            false;
     private static Int2ObjectMap<TextStrings> textMapStrings;
     private final String languageCode;
     private final Map<String, String> translations = new ConcurrentHashMap<>();
 
-    /** Reads a file and creates a language instance. */
     private Language(LanguageStreamDescription description) {
         languageCode = description.getLanguageCode();
 
@@ -49,12 +47,6 @@ public final class Language {
         }
     }
 
-    /**
-     * Creates a language instance from a code.
-     *
-     * @param langCode The language code.
-     * @return A language instance.
-     */
     public static Language getLanguage(String langCode) {
         if (cachedLanguages.containsKey(langCode)) {
             return cachedLanguages.get(langCode);
@@ -76,13 +68,6 @@ public final class Language {
         return languageInst;
     }
 
-    /**
-     * Returns the translated value from the key while substituting arguments.
-     *
-     * @param key The key of the translated value to return.
-     * @param args The arguments to substitute.
-     * @return A translated value with arguments substituted.
-     */
     public static String translate(String key, Object... args) {
         String translated = Grasscutter.getLanguage().get(key);
 
@@ -92,7 +77,7 @@ public final class Language {
                         case "String" -> args[i];
                         case "TextStrings" -> ((TextStrings) args[i])
                                 .get(0)
-                                .replace("\\\\n", "\\n"); // TODO: Change this to server language
+                                .replace("\\\\n", "\\n");
                         default -> args[i].toString();
                     };
         }
@@ -105,14 +90,6 @@ public final class Language {
         }
     }
 
-    /**
-     * Returns the translated value from the key while substituting arguments.
-     *
-     * @param locale The locale to use.
-     * @param key The key of the translated value to return.
-     * @param args The arguments to substitute.
-     * @return A translated value with arguments substituted.
-     */
     public static String translate(Locale locale, String key, Object... args) {
         if (locale == null) {
             return translate(key, args);
@@ -127,7 +104,7 @@ public final class Language {
                         case "String" -> args[i];
                         case "TextStrings" -> ((TextStrings) args[i])
                                 .getGC(langCode)
-                                .replace("\\\\n", "\n"); // Note that we don't unescape \n for server console
+                                .replace("\\\\n", "\n");
                         default -> args[i].toString();
                     };
         }
@@ -140,14 +117,6 @@ public final class Language {
         }
     }
 
-    /**
-     * Returns the translated value from the key while substituting arguments.
-     *
-     * @param player Target player
-     * @param key The key of the translated value to return.
-     * @param args The arguments to substitute.
-     * @return A translated value with arguments substituted.
-     */
     public static String translate(Player player, String key, Object... args) {
         if (player == null) {
             return translate(key, args);
@@ -156,14 +125,6 @@ public final class Language {
         return translate(player.getAccount().getLocale(), key, args);
     }
 
-    /**
-     * Recursive helper function to flatten a Json tree Converts input like {"foo": {"bar": "baz"}} to
-     * {"foo.bar": "baz"}
-     *
-     * @param map The map to insert the keys into
-     * @param key The flattened key of the current element
-     * @param element The current element
-     */
     private static void putFlattenedKey(Map<String, String> map, String key, JsonElement element) {
         if (element.isJsonObject()) {
             element
@@ -179,12 +140,6 @@ public final class Language {
         }
     }
 
-    /**
-     * create a LanguageStreamDescription
-     *
-     * @param languageCode The name of the language code.
-     * @param fallbackLanguageCode The name of the fallback language code.
-     */
     private static LanguageStreamDescription getLanguageFileDescription(
             String languageCode, String fallbackLanguageCode) {
         var fileName = languageCode + ".json";
@@ -193,7 +148,7 @@ public final class Language {
         String actualLanguageCode = languageCode;
         InputStream file = Grasscutter.class.getResourceAsStream("/languages/" + fileName);
 
-        if (file == null) { // Provided fallback language.
+        if (file == null) {
             Grasscutter.getLogger()
                     .warn("Failed to load language file: " + fileName + ", falling back to: " + fallback);
             actualLanguageCode = fallbackLanguageCode;
@@ -204,7 +159,7 @@ public final class Language {
             file = Grasscutter.class.getResourceAsStream("/languages/" + fallback);
         }
 
-        if (file == null) { // Fallback the fallback language.
+        if (file == null) {
             Grasscutter.getLogger()
                     .warn("Failed to load language file: " + fallback + ", falling back to: en-US.json");
             actualLanguageCode = "en-US";
@@ -231,12 +186,12 @@ public final class Language {
             return new Int2ObjectOpenHashMap<>(
                     file.lines()
                             .sequential()
-                            .map(matcher::reset) // Side effects, but it's faster than making a new one
+                            .map(matcher::reset)
                             .filter(Matcher::find)
                             .filter(
                                     m ->
                                             nameHashes.contains(
-                                                    (int) Long.parseLong(m.group(1)))) // TODO: Cache this parse somehow
+                                                    (int) Long.parseLong(m.group(1))))
                             .collect(
                                     Collectors.toMap(
                                             m -> (int) Long.parseLong(m.group(1)),
@@ -250,7 +205,7 @@ public final class Language {
 
     private static Int2ObjectMap<TextStrings> loadTextMapFiles(IntSet nameHashes) {
         Map<Integer, Int2ObjectMap<String>>
-                mapLanguageMaps = // Separate step to process the textmaps in parallel
+                mapLanguageMaps =
                 TextStrings.LIST_LANGUAGES.parallelStream()
                                 .collect(
                                         Collectors.toConcurrentMap(
@@ -318,57 +273,34 @@ public final class Language {
         return getTextMapKey((int) hash);
     }
 
-    /** Loads game text maps with caching. */
     public static void loadTextMaps() {
         Language.loadTextMaps(false);
     }
 
-    /**
-     * Loads game language data (text maps).
-     *
-     * @param bypassCache Should the cache be bypassed?
-     */
     public static void loadTextMaps(boolean bypassCache) {
-        // Check system timestamps on cache and resources
         if (!bypassCache)
             try {
                 long cacheModified = Files.getLastModifiedTime(TEXTMAP_CACHE_PATH).toMillis();
-                long textmapsModified;
-                try (var textmaps = Files.list(getResourcePath("TextMap"))) {
-                    textmapsModified =
-                        textmaps
-                                .filter(path -> path.toString().endsWith(".json"))
-                                .map(
-                                        path -> {
-                                            try {
-                                                return Files.getLastModifiedTime(path).toMillis();
-                                            } catch (Exception ignored) {
-                                                Grasscutter.getLogger()
-                                                        .debug("Exception while checking modified time: ", path);
-                                                return Long.MAX_VALUE; // Don't use cache, something has gone wrong
-                                            }
-                                        })
-                                .max(Long::compare)
-                                .get();
-                }
+                long textmapsModified =
+                        Math.max(
+                                newestJson(getResourcePath("TextMap")),
+                                newestJson(getResourcePath("ExcelBinOutput")));
 
                 Grasscutter.getLogger()
                         .debug(
                                 "Cache modified %d, textmap modified %d"
                                         .formatted(cacheModified, textmapsModified));
                 if (textmapsModified < cacheModified) {
-                    // Try loading from cache
                     Grasscutter.getLogger().debug("Loading cached 'TextMaps'...");
                     textMapStrings = loadTextMapsCache();
+                    scannedTextmaps = true;
                     return;
                 }
             } catch (NoSuchFileException ignored) {
-                // Cache doesn't exist, generate it.
             } catch (Exception exception) {
                 Grasscutter.getLogger().error("Error loading textmaps cache: " + exception.toString());
             }
 
-        // Regenerate cache
         Grasscutter.getLogger().debug("Generating TextMaps cache");
         ResourceLoader.loadAll();
         IntSet usedHashes = new IntOpenHashSet();
@@ -390,25 +322,20 @@ public final class Language {
         GameData.getHomeWorldBgmDataMap()
                 .forEach((k, v) -> usedHashes.add((int) v.getBgmNameTextMapHash()));
         GameData.getMonsterDataMap().forEach((k, v) -> usedHashes.add((int) v.getNameTextMapHash()));
-        // What a monster is actually called lives on its describe row - its own name hash resolves
-        // to nothing at all, for every one of the 2422 of them.
         GameData.getMonsterDescribeDataMap()
                 .forEach((k, v) -> usedHashes.add((int) v.getNameTextMapHash()));
-        // An artifact set is named by the bonus it grants rather than by a row of its own.
         GameData.getEquipAffixDataMap()
                 .forEach((k, v) -> usedHashes.add((int) v.getNameTextMapHash()));
         GameData.getMainQuestDataMap().forEach((k, v) -> usedHashes.add((int) v.getTitleTextMapHash()));
         GameData.getQuestDataMap().forEach((k, v) -> usedHashes.add((int) v.getDescTextMapHash()));
         GameData.getWorldAreaDataMap().forEach((k, v) -> usedHashes.add((int) v.getTextMapHash()));
-        // Incidental strings
-        usedHashes.add((int) 4233146695L); // Character
-        usedHashes.add((int) 4231343903L); // Weapon
-        usedHashes.add((int) 332935371L); // Standard Wish
-        usedHashes.add((int) 2272170627L); // Character Event Wish
-        usedHashes.add((int) 3352513147L); // Character Event Wish-2
-        usedHashes.add((int) 2864268523L); // Weapon Event Wish
+        usedHashes.add((int) 4233146695L);
+        usedHashes.add((int) 4231343903L);
+        usedHashes.add((int) 332935371L);
+        usedHashes.add((int) 2272170627L);
+        usedHashes.add((int) 3352513147L);
+        usedHashes.add((int) 2864268523L);
 
-        // Load each hash's drifted twin as well, or there is nothing for the recovery below to find.
         var drifted = new IntOpenHashSet(usedHashes.size());
         for (var hash : usedHashes.toIntArray()) drifted.add(hash + HASH_DRIFT);
         usedHashes.addAll(drifted);
@@ -423,24 +350,27 @@ public final class Language {
         }
     }
 
-    /** Internal names that are not what the thing ended up being called. */
+    private static long newestJson(Path dir) throws IOException {
+        try (var files = Files.list(dir)) {
+            return files
+                    .filter(path -> path.toString().endsWith(".json"))
+                    .mapToLong(
+                            path -> {
+                                try {
+                                    return Files.getLastModifiedTime(path).toMillis();
+                                } catch (IOException e) {
+                                    return Long.MAX_VALUE;
+                                }
+                            })
+                    .max()
+                    .orElse(Long.MAX_VALUE);
+        }
+    }
+
     private static final Map<String, String> RENAMED = Map.of("MarionetteNew", "Sandrone");
 
-    /**
-     * The shipped text maps and the excel tables come from different dumps, and the drift between
-     * them is a constant: two thirds of the names that look missing are sitting 512 hashes along.
-     */
     private static final int HASH_DRIFT = 512;
 
-    /**
-     * Gives a readable name to every avatar and item the text maps have no string for.
-     *
-     * <p>Only 61 of 157 avatars resolve on the nose - Diluc, Jean and the Traveler all read blank in
-     * the handbook and in command output, which makes them impossible to look up by name and
-     * impossible to tell apart from each other. Most are recovered by the drift; whatever is left
-     * falls back to the internal name in the icon path, since "Crystalline Sword" beats an empty
-     * row even where it is not the name the game itself would print.
-     */
     private static void nameWhatTheTextMapsMissed(Int2ObjectMap<TextStrings> strings) {
         var recovered = new int[2];
         for (var avatar : GameData.getAvatarDataMap().values()) {
@@ -467,7 +397,6 @@ public final class Language {
 
         var drifted = strings.get(key + HASH_DRIFT);
         if (known(drifted)) {
-            // The real string, in every language, rather than a guess off an icon path.
             strings.put(key, drifted);
             recovered[0]++;
             return;
@@ -480,15 +409,10 @@ public final class Language {
         recovered[1]++;
     }
 
-    /**
-     * A hash the files half-answered is still a blank row: the loader fills the languages it has no
-     * string for with "[N/A] <hash>", so that placeholder does not count as known.
-     */
     private static boolean known(TextStrings strings) {
         return strings != null && !strings.get(0).startsWith("[N/A]");
     }
 
-    /** UI_AvatarIcon_MarionetteNew to Sandrone, UI_EquipIcon_Claymore_CrystallineSword to Crystalline Sword. */
     private static String displayName(String iconName) {
         if (iconName == null || iconName.isBlank()) return null;
 
@@ -498,29 +422,19 @@ public final class Language {
         var renamed = RENAMED.get(internal);
         if (renamed != null) return renamed;
 
-        // A reworked character keeps its old name with New pinned on the end.
         if (internal.length() > 3 && internal.endsWith("New")) {
             internal = internal.substring(0, internal.length() - 3);
         }
 
-        // Most material and artifact icons end in an id or a piece number. A row reading "5" is
-        // worse than a blank one - it looks like data - so leave those alone.
         if (internal.chars().allMatch(Character::isDigit)) return null;
 
         return internal.replaceAll("(?<=[a-z0-9])(?=[A-Z])", " ");
     }
 
-    /** get language code */
     public String getLanguageCode() {
         return languageCode;
     }
 
-    /**
-     * Returns the value (as a string) from a nested key.
-     *
-     * @param key The key to look for.
-     * @return The value (as a string) from a nested key.
-     */
     public String get(String key) {
         if (translations.containsKey(key)) return translations.get(key);
         String valueNotFoundPattern = "This value does not exist. Please report this to the Discord: ";
@@ -560,17 +474,16 @@ public final class Language {
         public static final String[] ARR_GC_LANGUAGES = {
             "en-US", "zh-CN", "zh-TW", "ja-JP", "ko-KR", "en-US", "es-ES", "fr-FR", "en-US", "en-US",
             "ru-RU", "en-US", "en-US"
-        }; // TODO: Update the placeholder en-US entries if we ever add GC translations for the missing
-        // client languages
+        };
         public static final int NUM_LANGUAGES = ARR_LANGUAGES.length;
         public static final List<String> LIST_LANGUAGES = Arrays.asList(ARR_LANGUAGES);
         public static final Object2IntMap<String>
-                MAP_LANGUAGES = // Map "EN": 0, "CHS": 1, ..., "VI": 12
+                MAP_LANGUAGES =
                 new Object2IntOpenHashMap<>(
                                 IntStream.range(0, ARR_LANGUAGES.length)
                                         .boxed()
                                         .collect(Collectors.toMap(i -> ARR_LANGUAGES[i], i -> i)));
-        public static final Object2IntMap<String> MAP_GC_LANGUAGES = // Map "en-US": 0, "zh-CN": 1, ...
+        public static final Object2IntMap<String> MAP_GC_LANGUAGES =
                 new Object2IntOpenHashMap<>(
                         IntStream.range(0, ARR_GC_LANGUAGES.length)
                                 .boxed()
@@ -578,7 +491,7 @@ public final class Language {
                                         Collectors.toMap(
                                                 i -> ARR_GC_LANGUAGES[i],
                                                 i -> i,
-                                                (i1, i2) -> i1))); // Have to handle duplicates referring back to the first
+                                                (i1, i2) -> i1)));
         public String[] strings = new String[ARR_LANGUAGES.length];
 
         public TextStrings() {}
@@ -588,9 +501,8 @@ public final class Language {
         }
 
         public TextStrings(List<String> strings, int key) {
-            // Some hashes don't have strings for some languages :(
             String nullReplacement = "[N/A] %d".formatted((long) key & 0xFFFFFFFFL);
-            for (int i = 0; i < NUM_LANGUAGES; i++) { // Find first non-null if there is any
+            for (int i = 0; i < NUM_LANGUAGES; i++) {
                 String s = strings.get(i);
                 if (s != null) {
                     nullReplacement = "[%s] - %s".formatted(ARR_LANGUAGES[i], s);

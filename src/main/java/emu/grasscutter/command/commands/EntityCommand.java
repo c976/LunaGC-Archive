@@ -38,9 +38,8 @@ public final class EntityCommand implements CommandHandler {
 
         parseIntParameters(args, param, intCommandHandlers);
 
-        // At this point, first remaining argument MUST be the id and the rest the pos
         if (args.size() != 1) {
-            sendUsageMessage(sender); // Reachable if someone does `/give lv90` or similar
+            sendUsageMessage(sender);
             throw new IllegalArgumentException();
         }
 
@@ -51,9 +50,6 @@ public final class EntityCommand implements CommandHandler {
         }
 
         param.scene = targetPlayer.getScene();
-        // TODO Might want to allow groupId specification,
-        // because there can be more than one entity with
-        // the given config ID.
         var entity = param.scene.getFirstEntityByConfigId(param.configId);
 
         if (entity == null) {
@@ -83,7 +79,6 @@ public final class EntityCommand implements CommandHandler {
 
         if (param.ai != -1) {
             ((EntityMonster) entity).setAiId(param.ai);
-            // TODO notify
         }
     }
 

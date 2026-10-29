@@ -12,7 +12,6 @@ public final class ActionSetGlobalValueToOverrideMap extends AbilityActionHandle
     @Override
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
-        // TODO:
         GameEntity entity = target;
         if (action.isFromOwner) {
             if (target instanceof EntityClientGadget) {
@@ -23,8 +22,6 @@ public final class ActionSetGlobalValueToOverrideMap extends AbilityActionHandle
                 entity = gadget.getOwner();
             }
         }
-        // isFromOwner can resolve to nothing - a summon whose owner has already left the scene -
-        // and the whole action then threw on the first read below.
         if (entity == null || ability == null) return true;
 
         String globalValueKey = action.globalValueKey;
@@ -35,15 +32,13 @@ public final class ActionSetGlobalValueToOverrideMap extends AbilityActionHandle
         }
 
         Float globalValue = entity.getGlobalAbilityValues().getOrDefault(globalValueKey, Float.valueOf(0.0f));
-        // Most actions name no formula at all. Reading it as one threw before the override map was
-        // ever written, so every ability that came through here - Xilonen's and Citlali's bullets,
-        // Mavuika's motorcycle - lost the value it was setting, not just the formula.
         if ("DummyThrowSpeed".equals(abilityFormula)) {
             globalValue = Float.valueOf(globalValue.floatValue() * 30.0f / ((float)Math.sin(0.9424778) * 100.0f) - 1.0f);
         }
         entity.getGlobalAbilityValues().put(globalValueKey, globalValue);
         ability.getAbilitySpecials().put(action.overrideMapKey, globalValue.floatValue());
         entity.onAbilityValueUpdate();
+        if (entity.getScene() == null || entity.getScene().getHost() == null) return true;
         entity.getScene().getHost().sendPacket(new PacketServerGlobalValueChangeNotify(entity, globalValueKey, globalValue.floatValue()));
         return true;
     }

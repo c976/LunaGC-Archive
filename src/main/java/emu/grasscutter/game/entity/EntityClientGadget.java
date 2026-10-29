@@ -75,7 +75,6 @@ public class EntityClientGadget extends EntityBaseGadget {
         this.ownerEntityId = notify.getOwnerEntityId();
         this.propOwnerEntityId = notify.getPropOwnerEntityId();
         this.targetEntityId = notify.getTargetEntityId();
-        // is_async_load is one of EvtCreateGadgetNotify's two unnamed bools in the 7.0 dump.
         this.asyncLoad = false;
 
         this.gadgetData = GameData.getGadgetDataMap().get(gadgetId);
@@ -132,11 +131,6 @@ public class EntityClientGadget extends EntityBaseGadget {
         super.onDeath(killerId);
     }
 
-    /**
-     * The client owns this entity's combat state, so nothing here is ever sent - {@link #toProto}
-     * builds its own pairs. It still has to be a map: an ability attached to one of these reads the
-     * whole {@code FightProperty} set off its owner, and a null threw right through the action.
-     */
     @Getter(onMethod_ = @Override, lazy = true)
     private final Int2FloatMap fightProperties = new Int2FloatOpenHashMap();
 

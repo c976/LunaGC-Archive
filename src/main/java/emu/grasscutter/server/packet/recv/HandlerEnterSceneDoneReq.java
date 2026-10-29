@@ -2,6 +2,7 @@ package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.player.Player.SceneLoadState;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.EnterSceneDoneReqOuterClass.EnterSceneDoneReq;
 import emu.grasscutter.server.game.GameSession;
@@ -22,20 +23,15 @@ public class HandlerEnterSceneDoneReq extends PacketHandler {
 
         var player = session.getPlayer();
 
-        // Finished loading
         player.setSceneLoadState(SceneLoadState.LOADED);
 
-        // Done
 
-        session.send(new PacketPlayerTimeNotify(player)); // Probably not the right place
+        session.send(new PacketPlayerTimeNotify(player));
 
-        // Spawn player in world
         player.getScene().spawnPlayer(player);
 
-        // Spawn other entites already in world
         player.getScene().showOtherEntities(player);
 
-        // Locations
         session.send(new PacketWorldPlayerLocationNotify(player.getWorld()));
         session.send(new PacketScenePlayerLocationNotify(player.getScene()));
         session.send(new PacketWorldPlayerRTTNotify(player.getWorld()));
@@ -44,10 +40,8 @@ public class HandlerEnterSceneDoneReq extends PacketHandler {
         if (currentHpDebts > 0.0f) {
             avatarEntity.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(avatarEntity, FightProperty.FIGHT_PROP_CUR_HP_DEBTS, currentHpDebts, PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_NONE, ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_NONE));
         }
-        // spawn NPC
         player.getScene().loadNpcForPlayerEnter(player);
 
-        // notify client to load the npc for quest
         var questGroupSuites = player.getQuestManager().getSceneGroupSuite(player.getSceneId());
 
         player.getScene().loadGroupForQuest(questGroupSuites);
@@ -55,19 +49,16 @@ public class HandlerEnterSceneDoneReq extends PacketHandler {
                 .trace("Loaded Scene {} Quest(s) Groupsuite(s): {}", player.getSceneId(), questGroupSuites);
         session.send(new PacketGroupSuiteNotify(questGroupSuites));
 
-        // Commission monsters live in dynamic groups exactly like the quest ones above, and nothing
-        // else brings them in: generation only loads them when the player already happens to be
-        // standing in Teyvat with a live scene, which is never true at login. Without this the
-        // commission is issued and tracked but its monsters never spawn.
         var dailyTaskManager = player.getDailyTaskManager();
         if (dailyTaskManager != null) {
             dailyTaskManager.loadActiveGroups(player.getScene());
+            dailyTaskManager.syncAll();
         }
 
-        // Reset timer for sending player locations
         player.resetSendPlayerLocTime();
 
-        // Rsp
+        TpsWeaponSystem.sendSceneAmmunition(player);
+
         session.send(new PacketEnterSceneDoneRsp(player));
     }
 }

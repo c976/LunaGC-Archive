@@ -16,7 +16,6 @@ import java.nio.file.*;
 import java.util.*;
 import lombok.Getter;
 
-/** Handles all gacha-related HTTP requests. */
 public final class GachaHandler implements Router {
     @Getter
     private static final Path gachaMappingsPath = FileUtils.getDataUserPath("gacha/mappings.js");
@@ -24,12 +23,6 @@ public final class GachaHandler implements Router {
     @Deprecated(forRemoval = true)
     public static final String gachaMappings = gachaMappingsPath.toString();
 
-    /**
-     * The client is told these two URLs through GachaInfo.gacha_record_url / gacha_prob_url. Which of
-     * the two 7.0 field numbers is which was only recoverable from one dump, so route on the query
-     * string instead of trusting it: the history page is the one asked for by gachaType, the details
-     * page the one asked for by scheduleId. A swapped pair then still lands on the right page.
-     */
     private static void gachaRecords(Context ctx) {
         if (ctx.queryParam("gachaType") == null && ctx.queryParam("scheduleId") != null) {
             gachaDetails(ctx);
@@ -43,7 +36,6 @@ public final class GachaHandler implements Router {
             return;
         }
 
-        // Get page and gacha type.
         int page = 0, gachaType = 0;
 
         var pageStr = ctx.queryParam("p");
@@ -52,7 +44,6 @@ public final class GachaHandler implements Router {
         var gachaTypeStr = ctx.queryParam("gachaType");
         if (gachaTypeStr != null) gachaType = Integer.parseInt(gachaTypeStr);
 
-        // Make request to dispatch server.
         var data = DispatchUtils.fetchGachaRecords(account.getId(), page, gachaType);
         var records = data.get("records").getAsString();
         var maxPage = data.get("maxPage").getAsLong();
@@ -94,7 +85,6 @@ public final class GachaHandler implements Router {
             return;
         }
 
-        // Add translated title etc. to the page.
         var locale = account.getLocale();
         template =
                 template
@@ -108,7 +98,6 @@ public final class GachaHandler implements Router {
                                 translate(locale, "gacha.details.available_three_stars"))
                         .replace("{{LANGUAGE}}", Utils.getLanguageCode(account.getLocale()));
 
-        // Get the banner info for the banner we want.
         var scheduleIdStr = ctx.queryParam("scheduleId");
         if (scheduleIdStr == null) {
             ctx.status(400).result("Missing scheduleId parameter");
@@ -123,7 +112,6 @@ public final class GachaHandler implements Router {
             return;
         }
 
-        // Add 5-star items.
         var fiveStarItems = new LinkedHashSet<String>();
 
         Arrays.stream(banner.getRateUpItems5()).forEach(i -> fiveStarItems.add(Integer.toString(i)));
@@ -134,7 +122,6 @@ public final class GachaHandler implements Router {
 
         template = template.replace("{{FIVE_STARS}}", "[" + String.join(",", fiveStarItems) + "]");
 
-        // Add 4-star items.
         var fourStarItems = new LinkedHashSet<String>();
 
         Arrays.stream(banner.getRateUpItems4()).forEach(i -> fourStarItems.add(Integer.toString(i)));
@@ -145,30 +132,19 @@ public final class GachaHandler implements Router {
 
         template = template.replace("{{FOUR_STARS}}", "[" + String.join(",", fourStarItems) + "]");
 
-        // Add 3-star items.
         var threeStarItems = new LinkedHashSet<String>();
         Arrays.stream(banner.getFallbackItems3()).forEach(i -> threeStarItems.add(Integer.toString(i)));
         template = template.replace("{{THREE_STARS}}", "[" + String.join(",", threeStarItems) + "]");
 
-        // Done.
         ctx.contentType(ContentType.TEXT_HTML);
         ctx.result(template);
     }
 
-    /**
-     * Fetches the gacha records for the specified player.
-     *
-     * @param player The player to fetch the records for.
-     * @param response The response to write to.
-     * @param page The page to fetch.
-     * @param type The gacha type to fetch.
-     */
     public static void fetchGachaRecords(Player player, JsonObject response, int page, int type) {
         var playerId = player.getUid();
         var records = DatabaseHelper.getGachaRecords(playerId, page, type).toString();
         var maxPage = DatabaseHelper.getGachaRecordsMaxPage(playerId, page, type);
 
-        // Finish the response.
         response.addProperty("retcode", 0);
         response.addProperty("records", records);
         response.addProperty("maxPage", maxPage);

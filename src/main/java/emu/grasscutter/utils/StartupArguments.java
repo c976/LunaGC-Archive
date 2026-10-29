@@ -10,9 +10,7 @@ import java.util.*;
 import java.util.function.Function;
 import org.slf4j.LoggerFactory;
 
-/** A parser for start-up arguments. */
 public interface StartupArguments {
-    /* A map of parameter -> argument handler. */
     Map<String, Function<String, Boolean>> argumentHandlers =
             new HashMap<>() {
                 {
@@ -49,16 +47,13 @@ public interface StartupArguments {
                                     },
                                     "-test",
                                     parameter -> {
-                                        // Disable the console.
                                         SERVER.game.enableConsole = false;
-                                        // Disable HTTP encryption.
                                         SERVER.http.encryption.useEncryption = false;
                                         return false;
                                     },
                                     "-dump",
                                     StartupArguments::dump,
 
-                                    // Aliases.
                                     "-v",
                                     StartupArguments::printVersion));
                     putAll(
@@ -71,16 +66,9 @@ public interface StartupArguments {
                 }
             };
 
-    /**
-     * Parses the provided start-up arguments.
-     *
-     * @param args The application start-up arguments.
-     * @return If the application should exit.
-     */
     static boolean parse(String[] args) {
         boolean exitEarly = false;
 
-        // Parse the arguments.
         for (var input : args) {
             var containsParameter = input.contains("=");
 
@@ -95,34 +83,19 @@ public interface StartupArguments {
         return exitEarly;
     }
 
-    /**
-     * Prints the server version.
-     *
-     * @param parameter Additional parameters.
-     * @return True to exit early.
-     */
     private static boolean printVersion(String parameter) {
         System.out.println("Grasscutter version: " + BuildConfig.VERSION + "-" + BuildConfig.GIT_HASH);
         return true;
     }
 
-    /**
-     * Enables debug logging.
-     *
-     * @param parameter Additional parameters.
-     * @return False to continue execution.
-     */
     private static boolean enableDebug(String parameter) {
         if (parameter != null && parameter.equals("all")) {
-            // Override default debug configs
             GAME_INFO.isShowLoopPackets = DEBUG_MODE_INFO.isShowLoopPackets;
             GAME_INFO.isShowPacketPayload = DEBUG_MODE_INFO.isShowPacketPayload;
             GAME_INFO.logPackets = DEBUG_MODE_INFO.logPackets;
             DISPATCH_INFO.logRequests = DEBUG_MODE_INFO.logRequests;
 
-            // Log level to other third-party services
             Level loggerLevel = DEBUG_MODE_INFO.servicesLoggersLevel;
-            // Change loggers to debug.
             ((Logger) LoggerFactory.getLogger("io.javalin")).setLevel(loggerLevel);
             ((Logger) LoggerFactory.getLogger("org.quartz")).setLevel(loggerLevel);
             ((Logger) LoggerFactory.getLogger("org.reflections")).setLevel(loggerLevel);
@@ -130,22 +103,13 @@ public interface StartupArguments {
             ((Logger) LoggerFactory.getLogger("org.mongodb.driver")).setLevel(loggerLevel);
         }
 
-        // Set the main logger to debug.
         Grasscutter.getLogger().setLevel(DEBUG_MODE_INFO.serverLoggerLevel);
         Grasscutter.getLogger().debug("The logger is now running in debug mode.");
-        // Set the server to debug.
         GameConstants.DEBUG = true;
         return false;
     }
 
-    /**
-     * Dumps the specified information.
-     *
-     * @param parameter The parameter to dump.
-     * @return True to exit early.
-     */
     private static boolean dump(String parameter) {
-        // Parse the parameter.
         if (!parameter.contains(",")) {
             Grasscutter.getLogger().error("Dumper usage: -dump=<content>,<language>");
             return true;

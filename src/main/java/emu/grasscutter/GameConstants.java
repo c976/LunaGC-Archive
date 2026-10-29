@@ -7,8 +7,8 @@ import emu.grasscutter.utils.objects.SparseSet;
 import java.util.Arrays;
 
 public final class GameConstants {
-    public static String VERSION = "7.0.0";
-    public static int[] VERSION_PARTS = {7, 0, 0};
+    public static String VERSION = BuildConfig.VERSION;
+    public static int[] VERSION_PARTS = Arrays.stream(VERSION.split("\\.")).mapToInt(Integer::parseInt).toArray();
     public static boolean DEBUG = false;
 
     public static final int ENTITY_ID_BIT_SHIFT = 21;
@@ -98,7 +98,12 @@ public final class GameConstants {
              "TeamAbility_Natsaurus_Hookwalker_ElementalArt_TriggerBullet_06",
              "TeamAbility_Natsaurus_Hookwalker_ElementalArt_TriggerBullet_07",
              "TeamAbility_Natsaurus_Hookwalker_ElementalArt_TriggerBullet_5001",
-             "TeamAbility_NightsoulBurst"
+             "TeamAbility_NightsoulBurst",
+             "TeamAbility_Reset_Crystal_Mark",
+             "TeamAbility_Reset_MoonOvergrow",
+             "TeamAbility_MoonCrystal_Water",
+             "TeamAbility_StarSuperconductor",
+             "TeamAbility_StarSwirl_Ice"
      };
     public static final SparseSet ILLEGAL_WEAPONS = new SparseSet("""
         10000-10008, 11411, 11506-11508, 12505, 12506, 12508, 12509,

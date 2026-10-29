@@ -94,11 +94,9 @@ public class EntityMonster extends GameEntity {
                     .forEach(t -> this.summonTagMap.put(t.getSummonTag(), null));
         }
 
-        // Monster weapon
         if (getMonsterWeaponId() > 0) {
             this.weaponEntity = new EntityWeapon(scene, getMonsterWeaponId());
             scene.getWeaponEntities().put(this.weaponEntity.getId(), this.weaponEntity);
-            // this.weaponEntityId = getWorld().getNextEntityId(EntityIdType.WEAPON);
         }
 
         this.recalcStats();
@@ -114,7 +112,6 @@ public class EntityMonster extends GameEntity {
 
     @Override
     public void initAbilities() {
-        // Affix abilities
         var optionalGroup =
                 this.getScene().getLoadedGroups().stream().filter(g -> g.id == this.getGroupId()).findAny();
         List<Integer> affixes = null;
@@ -126,7 +123,6 @@ public class EntityMonster extends GameEntity {
         }
 
         if (monsterData != null) {
-            // TODO: Research if group affixes goes first
             if (affixes == null) affixes = monsterData.getAffix();
             else affixes.addAll(monsterData.getAffix());
         }
@@ -136,14 +132,12 @@ public class EntityMonster extends GameEntity {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
                 if (!affix.isPreAdd()) continue;
 
-                // Add the ability
                 for (var name : affix.getAbilityName()) {
                     this.addConfigAbility(name);
                 }
             }
         }
 
-        // TODO: Research if any monster is non humanoid
         for (var ability :
                 GameData.getConfigGlobalCombat().getDefaultAbilities().getNonHumanoidMoveAbilities()) {
             this.addConfigAbility(ability);
@@ -169,7 +163,6 @@ public class EntityMonster extends GameEntity {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
                 if (affix.isPreAdd()) continue;
 
-                // Add the ability
                 for (var name : affix.getAbilityName()) {
                     this.addConfigAbility(name);
                 }
@@ -225,7 +218,6 @@ public class EntityMonster extends GameEntity {
     public void onTick(int sceneTime) {
         super.onTick(sceneTime);
 
-        // Lua event
         getScene()
                 .getScriptManager()
                 .callEvent(
@@ -235,16 +227,12 @@ public class EntityMonster extends GameEntity {
 
     @Override
     public void damage(float amount, int killerId, ElementType attackType) {
-        // Get HP before damage.
         float hpBeforeDamage = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
 
-        // Apply damage.
         super.damage(amount, killerId, attackType);
 
-        // Get HP after damage.
         float hpAfterDamage = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
 
-        // Invoke energy drop logic.
         for (Player player : this.getScene().getPlayers()) {
             player.getEnergyManager().handleMonsterEnergyDrop(this, hpBeforeDamage, hpAfterDamage);
         }
@@ -268,24 +256,19 @@ public class EntityMonster extends GameEntity {
 
     @Override
     public void onDeath(int killerId) {
-        super.onDeath(killerId); // Invoke super class's onDeath() method.
+        super.onDeath(killerId);
         var scene = this.getScene();
         var challenge = Optional.ofNullable(scene.getChallenge());
         var scriptManager = scene.getScriptManager();
 
         Optional.ofNullable(this.getSpawnEntry()).ifPresent(scene.getDeadSpawnedEntities()::add);
 
-        // first set the challenge data
         challenge.ifPresent(c -> c.onMonsterDeath(this));
 
         if (scriptManager.isInit() && this.getGroupId() > 0) {
             Optional.ofNullable(scriptManager.getScriptMonsterSpawnService())
                     .ifPresent(s -> s.onMonsterDead(this));
 
-            // Ensure each EVENT_ANY_MONSTER_DIE runs to completion.
-            // Multiple such events firing at the same time may cause
-            // the same lua trigger to fire multiple times, when it
-            // should happen only once.
             var future =
                     scriptManager.callEvent(
                             new ScriptArgs(
@@ -296,7 +279,6 @@ public class EntityMonster extends GameEntity {
                 e.printStackTrace();
             }
         }
-        // Battle Pass trigger
         scene
                 .getPlayers()
                 .forEach(
@@ -337,31 +319,25 @@ public class EntityMonster extends GameEntity {
         scene.triggerDungeonEvent(
                 DungeonPassConditionType.DUNGEON_COND_KILL_MONSTER, this.getMonsterId());
 
-        // If this entity spawned servants, kill those too.
         summonTagMap.values().stream()
                 .filter(Objects::nonNull)
                 .forEach(entity -> scene.killEntity(entity, killerId));
     }
 
     public void recalcStats() {
-        // Monster data
         MonsterData data = this.getMonsterData();
 
-        // Get hp percent, set to 100% if none
         float hpPercent =
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) <= 0
                         ? 1f
                         : this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP)
                                 / this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
 
-        // Clear properties
         this.getFightProperties().clear();
 
-        // Base stats
         MonsterData.definedFightProperties.forEach(
                 prop -> this.setFightProperty(prop, data.getFightProperty(prop)));
 
-        // Level curve
         MonsterCurveData curve = GameData.getMonsterCurveDataMap().get(this.getLevel());
         if (curve != null) {
             for (PropGrowCurve growCurve : data.getPropGrowCurves()) {
@@ -371,7 +347,6 @@ public class EntityMonster extends GameEntity {
             }
         }
 
-        // Set % stats
         FightProperty.forEachCompoundProperty(
                 c ->
                         this.setFightProperty(
@@ -380,14 +355,7 @@ public class EntityMonster extends GameEntity {
                                         + (this.getFightProperty(c.getBase())
                                                 * (1f + this.getFightProperty(c.getPercent())))));
 
-        // If in tower, scale max hp by
-        //   +50%: Floors 3 – 7
-        //  +100%: Floors 8 – 11
-        //  +150%: Floor 12
         var dungeonManager = getScene().getDungeonManager();
-        // recalcStats() runs from the constructor, so a monster can be built while the scene has no
-        // players yet (scene setup, or the teardown window in DungeonSystem.restartDungeon).
-        // Resolve the tower manager lazily so an empty player list can't blow up an ordinary spawn.
         var players = getScene().getPlayers();
         var towerManager = players.isEmpty() ? null : players.get(0).getTowerManager();
         if (dungeonManager != null && dungeonManager.isTowerDungeon() && towerManager != null) {
@@ -406,7 +374,6 @@ public class EntityMonster extends GameEntity {
                     this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * (1 + additionalScaleFactor));
         }
 
-        // Set current hp
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent);

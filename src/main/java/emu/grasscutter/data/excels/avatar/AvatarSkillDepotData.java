@@ -26,9 +26,6 @@ public class AvatarSkillDepotData extends GameResource {
     private List<String> extraAbilities;
     private List<Integer> talents;
 
-    // The obfuscated key for these two rotates every version, and the shipped resources are a mix of
-    // dumps (most rows are 6.6-era, the newest avatars come from a later one), so accept every key
-    // we have seen rather than a single name.
     @SerializedName(
             value = "inherentProudSkillOpens",
             alternate = {"BOIOJNENKHP"})
@@ -42,7 +39,6 @@ public class AvatarSkillDepotData extends GameResource {
     private String talentStarName;
     private String skillDepotAbilityGroup;
 
-    // Transient
     private AvatarSkillData energySkillData;
     private ElementType elementType;
     private IntList abilities;
@@ -58,14 +54,12 @@ public class AvatarSkillDepotData extends GameResource {
 
     @Override
     public void onLoad() {
-        // Set energy skill data
         this.energySkillData = GameData.getAvatarSkillDataMap().get(this.energySkill);
         if (this.energySkillData != null) {
             this.elementType = this.energySkillData.getCostElemType();
         } else {
             this.elementType = ElementType.None;
         }
-        // Set embryo abilities (if player skill depot)
         if (getSkillDepotAbilityGroup() != null && getSkillDepotAbilityGroup().length() > 0) {
             AvatarConfig config = GameDepot.getPlayerAbilities().get(getSkillDepotAbilityGroup());
 
@@ -77,8 +71,6 @@ public class AvatarSkillDepotData extends GameResource {
             }
         }
 
-        // A resource set whose obfuscated key we do not know leaves these null; callers iterate them
-        // unconditionally, so normalise here instead of NPEing on the first avatar handed out.
         if (this.inherentProudSkillOpens == null) {
             this.inherentProudSkillOpens = List.of();
         }
@@ -90,7 +82,6 @@ public class AvatarSkillDepotData extends GameResource {
                     .filter(id -> id > 0)
                     .toArray());
 
-        // Get constellation item from GameData
         Optional.ofNullable(this.talents)
                 .map(talents -> talents.get(0))
                 .map(i -> GameData.getAvatarTalentDataMap().get((int) i))
@@ -99,8 +90,14 @@ public class AvatarSkillDepotData extends GameResource {
     }
 
     public IntStream getSkillsAndEnergySkill() {
-        return IntStream.concat(this.skills.stream().mapToInt(i -> i), IntStream.of(this.energySkill))
-                .filter(skillId -> skillId > 0);
+        var skillIds =
+                IntStream.concat(this.skills.stream().mapToInt(i -> i), IntStream.of(this.energySkill))
+                        .filter(skillId -> skillId > 0)
+                        .toArray();
+        if (skillIds.length == 0 && this.attackModeSkill > 0) {
+            return IntStream.of(this.attackModeSkill);
+        }
+        return IntStream.of(skillIds);
     }
 
     @Getter

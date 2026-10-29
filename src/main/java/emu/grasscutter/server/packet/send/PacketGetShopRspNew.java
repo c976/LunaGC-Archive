@@ -7,7 +7,6 @@ import java.util.*;
 
 public class PacketGetShopRspNew extends BasePacket {
     
-    // hardcoded for now, from initial req from official server, will deal with it someday
     private static final List<Integer> AVAILABLE_SHOPS = Arrays.asList(
         900,
         100000,
@@ -32,11 +31,6 @@ public class PacketGetShopRspNew extends BasePacket {
         this.setData(rsp.build());
     }
     
-    /**
-     * Alt builder
-     * @param param Shop type being queried
-     * @param availableShops Custom list of available shop id
-     */
     public PacketGetShopRspNew(int param, List<Integer> availableShops) {
         super(PacketOpcodes.GetShopRspNew);
 

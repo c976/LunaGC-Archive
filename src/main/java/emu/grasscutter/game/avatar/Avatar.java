@@ -5,6 +5,7 @@ import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 import dev.morphia.annotations.*;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.ExtraTalents;
 import emu.grasscutter.data.binout.OpenConfigEntry;
 import emu.grasscutter.data.binout.OpenConfigEntry.SkillPointModifier;
 import emu.grasscutter.data.common.FightPropData;
@@ -20,6 +21,7 @@ import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo;
 import emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo;
 import emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo;
@@ -46,36 +48,37 @@ public class Avatar {
     @Transient @Getter private final Int2FloatOpenHashMap fightProperties;
     @Transient @Getter private final Int2FloatOpenHashMap fightPropOverrides;
     @Id private ObjectId id;
-    @Indexed @Getter private int ownerId; // Id of player that this avatar belongs to
+    @Indexed @Getter private int ownerId;
     @Transient private Player owner;
     @Transient @Getter private AvatarData avatarData;
     @Nullable @Transient @Getter private AvatarSkillDepotData skillDepot;
-    @Transient @Getter private long guid; // Player unique id
-    @Getter private int avatarId; // Id of avatar
+    @Transient @Getter private long guid;
+    @Getter private int avatarId;
     @Getter @Setter public float nyxValue;
     @Getter @Setter private int level = 1;
     @Getter @Setter private int exp;
     @Getter @Setter private int promoteLevel;
-    @Getter @Setter private int satiation; // Fullness
-    @Getter @Setter private int satiationPenalty; // When eating too much
+    @Getter @Setter private int satiation;
+    @Getter @Setter private int satiationPenalty;
     @Getter @Setter private float currentHp;
     private float currentEnergy;
     @Transient @Getter private Set<String> extraAbilityEmbryos;
 
     private List<Integer> fetters;
+    private List<Integer> tpsWeaponIds;
 
-    private Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
+    private Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7);
 
     @Transient @Getter
-    private Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2); // Charges
+    private Map<Integer, Integer> skillExtraChargeMap = new Int2IntArrayMap(2);
 
     @Transient
     private Map<Integer, Integer> proudSkillBonusMap =
-            new Int2IntArrayMap(2); // Talent bonus levels (from const)
+            new Int2IntArrayMap(2);
 
     @Getter private int skillDepotId;
-    private Set<Integer> talentIdList; // Constellation id list
-    @Getter private Set<Integer> proudSkillList; // Character passives
+    private Set<Integer> talentIdList;
+    @Getter private Set<Integer> proudSkillList;
 
     @Getter @Setter private int flyCloak;
     @Getter @Setter private int costume;
@@ -88,27 +91,22 @@ public class Avatar {
     @Getter @Setter private int nameCardId;
     @Getter @Setter private int traceEffect;
 
-    // trial avatar property
     @Getter @Setter private int trialAvatarId = 0;
-    // cannot store to db if grant reason is not integer
     @Getter @Setter
     private int grantReason = GrantReasonOuterClass.GrantReason.GRANT_REASON_INVALID.getNumber();
 
     @Getter @Setter private int fromParentQuestId = 0;
-    // so far no outer class or prop value has information of this, but from packet:
-    // 1 = normal, 2 = trial avatar
     @Transient @Getter @Setter private int avatarType = Type.NORMAL.getNumber();
 
-    @Deprecated // Do not use. Morhpia only!
+    @Deprecated
     public Avatar() {
         this.equips = new Int2ObjectOpenHashMap<>();
         this.fightProperties = new Int2FloatOpenHashMap();
         this.fightPropOverrides = new Int2FloatOpenHashMap();
         this.extraAbilityEmbryos = new HashSet<>();
-        this.fetters = new ArrayList<>(); // TODO Move to avatar
+        this.fetters = new ArrayList<>();
     }
 
-    // On creation
     public Avatar(int avatarId) {
         this(GameData.getAvatarDataMap().get(avatarId));
     }
@@ -126,7 +124,6 @@ public class Avatar {
         this.talentIdList = new HashSet<>();
         this.proudSkillList = new HashSet<>();
 
-        // Combat properties
         Stream.of(FightProperty.values())
                 .map(FightProperty::getId)
                 .filter(id -> (id > 0) && (id < 3000))
@@ -140,13 +137,11 @@ public class Avatar {
                     default -> data.getSkillDepot();
                 });
 
-        // Set stats
         this.recalcStats();
         this.currentHp = getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
         setFightProperty(FightProperty.FIGHT_PROP_CUR_HP, this.currentHp);
         setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, 100f);
         this.currentEnergy = 0f;
-        // Load handler
         this.onLoad();
     }
 
@@ -167,9 +162,6 @@ public class Avatar {
         return 0;
     }
 
-    /**
-     * @return True if the avatar is a main character.
-     */
     public boolean isMainCharacter() {
         return List.of(GameConstants.MAIN_CHARACTER_MALE, GameConstants.MAIN_CHARACTER_FEMALE)
                 .contains(this.getAvatarId());
@@ -185,7 +177,7 @@ public class Avatar {
 
     protected void setAvatarData(AvatarData data) {
         if (this.avatarData != null) return;
-        this.avatarData = data; // Used while loading this from the database
+        this.avatarData = data;
     }
 
     public void setOwner(Player player) {
@@ -194,7 +186,6 @@ public class Avatar {
         this.guid = player.getNextGameGuid();
 
         if (this.getAvatarId() == player.getMainCharacterId()) {
-            // Apply skill depot based on player resonance.
             this.changeElement(player.getMainCharacterElement(), false);
         }
     }
@@ -231,50 +222,29 @@ public class Avatar {
         return this.getEquips().get(slotId);
     }
 
-    /**
-     * @return The avatar's equipped weapon.
-     */
     @Nullable public GameItem getWeapon() {
         return this.getEquipBySlot(EquipType.EQUIP_WEAPON);
     }
 
-    /**
-     * @return The avatar's equipped weapon.
-     * @throws NullPointerException If the avatar does not have a weapon.
-     */
     public GameItem getWeaponNotNull() {
         return Objects.requireNonNull(this.getWeapon(), "Avatar does not have a weapon.");
     }
 
     protected void setSkillDepot(AvatarSkillDepotData skillDepot) {
         if (this.skillDepot != null) return;
-        this.skillDepot = skillDepot; // Used while loading this from the database
+        this.skillDepot = skillDepot;
     }
 
-    /**
-     * Changes this avatar's skill depot. Does not notify the player of the change.
-     *
-     * @param skillDepot The new skill depot.
-     */
     public void setSkillDepotData(AvatarSkillDepotData skillDepot) {
         this.setSkillDepotData(skillDepot, false);
     }
 
-    /**
-     * Changes this avatar's skill depot.
-     *
-     * @param skillDepot The new skill depot.
-     * @param notify Whether to notify the player of the change.
-     */
     public void setSkillDepotData(AvatarSkillDepotData skillDepot, boolean notify) {
-        // Set id and depot
         this.skillDepotId = skillDepot.getId();
         this.skillDepot = skillDepot;
-        // Add any missing skills
         this.skillDepot
                 .getSkillsAndEnergySkill()
                 .forEach(skillId -> this.skillLevelMap.putIfAbsent(skillId, 1));
-        // Add proud skills
         this.proudSkillList.clear();
         skillDepot.getInherentProudSkillOpens().stream()
                 .filter(openData -> openData.getProudSkillGroupId() > 0)
@@ -293,46 +263,27 @@ public class Avatar {
         }
     }
 
-    /**
-     * Changes the avatar's element to the target element. Only applies if the avatar has the element
-     * in its 'candSkillDepot's.
-     *
-     * @param newElement The new element to change to.
-     * @return True if the element was changed, false otherwise.
-     */
     public boolean changeElement(@Nonnull ElementType newElement) {
         return this.changeElement(newElement, true);
     }
 
-    /**
-     * Changes the avatar's element to the target element. Only applies if the avatar has the element
-     * in its 'candSkillDepot's.
-     *
-     * @param elementTypeToChange The new element to change to.
-     * @param notify Whether to notify the player of the change.
-     * @return True if the element was changed, false otherwise.
-     */
     public boolean changeElement(@Nonnull ElementType elementTypeToChange, boolean notify) {
         var candSkillDepotIdsList = this.getAvatarData().getCandSkillDepotIds();
         var candSkillDepotIndex = elementTypeToChange.getDepotIndex();
 
-        // if no candidate skill to change or index out of bound
         if (candSkillDepotIdsList == null || candSkillDepotIndex >= candSkillDepotIdsList.size()) {
             return false;
         }
 
         var candSkillDepotId = candSkillDepotIdsList.get(candSkillDepotIndex);
 
-        // Sanity checks for skill depots
         val skillDepot = GameData.getAvatarSkillDepotDataMap().get((int) candSkillDepotId);
         if (skillDepot == null || skillDepot.getId() == skillDepotId) {
             return false;
         }
 
-        // Set skill depot
         this.setSkillDepotData(skillDepot, notify);
         this.recalcStats(true);
-        // Set element.
         this.getPlayer().setMainCharacterElement(elementTypeToChange);
         return true;
     }
@@ -406,7 +357,7 @@ public class Avatar {
     }
 
     public Map<Integer, Integer>
-            getSkillLevelMap() { // Returns a copy of the skill levels for the current skillDepot.
+            getSkillLevelMap() {
         var map = new Int2IntOpenHashMap();
         this.skillDepot
                 .getSkillsAndEnergySkill()
@@ -415,8 +366,6 @@ public class Avatar {
         return map;
     }
 
-    // Returns a copy of the skill bonus levels for the current skillDepot, capped to avoid invalid
-    // levels.
     public Map<Integer, Integer> getProudSkillBonusMap() {
         var map = new Int2IntArrayMap();
         this.skillDepot
@@ -437,9 +386,8 @@ public class Avatar {
         return map;
     }
 
-    public IntSet getTalentIdList() { // Returns a copy of the unlocked constellations for the current
+    public IntSet getTalentIdList() {
         if (this.getSkillDepot() != null) {
-            // skillDepot.
             var talents = new IntOpenHashSet(this.getSkillDepot().getTalents());
             talents.removeIf(id -> !this.talentIdList.contains(id));
             return talents;
@@ -450,40 +398,39 @@ public class Avatar {
         if (this.getSkillDepot() != null) {
             var lockedTalents = new IntOpenHashSet(this.getSkillDepot().getTalents());
             lockedTalents.removeAll(this.getTalentIdList());
-            // One below the lowest locked talent, or 6 if there are no locked talents.
             return lockedTalents.intStream().map(i -> i % 10).min().orElse(7) - 1;
         } else return 0;
     }
 
+    public List<Integer> getTpsWeaponIds() {
+        if (this.tpsWeaponIds == null) {
+            this.tpsWeaponIds = new ArrayList<>();
+        }
+        return this.tpsWeaponIds;
+    }
+
     public boolean equipItem(GameItem item, boolean shouldRecalc) {
-        // Sanity check equip type
         EquipType itemEquipType = item.getItemData().getEquipType();
         if (itemEquipType == EquipType.EQUIP_NONE) {
             return false;
         }
 
-        // Check if other avatars have this item equipped
         Avatar otherAvatar = getPlayer().getAvatars().getAvatarById(item.getEquipCharacter());
         if (otherAvatar != null) {
-            // Unequip other avatar's item
             if (otherAvatar.unequipItem(item.getItemData().getEquipType())) {
                 getPlayer()
                         .sendPacket(
                                 new PacketAvatarEquipChangeNotify(otherAvatar, item.getItemData().getEquipType()));
             }
-            // Swap with other avatar
             if (getEquips().containsKey(itemEquipType.getValue())) {
                 GameItem toSwap = this.getEquipBySlot(itemEquipType);
                 otherAvatar.equipItem(toSwap, false);
             }
-            // Recalc
             otherAvatar.recalcStats();
         } else if (getEquips().containsKey(itemEquipType.getValue())) {
-            // Unequip item in current slot if it exists
             unequipItem(itemEquipType);
         }
 
-        // Set equip
         this.getEquips().put(itemEquipType.getValue(), item);
 
         if (itemEquipType == EquipType.EQUIP_WEAPON && getPlayer().getWorld() != null) {
@@ -496,7 +443,6 @@ public class Avatar {
                         .getWeaponEntities()
                         .put(item.getWeaponEntity().getId(), item.getWeaponEntity());
             }
-            // item.setWeaponEntityId(this.getPlayer().getWorld().getNextEntityId(EntityIdType.WEAPON));
         }
 
         item.setEquipCharacter(this.getAvatarId());
@@ -530,29 +476,24 @@ public class Avatar {
     }
 
     public void recalcStats(boolean forceSendAbilityChange) {
-        // Setup
         var data = this.getAvatarData();
         var promoteData =
                 GameData.getAvatarPromoteData(data.getAvatarPromoteId(), this.getPromoteLevel());
         var setMap = new Int2IntOpenHashMap();
 
-        // Extra ability embryos
         Set<String> prevExtraAbilityEmbryos = this.getExtraAbilityEmbryos();
         this.extraAbilityEmbryos = new HashSet<>();
 
-        // Fetters
         this.setFetterList(data.getFetters());
         this.setNameCardRewardId(data.getNameCardRewardId());
         this.setNameCardId(data.getNameCardId());
 
-        // Get hp percent, set to 100% if none
         float hpPercent =
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) <= 0
                         ? 1f
                         : this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP)
                                 / this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
 
-        // Store current energy value for later
         float currentEnergy =
                 (this.getSkillDepot() != null)
                         ? this.getFightProperty(this.getSkillDepot().getElementType().getCurEnergyProp())
@@ -562,10 +503,8 @@ public class Avatar {
         float specialEnergy = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
         float nyxValue = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP);
 
-        // Clear properties
         this.getFightProperties().clear();
 
-        // Base stats
         this.setFightProperty(FightProperty.FIGHT_PROP_BASE_HP, data.getBaseHp(this.getLevel()));
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_BASE_ATTACK, data.getBaseAttack(this.getLevel()));
@@ -576,8 +515,6 @@ public class Avatar {
         this.setFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 1f);
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, specialEnergy);
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP, nyxValue);
-        // The burst's own specialEnergyMin, not a flat 200: Mavuika's Fighting Spirit does want 200
-        // but Skirk's wants 100, and a doubled bar never fills.
         float maxSpecialEnergy = 0f;
         if (this.getSkillDepot() != null && this.getSkillDepot().getEnergySkillData() != null) {
             maxSpecialEnergy = this.getSkillDepot().getEnergySkillData().getSpecialEnergyMin();
@@ -591,17 +528,13 @@ public class Avatar {
             }
         }
 
-        // Set energy usage
         setCurrentEnergy(currentEnergy);
 
-        // Artifacts
         for (int slotId = 1; slotId <= 5; slotId++) {
-            // Get artifact
             GameItem equip = this.getEquipBySlot(slotId);
             if (equip == null) {
                 continue;
             }
-            // Artifact main stat
             ReliquaryMainPropData mainPropData =
                     GameData.getReliquaryMainPropDataMap().get(equip.getMainPropId());
             if (mainPropData != null) {
@@ -612,27 +545,22 @@ public class Avatar {
                             mainPropData.getFightProp(), levelData.getPropValue(mainPropData.getFightProp()));
                 }
             }
-            // Artifact sub stats
             for (int appendPropId : equip.getAppendPropIdList()) {
                 ReliquaryAffixData affixData = GameData.getReliquaryAffixDataMap().get(appendPropId);
                 if (affixData != null) {
                     this.addFightProperty(affixData.getFightProp(), affixData.getPropValue());
                 }
             }
-            // Set bonus
             if (equip.getItemData().getSetId() > 0) {
                 setMap.addTo(equip.getItemData().getSetId(), 1);
             }
         }
 
-        // Set stuff
         setMap.forEach(
                 (setId, amount) -> {
                     ReliquarySetData setData = GameData.getReliquarySetDataMap().get((int) setId);
                     if (setData == null) return;
 
-                    // Calculate how many items are from the set
-                    // Add affix data from set bonus
                     val setNeedNum = setData.getSetNeedNum();
                     for (int setIndex = 0; setIndex < setNeedNum.length; setIndex++) {
                         if (amount < setNeedNum[setIndex]) break;
@@ -643,20 +571,16 @@ public class Avatar {
                             continue;
                         }
 
-                        // Add properties from this affix to our avatar
                         for (FightPropData prop : affix.getAddProps()) {
                             this.addFightProperty(prop.getProp(), prop.getValue());
                         }
 
-                        // Add any skill strings from this affix
                         this.addToExtraAbilityEmbryos(affix.getOpenConfig(), true);
                     }
                 });
 
-        // Weapon
         GameItem weapon = this.getWeapon();
         if (weapon != null) {
-            // Add stats
             WeaponCurveData curveData = GameData.getWeaponCurveDataMap().get(weapon.getLevel());
             if (curveData != null) {
                 for (WeaponProperty weaponProperty : weapon.getItemData().getWeaponProperties()) {
@@ -665,7 +589,6 @@ public class Avatar {
                             weaponProperty.getInitValue() * curveData.getMultByProp(weaponProperty.getType()));
                 }
             }
-            // Weapon promotion stats
             WeaponPromoteData wepPromoteData =
                     GameData.getWeaponPromoteData(
                             weapon.getItemData().getWeaponPromoteId(), weapon.getPromoteLevel());
@@ -677,32 +600,29 @@ public class Avatar {
                     this.addFightProperty(prop.getProp(), prop.getValue());
                 }
             }
-            // Add weapon skill from affixes
             if (weapon.getAffixes() != null && weapon.getAffixes().size() > 0) {
-                // Weapons usually dont have more than one affix but just in case...
                 for (int af : weapon.getAffixes()) {
                     if (af == 0) {
                         continue;
                     }
-                    // Calculate affix id
                     int affixId = (af * 10) + weapon.getRefinement();
                     EquipAffixData affix = GameData.getEquipAffixDataMap().get(affixId);
                     if (affix == null) {
                         continue;
                     }
 
-                    // Add properties from this affix to our avatar
                     for (FightPropData prop : affix.getAddProps()) {
                         this.addFightProperty(prop.getProp(), prop.getValue());
                     }
 
-                    // Add any skill strings from this affix
                     this.addToExtraAbilityEmbryos(affix.getOpenConfig(), true);
                 }
             }
         }
 
-        // Add proud skills and unlock them if needed
+        TpsWeaponSystem.applyAffixes(this);
+
+        var talentOwners = new HashSet<String>();
         AvatarSkillDepotData skillDepot =
                 GameData.getAvatarSkillDepotDataMap().get(this.getSkillDepotId());
         this.getProudSkillList().clear();
@@ -726,33 +646,53 @@ public class Avatar {
             }
         }
 
-        // Proud skills
         for (int proudSkillId : this.getProudSkillList()) {
             ProudSkillData proudSkillData = GameData.getProudSkillDataMap().get(proudSkillId);
             if (proudSkillData == null) {
                 continue;
             }
 
-            // Add properties from this proud skill to our avatar
             for (FightPropData prop : proudSkillData.getAddProps()) {
                 this.addFightProperty(prop.getProp(), prop.getValue());
             }
 
-            // Add any embryos from this proud skill
             this.addToExtraAbilityEmbryos(proudSkillData.getOpenConfig());
+            talentOwners.add(ExtraTalents.owner(proudSkillData.getOpenConfig()));
         }
 
-        // Constellations
+        if (skillDepot != null) {
+            skillDepot
+                    .getSkillsAndEnergySkill()
+                    .mapToObj(GameData.getAvatarSkillDataMap()::get)
+                    .filter(Objects::nonNull)
+                    .mapToInt(AvatarSkillData::getProudSkillGroupId)
+                    .filter(groupId -> groupId > 0)
+                    .mapToObj(groupId -> GameData.getProudSkillDataMap().get((groupId * 100) + 1))
+                    .filter(Objects::nonNull)
+                    .map(ProudSkillData::getOpenConfig)
+                    .filter(Objects::nonNull)
+                    .forEach(
+                            openConfig -> {
+                                this.addToExtraAbilityEmbryos(openConfig);
+                                talentOwners.add(ExtraTalents.owner(openConfig));
+                            });
+        }
+
         this.getTalentIdList()
                 .intStream()
                 .mapToObj(GameData.getAvatarTalentDataMap()::get)
                 .filter(Objects::nonNull)
                 .map(AvatarTalentData::getOpenConfig)
                 .filter(Objects::nonNull)
-                .forEach(this::addToExtraAbilityEmbryos);
-        // Add any skill strings from this constellation
+                .forEach(
+                        openConfig -> {
+                            this.addToExtraAbilityEmbryos(openConfig);
+                            talentOwners.add(ExtraTalents.owner(openConfig));
+                        });
 
-        // Set % stats
+        ExtraTalents.forOwners(talentOwners, this.getAvatarData().getName())
+                .forEach(this::addToExtraAbilityEmbryos);
+
         FightProperty.forEachCompoundProperty(
                 c ->
                         this.setFightProperty(
@@ -761,26 +701,20 @@ public class Avatar {
                                         + (this.getFightProperty(c.getBase())
                                                 * (1f + this.getFightProperty(c.getPercent())))));
 
-        // Reapply all overrides
         this.fightProperties.putAll(this.fightPropOverrides);
 
-        // Set current hp
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent);
 
-        // Set HP Debts
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
                 hpDebt);
 
 
 
-        // Packet
         if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {
-            // Update stats for client
             getPlayer().sendPacket(new PacketAvatarFightPropNotify(this));
-            // Update client abilities
             EntityAvatar entity = this.getAsEntity();
             if (entity != null
                     && (!this.getExtraAbilityEmbryos().equals(prevExtraAbilityEmbryos)
@@ -802,7 +736,6 @@ public class Avatar {
         OpenConfigEntry entry = GameData.getOpenConfigEntries().get(openConfig);
         if (entry == null) {
             if (forceAdd) {
-                // Add config string to ability skill list anyways
                 this.getExtraAbilityEmbryos().add(openConfig);
             }
             return;
@@ -819,15 +752,11 @@ public class Avatar {
         if (entry == null) return;
         if (this.getPlayer() == null) notifyClient = false;
 
-        // Check if new constellation adds +3 to a skill level
         if (this.calcConstellationExtraLevels(entry) && notifyClient) {
-            // Packet
             this.getPlayer()
                     .sendPacket(new PacketProudSkillExtraLevelNotify(this, entry.getExtraTalentIndex()));
         }
-        // Check if new constellation adds skill charges
         if (this.calcConstellationExtraCharges(entry) && notifyClient) {
-            // Packet
             Stream.of(entry.getSkillPointModifiers())
                     .mapToInt(SkillPointModifier::getSkillId)
                     .forEach(
@@ -841,11 +770,9 @@ public class Avatar {
     }
 
     public void recalcConstellations() {
-        // Clear first
         this.proudSkillBonusMap.clear();
         this.skillExtraChargeMap.clear();
 
-        // Sanity checks
         if (this.avatarData == null || this.skillDepot == null) {
             return;
         }
@@ -881,28 +808,25 @@ public class Avatar {
     private boolean calcConstellationExtraLevels(OpenConfigEntry entry) {
         int skillId =
                 switch (entry.getExtraTalentIndex()) {
-                    case 9 -> this.skillDepot.getEnergySkill(); // Ult skill
+                    case 9 -> this.skillDepot.getEnergySkill();
                     case 2 -> (this.skillDepot.getSkills().size() >= 2)
                             ? this.skillDepot.getSkills().get(1)
-                            : 0; // E skill
+                            : 0;
                     case 1 -> (this.skillDepot.getSkills().size() >= 1)
                             ? this.skillDepot.getSkills().get(0)
-                            : 0; // Normal Attack (Liney)
+                            : 0;
                     default -> 0;
                 };
-        // Sanity check
         if (skillId == 0) {
             return false;
         }
 
-        // Get proud skill group id
         AvatarSkillData skillData = GameData.getAvatarSkillDataMap().get(skillId);
 
         if (skillData == null) {
             return false;
         }
 
-        // Add to bonus list
         this.addProudSkillLevelBonus(skillData.getProudSkillGroupId(), 3);
         return true;
     }
@@ -916,22 +840,17 @@ public class Avatar {
         AvatarSkillData skillData = GameData.getAvatarSkillDataMap().get(skillId);
         if (skillData == null) return false;
 
-        // Get data for next skill level
         int newLevel = this.skillLevelMap.getOrDefault(skillId, 0) + 1;
         if (newLevel > 10) return false;
 
-        // Proud skill data
         int proudSkillId = (skillData.getProudSkillGroupId() * 100) + newLevel;
         ProudSkillData proudSkill = GameData.getProudSkillDataMap().get(proudSkillId);
         if (proudSkill == null) return false;
 
-        // Make sure break level is correct
         if (this.getPromoteLevel() < proudSkill.getBreakLevel()) return false;
 
-        // Pay materials and mora if possible
         if (!this.getPlayer().getInventory().payItems(proudSkill.getTotalCostItems())) return false;
 
-        // Upgrade skill
         this.setSkillLevel(skillId, newLevel);
         return true;
     }
@@ -942,11 +861,10 @@ public class Avatar {
         if (validLevels != null && !validLevels.contains(level)) return false;
         int oldLevel =
                 this.skillLevelMap.getOrDefault(
-                        skillId, 0); // just taking the return value of put would have null concerns
+                        skillId, 0);
         this.skillLevelMap.put(skillId, level);
         this.save();
 
-        // Packet
         val player = this.getPlayer();
         if (player != null) {
             player.sendPacket(new PacketAvatarSkillChangeNotify(this, skillId, oldLevel, level));
@@ -971,47 +889,41 @@ public class Avatar {
     }
 
     public boolean unlockConstellation(int talentId, boolean skipPayment) {
-        // Get talent
         AvatarTalentData talentData = GameData.getAvatarTalentDataMap().get(talentId);
         if (talentData == null) return false;
         var player = this.getPlayer();
 
-        // Pay constellation item if possible
         if (!skipPayment
                 && (player != null)
                 && !player.getInventory().payItem(talentData.getMainCostItemId(), 1)) {
             return false;
         }
 
-        // Apply + recalc
         this.talentIdList.add(talentData.getId());
 
-        // Packet
         if (player != null) {
             player.sendPacket(new PacketAvatarUnlockTalentNotify(this, talentId));
             player.sendPacket(new PacketUnlockAvatarTalentRsp(this, talentId));
         }
 
-        // Proud skill bonus map (Extra skills)
         this.calcConstellation(GameData.getOpenConfigEntries().get(talentData.getOpenConfig()), true);
 
-        // Recalc + save avatar
         this.recalcStats(true);
         this.save();
         return true;
     }
 
     public void forceConstellationLevel(int level) {
-        if (level > 6) return; // Sanity check
+        if (level > 6) return;
 
-        if (level < 0) { // Special case for resetConst to remove inactive depots too
+        if (level < 0) {
             this.talentIdList.clear();
             this.recalcStats();
             this.save();
             return;
         }
         this.talentIdList.removeAll(
-                this.getTalentIdList()); // Only remove constellations from active depot
+                this.getTalentIdList());
         for (int i = 0; i < level; i++) this.unlockConstellation(true);
         this.recalcStats();
         this.save();
@@ -1025,8 +937,7 @@ public class Avatar {
                         new PacketAvatarSkillInfoNotify(
                                 this.guid,
                                 new Int2IntArrayMap(
-                                        map))); // TODO: Remove this allocation when updating interfaces to FastUtils
-        // later
+                                        map)));
         return true;
     }
 
@@ -1045,7 +956,17 @@ public class Avatar {
     }
 
     public void save() {
+        if (this.trialAvatarId > 0) return;
         DatabaseHelper.saveAvatar(this);
+    }
+
+    public int getExtraLevel() {
+        int level = this.getLevel();
+        var extraLevels = GameData.getAvatarExtraLevelDataMap();
+        boolean onExtraStep =
+                extraLevels.containsKey(level)
+                        || extraLevels.values().stream().anyMatch(data -> data.getMaxLevel() == level);
+        return onExtraStep ? level : 0;
     }
 
     public AvatarInfo toProto() {
@@ -1088,7 +1009,8 @@ public class Avatar {
                         .setFetterInfo(avatarFetter)
                         .setWearingFlycloakId(this.getFlyCloak())
                         .setCostumeId(this.getCostume())
-                        .setTraceEffectId(this.getTraceEffect());
+                        .setTraceEffectId(this.getTraceEffect())
+                        .setExtraLevel(this.getExtraLevel());
 
         this.getSkillExtraChargeMap()
                 .forEach(
@@ -1097,6 +1019,7 @@ public class Avatar {
                                         skillId, AvatarSkillInfo.newBuilder().setMaxChargeCount(count).build()));
 
         this.getEquips().forEach((k, item) -> avatarInfo.addEquipGuidList(item.getGuid()));
+        avatarInfo.addAllTpsWeaponList(TpsWeaponSystem.getSceneWeaponInfos(this));
 
         avatarInfo.putPropMap(
                 PlayerProperty.PROP_LEVEL.getId(),
@@ -1119,7 +1042,6 @@ public class Avatar {
     }
 
 
-    // used only in character showcase
     public ShowAvatarInfo toShowAvatarInfoProto() {
         AvatarFetterInfo.Builder avatarFetter =
                 AvatarFetterInfo.newBuilder().setExpLevel(this.getFetterLevel());
@@ -1173,14 +1095,6 @@ public class Avatar {
         return showAvatarInfo.build();
     }
 
-    /**
-     * Converts this avatar into a trial avatar.
-     *
-     * @param level The avatar's level.
-     * @param avatarId The ID of the avatar.
-     * @param grantReason The reason for granting the avatar.
-     * @param questId The ID of the quest that granted the avatar.
-     */
     public void setTrialAvatarInfo(
         int level, int avatarId, GrantReasonOuterClass.GrantReason grantReason, int questId) {
         this.setLevel(level);
@@ -1193,59 +1107,43 @@ public class Avatar {
         this.applyTrialItems();
     }
 
-    /**
-     * Gets the gear template based on the avatar's level.
-     *
-     * @return The avatar's template.
-     */
     private int getTrialTemplate() {
         return this.getLevel() <= 9
                 ? 1
                 : (int)
-                        (Math.floor(this.getLevel() / 10f) * 10); // round trial level to fit template levels
+                        (Math.floor(this.getLevel() / 10f) * 10);
     }
 
-    /**
-     * @return The level to be used for the avatar's skills (talents).
-     */
     public int getTrialSkillLevel() {
-        // Use default data if custom data not available.
         if (GameData.getTrialAvatarCustomData().isEmpty()) {
-            var template = getTrialTemplate(); // round trial level to fit template levels
+            var template = getTrialTemplate();
 
             var templateData = GameData.getTrialAvatarTemplateDataMap().get(template);
             return templateData == null ? 1 : templateData.getTrialAvatarSkillLevel();
         }
 
-        // Use custom data.
         var trialData = GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId());
         if (trialData == null) return 1;
 
-        return trialData.getCoreProudSkillLevel(); // enhanced version of weapon
+        return trialData.getCoreProudSkillLevel();
     }
 
-    /** Applies the correct skill level for the trial avatar. */
     public void applyTrialSkillLevels() {
         this.getSkillLevelMap()
                 .keySet()
                 .forEach(skill -> this.setSkillLevel(skill, this.getTrialSkillLevel()));
     }
 
-    /**
-     * @return The weapon to use with the avatar.
-     */
     public int getTrialWeaponId() {
-        // Use default data if custom data not available.
         if (GameData.getTrialAvatarCustomData().isEmpty()) {
             if (GameData.getTrialAvatarDataMap().get(this.getTrialAvatarId()) == null)
                 return this.getAvatarData().getInitialWeapon();
 
             return GameData.getItemDataMap().get(this.getAvatarData().getInitialWeapon() + 100) == null
                     ? getAvatarData().getInitialWeapon()
-                    : getAvatarData().getInitialWeapon() + 100; // enhanced version of weapon
+                    : getAvatarData().getInitialWeapon() + 100;
         }
 
-        // Use custom data.
         var trialData = GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId());
         if (trialData == null) return 0;
 
@@ -1255,11 +1153,7 @@ public class Avatar {
                 : Integer.parseInt(trialCustomParams.get(1).split(";")[0]);
     }
 
-    /**
-     * @return A list of artifact IDs to use with the avatar.
-     */
     public List<Integer> getTrialReliquary() {
-        // Use default data if custom data not available.
         if (GameData.getTrialAvatarCustomData().isEmpty()) {
             int trialAvatarTemplateLevel = getTrialTemplate();
 
@@ -1268,7 +1162,6 @@ public class Avatar {
             return templateData == null ? List.of() : templateData.getTrialReliquaryList();
         }
 
-        // Use custom data.
         var trialData = GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId());
         if (trialData == null) return List.of();
 
@@ -1279,16 +1172,13 @@ public class Avatar {
                 : Stream.of(trialCustomParams.get(2).split(";")).map(Integer::parseInt).toList();
     }
 
-    /** Applies the correct items for the trial avatar. */
     public void applyTrialItems() {
-        // Use an enhanced version of the weapon if available.
         var weapon = new GameItem(this.getTrialWeaponId());
         weapon.setLevel(this.getLevel());
         weapon.setExp(0);
         weapon.setPromoteLevel(getMinPromoteLevel(this.getLevel()));
         this.getEquips().put(weapon.getEquipSlot(), weapon);
 
-        // Add artifacts for the trial avatar.
         this.getTrialReliquary()
                 .forEach(
                         id -> {
@@ -1302,7 +1192,6 @@ public class Avatar {
                             this.getEquips().put(relic.getEquipSlot(), relic);
                         });
 
-        // Add costume if avatar has a costume.
         if (GAME_OPTIONS.trialCostumes) {
             GameData.getAvatarCostumeDataItemIdMap()
                     .values()
@@ -1314,7 +1203,6 @@ public class Avatar {
         }
     }
 
-    /** Equips the items applied from {@link Avatar#applyTrialItems()}. */
     public void equipTrialItems() {
         var player = this.getPlayer();
 
@@ -1340,11 +1228,6 @@ public class Avatar {
                         });
     }
 
-    /**
-     * Converts this (trial) avatar into a trial info protocol buffer.
-     *
-     * @return The trial info protocol buffer.
-     */
     public TrialAvatarInfo toTrialInfo() {
         var trialAvatar =
                 TrialAvatarInfo.newBuilder()
@@ -1354,9 +1237,7 @@ public class Avatar {
                                         .setGrantReason(this.getGrantReason())
                                         .setFromParentQuestId(this.getFromParentQuestId()));
 
-        // Check if the avatar is a trial avatar.
         if (this.getTrialAvatarId() > 0) {
-            // Add the artifacts and weapons for the avatar.
             trialAvatar.addAllTrialEquipList(
                     this.getEquips().values().stream().map(GameItem::toProto).toList());
         }

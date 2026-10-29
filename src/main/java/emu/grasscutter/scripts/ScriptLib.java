@@ -375,13 +375,6 @@ public class ScriptLib {
         return this.getSceneScriptManager().getScene().getWorld().isMultiplayer();
     }
 
-    /**
-     * Whether the entity with this config id is currently alive in this group.
-     *
-     * <p>Returns a boolean rather than the usual 0-for-success int: the scripts use it directly as a
-     * condition ({@code return not ScriptLib.CheckIsInGroup(...)}), and in Lua every number is
-     * truthy - a 0 would read as "yes it is there" and invert the check.
-     */
     public boolean CheckIsInGroup(int groupId, int configId) {
         logger.debug("[LUA] Call CheckIsInGroup with {},{}", groupId, configId);
         return getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId) != null;
@@ -475,7 +468,6 @@ public class ScriptLib {
         return 0;
     }
 
-    /** Spawns a monster from the group's config at a position the script chooses. */
     public int CreateMonsterByConfigIdByPos(int configId, LuaTable bornPos, LuaTable face) {
         logger.debug("[LUA] Call CreateMonsterByConfigIdByPos with {}, {}, {}", configId, bornPos, face);
 
@@ -1136,8 +1128,6 @@ public class ScriptLib {
         logger.debug("[LUA] Call SetGroupGadgetStateByConfigId with {},{},{}", groupId, configId, gadgetState);
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
         if (!(entity instanceof EntityGadget gadget)) {
-            // Same story as SetWorktopOptionsByGroupId: the caller aborts on this, so say which
-            // gadget was missing rather than failing the whole Lua action quietly.
             logger.warn(
                     "SetGroupGadgetStateByConfigId: no gadget {} in group {} of scene {}",
                     configId, groupId, getSceneScriptManager().getScene().getId());
@@ -1328,8 +1318,6 @@ public class ScriptLib {
         logger.debug("[LUA] Call SetWorktopOptionsByGroupId with {},{},{}", groupId, configId, options);
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
 
-        // Both failures abort the whole Lua action that called this - the abyss puts its second-half
-        // worktop up this way, and a silent 1 here left the half swapped in with nothing to start it.
         if (!(entity instanceof EntityGadget gadget)) {
             logger.warn(
                     "SetWorktopOptionsByGroupId: no gadget {} in group {} of scene {}",
@@ -1438,7 +1426,6 @@ public class ScriptLib {
     public int TowerMirrorTeamSetUp(int team, int var1) {
         logger.debug("[LUA] Call TowerMirrorTeamSetUp with {},{}", team, var1);
         getSceneScriptManager().unloadCurrentMonsterTide();
-        // This is the mid-chamber team swap on two-team floors, driven from the floor's Lua.
         var players = getSceneScriptManager().getScene().getPlayers();
         if (players.isEmpty()) {
             return 0;

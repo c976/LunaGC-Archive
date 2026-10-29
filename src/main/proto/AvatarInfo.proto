@@ -42,7 +42,7 @@ message AvatarInfo {
 	AvatarExcelInfo excel_info = 26;
 	uint32 anim_hash = 27;
 	MirrorAvatarInfo mirror_avatar_info = 28;
-	uint32 dpeciabdbpg = 29;
+	uint32 _extra_level = 29;
 	uint32 eigifnbdicm = 30;
 	uint32 _trace_effect_id = 31;
 	uint32 _weapon_skin_id = 32;
@@ -50,5 +50,5 @@ message AvatarInfo {
 	uint32 _voice_id = 34;
 	repeated uint32 _special_proud_skill_list = 35;
 	repeated uint32 _unlocked_skill_depot_id_list = 36;
-	repeated SceneWeaponInfo KPJFLNKEFBC = 37;
+	repeated SceneWeaponInfo tps_weapon_list = 37;
 }

@@ -32,16 +32,6 @@ public class WorldChallenge {
     private int startedAt;
     private int finishedTime;
 
-    /**
-     * @param scene The scene the challenge is in.
-     * @param group The group the challenge is in.
-     * @param challengeId The challenge's id.
-     * @param challengeIndex The challenge's index.
-     * @param paramList The challenge's parameters.
-     * @param timeLimit The challenge's time limit.
-     * @param goal The challenge's goal.
-     * @param challengeTriggers The challenge's triggers.
-     */
     public WorldChallenge(
             Scene scene,
             SceneGroup group,
@@ -115,7 +105,6 @@ public class WorldChallenge {
                                                     String.valueOf(this.getChallengeId())));
         }
 
-        // TODO: record the time in PARAM2 and used in action
         scriptManager.callEvent(
                 new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
                         .setParam2(finishedTime)
@@ -134,7 +123,6 @@ public class WorldChallenge {
         if (!this.inProgress()) return;
         this.finish(false);
 
-        // TODO: Set 'eventSource' in script arguments.
         var scriptManager = this.getScene().getScriptManager();
         scriptManager.callEvent(
                 new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_FAIL)
@@ -147,7 +135,6 @@ public class WorldChallenge {
         this.success = success;
         this.finishedTime = (int) ((this.scene.getSceneTimeSeconds() - this.startedAt));
 
-        // Despawn all leftover mobs in this challenge's SceneGroup
         getScene().getScriptManager().removeMonstersInGroup(group);
 
         getScene().broadcastPacket(new PacketDungeonChallengeFinishNotify(this));
@@ -168,8 +155,6 @@ public class WorldChallenge {
         var curHp = guardEntity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
         var maxHp = guardEntity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
         if (maxHp <= 0f) {
-            // No usable max hp to scale against - treat the entity as undamaged rather than
-            // reporting 0% and instantly failing the challenge.
             return 100;
         }
         return (int) (curHp * 100 / maxHp);

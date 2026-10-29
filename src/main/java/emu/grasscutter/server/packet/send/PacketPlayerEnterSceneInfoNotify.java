@@ -12,6 +12,7 @@ import emu.grasscutter.game.entity.EntityAvatar;
 import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.TeamManager;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.AbilityAppliedAbilityOuterClass.AbilityAppliedAbility;
 import emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo;
@@ -43,14 +44,14 @@ public class PacketPlayerEnterSceneInfoNotify extends BasePacket {
         return s;
     }
 
-    /** A full pouch of Verdant Dew. Counted in ones, not the 50 that used to go out here. */
-    private static AbilityScalarValueEntry verdantDew() {
+    private static AbilityScalarValueEntry verdantDew(Player player) {
         return AbilityScalarValueEntry.newBuilder()
                 .setKey(AbilityString.newBuilder()
                         .setHash(Utils.abilityHash(TeamManager.VERDANT_DEW))
                         .setStr(TeamManager.VERDANT_DEW)
                         .build())
-                .setFloatValue(TeamManager.VERDANT_DEW_CAP)
+                .setFloatValue(player.getTeamManager().getEntity().getGlobalAbilityValues()
+                        .getOrDefault(TeamManager.VERDANT_DEW, 0f))
                 .build();
     }
 
@@ -100,7 +101,7 @@ public class PacketPlayerEnterSceneInfoNotify extends BasePacket {
                 .addSgvDynamicValueMap(moonPhaseLevel);
 
         if (moonsignLevel > 0) {
-            teamInfo.addDynamicValueMap(verdantDew());
+            teamInfo.addDynamicValueMap(verdantDew(player));
         }
 
         AbilitySyncStateInfo phlogiston = teamInfo.build();
@@ -137,6 +138,8 @@ public class PacketPlayerEnterSceneInfoNotify extends BasePacket {
                             .setWeaponEntityId(avatarEntity.getWeaponEntityId())
                             .setAvatarAbilityInfo(avatarAbilityInfo)
                             .setWeaponAbilityInfo(AbilitySyncStateInfo.newBuilder())
+                            .addAllTpsWeaponList(
+                                    TpsWeaponSystem.getSceneWeaponInfos(avatarEntity.getAvatar()))
                             .build();
 
             proto.addAvatarEnterInfo(avatarInfo);
@@ -149,7 +152,7 @@ public class PacketPlayerEnterSceneInfoNotify extends BasePacket {
         Avatar avatar = avatarEntity.getAvatar();
 
         if (getMoonphaseIds().contains(avatar.getAvatarId())) {
-            info.addDynamicValueMap(verdantDew());
+            info.addDynamicValueMap(verdantDew(avatarEntity.getPlayer()));
         }
 
         for (int proudSkillId : avatar.getProudSkillList()) {

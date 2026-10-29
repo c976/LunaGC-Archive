@@ -32,6 +32,8 @@ import emu.grasscutter.game.quest.QuestManager;
 import emu.grasscutter.game.quest.enums.*;
 import emu.grasscutter.game.shop.ShopLimit;
 import emu.grasscutter.game.talk.TalkManager;
+import emu.grasscutter.game.tps.TpsAvatarSystem;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.game.tower.*;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.packet.BasePacket;
@@ -121,29 +123,23 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private Map<Integer, ActiveCookCompoundData> activeCookCompounds;
     @Getter private Map<Integer, Integer> questGlobalVariables;
     @Getter private Map<Integer, Integer> openStates;
+    private Map<Integer, Integer> tpsAmmunition;
+    private List<Integer> tpsLoadout;
+    private Map<Integer, Integer> tpsMagazines;
+    @Transient private final Map<Integer, Integer> tpsAmmunitionSent = new HashMap<>();
+    @Transient @Getter @Setter private boolean tpsLoadoutPending;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedSceneAreas;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedScenePoints;
     @Getter @Setter private List<Integer> chatEmojiIdList;
 
-    /**
-     * Main quests marked finished for the CLIENT only, with no quest data behind them.
-     *
-     * <p>Region access is quest-gated, and a region released after this server's resource set was
-     * cut has no quest data here - the quest system cannot finish what it does not know about, so
-     * the client keeps the barrier up. These ids are replayed to the client on every login, which is
-     * what makes the unlock survive a relog.
-     */
     @Getter private Set<Integer> forcedFinishedQuests;
 
-    /** Set the first time the opening cutscene plays, so it never plays twice. */
     @Getter @Setter private boolean playedFirstLoginCutscene;
+    @Getter @Setter private int prologueIntroStage;
 
     @Transient private long nextGuid = 0;
     @Transient @Getter @Setter private int peerId;
 
-    // Fall damage is measured across two packets - the landing speed arrives before the landing.
-    // It lives here rather than on the handler because there is one handler instance for the whole
-    // server, so a shared field would let one player's plunge hurt whoever lands next.
     @Transient @Getter @Setter private float cachedLandingSpeed = 0;
     @Transient @Getter @Setter private long cachedLandingTimeMillisecond = 0;
     @Transient @Getter @Setter private boolean monitorLandingEvent = false;
@@ -605,6 +601,9 @@ public class Player implements PlayerHook, FieldFetch {
                 this.getProperty(PlayerProperty.PROP_DIVE_MAX_STAMINA));
         this.setProperty(PlayerProperty.PROP_CUR_PHLOGISTON,
             this.getProperty(PlayerProperty.PROP_PHLOGISTON_MAX_VALUE));
+        this.setProperty(PlayerProperty.PROP_MAX_TPS_STAMINA, TpsAvatarSystem.getStaminaLimit());
+        this.setProperty(PlayerProperty.PROP_CUR_PERSIST_TPS_STAMINA,
+            this.getProperty(PlayerProperty.PROP_MAX_TPS_STAMINA));
     }
 
     private void applyStartingSceneTags() {
@@ -1180,7 +1179,6 @@ public class Player implements PlayerHook, FieldFetch {
             .build();
     }
 
-    /** Loaded the same way the battle pass is, since both are per player and persisted. */
     public void loadDailyTaskManager() {
         if (this.dailyTaskManager != null) return;
         this.dailyTaskManager = DatabaseHelper.loadDailyTaskManager(this);
@@ -1279,8 +1277,6 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getSatiationManager().reduceSatiation();
 
-        // A player who has not been through onLogin has no home yet, and this used to throw on
-        // every tick, taking the quest tick below down with it
         if (this.getHome() != null) {
             this.getHome().updateHourlyResources(this);
         }
@@ -1314,8 +1310,6 @@ public class Player implements PlayerHook, FieldFetch {
         BirthdayMailSystem.checkAndSend(this, currentDate);
 
         if (this.dailyTaskManager != null) {
-            // Asked, not forced: the commissions keep their own record of which day they belong to,
-            // and only draw a new set when the one they are holding is genuinely from an older one.
             this.dailyTaskManager.resetDailyTasksForNewDay();
         }
 
@@ -1331,6 +1325,31 @@ public class Player implements PlayerHook, FieldFetch {
         this.getCodex().setPlayer(this);
         this.getProgressManager().setPlayer(this);
         this.getTeamManager().setPlayer(this);
+    }
+
+    public Map<Integer, Integer> getTpsAmmunition() {
+        if (this.tpsAmmunition == null) {
+            this.tpsAmmunition = new HashMap<>();
+        }
+        return this.tpsAmmunition;
+    }
+
+    public Map<Integer, Integer> getTpsMagazines() {
+        if (this.tpsMagazines == null) {
+            this.tpsMagazines = new HashMap<>();
+        }
+        return this.tpsMagazines;
+    }
+
+    public Map<Integer, Integer> getTpsAmmunitionSent() {
+        return this.tpsAmmunitionSent;
+    }
+
+    public List<Integer> getTpsLoadout() {
+        if (this.tpsLoadout == null) {
+            this.tpsLoadout = new ArrayList<>();
+        }
+        return this.tpsLoadout;
     }
 
     public void save() {
@@ -1375,11 +1394,18 @@ public class Player implements PlayerHook, FieldFetch {
 
     public void onLogin() {
 
-        // Union the defaults in on every login, not just when the player has none. A save made
-        // against an older resource set keeps its old tag set for good otherwise, and a scene tag
-        // is what picks which variant of a map the client loads - an account missing the newer
-        // default tags loads the pre-prologue Mondstadt and replays the opening Paimon talk.
         this.applyStartingSceneTags();
+
+        this.getTeamManager().removeUnownedAvatarsFromTeams();
+        TpsWeaponSystem.clearNonTpsWearers(this);
+        this.setProperty(PlayerProperty.PROP_MAX_TPS_STAMINA, TpsAvatarSystem.getStaminaLimit(), false);
+        this.setProperty(
+                PlayerProperty.PROP_CUR_PERSIST_TPS_STAMINA, TpsAvatarSystem.getStaminaLimit(), false);
+
+        if (TpsAvatarSystem.isTpsScene(GameData.getSceneDataMap().get(this.getSceneId()))) {
+            this.setSceneId(this.prevScene <= 0 ? 3 : this.prevScene);
+            this.position.set(ScriptLoader.getSceneMeta(this.getSceneId()).config.born_pos);
+        }
 
         if (GameHome.HOME_SCENE_IDS.contains(this.getSceneId())) {
             this.setSceneId(this.prevScene <= 0 ? 3 : this.prevScene);
@@ -1407,16 +1433,13 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getProgressManager().onPlayerLogin();
 
+        emu.grasscutter.game.quest.PrologueIntro.onLogin(this);
+
         session.send(new PacketFinishedParentQuestNotify(this));
-        // The client replays the opening cutscene for as long as it believes the prologue is
-        // unplayed, and it decides that for itself - no server cutscene setting reaches it. Saying
-        // every main quest is finished is the only lever there is.
         if (emu.grasscutter.config.Configuration.GAME_OPTIONS.forceFinishMainQuestsOnLogin) {
             emu.grasscutter.game.quest.ForcedQuests.apply(
                     this, emu.grasscutter.game.quest.ForcedQuests.allMainQuests());
         }
-        // Replayed every login: these have no server-side quest data, so nothing else would tell
-        // the client about them and the region would lock itself again.
         if (this.forcedFinishedQuests != null && !this.forcedFinishedQuests.isEmpty()) {
             emu.grasscutter.game.quest.ForcedQuests.notify(this, this.forcedFinishedQuests);
         }
@@ -1475,7 +1498,12 @@ public class Player implements PlayerHook, FieldFetch {
 
             getStaminaManager().stopSustainedStaminaHandler();
 
-            this.getServer().getDungeonSystem().exitDungeon(this);
+            try {
+                this.getServer().getDungeonSystem().exitDungeon(this);
+            } catch (Exception e) {
+                Grasscutter.getLogger()
+                        .warn("Player (UID {}) could not leave the dungeon on logout", this.getUid(), e);
+            }
 
             if (this.getWorld() != null) {
                 this.getWorld().removePlayer(this);
@@ -1552,6 +1580,7 @@ public class Player implements PlayerHook, FieldFetch {
             return switch (prop) {
                 case PROP_CUR_SPRING_VOLUME -> getProperty(PlayerProperty.PROP_MAX_SPRING_VOLUME);
                 case PROP_CUR_PERSIST_STAMINA -> getProperty(PlayerProperty.PROP_MAX_STAMINA);
+                case PROP_CUR_PERSIST_TPS_STAMINA -> getProperty(PlayerProperty.PROP_MAX_TPS_STAMINA);
                 default -> 0;
             };
         } else {

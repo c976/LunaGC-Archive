@@ -56,12 +56,6 @@ public interface JsonAdapters {
         public void write(JsonWriter writer, DynamicFloat f) {}
     }
 
-    /**
-     * abilitySpecials is a map of named float constants, but the dumps also fold the
-     * isLimitedProperties flag into it as a boolean. Gson's default Float adapter throws on
-     * that, and loadAbilityModifiers only catches IOException, so one such entry would abort
-     * the whole ability walk. Take a boolean as one or zero the way DynamicFloat does.
-     */
     class AbilitySpecialsAdapter extends TypeAdapter<Map<String, Float>> {
         @Override
         public Map<String, Float> read(JsonReader reader) throws IOException {
@@ -98,13 +92,6 @@ public interface JsonAdapters {
         }
     }
 
-    /**
-     * A modifier name step is normally just the modifier's name. Newer dumps also use a richer
-     * object form that pairs the name with the value ranges it applies over, and in the 7.0.50
-     * dump that object's name key is still obfuscated as AMNKNPONLIK (it holds the name in all
-     * 47 occurrences). The server has nowhere to put the ranges, so keep the name and drop the
-     * rest rather than throw and abandon the remaining ability configs.
-     */
     class ModifierNameStepsAdapter extends TypeAdapter<List<String>> {
         private static final String OBF_NAME_KEY = "AMNKNPONLIK";
 
@@ -134,7 +121,6 @@ public interface JsonAdapters {
             return steps;
         }
 
-        /** Pull the name out of the object form, preferring the known key. */
         private String readNamedStep(JsonReader reader) throws IOException {
             reader.beginObject();
             String name = null, firstString = null;
@@ -158,6 +144,31 @@ public interface JsonAdapters {
             writer.beginArray();
             for (val s : steps) writer.value(s);
             writer.endArray();
+        }
+    }
+
+    class UnsignedLongAdapter extends TypeAdapter<Long> {
+        @Override
+        public Long read(JsonReader reader) throws IOException {
+            if (reader.peek() == JsonToken.NULL) {
+                reader.nextNull();
+                return null;
+            }
+            val value = reader.nextString();
+            try {
+                return Long.parseLong(value);
+            } catch (NumberFormatException signed) {
+                try {
+                    return Long.parseUnsignedLong(value);
+                } catch (NumberFormatException unsigned) {
+                    throw new IOException("Invalid long - " + value);
+                }
+            }
+        }
+
+        @Override
+        public void write(JsonWriter writer, Long value) throws IOException {
+            writer.value(value);
         }
     }
 
@@ -271,9 +282,6 @@ public interface JsonAdapters {
             val enumConstants = enumClass.getEnumConstants();
             for (val constant : enumConstants) map.put(constant.toString(), constant);
 
-            // A constant that names itself differently in the tables says so with @SerializedName,
-            // the way a field does. Reading only the Java name meant every one of those parsed as
-            // null without a word - GivingData's whole giveType column, for one.
             for (val constant : enumConstants) {
                 try {
                     val declared = enumClass.getField(((Enum<?>) constant).name());

@@ -13,7 +13,7 @@ import lombok.Getter;
 @Getter
 public class EntityRegion extends GameEntity {
     private final Position position;
-    private final Set<Integer> entities; // Ids of entities inside this region
+    private final Set<Integer> entities;
     private final SceneRegion metaRegion;
     private boolean entityEnter;
     private boolean entityLeave;
@@ -66,10 +66,6 @@ public class EntityRegion extends GameEntity {
         return this.entityLeave;
     }
 
-    /**
-     * Nothing fights this entity, but an ability attached to one reads the whole FightProperty set
-     * off its owner, and a null threw right through the action instead of reading zeroes.
-     */
     @Override
     public Int2FloatMap getFightProperties() {
         return this.fightProperties;
@@ -89,7 +85,6 @@ public class EntityRegion extends GameEntity {
 
     @Override
     public SceneEntityInfoOuterClass.SceneEntityInfo toProto() {
-        /** The Region Entity would not be sent to client. */
         return null;
     }
 
@@ -99,7 +94,6 @@ public class EntityRegion extends GameEntity {
 
     @Override
     public void initAbilities() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'initAbilities'");
     }
 }

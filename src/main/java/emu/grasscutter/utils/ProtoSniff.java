@@ -2,21 +2,10 @@ package emu.grasscutter.utils;
 
 import java.nio.charset.StandardCharsets;
 
-/**
- * Describes a protobuf payload without knowing its schema.
- *
- * <p>Every version re-obfuscates message names, field names, field NUMBERS and CmdIds, so after a
- * game update the generated classes read the wrong fields and a packet the server cannot name is
- * also a packet it cannot decode. Walking the wire format needs none of that: field numbers and
- * wire types are in the bytes themselves, and the values give the rest away - a version string, a
- * 344-character base64 RSA blob, a 64-hex token. That is how the 6.7 handshake was mapped, and it
- * is the only mapping method that needs nothing but a client willing to connect.
- */
 public final class ProtoSniff {
 
     private ProtoSniff() {}
 
-    /** One line per payload: {@code #2="10008" #347=varint(2) #1475=<344 b64>}. */
     public static String describe(byte[] data) {
         if (data == null || data.length == 0) return "(empty)";
         var sb = new StringBuilder();
@@ -82,7 +71,6 @@ public final class ProtoSniff {
         return sb.toString();
     }
 
-    /** Length-delimited fields are the informative ones, so say what they look like. */
     private static String renderBytes(byte[] data, int off, int n) {
         var s = new String(data, off, n, StandardCharsets.UTF_8);
         boolean printable = true;

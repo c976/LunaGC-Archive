@@ -4,6 +4,7 @@ import emu.grasscutter.data.*;
 import emu.grasscutter.data.ResourceType.LoadPriority;
 import emu.grasscutter.data.common.PropGrowCurve;
 import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.tps.TpsAvatarSystem;
 import emu.grasscutter.utils.Utils;
 import it.unimi.dsi.fastutil.ints.*;
 import lombok.Getter;
@@ -44,7 +45,6 @@ public class AvatarData extends GameResource {
     @Getter(onMethod_ = @Override)
     private int id;
 
-    // Transient
     @Getter
     private String name;
 
@@ -114,7 +114,6 @@ public class AvatarData extends GameResource {
     public void onLoad() {
         this.skillDepot = GameData.getAvatarSkillDepotDataMap().get(this.skillDepotId);
 
-        // Get fetters from GameData
         this.fetters = GameData.getFetterDataEntries().get(this.id);
 
         if (GameData.getFetterCharacterCardDataMap().get(this.id) != null) {
@@ -149,25 +148,20 @@ public class AvatarData extends GameResource {
             }
         }
 
-        // Left commented out for a long while against a field name that no longer exists, so the map
-        // stayed null and getGrowthCurveById would have thrown at whoever called it first.
         this.growthCurveMap = new Int2ObjectOpenHashMap<>();
         for (PropGrowCurve growCurve : this.propGrowCurves) {
             FightProperty prop = FightProperty.getPropByName(growCurve.getType());
             if (prop != null) this.growthCurveMap.put(prop.getId(), growCurve.getGrowCurve());
         }
 
-        // Cache abilities
         this.buildEmbryo();
     }
 
-    /**
-     * Create ability embryos.
-     */
     public void buildEmbryo() {
         var split = this.iconName.split("_");
         if (split.length > 0) {
-            this.name = split[split.length - 1];
+            var tpsConfigName = TpsAvatarSystem.getConfigName(this.id);
+            this.name = tpsConfigName != null ? tpsConfigName : split[split.length - 1];
 
             var info = GameData.getAbilityEmbryoInfo().get(this.name);
             if (info != null) {
@@ -179,9 +173,6 @@ public class AvatarData extends GameResource {
             }
         }
 
-        // An avatar whose ability config is absent from the resource dump gets no embryo at all.
-        // TeamManager appends to this list without a null check, so hand back an empty one rather
-        // than null and let such an avatar simply have no abilities.
         if (this.abilities == null) {
             this.abilities = new IntArrayList();
         }

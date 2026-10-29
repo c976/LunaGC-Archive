@@ -21,15 +21,13 @@ public final class UnlockAllCommand implements CommandHandler {
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
 
-        Map<Integer, Integer> changed = new HashMap<>();
         for (var state : GameData.getOpenStateList()) {
             if (PlayerProgressManager.BLACKLIST_OPEN_STATES.contains(state.getId())) continue;
             if (targetPlayer.getProgressManager().getOpenState(state.getId()) == 0) {
                 targetPlayer.getOpenStates().put(state.getId(), 1);
-                changed.put(state.getId(), 1);
             }
         }
-        targetPlayer.sendPacket(new PacketOpenStateChangeNotify(changed));
+        targetPlayer.sendPacket(new PacketOpenStateUpdateNotify(targetPlayer));
 
         GameData.getScenePointsPerScene().forEach((sceneId, scenePoints) -> {
             var points = new ArrayList<Integer>();
@@ -51,17 +49,12 @@ public final class UnlockAllCommand implements CommandHandler {
         targetPlayer.sendPacket(new PacketSceneAreaUnlockNotify(
                 curScene, targetPlayer.getUnlockedSceneAreas(curScene)));
 
-        GameData.getAvatarFlycloakDataMap().values().forEach(flycloakData -> {
-            if (!targetPlayer.getFlyCloakList().contains(flycloakData.getId())) {
-                targetPlayer.addFlycloak(flycloakData.getId());
-            }
-        });
-
-        GameData.getAvatarTraceEffectDataMap().values().forEach(traceData -> {
-            if (!targetPlayer.getTraceEffectList().contains(traceData.getId())) {
-                targetPlayer.addTraceEffect(traceData.getId());
-            }
-        });
+        GameData.getAvatarFlycloakDataMap()
+                .keySet()
+                .forEach(targetPlayer.getFlyCloakList()::add);
+        GameData.getAvatarTraceEffectDataMap()
+                .keySet()
+                .forEach(targetPlayer.getTraceEffectList()::add);
 
         var fetterEntries = GameData.getFetterDataEntries();
         for (var avatar : targetPlayer.getAvatars().getAvatars().values()) {
@@ -76,11 +69,9 @@ public final class UnlockAllCommand implements CommandHandler {
                 }
             }
             avatar.save();
-            targetPlayer.sendPacket(new PacketAvatarFetterDataNotify(avatar));
         }
+        targetPlayer.sendPacket(new PacketAvatarDataNotify(targetPlayer));
 
-        // Scene tags. New regions are routinely gated behind these - scene 3 alone ships 635 tags
-        // with only 194 valid by default, so leaving them out left a lot of the map switched off.
         GameData.getSceneTagDataMap()
                 .values()
                 .forEach(
@@ -91,11 +82,14 @@ public final class UnlockAllCommand implements CommandHandler {
                                         .add(tag.getId()));
         targetPlayer.sendPacket(new PacketPlayerWorldSceneInfoListNotify(targetPlayer));
 
-        // Region access is quest-gated, and a region released after this server's resource set was
-        // cut has no quest data here at all - so the quest system cannot finish it and the client
-        // keeps the barrier up. Telling the client directly is the only lever available.
         var quests = emu.grasscutter.game.quest.ForcedQuests.allMainQuests();
         emu.grasscutter.game.quest.ForcedQuests.apply(targetPlayer, quests);
+
+        for (var avatar : targetPlayer.getAvatars().getAvatars().values()) {
+            avatar.recalcStats(true);
+            avatar.save();
+        }
+        targetPlayer.sendPacket(new PacketAvatarDataNotify(targetPlayer));
 
         targetPlayer.save();
 

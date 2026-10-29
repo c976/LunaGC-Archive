@@ -26,6 +26,9 @@ public class ShopInfo {
     @Setter private transient ShopRefreshType shopRefreshType;
     @Getter @Setter private int shopRefreshParam;
 
+    public ShopInfo() {
+    }
+
     public ShopInfo(ShopGoodsData sgd) {
         this.goodsId = sgd.getGoodsId();
         this.goodsItem = new ItemParamData(sgd.getItemId(), sgd.getItemCount());

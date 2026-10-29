@@ -7,12 +7,8 @@ import java.util.stream.Stream;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ResourceType {
 
-    /** Names of the file that this Resource loads from */
     String[] name();
 
-    /**
-     * Load priority - dictates which order to load this resource, with "highest" being loaded first
-     */
     LoadPriority loadPriority() default LoadPriority.NORMAL;
 
     enum LoadPriority {

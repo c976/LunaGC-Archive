@@ -37,8 +37,11 @@ public class AbilityMixinData implements Serializable {
         NyxCostMixin,
         ModifyDamageMixin,
         AvatarChangeSkillMixin,
+        @SerializedName(value = "KHOENFHDFJE", alternate = {"AttachModifierToPhlogistonMixin"})
         KHOENFHDFJE,
+        @SerializedName(value = "HJKDMEOOBDK", alternate = {"GOBNKFIFGFJ"})
         HJKDMEOOBDK,
+        @SerializedName(value = "FIGCOCJJHCH", alternate = {"AKFJKJBCFKI"})
         FIGCOCJJHCH,
         DMKDPHHJENO,
         LAAJCBLNLDO,
@@ -47,6 +50,7 @@ public class AbilityMixinData implements Serializable {
         AttachToMultiNormalizedTimeMixin,
         DLJBCMKDMEK,
         PhlogistonCostMixin,
+        @SerializedName(value = "FIHACJPNNED", alternate = {"SkillCanUseByLTMixin"})
         FIHACJPNNED,
         JMEOJHGPNMB,
         AttachModifierToSelfGlobalValueMixin,
@@ -72,7 +76,9 @@ public class AbilityMixinData implements Serializable {
         MuteHitEffectMixin,
         EntityInVisibleMixin,
         DDCOPGJBHLB,
+        @SerializedName(value = "IBAMBHPLNNA", alternate = {"ShaderLerpMixin"})
         IBAMBHPLNNA,
+        @SerializedName(value = "PCKKGOMJIKL", alternate = {"DisableNyxBarMixin"})
         PCKKGOMJIKL,
         TriggerPostProcessEffectMixin,
         JGOOOFOCJBI,
@@ -83,7 +89,10 @@ public class AbilityMixinData implements Serializable {
         AvatarSteerByCameraMixin,
         ModifyDamageCountMixin,
         AttackCostElementMixin,
-        OnAvatarUseSkillMixin
+        OnAvatarUseSkillMixin,
+        DoActionByElementReactionMixin,
+        DoActionBySelfElementReactionMixin,
+        CurLocalAvatarMixinV2
     }
     public AbilityModifierAction[] idontknowwhattonamethis;
     public AbilityModifierAction[] idontknowwhattonamethis2;
@@ -97,7 +106,7 @@ public class AbilityMixinData implements Serializable {
     @SerializedName("onTriggerSkill")
     public AbilityModifierAction[] onTriggerSkill;
 
-    @SerializedName("onTriggerUltimateSkill")
+    @SerializedName(value = "onTriggerUltimateSkill", alternate = {"HMBEKPDBCEK"})
     public AbilityModifierAction[] onTriggerUltimateSkill;
 
     public AbilityModifierAction[] IOKPLLOKGGJ;
@@ -108,8 +117,19 @@ public class AbilityMixinData implements Serializable {
     @SerializedName("successActions")
     public AbilityModifierAction[] successActions;
 
-    @SerializedName("succActions")
+    @SerializedName(value = "succActions", alternate = {"CMEPEHIJMPL"})
     public AbilityModifierAction[] succActions;
+
+    @SerializedName("actions")
+    public AbilityModifierAction[] actions;
+
+    @SerializedName("actionQueue")
+    public AbilityModifierAction[] actionQueue;
+
+    @SerializedName(value = "reactionTypes", alternate = {"IGAMNNAADJB"})
+    public List<String> reactionTypes = new ArrayList<>();
+    public List<String> entityTypes = new ArrayList<>();
+    public List<String> attackTags = new ArrayList<>();
 
     @SerializedName("$type")
     public Type type;
@@ -126,6 +146,10 @@ public class AbilityMixinData implements Serializable {
     public String stateID;
     public DynamicFloat defaultGlobalValueOnCreate = DynamicFloat.ZERO;
     public List<DynamicFloat> ratioSteps = new ArrayList<>();
+    public List<DynamicFloat> valueSteps = new ArrayList<>();
+    public String globalValueTarget;
+    @SerializedName(value = "removeAppliedModifier", alternate = {"DEFOFMOIAAI"})
+    public boolean removeAppliedModifier = true;
     @JsonAdapter(JsonAdapters.ModifierNameStepsAdapter.class)
     public List<String> modifierNameSteps = new ArrayList<>();
     public boolean EJEMBMFPBKF = true;

@@ -7,6 +7,7 @@ import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock;
@@ -64,6 +65,7 @@ public class EntityAvatar extends GameEntity {
                     scene.getWeaponEntities().put(weapon.getWeaponEntity().getId(), weapon.getWeaponEntity());
                 }
             }
+            TpsWeaponSystem.ensureWeaponEntities(this.getAvatar(), scene);
         } else {
             Grasscutter.getLogger()
                     .error("Unable to create EntityAvatar instance; provided scene is null.");
@@ -183,8 +185,6 @@ public class EntityAvatar extends GameEntity {
         return this.heal(amount, false);
     }
         public FightProperty GetEnergyProp(Avatar avatar) {
-        // A depot without an energy skill leaves energySkillData null - the element-less Traveler
-        // has one - and this used to dereference it straight away.
         val energySkill = avatar.getSkillDepot().getEnergySkillData();
         if (energySkill != null && energySkill.getSpecialEnergyMin() > 0) {
             return FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY;
@@ -280,6 +280,7 @@ public class EntityAvatar extends GameEntity {
             }
             avatarInfo.addEquipIdList(item.getItemId());
         }
+        avatarInfo.addAllTpsWeaponList(TpsWeaponSystem.getSceneWeaponInfos(avatar));
 
         return avatarInfo.build();
     }

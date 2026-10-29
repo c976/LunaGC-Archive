@@ -22,20 +22,13 @@ public class GadgetChest extends GadgetContent {
         super(gadget);
     }
 
-    /**
-     * @return Whether we should remove the gadget.
-     */
     public boolean onInteract(Player player, GadgetInteractReq req) {
-        // If bigWorldScript enabled,use new drop system.
         if (Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
             SceneGadget chest = getGadget().getMetaGadget();
             if (chest != null) {
                 DropSystem dropSystem = player.getServer().getDropSystem();
                 if (chest.boss_chest != null && chest.drop_tag != null) {
-                    // Boss chest drop
-                    // TODO:check for blossom chests
                     if (req.getOpType() == InterOpType.InterOpType_INTER_OP_START) {
-                        // Two steps
                         player.sendPacket(
                                 new PacketGadgetInteractRsp(
                                         getGadget(),
@@ -43,12 +36,8 @@ public class GadgetChest extends GadgetContent {
                                         InterOpType.InterOpType_INTER_OP_START));
                         return false;
                     }
-                    // TODO:check for take_num.(some boss rewards can only be claimed once a week.). Handle boss
-                    // respawn.
-                    // TODO:should return Retcode.RET_RESIN_NOT_ENOUGH ?
                     if (player.getResinManager().useResin(chest.boss_chest.resin)
                             && dropSystem.handleBossChestDrop(chest.drop_tag, player)) {
-                        // Is it correct?
                         player
                                 .getBattlePassManager()
                                 .triggerMission(
@@ -63,10 +52,7 @@ public class GadgetChest extends GadgetContent {
                                         InterOpType.InterOpType_INTER_OP_FINISH));
                         return true;
                     }
-                    // if failed,fallback to legacy drop system.
                 } else {
-                    // Normal chest drop
-                    // only the owner of the world can open chests.
                     if (player != player.getWorld().getHost()) return false;
                     boolean status = false;
                     if (chest.drop_tag != null) {
@@ -87,7 +73,6 @@ public class GadgetChest extends GadgetContent {
                                         getGadget().getGroupId(), player.getSceneId(), chest.config_id));
                         return true;
                     }
-                    // if failed,fallback to legacy drop system.
                 }
                 Grasscutter.getLogger()
                         .warn(
@@ -97,7 +82,6 @@ public class GadgetChest extends GadgetContent {
             }
         }
 
-        // Legacy chest drop system
         var chestInteractHandlerMap =
                 getGadget()
                         .getScene()

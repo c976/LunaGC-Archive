@@ -9,21 +9,13 @@ import java.util.*;
 
 public interface CommandHandler {
 
-    /**
-     * Send a message to the target.
-     *
-     * @param player The player to send the message to, or null for the server console.
-     * @param message The message to send.
-     */
     static void sendMessage(Player player, String message) {
-        // Call command feedback event.
         ReceiveCommandFeedbackEvent event = new ReceiveCommandFeedbackEvent(player, message);
         event.call();
-        if (event.isCanceled()) { // If event is not cancelled, continue.
+        if (event.isCanceled()) {
             return;
         }
 
-        // Send message to target.
         if (player == null) {
             Grasscutter.getLogger().info(event.getMessage());
         } else {
@@ -48,10 +40,10 @@ public interface CommandHandler {
         String target =
                 switch (annotation.targetRequirement()) {
                     case NONE -> "";
-                    case OFFLINE -> "@<UID> "; // TODO: make translation keys for offline and online players
+                    case OFFLINE -> "@<UID> ";
                     case ONLINE -> (player == null)
                             ? "@<UID> "
-                            : "[@<UID>] "; // TODO: make translation keys for offline and online players
+                            : "[@<UID>] ";
                     case PLAYER -> (player == null) ? "@<UID> " : "[@<UID>] ";
                 };
         String[] usages = annotation.usage();
@@ -77,11 +69,5 @@ public interface CommandHandler {
         return translate(player, getDescriptionKey());
     }
 
-    /**
-     * Called when a player/console invokes a command.
-     *
-     * @param sender The player/console that invoked the command.
-     * @param args The arguments to the command.
-     */
     default void execute(Player sender, Player targetPlayer, List<String> args) {}
 }

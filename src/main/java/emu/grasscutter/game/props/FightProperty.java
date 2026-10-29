@@ -141,11 +141,8 @@ public enum FightProperty {
             };
     private static final Int2ObjectMap<FightProperty> map = new Int2ObjectOpenHashMap<>();
     private static final Map<String, FightProperty> stringMap = new HashMap<>();
-    // This was originally for relic properties so some names might not be applicable for e.g.
-    // setstats
     private static final Map<String, FightProperty> shortNameMap =
             Map.ofEntries(
-                    // Normal relic stats
                     entry("hp", FIGHT_PROP_HP),
                     entry("atk", FIGHT_PROP_ATTACK),
                     entry("def", FIGHT_PROP_DEFENSE),
@@ -168,18 +165,17 @@ public enum FightProperty {
                     entry("cryo%", FIGHT_PROP_ICE_ADD_HURT),
                     entry("electro%", FIGHT_PROP_ELEC_ADD_HURT),
                     entry("pyro%", FIGHT_PROP_FIRE_ADD_HURT),
-                    // Other stats
                     entry("maxhp", FIGHT_PROP_MAX_HP),
                     entry("debt", FIGHT_PROP_CUR_HP_DEBTS),
                     entry("paiddebt", FIGHT_PROP_CUR_HP_PAID_DEBTS),
                     entry("specialenergy", FIGHT_PROP_CUR_SPECIAL_ENERGY),
                     entry("startspecial", FIGHT_PROP_START_SPECIAL_ENERGY),
-                    entry("dmg", FIGHT_PROP_ADD_HURT), // This seems to get reset after attacks
+                    entry("dmg", FIGHT_PROP_ADD_HURT),
                     entry("cdr", FIGHT_PROP_SKILL_CD_MINUS_RATIO),
                     entry("heali", FIGHT_PROP_HEALED_ADD),
                     entry("shield", FIGHT_PROP_SHIELD_COST_MINUS_RATIO),
                     entry("defi", FIGHT_PROP_DEFENCE_IGNORE_RATIO),
-                    entry("resall", FIGHT_PROP_SUB_HURT), // This seems to get reset after attacks
+                    entry("resall", FIGHT_PROP_SUB_HURT),
                     entry("resanemo", FIGHT_PROP_WIND_SUB_HURT),
                     entry("rescryo", FIGHT_PROP_ICE_SUB_HURT),
                     entry("resdendro", FIGHT_PROP_GRASS_SUB_HURT),
@@ -257,7 +253,6 @@ public enum FightProperty {
         return stringMap.getOrDefault(name, FIGHT_PROP_NONE);
     }
 
-    /** Spellings people reach for that are not short at all, and one letter off the short ones. */
     private static final Map<String, FightProperty> spellings =
             Map.ofEntries(
                     entry("critrate", FIGHT_PROP_CRITICAL),
@@ -277,13 +272,6 @@ public enum FightProperty {
                     entry("health", FIGHT_PROP_HP),
                     entry("physical", FIGHT_PROP_PHYSICAL_ADD_HURT));
 
-    /**
-     * Reads a stat the way it was typed rather than the way it is spelled here.
-     *
-     * <p>Case, spaces and underscores are ignored, "percent" and a trailing "p" both mean "%", and a
-     * bare element means that element's damage bonus - so CR, atkp, ATK_PERCENT and pyro all land
-     * where they were meant to. Only ever finds MORE than the exact table did.
-     */
     public static FightProperty getPropByShortName(String name) {
         if (name == null) return FIGHT_PROP_NONE;
 

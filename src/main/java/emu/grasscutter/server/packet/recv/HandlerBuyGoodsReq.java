@@ -1,7 +1,7 @@
 package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.data.common.ItemParamData;
-import emu.grasscutter.game.inventory.GameItem;
+import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.props.ActionReason;
 import emu.grasscutter.game.shop.*;
 import emu.grasscutter.net.packet.*;
@@ -27,13 +27,8 @@ public class HandlerBuyGoodsReq extends PacketHandler {
             return;
         }
 
-        // Don't trust your users' input
         var player = session.getPlayer();
 
-        // A non-positive count buys nothing and cannot be honest. Worse, it inverts the whole
-        // purchase: payItems checks `held < cost * count`, which is never true for a negative
-        // count, and payVirtualItem then subtracts that negative - handing out mora and
-        // primogems instead of taking them.
         int buyCount = buyGoodsReq.getBuyCount();
         if (buyCount <= 0) {
             session.send(new PacketBuyGoodsRsp(Retcode.RET_SVR_ERROR));
@@ -67,8 +62,18 @@ public class HandlerBuyGoodsReq extends PacketHandler {
                 continue;
             }
 
+            var artifactShop = session.getServer().getShopSystem().getArtifactShop();
+            var piece = artifactShop.getPiece(sg.getGoodsId());
+            if (piece != null) {
+                var relics = player.getInventory().getInventoryTab(ItemType.ITEM_RELIQUARY);
+                if (buyCount > relics.getMaxCapacity() - relics.getSize()) {
+                    session.send(new PacketBuyGoodsRsp(Retcode.RET_PACK_EXCEED_MAX_WEIGHT));
+                    continue;
+                }
+            }
+
             List<ItemParamData> costs =
-                    new ArrayList<ItemParamData>(sg.getCostItemList()); // Can this even be null?
+                    new ArrayList<ItemParamData>(sg.getCostItemList());
             costs.add(new ItemParamData(202, sg.getScoin()));
             costs.add(new ItemParamData(201, sg.getHcoin()));
             costs.add(new ItemParamData(203, sg.getMcoin()));
@@ -82,15 +87,21 @@ public class HandlerBuyGoodsReq extends PacketHandler {
             int itemId = sg.getGoodsItem().getId();
             int itemCount;
             try {
-                // A free good passes payItems whatever the count, so this product is the only
-                // thing standing between a crafted request and an overflowed stack.
                 itemCount = Math.multiplyExact(buyCount, sg.getGoodsItem().getCount());
             } catch (ArithmeticException overflow) {
                 session.send(new PacketBuyGoodsRsp(Retcode.RET_SVR_ERROR));
                 continue;
             }
-            GameItem item = new GameItem(itemId, itemCount);
-            player.getInventory().addItem(item, ActionReason.Shop, true);
+            if (piece != null) {
+                var rolled = new ArrayList<GameItem>(buyCount);
+                for (int i = 0; i < buyCount; i++) {
+                    rolled.add(artifactShop.roll(piece));
+                }
+                player.getInventory().addItems(rolled, ActionReason.Shop);
+            } else {
+                GameItem item = new GameItem(itemId, itemCount);
+                player.getInventory().addItem(item, ActionReason.Shop, true);
+            }
             session.send(
                     new PacketBuyGoodsRsp(
                             buyGoodsReq.getShopType(),

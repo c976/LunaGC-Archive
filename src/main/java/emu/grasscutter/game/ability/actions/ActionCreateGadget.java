@@ -12,10 +12,26 @@ import emu.grasscutter.net.proto.AbilityActionCreateGadgetOuterClass.AbilityActi
 @AbilityAction(AbilityModifierAction.Type.CreateGadget)
 public class ActionCreateGadget extends AbilityActionHandler {
 
+    private static boolean clientOwnsChain(GameEntity entity) {
+        if (entity instanceof EntityClientGadget || entity instanceof EntityAvatar) return true;
+
+        while (entity instanceof EntityGadget summon && summon.getOwner() != null) {
+            entity = summon.getOwner();
+            if (entity instanceof EntityAvatar || entity instanceof EntityClientGadget) return true;
+        }
+        return false;
+    }
+
     @Override
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
         var entity = ability.getOwner();
+        if (entity instanceof EntityClientGadget) return true;
+
+        if (clientOwnsChain(entity)) {
+            return true;
+        }
+
         AbilityActionCreateGadget createGadget;
         try {
             createGadget = AbilityActionCreateGadget.parseFrom(abilityData);
@@ -23,10 +39,6 @@ public class ActionCreateGadget extends AbilityActionHandler {
             return false;
         }
 
-        // The payload only carries a position when the action came from a real create-gadget
-        // invocation. Reached from a modifier being added it carries something else entirely, and
-        // taking its absent pos would strand the summon at the world origin - so fall back to
-        // whoever is summoning it.
         var pos =
                 createGadget.hasPos() ? new Position(createGadget.getPos()) : entity.getPosition().clone();
         var rot =
@@ -43,8 +55,6 @@ public class ActionCreateGadget extends AbilityActionHandler {
         var owner = action.ownerIsTarget ? target : entity;
         entityCreated.setOwner(owner);
 
-        // Nothing on this side runs the summon's own KillSelf, so without this every charged attack
-        // would leave another copy standing in the scene. One summon of a given kind per owner.
         entity.getScene().getEntities().values().stream()
                 .filter(e -> e instanceof EntityGadget g
                         && g.getGadgetId() == action.gadgetID

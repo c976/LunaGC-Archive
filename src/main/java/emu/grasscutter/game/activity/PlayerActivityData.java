@@ -24,7 +24,6 @@ public class PlayerActivityData {
     int uid;
     int activityId;
     Map<Integer, WatcherInfo> watcherInfoMap;
-    /** the detail data of each type of activity (Json format) */
     String detail;
 
     @Transient Player player;
@@ -101,9 +100,6 @@ public class PlayerActivityData {
         int curProgress;
         boolean isTakenReward;
 
-        /**
-         * @return True when the progress of this watcher has reached the total progress.
-         */
         public boolean isFinished() {
             return this.curProgress >= this.totalProgress;
         }

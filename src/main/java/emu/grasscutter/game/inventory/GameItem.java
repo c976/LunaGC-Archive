@@ -9,6 +9,7 @@ import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.EntityWeapon;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo;
 import emu.grasscutter.net.proto.EquipOuterClass.Equip;
 import emu.grasscutter.net.proto.FurnitureOuterClass.Furniture;
@@ -33,10 +34,9 @@ public class GameItem {
     @Getter @Setter private int itemId;
     @Getter @Setter private int count;
 
-    @Transient @Getter private long guid; // Player unique id
+    @Transient @Getter private long guid;
     @Transient @Getter @Setter private ItemData itemData;
 
-    // Equips
     @Getter @Setter private int level;
     @Getter @Setter private int exp;
     @Getter @Setter private int totalExp;
@@ -44,20 +44,18 @@ public class GameItem {
     @Getter @Setter private boolean favourite;
     @Getter @Setter private boolean locked;
 
-    // Weapon
     @Getter private List<Integer> affixes;
     @Getter @Setter private int refinement = 0;
 
-    // Relic
     @Getter @Setter private int mainPropId;
     @Getter private List<Integer> appendPropIdList;
 
     @Getter @Setter private int equipCharacter;
+    @Setter private List<Integer> tpsAccessoryIds;
     @Transient @Getter @Setter private EntityWeapon weaponEntity;
     @Transient @Getter private boolean newItem = false;
 
     public GameItem() {
-        // Morphia only
     }
 
     public GameItem(int itemId) {
@@ -86,7 +84,7 @@ public class GameItem {
                 break;
             case ITEM_WEAPON:
                 this.count = 1;
-                this.level = Math.max(this.count, 1); // ??????????????????
+                this.level = Math.max(this.count, 1);
                 this.affixes = new ArrayList<>(2);
                 if (data.getSkillAffix() != null) {
                     for (int skillAffix : data.getSkillAffix()) {
@@ -96,17 +94,20 @@ public class GameItem {
                     }
                 }
                 break;
+            case ITEM_TPS_WEAPON:
+                this.count = 1;
+                this.level = 1;
+                this.tpsAccessoryIds = new ArrayList<>();
+                break;
             case ITEM_RELIQUARY:
                 this.count = 1;
                 this.level = 1;
                 this.appendPropIdList = new ArrayList<>();
-                // Create main property
                 ReliquaryMainPropData mainPropData =
                         GameDepot.getRandomRelicMainProp(data.getMainPropDepotId());
                 if (mainPropData != null) {
                     this.mainPropId = mainPropData.getId();
                 }
-                // Create extra stats
                 this.addAppendProps(data.getAppendPropNum());
                 break;
             default:
@@ -124,10 +125,16 @@ public class GameItem {
     }
 
     public void checkIsNew(Inventory inventory) {
-        // display notification when player obtain new item
         if (inventory.getItemById(this.itemId) == null) {
             this.newItem = true;
         }
+    }
+
+    public List<Integer> getTpsAccessoryIds() {
+        if (this.tpsAccessoryIds == null) {
+            this.tpsAccessoryIds = new ArrayList<>();
+        }
+        return this.tpsAccessoryIds;
     }
 
     public ObjectId getObjectId() {
@@ -188,8 +195,6 @@ public class GameItem {
 
     private Set<FightProperty> getAppendFightProperties() {
         Set<FightProperty> props = new HashSet<>();
-        // Previously this would check no more than the first four affixes, however custom artifacts may
-        // not respect this order.
         for (int appendPropId : this.appendPropIdList) {
             ReliquaryAffixData affixData = GameData.getReliquaryAffixDataMap().get(appendPropId);
             if (affixData != null) {
@@ -207,7 +212,6 @@ public class GameItem {
             return;
         }
 
-        // Build blacklist - Dont add same stat as main/sub stat
         Set<FightProperty> blacklist = this.getAppendFightProperties();
         ReliquaryMainPropData mainPropData =
                 GameData.getReliquaryMainPropDataMap().get(this.mainPropId);
@@ -215,11 +219,10 @@ public class GameItem {
             blacklist.add(mainPropData.getFightProp());
         }
 
-        // Build random list
         WeightedList<ReliquaryAffixData> randomList = new WeightedList<>();
         for (ReliquaryAffixData affix : affixList) {
             if (!blacklist.contains(affix.getFightProp())) {
-                randomList.add(affix.getWeight(), affix);
+                randomList.add(GameDepot.getRelicAffixWeight(affix), affix);
             }
         }
 
@@ -227,7 +230,6 @@ public class GameItem {
             return;
         }
 
-        // Add random stat
         ReliquaryAffixData affixData = randomList.next();
         this.appendPropIdList.add(affixData.getId());
     }
@@ -240,10 +242,8 @@ public class GameItem {
             return;
         }
 
-        // Build whitelist
         Set<FightProperty> whitelist = this.getAppendFightProperties();
 
-        // Build random list
         WeightedList<ReliquaryAffixData> randomList = new WeightedList<>();
         for (ReliquaryAffixData affix : affixList) {
             if (whitelist.contains(affix.getFightProp())) {
@@ -251,7 +251,10 @@ public class GameItem {
             }
         }
 
-        // Add random stat
+        if (randomList.size() == 0) {
+            return;
+        }
+
         ReliquaryAffixData affixData = randomList.next();
         this.appendPropIdList.add(affixData.getId());
     }
@@ -340,6 +343,9 @@ public class GameItem {
             case ITEM_RELIQUARY:
                 Reliquary relic = this.toReliquaryProto();
                 proto.setEquip(Equip.newBuilder().setReliquary(relic).setIsLocked(this.isLocked()).build());
+                break;
+            case ITEM_TPS_WEAPON:
+                proto.setTpsWeapon(TpsWeaponSystem.toTpsWeaponProto(this));
                 break;
             case ITEM_FURNITURE:
                 Furniture furniture = Furniture.newBuilder().setCount(getCount()).build();

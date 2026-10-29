@@ -12,45 +12,27 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-/**
- * Looks an avatar, item, monster or gadget up by the name it goes by.
- *
- * <p>Built once, on first use, so a server nobody types a name at never pays for it.
- */
 public final class NameIndex {
-    /** What /give accepts: the things a player can be handed. */
     private static final Index THINGS = new Index();
 
-    /** What /spawn accepts: the things that can stand in a scene. */
     private static final Index ENTITIES = new Index();
 
-    /** Artifact set names, which name a whole family rather than one piece. */
     private static final Index SETS = new Index();
 
     private static boolean built;
 
     private NameIndex() {}
 
-    /**
-     * Resolves a name typed where an id was expected, taking as many following words as keep
-     * matching - "crystalline sword" is two arguments but one name.
-     *
-     * @param first the word that failed to parse as a number
-     * @param rest the arguments after it; the ones consumed are removed
-     * @return the id, or 0 if nothing goes by that name
-     */
     public static int resolve(String first, List<String> rest) {
         build();
         return THINGS.resolve(first, rest);
     }
 
-    /** As {@link #resolve}, over the things that can be spawned rather than given. */
     public static int resolveEntity(String first, List<String> rest) {
         build();
         return ENTITIES.resolve(first, rest);
     }
 
-    /** What a slot is called, in all the ways it gets called. */
     private static final Map<String, EquipType> SLOTS =
             Map.ofEntries(
                     Map.entry("flower", EquipType.EQUIP_BRACER),
@@ -68,16 +50,6 @@ public final class NameIndex {
                     Map.entry("crown", EquipType.EQUIP_DRESS),
                     Map.entry("hat", EquipType.EQUIP_DRESS));
 
-    /**
-     * Resolves an artifact named by its set and slot - "gladiator's finale circlet" - to the piece
-     * itself.
-     *
-     * <p>Piece names work on their own, but nobody remembers that the Gladiator circlet is called
-     * Gladiator's Triumphal Sign; the set is what is on the wiki and in the head. Nothing is consumed
-     * unless a slot really follows a set, so a name that merely starts like one is left alone.
-     *
-     * @return the piece's id, or 0 if this is not a set followed by a slot
-     */
     public static int resolveRelic(String first, List<String> rest) {
         build();
 
@@ -94,7 +66,6 @@ public final class NameIndex {
         return piece;
     }
 
-    /** Every slot, in the order the game lists them. */
     private static final List<EquipType> WHOLE_SET =
             List.of(
                     EquipType.EQUIP_BRACER,
@@ -103,14 +74,8 @@ public final class NameIndex {
                     EquipType.EQUIP_RING,
                     EquipType.EQUIP_DRESS);
 
-    /** Words that mean "one of each" where a slot would go. */
     private static final Set<String> EVERY_SLOT = Set.of("all", "set", "full", "everything");
 
-    /**
-     * Resolves "gladiator's finale all" into one piece per slot.
-     *
-     * @return the five piece ids, or an empty list if this is not a set followed by all
-     */
     public static List<Integer> resolveRelicSet(String first, List<String> rest) {
         build();
 
@@ -130,12 +95,12 @@ public final class NameIndex {
         return pieces;
     }
 
-    /**
-     * How to write an id in a message people read: "Gladiator's Nostalgia (23414)".
-     *
-     * <p>Falls back to the bare id for anything unnamed, so a message never loses information by
-     * asking for this.
-     */
+    public static void warmUpInBackground() {
+        var thread = new Thread(NameIndex::build, "name-index");
+        thread.setDaemon(true);
+        thread.start();
+    }
+
     public static String describe(int id) {
         build();
 
@@ -143,12 +108,6 @@ public final class NameIndex {
         return name == null || name.isBlank() ? String.valueOf(id) : name + " (" + id + ")";
     }
 
-    /**
-     * Everything whose name contains the given text, as "Name (id)".
-     *
-     * <p>For finding an id without leaving the game - the handbook this server would otherwise send
-     * you to is not built into the jar.
-     */
     public static List<String> search(String query, int limit) {
         build();
 
@@ -164,10 +123,6 @@ public final class NameIndex {
             }
         }
 
-        // Names the game would print come first - the rest are internal names, which are only worth
-        // reading once nothing real matches. Then whole-name matches over fragments buried in
-        // something longer, since alphabetical order alone puts "Anemo Slime-Swallowed Bamboo Shoots"
-        // above "Pyro Slime".
         matches.sort(
                 java.util.Comparator.comparingInt((Map.Entry<String, Integer> e) -> internal(e.getValue()))
                         .thenComparingInt(e -> rank(e.getKey(), needle))
@@ -177,7 +132,6 @@ public final class NameIndex {
         return matches.stream().limit(limit).map(e -> describe(e.getValue())).toList();
     }
 
-    /** Internal names carry underscores; nothing the game prints does. */
     private static int internal(int id) {
         var name = nameOf(id);
         return name != null && name.indexOf('_') >= 0 ? 1 : 0;
@@ -207,14 +161,6 @@ public final class NameIndex {
         return gadget == null ? null : gadget.getJsonName();
     }
 
-    /**
-     * The piece of a set that fills one slot: the highest rarity it was made in, and among those the
-     * lowest id.
-     *
-     * <p>A slot has far more rows than pieces - Blizzard Strayer's plume alone has nineteen, five of
-     * them five star, the rest pre-rolled variants sitting in a much higher id range. The lowest is
-     * the one the game itself drops.
-     */
     private static int bestPiece(int setId, EquipType slot) {
         var best = 0;
         var bestRank = -1;
@@ -235,8 +181,6 @@ public final class NameIndex {
         if (built) return;
         built = true;
 
-        // A name is shared more often than not - a character, their namecard and their story item
-        // all answer to it - so the most likely thing to be asked for outranks the rest.
         GameData.getAvatarDataMap()
                 .forEach((id, avatar) -> THINGS.claim(text(avatar.getNameTextMapHash()), id, 3));
 
@@ -255,17 +199,12 @@ public final class NameIndex {
                             var describe = GameData.getMonsterDescribeDataMap().get(monster.getDescribeId());
                             if (describe != null) ENTITIES.claim(text(describe.getNameTextMapHash()), id, 3);
 
-                            // Monsters carry a readable internal name where the excel table's own
-                            // name hash resolves to nothing at all, which is every one of them here.
                             ENTITIES.claim(monster.getMonsterName(), id, 2);
                         });
 
         GameData.getGadgetDataMap()
                 .forEach((id, gadget) -> ENTITIES.claim(gadget.getJsonName(), id, 2));
 
-        // A set is named by the bonus it grants rather than by any row of its own, and it points at
-        // the affix GROUP - while the affix map is keyed by the individual affixId, one per piece
-        // count. Index the group here so the set can find its way to a name.
         var affixNames = new HashMap<Integer, String>();
         GameData.getEquipAffixDataMap()
                 .forEach(
@@ -281,20 +220,15 @@ public final class NameIndex {
         return strings == null ? null : strings.get(0);
     }
 
-    /** One searchable set of names. */
     private static final class Index {
-        /** Sorted, so a partial phrase can be tested as a prefix of something longer. */
         private final TreeMap<String, Integer> byName = new TreeMap<>();
 
-        /** What kind of thing claimed each name, so a better claim can take it over. */
         private final Map<String, Integer> rank = new HashMap<>();
 
         void claim(String name, int id, int claimant) {
             var key = normalise(name);
             if (key.isEmpty()) return;
 
-            // Same name, same standing: keep the lower id, which is the plain form of a thing that
-            // ships in level or difficulty variants.
             var held = this.rank.getOrDefault(key, 0);
             if (claimant < held || (claimant == held && this.byName.get(key) <= id)) return;
 
@@ -302,7 +236,6 @@ public final class NameIndex {
             this.byName.put(key, id);
         }
 
-        /** Where a phrase matched and how many following words it took, or null for no match. */
         Match match(String first, List<String> rest) {
             var phrase = new StringBuilder(normalise(first));
             var found = this.byName.get(phrase.toString());
@@ -332,7 +265,6 @@ public final class NameIndex {
                     best = candidate;
                     consumed = i + 1;
                 } else if (!isPrefix(phrase.toString())) {
-                    // Nothing is called this or starts with it, so the rest is not part of the name.
                     break;
                 }
             }
@@ -347,10 +279,8 @@ public final class NameIndex {
         }
     }
 
-    /** A name that matched, and how many words after the first it needed. */
     private record Match(int id, int consumed) {}
 
-    /** Names are matched on their letters alone, so case, spacing and punctuation do not count. */
     private static String normalise(String text) {
         if (text == null) return "";
 

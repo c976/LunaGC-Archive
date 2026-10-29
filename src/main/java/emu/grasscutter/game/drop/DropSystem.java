@@ -20,7 +20,6 @@ public final class DropSystem extends BaseGameSystem {
     private final Map<String, List<BaseDropData>> monsterDrop;
     private final Random rand;
 
-    // TODO: don't know how to determine boss level.Have to hard-code the data from wiki.
     private final int[] bossLevel = {36, 37, 41, 50, 62, 72, 83, 91, 93, 103};
 
     public DropSystem(GameServer server) {
@@ -141,8 +140,6 @@ public final class DropSystem extends BaseGameSystem {
     }
 
     private void processDrop(DropTableData dropData, int count, List<GameItem> items) {
-        // TODO:Not clear on the meaning of some fields,like "dropLevel".Will ignore them.
-        // TODO:solve drop limits,like everydayLimit.
         if (count > 1) {
             for (int i = 0; i < count; i++) processDrop(dropData, 1, items);
             return;
@@ -162,21 +159,12 @@ public final class DropSystem extends BaseGameSystem {
                 if (id == 0) continue;
                 sum += i.getWeight();
                 if (weight < sum) {
-                    // win the item
                     int amount = calculateDropAmount(i) * count;
                     if (amount <= 0) break;
                     if (dropTable.containsKey(id)) {
                         processDrop(dropTable.get(id), amount, items);
                     } else {
-                        boolean flag = true;
-                        for (var j : items) {
-                            if (j.getItemId() == id) {
-                                j.setCount(j.getCount() + amount);
-                                flag = false;
-                                break;
-                            }
-                        }
-                        if (flag) items.add(new GameItem(id, amount));
+                        addDropped(items, id, amount);
                     }
                     break;
                 }
@@ -191,19 +179,28 @@ public final class DropSystem extends BaseGameSystem {
                     if (dropTable.containsKey(id)) {
                         processDrop(dropTable.get(id), amount, items);
                     } else {
-                        boolean flag = true;
-                        for (var j : items) {
-                            if (j.getItemId() == id) {
-                                j.setCount(j.getCount() + amount);
-                                flag = false;
-                                break;
-                            }
-                        }
-                        if (flag) items.add(new GameItem(id, amount));
+                        addDropped(items, id, amount);
                     }
                 }
             }
         }
+    }
+
+    private static void addDropped(List<GameItem> items, int id, int amount) {
+        var data = GameData.getItemDataMap().get(id);
+        if (data != null
+                && (data.getItemType() == ItemType.ITEM_RELIQUARY
+                        || data.getItemType() == ItemType.ITEM_WEAPON)) {
+            for (int n = 0; n < amount; n++) items.add(new GameItem(id, 1));
+            return;
+        }
+        for (var item : items) {
+            if (item.getItemId() == id) {
+                item.setCount(item.getCount() + amount);
+                return;
+            }
+        }
+        items.add(new GameItem(id, amount));
     }
 
     private int calculateDropAmount(DropItemData i) {
@@ -221,9 +218,6 @@ public final class DropSystem extends BaseGameSystem {
         return amount;
     }
 
-    /**
-     * @param share Whether other players in the scene could see the drop items.
-     */
     private void dropItem(
             GameItem item, ActionReason reason, Player player, GameEntity bornFrom, boolean share) {
         DropMaterialData drop = GameData.getDropMaterialDataMap().get(item.getItemId());
@@ -232,7 +226,6 @@ public final class DropSystem extends BaseGameSystem {
                         && item.getItemData().getGadgetId() == 0)) {
             giveItem(item, reason, player, share);
         } else {
-            // TODO:solve share problem
             player.getScene().addDropEntity(item, bornFrom, player, share);
         }
     }
@@ -261,7 +254,6 @@ public final class DropSystem extends BaseGameSystem {
     }
 
     private void giveItems(List<GameItem> items, ActionReason reason, Player player, boolean share) {
-        // don't know whether we need PacketDropHintNotify.
         if (share) {
             for (var p : player.getScene().getPlayers()) {
                 p.getInventory().addItems(items, reason);

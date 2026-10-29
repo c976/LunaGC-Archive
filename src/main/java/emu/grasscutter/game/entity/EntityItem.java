@@ -46,11 +46,6 @@ public class EntityItem extends EntityBaseGadget {
         this(scene, player, itemData, pos, null, count, share);
     }
 
-    // In official game, some drop items are shared to all players, and some other items are
-    // independent to all players
-    // For example, if you killed a monster in MP mode, all players could get drops but rarity and
-    // number of them are different
-    // but if you broke regional mine, when someone picked up the drop then it disappeared
     public EntityItem(
             Scene scene,
             Player player,
@@ -80,10 +75,6 @@ public class EntityItem extends EntityBaseGadget {
         return this.getItemData().getGadgetId();
     }
 
-    /**
-     * Nothing fights this entity, but an ability attached to one reads the whole FightProperty set
-     * off its owner, and a null threw right through the action instead of reading zeroes.
-     */
     @Override
     public Int2FloatMap getFightProperties() {
         return this.fightProperties;
@@ -93,7 +84,6 @@ public class EntityItem extends EntityBaseGadget {
 
     @Override
     public void onInteract(Player player, GadgetInteractReq interactReq) {
-        // check drop owner to avoid someone picked up item in others' world
         if (!this.isShare()) {
             int dropOwner = (int) (this.getGuid() >> 32);
             if (dropOwner != player.getUid()) {
@@ -103,15 +93,13 @@ public class EntityItem extends EntityBaseGadget {
 
         GameItem item = new GameItem(this.getItemData(), this.getCount());
 
-        // Add to inventory before despawning: removing first meant a rejected add (a full bag,
-        // most often) destroyed the drop and told nobody, so the item was simply gone.
         if (!player.getInventory().addItem(item, ActionReason.SubfieldDrop)) {
             return;
         }
 
         this.getScene().removeEntity(this);
 
-        if (!this.isShare()) { // not shared drop
+        if (!this.isShare()) {
             player.sendPacket(new PacketGadgetInteractRsp(this, InteractType.InteractType_INTERACT_PICK_ITEM));
         } else {
             this.getScene()
@@ -128,9 +116,6 @@ public class EntityItem extends EntityBaseGadget {
                         .setRendererChangedInfo(EntityRendererChangedInfo.newBuilder())
                         .setAiInfo(
                                 SceneEntityAiInfo.newBuilder().setIsAiOpen(true))
-                        // Every other entity reports where it actually spawned; this one used to
-                        // send an empty Vector, putting the drop's born position at the world
-                        // origin while its model rendered at the real one.
                         .setBornPos(getPosition().toProto())
                         .build();
 
@@ -160,9 +145,6 @@ public class EntityItem extends EntityBaseGadget {
         SceneGadgetInfo.Builder gadgetInfo =
                 SceneGadgetInfo.newBuilder()
                         .setGadgetId(this.getItemData().getGadgetId())
-                        // Carries which item the drop actually is. gadgetId alone only picks the
-                        // model, so without this the client has nothing to hand the player and the
-                        // drop just sits there.
                         .setTrifleGadget(_TrifleGadgetInfo.newBuilder().setItem(this.getItem().toProto()))
                         .setBornType(GadgetBornType.GadgetBornType_GADGET_BORN_IN_AIR)
                         .setAuthorityPeerId(this.getWorld().getHostPeerId())
@@ -175,7 +157,5 @@ public class EntityItem extends EntityBaseGadget {
 
     @Override
     public void initAbilities() {
-        // A dropped item is a trifle gadget with no config abilities. This used to throw, so any
-        // generic pass over scene entities died on the first item lying on the ground.
     }
 }

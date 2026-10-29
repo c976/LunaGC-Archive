@@ -19,6 +19,8 @@ public final class JsonUtils {
                     .setPrettyPrinting()
                     .registerTypeAdapter(DynamicFloat.class, new DynamicFloatAdapter())
                     .registerTypeAdapter(IntList.class, new IntListAdapter())
+                    .registerTypeAdapter(long.class, new UnsignedLongAdapter())
+                    .registerTypeAdapter(Long.class, new UnsignedLongAdapter())
                     .registerTypeAdapter(Position.class, new PositionAdapter())
                     .registerTypeAdapter(GridPosition.class, new GridPositionAdapter())
                     .registerTypeAdapter(byte[].class, new ByteArrayAdapter())
@@ -27,19 +29,10 @@ public final class JsonUtils {
                     .disableHtmlEscaping()
                     .create();
 
-    /**
-     * Converts the given object to a JsonElement.
-     *
-     * @param object The object to convert.
-     * @return The JsonElement.
-     */
     public static JsonElement toJson(Object object) {
         return gson.toJsonTree(object);
     }
 
-    /*
-     * Encode an object to a JSON string
-     */
     public static String encode(Object object) {
         return gson.toJson(object);
     }
@@ -118,12 +111,6 @@ public final class JsonUtils {
         }
     }
 
-    /**
-     * Safely JSON decodes a given string.
-     *
-     * @param jsonData The JSON-encoded data.
-     * @return JSON decoded data, or null if an exception occurred.
-     */
     public static <T> T decode(String jsonData, Class<T> classType) {
         try {
             return gson.fromJson(jsonData, classType);

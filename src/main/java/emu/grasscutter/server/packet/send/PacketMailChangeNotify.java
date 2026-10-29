@@ -12,25 +12,14 @@ import java.util.*;
 
 public class PacketMailChangeNotify extends BasePacket {
 
-	/*
-	 * A single Mail means a newly received mail.
-	 */
 	public PacketMailChangeNotify(Player player, Mail message) {
 		this(player, Collections.singletonList(message), null);
 	}
 
-	/*
-	 * A List<Mail> is used by read, star and attachment-claim handlers.
-	 * Those are changes to mail already known by the client. 6.7 does not
-	 * distinguish these from new mail on the wire, so no flag is needed.
-	 */
 	public PacketMailChangeNotify(Player player, List<Mail> changedMailList) {
 		this(player, changedMailList, null);
 	}
 
-	/*
-	 * Currently used by the deletion path with mailList == null.
-	 */
 	public PacketMailChangeNotify(Player player, List<Mail> mailList, List<Integer> delMailIdList) {
         super(PacketOpcodes.MailChangeNotify);
 
@@ -66,8 +55,6 @@ public class PacketMailChangeNotify extends BasePacket {
                 mailData.setIsAttachmentGot(message.isAttachmentGot);
                 mailData.setCollectStateValue(message.stateValue);
 
-                // 6.6's MailChangeNotify carried new and changed mail in separate repeated fields
-                // (mail_list / change_mail_list). 6.7 only has mail_list, so both go there.
                 proto.addMailList(mailData.build());
             }
         }

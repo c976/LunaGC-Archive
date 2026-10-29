@@ -8,9 +8,6 @@ import emu.grasscutter.auth.DefaultAuthenticators.*;
 import emu.grasscutter.game.Account;
 import emu.grasscutter.server.http.objects.*;
 
-/**
- * The default Grasscutter authentication implementation. Allows all users to access any account.
- */
 public final class DefaultAuthentication implements AuthenticationSystem {
     private final Authenticator<LoginResultJson> passwordAuthenticator;
     private final Authenticator<LoginResultJson> tokenAuthenticator = new TokenAuthenticator();
@@ -31,12 +28,10 @@ public final class DefaultAuthentication implements AuthenticationSystem {
 
     @Override
     public void createAccount(String username, String password) {
-        // Unhandled. The default authenticator doesn't store passwords.
     }
 
     @Override
     public void resetPassword(String username) {
-        // Unhandled. The default authenticator doesn't store passwords.
     }
 
     @Override

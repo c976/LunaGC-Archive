@@ -19,6 +19,7 @@ import emu.grasscutter.data.excels.ProudSkillData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
 import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
 import emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange;
@@ -60,30 +61,12 @@ public final class AbilityManager extends BasePlayerManager {
     public static final HashMap<AbilityMixinData.Type, AbilityMixinHandler> mixinHandlers =
         new HashMap<>();
 
-    /**
-     * onAdded actions the server is responsible for even when the modifier orchestrates nothing.
-     *
-     * <p>SetGlobalValue is here because a modifier's marks are what its own later blocks test: the
-     * one that spawns Sandrone's robot clears a mark, searches for a target, then spawns only if
-     * the mark came back set. Skipping the clear left the mark absent on the first hold, so the
-     * spawn never fired until a later attack had written it. Both reasons it used to be left out
-     * are gone - writes made here no longer reach the client, and a bare SetGlobalValue no longer
-     * reads as 1. Damage, healing and energy stay off the list: the client resolves those itself.
-     */
     private static final java.util.EnumSet<AbilityModifierAction.Type> SERVER_OWNED_ON_ADDED =
         java.util.EnumSet.of(
             AbilityModifierAction.Type.Predicated,
             AbilityModifierAction.Type.CreateGadget,
             AbilityModifierAction.Type.SetGlobalValue);
 
-    /**
-     * What a server owned chain may run, at any depth.
-     *
-     * <p>The nested actions need the same restriction as the top level ones, and more sharply: a
-     * Predicated block hands its children whichever entity its search picked, so an unfiltered
-     * child that kills or hurts its target would fire straight at the nearest enemy - killing it
-     * outright, with no damage event behind it. Only state and spawning is allowed through.
-     */
     private static final java.util.EnumSet<AbilityModifierAction.Type> SERVER_OWNED_CHAIN =
         java.util.EnumSet.of(
             AbilityModifierAction.Type.Predicated,
@@ -97,13 +80,6 @@ public final class AbilityManager extends BasePlayerManager {
         return type != null && SERVER_OWNED_CHAIN.contains(type);
     }
 
-    /**
-     * Set while the server runs a modifier chain the client did not ask it to run.
-     *
-     * <p>Values written in there are the server's own bookkeeping - a mark one block sets so a later
-     * block can test it - and the client has already worked them out for itself. Pushing them back
-     * overwrites state that was correct, so those writes stay local.
-     */
     private static final ThreadLocal<Boolean> serverOwnedChain =
         ThreadLocal.withInitial(() -> Boolean.FALSE);
 
@@ -111,12 +87,6 @@ public final class AbilityManager extends BasePlayerManager {
         return serverOwnedChain.get();
     }
 
-    /**
-     * Runs a block as the server's own bookkeeping.
-     *
-     * <p>Restores whatever the flag was rather than clearing it, so a chain that opens inside
-     * another one does not hand the rest of its parent back to the client half way through.
-     */
     public static void runServerOwned(Runnable body) {
         var previous = serverOwnedChain.get();
         serverOwnedChain.set(Boolean.TRUE);
@@ -147,6 +117,8 @@ public final class AbilityManager extends BasePlayerManager {
     private boolean abilityInvulnerable = false;
     private int burstCasterId;
     private int burstSkillId;
+    private long burstRequestedAt;
+    private static final long BURST_START_WINDOW_MS = 5000L;
 
     private long arlecchinoChargedAttackTime = 0L;
     private long arlecchinoESkillTime = 0L;
@@ -169,6 +141,10 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         if (this.burstCasterId == 0) return;
+        if (System.currentTimeMillis() - this.burstRequestedAt > BURST_START_WINDOW_MS) {
+            this.removePendingEnergyClear();
+            return;
+        }
 
         boolean skillInvincibility = modifier.state == AbilityModifier.State.Invincible;
         if (modifier.onAdded != null) {
@@ -206,8 +182,10 @@ public final class AbilityManager extends BasePlayerManager {
         for (var obj : handlerClassesAction) {
             try {
                 if (obj.isAnnotationPresent(AbilityAction.class)) {
-                    AbilityModifierAction.Type abilityAction = obj.getAnnotation(AbilityAction.class).value();
-                    actionHandlers.put(abilityAction, obj.getDeclaredConstructor().newInstance());
+                    var handler = obj.getDeclaredConstructor().newInstance();
+                    for (var abilityAction : obj.getAnnotation(AbilityAction.class).value()) {
+                        actionHandlers.put(abilityAction, handler);
+                    }
                 } else {
                     continue;
                 }
@@ -251,21 +229,12 @@ public final class AbilityManager extends BasePlayerManager {
                             .debug("Ability execute action failed for {} at {}.", action.type, ability);
                     }
                 } catch (Throwable e) {
-                    // submit() parks anything thrown in a Future nobody reads, so an action that
-                    // blew up left no trace at all - the skill just quietly did nothing.
                     Grasscutter.getLogger()
                         .error("Ability action {} threw at {}.", action.type, ability, e);
                 }
             });
     }
 
-    /**
-     * Runs an action on the calling thread instead of handing it to the pool.
-     *
-     * <p>A modifier's actions are a sequence, not a set: one block sets a value the next block
-     * reads. Submitted individually they race, and the read lands before the write often enough
-     * that whatever they were guarding happens an invocation late, or not at all.
-     */
     public void executeActionNow(
         Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
         var handler = actionHandlers.get(action.type);
@@ -412,6 +381,8 @@ public final class AbilityManager extends BasePlayerManager {
 
             case AbilityInvokeArgument_ABILITY_META_SET_KILLED_SETATE -> this.handleKillState(invoke);
             case AbilityInvokeArgument_ABILITY_META_ADD_SPECIAL_ENERGY_VALUE -> this.handleAddSpecialEnergy(invoke);
+            case ABILITY_META_UPDATE_TPS_WEAPON_AMMUNITION ->
+                TpsWeaponSystem.onAmmunitionInvoke(this.player, invoke);
             case ABILITY_META_UPDATE_MOON_OVERGROW_VALUE ->
                 this.handleUpdateMoonOvergrowValue(invoke);
 
@@ -452,10 +423,6 @@ public final class AbilityManager extends BasePlayerManager {
         entity.onAbilityValueUpdate();
     }
 
-    /**
-     * Mirrors the party's Verdant Dew, which the client owns. Recorded, never echoed: the server
-     * evaluates ByTargetGlobalValue(MoonOvergrowPoint_All, Team) and would otherwise read zero.
-     */
     private void handleUpdateMoonOvergrowValue(AbilityInvokeEntry invoke)
         throws InvalidProtocolBufferException {
         var update = AbilityMetaUpdateMoonOvergrowValue.parseFrom(invoke.getAbilityData());
@@ -464,7 +431,7 @@ public final class AbilityManager extends BasePlayerManager {
         var entity = this.player.getScene().getEntityById(invoke.getEntityId());
         if (entity == null) entity = this.player.getTeamManager().getEntity();
 
-        entity.getGlobalAbilityValues().put(TeamManager.VERDANT_DEW, update.getFOMPMBNENPH());
+        entity.getGlobalAbilityValues().put(TeamManager.VERDANT_DEW, update.getValue());
         entity.onAbilityValueUpdate();
     }
 
@@ -507,6 +474,11 @@ public final class AbilityManager extends BasePlayerManager {
             && head.getInstancedAbilityId() != 0
             && (head.getInstancedAbilityId() - 1) < entity.getInstancedAbilities().size()) {
             ability = entity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+        }
+
+        if (ability == null
+            && invoke.getArgumentType() == AbilityInvokeArgument.AbilityInvokeArgument_ABILITY_ACTION_GENERATE_ELEM_BALL) {
+            ability = this.findOwnerElemBallAbility(entity, head.getLocalId());
         }
 
         if (ability == null) {
@@ -553,6 +525,29 @@ public final class AbilityManager extends BasePlayerManager {
             ability.getData().localIdToMixin.keySet());
     }
 
+    private Ability findOwnerElemBallAbility(GameEntity entity, int localId) {
+        GameEntity owner = entity;
+        for (int hops = 0; hops < 8 && owner instanceof EntityClientGadget gadget; hops++) {
+            owner = this.player.getScene().getEntityById(gadget.getOwnerEntityId());
+        }
+        if (!(owner instanceof EntityAvatar avatar)) return null;
+
+        var icon = avatar.getAvatar().getAvatarData().getIconName();
+        if (icon == null || icon.isEmpty()) return null;
+        var prefix = "Avatar_" + icon.substring(icon.lastIndexOf('_') + 1) + "_";
+
+        var matches =
+            GameData.getAbilityDataMap().values().stream()
+                .filter(data -> data.abilityName != null && data.abilityName.startsWith(prefix))
+                .filter(
+                    data -> {
+                        var action = data.localIdToAction.get(localId);
+                        return action != null && action.type == AbilityModifierAction.Type.GenerateElemBall;
+                    })
+                .toList();
+        return matches.size() == 1 ? new Ability(matches.get(0), avatar, this.player) : null;
+    }
+
     public void onSkillStart(Player player, int skillId, int casterId) {
 
         if (player.getUid() != this.player.getUid()) {
@@ -588,6 +583,7 @@ public final class AbilityManager extends BasePlayerManager {
 
         this.burstSkillId = skillId;
         this.burstCasterId = casterId;
+        this.burstRequestedAt = System.currentTimeMillis();
     }
 
     public void onSkillEnd(Player player) {
@@ -808,7 +804,6 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        // is_serverbuff_modifier has no named counterpart in the 7.0 AbilityInvokeEntryHead.
         if (false) {
 
             this.player.getScene().broadcastPacket(new PacketAbilityInvocationsNotify(invoke));
@@ -846,8 +841,6 @@ public final class AbilityManager extends BasePlayerManager {
                 if (head.getTargetId() != 0) {
                     var targetEntity = this.player.getScene().getEntityById(head.getTargetId());
                     if (targetEntity != null) {
-                        // An id of 0 means "no instanced ability" and is common - without the lower
-                        // bound that becomes get(-1) rather than a miss.
                         var index = head.getInstancedAbilityId() - 1;
                         if (index >= 0 && index < targetEntity.getInstancedAbilities().size()) {
                             instancedAbility = targetEntity.getInstancedAbilities().get(index);
@@ -948,18 +941,19 @@ public final class AbilityManager extends BasePlayerManager {
                 entity.getInstancedModifiers().put(head.getInstancedModifierId(), modifier);
             }
 
+            entity.applyModifierProperties(
+                    head.getInstancedModifierId(), modifierData, instancedAbility);
+
             if (fromParentName && hasOrchestration && modifierData.onAdded != null) {
                 final var finalAbility = instancedAbility;
                 final var finalEntity = entity;
-                for (var a : modifierData.onAdded) {
-                    executeAction(finalAbility, a, invoke.getAbilityData(), finalEntity);
-                }
+                runServerOwned(
+                    () -> {
+                        for (var a : modifierData.onAdded) {
+                            executeActionNow(finalAbility, a, invoke.getAbilityData(), finalEntity);
+                        }
+                    });
             } else if (modifierData.onAdded != null) {
-                // A modifier whose onAdded neither attaches nor applies another modifier used to run
-                // nothing at all here, so anything the server alone is meant to do - spawning an
-                // avatar's summon, most visibly - never happened. Only the state and spawn actions
-                // are run: damage, healing and energy stay off this path, since the client already
-                // resolves those and running them again would double them up.
                 final var ownedAbility = instancedAbility;
                 final var ownedEntity = entity;
                 runServerOwned(
@@ -972,6 +966,7 @@ public final class AbilityManager extends BasePlayerManager {
                     });
             }
         } else if (modChange.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
+            entity.revertModifierProperties(head.getInstancedModifierId());
             entity.getInstancedModifiers().remove(head.getInstancedModifierId());
         } else {
 
@@ -985,6 +980,7 @@ public final class AbilityManager extends BasePlayerManager {
 
     private void handleGenerateElemBall(AbilityInvokeEntry invoke)
         throws InvalidProtocolBufferException {
+        this.player.getEnergyManager().handleGenerateElemBall(invoke);
     }
 
     private void handleGlobalFloatValue(AbilityInvokeEntry invoke)
@@ -1007,11 +1003,6 @@ public final class AbilityManager extends BasePlayerManager {
 
         float value = entry.getFloatValue();
         if (Float.isNaN(value)) return;
-
-        if (key.equals("MoonOvergrowPoint_All")) {
-            value = 50f;
-            this.player.sendPacket(new PacketServerGlobalValueChangeNotify(entity, key, 50f));
-        }
 
         if ("_ABILITY_Clorinde_Dodge_HealFlag".equals(key) && value == 0f
                 && entity instanceof EntityAvatar clorinde
@@ -1150,6 +1141,185 @@ public final class AbilityManager extends BasePlayerManager {
         entity.getInstancedAbilities().add(data != null ? new Ability(data, entity, player) : null);
     }
 
+    private static final int MAX_ATTACH_DEPTH = 8;
+
+    private final java.util.Set<String> attachedModifiers =
+            java.util.concurrent.ConcurrentHashMap.newKeySet();
+
+    private static String attachKey(GameEntity entity, Ability ability, String modifierName) {
+        return entity.getId() + "/" + ability.getData().abilityName + "/" + modifierName;
+    }
+
+    public static int syntheticModifierId(String abilityName, String modifierName) {
+        return -Math.abs((abilityName + "/" + modifierName).hashCode());
+    }
+
+    public void attachModifier(
+            GameEntity entity, Ability ability, String modifierName, ByteString abilityData, int depth) {
+        if (entity == null || ability == null || modifierName == null || modifierName.isEmpty()) return;
+        if (depth > MAX_ATTACH_DEPTH) return;
+        if (ability.getData() == null || ability.getData().modifiers == null) return;
+
+        var modifierData = ability.getData().modifiers.get(modifierName);
+        if (modifierData == null) return;
+
+        if (!this.attachedModifiers.add(attachKey(entity, ability, modifierName))) return;
+
+        entity.applyModifierProperties(
+                syntheticModifierId(ability.getData().abilityName, modifierName), modifierData, ability);
+
+        if (modifierData.onAdded != null) {
+            runServerOwned(
+                () -> {
+                    for (var action : modifierData.onAdded) {
+                        if (action != null) this.executeActionNow(ability, action, abilityData, entity);
+                    }
+                });
+        }
+
+        this.processModifierMixins(entity, ability, modifierData, abilityData, depth);
+    }
+
+    public void detachModifier(GameEntity entity, Ability ability, String modifierName) {
+        if (entity == null || ability == null || ability.getData() == null) return;
+        if (!this.attachedModifiers.remove(attachKey(entity, ability, modifierName))) return;
+        entity.revertModifierProperties(
+                syntheticModifierId(ability.getData().abilityName, modifierName));
+    }
+
+    private void processModifierMixins(
+            GameEntity entity,
+            Ability ability,
+            AbilityModifier modifierData,
+            ByteString abilityData,
+            int depth) {
+        if (modifierData.modifierMixins == null) return;
+
+        for (var mixin : modifierData.modifierMixins) {
+            if (mixin == null || mixin.type == null) continue;
+
+            switch (mixin.type) {
+                case AttachModifierToGlobalValueMixin -> this.evaluateGlobalValueMixin(
+                        entity, ability, mixin, abilityData, depth);
+                case CurLocalAvatarMixinV2, CurLocalAvatarMixin -> {
+                    var avatar = this.player.getTeamManager().getCurrentAvatarEntity();
+                    if (avatar != null
+                            && mixin.modifierName != null
+                            && !mixin.modifierName.isJsonNull()) {
+                        for (var name : mixin.getModifierNames()) {
+                            this.attachModifier(avatar, ability, name, abilityData, depth + 1);
+                        }
+                    }
+                }
+                default -> {}
+            }
+        }
+    }
+
+    public void evaluateGlobalValueMixin(
+            GameEntity entity,
+            Ability ability,
+            AbilityMixinData mixin,
+            ByteString abilityData,
+            int depth) {
+        if (mixin.globalValueKey == null || mixin.modifierNameSteps.isEmpty()) return;
+
+        var source = this.resolveGlobalValueSource(entity, mixin.globalValueTarget);
+        if (source == null) return;
+
+        float value =
+                source.getGlobalAbilityValues()
+                        .getOrDefault(
+                                mixin.globalValueKey, mixin.defaultGlobalValueOnCreate.get(ability));
+
+        int step = -1;
+        if (mixin.valueSteps.isEmpty()) {
+            step = value > 0 ? 0 : -1;
+        } else {
+            for (int i = 0; i < mixin.valueSteps.size(); i++) {
+                float lower = mixin.valueSteps.get(i).get();
+                float upper =
+                        (i + 1) < mixin.valueSteps.size()
+                                ? mixin.valueSteps.get(i + 1).get()
+                                : Float.MAX_VALUE;
+                if (value >= lower && value < upper) {
+                    step = i;
+                    break;
+                }
+            }
+        }
+
+        for (int i = 0; i < mixin.modifierNameSteps.size(); i++) {
+            var name = mixin.modifierNameSteps.get(i);
+            if (name == null || name.isEmpty()) continue;
+
+            if (i == step) {
+                this.attachModifier(entity, ability, name, abilityData, depth + 1);
+            } else if (mixin.removeAppliedModifier) {
+                this.detachModifier(entity, ability, name);
+            }
+        }
+    }
+
+    private GameEntity resolveGlobalValueSource(GameEntity entity, String target) {
+        if (target == null) return entity;
+        return switch (target) {
+            case "Team" -> this.player.getTeamManager().getEntity();
+            case "CurLocalAvatar" -> this.player.getTeamManager().getCurrentAvatarEntity();
+            default -> entity;
+        };
+    }
+
+    public void refreshGlobalValueWatchers(GameEntity entity) {
+        if (entity == null) return;
+        for (var ability : new java.util.ArrayList<>(entity.getInstancedAbilities())) {
+            if (ability == null || ability.getData() == null || ability.getData().modifiers == null)
+                continue;
+
+            var attachedByOthers = this.collectReferencedModifiers(ability);
+
+            for (var namedModifier : ability.getData().modifiers.entrySet()) {
+                var modifierData = namedModifier.getValue();
+                if (modifierData == null || modifierData.modifierMixins == null) continue;
+                if (attachedByOthers.contains(namedModifier.getKey())) continue;
+
+                for (var mixin : modifierData.modifierMixins) {
+                    if (mixin != null
+                            && mixin.type == AbilityMixinData.Type.AttachModifierToGlobalValueMixin) {
+                        this.evaluateGlobalValueMixin(entity, ability, mixin, ByteString.EMPTY, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    private java.util.Set<String> collectReferencedModifiers(Ability ability) {
+        var referenced = new java.util.HashSet<String>();
+        for (var modifierData : ability.getData().modifiers.values()) {
+            if (modifierData == null) continue;
+
+            for (var actions : new AbilityModifierAction[][] {
+                modifierData.onAdded, modifierData.onRemoved, modifierData.onThinkInterval
+            }) {
+                if (actions == null) continue;
+                for (var action : actions) {
+                    if (action != null && action.modifierName != null) referenced.add(action.modifierName);
+                }
+            }
+
+            if (modifierData.modifierMixins != null) {
+                for (var mixin : modifierData.modifierMixins) {
+                    if (mixin == null) continue;
+                    referenced.addAll(mixin.modifierNameSteps);
+                    if (mixin.modifierName != null && !mixin.modifierName.isJsonNull()) {
+                        referenced.addAll(mixin.getModifierNames());
+                    }
+                }
+            }
+        }
+        return referenced;
+    }
+
     private void initializeEntityAbilities(EntityAvatar avatar) {
         var avatarData = avatar.getAvatar().getAvatarData();
         if (avatarData.getAbilities() != null) {
@@ -1172,6 +1342,8 @@ public final class AbilityManager extends BasePlayerManager {
             var data = GameData.getAbilityData(name);
             avatar.getInstancedAbilities().add(data != null ? new Ability(data, avatar, player) : null);
         }
+
+        this.refreshGlobalValueWatchers(avatar);
     }
 
     private void invokeAction(
@@ -1226,7 +1398,6 @@ public final class AbilityManager extends BasePlayerManager {
             (abilityName != null && abilityName.startsWith("Avatar_") && abilityName.endsWith("_MoonLight"))
             || getMoonLightAbilityHashes().contains(abHash);
 
-        // Repeated here: the client only wires the Moonsign up once its ability exists.
         if (isTeamMoonPhase || isMoonLightAbility) {
             var teamManager = this.player.getTeamManager();
             teamManager.sendMoonsignState();
@@ -1330,8 +1501,6 @@ public final class AbilityManager extends BasePlayerManager {
                     .trace("Entity of ID {} is EntityAvatar. Ignoring", invoke.getEntityId());
                 return;
             }
-            // Entities with no combat state of their own used to answer null here; they now answer
-            // an empty map, and reviving something that never had hit points is still meaningless.
             if (entity.getFightProperties().isEmpty()) return;
             entity.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,

@@ -56,6 +56,7 @@ public class AbilityModifier implements Serializable {
     @SerializedName(value = "onReconnect", alternate = "OPOMCDOLKFF")
     public AbilityModifierAction[] onReconnect;
 
+    @SerializedName(value = "onChangeAuthority", alternate = {"OOINAHKLNHJ"})
     public AbilityModifierAction[] onChangeAuthority;
 
     @SerializedName(value = "onVehicleIn", alternate = "NNFFLLKFNKN")
@@ -74,7 +75,7 @@ public class AbilityModifier implements Serializable {
 
     @SerializedName(value = "modifierMixins", alternate = "IIECHMHLPDM")
     public AbilityMixinData[] modifierMixins;
-    public AbilityModifierProperty properties;
+    public Map<String, DynamicFloat> properties;
 
     public ElementType elementType;
     public DynamicFloat elementDurability = DynamicFloat.ZERO;
@@ -115,6 +116,7 @@ public class AbilityModifier implements Serializable {
             AvatarShareCDSkillStart,
             AvatarSkillStart,
             BroadcastNeuronStimulate,
+            @SerializedName(value = "ByTargetGlobalValue", alternate = {"EOFDCELPGFO"})
             ByTargetGlobalValue,
             CalcDvalinS04RebornPoint,
             CallLuaTask,
@@ -249,6 +251,7 @@ public class AbilityModifier implements Serializable {
             SetGlobalValue,
             SetGlobalValueByTargetDistance,
             SetGlobalValueToOverrideMap,
+            SetGlobalValueV2,
             SetKeepInAirVelocityForce,
             SetMaterialParamFloatByTransform,
             SetNeuronEnable,
@@ -335,25 +338,28 @@ public class AbilityModifier implements Serializable {
 
         @SerializedName(
                 value = "amountByCasterMaxHPRatio",
-                alternate = {"PKPBLCNMPIG", "HFNJHOGGFKB", "GEJGGCIOLKN", "MEEACMKOLJF", "OLMENJCGGJJ","EJGDELKANMO", "ECOAIFKENNM"})
+                alternate = {"PKPBLCNMPIG", "HFNJHOGGFKB", "GEJGGCIOLKN", "MEEACMKOLJF", "OLMENJCGGJJ", "EJGDELKANMO", "ECOAIFKENNM", "GJBFAJMJFOP"})
         public DynamicFloat amountByCasterMaxHPRatio = DynamicFloat.ZERO;
 
         public DynamicFloat amountByGetDamage = DynamicFloat.ZERO;
 
         public DynamicFloat amountByCasterDefRatio = DynamicFloat.ZERO;
 
-        @SerializedName(value = "amountByTargetCurrentHPRatio")
+        @SerializedName(value = "amountByTargetCurrentHPRatio", alternate = {"BJEKIJMNDAA"})
         public DynamicFloat amountByTargetCurrentHPRatio = DynamicFloat.ZERO;
 
-        @SerializedName(value = "amountByTargetMaxHPRatio", alternate = "GGLMMJHNGMO")
+        @SerializedName(
+                value = "amountByTargetMaxHPRatio",
+                alternate = {"GGLMMJHNGMO", "FPOCDLCHDPE"})
         public DynamicFloat amountByTargetMaxHPRatio = DynamicFloat.ZERO;
 
+        @SerializedName(value = "limboByTargetMaxHPRatio", alternate = {"KHFHMJCMOHH"})
         public DynamicFloat limboByTargetMaxHPRatio = DynamicFloat.ZERO;
 
         public DynamicFloat healRatio = DynamicFloat.ONE;
         public DynamicFloat speed = DynamicFloat.ONE;
 
-        @SerializedName(value = "ignoreAbilityProperty", alternate = "HHFGADCJJDI")
+        @SerializedName(value = "ignoreAbilityProperty", alternate = {"HHFGADCJJDI", "BPFPAELLNIL"})
         public boolean ignoreAbilityProperty;
 
         public String modifierName;
@@ -371,10 +377,10 @@ public class AbilityModifier implements Serializable {
         public int gadgetID;
         public boolean ownerIsTarget;
 
-        /** KillGadget names its target here rather than in a flat gadgetID. */
         public GadgetInfo gadgetInfo;
 
         public boolean isFromOwner;
+        @SerializedName(value = "healTag", alternate = {"FFNEJGGNAFF"})
         public String healTag;
         public String key;
         public String abilityName;
@@ -387,7 +393,6 @@ public class AbilityModifier implements Serializable {
 
         public Map<String, Object> otherTargets;
 
-        /** How often a Randomed block takes its success branch, from 0 to 1. */
         public DynamicFloat chance = DynamicFloat.ZERO;
 
         public DynamicFloat minValue = DynamicFloat.ZERO;
@@ -400,11 +405,11 @@ public class AbilityModifier implements Serializable {
         public int skillID;
         public int resistanceListID;
         public int monsterID;
+        @SerializedName(value = "summonTag", alternate = {"PCLFAKBGHCI"})
         public int summonTag;
 
         public AbilityModifierAction[] actions;
 
-        /** Which gadget an action is about, where it does not carry a flat gadgetID. */
         public static class GadgetInfo {
             public int configID;
         }
@@ -420,15 +425,6 @@ public class AbilityModifier implements Serializable {
         @SerializedName(value = "ratio", alternate = "value")
         public DynamicFloat ratio = DynamicFloat.ONE;
 
-        /**
-         * The value an action writes, as opposed to the one it multiplies by.
-         *
-         * <p>The field is shared between both senses, so it defaults to one - right for a
-         * multiplier, wrong for a write. Gson builds a fresh instance whenever the config carries a
-         * value of its own, so still holding the shared default means it carried none, and none
-         * means zero. Without this a bare "clear this mark" set it, and 629 of the 1058 animator
-         * bools in the corpus - the ones shipped with no value - were broadcast as true.
-         */
         public DynamicFloat writtenValue() {
             return this.ratio == DynamicFloat.ONE ? DynamicFloat.ZERO : this.ratio;
         }
@@ -447,7 +443,7 @@ public class AbilityModifier implements Serializable {
         public String funcName;
         public LuaCallType luaCallType;
 
-        @SerializedName("CallParamList")
+        @SerializedName(value = "CallParamList", alternate = {"NPNEPKILMEK"})
         public int[] callParamList;
 
         public String content;
@@ -472,12 +468,6 @@ public class AbilityModifier implements Serializable {
             BigWorldOnly,
             ForceDrop
         }
-    }
-
-    public static class AbilityModifierProperty implements Serializable {
-        // Usually a constant, but a config may also name an ability special to read it from.
-        public DynamicFloat Actor_HpThresholdRatio = DynamicFloat.ZERO;
-
     }
 
     public enum State {

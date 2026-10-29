@@ -16,6 +16,8 @@ import emu.grasscutter.net.proto.MotionInfoOuterClass.MotionInfo;
 import emu.grasscutter.net.proto.MotionStateOuterClass.MotionState;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
 import emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
+import emu.grasscutter.net.proto.Vector3IntOuterClass.Vector3Int;
+import emu.grasscutter.net.proto._EntityIntMotionInfoOuterClass._EntityIntMotionInfo;
 import emu.grasscutter.net.proto.VectorOuterClass.Vector;
 import emu.grasscutter.scripts.data.controller.EntityController;
 import emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo;
@@ -25,17 +27,12 @@ import emu.grasscutter.server.packet.send.PacketAvatarFightPropNotify;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropChangeReasonNotify;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropUpdateNotify;
 import it.unimi.dsi.fastutil.ints.*;
+import it.unimi.dsi.fastutil.objects.*;
 import emu.grasscutter.*;
 import emu.grasscutter.data.GameData;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-
-import com.google.protobuf.ByteString;
-import com.google.protobuf.CodedOutputStream;
-import com.google.protobuf.UnknownFieldSet;
 
 import lombok.*;
 
@@ -79,8 +76,6 @@ public abstract class GameEntity {
     private Int2ObjectMap<AbilityModifierController> instancedModifiers =
             new Int2ObjectOpenHashMap<>();
 
-    // Abilities run on a thread pool, so a plain HashMap here threw ConcurrentModificationException
-    // out of whichever action happened to be reading the values while another wrote them
     @Getter private Map<String, Float> globalAbilityValues = new ConcurrentHashMap<>();
 
     public GameEntity(Scene scene) {
@@ -136,8 +131,6 @@ public abstract class GameEntity {
 
     public abstract Position getRotation();
 
-    // Not every entity carries fight properties, and the ones that do can be asked for them before
-    // they are built. Reading one used to throw straight out of whatever ability action asked.
     public void setFightProperty(FightProperty prop, float value) {
         this.setFightProperty(prop.getId(), value);
     }
@@ -192,13 +185,56 @@ public abstract class GameEntity {
         if (data.properties == null) {
             return;
         }
-        // No ability instance here to resolve a named special against, so an unresolvable
-        // one reads as zero and simply leaves the Limbo threshold unset.
-        float hpThresholdRatio = data.properties.Actor_HpThresholdRatio.get(0f);
+        var threshold = data.properties.get("Actor_HpThresholdRatio");
+        float hpThresholdRatio = threshold != null ? threshold.get(0f) : 0f;
 
         if (data.state == AbilityModifier.State.Limbo && hpThresholdRatio > 0.0f) {
             Grasscutter.getLogger().debug("Limbo set to {}", hpThresholdRatio);
             this.setLimbo(hpThresholdRatio);
+        }
+    }
+
+    private final Int2ObjectMap<Object2FloatMap<FightProperty>> appliedModifierProps =
+            new Int2ObjectOpenHashMap<>();
+
+    public void applyModifierProperties(int instancedModifierId, AbilityModifier data, Ability ability) {
+        if (data == null || data.properties == null || data.properties.isEmpty()) return;
+        if (this.getFightProperties() == null) return;
+
+        this.revertModifierProperties(instancedModifierId);
+
+        var applied = new Object2FloatOpenHashMap<FightProperty>();
+        for (var entry : data.properties.entrySet()) {
+            var prop = ActorProperty.getFightProperty(entry.getKey());
+            if (prop == null || entry.getValue() == null) continue;
+
+            float delta = ability != null ? entry.getValue().get(ability) : entry.getValue().get();
+            if (delta == 0f) continue;
+
+            this.setFightProperty(prop, this.getFightProperty(prop) + delta);
+            applied.put(prop, applied.getOrDefault(prop, 0f) + delta);
+        }
+
+        if (applied.isEmpty()) return;
+        this.appliedModifierProps.put(instancedModifierId, applied);
+        this.broadcastModifierProps(applied);
+    }
+
+    public void revertModifierProperties(int instancedModifierId) {
+        var applied = this.appliedModifierProps.remove(instancedModifierId);
+        if (applied == null || this.getFightProperties() == null) return;
+
+        for (var entry : applied.object2FloatEntrySet()) {
+            this.setFightProperty(
+                    entry.getKey(), this.getFightProperty(entry.getKey()) - entry.getFloatValue());
+        }
+        this.broadcastModifierProps(applied);
+    }
+
+    private void broadcastModifierProps(Object2FloatMap<FightProperty> applied) {
+        if (this.getScene() == null) return;
+        for (var prop : applied.keySet()) {
+            this.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(this, prop));
         }
     }
 
@@ -212,56 +248,31 @@ public abstract class GameEntity {
     }
 
     protected void injectIntMotionInfo(SceneEntityInfo.Builder entityInfo) {
-        try {
-            Position pos = this.getPosition();
-            Position rot = this.getRotation();
-            if (pos == null || rot == null) return;
+        Position pos = this.getPosition();
+        Position rot = this.getRotation();
+        if (pos == null || rot == null) return;
 
-            int px = Math.round(pos.getX() * 1000f);
-            int py = Math.round(pos.getY() * 1000f);
-            int pz = Math.round(pos.getZ() * 1000f);
-            int rx = Math.round(rot.getX() * 1000f);
-            int ry = Math.round(rot.getY() * 1000f);
-            int rz = Math.round(rot.getZ() * 1000f);
+        entityInfo.setIntMotionInfo(
+                _EntityIntMotionInfo.newBuilder()
+                        .setEntityId(this.getId())
+                        .setPos(toMilli(pos))
+                        .setRot(toMilli(rot))
+                        .setState(this.getMotionState()));
+    }
 
-            ByteArrayOutputStream posOut = new ByteArrayOutputStream();
-            CodedOutputStream posCos = CodedOutputStream.newInstance(posOut);
-            posCos.writeInt32(1, px);
-            posCos.writeInt32(2, py);
-            posCos.writeInt32(3, pz);
-            posCos.flush();
-
-            ByteArrayOutputStream rotOut = new ByteArrayOutputStream();
-            CodedOutputStream rotCos = CodedOutputStream.newInstance(rotOut);
-            rotCos.writeInt32(1, rx);
-            rotCos.writeInt32(2, ry);
-            rotCos.writeInt32(3, rz);
-            rotCos.flush();
-
-            ByteArrayOutputStream msgOut = new ByteArrayOutputStream();
-            CodedOutputStream msgCos = CodedOutputStream.newInstance(msgOut);
-            msgCos.writeUInt32(1, this.getId());
-            msgCos.writeBytes(2, ByteString.copyFrom(posOut.toByteArray()));
-            msgCos.writeBytes(3, ByteString.copyFrom(rotOut.toByteArray()));
-            msgCos.writeEnum(4, this.getMotionState().getNumber());
-            msgCos.flush();
-
-            entityInfo.mergeUnknownFields(
-                UnknownFieldSet.newBuilder()
-                    .addField(25, UnknownFieldSet.Field.newBuilder()
-                        .addLengthDelimited(ByteString.copyFrom(msgOut.toByteArray()))
-                        .build())
-                    .build());
-        } catch (Exception e) {
-            Grasscutter.getLogger().error("Failed to inject EntityIntMotionInfo", e);
-        }
+    private static Vector3Int toMilli(Position p) {
+        return Vector3Int.newBuilder()
+                .setX(Math.round(p.getX() * 1000f))
+                .setY(Math.round(p.getY() * 1000f))
+                .setZ(Math.round(p.getZ() * 1000f))
+                .build();
     }
 
     public float heal(float amount) {
         return heal(amount, false);
     }
 
-    public float heal(float amount, boolean mute) {
+    public synchronized float heal(float amount, boolean mute) {
         if (this.getFightProperties() == null) {
             return 0f;
         }
@@ -324,7 +335,6 @@ public abstract class GameEntity {
       public void addSpecialEnergy(float energy){
        float curSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY);
        float maxSpecialEnergy = getFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY);
-       // Nightsoul is spent through here too, as a negative, so it needs a floor as well as a cap.
        curSpecialEnergy = Math.max(0, Math.min(maxSpecialEnergy, curSpecialEnergy + energy));
        setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, curSpecialEnergy);
        this.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(this, FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY));

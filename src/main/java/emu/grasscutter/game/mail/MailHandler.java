@@ -20,10 +20,8 @@ public class MailHandler extends BasePlayerManager {
         return mail;
     }
 
-    // ---------------------MAIL------------------------
 
     public void sendMail(Mail message) {
-        // Call mail receive event.
         PlayerReceiveMailEvent event = new PlayerReceiveMailEvent(this.getPlayer(), message);
         event.call();
         if (event.isCanceled()) return;
@@ -44,8 +42,7 @@ public class MailHandler extends BasePlayerManager {
 
         if (this.getPlayer().isOnline()) {
             this.getPlayer().sendPacket(new PacketMailChangeNotify(this.getPlayer(), message));
-        } // TODO: setup a way for the mail notification to show up when someone receives mail when they
-        // were offline
+        }
     }
 
     public boolean deleteMail(int mailId) {
@@ -63,18 +60,10 @@ public class MailHandler extends BasePlayerManager {
     }
 
 	public void deleteMail(List<Integer> internalIndexes) {
-		/*
-		 * Remove duplicates before deleting. Deleting the same index twice
-		 * could otherwise remove a different mail after the list shifts.
-		 */
 		List<Integer> sortedInternalIndexes =
 				new ArrayList<>(
 						new LinkedHashSet<>(internalIndexes));
 
-		/*
-		 * Delete from highest index to lowest index so earlier removals do
-		 * not shift the indexes that still need to be processed.
-		 */
 		sortedInternalIndexes.sort(
 				Collections.reverseOrder());
 
@@ -82,9 +71,6 @@ public class MailHandler extends BasePlayerManager {
 				new ArrayList<>();
 
 		for (int internalIndex : sortedInternalIndexes) {
-			/*
-			 * Save the client-visible ID before removing the mail.
-			 */
 			int clientMailId =
 					this.toClientMailId(internalIndex);
 
@@ -113,13 +99,6 @@ public class MailHandler extends BasePlayerManager {
 		return this.mail.get(index);
 	}
 	
-	/**
-	 * Converts LunaGC's internal zero-based list index into the positive
-	 * mail ID sent to the client.
-	 *
-	 * Internal index 0 -> client ID 1
-	 * Internal index 1 -> client ID 2
-	 */
 	public int toClientMailId(int internalIndex) {
 		if (internalIndex < 0) {
 			return 0;
@@ -128,15 +107,6 @@ public class MailHandler extends BasePlayerManager {
 		return internalIndex + 1;
 	}
 
-	/**
-	 * Converts a positive client mail ID back into LunaGC's internal
-	 * zero-based list index.
-	 *
-	 * Client ID 1 -> internal index 0
-	 * Client ID 2 -> internal index 1
-	 *
-	 * Returns -1 when the supplied client ID is invalid.
-	 */
 	public int toInternalMailIndex(int clientMailId) {
 		int internalIndex = clientMailId - 1;
 

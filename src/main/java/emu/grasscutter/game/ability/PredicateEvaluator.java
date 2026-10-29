@@ -28,6 +28,10 @@ public final class PredicateEvaluator {
         Object typeObj = pred.get("$type");
         if (!(typeObj instanceof String type)) return true;
         GameEntity resolved = resolveTarget(pred, ability, owner, target);
+        if ("BJJDEAIEIGP".equals(type)) {
+            GameEntity caster = ability != null ? ability.getCasterEntity() : null;
+            return hasHexenzirkelTag(caster != null ? caster : (owner != null ? owner : resolved));
+        }
         if ("ByUnlockTalentParam".equals(type)) {
             GameEntity caster = ability != null ? ability.getCasterEntity() : null;
             return byUnlockTalentParam(pred, caster != null ? caster : (owner != null ? owner : resolved));
@@ -38,6 +42,14 @@ public final class PredicateEvaluator {
             case "ByTargetHPRatio"    -> byTargetHPRatio(pred, ability, resolved);
             default -> true;
         };
+    }
+
+    private static boolean hasHexenzirkelTag(GameEntity target) {
+        if (!(target instanceof EntityAvatar ea)) return false;
+        Avatar avatar = ea.getAvatar();
+        if (avatar == null || avatar.getAvatarData() == null) return false;
+        var tags = avatar.getAvatarData().getTags();
+        return tags != null && tags.contains("AVATAR_TAG_HEXENZIRKEL");
     }
 
     private static GameEntity resolveTarget(Map<String, Object> pred, Ability ability,
@@ -94,15 +106,19 @@ public final class PredicateEvaluator {
         if (target == null) return false;
         Object key = pred.get("key");
         if (!(key instanceof String k)) return false;
-        float current = target.getGlobalAbilityValues().getOrDefault(k, 0f);
-        float bound = readFloat(pred.get("value"));
+        Float stored = target.getGlobalAbilityValues().get(k);
+        float current = stored != null ? stored : 0f;
+        float bound = readFloat(pred.get("value"), ability, target);
         Object cmpObj = pred.get("compareType");
         String cmp = cmpObj instanceof String s ? s : "Equal";
         return switch (cmp) {
             case "MoreThan", "Greater"    -> current > bound;
             case "MoreThanAndEqual", "MoreOrEqual", "GreaterOrEqual" -> current >= bound;
             case "LessThan", "Lesser"     -> current < bound;
-            case "LessThanAndEqual", "LessOrEqual", "LesserOrEqual" -> current <= bound;
+            case "LessAndEqual", "LessThanAndEqual", "LessOrEqual", "LesserOrEqual" -> current <= bound;
+            case "Between"                -> current >= bound
+                    && current <= readFloat(pred.get("maxValue"), ability, target);
+            case "NoneOrEqual"            -> stored == null || current == bound;
             case "NotEqual"               -> current != bound;
             default                       -> current == bound;
         };
@@ -120,8 +136,15 @@ public final class PredicateEvaluator {
         return curHp / maxHp > threshold;
     }
 
-    private static float readFloat(Object v) {
+    private static float readFloat(Object v, Ability ability, GameEntity target) {
         if (v instanceof Number n) return n.floatValue();
+        if (v instanceof String name) {
+            if (ability != null && ability.getAbilitySpecials().containsKey(name)) {
+                return ability.getAbilitySpecials().getFloat(name);
+            }
+            Float global = target != null ? target.getGlobalAbilityValues().get(name) : null;
+            return global != null ? global : 0f;
+        }
         if (v instanceof Map<?, ?> m) {
             Object inner = m.get("value");
             if (inner instanceof Number n) return n.floatValue();

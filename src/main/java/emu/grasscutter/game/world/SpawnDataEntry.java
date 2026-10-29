@@ -47,7 +47,6 @@ public class SpawnDataEntry {
         }
 
         public static GridBlockId[] getAdjacentGridBlockIds(int sceneId, Position pos) {
-            // When entity-error prevention is disabled, use the upstream 5x5-block behavior.
             if (!Grasscutter.getConfig().server.game.gameOptions.isPreventEntityError) {
                 GridBlockId[] results = new GridBlockId[5 * 5 * GameDepot.BLOCK_SIZE.length];
                 int t = 0;
@@ -63,9 +62,6 @@ public class SpawnDataEntry {
                 return results;
             }
 
-            // Only load grid blocks that can be within the 500m hard cap. Coarser scales
-            // (e.g. 1000m blocks) would pull in entities from far outside the player's
-            // surroundings and recreate the large scene-sync bursts behind client (1,1,2).
             final int maxEntityLoadRange = 500;
             int capacity = 0;
             for (int scale = 0; scale < GameDepot.BLOCK_SIZE.length; scale++) {
@@ -95,7 +91,7 @@ public class SpawnDataEntry {
         }
 
         public static int getScale(int gadgetId) {
-            return 0; // you should implement here,this is index of GameDepot.BLOCK_SIZE
+            return 0;
         }
 
         @Override

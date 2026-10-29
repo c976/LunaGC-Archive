@@ -4,6 +4,7 @@ import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.player.Player.SceneLoadState;
 import emu.grasscutter.game.props.EnterReason;
 import emu.grasscutter.game.world.Position;
+import emu.grasscutter.game.world.WorldRegions;
 import emu.grasscutter.game.world.data.TeleportProperties;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.EnterTypeOuterClass.EnterType;
@@ -22,8 +23,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
 
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
-                        .setLimitedRegionInfo(
-                                emu.grasscutter.game.world.WorldRegions.unrestricted())
+                        .setLimitedRegionInfo(WorldRegions.openRegions(player.getSceneId()))
                         .setSceneId((player.getSceneId() - 49379) ^ 11523)
                         .setPos(player.getPosition().toProto())
                         .setSceneBeginTime((currentTime ^ 27843L) + 16749L)
@@ -82,8 +82,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
                         .setLimitedRegionInfo(
-                                emu.grasscutter.game.world.WorldRegions.unrestricted())
-
+                                WorldRegions.openRegions(teleportProperties.getSceneId()))
                         .setSceneId((teleportProperties.getSceneId() - 49379) ^ 11523)
                         .setPos(teleportProperties.getTeleportTo().toProto())
                         .setSceneBeginTime((currentTime ^ 27843L) + 16749L)
@@ -120,8 +119,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
                         .setLimitedRegionInfo(
-                                emu.grasscutter.game.world.WorldRegions.unrestricted())
-
+                                WorldRegions.openRegions(teleportProperties.getSceneId()))
                         .setSceneId((teleportProperties.getSceneId() - 49379) ^ 11523)
                         .setPos(teleportProperties.getTeleportTo().toProto())
                         .setSceneBeginTime((currentTime ^ 27843L) + 16749L)

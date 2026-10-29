@@ -89,7 +89,6 @@ public final class ResourceLoader {
         loadTalents();
         loadOpenConfig();
         loadAbilityModifiers();
-        mergeDynamicAbilitiesIntoEmbryos();
 
         loadResources(true);
         buildAbilityTalentVarMaps();
@@ -201,15 +200,6 @@ public final class ResourceLoader {
         reportCollapse(c, filename.getFileName().toString(), results.size(), map.size() - before);
     }
 
-    /**
-     * Warns when a table's rows nearly all landed on the same key.
-     *
-     * <p>A row whose id field is spelled differently in the table than in the class reads zero -
-     * quietly, since Gson matches names exactly and has nothing to complain about - so every row
-     * takes the same slot and the map ends up holding one of them. That is how the world areas and
-     * three codex tables each came down to a single entry without anyone noticing. Rows can share a
-     * key legitimately, so this only speaks up when almost all of them do.
-     */
     private static void reportCollapse(Class<?> c, String filename, int rows, int added) {
         if (rows < 8 || added > Math.max(2, rows / 8)) return;
 
@@ -433,45 +423,7 @@ public final class ResourceLoader {
         }
     }
 
-    private static void mergeDynamicAbilitiesIntoEmbryos() {
-
-    for (Map.Entry<String, AbilityEmbryoEntry> entry : GameData.getAbilityEmbryoInfo().entrySet()) {
-
-        String avatarName = entry.getKey();
-
-        AbilityEmbryoEntry embryo = entry.getValue();
-
-        List<String> mergedAbilities = new ArrayList<>(Arrays.asList(embryo.getAbilities()));
-
-        for (AbilityData abilityData : GameData.getAbilityDataMap().values()) {
-            if (!abilityData.isDynamicAbility) {
-                continue;
-            }
-
-            if (abilityData.abilityName.startsWith("Avatar_" + avatarName)) {
-                if (!mergedAbilities.contains(abilityData.abilityName)) {
-                    mergedAbilities.add(abilityData.abilityName);
-                    Grasscutter.getLogger().debug("Merged dynamic ability " + abilityData.abilityName +
-                            " into embryo for avatar " + avatarName);
-                } else {
-                    Grasscutter.getLogger().debug("Dynamic ability " + abilityData.abilityName +
-                            " already exists in embryo for avatar " + avatarName);
-                }
-            }
-        }
-
-        AbilityEmbryoEntry mergedEntry = new AbilityEmbryoEntry(
-            embryo.getName(),
-            mergedAbilities.toArray(new String[mergedAbilities.size()])
-        );
-
-        GameData.getAbilityEmbryoInfo().put(avatarName, mergedEntry);
-    }
-}
-
     private static void loadAbilityData(AbilityData data) {
-        // An ability config from a dump whose field names are still obfuscated leaves this null.
-        // Skip it rather than let abilityHash NPE and take the whole main thread down with it.
         if (data.abilityName == null) return;
 
         GameData.getAbilityDataMap().put(data.abilityName, data);
@@ -545,9 +497,6 @@ public final class ResourceLoader {
 
                 spawnEntryMap.addAll(JsonUtils.loadToList(reader, SpawnGroupEntry.class));
             } catch (Exception e) {
-                // Swallowing this silently hid the failure completely: the "No spawn data loaded!"
-                // check below passes as long as the other file parsed, so one broken file just
-                // meant its spawns quietly never appeared.
                 Grasscutter.getLogger().error("Error loading spawn data from {}: ", name, e);
             }
         }
@@ -614,7 +563,11 @@ public final class ResourceLoader {
 
         if (list == null) {
             Map<String, OpenConfigEntry> map = new TreeMap<>();
-            String[] folderNames = {"BinOutput/Talent/EquipTalents/", "BinOutput/Talent/AvatarTalents/"};
+            String[] folderNames = {
+                "BinOutput/Talent/EquipTalents/",
+                "BinOutput/Talent/AvatarTalents/",
+                "BinOutput/Talent/RelicTalents/"
+            };
 
             for (String folderName : folderNames) {
                 try (val stream = Files.newDirectoryStream(getResourcePath(folderName), "*.json")) {
@@ -789,12 +742,6 @@ public final class ResourceLoader {
         }
     }
 
-    /**
-     * A config folder that yields nothing is a resource gap worth hearing about.
-     *
-     * <p>Every newer character's gadget configs were missing for months and nothing said a word -
-     * their summons just stood there with no abilities and no combat state.
-     */
     private static void reportConfigLoad(String className, String folderPath, int loaded) {
         if (loaded > 0) {
             Grasscutter.getLogger().debug("Loaded {} {} entries from {}.", loaded, className, folderPath);
@@ -1120,13 +1067,13 @@ public final class ResourceLoader {
     public static class OpenConfigData {
         public String $type;
 
-        @SerializedName(value = "abilityName", alternate = {"BEAFNCHOJGD"})
+        @SerializedName(value = "abilityName", alternate = {"BEAFNCHOJGD", "NCCKLDFFDOH"})
         public String abilityName;
 
-        @SerializedName(value = "varName", alternate = {"AAAENDNEBIG", "paramSpecial"})
+        @SerializedName(value = "varName", alternate = {"AAAENDNEBIG", "paramSpecial", "LDACNDBDKBA"})
         public String varName;
 
-        @SerializedName(value = "varValue", alternate = {"KCHPDCEBCNI", "paramDelta"})
+        @SerializedName(value = "varValue", alternate = {"KCHPDCEBCNI", "paramDelta", "IJFENBIJGLJ"})
         public com.google.gson.JsonElement varValue;
 
         @SerializedName(
@@ -1144,7 +1091,7 @@ public final class ResourceLoader {
                 alternate = {"IGEBKIHPOIF"})
         public int pointDelta;
 
-        @SerializedName(value = "talentParam", alternate = {"FJIKJIDMFNH"})
+        @SerializedName(value = "talentParam", alternate = {"FJIKJIDMFNH", "AAAENHAPNLB"})
         public String talentParam;
     }
 

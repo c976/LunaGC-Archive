@@ -12,10 +12,6 @@ import java.util.List;
 public class TriggerInTimeChallengeFactoryHandler implements ChallengeFactoryHandler {
     @Override
     public boolean isThisType(ChallengeType challengeType) {
-        // kill gadgets(explosive barrel) in time
-        // ActiveChallenge with 56,201,20,2,201,4
-        // open chest in time
-        // ActiveChallenge with 666,202,30,7,202,1
         return challengeType == CHALLENGE_TRIGGER_IN_TIME;
     }
 
@@ -32,11 +28,11 @@ public class TriggerInTimeChallengeFactoryHandler implements ChallengeFactoryHan
         return new WorldChallenge(
                 scene,
                 group,
-                challengeId, // Id
-                challengeIndex, // Index
+                challengeId,
+                challengeIndex,
                 List.of(timeLimit, triggerCount),
-                timeLimit, // Limit
-                triggerCount, // Goal
+                timeLimit,
+                triggerCount,
                 List.of(new InTimeTrigger(), new TriggerGroupTriggerTrigger(Integer.toString(triggerTag))));
     }
 }

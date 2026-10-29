@@ -35,10 +35,6 @@ public class EntityNPC extends GameEntity {
         return this.metaNpc.npc_id;
     }
 
-    /**
-     * Nothing fights this entity, but an ability attached to one reads the whole FightProperty set
-     * off its owner, and a null threw right through the action instead of reading zeroes.
-     */
     @Override
     public Int2FloatMap getFightProperties() {
         return this.fightProperties;
@@ -89,7 +85,6 @@ public class EntityNPC extends GameEntity {
 
     @Override
     public void initAbilities() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'initAbilities'");
     }
 }

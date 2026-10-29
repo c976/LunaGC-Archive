@@ -9,7 +9,10 @@ import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.server.packet.send.PacketServerGlobalValueChangeNotify;
 import it.unimi.dsi.fastutil.objects.Object2FloatOpenHashMap;
 
-@AbilityAction(AbilityModifierAction.Type.SetGlobalValue)
+@AbilityAction({
+    AbilityModifierAction.Type.SetGlobalValue,
+    AbilityModifierAction.Type.SetGlobalValueV2
+})
 public final class ActionSetGlobalValue extends AbilityActionHandler {
 
     @Override
@@ -22,8 +25,6 @@ public final class ActionSetGlobalValue extends AbilityActionHandler {
                 target.getGlobalAbilityValues().put(valueKey, computedValue);
                 target.onAbilityValueUpdate();
 
-            // Team abilities run against a pseudo-entity that is in no scene, so this fired four
-            // NPEs on every single login before the guard.
             if (!AbilityManager.isServerOwnedChain()) {
                 var scene = target.getScene();
                 var host = scene == null ? null : scene.getHost();

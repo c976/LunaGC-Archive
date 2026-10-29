@@ -42,7 +42,7 @@ public class GameQuest {
     @Getter private Map<String, Boolean> triggers;
     private transient Bindings bindings;
 
-    @Deprecated // Morphia only. Do not use.
+    @Deprecated
     public GameQuest() {}
 
     public GameQuest(GameMainQuest mainQuest, QuestData questData) {
@@ -97,8 +97,6 @@ public class GameQuest {
                                     ChapterStateOuterClass.ChapterState.CHAPTER_STATE_BEGIN));
         }
 
-        // Some subQuests and talks become active when some other subQuests are unfinished (even from
-        // different MainQuests)
         this.triggerStateEvents();
 
         this.getQuestData()
@@ -113,10 +111,6 @@ public class GameQuest {
         this.save();
     }
 
-    /**
-     * Triggers events: 'QUEST_COND_STATE_EQUAL', 'QUEST_COND_STATE_NOT_EQUAL',
-     * 'QUEST_CONTENT_QUEST_STATE_EQUAL', 'QUEST_CONTENT_QUEST_STATE_NOT_EQUAL'
-     */
     public void triggerStateEvents() {
         var questManager = this.getOwner().getQuestManager();
         var questId = this.getSubQuestId();
@@ -135,7 +129,6 @@ public class GameQuest {
             String triggerName = trigger.getTriggerName();
             return triggerName;
         }
-        // return empty string if can't find trigger
         return "";
     }
 
@@ -157,7 +150,6 @@ public class GameQuest {
     }
 
     public boolean clearProgress(boolean notifyDelete) {
-        // TODO improve
         var oldState = state;
         if (questData.getAcceptCond() != null && questData.getAcceptCond().size() != 0) {
             this.getMainQuest()
@@ -204,11 +196,9 @@ public class GameQuest {
     }
 
     public void finish() {
-        // Call PlayerCompleteQuestEvent.
         var event = new PlayerCompleteQuestEvent(this.getOwner(), this);
         if (!event.call()) return;
 
-        // Check if the quest has been finished.
         synchronized (this) {
             if (this.state == QuestState.QUEST_STATE_FINISHED) {
                 Grasscutter.getLogger().debug("Quest {} was already finished.", this.getSubQuestId());
@@ -222,15 +212,12 @@ public class GameQuest {
         this.getOwner().sendPacket(new PacketQuestListUpdateNotify(this));
 
         if (this.getQuestData().isFinishParent()) {
-            // This quest finishes the questline - the main quest will also save the quest to db, so we
-            // don't have to call save() here
             this.getMainQuest().finish();
         }
 
         this.getQuestData()
                 .getFinishExec()
                 .forEach(e -> getOwner().getServer().getQuestSystem().triggerExec(this, e, e.getParam()));
-        // Some subQuests have conditions that subQuests are finished (even from different MainQuests)
         this.getOwner()
                 .getQuestManager()
                 .queueEvent(
@@ -263,23 +250,22 @@ public class GameQuest {
                                     ChapterStateOuterClass.ChapterState.CHAPTER_STATE_END));
         }
 
-        // Give items for completing the quest.
         this.getQuestData()
                 .getGainItems()
                 .forEach(item -> this.getOwner().getInventory().addItem(item, ActionReason.QuestItem));
 
         this.save();
         Grasscutter.getLogger().debug("Quest {} was completed.", subQuestId);
+
+        PrologueIntro.onQuestFinished(this);
     }
 
-    // TODO
     public void fail() {
         this.state = QuestState.QUEST_STATE_FAILED;
         this.finishTime = Utils.getCurrentSeconds();
 
         this.getOwner().sendPacket(new PacketQuestListUpdateNotify(this));
 
-        // Some subQuests have conditions that subQuests fail (even from different MainQuests)
         this.triggerStateEvents();
 
         this.getQuestData()
@@ -295,7 +281,6 @@ public class GameQuest {
         Grasscutter.getLogger().debug("Quest {} is failed", subQuestId);
     }
 
-    // Return true if it did the rewind
     public boolean rewind(boolean notifyDelete) {
         getMainQuest().getChildQuests().values().stream()
                 .filter(p -> p.getQuestData().getOrder() > this.getQuestData().getOrder())
@@ -308,13 +293,7 @@ public class GameQuest {
         return true;
     }
 
-    /**
-     * @return A list of dungeon IDs associated with the quest's 'QUEST_CONTENT_ENTER_DUNGEON'
-     *     triggers. The first element of the pair is the dungeon ID. The second element of the pair
-     *     is the dungeon's scene point.
-     */
     public List<IntIntImmutablePair> getDungeonIds() {
-        // Check if this quest is active.
         if (this.state != QuestState.QUEST_STATE_UNFINISHED) return List.of();
 
         return this.getQuestData().getFinishCond().stream()
@@ -322,9 +301,6 @@ public class GameQuest {
                 .map(
                         condition -> {
                             var params = condition.getParam();
-                            // The first parameter is the ID of the dungeon.
-                            // The second parameter is the dungeon entry's scene point.
-                            // ex. [1, 1] = dungeon ID 1, scene point 1 or 'KaeyaDungeon'.
                             return new IntIntImmutablePair(params[0], params[1]);
                         })
                 .toList();
