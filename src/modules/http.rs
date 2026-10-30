@@ -17,7 +17,7 @@ impl MhyModule for MhyContext<Http> {
 
         let web_request_utils_make_initial_url = util::pattern_scan_il2cpp(self.assembly_name, WEB_REQUEST_UTILS_MAKE_INITIAL_URL);
         if let Some(addr) = web_request_utils_make_initial_url {
-            crate::plog!("web_request_utils_make_initial_url: {:x}", addr as usize);
+            println!("web_request_utils_make_initial_url: {:x}", addr as usize);
             self.interceptor.attach(
                 addr as usize,
                 on_make_initial_url,
@@ -25,13 +25,13 @@ impl MhyModule for MhyContext<Http> {
         }
         else
         {
-            crate::plog!("Failed to find web_request_utils_make_initial_url");
+            println!("Failed to find web_request_utils_make_initial_url");
         }
 
         let browser_load_url = util::pattern_scan_il2cpp(self.assembly_name, BROWSER_LOAD_URL);
         if let Some(addr) = browser_load_url {
             let addr_offset = addr as usize + BROWSER_LOAD_URL_OFFSET;
-            crate::plog!("browser_load_url: {:x}", addr_offset);
+            println!("browser_load_url: {:x}", addr_offset);
             self.interceptor.attach(
                 addr_offset,
                 on_browser_load_url,
@@ -39,7 +39,7 @@ impl MhyModule for MhyContext<Http> {
         }
         else
         {
-            crate::plog!("Failed to find browser_load_url");
+            println!("Failed to find browser_load_url");
         }
         
         Ok(())
@@ -54,21 +54,12 @@ impl MhyModule for MhyContext<Http> {
     }
 }
 
-/// http(s) only, file:// urls must not be rewritten
-fn is_redirectable(url: &str) -> bool {
-    url.starts_with("http://") || url.starts_with("https://")
-}
-
 unsafe extern "win64" fn on_make_initial_url(reg: *mut Registers, _: usize) {
     let str_length = *((*reg).rcx.wrapping_add(16) as *const u32);
     let str_ptr = (*reg).rcx.wrapping_add(20) as *const u8;
 
     let slice = std::slice::from_raw_parts(str_ptr, (str_length * 2) as usize);
     let url = String::from_utf16le(slice).unwrap();
-
-    if !is_redirectable(&url) {
-        return;
-    }
 
     let mut new_url = String::from("http://127.0.0.1:8088");
 
@@ -78,7 +69,7 @@ unsafe extern "win64" fn on_make_initial_url(reg: *mut Registers, _: usize) {
     });
 
     if !url.contains("/query_cur_region") {
-        crate::plog!("Redirect: {url} -> {new_url}");
+        println!("Redirect: {url} -> {new_url}");
         (*reg).rcx =
             marshal::ptr_to_string_ansi(CString::new(new_url.as_str()).unwrap().as_c_str()) as u64;
     }
@@ -91,17 +82,13 @@ unsafe extern "win64" fn on_browser_load_url(reg: *mut Registers, _: usize) {
     let slice = std::slice::from_raw_parts(str_ptr, (str_length * 2) as usize);
     let url = String::from_utf16le(slice).unwrap();
 
-    if !is_redirectable(&url) {
-        return;
-    }
-
     let mut new_url = String::from("http://127.0.0.1:8088");
     url.split('/').skip(3).for_each(|s| {
         new_url.push_str("/");
         new_url.push_str(s);
     });
 
-    crate::plog!("Browser::LoadURL: {url} -> {new_url}");
+    println!("Browser::LoadURL: {url} -> {new_url}");
 
     (*reg).rdx =
         marshal::ptr_to_string_ansi(CString::new(new_url.as_str()).unwrap().as_c_str()) as u64;

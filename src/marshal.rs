@@ -6,7 +6,7 @@ use std::path::Path;
 
 const PTR_TO_STRING_ANSI: &str = "0F 1F 80 00 00 00 00 E9 ?? ?? ?? ?? 66 66 2E 0F 1F 84 00 00 00 00 00 56 48 83 EC 20 48 85 C9";
 const PTR_TO_STRING_ANSI_OFFSET: usize = 0x17;
-type MarshalPtrToStringAnsi = unsafe extern "fastcall" fn(*const u8) -> *const u8;
+type MarshalPtrToStringAnsi = unsafe extern "system" fn(*const u8) -> *const u8;
 static mut PTR_TO_STRING_ANSI_ADDR: Option<usize> = None;
 
 pub unsafe fn ptr_to_string_ansi(content: &CStr) -> *const u8 {
@@ -23,9 +23,9 @@ pub unsafe fn find() {
     if let Some(addr) = ptr_to_string_ansi {
         let addr_offset = addr as usize + PTR_TO_STRING_ANSI_OFFSET;
         PTR_TO_STRING_ANSI_ADDR = Some(addr_offset);
-        crate::plog!("ptr_to_string_ansi: {:x}", addr_offset);
+        println!("ptr_to_string_ansi: {:x}", addr_offset);
     } else {
-        crate::plog!("Failed to find ptr_to_string_ansi");
+        println!("Failed to find ptr_to_string_ansi");
     }
 }
 
