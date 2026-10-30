@@ -8,11 +8,13 @@ mod ccp_blocker;
 mod http;
 mod misc;
 mod security;
+mod winhttp;
 
 pub use ccp_blocker::CcpBlocker;
 pub use http::Http;
 pub use misc::Misc;
 pub use security::Security;
+pub use winhttp::WinHttp;
 
 #[derive(Default)]
 pub struct ModuleManager {
@@ -44,6 +46,7 @@ pub enum ModuleType {
     Security,
     Misc,
     CcpBlocker,
+    WinHttp,
 }
 
 pub trait MhyModule {

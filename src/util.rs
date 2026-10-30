@@ -116,7 +116,7 @@ pub unsafe fn pattern_scan_il2cpp(module: &str, pattern: &str) -> Option<*mut u8
     });
     
     if il2cpp_section.is_none() {
-        println!("Failed to find il2cpp section");
+        crate::plog!("Failed to find il2cpp section");
         return None;
     }
     
@@ -130,18 +130,4 @@ pub unsafe fn pattern_scan_il2cpp(module: &str, pattern: &str) -> Option<*mut u8
         None => None,
         Some(loc) => Some((il2cpp_base.wrapping_add(loc)) as *mut u8),
     }
-}
-
-pub unsafe fn il2cpp_string_to_rust(ptr: u64) -> String {
-    let len = *((ptr + 16) as *const u32) as usize;
-    let data = (ptr + 20) as *const u8;
-
-    let bytes = std::slice::from_raw_parts(data, len * 2);
-
-    let utf16: Vec<u16> = bytes
-        .chunks_exact(2)
-        .map(|b| u16::from_le_bytes([b[0], b[1]]))
-        .collect();
-
-    String::from_utf16(&utf16).unwrap()
 }

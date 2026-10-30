@@ -30,6 +30,10 @@ impl MhyModule for MhyContext<CcpBlocker> {
 
 unsafe extern "win64" fn on_getaddrinfo(reg: *mut Registers, _: usize) {
     let host_ptr = (*reg).rcx as *const i8;
+    // a null nodename is legal
+    if host_ptr.is_null() {
+        return;
+    }
     let host = CStr::from_ptr(host_ptr).to_string_lossy();
 
     if host == "dispatchosglobal.yuanshen.com" || host == "dispatchcnglobal.yuanshen.com" {

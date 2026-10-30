@@ -11,7 +11,7 @@ impl MhyModule for MhyContext<Misc> {
         // Dither
         let set_custom_property_float = util::pattern_scan_code(self.assembly_name, SET_CUSTOM_PROPERTY_FLOAT);
         if let Some(addr) = set_custom_property_float {
-            println!("set_custom_property_float: {:x}", addr as usize);
+            crate::plog!("set_custom_property_float: {:x}", addr as usize);
             self.interceptor.replace(
                 addr as usize,
                 set_custom_property_float_replacement,
@@ -19,7 +19,7 @@ impl MhyModule for MhyContext<Misc> {
         }
         else
         {
-            println!("Failed to find set_custom_property_float");
+            crate::plog!("Failed to find set_custom_property_float");
         }
 
         Ok(())
