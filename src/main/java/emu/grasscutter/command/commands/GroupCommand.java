@@ -2,70 +2,77 @@ package emu.grasscutter.command.commands;
 
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import emu.grasscutter.command.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.world.SceneGroupInstance;
-import java.util.List;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
 @Command(
         label = "group",
         aliases = {"gr"},
-        usage = {"(refresh) [<groupId>] [<suiteId>]"},
         permission = "player.group",
         permissionTargeted = "player.group.others")
 public final class GroupCommand implements CommandHandler {
-
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        if (args.isEmpty()) {
-            return;
-        }
-        String cmd = args.remove(0).toLowerCase();
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        var root = new CommandLine(new Root(sender));
+        root.addSubcommand("refresh", new Refresh(sender, targetPlayer));
+        return root;
+    }
 
-        int groupId = 0;
-        int suiteId = 0;
-        switch (args.size()) {
-            case 2:
-                try {
-                    suiteId = Integer.parseInt(args.get(1));
-                } catch (Exception e) {
-                    CommandHandler.sendMessage(sender, translate(sender, "commands.group.invalid_suiteid"));
-                    return;
-                } // Fallthrough
-            case 1:
-                try {
-                    groupId = Integer.parseInt(args.get(0));
-                } catch (Exception e) {
-                    CommandHandler.sendMessage(sender, translate(sender, "commands.group.invalid_groupid"));
-                    return;
-                }
-                break;
-            default:
-                sendUsageMessage(sender);
+    @CommandLine.Command(name = "group")
+    private final class Root implements Runnable {
+        private final Player sender;
+
+        private Root(Player sender) {
+            this.sender = sender;
+        }
+
+        @Override
+        public void run() {
+            GroupCommand.this.sendUsageMessage(sender);
+        }
+    }
+
+    @CommandLine.Command(name = "refresh")
+    private static final class Refresh implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
+
+        @Parameters(index = "0", paramLabel = "<groupId>")
+        private int groupId;
+
+        @Parameters(index = "1", arity = "0..1", paramLabel = "[suiteId]")
+        private Integer suiteId;
+
+        private Refresh(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
+        }
+
+        @Override
+        public void run() {
+            if (targetPlayer.getScene() == null) {
+                CommandOutput.sendMessage(sender, "Target player has no active scene.");
                 return;
-        }
-
-        switch (cmd) {
-            case "refresh" -> {
-                SceneGroupInstance groupInstance =
-                        targetPlayer.getScene().getScriptManager().getGroupInstanceById(groupId);
-                if (groupInstance == null) {
-                    CommandHandler.sendMessage(
-                            sender, translate(sender, "commands.group.group_not_found", groupId));
-                    return;
-                }
-
-                if (args.size() >= 2) {
-                    targetPlayer.getScene().getScriptManager().refreshGroup(groupInstance, suiteId, false);
-                } else {
-                    targetPlayer.getScene().getScriptManager().refreshGroup(groupInstance);
-                }
-
-                CommandHandler.sendMessage(sender, translate(sender, "commands.group.refreshed", groupId));
             }
-            default -> {
-                sendUsageMessage(sender);
+            SceneGroupInstance groupInstance =
+                    targetPlayer.getScene().getScriptManager().getGroupInstanceById(groupId);
+            if (groupInstance == null) {
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.group.group_not_found", groupId));
+                return;
             }
+
+            if (suiteId == null) {
+                targetPlayer.getScene().getScriptManager().refreshGroup(groupInstance);
+            } else {
+                targetPlayer.getScene().getScriptManager().refreshGroup(groupInstance, suiteId, false);
+            }
+            CommandOutput.sendMessage(sender, translate(sender, "commands.group.refreshed", groupId));
         }
     }
 }

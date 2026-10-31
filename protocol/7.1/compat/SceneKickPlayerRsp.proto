@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 24358 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message SceneKickPlayerRsp {
+  uint32 target_uid = 14;
+  int32 retcode = 13;
+}

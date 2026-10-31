@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 21994 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message GetPushTipsRewardRsp {
+  repeated uint32 push_tips_id_list = 6;
+  int32 retcode = 5;
+}

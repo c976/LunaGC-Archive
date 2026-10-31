@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 2050 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message DelTeamEntityNotify {
+  repeated uint32 del_entity_id_list = 11;
+  uint32 scene_id = 15;
+}

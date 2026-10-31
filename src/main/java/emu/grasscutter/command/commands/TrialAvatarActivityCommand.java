@@ -2,153 +2,238 @@ package emu.grasscutter.command.commands;
 
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import emu.grasscutter.command.*;
-import emu.grasscutter.game.activity.trialavatar.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
+import emu.grasscutter.game.activity.PlayerActivityData;
+import emu.grasscutter.game.activity.trialavatar.TrialAvatarActivityHandler;
+import emu.grasscutter.game.activity.trialavatar.TrialAvatarPlayerData;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.ActivityType;
 import emu.grasscutter.server.packet.send.PacketActivityInfoNotify;
 import emu.grasscutter.utils.JsonUtils;
-import java.util.List;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
 @Command(
-        label = "trialAvatarActivity",
-        aliases = {"taa"},
-        usage = {
-            "change <scheduleId>",
-            "toggleDungeon <index(start from 1)|all>",
-            "toggleReward <index(start from 1)|all>"
-        },
+        label = "trial",
         permission = "player.trialavataractivity",
         permissionTargeted = "player.trialavataractivity.others")
 public final class TrialAvatarActivityCommand implements CommandHandler {
+    private record Selection(Integer index) {
+        private boolean all() {
+            return index == null;
+        }
+    }
+
+    private record Context(
+            PlayerActivityData playerData,
+            TrialAvatarActivityHandler handler,
+            TrialAvatarPlayerData detail) {}
+
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        if (args.size() < 2) {
-            sendUsageMessage(sender);
-            return;
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        var commandLine = new CommandLine(new Root(sender));
+        commandLine.addSubcommand("change", new Change(sender, targetPlayer));
+        commandLine.addSubcommand("toggledungeon", new ToggleDungeon(sender, targetPlayer));
+        commandLine.addSubcommand("togglereward", new ToggleReward(sender, targetPlayer));
+        CommandHandler.registerConverterTree(
+                commandLine,
+                Selection.class,
+                value -> {
+                    if (value.equalsIgnoreCase("all")) {
+                        return new Selection(null);
+                    }
+                    try {
+                        return new Selection(Integer.parseInt(value));
+                    } catch (NumberFormatException ignored) {
+                        throw new CommandLine.TypeConversionException("Expected an index or 'all'");
+                    }
+                });
+        return commandLine;
+    }
+
+    @CommandLine.Command(name = "trial")
+    private final class Root implements Runnable {
+        private final Player sender;
+
+        private Root(Player sender) {
+            this.sender = sender;
         }
 
-        var action = args.get(0).toLowerCase();
-        var param = args.get(1);
+        @Override
+        public void run() {
+            TrialAvatarActivityCommand.this.sendUsageMessage(sender);
+        }
+    }
 
-        var playerDataOption =
-                targetPlayer
-                        .getActivityManager()
-                        .getPlayerActivityDataByActivityType(ActivityType.NEW_ACTIVITY_TRIAL_AVATAR);
-        if (playerDataOption.isEmpty()) {
-            CommandHandler.sendMessage(
-                    sender, translate(sender, "commands.trialAvatarActivity.not_found"));
-            return;
+    private abstract class ActivityCommand implements Runnable {
+        protected final Player sender;
+        protected final Player targetPlayer;
+
+        private ActivityCommand(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
         }
 
-        var playerData = playerDataOption.get();
-        var handler = (TrialAvatarActivityHandler) playerData.getActivityHandler();
-        if (handler == null) {
-            CommandHandler.sendMessage(
-                    sender, translate(sender, "commands.trialAvatarActivity.not_found"));
-            return;
+        protected Context context() {
+            var playerDataOption =
+                    targetPlayer
+                            .getActivityManager()
+                            .getPlayerActivityDataByActivityType(
+                                    ActivityType.NEW_ACTIVITY_TRIAL_AVATAR);
+            if (playerDataOption.isEmpty()) {
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.trial.not_found"));
+                return null;
+            }
+
+            var playerData = playerDataOption.get();
+            var handler = (TrialAvatarActivityHandler) playerData.getActivityHandler();
+            var detail = JsonUtils.decode(playerData.getDetail(), TrialAvatarPlayerData.class);
+            if (handler == null || detail == null) {
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.trial.not_found"));
+                return null;
+            }
+            return new Context(playerData, handler, detail);
         }
 
-        var trialAvatarPlayerData =
-                JsonUtils.decode(playerData.getDetail(), TrialAvatarPlayerData.class);
-        if (trialAvatarPlayerData == null) {
-            CommandHandler.sendMessage(
-                    sender, translate(sender, "commands.trialAvatarActivity.not_found"));
-            return;
+        protected void saveAndNotify(Context context) {
+            context.playerData().setDetail(context.detail());
+            context.playerData().save();
+            targetPlayer.sendPacket(
+                    new PacketActivityInfoNotify(
+                            context.handler()
+                                    .toProto(
+                                            context.playerData(),
+                                            targetPlayer
+                                                    .getActivityManager()
+                                                    .getConditionExecutor())));
+        }
+    }
+
+    private final class Change extends ActivityCommand {
+        @Parameters(index = "0", paramLabel = "<scheduleId>")
+        private int scheduleId;
+
+        private Change(Player sender, Player targetPlayer) {
+            super(sender, targetPlayer);
         }
 
-        switch (action) {
-            default -> this.sendUsageMessage(sender);
-            case "change" -> {
-                if (!param.chars().allMatch(Character::isDigit)) { // if its not number
-                    CommandHandler.sendMessage(
-                            sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
-                    return;
-                }
-                if (TrialAvatarPlayerData.getAvatarIdList(Integer.parseInt(param)).isEmpty()) {
-                    CommandHandler.sendMessage(
-                            sender,
-                            translate(
-                                    sender,
-                                    "commands.trialAvatarActivity.schedule_not_found",
-                                    Integer.parseInt(param)));
-                    return;
-                }
-                playerData.setDetail(TrialAvatarPlayerData.create(Integer.parseInt(param)));
-                playerData.save();
-                CommandHandler.sendMessage(
+        @Override
+        public void run() {
+            Context context = context();
+            if (context == null) {
+                return;
+            }
+            if (TrialAvatarPlayerData.getAvatarIdList(scheduleId).isEmpty()) {
+                CommandOutput.sendMessage(
                         sender,
                         translate(
-                                sender, "commands.trialAvatarActivity.success_schedule", Integer.parseInt(param)));
+                                sender,
+                                "commands.trial.schedule_not_found",
+                                scheduleId));
+                return;
             }
-            case "toggledungeon" -> {
-                if (param.chars().allMatch(Character::isDigit)) { // if its number
-                    if (Integer.parseInt(param) - 1 >= trialAvatarPlayerData.getRewardInfoList().size()
-                            || Integer.parseInt(param) - 1 <= 0) {
-                        CommandHandler.sendMessage(
-                                sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
-                        return;
-                    }
-                    TrialAvatarPlayerData.RewardInfoItem rewardInfo =
-                            trialAvatarPlayerData.getRewardInfoList().get(Integer.parseInt(param) - 1);
-                    rewardInfo.setPassedDungeon(!rewardInfo.isPassedDungeon());
-                    playerData.setDetail(trialAvatarPlayerData);
-                    playerData.save();
-                    CommandHandler.sendMessage(
-                            sender,
-                            translate(
-                                    sender, "commands.trialAvatarActivity.success_dungeon", Integer.parseInt(param)));
-                } else {
-                    if (!param.equals("all")) {
-                        CommandHandler.sendMessage(
-                                sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
-                        return;
-                    }
-                    trialAvatarPlayerData
-                            .getRewardInfoList()
-                            .forEach(r -> r.setPassedDungeon(!r.isPassedDungeon()));
-                    playerData.setDetail(trialAvatarPlayerData);
-                    playerData.save();
-                    CommandHandler.sendMessage(
-                            sender, translate(sender, "commands.trialAvatarActivity.success_dungeon_all"));
-                }
-            }
-            case "togglereward" -> {
-                if (param.chars().allMatch(Character::isDigit)) { // if its number
-                    if (Integer.parseInt(param) - 1 >= trialAvatarPlayerData.getRewardInfoList().size()
-                            || Integer.parseInt(param) - 1 <= 0) {
-                        CommandHandler.sendMessage(
-                                sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
-                        return;
-                    }
-                    TrialAvatarPlayerData.RewardInfoItem rewardInfo =
-                            trialAvatarPlayerData.getRewardInfoList().get(Integer.parseInt(param) - 1);
-                    rewardInfo.setReceivedReward(!rewardInfo.isReceivedReward());
-                    playerData.setDetail(trialAvatarPlayerData);
-                    playerData.save();
-                    CommandHandler.sendMessage(
-                            sender,
-                            translate(
-                                    sender, "commands.trialAvatarActivity.success_reward", Integer.parseInt(param)));
-                } else {
-                    if (!param.toLowerCase().equals("all")) {
-                        CommandHandler.sendMessage(
-                                sender, translate(sender, "commands.trialAvatarActivity.invalid_param"));
-                        return;
-                    }
-                    trialAvatarPlayerData
-                            .getRewardInfoList()
-                            .forEach(r -> r.setReceivedReward(!r.isReceivedReward()));
-                    playerData.setDetail(trialAvatarPlayerData);
-                    playerData.save();
-                    CommandHandler.sendMessage(
-                            sender, translate(sender, "commands.trialAvatarActivity.success_reward_all"));
-                }
-            }
+
+            context.playerData().setDetail(TrialAvatarPlayerData.create(scheduleId));
+            context.playerData().save();
+            CommandOutput.sendMessage(
+                    sender,
+                    translate(sender, "commands.trial.success_schedule", scheduleId));
+            targetPlayer.sendPacket(
+                    new PacketActivityInfoNotify(
+                            context.handler()
+                                    .toProto(
+                                            context.playerData(),
+                                            targetPlayer
+                                                    .getActivityManager()
+                                                    .getConditionExecutor())));
+        }
+    }
+
+    private final class ToggleDungeon extends ActivityCommand {
+        @Parameters(index = "0", paramLabel = "<index|all>")
+        private Selection selection;
+
+        private ToggleDungeon(Player sender, Player targetPlayer) {
+            super(sender, targetPlayer);
         }
 
-        targetPlayer.sendPacket(
-                new PacketActivityInfoNotify(
-                        handler.toProto(playerData, targetPlayer.getActivityManager().getConditionExecutor())));
+        @Override
+        public void run() {
+            Context context = context();
+            if (context == null) {
+                return;
+            }
+            if (selection.all()) {
+                context.detail().getRewardInfoList().forEach(
+                        reward -> reward.setPassedDungeon(!reward.isPassedDungeon()));
+                saveAndNotify(context);
+                CommandOutput.sendMessage(
+                        sender,
+                        translate(sender, "commands.trial.success_dungeon_all"));
+                return;
+            }
+
+            int offset = selection.index() - 1;
+            if (offset < 0 || offset >= context.detail().getRewardInfoList().size()) {
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.trial.invalid_param"));
+                return;
+            }
+            var reward = context.detail().getRewardInfoList().get(offset);
+            reward.setPassedDungeon(!reward.isPassedDungeon());
+            saveAndNotify(context);
+            CommandOutput.sendMessage(
+                    sender,
+                    translate(
+                            sender,
+                            "commands.trial.success_dungeon",
+                            selection.index()));
+        }
+    }
+
+    private final class ToggleReward extends ActivityCommand {
+        @Parameters(index = "0", paramLabel = "<index|all>")
+        private Selection selection;
+
+        private ToggleReward(Player sender, Player targetPlayer) {
+            super(sender, targetPlayer);
+        }
+
+        @Override
+        public void run() {
+            Context context = context();
+            if (context == null) {
+                return;
+            }
+            if (selection.all()) {
+                context.detail().getRewardInfoList().forEach(
+                        reward -> reward.setReceivedReward(!reward.isReceivedReward()));
+                saveAndNotify(context);
+                CommandOutput.sendMessage(
+                        sender,
+                        translate(sender, "commands.trial.success_reward_all"));
+                return;
+            }
+
+            int offset = selection.index() - 1;
+            if (offset < 0 || offset >= context.detail().getRewardInfoList().size()) {
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.trial.invalid_param"));
+                return;
+            }
+            var reward = context.detail().getRewardInfoList().get(offset);
+            reward.setReceivedReward(!reward.isReceivedReward());
+            saveAndNotify(context);
+            CommandOutput.sendMessage(
+                    sender,
+                    translate(
+                            sender,
+                            "commands.trial.success_reward",
+                            selection.index()));
+        }
     }
 }

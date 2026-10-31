@@ -19,7 +19,18 @@ public class HandlerSceneTransToPointReq extends PacketHandler {
         ScenePointEntry scenePointEntry =
                 GameData.getScenePointEntryById(req.getSceneId(), req.getPointId());
 
-        if (scenePointEntry != null) {
+        // Only points the player has unlocked and that no quest has locked again, or a waypoint
+        // active in the dungeon the player is in.
+        var scene = player.getScene();
+        var dungeonManager = scene == null ? null : scene.getDungeonManager();
+        boolean dungeonPoint =
+                dungeonManager != null
+                        && player.getSceneId() == req.getSceneId()
+                        && dungeonManager.isWayPointActive(req.getPointId());
+        if (scenePointEntry != null
+                && (dungeonPoint
+                        || (player.getUnlockedScenePoints(req.getSceneId()).contains(req.getPointId())
+                                && !player.isScenePointForceLocked(req.getSceneId(), req.getPointId())))) {
             if (player
                     .getCurHomeWorld()
                     .isInHome(player)) {

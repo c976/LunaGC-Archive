@@ -380,6 +380,17 @@ public final class Utils {
         return fields;
     }
 
+    /** Runs every task even when an earlier one throws, logging each failure. */
+    public static void runAll(String description, Runnable... tasks) {
+        for (var task : tasks) {
+            try {
+                task.run();
+            } catch (Throwable e) {
+                Grasscutter.getLogger().error("{} failed.", description, e);
+            }
+        }
+    }
+
     public static void sleep(long millis) {
         try {
             Thread.sleep(millis);

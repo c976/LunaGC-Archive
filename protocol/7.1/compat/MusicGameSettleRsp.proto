@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 2272 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message MusicGameSettleRsp {
+  uint32 music_basic_id = 15;
+  int32 retcode = 3;
+  bool is_new_record = 12;
+  bool is_unlock_next_level = 1;
+  uint64 ugc_guid = 8;
+}

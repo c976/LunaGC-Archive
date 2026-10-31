@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 24702. Field numbers recovered from the 7.1 obfuscated dump
+// (weapon_skin_id -> 1, avatar_guid_list -> 6).
+message _AvatarChangeWeaponSkinReq {
+  uint32 weapon_skin_id = 1;
+  repeated uint64 avatar_guid_list = 6;
+}

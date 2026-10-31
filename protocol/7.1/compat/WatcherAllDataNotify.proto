@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 6265 and field number from kitkat-multiverse/genshin-protocol 7.1.0. An official
+// login capture carries every unfinished achievement id (and other watcher ids) in this list.
+message WatcherAllDataNotify {
+  repeated uint32 watcher_list = 15;
+}

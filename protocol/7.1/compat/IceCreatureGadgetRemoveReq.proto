@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 27474 (_IceCreatureGadgetRemoveReq).
+message IceCreatureGadgetRemoveReq {
+  repeated uint32 entity_id_list = 1;
+  uint32 scene_id = 14;
+  bool unk_15 = 15; // [IIMAFOBOEMA]
+}

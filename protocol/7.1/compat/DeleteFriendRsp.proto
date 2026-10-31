@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 7913 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message DeleteFriendRsp {
+  uint32 target_uid = 15;
+  int32 retcode = 11;
+}

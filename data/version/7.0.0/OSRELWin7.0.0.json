@@ -1,0 +1,39 @@
+{
+  "RegionInfo": {
+    "ClientDataMd5": "{\"remoteName\": \"data_versions\", \"md5\": \"446d21867525df922c999c0a78f85e2f\", \"hash\": \"82082d3586a00d49\", \"fileSize\": 71416}",
+    "ClientSilenceDataMd5": "{\"remoteName\": \"data_versions\", \"md5\": \"24c9bf1e9519fa14d9f94c86d940fe4e\", \"hash\": \"495d781584de8a74\", \"fileSize\": 523}",
+    "ResourceUrl": "https://autopatchhk.yuanshen.com/client_game_res/7.0_live",
+    "NextResourceUrl": "https://autopatchhk.yuanshen.com/client_game_res/7.0_live",
+    "ResourceUrlBak": "7.0_live",
+    "ResourceUrlBackup": "",
+    "DataUrl": "https://autopatchhk.yuanshen.com/client_design_data/7.0_live",
+    "DataUrlBackup": "",
+    "NextResVersionConfig": {
+      "Branch": "7.0_live",
+      "Md5": "0",
+      "ReleaseTotalSize": "0",
+      "Relogin": false,
+      "Version": 0
+    },
+    "ResVersionConfig": {
+      "Branch": "7.0_live",
+      "VersionSuffix": "d533609003",
+      "Version": 47805902,
+      "ReleaseTotalSize": "0",
+      "Relogin": false,
+      "Md5": "{\"remoteName\": \"res_versions_remote\", \"md5\": \"e6244beb5b5e1909b7d72a402d629555\", \"hash\": \"64a3eed43a5e6ead\", \"fileSize\": 352308}\n{\"remoteName\": \"res_versions_external\", \"md5\": \"e6244beb5b5e1909b7d72a402d629555\", \"hash\": \"64a3eed43a5e6ead\", \"fileSize\": 352308}\n{\"remoteName\": \"base_revision\", \"md5\": \"0fd60729bb71c4b8199b14e52b34f609\", \"hash\": \"5540bc01b7c21ed2\", \"fileSize\": 19}\n{\"remoteName\": \"res_versions_medium\", \"md5\": \"84d281e3b63fe17ef3d364d6a5d16aad\", \"hash\": \"011120b1592d2afe\", \"fileSize\": 200725}\n{\"remoteName\": \"res_versions_streaming\", \"md5\": \"86616bce14717d09f0dcf98018df42fa\", \"hash\": \"815cb27f9cb412b5\", \"fileSize\": 178328}\n{\"remoteName\": \"patch_node_versions\", \"md5\": \"68e7ccaf6e597498d43faadcd985fd13\", \"hash\": \"5bc57871ce66272c\", \"fileSize\": 6776}"
+    },
+    "GameBiz": "hk4e_global",
+    "AreaType": "OVERSEAS",
+    "ClientDataVersion": 47985349,
+    "ClientSilenceDataVersion": 47829085,
+    "ClientVersionSuffix": "bfcb7e8a62",
+    "ClientSilenceVersionSuffix": "ed32d801a4",
+    "UseGateserverDomainName": false,
+    "GateserverIp": "211.154.22.140",
+    "GateserverPort": 22101,
+    "PrivacyPolicyUrl": "",
+    "CdkeyUrl": ""
+  },
+  "Retcode": 0
+}

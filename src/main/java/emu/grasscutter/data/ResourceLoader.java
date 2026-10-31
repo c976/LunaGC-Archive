@@ -172,7 +172,12 @@ public final class ResourceLoader {
         val simpleName = c.getSimpleName();
         if (doReload || !loadedResources.contains(simpleName)) {
             for (String name : type.name()) {
-                loadFromResource(c, FileUtils.getExcelPath(name), map);
+                var path = FileUtils.getExcelPath(name);
+                if (type.optional() && !java.nio.file.Files.exists(path)) {
+                    Grasscutter.getLogger().debug("Optional resource {} is not present, skipped", name);
+                    continue;
+                }
+                loadFromResource(c, path, map);
             }
             loadedResources.add(simpleName);
         }
@@ -189,12 +194,37 @@ public final class ResourceLoader {
                     default -> null;
                 };
         if (results == null) return;
+
+        val before = map.size();
         results.forEach(
                 o -> {
                     GameResource res = (GameResource) o;
                     res.onLoad();
                     map.put(res.getId(), res);
                 });
+
+        reportCollapse(c, filename.getFileName().toString(), results.size(), map.size() - before);
+    }
+
+    /**
+     * Warns when a table's rows nearly all landed on the same key.
+     *
+     * <p>A row whose id field is spelled differently in the table than in the class reads zero -
+     * quietly, since Gson matches names exactly and has nothing to complain about - so every row
+     * takes the same slot and the map ends up holding one of them. That is how the world areas and
+     * three codex tables each came down to a single entry without anyone noticing. Rows can share a
+     * key legitimately, so this only speaks up when almost all of them do.
+     */
+    private static void reportCollapse(Class<?> c, String filename, int rows, int added) {
+        if (rows < 8 || added > Math.max(2, rows / 8)) return;
+
+        Grasscutter.getLogger()
+                .warn(
+                        "{} kept {} of {} rows from {} - are the id field's name and case right?",
+                        c.getSimpleName(),
+                        added,
+                        rows,
+                        filename);
     }
 
     @SuppressWarnings({"rawtypes", "unchecked"})
@@ -211,10 +241,17 @@ public final class ResourceLoader {
 
     private static void loadGlobalCombatConfig() {
         try {
-            GameData.setConfigGlobalCombat(
-                    JsonUtils.loadToClass(
-                            getResourcePath("BinOutput/Common/ConfigGlobalCombat.json"),
-                            ConfigGlobalCombat.class));
+            var path = getResourcePath("BinOutput/Common/ConfigGlobalCombat.json");
+            var config = JsonUtils.loadToClass(path, ConfigGlobalCombat.class);
+            GameData.setConfigGlobalCombat(config);
+            if (config.isDefaultAbilitiesMissing()) {
+                // A resource dump with re-obfuscated keys: say which keys it has, so the new
+                // name can be added as an alternate.
+                var keys = com.google.gson.JsonParser.parseString(java.nio.file.Files.readString(path))
+                        .getAsJsonObject().keySet();
+                Grasscutter.getLogger()
+                        .error("ConfigGlobalCombat.json has no defaultAbilities; default abilities are empty. Top-level keys: " + keys);
+            }
         } catch (IOException e) {
             Grasscutter.getLogger()
                     .error("Cannot load ConfigGlobalCombat.json, this error is important, fix it!");
@@ -223,9 +260,9 @@ public final class ResourceLoader {
 
     private static void loadScenePoints() {
         val pattern = Pattern.compile("scene([0-9]+)_point\\.json");
-        try {
-            Files.newDirectoryStream(getResourcePath("BinOutput/Scene/Point"), "scene*_point.json")
-                    .forEach(
+        try (val stream =
+                Files.newDirectoryStream(getResourcePath("BinOutput/Scene/Point"), "scene*_point.json")) {
+            stream.forEach(
                             path -> {
                                 val matcher = pattern.matcher(path.getFileName().toString());
                                 if (!matcher.find()) return;
@@ -262,9 +299,9 @@ public final class ResourceLoader {
     }
 
     private static void loadRoutes() {
-        try {
-            Files.newDirectoryStream(getResourcePath("BinOutput/LevelDesign/Routes/"), "*.json")
-                    .forEach(
+        try (val stream =
+                Files.newDirectoryStream(getResourcePath("BinOutput/LevelDesign/Routes/"), "*.json")) {
+            stream.forEach(
                             path -> {
                                 try {
                                     val data = JsonUtils.loadToClass(path, SceneRoutes.class);
@@ -380,7 +417,14 @@ public final class ResourceLoader {
         }
     }
 
+    /**
+     * Abilities whose loaded definition came from {@code BinOutput/Ability/Temp/QuestAbilities/}.
+     * Only a quest may grant these, so they are never merged into an avatar's default embryo.
+     */
+    private static final Set<String> questAbilityNames = ConcurrentHashMap.newKeySet();
+
     private static void loadAbilityModifiers() {
+        questAbilityNames.clear();
 
         try (Stream<Path> paths = Files.walk(getResourcePath("BinOutput/Ability/Temp/"))) {
             paths
@@ -394,12 +438,21 @@ public final class ResourceLoader {
     }
 
     private static void loadAbilityModifiers(Path path) {
+        boolean fromQuestDir = isQuestAbilityPath(path);
         try {
-            JsonUtils.loadToList(path, AbilityConfigData.class)
+            JsonUtils.loadToListLenient(path, AbilityConfigData.class)
                     .forEach(data -> {
                         if (data.Default != null) {
                             data.Default.isDynamicAbility = data.Default.isDynamicAbility || data.isDynamicAbility;
                             loadAbilityData(data.Default);
+                            // Last definition loaded wins in the ability map, so track it the same way.
+                            if (data.Default.abilityName != null) {
+                                if (fromQuestDir) {
+                                    questAbilityNames.add(data.Default.abilityName);
+                                } else {
+                                    questAbilityNames.remove(data.Default.abilityName);
+                                }
+                            }
                         }
                     });
         } catch (IOException e) {
@@ -423,13 +476,23 @@ public final class ResourceLoader {
                 continue;
             }
 
+            // Quest abilities are dynamic too, but only a quest may grant them. Avatar_Columbina_MainQuest
+            // sets a team global value that hides Slot2/Slot5 for every member, so merging it made
+            // Columbina's whole team lose E and Q. The name check alone misses quest abilities without
+            // "Quest" in their name: Avatar_Nahida_BossRush_SpecialArt adds a 30s special raycast that
+            // forced every Nahida E, tapped or held, into an uncancellable hold. So anything loaded from
+            // the QuestAbilities directory is skipped as well.
+            if (isQuestAbility(abilityData.abilityName)) {
+                continue;
+            }
+
             if (abilityData.abilityName.startsWith("Avatar_" + avatarName)) {
                 if (!mergedAbilities.contains(abilityData.abilityName)) {
                     mergedAbilities.add(abilityData.abilityName);
-                    Grasscutter.getLogger().info("Merged dynamic ability " + abilityData.abilityName +
+                    Grasscutter.getLogger().debug("Merged dynamic ability " + abilityData.abilityName +
                             " into embryo for avatar " + avatarName);
                 } else {
-                    Grasscutter.getLogger().info("Dynamic ability " + abilityData.abilityName +
+                    Grasscutter.getLogger().debug("Dynamic ability " + abilityData.abilityName +
                             " already exists in embryo for avatar " + avatarName);
                 }
             }
@@ -444,9 +507,32 @@ public final class ResourceLoader {
     }
 }
 
+    static boolean isQuestAbilityPath(Path path) {
+        for (Path segment : path) {
+            if (segment.toString().equals("QuestAbilities")) return true;
+        }
+        return false;
+    }
+
+    static boolean isQuestAbility(String abilityName) {
+        return abilityName.contains("Quest") || questAbilityNames.contains(abilityName);
+    }
+
     private static void loadAbilityData(AbilityData data) {
+        // An ability config from a dump whose field names are still obfuscated leaves this null.
+        // Skip it rather than let abilityHash NPE and take the whole main thread down with it.
+        if (data.abilityName == null) return;
+
         GameData.getAbilityDataMap().put(data.abilityName, data);
         GameData.getAbilityHashes().put(Utils.abilityHash(data.abilityName), data.abilityName);
+        // Client OVERRIDE/REINIT often keys ability specials by hash only (e.g. CrimsonPlum_LifeCostRatio).
+        if (data.abilitySpecials != null) {
+            for (var specialName : data.abilitySpecials.keySet()) {
+                if (specialName != null && !specialName.isEmpty()) {
+                    GameData.getAbilityHashes().put(Utils.abilityHash(specialName), specialName);
+                }
+            }
+        }
 
         var modifiers = data.modifiers;
         if (modifiers == null || modifiers.size() == 0) return;
@@ -515,7 +601,11 @@ public final class ResourceLoader {
             try (InputStreamReader reader = DataLoader.loadReader(name)) {
 
                 spawnEntryMap.addAll(JsonUtils.loadToList(reader, SpawnGroupEntry.class));
-            } catch (Exception ignored) {
+            } catch (Exception e) {
+                // Swallowing this silently hid the failure completely: the "No spawn data loaded!"
+                // check below passes as long as the other file parsed, so one broken file just
+                // meant its spawns quietly never appeared.
+                Grasscutter.getLogger().error("Error loading spawn data from {}: ", name, e);
             }
         }
 
@@ -581,16 +671,11 @@ public final class ResourceLoader {
 
         if (list == null) {
             Map<String, OpenConfigEntry> map = new TreeMap<>();
-            String[] folderNames = {
-                "BinOutput/Talent/EquipTalents/",
-                "BinOutput/Talent/AvatarTalents/",
-                "BinOutput/Talent/RelicTalents/"
-            };
+            String[] folderNames = {"BinOutput/Talent/EquipTalents/", "BinOutput/Talent/AvatarTalents/"};
 
             for (String folderName : folderNames) {
-                try {
-                    Files.newDirectoryStream(getResourcePath(folderName), "*.json")
-                            .forEach(
+                try (val stream = Files.newDirectoryStream(getResourcePath(folderName), "*.json")) {
+                    stream.forEach(
                                     path -> {
                                         try {
                                             JsonUtils.loadToMap(path, String.class, OpenConfigData[].class)
@@ -661,9 +746,8 @@ public final class ResourceLoader {
     }
 
     public static void loadScriptSceneData() {
-        try {
-            Files.list(getResourcePath("ScriptSceneData/"))
-                    .forEach(
+        try (val stream = Files.list(getResourcePath("ScriptSceneData/"))) {
+            stream.forEach(
                             path -> {
                                 try {
                                     GameData.getScriptSceneDataMap()
@@ -683,10 +767,10 @@ public final class ResourceLoader {
 
     private static void loadHomeworldDefaultSaveData() {
         val pattern = Pattern.compile("scene([0-9]+)_home_config\\.json");
-        try {
-            Files.newDirectoryStream(
-                            getResourcePath("BinOutput/HomeworldDefaultSave"), "scene*_home_config.json")
-                    .forEach(
+        try (val stream =
+                Files.newDirectoryStream(
+                        getResourcePath("BinOutput/HomeworldDefaultSave"), "scene*_home_config.json")) {
+            stream.forEach(
                             path -> {
                                 val matcher = pattern.matcher(path.getFileName().toString());
                                 if (!matcher.find()) return;
@@ -709,9 +793,9 @@ public final class ResourceLoader {
     }
 
     private static void loadNpcBornData() {
-        try {
-            Files.newDirectoryStream(getResourcePath("BinOutput/Scene/SceneNpcBorn/"), "*.json")
-                    .forEach(
+        try (val stream =
+                Files.newDirectoryStream(getResourcePath("BinOutput/Scene/SceneNpcBorn/"), "*.json")) {
+            stream.forEach(
                             path -> {
                                 try {
                                     val data = JsonUtils.loadToClass(path, SceneNpcBornData.class);
@@ -756,10 +840,23 @@ public final class ResourceLoader {
                         }
                     });
 
-            Grasscutter.getLogger()
-                    .debug("Loaded {} {} entries.", GameData.getMonsterConfigData().size(), className);
+            reportConfigLoad(className, folderPath, targetMap.size());
         } catch (IOException e) {
             Grasscutter.getLogger().error("Failed to load {} folder.", className);
+        }
+    }
+
+    /**
+     * A config folder that yields nothing is a resource gap worth hearing about.
+     *
+     * <p>Every newer character's gadget configs were missing for months and nothing said a word -
+     * their summons just stood there with no abilities and no combat state.
+     */
+    private static void reportConfigLoad(String className, String folderPath, int loaded) {
+        if (loaded > 0) {
+            Grasscutter.getLogger().debug("Loaded {} {} entries from {}.", loaded, className, folderPath);
+        } else {
+            Grasscutter.getLogger().warn("No {} entries in {} - is the folder there?", className, folderPath);
         }
     }
 
@@ -770,15 +867,23 @@ public final class ResourceLoader {
             stream.forEach(
                     path -> {
                         try {
-                            targetMap.putAll(JsonUtils.loadToMap(path, String.class, configClass));
+                            // An empty or malformed file parses to null rather than an empty map,
+                            // and putAll(null) is what actually threw - one such file used to be
+                            // reported as a failure of the whole folder's class.
+                            var entries = JsonUtils.loadToMap(path, String.class, configClass);
+                            if (entries == null) {
+                                Grasscutter.getLogger()
+                                        .debug("No {} entries in {}.", className, path.toString());
+                                return;
+                            }
+                            targetMap.putAll(entries);
                         } catch (Exception e) {
                             Grasscutter.getLogger()
                                     .error("failed to load {} entries for {}", className, path.toString(), e);
                         }
                     });
 
-            Grasscutter.getLogger()
-                    .debug("Loaded {} {} entries.", GameData.getMonsterConfigData().size(), className);
+            reportConfigLoad(className, folderPath, targetMap.size());
         } catch (IOException e) {
             Grasscutter.getLogger().error("Failed to load {} folder.", className);
         }
@@ -798,9 +903,9 @@ public final class ResourceLoader {
         val pattern = Pattern.compile("ConfigLevelEntity_(.+?)\\.json");
 
         try {
-            var stream =
+            try (var stream =
                     Files.newDirectoryStream(
-                            getResourcePath("BinOutput/LevelEntity/"), "ConfigLevelEntity_*.json");
+                            getResourcePath("BinOutput/LevelEntity/"), "ConfigLevelEntity_*.json")) {
             stream.forEach(
                     path -> {
                         val matcher = pattern.matcher(path.getFileName().toString());
@@ -815,7 +920,7 @@ public final class ResourceLoader {
                         }
                         GameData.getConfigLevelEntityDataMap().putAll(config);
                     });
-            stream.close();
+            }
         } catch (IOException e) {
             Grasscutter.getLogger().error("Error loading config level entity: no files found");
             return;
@@ -834,8 +939,8 @@ public final class ResourceLoader {
 
         try {
             var bindings = ScriptLoader.getEngine().createBindings();
-            var stream =
-                    Files.newDirectoryStream(getResourcePath("Scripts/Quest/Share/"), "Q*ShareConfig.lua");
+            try (var stream =
+                    Files.newDirectoryStream(getResourcePath("Scripts/Quest/Share/"), "Q*ShareConfig.lua")) {
             stream.forEach(
                     path -> {
                         val matcher = pattern.matcher(path.getFileName().toString());
@@ -871,7 +976,7 @@ public final class ResourceLoader {
                                             "Error while loading Quest Share Config: {}", path.getFileName().toString());
                         }
                     });
-            stream.close();
+            }
         } catch (IOException e) {
             Grasscutter.getLogger().error("Error loading Quest Share Config: no files found");
             return;
@@ -1081,13 +1186,13 @@ public final class ResourceLoader {
     public static class OpenConfigData {
         public String $type;
 
-        @SerializedName(value = "abilityName", alternate = {"BEAFNCHOJGD"})
+        @SerializedName(value = "abilityName", alternate = {"BEAFNCHOJGD", "NCCKLDFFDOH"})
         public String abilityName;
 
-        @SerializedName(value = "varName", alternate = {"AAAENDNEBIG", "paramSpecial"})
+        @SerializedName(value = "varName", alternate = {"AAAENDNEBIG", "paramSpecial", "LDACNDBDKBA"})
         public String varName;
 
-        @SerializedName(value = "varValue", alternate = {"KCHPDCEBCNI", "paramDelta"})
+        @SerializedName(value = "varValue", alternate = {"KCHPDCEBCNI", "paramDelta", "IJFENBIJGLJ"})
         public com.google.gson.JsonElement varValue;
 
         @SerializedName(
@@ -1105,7 +1210,7 @@ public final class ResourceLoader {
                 alternate = {"IGEBKIHPOIF"})
         public int pointDelta;
 
-        @SerializedName(value = "talentParam", alternate = {"FJIKJIDMFNH"})
+        @SerializedName(value = "talentParam", alternate = {"FJIKJIDMFNH", "AAAENHAPNLB"})
         public String talentParam;
     }
 

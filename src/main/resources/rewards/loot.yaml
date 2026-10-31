@@ -1,0 +1,326 @@
+# Reward candidate pools used by the bundled reward CSS.
+# Source authenticity is unresolved; see docs/rewards/source-provenance.md.
+# Historical-reference agreement does not certify original-game reward values.
+# Entries select items and properties; CSS controls when and how often pools run.
+#
+# Known limitations (details in the bundled CSS and source-provenance.md):
+# - Clockwork Mek artifacts reuse Pyro Regisvine pools.
+# - Some regional puzzle-chest pools fall back to combat-chest sources.
+# - Historical-reference regional Mora, EXP and talent-book values cover cities 1-4 only.
+# - Some chest weapon/ore pools remain legacy; weekly Boss rewards are not included.
+# - Boss probabilities include integer approximations; names and payouts need validation.
+#
+# Contents
+# 1. Chest pools: weapons, ingredients, talent books, artifacts
+# 2. World Boss artifacts
+# 3. World Boss ascension gems
+
+# =============================================================================
+# 1. Chest candidate pools
+# =============================================================================
+
+## 1.1 Weapons
+# Individual star tiers use equal candidate weights.
+weapons_1_star: &weapons_1_star
+  - genshin.weapon.dull_blade: 1
+  - genshin.weapon.waster_greatsword: 1
+  - genshin.weapon.beginners_protector: 1
+  - genshin.weapon.apprentices_notes: 1
+  - genshin.weapon.hunters_bow: 1
+
+weapons_2_star: &weapons_2_star
+  - genshin.weapon.silver_sword: 1
+  - genshin.weapon.old_mercs_pal: 1
+  - genshin.weapon.iron_point: 1
+  - genshin.weapon.pocket_grimoire: 1
+  - genshin.weapon.seasoned_hunters_bow: 1
+
+weapons_3_star: &weapons_3_star
+  - genshin.weapon.travelers_handy_sword: 1
+  - genshin.weapon.ferrous_shadow: 1
+  - genshin.weapon.recurve_bow: 1
+  - genshin.weapon.otherworldly_story: 1
+  - genshin.weapon.messenger: 1
+
+# Mixed weapon tiers. Low/medium/high indicate the relative higher-rarity chance.
+weapons_1_to_2_low:
+  - {value: *weapons_1_star, weight: 4}
+  - {value: *weapons_2_star, weight: 1}
+weapons_1_to_2_high:
+  - {value: *weapons_1_star, weight: 1}
+  - {value: *weapons_2_star, weight: 1}
+weapons_2_to_3_low:
+  - {value: *weapons_2_star, weight: 3}
+  - {value: *weapons_3_star, weight: 2}
+weapons_2_to_3_high:
+  - {value: *weapons_2_star, weight: 1}
+  - {value: *weapons_3_star, weight: 3}
+## 1.2 Food ingredients
+meat_ingredients:
+  - genshin.material.raw_meat: 1
+  - genshin.material.fowl: 1
+
+## 1.3 Regional talent books
+# Three equal-weight candidates per roll; CSS specifies each region's families and rarity.
+regional_talent_books<RARITY, ...SERIES>:
+  - type: TalentBook
+    series: "...$SERIES:1"
+    rarity: $RARITY
+
+## 1.4 Native chest artifacts (sourceType 19, cities 1-4)
+# Parameterized candidate sets preserve native rarity and initial substat counts.
+# Slot 1~5 selects uniformly; each mixture retains its source relative weights.
+
+chest_artifact<RARITY, SUBSTATS, ...SETS>:
+  - type: Artifact
+    set: "...$SETS:1"
+    slot: "1~5"
+    rarity: $RARITY
+    substats: $SUBSTATS
+
+# Source-backed mixtures. IDs below identify the original parent drop tables.
+# Uneven weights (including 699) are intentional and must remain unchanged.
+
+# Source parent tables: 51010015, 51010115, 51010215, 52010015, 52010115.
+chest_artifact_mix_01:
+  - "chest_artifact<1,0,adventurer,traveling_doctor>": 9000
+  - "chest_artifact<2,0,adventurer,traveling_doctor>": 900
+  - "chest_artifact<2,1,adventurer,traveling_doctor>": 100
+
+# Source parent tables: 51010315, 51010415, 52010315, 52010415, 53010315.
+chest_artifact_mix_02:
+  - "chest_artifact<1,0,adventurer,traveling_doctor>": 6600
+  - "chest_artifact<2,0,adventurer,traveling_doctor>": 3060
+  - "chest_artifact<2,1,adventurer,traveling_doctor>": 340
+
+# Source parent tables: 51010515, 51010615, 52010515, 52010615, 53010515.
+chest_artifact_mix_03:
+  - "chest_artifact<1,0,adventurer,traveling_doctor>": 3400
+  - "chest_artifact<2,0,adventurer,traveling_doctor>": 5040
+  - "chest_artifact<2,1,adventurer,traveling_doctor>": 560
+  - "chest_artifact<3,1,berserker,instructor,adventurer,traveling_doctor>": 900
+  - "chest_artifact<3,2,berserker,instructor,adventurer,traveling_doctor>": 100
+
+# Source parent tables: 51010715, 52010715, 53010715, 54010715, 55010715.
+chest_artifact_mix_04:
+  - "chest_artifact<2,0,adventurer,traveling_doctor>": 6300
+  - "chest_artifact<2,1,adventurer,traveling_doctor>": 699
+  - "chest_artifact<3,1,berserker,instructor,adventurer,traveling_doctor>": 2700
+  - "chest_artifact<3,2,berserker,instructor,adventurer,traveling_doctor>": 300
+
+# Source parent tables: 51010815, 51010915, 52010815, 52010915, 53010815.
+chest_artifact_mix_05:
+  - "chest_artifact<3,1,berserker,instructor,adventurer,traveling_doctor>": 8100
+  - "chest_artifact<3,2,berserker,instructor,adventurer,traveling_doctor>": 900
+  - "chest_artifact<4,2,berserker,instructor>": 900
+  - "chest_artifact<4,3,berserker,instructor>": 100
+
+# Source parent tables: 51011015, 51011115, 52011015, 52011115, 53011015.
+chest_artifact_mix_06:
+  - "chest_artifact<3,1,berserker,instructor,adventurer,traveling_doctor>": 7200
+  - "chest_artifact<3,2,berserker,instructor,adventurer,traveling_doctor>": 800
+  - "chest_artifact<4,2,berserker,instructor>": 1800
+  - "chest_artifact<4,3,berserker,instructor>": 200
+
+# Source parent tables: 51020015, 51020115, 51020215, 52020015, 52020115.
+chest_artifact_mix_07:
+  - "chest_artifact<1,0,lucky_dog,traveling_doctor>": 9000
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 900
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 100
+
+# Source parent tables: 51020315, 51020415, 52020315, 52020415.
+chest_artifact_mix_08:
+  - "chest_artifact<1,0,lucky_dog,traveling_doctor>": 6600
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 3060
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 340
+
+# Source parent tables: 51020515, 51020615, 52020515, 52020615.
+chest_artifact_mix_09:
+  - "chest_artifact<1,0,lucky_dog,traveling_doctor>": 3400
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 5040
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 560
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 900
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 100
+
+# Source parent tables: 51020715, 52020715.
+chest_artifact_mix_10:
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 6300
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 699
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 2700
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 300
+
+# Source parent tables: 51020815, 51020915, 52020815, 52020915.
+chest_artifact_mix_11:
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 8100
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 900
+  - "chest_artifact<4,2,berserker,the_exile>": 900
+  - "chest_artifact<4,3,berserker,the_exile>": 100
+
+# Source parent tables: 51021015, 51021115, 52021015, 52021115.
+chest_artifact_mix_12:
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 7200
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 800
+  - "chest_artifact<4,2,berserker,the_exile>": 1800
+  - "chest_artifact<4,3,berserker,the_exile>": 200
+
+# Source parent tables: 51030015, 52030015.
+chest_artifact_mix_13:
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 6300
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 699
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 2700
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 300
+
+# Source parent tables: 51032015, 52032015.
+chest_artifact_mix_14:
+  - "chest_artifact<2,0,lucky_dog,traveling_doctor>": 3060
+  - "chest_artifact<2,1,lucky_dog,traveling_doctor>": 340
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 5940
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 660
+
+# Source parent tables: 51033015, 52033015.
+chest_artifact_mix_15:
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 8100
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 900
+  - "chest_artifact<4,2,berserker,the_exile>": 900
+  - "chest_artifact<4,3,berserker,the_exile>": 100
+
+# Source parent tables: 51034015, 52034015.
+chest_artifact_mix_16:
+  - "chest_artifact<3,1,berserker,the_exile,lucky_dog,traveling_doctor>": 7200
+  - "chest_artifact<3,2,berserker,the_exile,lucky_dog,traveling_doctor>": 800
+  - "chest_artifact<4,2,berserker,the_exile>": 1800
+  - "chest_artifact<4,3,berserker,the_exile>": 200
+
+# Source parent tables: 51040015, 52040015.
+chest_artifact_mix_17:
+  - "chest_artifact<2,0,adventurer,lucky_dog>": 6300
+  - "chest_artifact<2,1,adventurer,lucky_dog>": 699
+  - "chest_artifact<3,1,instructor,the_exile,adventurer,lucky_dog>": 2700
+  - "chest_artifact<3,2,instructor,the_exile,adventurer,lucky_dog>": 300
+
+# Source parent tables: 51042015, 52042015.
+chest_artifact_mix_18:
+  - "chest_artifact<2,0,adventurer,lucky_dog>": 3060
+  - "chest_artifact<2,1,adventurer,lucky_dog>": 340
+  - "chest_artifact<3,1,instructor,the_exile,adventurer,lucky_dog>": 5940
+  - "chest_artifact<3,2,instructor,the_exile,adventurer,lucky_dog>": 660
+
+# Source parent tables: 51043015, 52043015.
+chest_artifact_mix_19:
+  - "chest_artifact<3,1,instructor,the_exile,adventurer,lucky_dog>": 8100
+  - "chest_artifact<3,2,instructor,the_exile,adventurer,lucky_dog>": 900
+  - "chest_artifact<4,2,instructor,the_exile>": 900
+  - "chest_artifact<4,3,instructor,the_exile>": 100
+
+# Source parent tables: 51044015, 52044015.
+chest_artifact_mix_20:
+  - "chest_artifact<3,1,instructor,the_exile,adventurer,lucky_dog>": 7200
+  - "chest_artifact<3,2,instructor,the_exile,adventurer,lucky_dog>": 800
+  - "chest_artifact<4,2,instructor,the_exile>": 1800
+  - "chest_artifact<4,3,instructor,the_exile>": 200
+
+# =============================================================================
+# 2. World Boss artifacts
+# =============================================================================
+# CSS maps 48 Boss identities to these templates. Clockwork Mek borrows
+# Pyro Regisvine artifact pools until its native data is available.
+# Set names are parameters; omitted slots sample the native pieces available
+# for each set (the Prayers circlets have no other pieces).
+# Rarity, substats, and weights remain explicit; special 5-star slots stay fixed.
+
+world_artifact_1star<...SETS>:
+  - type: Artifact
+    set: "...$SETS:1"
+    rarity: 1
+    substats: 0
+
+world_artifact_2star<...SETS>:
+  - type: Artifact
+    set: "...$SETS:1"
+    rarity: 2
+    substats: "0:66, 1:34"
+
+world_artifact_3star<...SETS>:
+  - type: Artifact
+    set: "...$SETS:1"
+    rarity: 3
+    substats: "1:66, 2:34"
+
+world_artifact_4star<...SETS>:
+  - type: Artifact
+    set: "...$SETS:1"
+    rarity: 4
+    substats: "2:66, 3:34"
+
+# Ordinary five-star sets choose a set and an available native slot.
+world_artifact_5star:
+  - type: Artifact
+    set: "gladiators_finale:1, wanderers_troupe:1"
+    rarity: 5
+    substats: "3:66, 4:34"
+
+# Special native rows link plume/goblet choice with initial substats.
+# 17:33 is equivalent to the 34:66 zero-substat variant.
+world_artifact_5star_plume_goblet<PLUME_SUBSTATS, GOBLET_SUBSTATS>:
+  - type: Artifact
+    set: instructor
+    slot: plume
+    rarity: 5
+    substats: $PLUME_SUBSTATS
+    weight: 17
+  - type: Artifact
+    set: instructor
+    slot: goblet
+    rarity: 5
+    substats: $GOBLET_SUBSTATS
+    weight: 33
+
+# One explicitly fixed native piece.
+world_artifact_5star_goblet<SUBSTATS>:
+  - type: Artifact
+    set: instructor
+    slot: goblet
+    rarity: 5
+    substats: $SUBSTATS
+
+# =============================================================================
+# 3. World Boss ascension gems
+# =============================================================================
+# Weighted gem candidates by level range and element count.
+# CSS controls pool execution counts and fixed rewards independently.
+# Template arguments select elements; item counts and candidate weights are unchanged.
+
+# 3.1 Common gem profiles
+# The element and rarity fields select one native gem before count is applied.
+# Each element carries equal weight. CSS controls independent pool executions.
+
+world_gem_one<...ELEMENTS>:
+  - type: Gem
+    element: "...$ELEMENTS:1"
+    rarity: 2
+    count: 3
+
+world_gem_two<COUNT, ...ELEMENTS>:
+  - type: Gem
+    element: "...$ELEMENTS:1"
+    rarity: "2:79, 3:21"
+    count: $COUNT
+
+world_gem_three<COUNT, ...ELEMENTS>:
+  - type: Gem
+    element: "...$ELEMENTS:1"
+    rarity: "2:75, 3:20, 4:5"
+    count: $COUNT
+
+world_gem_four<COUNT, ...ELEMENTS>:
+  - type: Gem
+    element: "...$ELEMENTS:1"
+    rarity: "2:150, 3:40, 4:10, 5:1"
+    count: $COUNT
+
+# 3.2 Additional independent fragment rolls
+world_gem_fragment<COUNT, ...ELEMENTS>:
+  - type: Gem
+    element: "...$ELEMENTS:1"
+    rarity: 3
+    count: $COUNT

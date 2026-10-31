@@ -77,11 +77,17 @@ public class DropSystemLegacy extends BaseGameSystem {
             if (itemData == null) {
                 return;
             }
-            if (itemData.isEquip()) {
+            if (itemData.isEquip()
+                    || itemData.getId() == 100061
+                    || itemData.getId() == 100064
+                    || itemData.getId() == 100086
+                    || itemData.getId() == 100087
+                    || itemData.getId() == 100094
+                    || itemData.getId() == 100097) {
                 for (int i = 0; i < num; i++) {
                     float range = (2.5f + (.05f * num));
                     Position pos = em.getPosition().nearby2d(range).addY(3f);
-                    addDropEntity(dd, em.getScene(), itemData, pos, num, gp);
+                    addDropEntity(dd, em.getScene(), itemData, pos, 1, gp);
                 }
             } else {
                 Position pos = em.getPosition().clone().addY(3f);

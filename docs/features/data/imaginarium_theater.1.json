@@ -1,0 +1,223 @@
+{
+    "avatarConfig": {
+        "bonusAvatars": [
+            {
+                "avatarId": 10000096,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            },
+            {
+                "avatarId": 10000050,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            },
+            {
+                "avatarId": 10000098,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            },
+            {
+                "avatarId": 10000065,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            },
+            {
+                "avatarId": 10000075,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            },
+            {
+                "avatarId": 10000076,
+                "description": "<color=#f39001>After the above characters join your party, Max HP, ATK, and DEF are increased by 20%.</color>"
+            }
+        ],
+        "elementRestrictions": [
+            2,
+            5,
+            7,
+            0
+        ],
+        "featuredAvatars": [
+            10000082,
+            10000095,
+            10000078,
+            10000086
+        ]
+    },
+    "beginTime": "2023-03-01 04:00:00",
+    "difficultyConfig": {
+        "1": {
+            "hardRooms": {
+            },
+            "invitePoolBonus": 0,
+            "invitePoolSize": 4,
+            "minAvatarLevel": 60,
+            "roomCount": 3,
+            "rooms": {
+                "1": {
+                    "monsterLevel": 74
+                },
+                "2": {
+                    "monsterLevel": 74
+                },
+                "3": {
+                    "bossDescription": "An evolved Fungus. When it is hit by <color=#f39001>Electro attacks</color> and Catalyze reactions, it will accumulate Activation. When it is hit by <color=#f39001>Pyro attacks</color>, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an <color=#f39001>Activated state</color>. An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted. When it is not Activated, the Jadeplume Terrorshroom can be put into a Burning state via the use of <color=#f39001>Pyro</color>, which will cause it to become Scorched. It will then spread spores around to create Fungi in an attempt to escape this status.",
+                    "bossName": "Jadeplume Terrorshroom",
+                    "monsterLevel": 79,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_Fungus_Raptor",
+                            "monsterId": 26110101,
+                            "name": "Jadeplume Terrorshroom"
+                        }
+                    ]
+                }
+            }
+        },
+        "2": {
+            "hardRooms": {
+            },
+            "invitePoolBonus": 0,
+            "invitePoolSize": 8,
+            "minAvatarLevel": 60,
+            "roomCount": 6,
+            "rooms": {
+                "1": {
+                    "monsterLevel": 79
+                },
+                "2": {
+                    "monsterLevel": 79
+                },
+                "3": {
+                    "bossDescription": "An evolved Fungus. When it is hit by <color=#f39001>Electro attacks</color> and Catalyze reactions, it will accumulate Activation. When it is hit by <color=#f39001>Pyro attacks</color>, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an <color=#f39001>Activated state</color>. An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted. When it is not Activated, the Jadeplume Terrorshroom can be put into a Burning state via the use of <color=#f39001>Pyro</color>, which will cause it to become Scorched. It will then spread spores around to create Fungi in an attempt to escape this status.",
+                    "bossName": "Jadeplume Terrorshroom",
+                    "monsterLevel": 84,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_Fungus_Raptor",
+                            "monsterId": 26110101,
+                            "name": "Jadeplume Terrorshroom"
+                        }
+                    ]
+                },
+                "4": {
+                    "monsterLevel": 84
+                },
+                "5": {
+                    "monsterLevel": 84
+                },
+                "6": {
+                    "bossDescription": "A predator that lies in wait within the pitch-dark watery depths. It appears to have adapted to some unknown power out in the deep seas, such that it can use elements other than Hydro... When it faces strong foes, it will use its powerful Cleansing Shower. Characters hit by this attack will <color=#f39001>lose a certain amount of Elemental Energy</color>. If they do not have sufficient Elemental Energy, they will <color=#f39001>lose HP</color>.",
+                    "bossName": "Bathysmal Vishap Herd",
+                    "monsterLevel": 89,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_Drake_Deepsea_Ice",
+                            "monsterId": 26050701,
+                            "name": "Rimebiter Bathysmal Vishap"
+                        },
+                        {
+                            "icon": "UI_MonsterIcon_Drake_Deepsea_Electric",
+                            "monsterId": 26050801,
+                            "name": "Bolteater Bathysmal Vishap"
+                        }
+                    ]
+                }
+            }
+        },
+        "3": {
+            "hardRooms": {
+            },
+            "invitePoolBonus": 0,
+            "invitePoolSize": 12,
+            "minAvatarLevel": 70,
+            "roomCount": 8,
+            "rooms": {
+                "1": {
+                    "monsterLevel": 84
+                },
+                "2": {
+                    "monsterLevel": 84
+                },
+                "3": {
+                    "bossDescription": "An evolved Fungus. When it is hit by <color=#f39001>Electro attacks</color> and Catalyze reactions, it will accumulate Activation. When it is hit by <color=#f39001>Pyro attacks</color>, it will lose Activation progress. When it accumulates sufficient Activation, it will enter an <color=#f39001>Activated state</color>. An activated Jadeplume Terrorshroom will unleash more fearsome attacks until it becomes exhausted. When it is not Activated, the Jadeplume Terrorshroom can be put into a Burning state via the use of <color=#f39001>Pyro</color>, which will cause it to become Scorched. It will then spread spores around to create Fungi in an attempt to escape this status.",
+                    "bossName": "Jadeplume Terrorshroom",
+                    "monsterLevel": 89,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_Fungus_Raptor",
+                            "monsterId": 26110101,
+                            "name": "Jadeplume Terrorshroom"
+                        }
+                    ]
+                },
+                "4": {
+                    "monsterLevel": 89
+                },
+                "5": {
+                    "monsterLevel": 89
+                },
+                "6": {
+                    "bossDescription": "A predator that lies in wait within the pitch-dark watery depths. It appears to have adapted to some unknown power out in the deep seas, such that it can use elements other than Hydro... When it faces strong foes, it will use its powerful Cleansing Shower. Characters hit by this attack will <color=#f39001>lose a certain amount of Elemental Energy</color>. If they do not have sufficient Elemental Energy, they will <color=#f39001>lose HP</color>.",
+                    "bossName": "Bathysmal Vishap Herd",
+                    "monsterLevel": 91,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_Drake_Deepsea_Ice",
+                            "monsterId": 26050701,
+                            "name": "Rimebiter Bathysmal Vishap"
+                        },
+                        {
+                            "icon": "UI_MonsterIcon_Drake_Deepsea_Electric",
+                            "monsterId": 26050801,
+                            "name": "Bolteater Bathysmal Vishap"
+                        }
+                    ]
+                },
+                "7": {
+                    "monsterLevel": 91
+                },
+                "8": {
+                    "bossDescription": "Nemesis of Coppelius: the main lead here is the clockwork meka Coppelius. At the climax of the performance, Coppelius will halt at the center of the dance floor and expose his artificed clockwork component charged with <color=#f39001>pneuma</color>, thereby drastically increasing the efficiency of his exertions, granting him a Ward, and generating three retributive Frosthearts. During this phase, using <color=#f39001>ousia-imbued attacks</color> will effectively break his Ward and overload him, thus progressing the performance.",
+                    "bossName": "\"Icewind Suite\"",
+                    "monsterLevel": 94,
+                    "monsters": [
+                        {
+                            "icon": "UI_MonsterIcon_MachinaIustitia_Nutcracker",
+                            "monsterId": 0,
+                            "name": "Icewind Suite: Nemesis of Coppelius"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "endTime": "2023-04-23 13:59:59",
+    "shopItems": [
+        {
+            "characterId": 10000012,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Upbeat Encouragement"
+        },
+        {
+            "characterId": 10000021,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Elegant Countenance"
+        },
+        {
+            "characterId": 10000052,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Ready for Battle"
+        },
+        {
+            "characterId": 10000066,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Solemn Countenance"
+        },
+        {
+            "characterId": 10000004,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Leisure Time"
+        },
+        {
+            "characterId": 10000022,
+            "description": "Obtained from the Imaginarium Theater",
+            "name": "Leisure Time"
+        }
+    ]
+}

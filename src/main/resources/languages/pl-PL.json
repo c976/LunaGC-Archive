@@ -114,6 +114,13 @@
       "need_target_online": "Ta komenda wymaga ID gracza, który jest online, ale bieżący gracz docelowy jest w trybie offline. Dodaj inny argument <@ID> lub ustaw ID gracza na stałe dla każdej kolejnej komendy poleceniem \"set_target @ID\".",
       "need_target_offline": "Ta komenda wymaga ID gracza, który jest offline, ale bieżący gracz docelowy jest w trybie online. Dodaj inny argument <@ID> lub ustaw ID gracza na stałe dla każdej kolejnej komendy poleceniem \"set_target @ID\"."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "Włączone",
       "disabled": "Wyłączone",
@@ -174,6 +181,12 @@
       "description": "🇺🇸Modify an existing entity's properties",
       "not_found_error": "🇺🇸Entity does not exist"
     },
+    "avatar": {
+      "description": "Zarządzaj postaciami: lista, konstelacje, talenty, statystyki walki, przyjaźń, dodatkowe poziomy i maksymalny rozwój."
+    },
+    "battlepass": {
+      "description": "Zarządzaj zakupem poziomów przepustki bojowej i statusem premium."
+    },
     "give": {
       "usage_relic": "give <ID reliktu> [ID pierwszego przedmiotu] [<ID drugiego przedmiotu>[, <ile razy je połączyć>]]... [lv<poziom od 0 do 20>]",
       "illegal_relic": "Ten ID reliktu znajduje się na czarnej liście i może być nie tym, czego szukasz.",
@@ -217,7 +230,7 @@
       "language_not_found": "Nie znaleziono języka o kodzie \"%s\".",
       "description": "Pokaż lub zmień bieżący kod języka."
     },
-    "list": {
+    "player": {
       "success": "%s graczy online:",
       "description": "Pokaż ile jest graczy na serwerze."
     },
@@ -233,11 +246,25 @@
       "success": "Koordynaty: (%s, %s, %s).\nKrążyć：%s, %s, %s\nID sceny: %s.",
       "description": "Pobiera informacje o pozycji i obrocie"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "Zadanie %s zostało dodane.",
       "finished": "Zadanie %s zostało zakończone.",
       "not_found": "Nie ma zadania o podanym ID.",
       "invalid_id": "Błędny format ID zadania.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "Dodaj lub wykonaj wskazane zadanie.",
       "running": "🇺🇸Quest %s is %s (%s).",
       "talking": "🇺🇸Talk %s is %s for main quest %s (%s).",
@@ -263,7 +290,10 @@
       "description": "Odtwarza przerywnik filmowy"
     },
     "sound": {
-      "description": "🇺🇸Plays a sound"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "Ponowne ładowanie konfiguracji...",
@@ -302,9 +332,13 @@
       "error": "BŁĄD: niepoprawny etap konstrukcji: %s.",
       "description": "Wyślij wiadomość wraz z przedmiotami do wybranego lub wszystkich graczy."
     },
-    "sendMessage": {
+    "say": {
       "success": "Wiadomość wysłana.",
-      "description": "Wyślij wiadomość do gracza jako serwer. Jeśli nie określono celu, wysyła do wszystkich graczy na serwerze."
+      "description": "Wyślij wiadomość serwera do wszystkich graczy online."
+    },
+    "sayto": {
+      "success": "Wiadomość wysłana.",
+      "description": "Wyślij wiadomość serwera do wybranego gracza online."
     },
     "setConst": {
       "range_error": "Poziom konstelacji musi wynosić pomiędzy 0 a 6.",
@@ -321,8 +355,11 @@
       "level_error": "Błędny poziom przyjaźni.",
       "description": "Ustaw poziom przyjaźni obecnej postaci."
     },
-    "setProp": {
-      "description": "Ustaw pewne własności konta, takie jak tryb nieśmiertelności (godmode) czy też zmiana postępu Battle Pass.\n\tMożliwe nazwy własności: godmode | nostamina | unlimitedenergy | abyss | worldlevel | bplevel | ...\n\tTa komenda ma więcej nazw własności, które może otrzymać. Możesz je wszystkie zobaczyć w pliku \"game/props/PlayerProperty.java\".\n\tW tym pliku, przyjmują one formę \"PROP_XXX_YYY_ZZZ\", ale powinieneś je zapisywać jako \"xxx_yyy_zzz\" jeśli chcesz je użyć w tej komendzie."
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "Ustaw pewne własności konta, takie jak tryb nieśmiertelności (godmode) czy też zmiana postępu Battle Pass. Use `unlock map` for map unlocks and `openstate` for OpenStates."
     },
     "setSceneTag": {
       "description": "Ustawia znaczniki sceny specyficzne dla konta. Kontroluje to takie rzeczy jak skały blokujące drzwi, widoczne budynki i inne (zwykle związane z zadaniami) rzeczy, które wpływają na to, co jest widoczne w twoim świecie."
@@ -368,6 +405,20 @@
       "avatar_not_found": "Awatar o ID \"%d\" nie istnieje.",
       "description": "Modyfikuj zespół wybranego gracza."
     },
+    "teapot": {
+      "description": "Manipuluj funkcjami garnka Serenitea. \n\tWartości dla setLevel<1-10> \n\tWartości dla unlockModule<1-4> \n\tWartości dla lockModule<1-4> \n\tWartości dla giveAllFurniture<liczba> \n\tWartości dla odświeżeniaLimitedShop<brak >",
+      "level_range_error": "Poziom puli Serenitea musi wynosić od 1 do 10.",
+      "level_success": "Poziom puli Serenitea ustawiony na %s.",
+      "invalid_param": "Niewłaściwy parametr.",
+      "module_sumeru_error": "Moduł Sumeru nie jest obecnie obsługiwany.",
+      "module_range_error": "Numer modułu musi zawierać się w przedziale od 1 do 4.",
+      "unlock_module_contain_error": "Moduł już odblokowany.",
+      "unlock_module_success": "Odblokowany moduł %s.",
+      "lock_module_in_scene_error": "Nie można zablokować aktywnego modułu.",
+      "lock_module_contain_error": "Moduł nie istnieje.",
+      "lock_module_success": "Zablokowany moduł %s.",
+      "give_furniture_success": "Dał wszystkie meble."
+    },
     "teleportAll": {
       "success": "Przyzwano wszystkich graczy do wybranego gracza.",
       "error": "Możesz użyć tej komendy wyłącznie w trybie MP.",
@@ -379,7 +430,7 @@
       "success": "Gracz %s został przeniesiony do pozycji (%s, %s, %s) w scenie o ID %s.",
       "description": "Przemieść wybranego gracza do podanej pozycji w podanej scenie."
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "Manipuluj funkcjami Trial Avatar Activity. Obejmuje to przełączanie stanów lochów i nagród.",
       "not_found": "Nie znaleziono danych gracza o aktywności awatara w wersji próbnej. Być może aktywność nie jest włączona.",
       "invalid_param": "Niewłaściwy parametr.",
@@ -399,7 +450,7 @@
       "success": "Pomyślnie zbanowano podanego gracza.",
       "failure": "Gracz o podanym ID nie istnieje.",
       "invalid_time": "Nieprawidłowy czas bana.",
-      "description": "Zbanuj podanego gracza."
+      "description": "Zbanuj konto lub adres IPv4."
     },
     "unlockall": {
       "success": "Odblokowano wszystkie stany dla %s.",
@@ -471,6 +522,12 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

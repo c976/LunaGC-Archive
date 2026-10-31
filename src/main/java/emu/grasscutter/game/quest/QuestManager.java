@@ -32,10 +32,11 @@ public final class QuestManager extends BasePlayerManager {
     private long lastHourCheck = 0;
     private long lastDayCheck = 0;
 
+    // One thread, not four: quest events mutate shared quest state and racing them corrupted it.
     public static final ExecutorService eventExecutor =
             new ThreadPoolExecutor(
-                    4,
-                    4,
+                    1,
+                    1,
                     60,
                     TimeUnit.SECONDS,
                     new LinkedBlockingDeque<>(1000),
@@ -84,6 +85,21 @@ public final class QuestManager extends BasePlayerManager {
                             // Used for debugging giving items.
                             ));
         }
+    }
+
+    /**
+     * Whether quests actually run: questing on and big-world scripts on. What the client is shown
+     * has to follow this too - an unfinished quest sent while quests cannot progress sits in the
+     * tracker forever, with a "return to quest point" button for its far-away step.
+     */
+    public static boolean isQuestingActive() {
+        return SERVER.game.enableScriptInBigWorld && GAME_OPTIONS.questing.enabled;
+    }
+
+    /** Whether this quest is shown to the client: questing is on, or its line was added by command. */
+    public static boolean isQuestVisible(GameQuest quest) {
+        return isQuestingActive()
+                || (quest != null && quest.getMainQuest() != null && quest.getMainQuest().isAddedByCommand());
     }
 
     /** Checks if questing can be enabled. */
@@ -221,16 +237,116 @@ public final class QuestManager extends BasePlayerManager {
         this.player.sendPacket(new PacketGivingRecordNotify(this.getGivingRecords()));
     }
 
-    public void onLogin() {
+    /** The prologue, where the Archon Quest chain begins. */
+    private static final int FIRST_MAIN_QUEST = 351;
+
+    /**
+     * Hands a player created just now the quests that have no prerequisite, and the prologue.
+     * Nothing else starts either: with triggerAllOnLogin off, a new account otherwise arrives with
+     * an empty quest log. Called once, before the first onLogin.
+     */
+    public void onPlayerBorn() {
         if (this.isQuestingEnabled()) {
             this.enableQuests();
+            this.startMainQuestIfUnlinked(FIRST_MAIN_QUEST);
+        }
+    }
+
+    /**
+     * Whether a main quest's opening sub quest waits only on "quest 0 is finished".
+     *
+     * <p>The 7.1 resources carry that where the real prerequisite between main quests was lost:
+     * inside a main quest every sub quest waits on the one before it, but the first waits on quest
+     * 0, which no player can finish. Such a main quest has to be started by hand, from the quest
+     * that suggests it next.
+     */
+    static boolean opensUnlinked(int mainQuestId) {
+        var mainQuestData = GameData.getMainQuestDataMap().get(mainQuestId);
+        if (mainQuestData == null || mainQuestData.getSubQuests() == null) return false;
+
+        var first =
+                Arrays.stream(mainQuestData.getSubQuests())
+                        .min(Comparator.comparingInt(MainQuestData.SubQuestData::getOrder))
+                        .map(sub -> GameData.getQuestDataMap().get(sub.getSubId()))
+                        .orElse(null);
+        if (first == null || first.getAcceptCond() == null || first.getAcceptCond().size() != 1) {
+            return false;
+        }
+
+        var cond = first.getAcceptCond().get(0);
+        return cond.getType() == QuestCond.QUEST_COND_STATE_EQUAL
+                && cond.getParam() != null
+                && cond.getParam().length >= 2
+                && cond.getParam()[0] == 0
+                && cond.getParam()[1] == QuestState.QUEST_STATE_FINISHED.getValue();
+    }
+
+    static boolean canResumeUnlinkedParent(GameMainQuest existing) {
+        if (existing == null) return true;
+        if (existing.isFinished()
+                || existing.getState() == ParentQuestState.PARENT_QUEST_STATE_FINISHED) {
+            return false;
+        }
+
+        return existing.getChildQuests().values().stream()
+                .allMatch(q -> q.getState() == QuestState.QUEST_STATE_UNSTARTED);
+    }
+
+    boolean canStartMainQuestIfUnlinked(int mainQuestId) {
+        return opensUnlinked(mainQuestId)
+                && canResumeUnlinkedParent(this.getMainQuestById(mainQuestId));
+    }
+
+    /** Starts a main quest whose opening can never be met on its own, unless it already began. */
+    public void startMainQuestIfUnlinked(int mainQuestId) {
+        if (!canStartMainQuestIfUnlinked(mainQuestId)) return;
+
+        Grasscutter.getLogger().debug("Starting main quest {} for uid {}", mainQuestId, player.getUid());
+        this.startMainQuest(mainQuestId);
+    }
+
+    void resumeMainQuestHandoffs() {
+        this.getMainQuests().values().stream()
+                .filter(q -> q.isFinished()
+                        || q.getState() == ParentQuestState.PARENT_QUEST_STATE_FINISHED)
+                .toList()
+                .forEach(
+                        q -> {
+                            try {
+                                q.tryStartFollowingQuests();
+                            } catch (RuntimeException e) {
+                                Grasscutter.getLogger()
+                                        .error(
+                                                "Could not resume main quest handoff: uid={} main={}",
+                                                player.getUid(),
+                                                q.getParentQuestId(),
+                                                e);
+                            }
+                        });
+    }
+
+    /**
+     * Called once the player's activity manager exists, after {@link #onLogin}: the next chapter's
+     * entry after Liyue Act IV is gated on an activity having ended, and checking it earlier hit a
+     * null activity manager.
+     */
+    public void onActivitiesReady() {
+        if (isQuestingActive()) eventExecutor.submit(() -> LiyueActFourEntrySupport.resumeNextChapter(this));
+    }
+
+    public void onLogin() {
+        if (this.isQuestingEnabled()) {
+            // The sweep is what fills a fresh quest log at login; see questing.triggerAllOnLogin.
+            if (GAME_OPTIONS.questing.triggerAllOnLogin) {
+                this.enableQuests();
+            }
             this.sendGivingRecords();
         }
 
         List<GameMainQuest> activeQuests = getActiveMainQuests();
         List<GameQuest> activeSubs = new ArrayList<>(activeQuests.size());
         for (GameMainQuest quest : activeQuests) {
-            List<Position> rewindPos = quest.rewind(); // <pos, rotation>
+            List<Position> rewindPos = quest.resumeOnLogin(); // <pos, rotation>
             var activeQuest = quest.getActiveQuests();
             if (rewindPos != null) {
                 getPlayer().getPosition().set(rewindPos.get(0));
@@ -241,6 +357,13 @@ public final class QuestManager extends BasePlayerManager {
                 // player.sendPacket(new PacketQuestProgressUpdateNotify(activeQuest));
             }
             quest.checkProgress();
+        }
+
+        if (isQuestingActive()) {
+            this.resumeMainQuestHandoffs();
+            eventExecutor.submit(() -> LiyueDainsleifEntrySupport.resumeOnLogin(this));
+            eventExecutor.submit(() -> MondstadtStoryQuestSupport.resumeOnLogin(this));
+            // The next chapter after Liyue Act IV waits for onActivitiesReady.
         }
 
         if (this.player.getActivityManager() != null)
@@ -435,12 +558,26 @@ public final class QuestManager extends BasePlayerManager {
     }
 
     public GameQuest addQuest(@Nonnull QuestData questConfig) {
+        return this.addQuest(questConfig, false);
+    }
+
+    /** Adds a quest; {@code byCommand} keeps its quest line visible while questing is off. */
+    public GameQuest addQuestByCommand(int questId) {
+        var questConfig = GameData.getQuestDataMap().get(questId);
+        return questConfig == null ? null : this.addQuest(questConfig, true);
+    }
+
+    private GameQuest addQuest(@Nonnull QuestData questConfig, boolean byCommand) {
         // Main quest
         var mainQuest = this.getMainQuestById(questConfig.getMainId());
 
         // Create main quest if it doesnt exist
         if (mainQuest == null) {
             mainQuest = addMainQuest(questConfig);
+        }
+        if (byCommand && !mainQuest.isAddedByCommand()) {
+            mainQuest.setAddedByCommand(true);
+            mainQuest.save();
         }
 
         // Sub quest
@@ -491,6 +628,8 @@ public final class QuestManager extends BasePlayerManager {
 
     public void triggerEvent(QuestCond condType, String paramStr, int... params) {
         Grasscutter.getLogger().trace("Trigger Event {}, {}, {}", condType, paramStr, params);
+        MondstadtStoryQuestSupport.onConditionEvent(this, condType, params);
+        LiyueActFourEntrySupport.onConditionEvent(this, condType, params);
         var potentialQuests = GameData.getQuestDataByConditions(condType, params[0], paramStr);
         if (potentialQuests == null) {
             return;
@@ -508,10 +647,20 @@ public final class QuestManager extends BasePlayerManager {
                     acceptProgressLists.putIfAbsent(questData.getId(), new int[acceptCond.size()]);
                     for (int i = 0; i < acceptCond.size(); i++) {
                         val condition = acceptCond.get(i);
-                        if (condition.getType() == condType) {
+                        // Quest-state conditions are live gates. An earlier NOT_EQUAL
+                        // may become false before the other prerequisite finishes.
+                        boolean liveQuestState =
+                                condition.getType() == QuestCond.QUEST_COND_STATE_EQUAL
+                                        || condition.getType() == QuestCond.QUEST_COND_STATE_NOT_EQUAL;
+                        if (condition.getType() == condType || liveQuestState) {
                             boolean result =
                                     questSystem.triggerCondition(owner, questData, condition, paramStr, params);
-                            acceptProgressLists.get(questData.getId())[i] = result ? 1 : 0;
+                            int[] progress = acceptProgressLists.get(questData.getId());
+                            if (liveQuestState) {
+                                QuestProgress.recordCurrent(progress, i, result);
+                            } else {
+                                QuestProgress.recordMatch(progress, i, result);
+                            }
                         }
                     }
 
@@ -548,6 +697,7 @@ public final class QuestManager extends BasePlayerManager {
                         Grasscutter.getLogger().debug("Added quest {}", questData.getSubId());
                     }
                 });
+        LiyueDainsleifEntrySupport.onConditionEvent(this, condType, params);
     }
 
     public boolean wasSubQuestStarted(QuestData questData) {
@@ -559,6 +709,14 @@ public final class QuestManager extends BasePlayerManager {
 
     public void triggerEvent(QuestContent condType, String paramStr, int... params) {
         Grasscutter.getLogger().trace("Trigger Event {}, {}, {}", condType, paramStr, params);
+        if (isQuestingActive()) {
+            LiyueRescuePlotRecovery.recordCompletionReport(this, condType, paramStr, params);
+        }
+
+        if (isQuestingActive() && condType == QuestContent.QUEST_CONTENT_ITEM_LESS_THAN
+                && params.length > 0 && params[0] == 100496) {
+            LiyueBargainSupport.checkPurse(getPlayer());
+        }
 
         List<GameMainQuest> checkMainQuests =
                 this.getMainQuests().values().stream()
@@ -577,6 +735,7 @@ public final class QuestManager extends BasePlayerManager {
      * @param quest The ID of the quest.
      */
     public void checkQuestAlreadyFulfilled(GameQuest quest) {
+        if (isQuestingActive()) LiyueRescuePlotRecovery.replayReportedCompletion(quest);
         Grasscutter.getThreadPool()
                 .submit(
                         () -> {
@@ -611,6 +770,24 @@ public final class QuestManager extends BasePlayerManager {
                                 }
                             }
                         });
+    }
+
+    /**
+     * Recover weather that belongs to a still-active quest when an account rejoins.
+     * Return true when setWeather already sent the scene's initial weather packet.
+     */
+    public boolean restoreActiveQuestWeather(int sceneId) {
+        if (sceneId <= 0 || player.getWeatherId() != 0) return false;
+        var active = getActiveMainQuests().stream()
+                .flatMap(main -> main.getActiveQuests().stream())
+                .map(GameQuest::getQuestData)
+                .filter(Objects::nonNull)
+                .toList();
+        int areaId = QuestWeatherRestore.selectArea(
+                active, sceneId, GameData.getWeatherDataMap()::get);
+        if (areaId <= 0) return false;
+        player.setWeather(areaId);
+        return true;
     }
 
     public List<QuestGroupSuite> getSceneGroupSuite(int sceneId) {

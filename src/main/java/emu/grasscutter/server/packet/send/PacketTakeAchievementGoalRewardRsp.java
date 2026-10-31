@@ -6,10 +6,14 @@ import java.util.List;
 
 public class PacketTakeAchievementGoalRewardRsp extends BasePacket {
     public PacketTakeAchievementGoalRewardRsp() {
+        this(RetcodeOuterClass.Retcode.RET_REWARD_HAS_TAKEN_VALUE);
+    }
+
+    public PacketTakeAchievementGoalRewardRsp(int retcode) {
         super(PacketOpcodes.TakeAchievementGoalRewardRsp);
         this.setData(
                 TakeAchievementGoalRewardRspOuterClass.TakeAchievementGoalRewardRsp.newBuilder()
-                        .setRetcode(RetcodeOuterClass.Retcode.RET_REWARD_HAS_TAKEN_VALUE)
+                        .setRetcode(retcode)
                         .build());
     }
 

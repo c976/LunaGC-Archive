@@ -18,5 +18,6 @@ public final class ExecDecQuestVar extends TalkExecHandler {
 
         mainQuest.decQuestVar(
                 Integer.parseInt(execParam.getParam()[0]), Integer.parseInt(execParam.getParam()[1]));
+        mainQuest.save();
     }
 }

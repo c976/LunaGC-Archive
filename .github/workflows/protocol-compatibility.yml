@@ -1,0 +1,54 @@
+name: Protocol checker tests (synthetic inputs)
+
+on:
+  pull_request:
+    paths:
+      - "protocol/**"
+      - "tools/protocol/**"
+      - "gradle/protocol-generation.gradle"
+      - ".github/workflows/protocol-compatibility.yml"
+  push:
+    paths:
+      - "protocol/**"
+      - "tools/protocol/**"
+      - "gradle/protocol-generation.gradle"
+      - ".github/workflows/protocol-compatibility.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: protocol-checker-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checker-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Install the descriptor reader
+        run: python -m pip install -r tools/protocol/compatibility-requirements.txt
+      - name: Test checker, producer and CLI with invented nonauthoritative fixtures
+        run: python -m unittest discover -s tools/protocol -p 'test_*compatibility*.py' -v
+      - name: Verify merged server descriptor generation (not a client compatibility audit)
+        run: bash gradlew generateProtocolJava --build-cache --max-workers=2 -Dorg.gradle.jvmargs=-Xmx4g
+      - name: Validate generated server descriptor provenance
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "tools/protocol")
+          from check_compatibility import load_server_descriptor
+          load_server_descriptor(Path("."), Path("build/generated/protocol/7.1/server.desc"))
+          print("Generated server descriptor and implementation hashes match.")
+          PY

@@ -12,7 +12,7 @@ import java.util.List;
 public class PacketDoGachaRsp extends BasePacket {
 
     public PacketDoGachaRsp(
-            GachaBanner banner, List<GachaItem> list, PlayerGachaBannerInfo gachaInfo) {
+            GachaBanner banner, List<GachaItem> list, PlayerGachaBannerInfo gachaInfo, boolean radiance) {
         super(PacketOpcodes.DoGachaRsp);
 
         ItemParamData costItem = banner.getCost(1);
@@ -38,12 +38,27 @@ public class PacketDoGachaRsp extends BasePacket {
                         .addAllGachaItemList(list);
 
         if (banner.hasEpitomized()) {
-            rsp.setWishItemId(gachaInfo.getWishItemId())
+            rsp.setIsEpitomized(true)
+                    .setWishItemId(gachaInfo.getWishItemId())
                     .setWishProgress(gachaInfo.getFailedChosenItemPulls())
                     .setWishMaxProgress(banner.getWishMaxProgress());
         }
 
-        this.setData(rsp.build());
+        this.setData(withRadiance(rsp.build(), radiance));
+    }
+
+    /**
+     * Capturing Radiance: 7.1 DoGachaRsp carries a bool at field 286 (not present in the generated
+     * class, so it is written straight to the wire). Set when the response contains a 5-star, and the
+     * client plays the radiance animation.
+     */
+    private static byte[] withRadiance(DoGachaRsp rsp, boolean radiance) {
+        byte[] base = rsp.toByteArray();
+        if (!radiance) return base;
+        java.io.ByteArrayOutputStream out = new java.io.ByteArrayOutputStream(base.length + 16);
+        out.writeBytes(base);
+        emu.grasscutter.game.player.BeyondProfilePictureWire.varintField(out, 286, 1);
+        return out.toByteArray();
     }
 
     public PacketDoGachaRsp() {

@@ -5,6 +5,9 @@ import static emu.grasscutter.game.quest.enums.QuestContent.*;
 
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.MainQuestData.TalkData;
+import emu.grasscutter.data.excels.TalkConfigData;
+import emu.grasscutter.game.entity.EntityNPC;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.server.event.player.PlayerNpcTalkEvent;
 import lombok.NonNull;
@@ -30,12 +33,10 @@ public final class TalkManager extends BasePlayerManager {
         if (!event.call()) return;
 
         if (talkData != null) {
-            // Check if the NPC id is valid.
+            // Quest actors can be client-local. If a server entity exists, validate the NPC/model
+            // identity rather than the scene-local placement config id.
             var entity = player.getScene().getEntityById(npcEntityId);
-            if (entity != null) {
-                // The config ID of the entity is the NPC's ID.
-                if (!talkData.getNpcId().contains(entity.getConfigId())) return;
-            }
+            if (!isTalkNpc(talkData, entity)) return;
 
             // Execute the talk action on associated handlers.
             talkData
@@ -53,6 +54,11 @@ public final class TalkManager extends BasePlayerManager {
         questManager.queueEvent(QUEST_COND_COMPLETE_TALK, talkId);
     }
 
+    static boolean isTalkNpc(TalkConfigData talkData, GameEntity entity) {
+        if (entity == null || talkData.getNpcId() == null || talkData.getNpcId().isEmpty()) return true;
+        return entity instanceof EntityNPC && talkData.getNpcId().contains(entity.getEntityTypeId());
+    }
+
     public void saveTalkToQuest(int talkId, int mainQuestId) {
         // TODO, problem with this is that some talks for activity also have
         // quest id, which isn't present in QuestExcels
@@ -60,5 +66,6 @@ public final class TalkManager extends BasePlayerManager {
         if (mainQuest == null) return;
 
         mainQuest.getTalks().put(talkId, new TalkData(talkId, ""));
+        mainQuest.save();
     }
 }

@@ -31,13 +31,15 @@ public class HandlerClientScriptEventNotify extends PacketHandler {
         }
 
         if (data.getEventType() == EventType.EVENT_AVATAR_NEAR_PLATFORM) {
-            if (data.getParamList(0) == 0) {
+            // An empty list carries no config id either; recover it from the source entity.
+            if (data.getParamListCount() == 0 || data.getParamList(0) == 0) {
                 Grasscutter.getLogger()
                         .debug(
                                 "Found a zero Param1 for an EVENT_AVATAR_NEAR_PLATFORM. Doing the configID workaround.");
                 val entity = session.getPlayer().getScene().getEntityById(data.getSourceEntityId());
                 if (entity == null) {
                     Grasscutter.getLogger().debug("But it failed.");
+                    if (data.getParamListCount() == 0) return;
                 } else {
                     args.setParam1(entity.getConfigId());
                 }

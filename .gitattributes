@@ -1,3 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.dll binary
+
+# bat files should be checked out with CRLF line endings
+*.bat text eol=crlf
+
+# shell scripts should be checked out with LF line endings
+gradlew text eol=lf

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+message TpsWeaponAccessoryInfo {
+  uint32 ammunition_type = 7;
+  uint32 ammunition_config_id = 11;
+  uint32 KAPHEDKKFGK = 12;
+  uint32 MHFBBNKOBPK = 14;
+}

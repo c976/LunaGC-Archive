@@ -7,6 +7,7 @@ import emu.grasscutter.game.props.*;
 import emu.grasscutter.server.event.player.PlayerFinishBattlePassMission;
 import emu.grasscutter.server.game.*;
 import emu.grasscutter.server.packet.send.PacketBattlePassMissionUpdateNotify;
+import emu.grasscutter.server.packet.send.PacketBeyondBattlePassMissionUpdateNotify;
 import java.util.*;
 
 public class BattlePassSystem extends BaseGameSystem {
@@ -73,6 +74,11 @@ public class BattlePassSystem extends BaseGameSystem {
 
             // Packet
             player.sendPacket(new PacketBattlePassMissionUpdateNotify(mission));
+            try {
+                player.sendPacket(new PacketBeyondBattlePassMissionUpdateNotify(mission));
+            } catch (Throwable ignored) {
+                // Beyond battle-pass data is a compatibility extension; the normal BP packet is authoritative.
+            }
         }
     }
 }

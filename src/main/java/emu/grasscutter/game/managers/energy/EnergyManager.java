@@ -8,6 +8,8 @@ import emu.grasscutter.data.*;
 import emu.grasscutter.data.excels.ItemData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.data.excels.monster.MonsterData.HpDrops;
+import emu.grasscutter.game.ability.ArlecchinoBurstBoL;
+import emu.grasscutter.game.ability.BurstInvulnHelper;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.player.*;
@@ -18,12 +20,10 @@ import emu.grasscutter.net.proto.AbilityIdentifierOuterClass.AbilityIdentifier;
 import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
 import emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult;
 import emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason;
-import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass;
 import emu.grasscutter.net.proto.EvtBeingHitInfoOuterClass.EvtBeingHitInfo;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
 import emu.grasscutter.server.game.GameSession;
-import emu.grasscutter.server.packet.send.PacketEntityFightPropChangeReasonNotify;
-import emu.grasscutter.server.packet.send.PacketEntityFightPropUpdateNotify;
+import emu.grasscutter.server.packet.send.PacketAvatarFightPropNotify;
 import it.unimi.dsi.fastutil.ints.*;
 import it.unimi.dsi.fastutil.objects.*;
 import java.util.*;
@@ -37,6 +37,22 @@ public class EnergyManager extends BasePlayerManager {
             skillParticleGenerationData = new Int2ObjectOpenHashMap<>();
     private final Object2IntMap<EntityAvatar> avatarNormalProbabilities;
     @Getter private boolean energyUsage;
+
+    /**
+     * Deduct energy only after ability confirms the burst actually started. SkillSucc alone can fire
+     * during dash recovery without a real cast (energy would vanish with no Q).
+     */
+    private static final long PENDING_BURST_TIMEOUT_MS = 1200L;
+
+    private int pendingBurstSkillId;
+    private long pendingBurstAvatarGuid;
+    private float pendingBurstCost;
+    private long pendingBurstMs;
+
+    /** Same cast can confirm from AbilityManager + AvatarSkillStart within a short window. */
+    private int lastBurstSkillId;
+    private long lastBurstAvatarGuid;
+    private long lastBurstCastMs;
 
     public EnergyManager(Player player) {
         super(player);
@@ -210,12 +226,151 @@ public class EnergyManager extends BasePlayerManager {
             return;
         }
 
-        var skillData = GameData.getAvatarSkillDataMap().get(skillId);
+        this.expirePendingBurstIfNeeded();
 
-        if ((avatar.getSkillDepot() != null && skillId == avatar.getSkillDepot().getEnergySkill())
-                || (skillData != null && skillData.getCostElemVal() > 0)) {
-            avatar.getAsEntity().clearEnergy(ChangeEnergyReason.ChangeEnergyReason_CHANGE_ENERGY_SKILL_START);
+        var skillData = GameData.getAvatarSkillDataMap().get(skillId);
+        float cost = 0f;
+        if (skillData != null && skillData.getCostElemVal() > 0) {
+            // Prefer the cast skill's cost (e.g. Flins 11209 = 30, not depot energySkill 11205 = 80).
+            cost = skillData.getCostElemVal();
+        } else if (avatar.getSkillDepot() != null
+                && skillId == avatar.getSkillDepot().getEnergySkill()
+                && avatar.getSkillDepot().getEnergySkillData() != null) {
+            cost = avatar.getSkillDepot().getEnergySkillData().getCostElemVal();
         }
+
+        if (cost <= 0) {
+            return;
+        }
+
+        long now = System.currentTimeMillis();
+        long guid = avatar.getGuid();
+        // Already confirmed/consumed for this cast (late SkillSucc after ability confirm).
+        if (skillId == this.lastBurstSkillId
+                && guid == this.lastBurstAvatarGuid
+                && now - this.lastBurstCastMs < 1500L) {
+            return;
+        }
+
+        this.pendingBurstSkillId = skillId;
+        this.pendingBurstAvatarGuid = guid;
+        this.pendingBurstCost = cost;
+        this.pendingBurstMs = now;
+
+        Grasscutter.getLogger()
+                .debug(
+                        "[Energy] burst pending skillId={} cost={} avatarId={} (wait ability confirm)",
+                        skillId,
+                        cost,
+                        avatar.getAvatarId());
+
+        try {
+            if (this.player != null && this.player.getAbilityManager() != null) {
+                BurstInvulnHelper.arm(this.player.getAbilityManager());
+            }
+        } catch (Throwable ignored) {
+            // Compatibility hook must not affect energy consumption.
+        }
+    }
+
+    /**
+     * Ability layer confirmed the burst started (AvatarSkillStart / invuln modifier). Deduct now.
+     *
+     * @return true if energy was consumed on this call
+     */
+    public boolean confirmBurstCast(Avatar avatar, int skillId) {
+        if (avatar == null || !GAME_OPTIONS.energyUsage || !this.energyUsage) {
+            return false;
+        }
+
+        this.expirePendingBurstIfNeeded();
+
+        long now = System.currentTimeMillis();
+        long guid = avatar.getGuid();
+
+        if (skillId == this.lastBurstSkillId
+                && guid == this.lastBurstAvatarGuid
+                && now - this.lastBurstCastMs < 1500L) {
+            return false;
+        }
+
+        if (this.pendingBurstCost <= 0f
+                || skillId != this.pendingBurstSkillId
+                || guid != this.pendingBurstAvatarGuid) {
+            return false;
+        }
+
+        float cost = this.pendingBurstCost;
+        this.clearPendingBurst();
+        this.lastBurstSkillId = skillId;
+        this.lastBurstAvatarGuid = guid;
+        this.lastBurstCastMs = now;
+
+        Grasscutter.getLogger()
+                .debug(
+                        "[Energy] burst consume (confirmed) skillId={} cost={} avatarId={}",
+                        skillId,
+                        cost,
+                        avatar.getAvatarId());
+
+        avatar.getAsEntity()
+                .consumeEnergy(cost, ChangeEnergyReason.ChangeEnergyReason_CHANGE_ENERGY_SKILL_START);
+        return true;
+    }
+
+    /** Drop unconfirmed SkillSucc pending (dash-recovery false start, cancelled cast, etc.). */
+    public void onTick() {
+        this.expirePendingBurstIfNeeded();
+    }
+
+    private void expirePendingBurstIfNeeded() {
+        if (this.pendingBurstCost <= 0f) {
+            return;
+        }
+        long now = System.currentTimeMillis();
+        if (now - this.pendingBurstMs < PENDING_BURST_TIMEOUT_MS) {
+            return;
+        }
+
+        Grasscutter.getLogger()
+                .debug(
+                        "[Energy] burst pending expired (no ability confirm) skillId={} cost={} guid={}",
+                        this.pendingBurstSkillId,
+                        this.pendingBurstCost,
+                        this.pendingBurstAvatarGuid);
+
+        long expiredGuid = this.pendingBurstAvatarGuid;
+        this.clearPendingBurst();
+
+        // Re-sync energy UI in case the client locally blanked the bar on SkillSucc.
+        try {
+            if (this.player != null && this.player.getTeamManager() != null) {
+                for (EntityAvatar entityAvatar : this.player.getTeamManager().getActiveTeam()) {
+                    if (entityAvatar != null && entityAvatar.getAvatar().getGuid() == expiredGuid) {
+                        this.player.sendPacket(new PacketAvatarFightPropNotify(entityAvatar.getAvatar()));
+                        break;
+                    }
+                }
+            }
+        } catch (Throwable ignored) {
+            // UI re-sync is best-effort.
+        }
+
+        try {
+            if (this.player != null && this.player.getAbilityManager() != null) {
+                this.player.getAbilityManager().removePendingEnergyClear();
+                BurstInvulnHelper.clear(this.player.getAbilityManager());
+            }
+        } catch (Throwable ignored) {
+            // Best-effort cleanup for a cast that never started.
+        }
+    }
+
+    private void clearPendingBurst() {
+        this.pendingBurstSkillId = 0;
+        this.pendingBurstAvatarGuid = 0L;
+        this.pendingBurstCost = 0f;
+        this.pendingBurstMs = 0L;
     }
 
     public void handleEvtDoSkillSuccNotify(GameSession session, int skillId, int casterId) {
@@ -236,25 +391,13 @@ public class EnergyManager extends BasePlayerManager {
 
         if (avatar.getAvatarId() == 10000096) {
             this.player.getAbilityManager().onArlecchinoSkillNotify(skillId);
-            var skillData = GameData.getAvatarSkillDataMap().get(skillId);
-            int energySkillId = avatar.getSkillDepot() != null ? avatar.getSkillDepot().getEnergySkill() : -1;
-            float costElemVal = skillData != null ? skillData.getCostElemVal() : -1f;
-            boolean isBurst = (skillId == energySkillId) || (costElemVal > 0);
-            if (isBurst) {
-                float curDebt = casterEntity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
-                if (curDebt > 0f) {
-                    casterEntity.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS, 0f);
-                    var scene = this.player.getScene();
-                    scene.broadcastPacket(new PacketEntityFightPropUpdateNotify(casterEntity, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
-                    scene.broadcastPacket(new PacketEntityFightPropChangeReasonNotify(
-                        casterEntity,
-                        FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
-                        -curDebt,
-                        PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY,
-                        ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY_FINISH
-                    ));
-                    Grasscutter.getLogger().info("[BoL] Arlecchino burst: cleared {} BoL", curDebt);
-                }
+            // Matched by id rather than derived from the depot and the skill excel: both lookups
+            // can come back empty on the first cast after login, and then neither -1 nor -1f looks
+            // like a burst - the cast went unregistered and that Q consumed nothing.
+            if (skillId == ArlecchinoBurstBoL.ARLECCHINO_BURST_SKILL_ID) {
+                // Arming, not clearing: the client scales the burst by the debt it still sees, so
+                // zeroing it here - a second before the slash lands - would gut the damage.
+                ArlecchinoBurstBoL.onBurstCast(casterEntity);
             }
         }
     }

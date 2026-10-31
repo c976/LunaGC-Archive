@@ -6,13 +6,16 @@ import emu.grasscutter.GameConstants;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.dungeon.DungeonData;
+import emu.grasscutter.game.ability.NatsaurusVehicleHelper;
 import emu.grasscutter.game.entity.EntityTeam;
 import emu.grasscutter.game.entity.EntityWorld;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.game.player.PhlogistonRegion;
 import emu.grasscutter.game.player.Player.SceneLoadState;
 import emu.grasscutter.game.props.EnterReason;
 import emu.grasscutter.game.props.EntityIdType;
 import emu.grasscutter.game.props.PlayerProperty;
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.props.SceneType;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.game.world.data.TeleportProperties;
@@ -50,7 +53,10 @@ public class World implements Iterable<Player> {
     @Getter private final Int2ObjectMap<Scene> scenes;
 
     @Getter private EntityWorld entity;
-    private int nextEntityId = 0;
+    // Lock-free: entity ids are taken while a Scene lock is held, and World.addPlayer/removePlayer
+    // take the World lock and then a Scene lock, so a synchronized counter could deadlock them.
+    private final java.util.concurrent.atomic.AtomicInteger nextEntityId =
+            new java.util.concurrent.atomic.AtomicInteger();
     private int nextPeerId = 0;
     private int worldLevel;
 
@@ -87,6 +93,17 @@ public class World implements Iterable<Player> {
         this.worldLevel = player.getWorldLevel();
         this.isMultiplayer = isMultiplayer;
         this.timeLocked = player.getProperty(PlayerProperty.PROP_IS_GAME_TIME_LOCKED) != 0;
+        if (this.timeLocked) {
+            // The lock is stored on the player, so a quest that locked it and was then skipped
+            // (or any other exec that never ran its unlock) leaves every future world frozen:
+            // world time stops, scene time stops with it, and the open world stops moving with
+            // no error anywhere. Say so at login rather than leaving it invisible.
+            Grasscutter.getLogger()
+                    .warn(
+                            "World for uid {} starts with game time locked, so nothing in the open"
+                                + " world will move. Use /time unlock to clear it.",
+                            player.getUid());
+        }
 
         this.lastUpdateTime = System.currentTimeMillis();
         this.currentWorldTime = host.getPlayerGameTime();
@@ -168,8 +185,8 @@ public class World implements Iterable<Player> {
      * @param idType The entity type.
      * @return The next entity ID.
      */
-    public synchronized int getNextEntityId(EntityIdType idType) {
-        return (idType.getId() << GameConstants.ENTITY_ID_BIT_SHIFT) + ++this.nextEntityId;
+    public int getNextEntityId(EntityIdType idType) {
+        return (idType.getId() << GameConstants.ENTITY_ID_BIT_SHIFT) + this.nextEntityId.incrementAndGet();
     }
 
     public synchronized void addPlayer(Player player) {
@@ -269,7 +286,7 @@ public class World implements Iterable<Player> {
         // Remove team entities
         player.sendPacket(
                 new PacketDelTeamEntityNotify(
-                        player.getSceneId(),
+                        DomainDungeonHelper.notifySceneId(player),
                         this.getPlayers().stream()
                                 .map(
                                         p ->
@@ -278,6 +295,7 @@ public class World implements Iterable<Player> {
                                                         : p.getTeamManager().getEntity().getId())
                                 .toList()));
 
+        this.server.getMultiplayerSystem().onPlayerRemovedFromWorld(this, player);
         // Deregister
         this.getPlayers().remove(player);
         player.setWorld(null);
@@ -323,11 +341,13 @@ public class World implements Iterable<Player> {
 
     public void deregisterScene(Scene scene) {
         scene.saveGroups();
-        this.getScenes().remove(scene.getId());
+        this.getScenes().remove(scene.getId(), scene);
     }
 
     public void save() {
-        this.getScenes().values().forEach(Scene::saveGroups);
+        // Scene callbacks may acquire a scene monitor; do not hold the collection monitor.
+        WorldSceneSnapshot.forEachOutsideMonitor(
+                this.scenes, this.scenes::values, Scene::saveGroups);
     }
 
     public void queueTransferPlayerToScene(Player player, int sceneId, Position pos, int delayMs) {
@@ -398,6 +418,7 @@ public class World implements Iterable<Player> {
                         .enterType(EnterType.EnterType_ENTER_JUMP);
 
         val sceneData = GameData.getSceneDataMap().get(sceneId);
+        if (sceneData == null) return false;
         if (dungeonData != null) {
             teleportProps
                     .teleportTo(dungeonData.getStartPosition())
@@ -415,16 +436,6 @@ public class World implements Iterable<Player> {
     }
 
     public boolean transferPlayerToScene(Player player, TeleportProperties teleportProperties) {
-        // If a queued teleport already exists, cancel it. This prevents the player from
-        // becoming stranded in a dungeon due to quitting it by teleporting to a map waypoint.
-        synchronized (player) {
-            var queuedTeleport = player.getQueuedTeleport();
-            if (queuedTeleport != null) {
-                player.setQueuedTeleport(null);
-                queuedTeleport.cancel(true);
-            }
-        }
-
         // Check if the teleport properties are valid.
         if (teleportProperties.getTeleportTo() == null)
             teleportProperties.setTeleportTo(player.getPosition());
@@ -442,11 +453,44 @@ public class World implements Iterable<Player> {
             return false;
         }
 
+        // Being soul-attached is bound to the dragon's position in the world, and the client keeps
+        // steering that entity until it is told otherwise. Moving the character out from under the mount
+        // therefore teleports the avatar and leaves the camera, the inputs and the dragon behind at the
+        // old spot - unrecoverable short of a relog. The mount has to go with the rider: leaving it as a
+        // soul candle would only reappear in the scene this transfer is about to re-send, and the client
+        // would hang its camera back on it and play it as a killed dragon.
+        NatsaurusVehicleHelper.takeAway(player);
+
+        // If a queued teleport already exists, cancel it. This prevents the player from
+        // becoming stranded in a dungeon due to quitting it by teleporting to a map waypoint.
+        synchronized (player) {
+            var queuedTeleport = player.getQueuedTeleport();
+            if (queuedTeleport != null) {
+                player.setQueuedTeleport(null);
+                queuedTeleport.cancel(true);
+            }
+        }
+
         Scene oldScene = player.getScene();
         var newScene = this.getSceneById(teleportProperties.getSceneId());
+        // Re-entering the same dungeon starts a fresh instance instead of keeping the old chamber.
+        if (newScene == oldScene
+                && oldScene != null
+                && oldScene.getSceneType() == SceneType.SCENE_DUNGEON
+                && teleportProperties.getTeleportType() == TeleportType.DUNGEON) {
+            oldScene.setDontDestroyWhenEmpty(false);
+            oldScene.removePlayer(player);
+            newScene = this.getSceneById(teleportProperties.getSceneId());
+        }
 
         // Move directly in the same scene.
-        if (newScene == oldScene && teleportProperties.getTeleportType() == TeleportType.COMMAND) {
+        if (newScene == oldScene
+                && teleportProperties.getTeleportType() == TeleportType.COMMAND
+                && PhlogistonRegion.contains(newScene.getId(), teleportProperties.getTeleportTo())
+                        == player.isInNatlan()
+                && emu.grasscutter.game.player.SnezhnayaFrigid.contains(
+                                newScene.getId(), teleportProperties.getTeleportTo())
+                        == emu.grasscutter.game.player.SnezhnayaFrigid.isGranted(player)) {
             // Set player position and rotation
             if (teleportProperties.getTeleportTo() != null) {
                 player.getPosition().set(teleportProperties.getTeleportTo());
@@ -458,26 +502,20 @@ public class World implements Iterable<Player> {
             return true;
         }
 
-        if (oldScene != null) {
+        if (oldScene != null && player.getScene() == oldScene) {
             // Don't deregister scenes if the player is going to tp back into them
             if (oldScene == newScene) {
                 oldScene.setDontDestroyWhenEmpty(true);
+            } else {
+                // Clear a same-scene re-entry hold before removing the final player.
+                oldScene.setDontDestroyWhenEmpty(false);
             }
             oldScene.removePlayer(player);
         }
 
+        // Resolve the destination before rebuilding avatars and their region-dependent abilities.
+        // Both Mondstadt and Natlan are in scene 3, so the old position must not decide the HUD.
         if (newScene != null) {
-            newScene.addPlayer(player);
-
-            player.getTeamManager().applyAbilities(newScene);
-
-            // Dungeon
-            // Dungeon system is handling this already
-            // if(dungeonData!=null){
-            //     var dungeonManager = new DungeonManager(newScene, dungeonData);
-            //     dungeonManager.startDungeon();
-            // }
-
             SceneConfig config = newScene.getScriptManager().getConfig();
             if (teleportProperties.getTeleportTo() == null && config != null) {
                 if (config.born_pos != null) {
@@ -488,8 +526,6 @@ public class World implements Iterable<Player> {
                 }
             }
         }
-
-        // Set player position and rotation
         if (teleportProperties.getTeleportTo() != null) {
             player.getPosition().set(teleportProperties.getTeleportTo());
         }
@@ -497,13 +533,22 @@ public class World implements Iterable<Player> {
             player.getRotation().set(teleportProperties.getTeleportRot());
         }
 
-        if (oldScene != null && newScene != null && newScene != oldScene) {
-            newScene.setPrevScenePoint(oldScene.getPrevScenePoint());
-            oldScene.setDontDestroyWhenEmpty(false);
+        if (newScene != null) {
+            newScene.addPlayer(player);
+            // The hold only had to bridge the moment the player was out of the scene; left set, a
+            // disconnect would keep this scene registered and the next entry would reuse it.
+            if (newScene == oldScene) newScene.setDontDestroyWhenEmpty(false);
+            player.getTeamManager().applyAbilities(newScene);
         }
 
-        // Teleport packet
-        player.sendPacket(new PacketPlayerEnterSceneNotify(player, teleportProperties));
+        if (oldScene != null && newScene != null && newScene != oldScene) {
+            newScene.setPrevScenePoint(oldScene.getPrevScenePoint());
+        }
+
+        // Teleport packet — remap client scene art for domains without client assets
+        player.sendPacket(
+                new PacketPlayerEnterSceneNotify(
+                        player, DomainDungeonHelper.clientNotifyProperties(teleportProperties)));
 
         if (teleportProperties.getTeleportType() != TeleportType.INTERNAL
                 && teleportProperties.getTeleportType() != SCRIPT) {
@@ -560,12 +605,21 @@ public class World implements Iterable<Player> {
     public boolean onTick() {
         // Check if there are players in this world.
         if (this.getPlayerCount() == 0) return true;
-        // Tick all associated scenes.
-        this.getScenes()
-                .forEach(
-                        (k, scene) -> {
-                            if (scene.getPlayerCount() > 0) scene.onTick();
-                        });
+        // Scene removal takes its monitor before this map's monitor. Never hold the map
+        // monitor while ticking a scene: group loading takes the scene monitor in reverse.
+        final List<Scene> sceneSnapshot;
+        synchronized (this.scenes) {
+            sceneSnapshot = new ArrayList<>(this.scenes.values());
+        }
+        for (Scene scene : sceneSnapshot) {
+            if (this.scenes.get(scene.getId()) == scene && scene.getPlayerCount() > 0) {
+                try {
+                    scene.onTick();
+                } catch (RuntimeException e) {
+                    Grasscutter.getLogger().error("Scene {} tick failed", scene.getId(), e);
+                }
+            }
+        }
 
         // sync time every 10 seconds
         if (this.tickCount % 10 == 0) {
@@ -689,6 +743,16 @@ public class World implements Iterable<Player> {
      * @param locked True if the world time should be locked.
      */
     public void lockTime(boolean locked) {
+        if (this.timeLocked != locked) {
+            // Bank the running time, and restart the clock so locked time is not counted later.
+            this.getWorldTime();
+            this.lastUpdateTime = System.currentTimeMillis();
+            Grasscutter.getLogger()
+                    .info(
+                            "Game time for uid {} is now {}.",
+                            this.getHost().getUid(),
+                            locked ? "locked" : "unlocked");
+        }
         this.timeLocked = locked;
 
         // Notify players of the locking.

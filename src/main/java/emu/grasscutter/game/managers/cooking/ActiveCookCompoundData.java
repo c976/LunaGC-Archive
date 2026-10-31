@@ -5,10 +5,12 @@ import lombok.Getter;
 
 @Entity
 public class ActiveCookCompoundData {
-    private final int costTime;
-    @Getter private final int compoundId;
+    private int costTime;
+    @Getter private int compoundId;
     @Getter private int totalCount;
     private int startTime;
+
+    private ActiveCookCompoundData() {}
 
     public ActiveCookCompoundData(int compoundId, int processTime, int count, int startTime) {
         this.compoundId = compoundId;
@@ -18,9 +20,13 @@ public class ActiveCookCompoundData {
     }
 
     public int getOutputCount(int currentTime) {
+        // costTime comes from resource JSON, and this is a persisted @Entity, so a stored document
+        // written without the field deserialises it to 0. Either way, dividing would throw.
+        if (costTime <= 0) return totalCount;
+
         int cnt = (currentTime - startTime) / costTime;
         if (cnt > totalCount) return totalCount;
-        else return cnt;
+        else return Math.max(cnt, 0);
     }
 
     public int getWaitCount(int currentTime) {

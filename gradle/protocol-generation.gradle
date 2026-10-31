@@ -1,0 +1,170 @@
+import java.util.Locale
+import org.apache.tools.ant.taskdefs.condition.Os
+import org.gradle.api.GradleException
+import org.gradle.api.tasks.JavaExec
+import org.gradle.api.tasks.PathSensitivity
+import org.gradle.api.tasks.SourceSetContainer
+import org.gradle.api.tasks.compile.JavaCompile
+
+allprojects { currentProject ->
+    currentProject.pluginManager.withPlugin('java') {
+        if (currentProject != currentProject.rootProject) {
+            return
+        }
+
+        def sourceSets = currentProject.extensions.getByType(SourceSetContainer)
+        def protocolTools = sourceSets.findByName('protocolTools') ?: sourceSets.create('protocolTools')
+        def generatorSourceDir = currentProject.layout.projectDirectory.dir('tools/protocol/java')
+        protocolTools.java.srcDir(generatorSourceDir.asFile)
+
+        def protocVersion = '4.36.2'
+        currentProject.dependencies.add(
+                protocolTools.implementationConfigurationName,
+                "com.google.protobuf:protobuf-java:${protocVersion}")
+
+        def osName = System.getProperty('os.name').toLowerCase(Locale.ROOT)
+        def archName = System.getProperty('os.arch').toLowerCase(Locale.ROOT)
+
+        def osClassifier
+        if (osName.contains('win')) {
+            osClassifier = 'windows'
+        } else if (osName.contains('mac') || osName.contains('darwin')) {
+            osClassifier = 'osx'
+        } else if (osName.contains('linux')) {
+            osClassifier = 'linux'
+        } else {
+            throw new GradleException("Unsupported protoc operating system: ${System.getProperty('os.name')}")
+        }
+
+        def archClassifier
+        if (archName == 'amd64' || archName == 'x86_64') {
+            archClassifier = 'x86_64'
+        } else if (archName == 'aarch64' || archName == 'arm64') {
+            archClassifier = 'aarch_64'
+        } else {
+            throw new GradleException("Unsupported protoc architecture: ${System.getProperty('os.arch')}")
+        }
+
+        def protocClassifier = "${osClassifier}-${archClassifier}"
+        def protocCompiler = currentProject.configurations.maybeCreate('protocCompiler')
+        protocCompiler.canBeConsumed = false
+        protocCompiler.canBeResolved = true
+        currentProject.dependencies.add(
+                protocCompiler.name,
+                "com.google.protobuf:protoc:${protocVersion}:${protocClassifier}@exe")
+
+        def descriptorSet = currentProject.layout.projectDirectory.file('protocol/7.1/protocol.desc')
+        def protocolFileList = currentProject.layout.projectDirectory.file('protocol/7.1/files.txt')
+        def supplementalProtoDir = currentProject.layout.projectDirectory.dir('protocol/7.1/compat')
+        def supplementalImportDir = currentProject.layout.projectDirectory.dir('protocol/7.1/compat-imports')
+        def generatedProtocolJava =
+                currentProject.layout.buildDirectory.dir('generated/sources/protocol/7.1/java/main')
+        def auditDescriptor =
+                currentProject.layout.buildDirectory.file('generated/protocol/7.1/server.desc')
+
+        currentProject.tasks.register('generateProtocolJava', JavaExec) { task ->
+            task.group = 'protocol'
+            task.description =
+                    "Generate 7.1 Java protocol sources from the canonical descriptors and recovered additions with protoc ${protocVersion}."
+            task.dependsOn(currentProject.tasks.named(protocolTools.compileJavaTaskName))
+            task.classpath = protocolTools.runtimeClasspath
+            task.mainClass.set('emu.grasscutter.tools.protocol.ProtocolJavaGenerator')
+            // protoc produces deterministic source files for this descriptor set. Declare
+            // all native-tool and descriptor inputs so an outdated cache cannot be reused.
+            // Relative normalization lets separate Git worktrees share the same cache entry.
+            task.inputs.files(descriptorSet, protocolFileList)
+                    .withPropertyName('descriptorInputs')
+                    .withPathSensitivity(PathSensitivity.RELATIVE)
+            task.inputs.dir(supplementalProtoDir)
+                    .withPropertyName('supplementalProto')
+                    .withPathSensitivity(PathSensitivity.RELATIVE)
+            task.inputs.dir(supplementalImportDir)
+                    .withPropertyName('supplementalImports')
+                    .withPathSensitivity(PathSensitivity.RELATIVE)
+            task.inputs.files(protocCompiler)
+                    .withPropertyName('protocExecutable')
+                    .withPathSensitivity(PathSensitivity.NONE)
+            task.inputs.dir(generatorSourceDir)
+                    .withPropertyName('generatorImplementation')
+                    .withPathSensitivity(PathSensitivity.RELATIVE)
+            task.inputs.property('protocVersion', protocVersion)
+            task.inputs.property('protocPlatform', protocClassifier)
+            task.outputs.dir(generatedProtocolJava)
+            task.outputs.file(auditDescriptor)
+            task.outputs.file(auditDescriptor.map { file -> new File(file.asFile.path + '.json') })
+            task.outputs.cacheIf('7.1 protocol source generation is reproducible') { true }
+
+            task.doFirst {
+                def protocExecutable = protocCompiler.singleFile
+                if (!Os.isFamily(Os.FAMILY_WINDOWS) && !protocExecutable.canExecute()) {
+                    if (!protocExecutable.setExecutable(true)) {
+                        throw new GradleException("Cannot make protoc executable: ${protocExecutable}")
+                    }
+                }
+
+                task.setArgs([
+                    protocExecutable.absolutePath,
+                    descriptorSet.asFile.absolutePath,
+                    protocolFileList.asFile.absolutePath,
+                    supplementalProtoDir.asFile.absolutePath,
+                    supplementalImportDir.asFile.absolutePath,
+                    generatedProtocolJava.get().asFile.absolutePath,
+                    auditDescriptor.get().asFile.absolutePath,
+                    generatorSourceDir.asFile.absolutePath,
+                ])
+            }
+        }
+
+
+        // Keep generated protocol classes in their own cacheable compilation task.
+        // Ordinary server code changes must not invalidate compilation of 7.1 protocol sources.
+        def protocolSources =
+                sourceSets.findByName('generatedProtocol') ?: sourceSets.create('generatedProtocol')
+        protocolSources.java.srcDir(generatedProtocolJava)
+        currentProject.dependencies.add(
+                protocolSources.implementationConfigurationName,
+                "com.google.protobuf:protobuf-java:${protocVersion}")
+
+        // Gradle tracks protocolSources.output as a build dependency, so main and test
+        // compilation wait for the generated protocol classes automatically.
+        sourceSets.main.compileClasspath += protocolSources.output
+        sourceSets.main.runtimeClasspath += protocolSources.output
+        sourceSets.test.compileClasspath += protocolSources.output
+        sourceSets.test.runtimeClasspath += protocolSources.output
+
+        currentProject.tasks.named(protocolSources.compileJavaTaskName, JavaCompile) {
+            dependsOn 'generateProtocolJava'
+            options.encoding = 'UTF-8'
+            options.release.set(21)
+            options.fork = true
+            options.forkOptions.memoryMaximumSize = '6g'
+            options.compilerArgs.addAll(['-Xlint:all', '-Werror'])
+        }
+
+        // Keep generated classes and sources in the same public artifacts as before.
+        currentProject.tasks.named('jar') {
+            from(protocolSources.output)
+        }
+        currentProject.tasks.named('sourcesJar') {
+            from(protocolSources.allSource)
+        }
+
+        // The normal protocol compilation already enforces strict lint; do not compile
+        // the same 2,073 generated files a second time just to repeat the check.
+        currentProject.tasks.register('lintGeneratedProtocolJava') { task ->
+            task.group = 'verification'
+            task.description = 'Verify generated 7.1 protocol Java was compiled with strict javac lint.'
+            task.dependsOn currentProject.tasks.named(protocolSources.compileJavaTaskName)
+        }
+
+        currentProject.tasks.named('sourcesJar') {
+            dependsOn 'generateProtocolJava'
+        }
+        currentProject.tasks.named('javadoc') {
+            exclude '**/net/proto/**'
+            // Delombok Javadoc still imports generated protocol types.
+            // Give Javadoc the compiled protocol classes without documenting them.
+            classpath += protocolSources.output
+        }
+    }
+}

@@ -1,0 +1,97 @@
+name: Protocol generation
+
+on:
+  push:
+    branches:
+      - "**"
+    paths:
+      - "protocol/**"
+      - "tools/protocol/**"
+      - "gradle/protocol-generation.gradle"
+      - "build.gradle"
+      - "src/main/java/emu/grasscutter/net/packet/BasePacket.java"
+      - "src/test/java/emu/grasscutter/net/ProtocolGenerationTest.java"
+      - ".github/workflows/protocol-generation.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: protocol-generation-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Generate, build, and test (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      # gradlew is committed without the execute bit in the upstream tree.
+      - name: Make gradlew executable
+        if: runner.os != 'Windows'
+        run: chmod +x ./gradlew
+
+      # Compile the production jar, run the focused protocol regression test, and separately compile
+      # only regenerated protocol sources with -Xlint:all -Werror. Repository-wide validation remains
+      # in the normal Build workflow.
+      - name: Generate, lint, build, and test
+        shell: bash
+        run: >-
+          ./gradlew lintGeneratedProtocolJava jar test
+          --tests emu.grasscutter.net.ProtocolGenerationTest
+          --build-cache
+          -PskipHandbook=1
+          -PjarFilename=grasscutter
+          -PexcludeTags=integration
+          -Dorg.gradle.jvmargs=-Xmx4g
+
+      - name: Verify generated protocol set
+        shell: bash
+        run: |
+          count="$(find build/generated/sources/protocol/7.1/java/main -name '*.java' -type f | wc -l | tr -d '[:space:]')"
+          descriptor_count="$(grep -cve '^[[:space:]]*$' protocol/7.1/files.txt)"
+          supplemental_count="$(find protocol/7.1/compat -name '*.proto' -type f | wc -l | tr -d '[:space:]')"
+          expected="$({
+            grep -v '^[[:space:]]*$' protocol/7.1/files.txt
+            find protocol/7.1/compat -name '*.proto' -type f | sed 's#^protocol/7.1/compat/##'
+          } | sort -u | wc -l | tr -d '[:space:]')"
+          test "$count" -eq "$expected"
+          echo "Generated $count protocol Java files from $descriptor_count base descriptors and $supplemental_count recovered sources ($expected unique proto files)."
+          sha256sum protocol/7.1/protocol.desc
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: protocol-test-results-${{ matrix.os }}
+          path: build/reports/tests/test
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Upload jar
+        if: success()
+        uses: actions/upload-artifact@v7
+        with:
+          name: protocol-grasscutter-${{ matrix.os }}
+          path: grasscutter.jar
+          retention-days: 14

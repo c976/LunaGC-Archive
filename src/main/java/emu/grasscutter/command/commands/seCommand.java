@@ -1,26 +1,97 @@
 package emu.grasscutter.command.commands;
 
 import emu.grasscutter.GameConstants;
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.command.Command;
 import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
+import emu.grasscutter.command.ConstellationsHandler;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
 import emu.grasscutter.game.world.Position;
-import emu.grasscutter.command.ConstellationsHandler;
+import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
+import java.util.Locale;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
-import java.util.List;
+@Command(label = "switchelement", aliases = {"se"}, threading = true)
+public final class seCommand implements CommandHandler {
+    private record ElementArg(Element value) {}
 
-import static emu.grasscutter.utils.lang.Language.translate;
+    @Override
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        var commandLine = new CommandLine(new Args(sender, targetPlayer));
+        commandLine.registerConverter(
+                ElementArg.class,
+                value -> {
+                    Element element = parseElement(value);
+                    if (element == null) {
+                        throw new CommandLine.TypeConversionException("Invalid element: " + value);
+                    }
+                    return new ElementArg(element);
+                });
+        return commandLine;
+    }
 
-@Command(label = "switchelement",usage="none|pyro|hydro|anemo|cryo|geo|electro|dendro",aliases = {"se"}, threading = true)
-public class seCommand implements CommandHandler {
+    @CommandLine.Command(name = "switchelement")
+    private final class Args implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
 
-    private Element getElementFromString(String elementString) {
-        return switch (elementString.toLowerCase()) {
+        @Parameters(index = "0", paramLabel = "<none|pyro|hydro|anemo|cryo|geo|electro|dendro>")
+        private ElementArg element;
+
+        @Parameters(index = "1", arity = "0..1", paramLabel = "[constellation]")
+        private Integer constellation;
+
+        private Args(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
+        }
+
+        @Override
+        public void run() {
+            int constLevel = constellation == null ? 0 : Math.max(0, Math.min(6, constellation));
+            var currentEntity = targetPlayer.getTeamManager().getCurrentAvatarEntity();
+            if (currentEntity == null) {
+                CommandOutput.sendMessage(sender, "Switch failed: no active character");
+                return;
+            }
+
+            int activeAvatarId = currentEntity.getAvatar().getAvatarId();
+            if (activeAvatarId != GameConstants.MAIN_CHARACTER_MALE
+                    && activeAvatarId != GameConstants.MAIN_CHARACTER_FEMALE) {
+                CommandOutput.sendMessage(
+                        sender,
+                        "Switch failed: the active character is "
+                                + activeAvatarId
+                                + ", switch to the Traveler first");
+                return;
+            }
+
+            String failure = changeAvatarElement(targetPlayer, activeAvatarId, element.value());
+            if (failure != null) {
+                CommandOutput.sendMessage(sender, "Switch failed: " + failure);
+                return;
+            }
+
+            ConstellationsHandler.change(targetPlayer, element.value(), constLevel);
+            int sceneId = targetPlayer.getSceneId();
+            try {
+                Position position = targetPlayer.getPosition();
+                targetPlayer.getWorld().transferPlayerToScene(targetPlayer, 1, position);
+                targetPlayer.getWorld().transferPlayerToScene(targetPlayer, sceneId, position);
+                targetPlayer.getScene().broadcastPacket(new PacketSceneEntityAppearNotify(targetPlayer));
+                CommandOutput.sendMessage(sender, "Switched to " + element.value().name());
+            } catch (Exception ignored) {
+                CommandOutput.sendMessage(sender, "Failed to switch to " + element.value().name());
+            }
+        }
+    }
+
+    private static Element parseElement(String value) {
+        return switch (value.toLowerCase(Locale.ROOT)) {
             case "none", "white", "common", "elementless" -> Element.elementless;
             case "fire", "pyro" -> Element.pyro;
             case "water", "hydro" -> Element.hydro;
@@ -33,110 +104,21 @@ public class seCommand implements CommandHandler {
         };
     }
 
-    private String changeAvatarElement(Player sender, int avatarId, Element element) {
-        Avatar avatar = sender.getAvatars().getAvatarById(avatarId);
+    private static String changeAvatarElement(Player player, int avatarId, Element element) {
+        Avatar avatar = player.getAvatars().getAvatarById(avatarId);
         if (avatar == null) {
-            return String.format("you do not own avatar %d", avatarId);
+            return "you do not own avatar " + avatarId;
         }
+
         int depotId = element.getSkillRepoId(avatarId);
         AvatarSkillDepotData skillDepot = GameData.getAvatarSkillDepotDataMap().get(depotId);
         if (skillDepot == null) {
-            return String.format("skill depot %d for %s is not loaded", depotId, element.name());
+            return "skill depot " + depotId + " for " + element.name() + " is not loaded";
         }
+
         avatar.setSkillDepotData(skillDepot);
         avatar.setCurrentEnergy(1000);
         avatar.save();
         return null;
-    }
-    @Override
-    public void execute(Player sender,Player targetPlayer, List<String> args) {
-        String UserName=targetPlayer.getAccount().getUsername();
-        if (args.size() < 1) {
-            if (sender != null) {
-                CommandHandler.sendMessage(targetPlayer, "/se [none|pyro|hydro|anemo|cryo|geo|electro|dendro] <constellation>");
-            }
-            else {
-                Grasscutter.getLogger().info("/se [none|pyro|hydro|anemo|cryo|geo|electro|dendro] <constellation>");
-            }
-            return;
-        }
-        Element element = getElementFromString(args.get(0));
-        if (element == null) {
-            if (sender != null) {
-                CommandHandler.sendMessage(targetPlayer, "Error : Invalid Element");
-            }
-            else {
-                Grasscutter.getLogger().info("Error : Invalid Element");
-            }
-            return;
-        }
-        int constellation = 0;
-        if (args.size() > 1) {
-            try {
-                constellation = Integer.parseInt(args.get(1));
-                if (constellation>6){
-                    constellation=6;
-                } else if (constellation<0) {
-                   constellation = 0;
-                }
-            }
-            catch (Exception e){
-                if (sender != null) {
-                    CommandHandler.sendMessage(targetPlayer, "Error : Invalid Constellation");
-                }
-                else {
-                    Grasscutter.getLogger().info("Error : Invalid Constellation");
-                }
-            }
-        }
-        var currentEntity = targetPlayer.getTeamManager().getCurrentAvatarEntity();
-        if (currentEntity == null) {
-            if (sender != null) {
-                CommandHandler.sendMessage(targetPlayer, "Switch failed : no active character");
-            }
-            else {
-                Grasscutter.getLogger().info("Switch failed : no active character");
-            }
-            return;
-        }
-        int activeAvatarId = currentEntity.getAvatar().getAvatarId();
-        String failure;
-        if (activeAvatarId == GameConstants.MAIN_CHARACTER_MALE
-                || activeAvatarId == GameConstants.MAIN_CHARACTER_FEMALE) {
-            failure = changeAvatarElement(targetPlayer, activeAvatarId, element);
-            if (failure == null) {
-                ConstellationsHandler.change(targetPlayer, element, constellation);
-            }
-        } else {
-            failure = String.format("the active character is %d, switch to the Traveler first",
-                    activeAvatarId);
-        }
-        if (failure == null) {
-            int scene = targetPlayer.getSceneId();
-            String message;
-            try {
-                Position targetPlayerPos = targetPlayer.getPosition();
-                targetPlayer.getWorld().transferPlayerToScene(targetPlayer, 1, targetPlayerPos);
-                targetPlayer.getWorld().transferPlayerToScene(targetPlayer, scene, targetPlayerPos);
-                targetPlayer.getScene().broadcastPacket(new PacketSceneEntityAppearNotify(targetPlayer));
-                message = String.format("Switched to %s", element.name());
-            } catch (Exception e) {
-                message = String.format("Failed to switch to %s", element.name());
-            }
-            if (sender != null) {
-                CommandHandler.sendMessage(targetPlayer, message);
-            }
-            else {
-                Grasscutter.getLogger().info(message);
-            }
-        } else {
-            String reason = String.format("Switch failed : %s", failure);
-            if (sender != null) {
-                CommandHandler.sendMessage(targetPlayer, reason);
-            }
-            else {
-                Grasscutter.getLogger().info(reason);
-            }
-        }
     }
 }

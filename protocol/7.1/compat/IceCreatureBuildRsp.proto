@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "IceCreatureGadgetInfo.proto";
+
+// 7.1 CmdId 6254 (_IceCreatureBuildRsp).
+message IceCreatureBuildRsp {
+  IceCreatureLimitType limit_type = 3; // [JBMEHNKMCIB]
+  IceCreatureGadgetInfo ice_creature_gadget_info = 9;
+  int32 retcode = 15;
+}

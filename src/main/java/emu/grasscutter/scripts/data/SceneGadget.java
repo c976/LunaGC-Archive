@@ -10,9 +10,19 @@ public class SceneGadget extends SceneObject {
     public int drop_id;
     public int drop_count;
     public String drop_tag;
-    boolean showcutscene;
+    /** Source region for imported objects that have no native area_id. */
+    public String rewardRegion;
+    /** Source-backed chest identity; separate from its reward grade. */
+    public String chestType;
+    /** Source-backed grade, when the imported marker actually identifies one. */
+    public String chestGrade;
+    public boolean showcutscene;
     boolean persistence;
     public int state;
+
+    public boolean isShowcutscene() {
+        return showcutscene;
+    }
 
     public int point_type;
     public int owner;

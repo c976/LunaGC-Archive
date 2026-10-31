@@ -6,6 +6,7 @@ import emu.grasscutter.game.dungeons.challenge.WorldChallenge;
 import emu.grasscutter.game.dungeons.challenge.enums.ChallengeType;
 import emu.grasscutter.game.dungeons.challenge.trigger.*;
 import emu.grasscutter.game.world.Scene;
+import emu.grasscutter.game.quest.LiyueCloudDungeonSupport;
 import emu.grasscutter.scripts.data.SceneGroup;
 import java.util.List;
 
@@ -29,6 +30,12 @@ public class TriggerInTimeChallengeFactoryHandler implements ChallengeFactoryHan
             int triggerCount,
             Scene scene,
             SceneGroup group) {
+        if (emu.grasscutter.game.quest.AmberFlightExamSupport.isFlightChallenge(scene, group, challengeIndex, challengeId))
+            return emu.grasscutter.game.quest.AmberFlightExamSupport.createChallenge(scene, group,
+                    timeLimit, triggerTag, triggerCount);
+        if (LiyueCloudDungeonSupport.isFireChallenge(scene, group, challengeIndex, challengeId))
+            return LiyueCloudDungeonSupport.createFireChallenge(scene, group,
+                    challengeIndex, challengeId, timeLimit, triggerTag, triggerCount);
         return new WorldChallenge(
                 scene,
                 group,

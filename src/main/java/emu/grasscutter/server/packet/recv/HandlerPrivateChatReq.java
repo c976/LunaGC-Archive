@@ -13,7 +13,7 @@ public class HandlerPrivateChatReq extends PacketHandler {
         PrivateChatReq req = PrivateChatReq.parseFrom(payload);
         PrivateChatReq.ContentCase content = req.getContentCase();
 
-        Grasscutter.getLogger().info("PrivateChatReq: contentCase={}, targetUid={}, text='{}', icon={}", content, req.getTargetUid(), req.getText(), req.getIcon());
+        Grasscutter.getLogger().debug("PrivateChatReq: contentCase={}, targetUid={}, text='{}', icon={}", content, req.getTargetUid(), req.getText(), req.getIcon());
 
         if (content == PrivateChatReq.ContentCase.TEXT) {
             session

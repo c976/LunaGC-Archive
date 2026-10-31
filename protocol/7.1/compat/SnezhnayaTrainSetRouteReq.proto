@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 28390 (unnamed FNMHDOMFIOB; the name is inferred). The player picked a destination:
+// the stations of the line, the destination station and the curves to run.
+message SnezhnayaTrainSetRouteReq {
+  uint32 source_id = 2;
+  repeated uint32 station_list = 4;
+  uint32 dest_station_id = 6;
+  repeated SnezhnayaTrainRoute route_list = 7;
+}
+
+// KCLHEGPCHMM, the same shape as AONPAENJADL.
+message SnezhnayaTrainRoute {
+  repeated uint32 point_list = 1;
+}

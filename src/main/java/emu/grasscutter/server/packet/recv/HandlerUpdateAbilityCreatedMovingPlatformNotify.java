@@ -19,8 +19,8 @@ public class HandlerUpdateAbilityCreatedMovingPlatformNotify extends PacketHandl
         }
 
         switch (notify.getOpType()) {
-            case OP_TYPE_ACTIVATE -> entityGadget.startPlatform();
-            case OP_TYPE_DEACTIVATE -> entityGadget.stopPlatform();
+            case OpType_OP_ACTIVATE -> entityGadget.startPlatform();
+            case OpType_OP_DEACTIVATE -> entityGadget.stopPlatform();
         }
     }
 }

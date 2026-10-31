@@ -13,10 +13,15 @@ public class DungeonEntryData extends GameResource {
     private int id;
 
     private int dungeonEntryId;
+    /** Native metadata determines whether this entrance offers a first-discovery reward. */
+    private int rewardDataId;
     private int sceneId;
     private DungunEntryType type;
     private DungeonEntryCondCombType condComb;
     private List<DungeonEntryCondition> satisfiedCond;
+    // Missing native flag means the entrance is not listed in the Adventurer Handbook.
+    private boolean isShowInAdvHandbook;
+    private boolean isDefaultOpen;
 
     public static class DungeonEntryCondition {
         private DungeonEntrySatisfiedConditionType type;

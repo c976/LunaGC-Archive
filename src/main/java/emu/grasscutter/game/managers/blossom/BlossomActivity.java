@@ -21,9 +21,23 @@ public final class BlossomActivity {
     private int generatedCount;
     private final int worldLevel;
     private boolean pass = false;
+    private final Set<Integer> rewardClaimants = new HashSet<>();
+    private final Map<Integer, String> rewardOperations = new HashMap<>();
+
+    boolean rewardClaimed(int uid) { return rewardClaimants.contains(uid); }
+    void confirmReward(int uid) { rewardClaimants.add(uid); }
+    String rewardOperation(int uid) {
+        return rewardOperations.computeIfAbsent(uid, ignored -> UUID.randomUUID().toString());
+    }
+    void resetUnpaidReward(int uid) { rewardOperations.remove(uid); }
+
     private final List<EntityMonster> activeMonsters = new ArrayList<>();
+    // Keep every encounter root, including monsters already dead or pruned between waves.
+    private final Set<Integer> encounterMonsterIds = new HashSet<>();
+    // Death removes summoned entities from Scene before the claimable flower appears.
+    // Retain their identities so the client also receives a final VISION_REMOVE.
+    private final Map<Integer, GameEntity> encounterSummons = new LinkedHashMap<>();
     private final Queue<Integer> candidateMonsters = new ArrayDeque<>();
-    private static final int BLOOMING_GADGET_ID = 70210109;
 
     public BlossomActivity(
             EntityGadget entityGadget, List<Integer> monsters, int timeout, int worldLevel) {
@@ -53,18 +67,31 @@ public final class BlossomActivity {
         return this.challenge;
     }
 
-    public void setMonsters(List<EntityMonster> monsters) {
-        this.activeMonsters.clear();
+    public void addMonsters(List<EntityMonster> monsters) {
+        // Earlier waves can still have living enemies when the next wave appears.
+        this.activeMonsters.removeIf(monster -> !monster.isAlive());
         this.activeMonsters.addAll(monsters);
         for (EntityMonster monster : monsters) {
             monster.setGroupId(this.tempSceneGroup.id);
+            encounterMonsterIds.add(monster.getId());
+        }
+        observeSummons();
+    }
+
+    /** Called immediately when Scene registers an entity, before its onCreate abilities run. */
+    void onSceneEntityCreated(GameEntity entity) {
+        int parent = BlossomSummonCleanup.parentId(entity);
+        if (BlossomSummonCleanup.isEncounterChild(
+                parent, encounterMonsterIds, encounterSummons.keySet())) {
+            encounterSummons.putIfAbsent(entity.getId(), entity);
         }
     }
 
     public int getAliveMonstersCount() {
         int count = 0;
         for (EntityMonster monster : activeMonsters) {
-            if (monster.isAlive()) {
+            if (monster.isAlive()
+                    && monster.getScene().getEntityById(monster.getId()) == monster) {
                 count++;
             }
         }
@@ -79,10 +106,30 @@ public final class BlossomActivity {
         challenge.start();
     }
 
+    /** A completed kill challenge is authoritative even if a monster reference remains alive. */
+    static boolean encounterComplete(int goal, int generated, int alive, int kills) {
+        return kills >= goal || (generated >= goal && alive == 0);
+    }
+
     public void onTick() {
+        if (pass) return;
+        observeSummons();
+        if (challenge.isSuccess()) {
+            pass = true;
+            return;
+        }
+        if (!challenge.inProgress()) return;
+
         Scene scene = gadget.getScene();
         Position pos = gadget.getPosition();
-        if (getAliveMonstersCount() <= 2) {
+        int alive = getAliveMonstersCount();
+        int kills = challenge.getScore().get();
+        if (encounterComplete(goal, generatedCount, alive, kills)) {
+            challenge.done();
+            pass = true;
+            return;
+        }
+        if (alive <= 2) {
             if (generatedCount < goal) {
                 step++;
 
@@ -106,17 +153,37 @@ public final class BlossomActivity {
                     var level = scene.getEntityLevel(1, worldLevelOverride);
                     var entity =
                             new EntityMonster(scene, monsterData, pos.nearby2d(4f), Position.ZERO, level);
-                    scene.addEntity(entity);
                     newMonsters.add(entity);
                 }
-                setMonsters(newMonsters);
-            } else {
-                if (getAliveMonstersCount() == 0) {
-                    this.pass = true;
-                    this.challenge.done();
-                }
+                // Register roots before Scene.addEntity invokes onCreate/ability callbacks.
+                addMonsters(newMonsters);
+                for (EntityMonster monster : newMonsters) scene.addEntity(monster);
             }
         }
+    }
+
+    /**
+     * Remember both living summons and summons that the server already removed via a death
+     * notification. Their owners can also have disappeared in an earlier wave.
+     */
+    private void observeSummons() {
+        var owners = new HashSet<>(encounterMonsterIds);
+        owners.addAll(encounterSummons.keySet());
+        for (var spawned : BlossomSummonCleanup.find(gadget.getScene(), owners)) {
+            encounterSummons.putIfAbsent(spawned.getId(), spawned);
+        }
+    }
+
+    /** Finish the complete summon lifecycle before publishing the reward flower. */
+    void clearEncounterSummons() {
+        observeSummons();
+        var result = BlossomSummonCleanup.remove(gadget.getScene(), encounterSummons.values());
+        if (result.live() != 0 || result.stale() != 0) {
+            emu.grasscutter.Grasscutter.getLogger().info(
+                    "Ley-line encounter summons cleared source={} live={} stale={}",
+                    gadget.getId(), result.live(), result.stale());
+        }
+        encounterSummons.clear();
     }
 
     public EntityGadget getGadget() {
@@ -126,7 +193,9 @@ public final class BlossomActivity {
     public EntityGadget getChest() {
         if (chest == null) {
             EntityGadget rewardGadget =
-                    new EntityGadget(gadget.getScene(), BLOOMING_GADGET_ID, gadget.getPosition());
+                    new EntityGadget(gadget.getScene(),
+                            BlossomType.valueOf(gadget.getGadgetId()).getRewardChestGadgetId(),
+                            gadget.getPosition());
             SceneGadget metaGadget = new SceneGadget();
             metaGadget.boss_chest = new SceneBossChest();
             metaGadget.boss_chest.resin = 20;

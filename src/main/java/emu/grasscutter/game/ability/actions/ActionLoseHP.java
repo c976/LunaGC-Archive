@@ -5,9 +5,6 @@ import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.props.FightProperty;
-import emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason;
-import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
-import emu.grasscutter.server.packet.send.PacketEntityFightPropChangeReasonNotify;
 
 @AbilityAction(AbilityModifierAction.Type.LoseHP)
 public final class ActionLoseHP extends AbilityActionHandler {
@@ -49,20 +46,23 @@ public final class ActionLoseHP extends AbilityActionHandler {
 
         var currentHp = target.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
         var maxHp = target.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-        amountToLose += amountByTargetCurrentHPRatio * maxHp;
+        // Must use current HP — e.g. Hu Tao E costs 30% current HP (CrimsonPlum_LifeCostRatio).
+        amountToLose += amountByTargetCurrentHPRatio * currentHp;
         amountToLose += amountByTargetMaxHPRatio * maxHp;
 
-        if (limboByTargetMaxHPRatio > 1.192093e-07)
+        if (limboByTargetMaxHPRatio > 1.192093e-07) {
             amountToLose =
                     (float)
                             Math.min(
                                     Math.max(currentHp - Math.max(limboByTargetMaxHPRatio * maxHp, 1.0), 0.0),
                                     amountToLose);
+        } else if (!action.lethal) {
+            // Non-lethal (Hu Tao E): leave at least 1 HP instead of skipping the entire cost.
+            amountToLose = Math.min(amountToLose, Math.max(currentHp - 1f, 0f));
+        }
 
-        if (currentHp < (amountToLose + 0.01) && !action.lethal) amountToLose = 0;
         if (amountToLose <= 0) return true;
-        target.damage(amountToLose);
-        target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP, -amountToLose, PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY, ChangeHpReason.ChangeHpReason_CHANGE_HP_SUB_ABILITY));
+        target.loseHpByAbility(amountToLose, action.enableLockHP);
         return true;
     }
 }

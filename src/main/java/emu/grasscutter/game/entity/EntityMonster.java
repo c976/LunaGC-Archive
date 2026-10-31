@@ -1,5 +1,6 @@
 package emu.grasscutter.game.entity;
 
+import java.util.ArrayList;
 import static emu.grasscutter.scripts.constants.EventType.EVENT_SPECIFIC_MONSTER_HP_CHANGE;
 
 import emu.grasscutter.data.GameData;
@@ -7,6 +8,7 @@ import emu.grasscutter.data.binout.config.ConfigEntityMonster;
 import emu.grasscutter.data.common.PropGrowCurve;
 import emu.grasscutter.data.excels.EnvAnimalGatherConfigData;
 import emu.grasscutter.data.excels.monster.*;
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
@@ -58,6 +60,10 @@ public class EntityMonster extends GameEntity {
 
     @Getter private List<Player> playerOnBattle;
     @Nullable @Getter @Setter private SceneMonster metaMonster;
+    /** Set when gather reward was already granted via interact (avoid double drop on killEntity). */
+    @Getter @Setter private boolean envGatherRewarded;
+    private boolean commissionDeathReported;
+    @Getter @Setter private boolean goldenHousePhaseTransitionPending;
 
     public EntityMonster(
             Scene scene, MonsterData monsterData, Position pos, Position rot, int level) {
@@ -127,14 +133,20 @@ public class EntityMonster extends GameEntity {
 
         if (monsterData != null) {
             // TODO: Research if group affixes goes first
+            // Copied rather than appended to: affixes is the scene group's own list, shared by
+            // every spawn from that group, so addAll here grew it on each respawn.
             if (affixes == null) affixes = monsterData.getAffix();
-            else affixes.addAll(monsterData.getAffix());
+            else {
+                affixes = new ArrayList<>(affixes);
+                affixes.addAll(monsterData.getAffix());
+            }
         }
 
         if (affixes != null) {
             for (var affixId : affixes) {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
-                if (!affix.isPreAdd()) continue;
+                // An id the affix table does not carry, which a resource set is free to contain.
+                if (affix == null || !affix.isPreAdd()) continue;
 
                 // Add the ability
                 for (var name : affix.getAbilityName()) {
@@ -151,23 +163,40 @@ public class EntityMonster extends GameEntity {
 
         if (this.configEntityMonster != null && this.configEntityMonster.getAbilities() != null) {
             for (var configAbilityData : this.configEntityMonster.getAbilities()) {
-                this.addConfigAbility(configAbilityData.abilityName);
+                String abilityName = configAbilityData.abilityName;
+                try {
+                    if (emu.grasscutter.game.world.AzhdahaCombatStartHelper.isAzhdahaScene(
+                                    this.getScene().getId())
+                            && emu.grasscutter.game.world.AzhdahaCombatStartHelper.shouldSkipAbility(
+                                    abilityName)) {
+                        continue;
+                    }
+                } catch (Throwable ignored) {
+                }
+                this.addConfigAbility(abilityName);
             }
+        }
+
+        try {
+            emu.grasscutter.game.world.EffigyCombatHelper.onMonsterInit(this);
+        } catch (Throwable ignored) {
         }
 
         if (optionalGroup.isPresent()) {
             var group = optionalGroup.get();
             var monster = group.monsters.get(getConfigId());
-            if (monster != null && monster.isElite) {
-                this.addConfigAbility(
-                        GameData.getConfigGlobalCombat().getDefaultAbilities().getMonterEliteAbilityName());
+            var eliteAbility =
+                    GameData.getConfigGlobalCombat().getDefaultAbilities().getMonterEliteAbilityName();
+            if (monster != null && monster.isElite && eliteAbility != null) {
+                this.addConfigAbility(eliteAbility);
             }
         }
 
         if (affixes != null) {
             for (var affixId : affixes) {
                 var affix = GameData.getMonsterAffixDataMap().get(affixId.intValue());
-                if (affix.isPreAdd()) continue;
+                // As above: an id the affix table does not carry.
+                if (affix == null || affix.isPreAdd()) continue;
 
                 // Add the ability
                 for (var name : affix.getAbilityName()) {
@@ -216,7 +245,13 @@ public class EntityMonster extends GameEntity {
             return;
         }
 
-        player.getInventory().addItem(gatherData.getGatherItem(), ActionReason.SubfieldDrop);
+        // Reward once, and only once the item is in the bag.
+        if (this.envGatherRewarded
+                || !player.getInventory().addItem(gatherData.getGatherItem(), ActionReason.SubfieldDrop)) {
+            return;
+        }
+        this.envGatherRewarded = true;
+        player.onGadgetInteracted(interactReq.getGadgetId());
 
         this.getScene().killEntity(this);
     }
@@ -224,6 +259,19 @@ public class EntityMonster extends GameEntity {
     @Override
     public void onTick(int sceneTime) {
         super.onTick(sceneTime);
+
+        try {
+            emu.grasscutter.game.world.SignoraCombatStartHelper.onMonsterTick(this);
+        } catch (Throwable ignored) {
+        }
+        try {
+            emu.grasscutter.game.world.AzhdahaCombatStartHelper.onMonsterTick(this);
+        } catch (Throwable ignored) {
+        }
+        try {
+            emu.grasscutter.game.world.EffigyCombatHelper.onMonsterTick(this);
+        } catch (Throwable ignored) {
+        }
 
         // Lua event
         getScene()
@@ -238,11 +286,27 @@ public class EntityMonster extends GameEntity {
         // Get HP before damage.
         float hpBeforeDamage = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
 
+        try {
+            if (emu.grasscutter.game.world.SignoraCombatStartHelper.tryInterceptDamage(this, amount)) {
+                return;
+            }
+        } catch (Throwable ignored) {
+        }
+        try {
+            if (emu.grasscutter.game.world.EffigyCombatHelper.tryInterceptDamage(this, amount)) {
+                return;
+            }
+        } catch (Throwable ignored) {
+        }
+
         // Apply damage.
         super.damage(amount, killerId, attackType);
 
         // Get HP after damage.
         float hpAfterDamage = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+
+        emu.grasscutter.game.quest.LiyueGoldenHouseCombatSupport.afterDamage(
+                this, hpBeforeDamage, amount, killerId);
 
         // Invoke energy drop logic.
         for (Player player : this.getScene().getPlayers()) {
@@ -262,14 +326,30 @@ public class EntityMonster extends GameEntity {
                                         getConfigId(),
                                         monsterData.getId())
                                 .setSourceEntityId(getId())
-                                .setParam3((int) this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP))
+                                .setParam3(hpPercentage(
+                                        this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP),
+                                        this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP)))
                                 .setEventSource(getConfigId()));
+    }
+
+    static int hpPercentage(float currentHp, float maxHp) {
+        if (!Float.isFinite(currentHp) || !Float.isFinite(maxHp) || maxHp <= 0f) return 100;
+        return (int) Math.max(0d, Math.min(100d, 100d * currentHp / maxHp));
     }
 
     @Override
     public void onDeath(int killerId) {
         super.onDeath(killerId); // Invoke super class's onDeath() method.
         var scene = this.getScene();
+        // The reward flower belongs to the monster's actual death. Handle it before
+        // unrelated Lua/challenge callbacks, which may fail and abort death processing.
+        try {
+            emu.grasscutter.game.world.WorldBossSpawnHelper.onWorldBossKilled(this);
+        } catch (Throwable t) {
+            emu.grasscutter.Grasscutter.getLogger().error(
+                    "World boss death handling failed scene={} group={} cfg={} monster={}",
+                    scene.getId(), getGroupId(), getConfigId(), getEntityTypeId(), t);
+        }
         var challenge = Optional.ofNullable(scene.getChallenge());
         var scriptManager = scene.getScriptManager();
 
@@ -295,6 +375,12 @@ public class EntityMonster extends GameEntity {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+        // Commission progress lives with the world host, once per monster.
+        var host = scene.getWorld().getHost();
+        if (!commissionDeathReported && host != null && host.getDailyTaskManager() != null) {
+            commissionDeathReported = true;
+            host.getDailyTaskManager().onMonsterDeath(scene, getGroupId(), getPosition());
         }
         // Battle Pass trigger
         scene
@@ -341,6 +427,23 @@ public class EntityMonster extends GameEntity {
         summonTagMap.values().stream()
                 .filter(Objects::nonNull)
                 .forEach(entity -> scene.killEntity(entity, killerId));
+        try {
+            OpenWorldSpawnHelper.onMonsterKilled(this);
+        } catch (Throwable ignored) {
+            // Open-world cooldown persistence must not interrupt death processing.
+        }
+        try {
+            emu.grasscutter.game.world.AndriusTrialStartHelper.onBossKilled(this);
+        } catch (Throwable ignored) {
+        }
+        try {
+            emu.grasscutter.game.world.SignoraCombatStartHelper.onBossRemoved(this);
+        } catch (Throwable ignored) {
+        }
+        try {
+            InvestigationSpawnHelper.markKilled(this);
+        } catch (Throwable ignored) {
+        }
     }
 
     public void recalcStats() {
@@ -385,7 +488,11 @@ public class EntityMonster extends GameEntity {
         //  +100%: Floors 8 – 11
         //  +150%: Floor 12
         var dungeonManager = getScene().getDungeonManager();
-        var towerManager = getScene().getPlayers().get(0).getTowerManager();
+        // recalcStats() runs from the constructor, so a monster can be built while the scene has no
+        // players yet (scene setup, or the teardown window in DungeonSystem.restartDungeon).
+        // Resolve the tower manager lazily so an empty player list can't blow up an ordinary spawn.
+        var players = getScene().getPlayers();
+        var towerManager = players.isEmpty() ? null : players.get(0).getTowerManager();
         if (dungeonManager != null && dungeonManager.isTowerDungeon() && towerManager != null) {
             var floor = towerManager.getCurrentFloorNumber();
             float additionalScaleFactor = 0f;
@@ -413,7 +520,7 @@ public class EntityMonster extends GameEntity {
         var data = this.getMonsterData();
 
         var aiInfo =
-                SceneEntityAiInfo.newBuilder().setIsAiOpen(true);
+                SceneEntityAiInfo.newBuilder().setIsEnteredCombat(true);
         if (ownerEntityId != 0) {
             aiInfo.setServantInfo(ServantInfo.newBuilder().setMasterEntityId(ownerEntityId));
         }
@@ -453,23 +560,14 @@ public class EntityMonster extends GameEntity {
                         .addAllAffixList(data.getAffix())
                         .setAuthorityPeerId(this.getWorld().getHostPeerId())
                         .setPoseId(this.getPoseId())
-                        .setBlockId(this.getScene().getId())
+                        .setBlockId(DomainDungeonHelper.notifySceneId(this.getScene().getId()))
                         .setSummonedTag(this.summonedTag)
                         .setOwnerEntityId(this.ownerEntityId)
                         .setBornType(MonsterBornType.MonsterBornType_MONSTER_BORN_DEFAULT);
         summonTagMap.forEach((k, v) -> monsterInfo.putSummonTagMap(k, v == null ? 0 : 1));
 
-        if (this.metaMonster != null) {
-            if (this.metaMonster.special_name_id != 0) {
-                monsterInfo
-                        .setTitleId(this.metaMonster.title_id)
-                        .setSpecialNameId(this.metaMonster.special_name_id);
-            } else if (data.getDescribeData() != null) {
-                monsterInfo
-                        .setTitleId(data.getDescribeData().getTitleId())
-                        .setSpecialNameId(data.getSpecialNameId());
-            }
-        }
+        var names = MonsterNameResolver.resolve(data, this.metaMonster);
+        monsterInfo.setTitleId(names.titleId()).setSpecialNameId(names.specialNameId());
 
         if (this.getMonsterWeaponId() > 0) {
             SceneWeaponInfo weaponInfo =

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 8878 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message DungeonSlipRevivePointActivateReq {
+  uint32 slip_revive_point_id = 3;
+}

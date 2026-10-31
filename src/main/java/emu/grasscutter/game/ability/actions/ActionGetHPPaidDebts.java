@@ -7,7 +7,7 @@ import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.entity.EntityAvatar;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.props.FightProperty;
-import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass;
+import emu.grasscutter.net.proto.ChangeHpDebtsReason;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropChangeReasonNotify;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropUpdateNotify;
@@ -29,7 +29,7 @@ public final class ActionGetHPPaidDebts extends AbilityActionHandler {
             target.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_PAID_DEBTS, paiddebt);
 
             target.getWorld().broadcastPacket(new PacketEntityFightPropUpdateNotify(target, FightProperty.FIGHT_PROP_CUR_HP_PAID_DEBTS));
-            target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP_PAID_DEBTS, paiddebt, PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY, ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY));
+            target.getWorld().broadcastPacket(new PacketEntityFightPropChangeReasonNotify(target, FightProperty.FIGHT_PROP_CUR_HP_PAID_DEBTS, paiddebt, PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY, ChangeHpDebtsReason._ChangeHpDebtsReason._ChangeHpDebtsReason_CHANGE_HP_DEBTS_PAY));
         } else {
             Grasscutter.getLogger().warn("[ActionGetHPPaidDebts] CANNOT PAY HPDEBT FOR NON AVATAR ENTITY");
             return false;

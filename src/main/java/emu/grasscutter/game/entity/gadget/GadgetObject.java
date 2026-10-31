@@ -27,6 +27,13 @@ public class GadgetObject extends GadgetContent {
         // This is a workaround until a proper gadget interaction system can be put in place.
         ItemData itemData = GameData.getItemDataMap().get(this.itemId);
         if (itemData == null) {
+            // Gates and mechanisms have no gather data, so they used to return here silently: no
+            // packet to the client, no script event, and the group script never ran. Give the
+            // Shrine of Depths gates a chance before falling through.
+            if (TempleShrineHelper.onInteract(getGadget(), player)) {
+                // The interaction is handled, but deletion is owned by the group Lua script.
+                return false;
+            }
             return false;
         }
 

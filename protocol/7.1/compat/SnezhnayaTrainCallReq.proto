@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "BMJNJLKCODG.proto";
+
+// 7.1 CmdId 3893 (unnamed BLIFHENFCPN in kitkat-multiverse/genshin-protocol 7.1.0; the name is
+// inferred). Sent when the player calls their train with Grey Eyes: the curve the player stands by,
+// the segment, the progress along it and the train speed.
+message SnezhnayaTrainCallReq {
+  BMJNJLKCODG curve_info = 14;
+}

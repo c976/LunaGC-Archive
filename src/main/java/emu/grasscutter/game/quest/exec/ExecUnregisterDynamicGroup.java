@@ -12,10 +12,11 @@ public class ExecUnregisterDynamicGroup extends QuestExecHandler {
 
     @Override
     public boolean execute(GameQuest quest, QuestData.QuestExecParam condition, String... paramStr) {
-        val groupId = Integer.parseInt(paramStr[0]);
-        val unknownParam =
-                Integer.parseInt(paramStr[1]); // TODO: Goes from 0 to 1, maybe is a boolean. Investigate
+        int groupId = parseGroupId(paramStr);
+        if (groupId <= 0 || quest == null || quest.getOwner() == null) return false;
+        // Native actions may omit the unused second flag, including MQ18000 cleanup.
         val scene = quest.getOwner().getScene();
+        if (scene == null) return false;
 
         Grasscutter.getLogger().debug("Unregistering group {}", groupId);
 
@@ -32,5 +33,15 @@ public class ExecUnregisterDynamicGroup extends QuestExecHandler {
         Grasscutter.getLogger().debug("Unregistered group {} in scene {}", groupId, scene.getId());
 
         return true;
+    }
+
+    static int parseGroupId(String... params) {
+        if (params == null || params.length == 0) return 0;
+        try {
+            int id = Integer.parseInt(params[0]);
+            return id > 0 ? id : 0;
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 }

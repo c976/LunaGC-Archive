@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "WeaponUpgradeReqOuterClass";
+
+import "ItemParam.proto";
+
+// 7.1 BAMJGGCALOL, CmdId 21801. Recovered in invoker-bot/LunaGC commit 9b39ea5.
+message WeaponUpgradeReq {
+  uint64 target_weapon_guid = 5;
+  repeated uint64 food_weapon_guid_list = 15;
+  repeated ItemParam item_param_list = 8;
+}

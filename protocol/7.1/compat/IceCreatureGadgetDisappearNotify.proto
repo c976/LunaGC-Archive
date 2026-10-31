@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "IceCreatureGadgetInfo.proto";
+
+// 7.1 CmdId 22946 (_IceCreatureGadgetDisappearNotify).
+message IceCreatureGadgetDisappearNotify {
+  enum Reason {
+    REASON_NONE = 0;
+    REASON_REMOVE = 1;
+    REASON_BLOCK_POLYGON = 2;
+  }
+
+  Reason reason = 13;
+  repeated IceCreatureGadgetInfo ice_creature_gadget_info_list = 14;
+}

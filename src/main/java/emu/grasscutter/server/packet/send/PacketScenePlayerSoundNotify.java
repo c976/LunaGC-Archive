@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.data.SoundRegistry;
 import emu.grasscutter.game.world.Position;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.ScenePlayerSoundNotifyOuterClass.ScenePlayerSoundNotify;
@@ -22,6 +23,7 @@ public class PacketScenePlayerSoundNotify extends BasePacket {
                             .build());
         }
         if (!Objects.equals(soundName, null)) {
+            SoundRegistry.observe(soundName);
             proto.setSoundName(soundName);
         }
         proto.setPlayType(PlaySoundType.forNumber(playType));

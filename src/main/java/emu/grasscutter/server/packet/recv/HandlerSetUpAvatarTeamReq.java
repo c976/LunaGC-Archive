@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.recv;
 
+import emu.grasscutter.game.player.TeamSetupHelper;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.SetUpAvatarTeamReqOuterClass.SetUpAvatarTeamReq;
 import emu.grasscutter.server.game.GameSession;
@@ -12,11 +13,9 @@ public class HandlerSetUpAvatarTeamReq extends PacketHandler {
         SetUpAvatarTeamReq req = SetUpAvatarTeamReq.parseFrom(payload);
 
         int teamId = (req.getTeamId() ^ 63709) - 19529;
-        long curAvatarGuid = (req.getCurAvatarGuid() ^ 1583L) - 41090L;
 
-        session
-                .getPlayer()
-                .getTeamManager()
-                .setupAvatarTeam(teamId, req.getAvatarTeamGuidListList());
+        // Bypass TeamManager.setupAvatarTeam (remote may still have get(team.size()) bug).
+        TeamSetupHelper.setupAvatarTeam(
+                session.getPlayer(), teamId, req.getAvatarTeamGuidListList());
     }
 }

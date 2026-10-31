@@ -68,6 +68,12 @@ public enum WatcherTriggerType {
     TRIGGER_UNLOCK_SPECIFIC_ANIMAL_CODEX(229),
     TRIGGER_OBTAIN_ITEM_NUM(230),
     TRIGGER_CAPTURE_ANIMAL(231),
+    /** Adventurer Handbook preparation: promote avatar excluding Traveler. */
+    TRIGGER_AVATAR_PROMOTE_EXCLUDING_PLAYER(232),
+    /** Adventurer Handbook preparation: historical relic obtain count by rank. */
+    TRIGGER_OBTAIN_RELIQUARY_HISTORY_COUNT(233),
+    /** Adventurer Handbook preparation: first-clear dungeon reward claimed. */
+    TRIGGER_TAKE_DUNGEON_FIRST_PASS_REWARD(234),
     TRIGGER_DAILY_TASK(301),
     TRIGGER_RAND_TASK(302),
     TRIGGER_AVATAR_EXPEDITION(303),

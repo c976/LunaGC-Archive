@@ -1,0 +1,4 @@
+syntax = "proto3";
+
+// Build-only import stub; the merged schema uses Vector from protocol.desc.
+message Vector {}

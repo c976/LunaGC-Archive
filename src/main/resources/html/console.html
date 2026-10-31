@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>AstaPS Console</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --panel: #ffffff; --panel-2: #f8f9fb; --text: #15171c; --muted: #6a717d;
+    --border: #e2e5ea; --accent: #3b5bdb; --accent-soft: #e8edff; --accent-text: #ffffff;
+    --ok: #1f8a4c; --busy: #2f6fdb; --warn: #b7791f; --bad: #c92a2a;
+    --ok-soft: #e6f4ec; --warn-soft: #fbf1df; --bad-soft: #fbe7e7; --busy-soft: #e7effc;
+    --term-bg: #0d1016; --term-text: #d5d9e0; --term-muted: #6b7380; --term-border: #1c212b;
+    --term-info: #7cb7ff; --term-warn: #f2b84b; --term-error: #ff7070; --term-debug: #8a93a3;
+    --radius: 12px; --shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 1px 3px rgba(16, 24, 40, .06);
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --panel: #171a21; --panel-2: #1c2029; --text: #e7e9ee; --muted: #959cab;
+      --border: #272c37; --accent: #6d8cff; --accent-soft: #1f2742; --accent-text: #0d1016;
+      --ok: #4cc283; --busy: #6d9cff; --warn: #e3b04b; --bad: #ff7b7b;
+      --ok-soft: #15291f; --warn-soft: #2d2414; --bad-soft: #321a1c; --busy-soft: #18233a;
+      --term-bg: #0a0c10; --term-border: #20252f;
+      --shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--bg); color: var(--text); min-height: 100vh;
+    font: 14px/1.5 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .hidden { display: none !important; }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; border: 1px solid var(--border); background: var(--panel); border-radius: 8px;
+    padding: 6px 12px; transition: background .15s, border-color .15s; }
+  button:hover { background: var(--panel-2); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
+  button.primary:hover { filter: brightness(1.06); }
+  button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  input[type=text], input[type=password] { width: 100%; padding: 9px 12px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--panel); }
+
+  /* Language switch */
+  .lang { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--panel); }
+  .lang button { border: 0; border-radius: 0; padding: 4px 10px; font-size: 12px; color: var(--muted); background: transparent; }
+  .lang button[aria-pressed=true] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 650; letter-spacing: .2px; }
+  .logo { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--accent), #8a5cf6); color: #fff; font-size: 13px; font-weight: 700; }
+
+  /* Login */
+  #login { min-height: 100vh; display: grid; place-items: center; padding: 24px 16px;
+    background: radial-gradient(1200px 500px at 50% -10%, var(--accent-soft), transparent 70%); }
+  #login .box { width: 100%; max-width: 360px; background: var(--panel); border: 1px solid var(--border);
+    border-radius: 16px; padding: 28px; box-shadow: var(--shadow); }
+  #login .top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  #login p.hint { color: var(--muted); margin: 0 0 16px; font-size: 13px; }
+  #login form { display: grid; gap: 12px; }
+  #login button.primary { padding: 9px 12px; }
+  #login-error { color: var(--bad); min-height: 1.5em; margin: 0; font-size: 13px; }
+
+  /* App shell */
+  header { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 16px;
+    padding: 10px 20px; background: color-mix(in srgb, var(--panel) 88%, transparent);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+  header .spacer { flex: 1; }
+  header > * { flex-shrink: 0; white-space: nowrap; }
+  header .spacer { flex-shrink: 1; min-width: 0; }
+  @media (max-width: 600px) {
+    header { gap: 10px; padding: 10px 12px; }
+    header .pill { padding: 4px 6px; }
+    header .pill #h-text { display: none; }
+    header .brand .logo + span > span { display: none; }
+  }
+  .pill { display: inline-flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 999px;
+    font-size: 12px; background: var(--panel-2); border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
+  .dot.NORMAL { background: var(--ok); box-shadow: 0 0 0 3px var(--ok-soft); }
+  .dot.BUSY { background: var(--busy); box-shadow: 0 0 0 3px var(--busy-soft); }
+  .dot.WARNING { background: var(--warn); box-shadow: 0 0 0 3px var(--warn-soft); }
+  .dot.DANGER { background: var(--bad); box-shadow: 0 0 0 3px var(--bad-soft); }
+
+  main { max-width: 1280px; margin: 0 auto; padding: 20px; display: grid; gap: 16px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
+  .card { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 14px 16px; box-shadow: var(--shadow); min-width: 0; }
+  .card .label { color: var(--muted); font-size: 12px; }
+  .card .value { font-size: 22px; font-weight: 650; margin-top: 4px; font-variant-numeric: tabular-nums;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .sub { color: var(--muted); font-size: 12px; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .value.NORMAL { color: var(--ok); } .card .value.BUSY { color: var(--busy); }
+  .card .value.WARNING { color: var(--warn); } .card .value.DANGER { color: var(--bad); }
+  .meter { height: 4px; border-radius: 4px; background: var(--panel-2); margin-top: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .meter > span { display: block; height: 100%; width: 0; background: var(--ok); transition: width .4s, background .4s; }
+  .meter > span.mid { background: var(--warn); } .meter > span.high { background: var(--bad); }
+
+  .panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+  .panel-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .panel-head h2 { font-size: 14px; margin: 0; font-weight: 650; }
+  .panel-head .meta { color: var(--muted); font-size: 12px; }
+  .panel-head .tools { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .grid-2 { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; }
+  @media (max-width: 900px) { .grid-2 { grid-template-columns: minmax(0, 1fr); } header { padding: 10px 16px; } main { padding: 16px; } }
+
+  /* Terminal and log */
+  .term { background: var(--term-bg); color: var(--term-text); font: 12.5px/1.55 var(--mono); }
+  .term .out { height: 300px; overflow: auto; padding: 10px 14px; white-space: pre-wrap; word-break: break-word; }
+  .term .line { padding: 1px 0; }
+  .term .cmd { color: #e7e9ee; } .term .cmd::before { content: "› "; color: var(--accent); }
+  .term .INFO { color: var(--term-text); } .term .ERROR { color: var(--term-error); }
+  .term .DEBUG, .term .TRACE, .term .note { color: var(--term-debug); }
+  .prompt { display: flex; align-items: center; gap: 8px; border-top: 1px solid var(--term-border); padding: 8px 10px 8px 14px; }
+  .prompt span { color: var(--accent); font-weight: 700; }
+  .prompt input { flex: 1; background: transparent; border: 0; color: var(--term-text); font: 13px var(--mono); padding: 6px 0; }
+  .prompt input:focus-visible { outline: none; }
+  .prompt button { background: var(--accent); border-color: var(--accent); color: var(--accent-text); font-size: 12px; font-weight: 600; }
+
+  .log .out { height: 460px; }
+  .log .row { display: grid; grid-template-columns: 64px 52px minmax(0, 1fr); gap: 10px; padding: 1px 0; }
+  .log .time { color: var(--term-muted); }
+  .log .lvl { font-size: 11px; font-weight: 700; letter-spacing: .3px; }
+  .log .lvl.INFO { color: var(--term-info); } .log .lvl.WARN { color: var(--term-warn); }
+  .log .lvl.ERROR { color: var(--term-error); } .log .lvl.DEBUG, .log .lvl.TRACE { color: var(--term-debug); }
+  .log .src { color: var(--term-muted); }
+  .log .row.WARN .msg { color: #f3d9a4; } .log .row.ERROR .msg { color: #ffb3b3; }
+  .chips { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .chips button { border: 0; border-radius: 0; padding: 4px 10px; font-size: 12px; color: var(--muted); background: transparent; }
+  .chips button[aria-pressed=true] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .tools input[type=text] { width: 160px; padding: 4px 10px; font-size: 12px; }
+  .tools label { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); white-space: nowrap; }
+  .tools button.small { padding: 4px 10px; font-size: 12px; }
+
+  /* Players */
+  .table-wrap { overflow: auto; max-height: 352px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 8px 14px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { position: sticky; top: 0; background: var(--panel); color: var(--muted); font-weight: 500; font-size: 12px; }
+  tbody tr:hover { background: var(--panel-2); }
+  td.uid { font-family: var(--mono); font-size: 12.5px; }
+  .empty { color: var(--muted); padding: 28px 14px; text-align: center; }
+</style>
+</head>
+<body>
+
+<section id="login">
+  <div class="box">
+    <div class="top">
+      <div class="brand"><div class="logo">A</div><span>AstaPS <span data-i18n="console"></span></span></div>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+    <p class="hint" data-i18n="loginHint"></p>
+    <form id="login-form">
+      <input id="password" type="password" data-i18n-placeholder="password" autocomplete="current-password" required>
+      <button class="primary" type="submit" data-i18n="login"></button>
+      <p id="login-error" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<section id="app" class="hidden">
+  <header>
+    <div class="brand"><div class="logo">A</div><span>AstaPS <span data-i18n="console"></span></span></div>
+    <span class="pill" title=""><span class="dot" id="h-dot"></span><span id="h-text">-</span></span>
+    <span class="spacer"></span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button>
+    </div>
+    <button id="logout" type="button" data-i18n="logout"></button>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div class="card"><div class="label" data-i18n="players"></div><div class="value" id="s-players">-</div><div class="sub" id="s-version"></div></div>
+      <div class="card"><div class="label" data-i18n="uptime"></div><div class="value" id="s-uptime">-</div><div class="sub" id="s-started"></div></div>
+      <div class="card"><div class="label" data-i18n="health"></div><div class="value" id="s-health">-</div><div class="sub" id="s-diagnosis"></div></div>
+      <div class="card"><div class="label" data-i18n="cpu"></div><div class="value" id="s-cpu">-</div><div class="sub" id="s-syscpu"></div><div class="meter"><span id="m-cpu"></span></div></div>
+      <div class="card"><div class="label" data-i18n="jvmMem"></div><div class="value" id="s-mem">-</div><div class="sub" id="s-memsub"></div><div class="meter"><span id="m-mem"></span></div></div>
+      <div class="card"><div class="label" data-i18n="sysMem"></div><div class="value" id="s-sysmem">-</div><div class="sub" id="s-sysmemsub"></div><div class="meter"><span id="m-sysmem"></span></div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-head"><h2 data-i18n="command"></h2><span class="meta" data-i18n="commandHint"></span>
+          <div class="tools"><button type="button" class="small" id="cmd-clear" data-i18n="clear"></button></div></div>
+        <div class="term">
+          <div class="out" id="cmd-output" aria-live="polite"></div>
+          <form class="prompt" id="cmd-form">
+            <span>›</span>
+            <input id="cmd" type="text" data-i18n-placeholder="commandPlaceholder" autocomplete="off" spellcheck="false">
+            <button type="submit" data-i18n="run"></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2 data-i18n="onlinePlayers"></h2><span class="meta" id="players-updated"></span></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>UID</th><th data-i18n="nickname"></th><th data-i18n="ar"></th><th data-i18n="wl"></th><th data-i18n="scene"></th></tr></thead>
+            <tbody id="players"></tbody>
+          </table>
+          <div class="empty hidden" id="players-empty" data-i18n="noPlayers"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head"><h2 data-i18n="serverLog"></h2>
+        <div class="tools">
+          <div class="chips" role="group" id="lvl-filter">
+            <button type="button" data-level="ALL" aria-pressed="true" data-i18n="all"></button>
+            <button type="button" data-level="INFO" aria-pressed="false">INFO</button>
+            <button type="button" data-level="WARN" aria-pressed="false">WARN</button>
+            <button type="button" data-level="ERROR" aria-pressed="false">ERROR</button>
+          </div>
+          <input id="log-filter" type="text" data-i18n-placeholder="filter">
+          <label><input id="log-follow" type="checkbox" checked> <span data-i18n="follow"></span></label>
+          <button type="button" class="small" id="log-clear" data-i18n="clear"></button>
+        </div>
+      </div>
+      <div class="term log"><div class="out" id="log"></div></div>
+    </div>
+  </main>
+</section>
+
+<script>
+(() => {
+  const I18N = {
+    zh: {
+      title: "AstaPS 控制台", console: "控制台", loginHint: "输入服务器的控制台密码。", password: "控制台密码", login: "登录",
+      logout: "退出登录", wrongPassword: "密码错误", lockedOut: "密码错误次数过多，请 10 分钟后再试",
+      unreachable: "无法连接服务器", expired: "登录已过期，请重新登录",
+      players: "在线玩家", uptime: "运行时间", health: "状态", cpu: "进程 CPU", jvmMem: "JVM 内存", sysMem: "系统内存",
+      version: "版本 {v}", startedAt: "启动于 {t}", system: "系统 {v}",
+      command: "执行命令", commandHint: "和服务器控制台一样，不用加 /，↑↓ 切换历史", commandPlaceholder: "例如：list 或 give @10001 201 x1000",
+      run: "执行", clear: "清空", noOutput: "（没有直接输出，结果请看日志）", failed: "执行失败：{e}",
+      onlinePlayers: "在线玩家", nickname: "昵称", ar: "冒险等级", wl: "世界等级", scene: "场景",
+      noPlayers: "没有在线玩家", updatedAt: "更新于 {t}",
+      serverLog: "服务器日志", all: "全部", filter: "过滤日志", follow: "自动滚动",
+      h_NORMAL: "正常", h_BUSY: "繁忙", h_WARNING: "注意", h_DANGER: "危险",
+      d_NONE: "没有发现瓶颈", d_ELEVATED_LOAD: "负载正在上升", d_REJECTED_TASKS: "有任务被拒绝",
+      d_SLOW_TASKS: "任务平均耗时过高", d_QUEUE_BACKLOG: "任务队列在堆积", d_THREADS_SATURATED: "所有线程都在忙",
+      d_FAILING_TASKS: "有任务在抛出异常", d_CPU_LIMIT: "CPU 接近上限", d_MEMORY_PRESSURE: "内存占用过高",
+      d_GAME_TICK_STALLED: "游戏主循环已停止响应", d_JVM_DEADLOCK: "检测到 JVM 死锁，游戏处理可能已卡住",
+      d_JVM_DEADLOCK_CHECK: "无法完成 JVM 死锁检测",
+    },
+    en: {
+      title: "AstaPS Console", console: "Console", loginHint: "Enter the server's console password.", password: "Console password", login: "Sign in",
+      logout: "Sign out", wrongPassword: "Wrong password", lockedOut: "Too many wrong passwords. Try again in 10 minutes.",
+      unreachable: "Cannot reach the server", expired: "Your session has expired. Please sign in again.",
+      players: "Players online", uptime: "Uptime", health: "Health", cpu: "Process CPU", jvmMem: "JVM memory", sysMem: "System memory",
+      version: "Version {v}", startedAt: "Started {t}", system: "System {v}",
+      command: "Run command", commandHint: "Same as the server console, no leading /. ↑↓ for history", commandPlaceholder: "e.g. list or give @10001 201 x1000",
+      run: "Run", clear: "Clear", noOutput: "(No direct output; check the log.)", failed: "Failed: {e}",
+      onlinePlayers: "Online players", nickname: "Nickname", ar: "Adventure rank", wl: "World level", scene: "Scene",
+      noPlayers: "No players online", updatedAt: "Updated {t}",
+      serverLog: "Server log", all: "All", filter: "Filter log", follow: "Follow",
+      h_NORMAL: "Normal", h_BUSY: "Busy", h_WARNING: "Warning", h_DANGER: "Danger",
+    },
+  };
+
+  const $ = (id) => document.getElementById(id);
+  const storage = {
+    get(key) { try { return localStorage.getItem(key); } catch (e) { return null; } },
+    set(key, v) { try { v == null ? localStorage.removeItem(key) : localStorage.setItem(key, v); } catch (e) {} },
+  };
+  const session = {
+    get() { try { return sessionStorage.getItem("astaps-console-token"); } catch (e) { return null; } },
+    set(v) { try { v ? sessionStorage.setItem("astaps-console-token", v) : sessionStorage.removeItem("astaps-console-token"); } catch (e) {} },
+  };
+
+  let lang = storage.get("astaps-console-lang") || ((navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en");
+  if (!I18N[lang]) lang = "en";
+  let lastStatus = null;
+
+  function t(key, vars) {
+    let text = (I18N[lang] && I18N[lang][key]) ?? I18N.en[key] ?? key;
+    if (vars) for (const [k, v] of Object.entries(vars)) text = text.replace("{" + k + "}", v);
+    return text;
+  }
+
+  function applyLanguage() {
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    document.title = t("title");
+    document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+    document.querySelectorAll(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+    if (lastStatus) renderStatus(lastStatus);
+  }
+
+  document.querySelectorAll(".lang button").forEach((b) => b.addEventListener("click", () => {
+    lang = b.dataset.lang; storage.set("astaps-console-lang", lang); applyLanguage();
+  }));
+
+  let token = session.get();
+  let lastSeq = 0;
+  let timers = [];
+  const MAX_LOG_LINES = 2000;
+
+  async function api(path, options = {}) {
+    const headers = Object.assign({ "Content-Type": "application/json" }, options.headers || {});
+    if (token) headers["X-Console-Token"] = token;
+    const response = await fetch(path, Object.assign({ cache: "no-store" }, options, { headers }));
+    if (response.status === 401) { showLogin(t("expired")); throw new Error("unauthorized"); }
+    return response;
+  }
+
+  function stopPolling() { timers.forEach(clearInterval); timers = []; }
+  function startPolling() {
+    stopPolling();
+    refreshStatus(); refreshPlayers(); refreshLogs();
+    timers.push(setInterval(refreshStatus, 5000));
+    timers.push(setInterval(refreshPlayers, 5000));
+    timers.push(setInterval(refreshLogs, 2000));
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (!token || $("app").classList.contains("hidden")) return;
+    document.hidden ? stopPolling() : startPolling();
+  });
+
+  function showLogin(message) {
+    stopPolling();
+    token = null; session.set(null);
+    $("app").classList.add("hidden");
+    $("login").classList.remove("hidden");
+    $("login-error").textContent = message || "";
+    $("password").focus();
+  }
+
+  function showApp() {
+    $("login").classList.add("hidden");
+    $("app").classList.remove("hidden");
+    $("log").replaceChildren(); lastSeq = 0;
+    startPolling();
+    $("cmd").focus();
+  }
+
+  $("login-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    $("login-error").textContent = "";
+    try {
+      const response = await fetch("/console/api/login", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: $("password").value }),
+      });
+      const body = await response.json().catch(() => ({}));
+      if (response.ok && body.token) {
+        token = body.token; session.set(token); $("password").value = ""; showApp();
+      } else {
+        $("login-error").textContent = response.status === 429 ? t("lockedOut") : t("wrongPassword");
+      }
+    } catch (e) {
+      $("login-error").textContent = t("unreachable");
+    }
+  });
+
+  $("logout").addEventListener("click", async () => {
+    try { await api("/console/api/logout", { method: "POST" }); } catch (e) {}
+    showLogin();
+  });
+
+  const pct = (v) => (typeof v === "number" && v >= 0) ? (v * 100).toFixed(1) + "%" : "-";
+  const size = (v) => {
+    if (typeof v !== "number" || v < 0) return "-";
+    return v >= 1073741824 ? (v / 1073741824).toFixed(1) + " GB" : (v / 1048576).toFixed(0) + " MB";
+  };
+  function meter(id, v) {
+    const bar = $(id);
+    const ratio = (typeof v === "number" && v >= 0) ? Math.min(v, 1) : 0;
+    bar.style.width = (ratio * 100).toFixed(1) + "%";
+    bar.className = ratio >= 0.9 ? "high" : ratio >= 0.7 ? "mid" : "";
+  }
+
+  function renderStatus(s) {
+    const g = s.game || {}, j = s.jvm || {}, sys = s.system || {};
+    $("s-players").textContent = g.maxPlayers > 0 ? `${g.players} / ${g.maxPlayers}` : `${g.players ?? "-"}`;
+    $("s-version").textContent = g.gameVersion ? t("version", { v: g.gameVersion }) : "";
+    $("s-uptime").textContent = g.uptime || "-";
+    $("s-started").textContent = g.startedAt ? t("startedAt", { t: g.startedAt }) : "";
+
+    const healthName = s.health ? t("h_" + s.health) : "-";
+    const diagnosis = (s.diagnosisCode && I18N[lang]["d_" + s.diagnosisCode]) || s.diagnosis || "";
+    $("s-health").textContent = healthName;
+    $("s-health").className = "value " + (s.health || "");
+    $("s-diagnosis").textContent = diagnosis;
+    $("s-diagnosis").title = s.suggestion || "";
+    $("h-dot").className = "dot " + (s.health || "");
+    $("h-text").textContent = healthName + (g.uptime ? " · " + g.uptime : "");
+
+    $("s-cpu").textContent = pct(j.processCpuLoad);
+    $("s-syscpu").textContent = t("system", { v: pct(sys.systemCpuLoad) });
+    meter("m-cpu", j.processCpuLoad);
+    $("s-mem").textContent = pct(j.memoryUsage);
+    $("s-memsub").textContent = `${size(j.usedMemoryBytes)} / ${size(j.maxMemoryBytes)}`;
+    meter("m-mem", j.memoryUsage);
+    $("s-sysmem").textContent = pct(sys.memoryUsage);
+    $("s-sysmemsub").textContent = (typeof sys.totalMemoryBytes === "number" && typeof sys.freeMemoryBytes === "number")
+      ? `${size(sys.totalMemoryBytes - sys.freeMemoryBytes)} / ${size(sys.totalMemoryBytes)}` : "";
+    meter("m-sysmem", sys.memoryUsage);
+  }
+
+  async function refreshStatus() {
+    try {
+      const s = await (await fetch("/api/status", { cache: "no-store" })).json();
+      lastStatus = s; renderStatus(s);
+    } catch (e) {}
+  }
+
+  async function refreshPlayers() {
+    try {
+      const body = await (await api("/console/api/players")).json();
+      const rows = body.players || [];
+      const tbody = $("players");
+      tbody.replaceChildren();
+      for (const p of rows) {
+        const tr = document.createElement("tr");
+        [p.uid, p.nickname, p.level, p.worldLevel, p.sceneId].forEach((v, i) => {
+          const td = document.createElement("td");
+          if (i === 0) td.className = "uid";
+          td.textContent = v ?? "";
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      }
+      $("players-empty").classList.toggle("hidden", rows.length > 0);
+      $("players-updated").textContent = t("updatedAt", { t: new Date().toLocaleTimeString() });
+    } catch (e) {}
+  }
+
+  // Lines arrive as "HH:mm:ss <LEVEL:Logger> message".
+  const LOG_LINE = /^(\d\d:\d\d:\d\d) <(\w+):([^>]*)> ([\s\S]*)$/;
+  let levelFilter = "ALL";
+
+  function visible(row) {
+    const text = $("log-filter").value.trim().toLowerCase();
+    const levelOk = levelFilter === "ALL" || row.dataset.level === levelFilter;
+    return levelOk && (!text || row.textContent.toLowerCase().includes(text));
+  }
+
+  function logRow(level, raw) {
+    const row = document.createElement("div");
+    const m = LOG_LINE.exec(raw);
+    row.className = "row " + level;
+    row.dataset.level = level;
+    const cells = m ? [m[1], m[2], (m[3] ? m[3] + "  " : "") + m[4]] : ["", level, raw];
+    ["time", "lvl " + level, "msg"].forEach((cls, i) => {
+      const span = document.createElement("span");
+      span.className = cls;
+      if (i === 2 && m && m[3]) {
+        const src = document.createElement("span"); src.className = "src"; src.textContent = m[3] + "  ";
+        span.appendChild(src); span.appendChild(document.createTextNode(m[4]));
+      } else {
+        span.textContent = cells[i];
+      }
+      row.appendChild(span);
+    });
+    if (!visible(row)) row.classList.add("hidden");
+    return row;
+  }
+
+  async function refreshLogs() {
+    try {
+      const body = await (await api("/console/api/logs?after=" + lastSeq)).json();
+      const log = $("log");
+      const lines = body.lines || [];
+      if (!lines.length) return;
+      for (const line of lines) { log.appendChild(logRow(line.level, line.text)); lastSeq = Math.max(lastSeq, line.seq); }
+      while (log.childNodes.length > MAX_LOG_LINES) log.removeChild(log.firstChild);
+      if ($("log-follow").checked) log.scrollTop = log.scrollHeight;
+    } catch (e) {}
+  }
+
+  function refilter() { for (const row of $("log").childNodes) row.classList.toggle("hidden", !visible(row)); }
+  $("log-filter").addEventListener("input", refilter);
+  $("lvl-filter").addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-level]");
+    if (!button) return;
+    levelFilter = button.dataset.level;
+    $("lvl-filter").querySelectorAll("button").forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+    refilter();
+  });
+  $("log-clear").addEventListener("click", () => $("log").replaceChildren());
+  $("cmd-clear").addEventListener("click", () => $("cmd-output").replaceChildren());
+
+  function termLine(cls, text) {
+    const div = document.createElement("div");
+    div.className = "line " + cls; div.textContent = text;
+    $("cmd-output").appendChild(div);
+  }
+
+  const history = [];
+  let historyIndex = 0;
+  $("cmd").addEventListener("keydown", (event) => {
+    if (event.key === "ArrowUp" && historyIndex > 0) {
+      historyIndex--; $("cmd").value = history[historyIndex]; event.preventDefault();
+    } else if (event.key === "ArrowDown" && historyIndex < history.length) {
+      historyIndex++; $("cmd").value = history[historyIndex] ?? ""; event.preventDefault();
+    }
+  });
+
+  $("cmd-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const command = $("cmd").value.trim();
+    if (!command) return;
+    if (history[history.length - 1] !== command) history.push(command);
+    historyIndex = history.length;
+    $("cmd").value = "";
+    termLine("cmd", command);
+    try {
+      const response = await api("/console/api/command", { method: "POST", body: JSON.stringify({ command }) });
+      const body = await response.json().catch(() => ({}));
+      if (!response.ok) termLine("ERROR", t("failed", { e: body.error || response.status }));
+      else if (!body.output || body.output.length === 0) termLine("note", t("noOutput"));
+      else for (const text of body.output) termLine("INFO", text);
+    } catch (e) {
+      if (e.message !== "unauthorized") termLine("ERROR", t("unreachable"));
+    }
+    const out = $("cmd-output"); out.scrollTop = out.scrollHeight;
+  });
+
+  applyLanguage();
+  if (token) showApp(); else showLogin();
+})();
+</script>
+</body>
+</html>

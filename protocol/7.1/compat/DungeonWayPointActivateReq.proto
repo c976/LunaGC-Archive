@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 5230 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message DungeonWayPointActivateReq {
+  uint32 way_point_id = 3;
+}

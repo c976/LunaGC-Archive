@@ -1,158 +1,210 @@
 package emu.grasscutter.command.commands;
 
-import emu.grasscutter.command.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.scene.SceneTagData;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.server.packet.send.*;
+import emu.grasscutter.server.packet.send.PacketPlayerWorldSceneInfoListNotify;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
-import java.util.*;
-import lombok.val;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
 @Command(
         label = "setSceneTag",
         aliases = {"tag"},
-        usage = {"<add|remove|unlockall|reset|list> [sceneTagId]"},
         permission = "player.setscenetag",
         permissionTargeted = "player.setscenetag.others")
 public final class SetSceneTagCommand implements CommandHandler {
+    private enum Scope {
+        ALL
+    }
+
     private final Int2ObjectMap<SceneTagData> sceneTagData = GameData.getSceneTagDataMap();
 
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        if (args.isEmpty()) {
-            sendUsageMessage(sender);
-            return;
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        var commandLine = new CommandLine(new Root(sender));
+        commandLine.addSubcommand("add", new SetTag(sender, targetPlayer, true));
+        commandLine.addSubcommand("remove", new SetTag(sender, targetPlayer, false));
+        commandLine.addSubcommand("unlock", new UnlockAll(targetPlayer));
+        commandLine.addSubcommand("reset", new Reset(targetPlayer));
+        commandLine.addSubcommand("list", new ListTags(sender, targetPlayer));
+        CommandHandler.allowCaseInsensitiveEnums(commandLine);
+        return commandLine;
+    }
+
+    @CommandLine.Command(name = "setSceneTag")
+    private final class Root implements Runnable {
+        private final Player sender;
+
+        private Root(Player sender) {
+            this.sender = sender;
         }
 
-        val actionStr = args.get(0).toLowerCase();
-        var value = -1;
+        @Override
+        public void run() {
+            SetSceneTagCommand.this.sendUsageMessage(sender);
+        }
+    }
 
-        if (args.size() > 1) {
-            try {
-                value = Integer.parseInt(args.get(1));
-            } catch (NumberFormatException ignored) {
-                CommandHandler.sendTranslatedMessage(sender, "commands.execution.argument_error");
+    private final class SetTag implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
+        private final boolean enabled;
+
+        @Parameters(index = "0", paramLabel = "<sceneTagId>")
+        private int sceneTagId;
+
+        private SetTag(Player sender, Player targetPlayer, boolean enabled) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
+            this.enabled = enabled;
+        }
+
+        @Override
+        public void run() {
+            SceneTagData data = sceneTagData.get(sceneTagId);
+            if (data == null) {
+                CommandOutput.sendTranslatedMessage(sender, "commands.generic.invalid.id");
                 return;
             }
-        } else {
-            if (actionStr.equals("unlockall")) {
-                unlockAllSceneTags(targetPlayer);
-                return;
-            } else if (actionStr.equals("reset") || actionStr.equals("restore")) {
-                resetAllSceneTags(targetPlayer);
-                return;
-            } else if (actionStr.equals("list")) {
-                listSceneTags(sender, targetPlayer);
-                return;
+
+            if (enabled) {
+                targetPlayer.getProgressManager().addSceneTag(data.getSceneId(), sceneTagId);
             } else {
-                CommandHandler.sendTranslatedMessage(sender, "commands.execution.argument_error");
+                targetPlayer.getProgressManager().delSceneTag(data.getSceneId(), sceneTagId);
+            }
+            CommandOutput.sendTranslatedMessage(
+                    sender, "commands.generic.set_to", sceneTagId, enabled ? "add" : "remove");
+        }
+    }
+
+    @CommandLine.Command(name = "unlock")
+    private final class UnlockAll implements Runnable {
+        @Parameters(index = "0", paramLabel = "<all>")
+        private Scope scope;
+
+        private final Player targetPlayer;
+
+        private UnlockAll(Player targetPlayer) {
+            this.targetPlayer = targetPlayer;
+        }
+
+        @Override
+        public void run() {
+            var allData = sceneTagData.values();
+            allData.forEach(
+                    sceneTag -> {
+                        targetPlayer
+                                .getSceneTags()
+                                .computeIfAbsent(sceneTag.getSceneId(), k -> new HashSet<>());
+                        targetPlayer.getSceneTags().get(sceneTag.getSceneId()).add(sceneTag.getId());
+                    });
+
+            allData.stream()
+                    .filter(SceneTagData::isDefaultValid)
+                    .filter(sceneTag -> sceneTag.getSceneId() == 3)
+                    .forEach(
+                            sceneTag ->
+                                    targetPlayer
+                                            .getSceneTags()
+                                            .get(sceneTag.getSceneId())
+                                            .remove(sceneTag.getId()));
+
+            setSceneTags(targetPlayer);
+            CommandOutput.sendMessage(targetPlayer, "All scene tags unlocked.");
+        }
+    }
+
+    @CommandLine.Command(name = "reset")
+    private final class Reset implements Runnable {
+        private final Player targetPlayer;
+
+        private Reset(Player targetPlayer) {
+            this.targetPlayer = targetPlayer;
+        }
+
+        @Override
+        public void run() {
+            targetPlayer.getSceneTags().clear();
+            sceneTagData.values().stream()
+                    .filter(SceneTagData::isDefaultValid)
+                    .forEach(
+                            sceneTag -> {
+                                targetPlayer
+                                        .getSceneTags()
+                                        .computeIfAbsent(sceneTag.getSceneId(), k -> new HashSet<>());
+                                targetPlayer.getSceneTags().get(sceneTag.getSceneId()).add(sceneTag.getId());
+                            });
+            setSceneTags(targetPlayer);
+            CommandOutput.sendMessage(targetPlayer, "Scene tags reset to defaults.");
+        }
+    }
+
+    @CommandLine.Command(name = "list")
+    private final class ListTags implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
+
+        private ListTags(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
+        }
+
+        @Override
+        public void run() {
+            int sceneId = targetPlayer.getSceneId();
+            Set<Integer> active = targetPlayer.getSceneTags().getOrDefault(sceneId, Set.of());
+            List<SceneTagData> sceneTags =
+                    sceneTagData.values().stream()
+                            .filter(tag -> tag.getSceneId() == sceneId)
+                            .sorted(Comparator.comparingInt(SceneTagData::getId))
+                            .toList();
+
+            if (sceneTags.isEmpty()) {
+                CommandOutput.sendMessage(sender, "No scene tag data for scene " + sceneId + ".");
                 return;
             }
+
+            StringBuilder message =
+                    new StringBuilder("Scene ")
+                            .append(sceneId)
+                            .append(" tags (")
+                            .append(active.size())
+                            .append(" active):\n");
+
+            var activeList = sceneTags.stream().filter(tag -> active.contains(tag.getId())).toList();
+            var inactiveList = sceneTags.stream().filter(tag -> !active.contains(tag.getId())).toList();
+
+            if (!activeList.isEmpty()) {
+                message.append("  [ACTIVE]\n");
+                activeList.forEach(
+                        tag ->
+                                message.append("    ")
+                                        .append(tag.getId())
+                                        .append("  ")
+                                        .append(tag.getSceneTagName())
+                                        .append('\n'));
+            }
+            if (!inactiveList.isEmpty()) {
+                message.append("  [INACTIVE - use /tag add <id> to enable]\n");
+                inactiveList.forEach(
+                        tag ->
+                                message.append("    ")
+                                        .append(tag.getId())
+                                        .append("  ")
+                                        .append(tag.getSceneTagName())
+                                        .append('\n'));
+            }
+
+            CommandOutput.sendMessage(sender, message.toString());
         }
-
-        val userVal = value;
-
-        var sceneData =
-                sceneTagData.values().stream().filter(sceneTag -> sceneTag.getId() == userVal).findFirst();
-        if (sceneData.isEmpty()) {
-            CommandHandler.sendTranslatedMessage(sender, "commands.generic.invalid.id");
-            return;
-        }
-        int scene = sceneData.get().getSceneId();
-
-        switch (actionStr) {
-            case "add", "set" -> addSceneTag(targetPlayer, scene, value);
-            case "remove", "del" -> removeSceneTag(targetPlayer, scene, value);
-            default -> CommandHandler.sendTranslatedMessage(sender, "commands.execution.argument_error");
-        }
-
-        CommandHandler.sendTranslatedMessage(sender, "commands.generic.set_to", value, actionStr);
-    }
-
-    private void addSceneTag(Player targetPlayer, int scene, int value) {
-        targetPlayer.getProgressManager().addSceneTag(scene, value);
-    }
-
-    private void removeSceneTag(Player targetPlayer, int scene, int value) {
-        targetPlayer.getProgressManager().delSceneTag(scene, value);
-    }
-
-    private void unlockAllSceneTags(Player targetPlayer) {
-        var allData = sceneTagData.values();
-
-        allData.stream()
-                .toList()
-                .forEach(
-                        sceneTag -> {
-                            targetPlayer
-                                    .getSceneTags()
-                                    .computeIfAbsent(sceneTag.getSceneId(), k -> new HashSet<>());
-                            targetPlayer.getSceneTags().get(sceneTag.getSceneId()).add(sceneTag.getId());
-                        });
-
-        allData.stream()
-                .filter(SceneTagData::isDefaultValid)
-
-                .filter(sceneTag -> sceneTag.getSceneId() == 3)
-                .forEach(
-                        sceneTag -> {
-                            targetPlayer.getSceneTags().get(sceneTag.getSceneId()).remove(sceneTag.getId());
-                        });
-
-        this.setSceneTags(targetPlayer);
-        CommandHandler.sendMessage(targetPlayer, "All scene tags unlocked.");
-    }
-
-    private void resetAllSceneTags(Player targetPlayer) {
-        targetPlayer.getSceneTags().clear();
-
-        GameData.getSceneTagDataMap().values().stream()
-                .filter(SceneTagData::isDefaultValid)
-                .forEach(
-                        sceneTag -> {
-                            targetPlayer
-                                    .getSceneTags()
-                                    .computeIfAbsent(sceneTag.getSceneId(), k -> new HashSet<>());
-                            targetPlayer.getSceneTags().get(sceneTag.getSceneId()).add(sceneTag.getId());
-                        });
-
-        this.setSceneTags(targetPlayer);
-        CommandHandler.sendMessage(targetPlayer, "Scene tags reset to defaults.");
-    }
-
-    private void listSceneTags(Player sender, Player targetPlayer) {
-        int sceneId = targetPlayer.getSceneId();
-        Set<Integer> active = targetPlayer.getSceneTags().getOrDefault(sceneId, Set.of());
-
-        List<SceneTagData> sceneTags = sceneTagData.values().stream()
-                .filter(t -> t.getSceneId() == sceneId)
-                .sorted(Comparator.comparingInt(SceneTagData::getId))
-                .toList();
-
-        if (sceneTags.isEmpty()) {
-            CommandHandler.sendMessage(sender, "No scene tag data for scene " + sceneId + ".");
-            return;
-        }
-
-        StringBuilder sb = new StringBuilder();
-        sb.append("Scene ").append(sceneId).append(" tags (").append(active.size()).append(" active):\n");
-
-        List<SceneTagData> activeList  = sceneTags.stream().filter(t ->  active.contains(t.getId())).toList();
-        List<SceneTagData> inactiveList = sceneTags.stream().filter(t -> !active.contains(t.getId())).toList();
-
-        if (!activeList.isEmpty()) {
-            sb.append("  [ACTIVE]\n");
-            for (SceneTagData t : activeList)
-                sb.append("    ").append(t.getId()).append("  ").append(t.getSceneTagName()).append("\n");
-        }
-        if (!inactiveList.isEmpty()) {
-            sb.append("  [INACTIVE - use /tag add <id> to enable]\n");
-            for (SceneTagData t : inactiveList)
-                sb.append("    ").append(t.getId()).append("  ").append(t.getSceneTagName()).append("\n");
-        }
-
-        CommandHandler.sendMessage(sender, sb.toString());
     }
 
     private void setSceneTags(Player targetPlayer) {

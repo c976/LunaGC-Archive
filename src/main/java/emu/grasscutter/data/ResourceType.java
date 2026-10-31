@@ -15,6 +15,12 @@ public @interface ResourceType {
      */
     LoadPriority loadPriority() default LoadPriority.NORMAL;
 
+    /**
+     * Whether the table may be absent from the resources. A missing optional table is skipped with
+     * a debug line instead of the missing-resources error.
+     */
+    boolean optional() default false;
+
     enum LoadPriority {
         HIGHEST(4),
         HIGH(3),

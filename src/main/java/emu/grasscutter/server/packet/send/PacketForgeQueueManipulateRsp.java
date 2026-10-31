@@ -23,7 +23,9 @@ public class PacketForgeQueueManipulateRsp extends BasePacket {
                         .setRetcode(retcode.getNumber())
                         .setManipulateType(type);
 
-        // ToDo: Add extra items when once we have handling for it.
+        builder.addAllOutputItemList(output.stream().map(GameItem::toItemHintProto).toList());
+        builder.addAllReturnItemList(refund.stream().map(GameItem::toItemHintProto).toList());
+        builder.addAllExtraOutputItemList(extra.stream().map(GameItem::toItemHintProto).toList());
 
         this.setData(builder.build());
     }

@@ -139,6 +139,7 @@ public final class ForgingManager extends BasePlayerManager {
             this.player.sendPacket(
                     new PacketForgeStartRsp(
                             Retcode.RET_ITEM_COUNT_NOT_ENOUGH)); // ToDo: Probably the wrong return code.
+            return;
         }
 
         // Consume forge points.
@@ -224,6 +225,71 @@ public final class ForgingManager extends BasePlayerManager {
                         List.of()));
     }
 
+    public synchronized void handleTakeAllForgeOutputReq() {
+        int currentTime = Utils.getCurrentSeconds();
+        List<ActiveForgeData> activeForges = this.player.getActiveForges();
+        List<ActiveForgeData> forgeSnapshot = new ArrayList<>(activeForges);
+        List<GameItem> outputItems = new ArrayList<>();
+        Map<Integer, ActiveForgeData> remainingForges = new HashMap<>();
+        Set<Integer> claimedQueueIndexes = new HashSet<>();
+
+        for (int i = 0; i < forgeSnapshot.size(); i++) {
+            ActiveForgeData forge = forgeSnapshot.get(i);
+            int finished = forge.getFinishedCount(currentTime);
+            if (finished <= 0) {
+                continue;
+            }
+
+            ForgeData data = GameData.getForgeDataMap().get(forge.getForgeId());
+            int resultId = data.getResultItemId() > 0 ? data.getResultItemId() : data.getShowItemId();
+            ItemData resultItemData = GameData.getItemDataMap().get(resultId);
+            GameItem addItem = new GameItem(resultItemData, data.getResultItemCount() * finished);
+
+            var event = new PlayerForgeItemEvent(this.player, addItem);
+            if (!event.call()) {
+                continue;
+            }
+
+            addItem = event.getItemForged();
+            this.player.getInventory().addItem(addItem);
+            this.player
+                    .getBattlePassManager()
+                    .triggerMission(WatcherTriggerType.TRIGGER_DO_FORGE, 0, finished);
+            outputItems.add(addItem);
+            claimedQueueIndexes.add(i);
+
+            int unfinished = forge.getUnfinishedCount(currentTime);
+            if (unfinished > 0) {
+                ActiveForgeData remainingForge = new ActiveForgeData();
+                remainingForge.setForgeId(forge.getForgeId());
+                remainingForge.setAvatarId(forge.getAvatarId());
+                remainingForge.setCount(unfinished);
+                remainingForge.setForgeTime(forge.getForgeTime());
+                remainingForge.setStartTime(forge.getStartTime() + finished * forge.getForgeTime());
+                remainingForges.put(i, remainingForge);
+            }
+        }
+
+        for (int i = forgeSnapshot.size() - 1; i >= 0; i--) {
+            if (!claimedQueueIndexes.contains(i)) {
+                continue;
+            }
+            ActiveForgeData remainingForge = remainingForges.get(i);
+            if (remainingForge == null) {
+                activeForges.remove(i);
+            } else {
+                activeForges.set(i, remainingForge);
+            }
+        }
+
+        if (!claimedQueueIndexes.isEmpty()) {
+            this.sendForgeQueueDataNotify(true);
+        }
+        this.player.sendPacket(
+                new PacketTakeAllForgeOutputRsp(
+                        Retcode.RET_SUCC.getNumber(), outputItems, List.of(), List.of()));
+    }
+
     private synchronized void cancelForge(int queueId) {
         // Make sure there are no unfinished items.
         int currentTime = Utils.getCurrentSeconds();
@@ -294,6 +360,12 @@ public final class ForgingManager extends BasePlayerManager {
      * Periodic forging updates.
      **********/
     public synchronized void sendPlayerForgingUpdate() {
+        // Compound processing has no local client timer refresh on 7.0; push when batches finish.
+        try {
+            this.player.getCookingCompoundManager().onTick();
+        } catch (Throwable ignored) {
+        }
+
         int currentTime = Utils.getCurrentSeconds();
 
         // Determine if sending an update is necessary.

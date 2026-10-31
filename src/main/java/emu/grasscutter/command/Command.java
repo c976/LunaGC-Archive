@@ -8,20 +8,21 @@ public @interface Command {
 
     String[] aliases() default {};
 
-    String[] usage() default {""};
-
     String permission() default "";
 
     String permissionTargeted() default "";
 
     TargetRequirement targetRequirement() default TargetRequirement.ONLINE;
 
+    /** Whether bare @player arguments on this command line are consumed as the command target. */
+    boolean inlineTarget() default true;
+
     boolean threading() default false;
 
     enum TargetRequirement {
-        NONE, // targetPlayer is not required
-        OFFLINE, // targetPlayer must be offline
-        PLAYER, // targetPlayer can be online or offline
-        ONLINE // targetPlayer must be online
+        NONE,
+        OFFLINE,
+        PLAYER,
+        ONLINE
     }
 }

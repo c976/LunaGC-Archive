@@ -114,6 +114,13 @@
       "need_target_online": "このコマンドにはオンラインのターゲット UID が必要ですが、現在のターゲットはオフラインです。 別の <@UID> 引数を追加するか、/target @UID で永続的なターゲットを設定してください。",
       "need_target_offline": "このコマンドにはオフラインのターゲット UID が必要ですが、現在のターゲットはオンラインです。 別の <@UID> 引数を追加するか、/target @UID で永続的なターゲットを設定してください。"
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "有効",
       "disabled": "無効",
@@ -174,6 +181,12 @@
       "description": "🇺🇸Modify an existing entity's properties",
       "not_found_error": "🇺🇸Entity does not exist"
     },
+    "avatar": {
+      "description": "所持キャラクターの一覧、命ノ星座、天賦、戦闘ステータス、好感度、追加レベル、最大強化を管理します。"
+    },
+    "battlepass": {
+      "description": "紀行レベルの購入と有料報酬の状態を管理します。"
+    },
     "give": {
       "usage_relic": "使用方法: give <聖遺物ID> [メインステータスID] [<サブステータスID>[,<強化回数>]]... [lv<レベル 0-20>]",
       "illegal_relic": "この聖遺物IDはブラックリストに登録された範囲に属しています。必要な範囲ではない可能性があります。",
@@ -217,7 +230,7 @@
       "language_not_found": "現在、サーバーにはその言語がありません。",
       "description": "現在の言語を表示または変更します｡"
     },
-    "list": {
+    "player": {
       "success": "%s 人のプレイヤーがオンラインです:",
       "description": "オンラインのプレイヤーを取得します。"
     },
@@ -233,11 +246,25 @@
       "success": "座標: %s, %s, %s\n回転: %s, %s, %s\nシーンID: %s",
       "description": "位置と回転情報を取得します。"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "クエスト %s が追加されました。",
       "finished": "クエスト %s を終了しました。",
       "not_found": "クエストが見つかりません｡",
       "invalid_id": "クエストIDが無効です｡",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "クエストを追加または終了します｡",
       "running": "🇺🇸Quest %s is %s (%s).",
       "talking": "🇺🇸Talk %s is %s for main quest %s (%s).",
@@ -263,7 +290,10 @@
       "description": "カットシーンを再生します"
     },
     "sound": {
-      "description": "🇺🇸Plays a sound"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "設定を再読み込みしています。",
@@ -302,9 +332,13 @@
       "error": "エラー: 建設ステージ %s が無効です。 コンソールでスタック トレースを確認します。",
       "description": "指定したユーザーにメールを送信します。 このコマンドの使用法は、その合成状態に基づいて変化します"
     },
-    "sendMessage": {
+    "say": {
       "success": "メッセージを送信しました。",
-      "description": "サーバーとしてプレイヤーにメッセージを送信します。 ターゲットなしで使用すると、サーバー上のすべてのプレイヤーに送信されます。"
+      "description": "オンラインの全プレイヤーにサーバーメッセージを送信します。"
+    },
+    "sayto": {
+      "success": "メッセージを送信しました。",
+      "description": "指定したオンラインプレイヤーにサーバーメッセージを送信します。"
     },
     "setConst": {
       "range_error": "キャラの凸数は 0 から 6 までです。",
@@ -321,8 +355,11 @@
       "level_error": "好感度レベルが無効です。",
       "description": "現在アクティブなキャラの好感度レベルを設定します｡"
     },
-    "setProp": {
-      "description": "アカウント全体のプロパティを設定します。 godmodeのようなものはこの方法で有効にすることができ、アンロックされた深淵の床やバトル パスの進行状況などを変更することもできます。\n\t<prop> の値: godmode | nostamina | unlimitedenergy | abyss | worldlevel | bplevel\n\tmax_spring_volume の形式の他の設定可能な値についてはPlayerPropertyを参照してください｡"
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "アカウント全体のプロパティを設定します。 godmodeのようなものはこの方法で有効にすることができ、アンロックされた深淵の床やバトル パスの進行状況などを変更することもできます。 Use `unlock map` for map unlocks and `openstate` for OpenStates."
     },
     "setSceneTag": {
       "description": "アカウント固有のシーンタグを設定します。これは岩がドアを塞いだり、建物が見えたり、その他（大抵はクエストに関連した）あなたのワールドで見えるものに影響を与えるものをコントロールします。"
@@ -368,6 +405,20 @@
       "avatar_not_found": "キャラ %s が見つかりません。",
       "description": "チームを手動で変更します。"
     },
+    "teapot": {
+      "description": "尘歌壶の機能を操作します。 \n\tsetLevel<1-10> の値 \n\tunlockModule<1-4> の値 \n\tlockModule<1-4> の値 \n\tgiveAllFurniture<count> の値 \n\trefreshLimitedShop<none の値>",
+      "level_range_error": "尘歌壶のレベルは 1 から 10 の間でなければなりません。",
+      "level_success": "尘歌壶 レベルを %s に設定しました。",
+      "invalid_param": "無効なパラメーター。",
+      "module_sumeru_error": "須彌 モジュールは現在サポートされていません。",
+      "module_range_error": "モジュール番号は 1 から 4 の間でなければなりません。",
+      "unlock_module_contain_error": "モジュールはすでにロック解除されています。",
+      "unlock_module_success": "モジュール %s のロックを解除しました。",
+      "lock_module_in_scene_error": "アクティブなモジュールをロックできません。",
+      "lock_module_contain_error": "モジュールが存在しません。",
+      "lock_module_success": "ロックされたモジュール %s。",
+      "give_furniture_success": "すべての家具を与えた。"
+    },
     "teleportAll": {
       "success": "すべてのプレイヤーをあなたの位置にテレポートさせました。",
       "error": "このコマンドはマルチプレイでのみ使用できます。",
@@ -379,7 +430,7 @@
       "success": "%1$s を シーン %5$s の %2$s, %3$s, %4$s にテレポートさせました。",
       "description": "プレイヤーの位置を変更します。"
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "トライアル アバター アクティビティの機能を操作します。これには、ダンジョンと報酬の状態の切り替えが含まれます。",
       "not_found": "試用アバター アクティビティ プレーヤー データが見つかりません。アクティビティが有効になっていない可能性があります。",
       "invalid_param": "無効なパラメーター。",
@@ -399,7 +450,7 @@
       "success": "成功しました。",
       "failure": "失敗しました。プレイヤーが見つかりません。",
       "invalid_time": "タイムスタンプを解析できません。",
-      "description": "プレイヤーをBANします｡"
+      "description": "アカウントまたはIPv4アドレスをBANします。"
     },
     "unlockall": {
       "success": "%s のすべてのオープンなステータスのロックを解除しました。",
@@ -471,6 +522,12 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 29904. Field numbers recovered from the 7.1 obfuscated dump.
+message _WeaponSkinInfo {
+  uint64 expire_time = 1;
+  repeated uint64 equipped_avatar_guid_list = 10;
+  uint32 weapon_skin_id = 13;
+}
+
+message _AvatarWeaponSkinDataNotify {
+  repeated _WeaponSkinInfo info_list = 1;
+  repeated uint32 record_id_list = 2;
+  uint64 timestamp = 13;
+}

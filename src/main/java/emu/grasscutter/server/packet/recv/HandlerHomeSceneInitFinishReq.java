@@ -24,7 +24,7 @@ public class HandlerHomeSceneInitFinishReq extends PacketHandler {
                         .sendPacket(
                                 new PacketOtherPlayerEnterOrLeaveHomeNotify(
                                         session.getPlayer(),
-                                        OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.ENTER));
+                                        OtherPlayerEnterHomeNotifyOuterClass.OtherPlayerEnterHomeNotify.Reason.Reason_ENTER));
             }
         }
 

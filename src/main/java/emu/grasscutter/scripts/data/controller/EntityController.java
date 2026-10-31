@@ -79,11 +79,15 @@ public class EntityController {
 
         if (funcLua != null) {
             try {
-                ScriptLoader.getScriptLib().setCurrentEntity(entity);
+                var function = funcLua;
                 ret =
-                        funcLua
-                                .invoke(new LuaValue[] {ScriptLoader.getScriptLibLua(), arg1, arg2, arg3})
-                                .arg1();
+                        ScriptLoader.getScriptLib().withEntityContext(
+                                entity,
+                                () -> function
+                                        .invoke(new LuaValue[] {
+                                            ScriptLoader.getScriptLibLua(), arg1, arg2, arg3
+                                        })
+                                        .arg1());
             } catch (LuaError error) {
                 ScriptLib.logger.error(
                         "[LUA] call function failed in gadget {} with {} {} {},{}",

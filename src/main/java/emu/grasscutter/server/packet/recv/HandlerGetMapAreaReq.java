@@ -9,6 +9,6 @@ public class HandlerGetMapAreaReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        session.send(new PacketGetMapAreaRsp());
+        session.send(new PacketGetMapAreaRsp(session.getPlayer()));
     }
 }

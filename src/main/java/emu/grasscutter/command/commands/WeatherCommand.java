@@ -1,51 +1,79 @@
 package emu.grasscutter.command.commands;
 
-import emu.grasscutter.command.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.ClimateType;
-import java.util.List;
+import java.util.Locale;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
 @Command(
         label = "weather",
         aliases = {"w"},
-        usage = {"weather [<weatherId>] [<climateType>]"},
         permission = "player.weather",
         permissionTargeted = "player.weather.others")
 public final class WeatherCommand implements CommandHandler {
+    private record WeatherToken(Integer weatherId, ClimateType climate) {}
 
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        int weatherId = targetPlayer.getWeatherId();
-        ClimateType climate =
-                ClimateType
-                        .CLIMATE_NONE; // Sending ClimateType.CLIMATE_NONE to Scene.setWeather will use the
-        // default climate for that weather
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        var commandLine = new CommandLine(new Args(sender, targetPlayer));
+        commandLine.registerConverter(
+                WeatherToken.class,
+                value -> {
+                    ClimateType climate =
+                            ClimateType.getTypeByShortName(value.toLowerCase(Locale.ROOT));
+                    if (climate != ClimateType.CLIMATE_NONE) {
+                        return new WeatherToken(null, climate);
+                    }
+                    try {
+                        return new WeatherToken(Integer.parseInt(value), null);
+                    } catch (NumberFormatException ignored) {
+                        throw new CommandLine.TypeConversionException("Invalid weather id or climate: " + value);
+                    }
+                });
+        return commandLine;
+    }
 
-        if (args.isEmpty()) {
-            climate = targetPlayer.getClimate();
-            CommandHandler.sendTranslatedMessage(
-                    sender, "commands.weather.status", weatherId, climate.getShortName());
-            return;
+    @CommandLine.Command(name = "weather")
+    private static final class Args implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
+
+        @Parameters(index = "0..1", arity = "0..2", paramLabel = "[weatherId|climate]")
+        private WeatherToken[] tokens = new WeatherToken[0];
+
+        private Args(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
         }
 
-        for (String arg : args) {
-            ClimateType c = ClimateType.getTypeByShortName(arg.toLowerCase());
-            if (c != ClimateType.CLIMATE_NONE) {
-                climate = c;
-            } else {
-                try {
-                    weatherId = Integer.parseInt(arg);
-                } catch (NumberFormatException ignored) {
-                    CommandHandler.sendTranslatedMessage(sender, "commands.generic.invalid.id");
-                    sendUsageMessage(sender);
-                    return;
-                }
+        @Override
+        public void run() {
+            if (tokens.length == 0) {
+                CommandOutput.sendTranslatedMessage(
+                        sender,
+                        "commands.weather.status",
+                        targetPlayer.getWeatherId(),
+                        targetPlayer.getClimate().getShortName());
+                return;
             }
-        }
 
-        targetPlayer.setWeather(weatherId, climate);
-        climate = targetPlayer.getClimate(); // Might be different to what we set
-        CommandHandler.sendTranslatedMessage(
-                sender, "commands.weather.success", weatherId, climate.getShortName());
+            int weatherId = targetPlayer.getWeatherId();
+            ClimateType climate = ClimateType.CLIMATE_NONE;
+            for (WeatherToken token : tokens) {
+                if (token.weatherId() != null) weatherId = token.weatherId();
+                if (token.climate() != null) climate = token.climate();
+            }
+
+            targetPlayer.setWeather(weatherId, climate);
+            CommandOutput.sendTranslatedMessage(
+                    sender,
+                    "commands.weather.success",
+                    weatherId,
+                    targetPlayer.getClimate().getShortName());
+        }
     }
 }

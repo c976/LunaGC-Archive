@@ -114,6 +114,13 @@
       "need_target_online": "Для данной команды требуется UID цели, находящейся в сети, а выбранная цель сейчас не в сети. Введите другой аргумент <@UID> или добавьте постоянную цель с помощью /target @UID.",
       "need_target_offline": "Для данной команды требуется UID цели, находящейся не в сети, а выбранная цель сейчас в сети. Введите другой аргумент <@UID> или добавьте постоянную цель с помощью /target @UID."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "Включено",
       "disabled": "Выключено",
@@ -174,6 +181,12 @@
       "description": "Изменяет свойства выбранной сущности",
       "not_found_error": "Сущность не найдена"
     },
+    "avatar": {
+      "description": "Управление персонажами: список, созвездия, таланты, боевые характеристики, дружба, дополнительные уровни и максимальное развитие."
+    },
+    "battlepass": {
+      "description": "Управление покупкой уровней боевого пропуска и доступом к платным наградам."
+    },
     "give": {
       "usage_relic": "Применение: give <ID_артефакта> [ID_глав_хар-ки] [<ID доп_хар-ки>[,<раз>]]... [lv<уровень 0-20>]",
       "illegal_relic": "Данный ID_артефакта находится в черном списке. Возможно, это не то, что вы хотите получить.",
@@ -217,7 +230,7 @@
       "language_not_found": "На текущий момент, на сервере недоступен этот язык.",
       "description": "Отображает или изменяет текущий язык"
     },
-    "list": {
+    "player": {
       "success": "Сейчас в сети %s игрок(ов):",
       "description": "Отображает всех игроков, находящихся в сети"
     },
@@ -233,11 +246,25 @@
       "success": "Координаты: %s, %s, %s\nПоворот：%s, %s, %s\nID сцены: %s",
       "description": "Позволяет получить координаты"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "Квест %s был добавлен.",
       "finished": "Квест %s был завершен.",
       "not_found": "Квест не найден.",
       "invalid_id": "Некорректный ID квеста.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "Добавляет (add) или завершает (finish) квесты",
       "running": "Квест %s %s (%s).",
       "talking": "Разговор %s %s для главного квеста %s (%s).",
@@ -263,7 +290,10 @@
       "description": "Проигрывает кат-сцену"
     },
     "sound": {
-      "description": "Проигрывает звук"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "Перезагружаем файл конфигурации.",
@@ -302,9 +332,13 @@
       "error": "ОШИБКА: Некорректная стадия создания %s. Проверьте stacktrace в консоли.",
       "description": "Отправляет сообщение по почте указанному пользователю. Применение данной команды изменяется в зависимости от стадии написания письма"
     },
-    "sendMessage": {
+    "say": {
       "success": "Сообщение было отправлено.",
-      "description": "Отправляет сообщение выбранному игроку от имени сервера. При отсутствии конкретной цели, отправляет сообщение всем игрокам на сервере."
+      "description": "Отправляет сообщение сервера всем игрокам в сети."
+    },
+    "sayto": {
+      "success": "Сообщение было отправлено.",
+      "description": "Отправляет сообщение сервера выбранному игроку в сети."
     },
     "setConst": {
       "range_error": "Уровень созвездия должен быть в диапазоне от 0 до 6.",
@@ -321,8 +355,11 @@
       "level_error": "Некорректный уровень дружбы.",
       "description": "Задаёт уровень дружбы для активного персонажа"
     },
-    "setProp": {
-      "description": "Задаёт свойства аккаунта. С помощью данной команды может быть включен godmode, а также разблокированы этажи Коридора Бездны и изменён прогресс боевого пропуска.\n\tВозможные значения <св-во>: godmode | nostamina | unlimitedenergy | abyss | worldlevel | bplevel\n\t(прод.) см. перечисление (enum) PlayerProperty для остальных возможных значений, of form PROP_MAX_SPRING_VOLUME -> max_spring_volume"
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "Задаёт свойства аккаунта. С помощью данной команды может быть включен godmode, а также разблокированы этажи Коридора Бездны и изменён прогресс боевого пропуска. Используйте `unlock map` для карты, а `openstate` для состояний."
     },
     "setSceneTag": {
       "description": "Устанавливает специфические для учетной записи теги сцены. Это позволяет управлять такими вещами, как камни, блокирующие двери, видимость зданий и другими (обычно связанными с квестами) вещами, которые влияют на видимость в вашем мире."
@@ -368,6 +405,20 @@
       "avatar_not_found": "Персонаж %s не был найден.",
       "description": "Позволяет вручную настроить свою команду."
     },
+    "teapot": {
+      "description": "Управление функциями горшка Serenitea. \n\tЗначения для setLevel<1-10> \n\tЗначения для unlockModule<1-4> \n\tЗначения для lockModule<1-4> \n\tЗначения для giveAllFurniture<count> \n\tЗначения для refreshLimitedShop<none >",
+      "level_range_error": "Уровень горшка Serenitea должен быть между 1 и 10.",
+      "level_success": "Уровень горшка Serenitea установлен на %s.",
+      "invalid_param": "Неверный параметр.",
+      "module_sumeru_error": "Модуль Sumeru в настоящее время не поддерживается.",
+      "module_range_error": "Номер модуля должен быть от 1 до 4.",
+      "unlock_module_contain_error": "Модуль уже разблокирован.",
+      "unlock_module_success": "Разблокирован модуль %s.",
+      "lock_module_in_scene_error": "Невозможно заблокировать активный модуль.",
+      "lock_module_contain_error": "Модуль не существует.",
+      "lock_module_success": "Заблокированный модуль %s.",
+      "give_furniture_success": "Отдали всю мебель."
+    },
     "teleportAll": {
       "success": "Все игроки были телепортированы к вам.",
       "error": "Данную команду возможно применить только в многопользовательском режиме.",
@@ -379,7 +430,7 @@
       "success": "Игрок %s был телепортирован по координатам %s, %s, %s в сцене %s.",
       "description": "Изменяет местоположение игрока"
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "Управление функциями пробного аватара. Это включает в себя переключение состояний подземелий и наград.",
       "not_found": "Данные об активности пробного аватара игрока не найдены. Возможно, активность не включена.",
       "invalid_param": "Неверный параметр.",
@@ -399,7 +450,7 @@
       "success": "Успех.",
       "failure": "Неудача, игрок не найден.",
       "invalid_time": "Не удалось определить промежуток времени.",
-      "description": "Запрещает игроку присоединяться к серверу (\"банит\")"
+      "description": "Заблокировать аккаунт или IPv4-адрес"
     },
     "unlockall": {
       "success": "Разблокированы все состояния для %s.",
@@ -471,6 +522,12 @@
       "not_present": "В Плагине %s не указана версия API.",
       "lower": "Плагин %s использует версию API %s, однако сервер работает на версии API %s.",
       "outdated": "Плагин %s использует устаревший API метод."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId - and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message ForgeQueueData {
+	uint32 next_finish_timestamp = 7;
+	uint32 finish_count = 10;
+	uint32 unfinish_count = 3;
+	uint32 queue_id = 9;
+	uint32 avatar_id = 2;
+	uint32 total_finish_timestamp = 13;
+	uint32 forge_id = 1;
+}

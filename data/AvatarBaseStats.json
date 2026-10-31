@@ -1,0 +1,5196 @@
+{
+  "version": "6.6",
+  "source": "AvatarExcel + AvatarCurve + AvatarPromote",
+  "note": "naked base = Base*curve + promote6; lv95/100 still use promote6",
+  "levels": [
+    90,
+    95,
+    100
+  ],
+  "count": 157,
+  "avatars": [
+    {
+      "id": 10000001,
+      "name": "Kate",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 10000002,
+      "name": "神里绫华",
+      "icon": "Ayaka",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1000.9860229492188,
+        "atk": 26.62660026550293,
+        "def": 61.0265998840332
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12858.2,
+          "atk": 342.0,
+          "def": 783.9
+        },
+        "95": {
+          "hp": 13314.7,
+          "atk": 380.5,
+          "def": 811.8
+        },
+        "100": {
+          "hp": 13772.1,
+          "atk": 419.0,
+          "def": 839.6
+        }
+      }
+    },
+    {
+      "id": 10000003,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1143.9840087890625,
+        "atk": 18.6200008392334,
+        "def": 59.83000183105469
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 14695.1,
+          "atk": 239.2,
+          "def": 768.6
+        },
+        "95": {
+          "hp": 15216.7,
+          "atk": 266.1,
+          "def": 795.8
+        },
+        "100": {
+          "hp": 15739.6,
+          "atk": 293.0,
+          "def": 823.2
+        }
+      }
+    },
+    {
+      "id": 10000005,
+      "name": "PlayerBoy",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 17.808000564575195,
+        "def": 57.224998474121094
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 212.4,
+          "def": 682.5
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 239.5,
+          "def": 706.1
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 266.6,
+          "def": 729.7
+        }
+      }
+    },
+    {
+      "id": 10000006,
+      "name": "丽莎",
+      "icon": "Lisa",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 802.3760986328125,
+        "atk": 19.410720825195312,
+        "def": 48.069000244140625
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9569.9,
+          "atk": 231.5,
+          "def": 573.3
+        },
+        "95": {
+          "hp": 9900.5,
+          "atk": 261.0,
+          "def": 593.1
+        },
+        "100": {
+          "hp": 10231.9,
+          "atk": 290.6,
+          "def": 613.0
+        }
+      }
+    },
+    {
+      "id": 10000007,
+      "name": "旅行者",
+      "icon": "PlayerGirl",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 17.808000564575195,
+        "def": 57.224998474121094
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 212.4,
+          "def": 682.5
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 239.5,
+          "def": 706.1
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 266.6,
+          "def": 729.7
+        }
+      }
+    },
+    {
+      "id": 10000014,
+      "name": "Barbara",
+      "icon": "Barbara",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 820.6118774414062,
+        "atk": 13.355999946594238,
+        "def": 56.080501556396484
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9787.4,
+          "atk": 159.3,
+          "def": 668.9
+        },
+        "95": {
+          "hp": 10125.5,
+          "atk": 179.6,
+          "def": 692.0
+        },
+        "100": {
+          "hp": 10464.4,
+          "atk": 199.9,
+          "def": 715.1
+        }
+      }
+    },
+    {
+      "id": 10000015,
+      "name": "Kaeya",
+      "icon": "Kaeya",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 975.6163940429688,
+        "atk": 18.698400497436523,
+        "def": 66.38099670410156
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11636.2,
+          "atk": 223.0,
+          "def": 791.7
+        },
+        "95": {
+          "hp": 12038.1,
+          "atk": 251.5,
+          "def": 819.1
+        },
+        "100": {
+          "hp": 12441.0,
+          "atk": 279.9,
+          "def": 846.5
+        }
+      }
+    },
+    {
+      "id": 10000016,
+      "name": "Diluc",
+      "icon": "Diluc",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1010.5192260742188,
+        "atk": 26.06800079345703,
+        "def": 61.0265998840332
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12980.7,
+          "atk": 334.8,
+          "def": 783.9
+        },
+        "95": {
+          "hp": 13441.5,
+          "atk": 372.5,
+          "def": 811.8
+        },
+        "100": {
+          "hp": 13903.3,
+          "atk": 410.2,
+          "def": 839.6
+        }
+      }
+    },
+    {
+      "id": 10000020,
+      "name": "Razor",
+      "icon": "Razor",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1002.9700927734375,
+        "atk": 19.58880043029785,
+        "def": 62.9474983215332
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11962.4,
+          "atk": 233.6,
+          "def": 750.8
+        },
+        "95": {
+          "hp": 12375.6,
+          "atk": 263.4,
+          "def": 776.7
+        },
+        "100": {
+          "hp": 12789.9,
+          "atk": 293.2,
+          "def": 802.7
+        }
+      }
+    },
+    {
+      "id": 10000021,
+      "name": "安柏",
+      "icon": "Ambor",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 793.2581787109375,
+        "atk": 18.698400497436523,
+        "def": 50.358001708984375
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9461.2,
+          "atk": 223.0,
+          "def": 600.6
+        },
+        "95": {
+          "hp": 9788.0,
+          "atk": 251.5,
+          "def": 621.4
+        },
+        "100": {
+          "hp": 10115.6,
+          "atk": 279.9,
+          "def": 642.2
+        }
+      }
+    },
+    {
+      "id": 10000022,
+      "name": "温迪",
+      "icon": "Venti",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 819.855224609375,
+        "atk": 20.48200035095215,
+        "def": 52.052101135253906
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10531.5,
+          "atk": 263.1,
+          "def": 668.6
+        },
+        "95": {
+          "hp": 10905.3,
+          "atk": 292.7,
+          "def": 692.4
+        },
+        "100": {
+          "hp": 11280.0,
+          "atk": 322.3,
+          "def": 716.2
+        }
+      }
+    },
+    {
+      "id": 10000023,
+      "name": "Xiangling",
+      "icon": "Xiangling",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 18.876480102539062,
+        "def": 56.080501556396484
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 225.1,
+          "def": 668.9
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 253.9,
+          "def": 692.0
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 282.6,
+          "def": 715.1
+        }
+      }
+    },
+    {
+      "id": 10000024,
+      "name": "北斗",
+      "icon": "Beidou",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1094.149169921875,
+        "atk": 18.876480102539062,
+        "def": 54.36375045776367
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13049.9,
+          "atk": 225.1,
+          "def": 648.4
+        },
+        "95": {
+          "hp": 13500.7,
+          "atk": 253.9,
+          "def": 670.8
+        },
+        "100": {
+          "hp": 13952.6,
+          "atk": 282.6,
+          "def": 693.2
+        }
+      }
+    },
+    {
+      "id": 10000025,
+      "name": "Xingqiu",
+      "icon": "Xingqiu",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 857.0835571289062,
+        "atk": 16.917600631713867,
+        "def": 63.51974868774414
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10222.4,
+          "atk": 201.8,
+          "def": 757.6
+        },
+        "95": {
+          "hp": 10575.5,
+          "atk": 227.5,
+          "def": 783.8
+        },
+        "100": {
+          "hp": 10929.5,
+          "atk": 253.3,
+          "def": 810.0
+        }
+      }
+    },
+    {
+      "id": 10000026,
+      "name": "Xiao",
+      "icon": "Xiao",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 991.4528198242188,
+        "atk": 27.185199737548828,
+        "def": 62.223201751708984
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12735.7,
+          "atk": 349.2,
+          "def": 799.3
+        },
+        "95": {
+          "hp": 13187.8,
+          "atk": 388.5,
+          "def": 827.7
+        },
+        "100": {
+          "hp": 13640.9,
+          "atk": 427.8,
+          "def": 856.1
+        }
+      }
+    },
+    {
+      "id": 10000027,
+      "name": "Ningguang",
+      "icon": "Ningguang",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 820.6118774414062,
+        "atk": 17.808000564575195,
+        "def": 48.069000244140625
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9787.4,
+          "atk": 212.4,
+          "def": 573.3
+        },
+        "95": {
+          "hp": 10125.5,
+          "atk": 239.5,
+          "def": 593.1
+        },
+        "100": {
+          "hp": 10464.4,
+          "atk": 266.6,
+          "def": 613.0
+        }
+      }
+    },
+    {
+      "id": 10000029,
+      "name": "可莉",
+      "icon": "Klee",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 800.788818359375,
+        "atk": 24.20599937438965,
+        "def": 47.86399841308594
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10286.6,
+          "atk": 310.9,
+          "def": 614.8
+        },
+        "95": {
+          "hp": 10651.7,
+          "atk": 345.9,
+          "def": 636.7
+        },
+        "100": {
+          "hp": 11017.7,
+          "atk": 380.9,
+          "def": 658.5
+        }
+      }
+    },
+    {
+      "id": 10000030,
+      "name": "钟离",
+      "icon": "Zhongli",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1143.9840087890625,
+        "atk": 19.551000595092773,
+        "def": 57.436798095703125
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 14695.1,
+          "atk": 251.1,
+          "def": 737.8
+        },
+        "95": {
+          "hp": 15216.7,
+          "atk": 279.4,
+          "def": 764.0
+        },
+        "100": {
+          "hp": 15739.6,
+          "atk": 307.6,
+          "def": 790.3
+        }
+      }
+    },
+    {
+      "id": 10000031,
+      "name": "菲谢尔",
+      "icon": "Fischl",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 770.46337890625,
+        "atk": 20.47920036315918,
+        "def": 49.78575134277344
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9189.3,
+          "atk": 244.3,
+          "def": 593.8
+        },
+        "95": {
+          "hp": 9506.7,
+          "atk": 275.4,
+          "def": 614.3
+        },
+        "100": {
+          "hp": 9824.9,
+          "atk": 306.6,
+          "def": 634.9
+        }
+      }
+    },
+    {
+      "id": 10000032,
+      "name": "Bennett",
+      "icon": "Bennett",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.4417724609375,
+        "atk": 16.02720069885254,
+        "def": 64.66425323486328
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12397.4,
+          "atk": 191.2,
+          "def": 771.2
+        },
+        "95": {
+          "hp": 12825.7,
+          "atk": 215.5,
+          "def": 797.9
+        },
+        "100": {
+          "hp": 13254.9,
+          "atk": 239.9,
+          "def": 824.6
+        }
+      }
+    },
+    {
+      "id": 10000033,
+      "name": "Tartaglia",
+      "icon": "Tartaglia",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1020.0524291992188,
+        "atk": 23.461200714111328,
+        "def": 63.4197998046875
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13103.1,
+          "atk": 301.4,
+          "def": 814.7
+        },
+        "95": {
+          "hp": 13568.3,
+          "atk": 335.3,
+          "def": 843.6
+        },
+        "100": {
+          "hp": 14034.4,
+          "atk": 369.2,
+          "def": 872.6
+        }
+      }
+    },
+    {
+      "id": 10000034,
+      "name": "Noel",
+      "icon": "Noel",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1012.0880126953125,
+        "atk": 16.02720069885254,
+        "def": 66.9532470703125
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12071.2,
+          "atk": 191.2,
+          "def": 798.6
+        },
+        "95": {
+          "hp": 12488.1,
+          "atk": 215.5,
+          "def": 826.1
+        },
+        "100": {
+          "hp": 12906.1,
+          "atk": 239.9,
+          "def": 853.8
+        }
+      }
+    },
+    {
+      "id": 10000035,
+      "name": "Qiqi",
+      "icon": "Qiqi",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 962.8532104492188,
+        "atk": 22.3439998626709,
+        "def": 71.7959976196289
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12368.4,
+          "atk": 287.0,
+          "def": 922.3
+        },
+        "95": {
+          "hp": 12807.4,
+          "atk": 319.3,
+          "def": 955.0
+        },
+        "100": {
+          "hp": 13247.5,
+          "atk": 351.6,
+          "def": 987.8
+        }
+      }
+    },
+    {
+      "id": 10000036,
+      "name": "重云",
+      "icon": "Chongyun",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 920.908935546875,
+        "atk": 18.698400497436523,
+        "def": 54.36375045776367
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10983.7,
+          "atk": 223.0,
+          "def": 648.4
+        },
+        "95": {
+          "hp": 11363.1,
+          "atk": 251.5,
+          "def": 670.8
+        },
+        "100": {
+          "hp": 11743.4,
+          "atk": 279.9,
+          "def": 693.2
+        }
+      }
+    },
+    {
+      "id": 10000037,
+      "name": "Ganyu",
+      "icon": "Ganyu",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 762.656005859375,
+        "atk": 26.06800079345703,
+        "def": 49.06060028076172
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 9796.7,
+          "atk": 334.8,
+          "def": 630.2
+        },
+        "95": {
+          "hp": 10144.5,
+          "atk": 372.5,
+          "def": 652.6
+        },
+        "100": {
+          "hp": 10493.0,
+          "atk": 410.2,
+          "def": 675.0
+        }
+      }
+    },
+    {
+      "id": 10000038,
+      "name": "Albedo",
+      "icon": "Albedo",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1029.5855712890625,
+        "atk": 19.551000595092773,
+        "def": 68.2061996459961
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13225.6,
+          "atk": 251.1,
+          "def": 876.2
+        },
+        "95": {
+          "hp": 13695.1,
+          "atk": 279.4,
+          "def": 907.3
+        },
+        "100": {
+          "hp": 14165.6,
+          "atk": 307.6,
+          "def": 938.4
+        }
+      }
+    },
+    {
+      "id": 10000039,
+      "name": "Diona",
+      "icon": "Diona",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 802.3760986328125,
+        "atk": 17.808000564575195,
+        "def": 50.358001708984375
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9569.9,
+          "atk": 212.4,
+          "def": 600.6
+        },
+        "95": {
+          "hp": 9900.5,
+          "atk": 239.5,
+          "def": 621.4
+        },
+        "100": {
+          "hp": 10231.9,
+          "atk": 266.6,
+          "def": 642.2
+        }
+      }
+    },
+    {
+      "id": 10000041,
+      "name": "莫娜",
+      "icon": "Mona",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 810.322021484375,
+        "atk": 22.3439998626709,
+        "def": 50.855499267578125
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10409.0,
+          "atk": 287.0,
+          "def": 653.3
+        },
+        "95": {
+          "hp": 10778.5,
+          "atk": 319.3,
+          "def": 676.5
+        },
+        "100": {
+          "hp": 11148.8,
+          "atk": 351.6,
+          "def": 699.7
+        }
+      }
+    },
+    {
+      "id": 10000042,
+      "name": "刻晴",
+      "icon": "Keqing",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1020.0524291992188,
+        "atk": 25.136999130249023,
+        "def": 62.223201751708984
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13103.1,
+          "atk": 322.9,
+          "def": 799.3
+        },
+        "95": {
+          "hp": 13568.3,
+          "atk": 359.2,
+          "def": 827.7
+        },
+        "100": {
+          "hp": 14034.4,
+          "atk": 395.5,
+          "def": 856.1
+        }
+      }
+    },
+    {
+      "id": 10000043,
+      "name": "砂糖",
+      "icon": "Sucrose",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 775.0223388671875,
+        "atk": 14.246399879455566,
+        "def": 58.941749572753906
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9243.7,
+          "atk": 169.9,
+          "def": 703.0
+        },
+        "95": {
+          "hp": 9563.0,
+          "atk": 191.6,
+          "def": 727.3
+        },
+        "100": {
+          "hp": 9883.1,
+          "atk": 213.3,
+          "def": 751.6
+        }
+      }
+    },
+    {
+      "id": 10000044,
+      "name": "辛焱",
+      "icon": "Xinyan",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 939.1447143554688,
+        "atk": 20.835359573364258,
+        "def": 66.9532470703125
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11201.2,
+          "atk": 248.5,
+          "def": 798.6
+        },
+        "95": {
+          "hp": 11588.1,
+          "atk": 280.2,
+          "def": 826.1
+        },
+        "100": {
+          "hp": 11976.0,
+          "atk": 311.9,
+          "def": 853.8
+        }
+      }
+    },
+    {
+      "id": 10000045,
+      "name": "罗莎莉亚",
+      "icon": "Rosaria",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1030.3238525390625,
+        "atk": 20.12303924560547,
+        "def": 59.513999938964844
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12288.7,
+          "atk": 240.0,
+          "def": 709.8
+        },
+        "95": {
+          "hp": 12713.1,
+          "atk": 270.6,
+          "def": 734.3
+        },
+        "100": {
+          "hp": 13138.7,
+          "atk": 301.2,
+          "def": 758.9
+        }
+      }
+    },
+    {
+      "id": 10000046,
+      "name": "Hutao",
+      "icon": "Hutao",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1210.7164306640625,
+        "atk": 8.285900115966797,
+        "def": 68.2061996459961
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 15552.3,
+          "atk": 106.4,
+          "def": 876.2
+        },
+        "95": {
+          "hp": 16104.4,
+          "atk": 118.4,
+          "def": 907.3
+        },
+        "100": {
+          "hp": 16657.7,
+          "atk": 130.4,
+          "def": 938.4
+        }
+      }
+    },
+    {
+      "id": 10000047,
+      "name": "枫原万叶",
+      "icon": "Kazuha",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.1187744140625,
+        "atk": 23.08880043029785,
+        "def": 62.82149887084961
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13348.0,
+          "atk": 296.6,
+          "def": 807.0
+        },
+        "95": {
+          "hp": 13821.9,
+          "atk": 329.9,
+          "def": 835.6
+        },
+        "100": {
+          "hp": 14296.8,
+          "atk": 363.3,
+          "def": 864.3
+        }
+      }
+    },
+    {
+      "id": 10000048,
+      "name": "烟绯",
+      "icon": "Feiyan",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 784.1402587890625,
+        "atk": 20.12303924560547,
+        "def": 49.2135009765625
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9352.4,
+          "atk": 240.0,
+          "def": 587.0
+        },
+        "95": {
+          "hp": 9675.5,
+          "atk": 270.6,
+          "def": 607.2
+        },
+        "100": {
+          "hp": 9999.3,
+          "atk": 301.2,
+          "def": 627.6
+        }
+      }
+    },
+    {
+      "id": 10000049,
+      "name": "宵宫",
+      "icon": "Yoimiya",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 791.255615234375,
+        "atk": 25.136999130249023,
+        "def": 47.86399841308594
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10164.1,
+          "atk": 322.9,
+          "def": 614.8
+        },
+        "95": {
+          "hp": 10524.9,
+          "atk": 359.2,
+          "def": 636.7
+        },
+        "100": {
+          "hp": 10886.5,
+          "atk": 395.5,
+          "def": 658.5
+        }
+      }
+    },
+    {
+      "id": 10000050,
+      "name": "Tohma",
+      "icon": "Tohma",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 866.2014770507812,
+        "atk": 16.917600631713867,
+        "def": 62.9474983215332
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10331.2,
+          "atk": 201.8,
+          "def": 750.8
+        },
+        "95": {
+          "hp": 10688.0,
+          "atk": 227.5,
+          "def": 776.7
+        },
+        "100": {
+          "hp": 11045.8,
+          "atk": 253.3,
+          "def": 802.7
+        }
+      }
+    },
+    {
+      "id": 10000051,
+      "name": "Eula",
+      "icon": "Eula",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1029.5855712890625,
+        "atk": 26.62660026550293,
+        "def": 58.45391082763672
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13225.6,
+          "atk": 342.0,
+          "def": 750.9
+        },
+        "95": {
+          "hp": 13695.1,
+          "atk": 380.5,
+          "def": 777.5
+        },
+        "100": {
+          "hp": 14165.6,
+          "atk": 419.0,
+          "def": 804.2
+        }
+      }
+    },
+    {
+      "id": 10000052,
+      "name": "Shougun",
+      "icon": "Shougun",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1004.7992553710938,
+        "atk": 26.254199981689453,
+        "def": 61.445411682128906
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12907.2,
+          "atk": 337.2,
+          "def": 789.3
+        },
+        "95": {
+          "hp": 13365.4,
+          "atk": 375.2,
+          "def": 817.3
+        },
+        "100": {
+          "hp": 13824.6,
+          "atk": 413.1,
+          "def": 845.4
+        }
+      }
+    },
+    {
+      "id": 10000053,
+      "name": "早柚",
+      "icon": "Sayu",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 993.8521728515625,
+        "atk": 20.47920036315918,
+        "def": 62.43247604370117
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11853.7,
+          "atk": 244.3,
+          "def": 744.6
+        },
+        "95": {
+          "hp": 12263.1,
+          "atk": 275.4,
+          "def": 770.4
+        },
+        "100": {
+          "hp": 12673.6,
+          "atk": 306.6,
+          "def": 796.1
+        }
+      }
+    },
+    {
+      "id": 10000054,
+      "name": "珊瑚宫心海",
+      "icon": "Kokomi",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1048.6519775390625,
+        "atk": 18.247600555419922,
+        "def": 51.1546516418457
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13470.5,
+          "atk": 234.4,
+          "def": 657.1
+        },
+        "95": {
+          "hp": 13948.7,
+          "atk": 260.8,
+          "def": 680.4
+        },
+        "100": {
+          "hp": 14427.9,
+          "atk": 287.1,
+          "def": 703.8
+        }
+      }
+    },
+    {
+      "id": 10000055,
+      "name": "Gorou",
+      "icon": "Gorou",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 802.3760986328125,
+        "atk": 15.31488037109375,
+        "def": 54.36375045776367
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9569.9,
+          "atk": 182.7,
+          "def": 648.4
+        },
+        "95": {
+          "hp": 9900.5,
+          "atk": 206.0,
+          "def": 670.8
+        },
+        "100": {
+          "hp": 10231.9,
+          "atk": 229.3,
+          "def": 693.2
+        }
+      }
+    },
+    {
+      "id": 10000056,
+      "name": "九条裟罗",
+      "icon": "Sara",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 802.3760986328125,
+        "atk": 16.383359909057617,
+        "def": 52.64699935913086
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9569.9,
+          "atk": 195.4,
+          "def": 627.9
+        },
+        "95": {
+          "hp": 9900.5,
+          "atk": 220.3,
+          "def": 649.6
+        },
+        "100": {
+          "hp": 10231.9,
+          "atk": 245.3,
+          "def": 671.4
+        }
+      }
+    },
+    {
+      "id": 10000057,
+      "name": "荒泷一斗",
+      "icon": "Itto",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1000.9860229492188,
+        "atk": 17.68899917602539,
+        "def": 74.66783905029297
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12858.2,
+          "atk": 227.2,
+          "def": 959.2
+        },
+        "95": {
+          "hp": 13314.7,
+          "atk": 252.8,
+          "def": 993.2
+        },
+        "100": {
+          "hp": 13772.1,
+          "atk": 278.3,
+          "def": 1027.3
+        }
+      }
+    },
+    {
+      "id": 10000058,
+      "name": "Yae",
+      "icon": "Yae",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 807.4620361328125,
+        "atk": 26.440399169921875,
+        "def": 44.274200439453125
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10372.3,
+          "atk": 339.6,
+          "def": 568.7
+        },
+        "95": {
+          "hp": 10740.5,
+          "atk": 377.8,
+          "def": 588.9
+        },
+        "100": {
+          "hp": 11109.5,
+          "atk": 416.0,
+          "def": 609.2
+        }
+      }
+    },
+    {
+      "id": 10000059,
+      "name": "Heizo",
+      "icon": "Heizo",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 893.55517578125,
+        "atk": 18.876480102539062,
+        "def": 57.33945083618164
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10657.4,
+          "atk": 225.1,
+          "def": 683.9
+        },
+        "95": {
+          "hp": 11025.6,
+          "atk": 253.9,
+          "def": 707.5
+        },
+        "100": {
+          "hp": 11394.6,
+          "atk": 282.6,
+          "def": 731.2
+        }
+      }
+    },
+    {
+      "id": 10000060,
+      "name": "Yelan",
+      "icon": "Yelan",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1124.9176025390625,
+        "atk": 18.992399215698242,
+        "def": 42.658790588378906
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 14450.2,
+          "atk": 244.0,
+          "def": 548.0
+        },
+        "95": {
+          "hp": 14963.1,
+          "atk": 271.4,
+          "def": 567.4
+        },
+        "100": {
+          "hp": 15477.2,
+          "atk": 298.8,
+          "def": 586.9
+        }
+      }
+    },
+    {
+      "id": 10000061,
+      "name": "Momoka",
+      "icon": "Momoka",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1021.2059326171875,
+        "atk": 18.698400497436523,
+        "def": 45.779998779296875
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12179.9,
+          "atk": 223.0,
+          "def": 546.0
+        },
+        "95": {
+          "hp": 12600.6,
+          "atk": 251.5,
+          "def": 564.9
+        },
+        "100": {
+          "hp": 13022.4,
+          "atk": 279.9,
+          "def": 583.8
+        }
+      }
+    },
+    {
+      "id": 10000062,
+      "name": "Aloy",
+      "icon": "Aloy",
+      "quality": "QUALITY_ORANGE_SP",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 848.4547729492188,
+        "atk": 18.210359573364258,
+        "def": 52.65039825439453
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10898.9,
+          "atk": 233.9,
+          "def": 676.3
+        },
+        "95": {
+          "hp": 11285.8,
+          "atk": 260.2,
+          "def": 700.3
+        },
+        "100": {
+          "hp": 11673.5,
+          "atk": 286.5,
+          "def": 724.4
+        }
+      }
+    },
+    {
+      "id": 10000063,
+      "name": "Shenhe",
+      "icon": "Shenhe",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1011.4725341796875,
+        "atk": 23.64739990234375,
+        "def": 64.61640167236328
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12992.9,
+          "atk": 303.8,
+          "def": 830.0
+        },
+        "95": {
+          "hp": 13454.1,
+          "atk": 337.9,
+          "def": 859.5
+        },
+        "100": {
+          "hp": 13916.4,
+          "atk": 372.1,
+          "def": 889.0
+        }
+      }
+    },
+    {
+      "id": 10000064,
+      "name": "Yunjin",
+      "icon": "Yunjin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 893.55517578125,
+        "atk": 16.02720069885254,
+        "def": 61.574100494384766
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10657.4,
+          "atk": 191.2,
+          "def": 734.4
+        },
+        "95": {
+          "hp": 11025.6,
+          "atk": 215.5,
+          "def": 759.8
+        },
+        "100": {
+          "hp": 11394.6,
+          "atk": 239.9,
+          "def": 785.2
+        }
+      }
+    },
+    {
+      "id": 10000065,
+      "name": "Shinobu",
+      "icon": "Shinobu",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1030.3238525390625,
+        "atk": 17.808000564575195,
+        "def": 62.9474983215332
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12288.7,
+          "atk": 212.4,
+          "def": 750.8
+        },
+        "95": {
+          "hp": 12713.1,
+          "atk": 239.5,
+          "def": 776.7
+        },
+        "100": {
+          "hp": 13138.7,
+          "atk": 266.6,
+          "def": 802.7
+        }
+      }
+    },
+    {
+      "id": 10000066,
+      "name": "神里绫人",
+      "icon": "Ayato",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1067.7183837890625,
+        "atk": 23.274999618530273,
+        "def": 59.83000183105469
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13715.4,
+          "atk": 299.0,
+          "def": 768.6
+        },
+        "95": {
+          "hp": 14202.3,
+          "atk": 332.6,
+          "def": 795.8
+        },
+        "100": {
+          "hp": 14690.2,
+          "atk": 366.2,
+          "def": 823.2
+        }
+      }
+    },
+    {
+      "id": 10000067,
+      "name": "Collei",
+      "icon": "Collei",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 820.6118774414062,
+        "atk": 16.739519119262695,
+        "def": 50.358001708984375
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9787.4,
+          "atk": 199.7,
+          "def": 600.6
+        },
+        "95": {
+          "hp": 10125.5,
+          "atk": 225.1,
+          "def": 621.4
+        },
+        "100": {
+          "hp": 10464.4,
+          "atk": 250.6,
+          "def": 642.2
+        }
+      }
+    },
+    {
+      "id": 10000068,
+      "name": "多莉",
+      "icon": "Dori",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.4417724609375,
+        "atk": 18.698400497436523,
+        "def": 60.65850067138672
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12397.4,
+          "atk": 223.0,
+          "def": 723.5
+        },
+        "95": {
+          "hp": 12825.7,
+          "atk": 251.5,
+          "def": 748.5
+        },
+        "100": {
+          "hp": 13254.9,
+          "atk": 279.9,
+          "def": 773.5
+        }
+      }
+    },
+    {
+      "id": 10000069,
+      "name": "提纳里",
+      "icon": "Tighnari",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 844.6415405273438,
+        "atk": 20.854400634765625,
+        "def": 49.06060028076172
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10849.9,
+          "atk": 267.9,
+          "def": 630.2
+        },
+        "95": {
+          "hp": 11235.0,
+          "atk": 298.0,
+          "def": 652.6
+        },
+        "100": {
+          "hp": 11621.0,
+          "atk": 328.1,
+          "def": 675.0
+        }
+      }
+    },
+    {
+      "id": 10000070,
+      "name": "妮露",
+      "icon": "Nilou",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1182.1168212890625,
+        "atk": 17.875200271606445,
+        "def": 56.718841552734375
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 15184.9,
+          "atk": 229.6,
+          "def": 728.6
+        },
+        "95": {
+          "hp": 15724.0,
+          "atk": 255.4,
+          "def": 754.5
+        },
+        "100": {
+          "hp": 16264.2,
+          "atk": 281.3,
+          "def": 780.4
+        }
+      }
+    },
+    {
+      "id": 10000071,
+      "name": "赛诺",
+      "icon": "Cyno",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 972.3864135742188,
+        "atk": 24.76460075378418,
+        "def": 66.88993835449219
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12490.8,
+          "atk": 318.1,
+          "def": 859.2
+        },
+        "95": {
+          "hp": 12934.2,
+          "atk": 353.9,
+          "def": 889.7
+        },
+        "100": {
+          "hp": 13378.6,
+          "atk": 389.7,
+          "def": 920.3
+        }
+      }
+    },
+    {
+      "id": 10000072,
+      "name": "坎蒂丝",
+      "icon": "Candace",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 17.808000564575195,
+        "def": 57.224998474121094
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 212.4,
+          "def": 682.5
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 239.5,
+          "def": 706.1
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 266.6,
+          "def": 729.7
+        }
+      }
+    },
+    {
+      "id": 10000073,
+      "name": "Nahida",
+      "icon": "Nahida",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 806.5087280273438,
+        "atk": 23.274999618530273,
+        "def": 49.06060028076172
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10360.0,
+          "atk": 299.0,
+          "def": 630.2
+        },
+        "95": {
+          "hp": 10727.8,
+          "atk": 332.6,
+          "def": 652.6
+        },
+        "100": {
+          "hp": 11096.4,
+          "atk": 366.2,
+          "def": 675.0
+        }
+      }
+    },
+    {
+      "id": 10000074,
+      "name": "莱依拉",
+      "icon": "Layla",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 930.0267944335938,
+        "atk": 18.164159774780273,
+        "def": 54.93600082397461
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11092.4,
+          "atk": 216.6,
+          "def": 655.2
+        },
+        "95": {
+          "hp": 11475.6,
+          "atk": 244.3,
+          "def": 677.9
+        },
+        "100": {
+          "hp": 11859.7,
+          "atk": 271.9,
+          "def": 700.5
+        }
+      }
+    },
+    {
+      "id": 10000075,
+      "name": "流浪者",
+      "icon": "Wanderer",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 791.255615234375,
+        "atk": 25.5093994140625,
+        "def": 47.26570129394531
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10164.1,
+          "atk": 327.7,
+          "def": 607.2
+        },
+        "95": {
+          "hp": 10524.9,
+          "atk": 364.5,
+          "def": 628.7
+        },
+        "100": {
+          "hp": 10886.5,
+          "atk": 401.4,
+          "def": 650.3
+        }
+      }
+    },
+    {
+      "id": 10000076,
+      "name": "Faruzan",
+      "icon": "Faruzan",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 802.3760986328125,
+        "atk": 16.472400665283203,
+        "def": 52.64699935913086
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9569.9,
+          "atk": 196.5,
+          "def": 627.9
+        },
+        "95": {
+          "hp": 9900.5,
+          "atk": 221.5,
+          "def": 649.6
+        },
+        "100": {
+          "hp": 10231.9,
+          "atk": 246.6,
+          "def": 671.4
+        }
+      }
+    },
+    {
+      "id": 10000077,
+      "name": "Yaoyao",
+      "icon": "Yaoyao",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1030.3238525390625,
+        "atk": 17.808000564575195,
+        "def": 62.9474983215332
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12288.7,
+          "atk": 212.4,
+          "def": 750.8
+        },
+        "95": {
+          "hp": 12713.1,
+          "atk": 239.5,
+          "def": 776.7
+        },
+        "100": {
+          "hp": 13138.7,
+          "atk": 266.6,
+          "def": 802.7
+        }
+      }
+    },
+    {
+      "id": 10000078,
+      "name": "Alhatham",
+      "icon": "Alhatham",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.1187744140625,
+        "atk": 24.392200469970703,
+        "def": 60.847110748291016
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13348.0,
+          "atk": 313.3,
+          "def": 781.6
+        },
+        "95": {
+          "hp": 13821.9,
+          "atk": 348.6,
+          "def": 809.4
+        },
+        "100": {
+          "hp": 14296.8,
+          "atk": 383.8,
+          "def": 837.2
+        }
+      }
+    },
+    {
+      "id": 10000079,
+      "name": "迪希雅",
+      "icon": "Dehya",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1220.2496337890625,
+        "atk": 20.66819953918457,
+        "def": 48.88111114501953
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 15674.8,
+          "atk": 265.5,
+          "def": 627.9
+        },
+        "95": {
+          "hp": 16231.2,
+          "atk": 295.4,
+          "def": 650.2
+        },
+        "100": {
+          "hp": 16788.9,
+          "atk": 325.2,
+          "def": 672.5
+        }
+      }
+    },
+    {
+      "id": 10000080,
+      "name": "米卡",
+      "icon": "Mika",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1048.5596923828125,
+        "atk": 18.698400497436523,
+        "def": 59.80012512207031
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12506.2,
+          "atk": 223.0,
+          "def": 713.2
+        },
+        "95": {
+          "hp": 12938.2,
+          "atk": 251.5,
+          "def": 737.9
+        },
+        "100": {
+          "hp": 13371.2,
+          "atk": 279.9,
+          "def": 762.6
+        }
+      }
+    },
+    {
+      "id": 10000081,
+      "name": "卡维",
+      "icon": "Kaveh",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1002.9700927734375,
+        "atk": 19.58880043029785,
+        "def": 62.9474983215332
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11962.4,
+          "atk": 233.6,
+          "def": 750.8
+        },
+        "95": {
+          "hp": 12375.6,
+          "atk": 263.4,
+          "def": 776.7
+        },
+        "100": {
+          "hp": 12789.9,
+          "atk": 293.2,
+          "def": 802.7
+        }
+      }
+    },
+    {
+      "id": 10000082,
+      "name": "白术",
+      "icon": "Baizhuer",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.1187744140625,
+        "atk": 14.989100456237793,
+        "def": 38.88949966430664
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13348.0,
+          "atk": 192.5,
+          "def": 499.6
+        },
+        "95": {
+          "hp": 13821.9,
+          "atk": 214.2,
+          "def": 517.3
+        },
+        "100": {
+          "hp": 14296.8,
+          "atk": 235.9,
+          "def": 535.1
+        }
+      }
+    },
+    {
+      "id": 10000083,
+      "name": "琳妮特",
+      "icon": "Linette",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.4417724609375,
+        "atk": 19.410720825195312,
+        "def": 59.68567657470703
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12397.4,
+          "atk": 231.5,
+          "def": 711.9
+        },
+        "95": {
+          "hp": 12825.7,
+          "atk": 261.0,
+          "def": 736.5
+        },
+        "100": {
+          "hp": 13254.9,
+          "atk": 290.6,
+          "def": 761.1
+        }
+      }
+    },
+    {
+      "id": 10000084,
+      "name": "林尼",
+      "icon": "Liney",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 857.9879760742188,
+        "atk": 24.76460075378418,
+        "def": 41.88100051879883
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11021.3,
+          "atk": 318.1,
+          "def": 538.0
+        },
+        "95": {
+          "hp": 11412.6,
+          "atk": 353.9,
+          "def": 557.1
+        },
+        "100": {
+          "hp": 11804.7,
+          "atk": 389.7,
+          "def": 576.2
+        }
+      }
+    },
+    {
+      "id": 10000085,
+      "name": "Freminet",
+      "icon": "Freminet",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1012.0880126953125,
+        "atk": 21.369600296020508,
+        "def": 59.39955139160156
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12071.2,
+          "atk": 254.9,
+          "def": 708.5
+        },
+        "95": {
+          "hp": 12488.1,
+          "atk": 287.4,
+          "def": 732.9
+        },
+        "100": {
+          "hp": 12906.1,
+          "atk": 319.9,
+          "def": 757.5
+        }
+      }
+    },
+    {
+      "id": 10000086,
+      "name": "Wriothesley",
+      "icon": "Wriothesley",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1058.1851806640625,
+        "atk": 24.20599937438965,
+        "def": 59.411190032958984
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13593.0,
+          "atk": 310.9,
+          "def": 763.2
+        },
+        "95": {
+          "hp": 14075.5,
+          "atk": 345.9,
+          "def": 790.3
+        },
+        "100": {
+          "hp": 14559.1,
+          "atk": 380.9,
+          "def": 817.4
+        }
+      }
+    },
+    {
+      "id": 10000087,
+      "name": "那维莱特",
+      "icon": "Neuvillette",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1143.9840087890625,
+        "atk": 16.218019485473633,
+        "def": 44.872501373291016
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 14695.1,
+          "atk": 208.3,
+          "def": 576.4
+        },
+        "95": {
+          "hp": 15216.7,
+          "atk": 231.8,
+          "def": 596.9
+        },
+        "100": {
+          "hp": 15739.6,
+          "atk": 255.2,
+          "def": 617.4
+        }
+      }
+    },
+    {
+      "id": 10000088,
+      "name": "夏洛蒂",
+      "icon": "Charlotte",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 902.673095703125,
+        "atk": 14.513520240783691,
+        "def": 45.779998779296875
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10766.2,
+          "atk": 173.1,
+          "def": 546.0
+        },
+        "95": {
+          "hp": 11138.1,
+          "atk": 195.2,
+          "def": 564.9
+        },
+        "100": {
+          "hp": 11510.9,
+          "atk": 217.3,
+          "def": 583.8
+        }
+      }
+    },
+    {
+      "id": 10000089,
+      "name": "芙宁娜",
+      "icon": "Furina",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1191.6500244140625,
+        "atk": 18.992399215698242,
+        "def": 54.146148681640625
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 15307.4,
+          "atk": 244.0,
+          "def": 695.5
+        },
+        "95": {
+          "hp": 15850.8,
+          "atk": 271.4,
+          "def": 720.2
+        },
+        "100": {
+          "hp": 16395.4,
+          "atk": 298.8,
+          "def": 745.0
+        }
+      }
+    },
+    {
+      "id": 10000090,
+      "name": "夏沃蕾",
+      "icon": "Chevreuse",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1002.9700927734375,
+        "atk": 16.205280303955078,
+        "def": 50.701351165771484
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11962.4,
+          "atk": 193.3,
+          "def": 604.7
+        },
+        "95": {
+          "hp": 12375.6,
+          "atk": 217.9,
+          "def": 625.6
+        },
+        "100": {
+          "hp": 12789.9,
+          "atk": 242.6,
+          "def": 646.5
+        }
+      }
+    },
+    {
+      "id": 10000091,
+      "name": "娜维娅",
+      "icon": "Navia",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 984.779541015625,
+        "atk": 27.371400833129883,
+        "def": 61.74456024169922
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12650.0,
+          "atk": 351.6,
+          "def": 793.1
+        },
+        "95": {
+          "hp": 13099.1,
+          "atk": 391.1,
+          "def": 821.3
+        },
+        "100": {
+          "hp": 13549.1,
+          "atk": 430.7,
+          "def": 849.5
+        }
+      }
+    },
+    {
+      "id": 10000092,
+      "name": "嘉明",
+      "icon": "Gaming",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 957.3805541992188,
+        "atk": 25.2873592376709,
+        "def": 58.941749572753906
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11418.7,
+          "atk": 301.6,
+          "def": 703.0
+        },
+        "95": {
+          "hp": 11813.1,
+          "atk": 340.1,
+          "def": 727.3
+        },
+        "100": {
+          "hp": 12208.5,
+          "atk": 378.6,
+          "def": 751.6
+        }
+      }
+    },
+    {
+      "id": 10000093,
+      "name": "Liuyun",
+      "icon": "Liuyun",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 810.322021484375,
+        "atk": 26.06800079345703,
+        "def": 44.57334899902344
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10409.0,
+          "atk": 334.8,
+          "def": 572.6
+        },
+        "95": {
+          "hp": 10778.5,
+          "atk": 372.5,
+          "def": 592.9
+        },
+        "100": {
+          "hp": 11148.8,
+          "atk": 410.2,
+          "def": 613.3
+        }
+      }
+    },
+    {
+      "id": 10000094,
+      "name": "千织",
+      "icon": "Chiori",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 890.40087890625,
+        "atk": 25.136999130249023,
+        "def": 74.18920135498047
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11437.7,
+          "atk": 322.9,
+          "def": 953.0
+        },
+        "95": {
+          "hp": 11843.7,
+          "atk": 359.2,
+          "def": 986.8
+        },
+        "100": {
+          "hp": 12250.6,
+          "atk": 395.5,
+          "def": 1020.7
+        }
+      }
+    },
+    {
+      "id": 10000095,
+      "name": "Sigewinne",
+      "icon": "Sigewinne",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.1187744140625,
+        "atk": 14.989100456237793,
+        "def": 38.88949966430664
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13348.0,
+          "atk": 192.5,
+          "def": 499.6
+        },
+        "95": {
+          "hp": 13821.9,
+          "atk": 214.2,
+          "def": 517.3
+        },
+        "100": {
+          "hp": 14296.8,
+          "atk": 235.9,
+          "def": 535.1
+        }
+      }
+    },
+    {
+      "id": 10000096,
+      "name": "Arlecchino",
+      "icon": "Arlecchino",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1020.0524291992188,
+        "atk": 26.62660026550293,
+        "def": 59.53084945678711
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13103.1,
+          "atk": 342.0,
+          "def": 764.7
+        },
+        "95": {
+          "hp": 13568.3,
+          "atk": 380.5,
+          "def": 791.9
+        },
+        "100": {
+          "hp": 14034.4,
+          "atk": 419.0,
+          "def": 819.1
+        }
+      }
+    },
+    {
+      "id": 10000097,
+      "name": "Sethos",
+      "icon": "Sethos",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 820.6118774414062,
+        "atk": 19.0545597076416,
+        "def": 46.92449951171875
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9787.4,
+          "atk": 227.3,
+          "def": 559.7
+        },
+        "95": {
+          "hp": 10125.5,
+          "atk": 256.2,
+          "def": 579.0
+        },
+        "100": {
+          "hp": 10464.4,
+          "atk": 285.2,
+          "def": 598.4
+        }
+      }
+    },
+    {
+      "id": 10000098,
+      "name": "Clorinde",
+      "icon": "Clorinde",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1008.612548828125,
+        "atk": 26.254199981689453,
+        "def": 61.0265998840332
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12956.2,
+          "atk": 337.2,
+          "def": 783.9
+        },
+        "95": {
+          "hp": 13416.1,
+          "atk": 375.2,
+          "def": 811.8
+        },
+        "100": {
+          "hp": 13877.0,
+          "atk": 413.1,
+          "def": 839.6
+        }
+      }
+    },
+    {
+      "id": 10000099,
+      "name": "Emilie",
+      "icon": "Emilie",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1056.278564453125,
+        "atk": 26.06800079345703,
+        "def": 56.8385009765625
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 13568.5,
+          "atk": 334.8,
+          "def": 730.1
+        },
+        "95": {
+          "hp": 14050.1,
+          "atk": 372.5,
+          "def": 756.0
+        },
+        "100": {
+          "hp": 14532.9,
+          "atk": 410.2,
+          "def": 782.0
+        }
+      }
+    },
+    {
+      "id": 10000100,
+      "name": "卡齐娜",
+      "icon": "Kachina",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 989.293212890625,
+        "atk": 18.164159774780273,
+        "def": 66.43822479248047
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11799.3,
+          "atk": 216.6,
+          "def": 792.4
+        },
+        "95": {
+          "hp": 12206.9,
+          "atk": 244.3,
+          "def": 819.8
+        },
+        "100": {
+          "hp": 12615.4,
+          "atk": 271.9,
+          "def": 847.2
+        }
+      }
+    },
+    {
+      "id": 10000101,
+      "name": "Kinich",
+      "icon": "Kinich",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1000.9860229492188,
+        "atk": 25.881799697875977,
+        "def": 62.40269088745117
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12858.2,
+          "atk": 332.5,
+          "def": 801.6
+        },
+        "95": {
+          "hp": 13314.7,
+          "atk": 369.9,
+          "def": 830.1
+        },
+        "100": {
+          "hp": 13772.1,
+          "atk": 407.3,
+          "def": 858.6
+        }
+      }
+    },
+    {
+      "id": 10000102,
+      "name": "玛拉妮",
+      "icon": "Mualani",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1182.1168212890625,
+        "atk": 14.151200294494629,
+        "def": 44.39385986328125
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 15184.9,
+          "atk": 181.8,
+          "def": 570.3
+        },
+        "95": {
+          "hp": 15724.0,
+          "atk": 202.2,
+          "def": 590.5
+        },
+        "100": {
+          "hp": 16264.2,
+          "atk": 222.7,
+          "def": 610.8
+        }
+      }
+    },
+    {
+      "id": 10000103,
+      "name": "Xilonen",
+      "icon": "Xilonen",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 965.713134765625,
+        "atk": 21.413000106811523,
+        "def": 72.39430236816406
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12405.1,
+          "atk": 275.1,
+          "def": 930.0
+        },
+        "95": {
+          "hp": 12845.5,
+          "atk": 306.0,
+          "def": 963.0
+        },
+        "100": {
+          "hp": 13286.8,
+          "atk": 336.9,
+          "def": 996.0
+        }
+      }
+    },
+    {
+      "id": 10000104,
+      "name": "恰斯卡",
+      "icon": "Chasca",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 762.656005859375,
+        "atk": 26.999000549316406,
+        "def": 47.86399841308594
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9796.7,
+          "atk": 346.8,
+          "def": 614.8
+        },
+        "95": {
+          "hp": 10144.5,
+          "atk": 385.8,
+          "def": 636.7
+        },
+        "100": {
+          "hp": 10493.0,
+          "atk": 424.8,
+          "def": 658.5
+        }
+      }
+    },
+    {
+      "id": 10000105,
+      "name": "欧洛伦",
+      "icon": "Olorun",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 775.0223388671875,
+        "atk": 20.47920036315918,
+        "def": 49.2135009765625
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9243.7,
+          "atk": 244.3,
+          "def": 587.0
+        },
+        "95": {
+          "hp": 9563.0,
+          "atk": 275.4,
+          "def": 607.2
+        },
+        "100": {
+          "hp": 9883.1,
+          "atk": 306.6,
+          "def": 627.6
+        }
+      }
+    },
+    {
+      "id": 10000106,
+      "name": "玛薇卡",
+      "icon": "Mavuika",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 977.1530151367188,
+        "atk": 27.93000030517578,
+        "def": 61.624900817871094
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12552.1,
+          "atk": 358.8,
+          "def": 791.6
+        },
+        "95": {
+          "hp": 12997.6,
+          "atk": 399.1,
+          "def": 819.7
+        },
+        "100": {
+          "hp": 13444.2,
+          "atk": 439.5,
+          "def": 847.9
+        }
+      }
+    },
+    {
+      "id": 10000107,
+      "name": "Citlali",
+      "icon": "Citlali",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 905.6539916992188,
+        "atk": 9.868599891662598,
+        "def": 59.411190032958984
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11633.6,
+          "atk": 126.8,
+          "def": 763.2
+        },
+        "95": {
+          "hp": 12046.6,
+          "atk": 141.0,
+          "def": 790.3
+        },
+        "100": {
+          "hp": 12460.5,
+          "atk": 155.3,
+          "def": 817.4
+        }
+      }
+    },
+    {
+      "id": 10000108,
+      "name": "蓝砚",
+      "icon": "Lanyan",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 775.0223388671875,
+        "atk": 21.013439178466797,
+        "def": 48.64125061035156
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9243.7,
+          "atk": 250.6,
+          "def": 580.1
+        },
+        "95": {
+          "hp": 9563.0,
+          "atk": 282.6,
+          "def": 600.2
+        },
+        "100": {
+          "hp": 9883.1,
+          "atk": 314.6,
+          "def": 620.3
+        }
+      }
+    },
+    {
+      "id": 10000109,
+      "name": "Mizuki",
+      "icon": "Mizuki",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 991.4528198242188,
+        "atk": 16.757999420166016,
+        "def": 58.93254852294922
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12735.7,
+          "atk": 215.3,
+          "def": 757.0
+        },
+        "95": {
+          "hp": 13187.8,
+          "atk": 239.5,
+          "def": 783.9
+        },
+        "100": {
+          "hp": 13640.9,
+          "atk": 263.7,
+          "def": 810.8
+        }
+      }
+    },
+    {
+      "id": 10000110,
+      "name": "Iansan",
+      "icon": "Iansan",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 893.55517578125,
+        "atk": 21.547679901123047,
+        "def": 53.505374908447266
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10657.4,
+          "atk": 257.0,
+          "def": 638.2
+        },
+        "95": {
+          "hp": 11025.6,
+          "atk": 289.8,
+          "def": 660.2
+        },
+        "100": {
+          "hp": 11394.6,
+          "atk": 322.6,
+          "def": 682.3
+        }
+      }
+    },
+    {
+      "id": 10000111,
+      "name": "Varesa",
+      "icon": "Varesa",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 988.5928344726562,
+        "atk": 27.743799209594727,
+        "def": 60.847110748291016
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12699.0,
+          "atk": 356.4,
+          "def": 781.6
+        },
+        "95": {
+          "hp": 13149.8,
+          "atk": 396.5,
+          "def": 809.4
+        },
+        "100": {
+          "hp": 13601.6,
+          "atk": 436.6,
+          "def": 837.2
+        }
+      }
+    },
+    {
+      "id": 10000112,
+      "name": "Escoffier",
+      "icon": "Escoffier",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1039.1187744140625,
+        "atk": 26.999000549316406,
+        "def": 56.958160400390625
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13348.0,
+          "atk": 346.8,
+          "def": 731.7
+        },
+        "95": {
+          "hp": 13821.9,
+          "atk": 385.8,
+          "def": 757.6
+        },
+        "100": {
+          "hp": 14296.8,
+          "atk": 424.8,
+          "def": 783.7
+        }
+      }
+    },
+    {
+      "id": 10000113,
+      "name": "Ifa",
+      "icon": "Ifa",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 845.2302856445312,
+        "atk": 14.958720207214355,
+        "def": 50.758575439453125
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10081.0,
+          "atk": 178.4,
+          "def": 605.4
+        },
+        "95": {
+          "hp": 10429.3,
+          "atk": 201.2,
+          "def": 626.3
+        },
+        "100": {
+          "hp": 10778.4,
+          "atk": 223.9,
+          "def": 647.3
+        }
+      }
+    },
+    {
+      "id": 10000114,
+      "name": "SkirkNew",
+      "icon": "SkirkNew",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 966.66650390625,
+        "atk": 27.93000030517578,
+        "def": 62.76166915893555
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12417.4,
+          "atk": 358.8,
+          "def": 806.2
+        },
+        "95": {
+          "hp": 12858.2,
+          "atk": 399.1,
+          "def": 834.8
+        },
+        "100": {
+          "hp": 13299.9,
+          "atk": 439.5,
+          "def": 863.5
+        }
+      }
+    },
+    {
+      "id": 10000115,
+      "name": "Dahlia",
+      "icon": "Dahlia",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1048.5596923828125,
+        "atk": 15.849120140075684,
+        "def": 46.92449951171875
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12506.2,
+          "atk": 189.0,
+          "def": 559.7
+        },
+        "95": {
+          "hp": 12938.2,
+          "atk": 213.1,
+          "def": 579.0
+        },
+        "100": {
+          "hp": 13371.2,
+          "atk": 237.3,
+          "def": 598.4
+        }
+      }
+    },
+    {
+      "id": 10000116,
+      "name": "Ineffa",
+      "icon": "Ineffa",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 981.9196166992188,
+        "atk": 25.695600509643555,
+        "def": 64.4369125366211
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12613.3,
+          "atk": 330.1,
+          "def": 827.7
+        },
+        "95": {
+          "hp": 13061.0,
+          "atk": 367.2,
+          "def": 857.1
+        },
+        "100": {
+          "hp": 13509.8,
+          "atk": 404.3,
+          "def": 886.6
+        }
+      }
+    },
+    {
+      "id": 10000117,
+      "name": "MannequinBoy",
+      "icon": "MannequinBoy",
+      "quality": "QUALITY_ORANGE_SP",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 17.808000564575195,
+        "def": 57.224998474121094
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 212.4,
+          "def": 682.5
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 239.5,
+          "def": 706.1
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 266.6,
+          "def": 729.7
+        }
+      }
+    },
+    {
+      "id": 10000118,
+      "name": "MannequinGirl",
+      "icon": "MannequinGirl",
+      "quality": "QUALITY_ORANGE_SP",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 911.791015625,
+        "atk": 17.808000564575195,
+        "def": 57.224998474121094
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10874.9,
+          "atk": 212.4,
+          "def": 682.5
+        },
+        "95": {
+          "hp": 11250.6,
+          "atk": 239.5,
+          "def": 706.1
+        },
+        "100": {
+          "hp": 11627.1,
+          "atk": 266.6,
+          "def": 729.7
+        }
+      }
+    },
+    {
+      "id": 10000119,
+      "name": "Lauma",
+      "icon": "Lauma",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 829.388427734375,
+        "atk": 19.848920822143555,
+        "def": 52.052101135253906
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "elementMastery": 200.0,
+      "levels": {
+        "90": {
+          "hp": 10653.9,
+          "atk": 255.0,
+          "def": 668.6
+        },
+        "95": {
+          "hp": 11032.1,
+          "atk": 283.6,
+          "def": 692.4
+        },
+        "100": {
+          "hp": 11411.2,
+          "atk": 312.3,
+          "def": 716.2
+        }
+      }
+    },
+    {
+      "id": 10000120,
+      "name": "Flins",
+      "icon": "Flins",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 972.3864135742188,
+        "atk": 27.371400833129883,
+        "def": 62.941158294677734
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12490.8,
+          "atk": 351.6,
+          "def": 808.5
+        },
+        "95": {
+          "hp": 12934.2,
+          "atk": 391.1,
+          "def": 837.2
+        },
+        "100": {
+          "hp": 13378.6,
+          "atk": 430.7,
+          "def": 866.0
+        }
+      }
+    },
+    {
+      "id": 10000121,
+      "name": "Aino",
+      "icon": "Aino",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 939.1447143554688,
+        "atk": 20.30112075805664,
+        "def": 50.93024826049805
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11201.2,
+          "atk": 242.1,
+          "def": 607.4
+        },
+        "95": {
+          "hp": 11588.1,
+          "atk": 273.0,
+          "def": 628.4
+        },
+        "100": {
+          "hp": 11976.0,
+          "atk": 303.9,
+          "def": 649.5
+        }
+      }
+    },
+    {
+      "id": 10000122,
+      "name": "Nefer",
+      "icon": "Nefer",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 988.9741821289062,
+        "atk": 26.81279945373535,
+        "def": 62.223201751708984
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "elementMastery": 100.0,
+      "levels": {
+        "90": {
+          "hp": 12703.9,
+          "atk": 344.4,
+          "def": 799.3
+        },
+        "95": {
+          "hp": 13154.9,
+          "atk": 383.2,
+          "def": 827.7
+        },
+        "100": {
+          "hp": 13606.8,
+          "atk": 421.9,
+          "def": 856.1
+        }
+      }
+    },
+    {
+      "id": 10000123,
+      "name": "Durin",
+      "icon": "Durin",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 967.6198120117188,
+        "atk": 26.999000549316406,
+        "def": 64.01809692382812
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12429.6,
+          "atk": 346.8,
+          "def": 822.4
+        },
+        "95": {
+          "hp": 12870.8,
+          "atk": 385.8,
+          "def": 851.5
+        },
+        "100": {
+          "hp": 13313.0,
+          "atk": 424.8,
+          "def": 880.8
+        }
+      }
+    },
+    {
+      "id": 10000124,
+      "name": "Jahoda",
+      "icon": "Jahoda",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 808.7586059570312,
+        "atk": 18.698400497436523,
+        "def": 48.64125061035156
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9646.0,
+          "atk": 223.0,
+          "def": 580.1
+        },
+        "95": {
+          "hp": 9979.3,
+          "atk": 251.5,
+          "def": 600.2
+        },
+        "100": {
+          "hp": 10313.3,
+          "atk": 279.9,
+          "def": 620.3
+        }
+      }
+    },
+    {
+      "id": 10000125,
+      "name": "Columbina",
+      "icon": "Columbina",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1143.9840087890625,
+        "atk": 7.447999954223633,
+        "def": 40.08610153198242
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 14695.1,
+          "atk": 95.7,
+          "def": 514.9
+        },
+        "95": {
+          "hp": 15216.7,
+          "atk": 106.4,
+          "def": 533.2
+        },
+        "100": {
+          "hp": 15739.6,
+          "atk": 117.2,
+          "def": 551.5
+        }
+      }
+    },
+    {
+      "id": 10000126,
+      "name": "Zibai",
+      "icon": "Zibai",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1005.7526245117188,
+        "atk": 17.50279998779297,
+        "def": 74.48834991455078
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12919.4,
+          "atk": 224.8,
+          "def": 956.9
+        },
+        "95": {
+          "hp": 13378.1,
+          "atk": 250.1,
+          "def": 990.8
+        },
+        "100": {
+          "hp": 13837.7,
+          "atk": 275.4,
+          "def": 1024.9
+        }
+      }
+    },
+    {
+      "id": 10000127,
+      "name": "Illuga",
+      "icon": "Illuga",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1002.9700927734375,
+        "atk": 16.02720069885254,
+        "def": 68.21219635009766
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 11962.4,
+          "atk": 191.2,
+          "def": 813.6
+        },
+        "95": {
+          "hp": 12375.6,
+          "atk": 215.5,
+          "def": 841.7
+        },
+        "100": {
+          "hp": 12789.9,
+          "atk": 239.9,
+          "def": 869.8
+        }
+      }
+    },
+    {
+      "id": 10000128,
+      "name": "Varka",
+      "icon": "Varka",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 981.9196166992188,
+        "atk": 27.464500427246094,
+        "def": 61.924049377441406
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12613.3,
+          "atk": 352.8,
+          "def": 795.5
+        },
+        "95": {
+          "hp": 13061.0,
+          "atk": 392.5,
+          "def": 823.7
+        },
+        "100": {
+          "hp": 13509.8,
+          "atk": 432.2,
+          "def": 852.0
+        }
+      }
+    },
+    {
+      "id": 10000129,
+      "name": "Lohen",
+      "icon": "Lohen",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1000.9860229492188,
+        "atk": 26.81279945373535,
+        "def": 61.0265998840332
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 12858.2,
+          "atk": 344.4,
+          "def": 783.9
+        },
+        "95": {
+          "hp": 13314.7,
+          "atk": 383.2,
+          "def": 811.8
+        },
+        "100": {
+          "hp": 13772.1,
+          "atk": 421.9,
+          "def": 839.6
+        }
+      }
+    },
+    {
+      "id": 10000130,
+      "name": "Linnea",
+      "icon": "Linnea",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "BOW",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 770.2825317382812,
+        "atk": 11.17199993133545,
+        "def": 70.59940338134766
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9894.7,
+          "atk": 143.5,
+          "def": 906.9
+        },
+        "95": {
+          "hp": 10245.9,
+          "atk": 159.7,
+          "def": 939.1
+        },
+        "100": {
+          "hp": 10598.0,
+          "atk": 175.8,
+          "def": 971.4
+        }
+      }
+    },
+    {
+      "id": 10000131,
+      "name": "Nicole",
+      "icon": "Nicole",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 810.322021484375,
+        "atk": 26.62660026550293,
+        "def": 43.79555892944336
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 10409.0,
+          "atk": 342.0,
+          "def": 562.6
+        },
+        "95": {
+          "hp": 10778.5,
+          "atk": 380.5,
+          "def": 582.6
+        },
+        "100": {
+          "hp": 11148.8,
+          "atk": 419.0,
+          "def": 602.6
+        }
+      }
+    },
+    {
+      "id": 10000132,
+      "name": "Prune",
+      "icon": "Prune",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 811.4940185546875,
+        "atk": 18.520320892333984,
+        "def": 48.64125061035156
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 9678.7,
+          "atk": 220.9,
+          "def": 580.1
+        },
+        "95": {
+          "hp": 10013.0,
+          "atk": 249.1,
+          "def": 600.2
+        },
+        "100": {
+          "hp": 10348.2,
+          "atk": 277.3,
+          "def": 620.3
+        }
+      }
+    },
+    {
+      "id": 10000133,
+      "name": "MarionetteNew",
+      "icon": "MarionetteNew",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": true,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1029.5855712890625,
+        "atk": 26.62660026550293,
+        "def": 58.573570251464844
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 13225.6,
+          "atk": 342.0,
+          "def": 752.4
+        },
+        "95": {
+          "hp": 13695.1,
+          "atk": 380.5,
+          "def": 779.1
+        },
+        "100": {
+          "hp": 14165.6,
+          "atk": 419.0,
+          "def": 805.9
+        }
+      }
+    },
+    {
+      "id": 10000901,
+      "name": "Mavuika",
+      "icon": "Mavuika",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CLAYMORE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 5251.10498046875,
+        "atk": 216.34764099121094,
+        "def": 200.18142700195312
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 50000.0,
+          "atk": 2000.0,
+          "def": 2000.0
+        },
+        "95": {
+          "hp": 52394.5,
+          "atk": 2312.6,
+          "def": 2091.3
+        },
+        "100": {
+          "hp": 54794.3,
+          "atk": 2625.2,
+          "def": 2182.8
+        }
+      }
+    },
+    {
+      "id": 10000902,
+      "name": "Hutao",
+      "icon": "Hutao",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1210.7164306640625,
+        "atk": 8.285900115966797,
+        "def": 68.2061996459961
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 14691.0,
+          "atk": 181.7,
+          "def": 846.7
+        },
+        "95": {
+          "hp": 15243.1,
+          "atk": 193.7,
+          "def": 877.8
+        },
+        "100": {
+          "hp": 15796.4,
+          "atk": 205.7,
+          "def": 908.9
+        }
+      }
+    },
+    {
+      "id": 10000903,
+      "name": "Ineffa",
+      "icon": "Ineffa",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "POLE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 981.9196166992188,
+        "atk": 25.695600509643555,
+        "def": 64.4369125366211
+      },
+      "critRate": 24.2,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 12613.3,
+          "atk": 330.1,
+          "def": 827.7
+        },
+        "95": {
+          "hp": 13061.0,
+          "atk": 367.2,
+          "def": 857.1
+        },
+        "100": {
+          "hp": 13509.8,
+          "atk": 404.3,
+          "def": 886.6
+        }
+      }
+    },
+    {
+      "id": 10000904,
+      "name": "Columbina",
+      "icon": "Columbina",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "CATALYST",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 1210.7164306640625,
+        "atk": 8.285900115966797,
+        "def": 68.2061996459961
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 14691.0,
+          "atk": 181.7,
+          "def": 846.7
+        },
+        "95": {
+          "hp": 15243.1,
+          "atk": 193.7,
+          "def": 877.8
+        },
+        "100": {
+          "hp": 15796.4,
+          "atk": 205.7,
+          "def": 908.9
+        }
+      }
+    },
+    {
+      "id": 10000998,
+      "name": "PlayerBoy",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 873891.3,
+          "atk": 873891.3,
+          "def": 873891.3
+        },
+        "95": {
+          "hp": 919490.8,
+          "atk": 1018389.8,
+          "def": 919490.8
+        },
+        "100": {
+          "hp": 965190.4,
+          "atk": 1162888.3,
+          "def": 965190.4
+        }
+      }
+    },
+    {
+      "id": 10000999,
+      "name": "PlayerGirl",
+      "icon": "PlayerGirl",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 873891.3,
+          "atk": 873891.3,
+          "def": 873891.3
+        },
+        "95": {
+          "hp": 919490.8,
+          "atk": 1018389.8,
+          "def": 919490.8
+        },
+        "100": {
+          "hp": 965190.4,
+          "atk": 1162888.3,
+          "def": 965190.4
+        }
+      }
+    },
+    {
+      "id": 11000008,
+      "name": "队伍测试4号",
+      "icon": "Side_Ambor",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000009,
+      "name": "场景测试",
+      "icon": "Side_Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000010,
+      "name": "裸模1号",
+      "icon": "Side_Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000011,
+      "name": "Side_Kate",
+      "icon": "Side_Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000013,
+      "name": "Side_Kate",
+      "icon": "Side_Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000017,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000018,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000019,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000025,
+      "name": "Razor",
+      "icon": "Razor",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 208.60000610351562,
+        "atk": 8.199999809265137,
+        "def": 9.5
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5852.2,
+          "atk": 177.8,
+          "def": 329.9
+        },
+        "95": {
+          "hp": 5938.1,
+          "atk": 190.3,
+          "def": 333.8
+        },
+        "100": {
+          "hp": 6024.3,
+          "atk": 202.7,
+          "def": 337.8
+        }
+      }
+    },
+    {
+      "id": 11000026,
+      "name": "瑶瑶(测试)",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CATALYST",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000027,
+      "name": "少女体型测试-二号机",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000028,
+      "name": "Ayaka",
+      "icon": "Ayaka",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 185.0,
+        "atk": 6.0,
+        "def": 10.399999618530273
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5655.2,
+          "atk": 159.4,
+          "def": 337.4
+        },
+        "95": {
+          "hp": 5731.4,
+          "atk": 168.6,
+          "def": 341.7
+        },
+        "100": {
+          "hp": 5807.8,
+          "atk": 177.7,
+          "def": 346.0
+        }
+      }
+    },
+    {
+      "id": 11000030,
+      "name": "大剑少女",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 189.5,
+        "atk": 5.599999904632568,
+        "def": 10.5
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5692.7,
+          "atk": 156.1,
+          "def": 338.3
+        },
+        "95": {
+          "hp": 5770.8,
+          "atk": 164.6,
+          "def": 342.6
+        },
+        "100": {
+          "hp": 5849.1,
+          "atk": 173.1,
+          "def": 346.9
+        }
+      }
+    },
+    {
+      "id": 11000031,
+      "name": "后武器测试A",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000032,
+      "name": "后武器测试B",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000033,
+      "name": "Kate",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000035,
+      "name": "Xiangling",
+      "icon": "Xiangling",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "POLE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 185.0,
+        "atk": 6.0,
+        "def": 10.399999618530273
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5655.2,
+          "atk": 159.4,
+          "def": 337.4
+        },
+        "95": {
+          "hp": 5731.4,
+          "atk": 168.6,
+          "def": 341.7
+        },
+        "100": {
+          "hp": 5807.8,
+          "atk": 177.7,
+          "def": 346.0
+        }
+      }
+    },
+    {
+      "id": 11000036,
+      "name": "Kate",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000037,
+      "name": "PlayerBoy",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 191.0,
+        "atk": 5.0,
+        "def": 11.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5705.2,
+          "atk": 151.1,
+          "def": 342.5
+        },
+        "95": {
+          "hp": 5783.9,
+          "atk": 158.7,
+          "def": 347.0
+        },
+        "100": {
+          "hp": 5862.8,
+          "atk": 166.3,
+          "def": 351.5
+        }
+      }
+    },
+    {
+      "id": 11000038,
+      "name": "Kate",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000039,
+      "name": "Kate",
+      "icon": "Kate",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 166.0,
+        "atk": 5.0,
+        "def": 8.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 5496.5,
+          "atk": 151.1,
+          "def": 317.4
+        },
+        "95": {
+          "hp": 5564.9,
+          "atk": 158.7,
+          "def": 320.7
+        },
+        "100": {
+          "hp": 5633.5,
+          "atk": 166.3,
+          "def": 324.0
+        }
+      }
+    },
+    {
+      "id": 11000040,
+      "name": "PlayerGirl",
+      "icon": "PlayerGirl",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 441.9454040527344,
+        "atk": 17.63520050048828,
+        "def": 15.975500106811523
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 7972.8,
+          "atk": 263.4,
+          "def": 390.2
+        },
+        "95": {
+          "hp": 8174.3,
+          "atk": 288.9,
+          "def": 397.5
+        },
+        "100": {
+          "hp": 8376.2,
+          "atk": 314.4,
+          "def": 404.8
+        }
+      }
+    },
+    {
+      "id": 11000041,
+      "name": "男主新普攻",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 441.9454040527344,
+        "atk": 17.63520050048828,
+        "def": 15.975500106811523
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 7800.4,
+          "atk": 256.6,
+          "def": 384.0
+        },
+        "95": {
+          "hp": 7982.5,
+          "atk": 283.4,
+          "def": 390.6
+        },
+        "100": {
+          "hp": 8165.0,
+          "atk": 310.2,
+          "def": 397.2
+        }
+      }
+    },
+    {
+      "id": 11000042,
+      "name": "重云（测试）",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 441.9454040527344,
+        "atk": 17.63520050048828,
+        "def": 15.975500106811523
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 7800.4,
+          "atk": 256.6,
+          "def": 384.0
+        },
+        "95": {
+          "hp": 7982.5,
+          "atk": 283.4,
+          "def": 390.6
+        },
+        "100": {
+          "hp": 8165.0,
+          "atk": 310.2,
+          "def": 397.2
+        }
+      }
+    },
+    {
+      "id": 11000043,
+      "name": "测试角色",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000044,
+      "name": "七七（测试）",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000045,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "BOW",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000046,
+      "name": "Qin",
+      "icon": "Qin",
+      "quality": "QUALITY_PURPLE",
+      "weapon": "CLAYMORE",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 88.4,
+      "levels": {
+        "90": {
+          "hp": 839002.2,
+          "atk": 835001.0,
+          "def": 835142.3
+        },
+        "95": {
+          "hp": 880201.8,
+          "atk": 987099.5,
+          "def": 876341.8
+        },
+        "100": {
+          "hp": 921501.4,
+          "atk": 1139298.0,
+          "def": 917641.4
+        }
+      }
+    },
+    {
+      "id": 11000998,
+      "name": "PlayerBoy",
+      "icon": "PlayerBoy",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 873891.3,
+          "atk": 873891.3,
+          "def": 873891.3
+        },
+        "95": {
+          "hp": 919490.8,
+          "atk": 1018389.8,
+          "def": 919490.8
+        },
+        "100": {
+          "hp": 965190.4,
+          "atk": 1162888.3,
+          "def": 965190.4
+        }
+      }
+    },
+    {
+      "id": 11000999,
+      "name": "PlayerGirl",
+      "icon": "PlayerGirl",
+      "quality": "QUALITY_ORANGE",
+      "weapon": "SWORD_ONE_HAND",
+      "playable": false,
+      "promoteLevel": 6,
+      "base": {
+        "hp": 99999.0,
+        "atk": 99999.0,
+        "def": 99999.0
+      },
+      "critRate": 5.0,
+      "critDmg": 50.0,
+      "levels": {
+        "90": {
+          "hp": 873891.3,
+          "atk": 873891.3,
+          "def": 873891.3
+        },
+        "95": {
+          "hp": 919490.8,
+          "atk": 1018389.8,
+          "def": 919490.8
+        },
+        "100": {
+          "hp": 965190.4,
+          "atk": 1162888.3,
+          "def": 965190.4
+        }
+      }
+    }
+  ]
+}

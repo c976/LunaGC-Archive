@@ -20,6 +20,11 @@ public class ActivityCondExcelConfigData extends GameResource {
         @Getter private List<String> param;
     
         public int[] paramArray() {
+            // Rows such as NEW_ACTIVITY_COND_FINISH_MUSIC_GAME_ALL_LEVEL carry no param at all.
+            if (param == null) {
+                return new int[0];
+            }
+
             return param.stream()
                 .filter(s -> s.matches("\\d+"))
                 .mapToInt(Integer::parseInt)
@@ -34,6 +39,6 @@ public class ActivityCondExcelConfigData extends GameResource {
 
     @Override
     public void onLoad() {
-        cond.removeIf(c -> c.type == null);
+        if (cond != null) cond.removeIf(c -> c.type == null);
     }
 }

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 25312 (unnamed LIIGONALLBB in kitkat-multiverse/genshin-protocol 7.1.0; the name is
+// inferred). An official capture sends it before IceCreatureAllGadgetInfoNotify on entering the
+// scene and again after every build. Fields the capture left empty are omitted.
+message IceCreatureDataNotify {
+  repeated fixed64 built_guid_list = 4;
+  repeated IceCreatureTypeGadget type_gadget_list = 10;
+  // Equals the creator's GBJLPCMEIAN on each of their creatures; read as their total likes.
+  uint32 total_like_num = 13;
+  repeated uint32 unlocked_gadget_id_list = 14;
+}
+
+// OCNIMIIHABM: the look the build wheel uses for one creature type.
+message IceCreatureTypeGadget {
+  uint32 gadget_id = 4;
+  uint32 type = 7;
+  IceCreatureAutoReplace auto_replace = 14;
+}
+
+// HEJELGKNBDN
+enum IceCreatureAutoReplace {
+  ICE_CREATURE_AUTO_REPLACE_NONE = 0;
+  ICE_CREATURE_AUTO_REPLACE_AUTO_REPLACE = 1;
+  ICE_CREATURE_AUTO_REPLACE_NOT_AUTO_REPLACE = 2;
+}

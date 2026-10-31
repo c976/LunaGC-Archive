@@ -1,7 +1,10 @@
 package emu.grasscutter.data.binout;
 
 import dev.morphia.annotations.Entity;
+import emu.grasscutter.data.excels.quest.QuestData;
+import emu.grasscutter.data.common.ItemParamData;
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.game.quest.enums.LogicType;
 import emu.grasscutter.game.quest.enums.QuestType;
 import java.util.*;
 import lombok.Data;
@@ -18,7 +21,13 @@ public class MainQuestData {
 
     private SubQuestData[] subQuests;
     private List<TalkData> talks;
-    private long[] preloadLuaList;
+    /**
+     * Nothing reads this: it exists so Gson has somewhere to put the field. It is typed as strings
+     * because the ids outgrew {@code long} in the 4.5-era resources, and a value past
+     * {@link Long#MAX_VALUE} makes Gson throw while parsing QuestData.json, which fails the whole
+     * quest load rather than just this field.
+     */
+    private List<String> preloadLuaList;
 
     public int getId() {
         return id;
@@ -72,8 +81,24 @@ public class MainQuestData {
     public static class SubQuestData {
         private int subId;
         private int order;
+        private String showType;
         private boolean isMpBlock;
         private boolean isRewind, finishParent;
+
+        // Materialized BinOutput preserves reviewed prerequisites, including 36301.
+        private List<QuestData.QuestAcceptCondition> acceptCond;
+        private LogicType acceptCondComb;
+        // The flattened QuestExcel row may lose this multi-objective rule.
+        private LogicType finishCondComb;
+        private LogicType failCondComb;
+
+        // Per-subquest BinOutput actions can be absent from the flattened Excel export.
+        private List<QuestData.QuestExecParam> beginExec;
+        private List<QuestData.QuestExecParam> finishExec;
+        private List<QuestData.QuestExecParam> failExec;
+
+        // Materialized BinOutput can retain rewards missing from QuestExcel.
+        private List<ItemParamData> gainItems;
     }
 
     @Data

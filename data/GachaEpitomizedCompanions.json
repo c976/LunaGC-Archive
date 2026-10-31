@@ -1,0 +1,45 @@
+{
+  "_comment": "4-star UP companions per 5-star character for linked character pool (5099). Pull pool + UI should match the event banner art.",
+  "characterCompanions": [
+    {
+      "itemId": 1071,
+      "rateUp4": [1023, 1065, 1061]
+    },
+    {
+      "itemId": 1046,
+      "rateUp4": [1065, 1025, 1097]
+    },
+    {
+      "itemId": 1089,
+      "rateUp4": [1083, 1088, 1090]
+    },
+    {
+      "itemId": 1096,
+      "rateUp4": [4148, 1043, 1083]
+    },
+    {
+      "itemId": 4150,
+      "rateUp4": [4148, 1043, 1083]
+    },
+    {
+      "itemId": 1003,
+      "rateUp4": [1006, 1014, 1015]
+    },
+    {
+      "itemId": 1016,
+      "rateUp4": [1020, 1021, 1023]
+    },
+    {
+      "itemId": 1041,
+      "rateUp4": [1036, 1039, 1043]
+    },
+    {
+      "itemId": 1042,
+      "rateUp4": [1025, 1031, 1032]
+    },
+    {
+      "itemId": 1035,
+      "rateUp4": [1027, 1034, 1044]
+    }
+  ]
+}

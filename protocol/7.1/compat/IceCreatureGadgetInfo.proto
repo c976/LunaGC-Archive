@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "BPAEPJHBOFM.proto";
+import "ProfilePicture.proto";
+import "Vector.proto";
+
+// 7.1 _IceCreatureGadgetInfo (no CmdId), from kitkat-multiverse/genshin-protocol 7.1.0
+// Deobfuscated.proto. Names in brackets are the dump's obfuscated ones.
+message IceCreatureGadgetInfo {
+  uint32 area_id = 1;
+  fixed32 create_time = 2;
+  string creator_nickname = 3;
+  uint32 like_num = 4;
+  string online_id = 5;
+  uint64 guid = 6;
+  uint32 gadget_id = 7;
+  ProfilePicture creator_profile_picture = 8;
+  uint32 unk_9 = 9; // [GBJLPCMEIAN]
+  string xbox_gamertag = 10;
+  uint32 entity_id = 11;
+  uint32 creator_uid = 12;
+  Vector pos = 13;
+  uint32 map_layer_id = 14;
+  IceCreatureGadgetDetail detail = 15;
+  uint32 scene_id = 241;
+  bool is_hidden = 1071;
+  bool unk_1401 = 1401; // [IFBHPHJDCEO], echoed from the build request
+}
+
+// [OFEDJMKKDKP]
+message IceCreatureGadgetDetail {
+  bytes storage = 1; // [KJDFNKFEHEO], a oneof holding _Storage; kept opaque
+  BPAEPJHBOFM build_detail = 3; // beacon text/icon or decorate buff
+}
+
+// [EMPOELGBJLC]
+enum IceCreatureLimitType {
+  ICE_CREATURE_LIMIT_TYPE_NONE = 0;
+  ICE_CREATURE_LIMIT_TYPE_AREA_LIMIT = 1;
+  ICE_CREATURE_LIMIT_TYPE_COST_LIMIT = 2;
+}

@@ -22,13 +22,18 @@ public class PacketServerAnnounceNotify extends BasePacket {
 
         var proto = ServerAnnounceNotifyOuterClass.ServerAnnounceNotify.newBuilder();
 
+        // msg used to be accepted and thrown away, so this overload announced nothing at all.
+        // See AnnouncementSystem.toProto for why all three string fields carry the same text.
+        var text = msg == null ? "" : msg;
+
         proto.addAnnounceDataList(
                 AnnounceDataOuterClass.AnnounceData.newBuilder()
                         .setConfigId(configId)
                         .setBeginTime(Utils.getCurrentSeconds() + 1)
                         .setEndTime(Utils.getCurrentSeconds() + 2)
-                        .setCenterSystemText(msg)
-                        .setCenterSystemFrequency(1)
+                        .setDungeonConfirmText(text)
+                        .setCountDownText(text)
+                        .setCenterSystemText(text)
                         .build());
 
         this.setData(proto);

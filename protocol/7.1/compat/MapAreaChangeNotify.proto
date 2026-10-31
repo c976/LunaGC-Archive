@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "MapAreaInfo.proto";
+
+// 7.1 CmdId 5579 and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message MapAreaChangeNotify {
+  repeated MapAreaInfo map_area_info_list = 12;
+}

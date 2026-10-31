@@ -18,6 +18,9 @@ public class ConditionActivityEnd extends BaseCondition {
             String paramStr,
             int... params) {
         val activityId = condition.getParam()[0];
-        return owner.getActivityManager().hasActivityEnded(activityId);
+        // Quests resume on login before the activity manager exists; QuestManager#onActivitiesReady
+        // rechecks the gate that needs it once it does.
+        val activities = owner.getActivityManager();
+        return activities != null && activities.hasActivityEnded(activityId);
     }
 }

@@ -75,6 +75,10 @@ public class Ability {
         if (data.onAdded != null) {
             processOnAddedAbilityModifiers();
         }
+        try {
+            AbilityMaxHpRatioHelper.onAbilityCreated(this);
+        } catch (Throwable ignored) {
+        }
     }
 
     private Avatar resolveCasterAvatar(Player player, GameEntity owner) {
@@ -91,7 +95,9 @@ public class Ability {
             return owner instanceof EntityAvatar avatarEntity ? avatarEntity : null;
         }
         String abilityName = data.abilityName;
-        for (var member : player.getTeamManager().getActiveTeam()) {
+        // Copy: the synchronized roster's iterator is not itself synchronized.
+        for (var member : new ArrayList<>(player.getTeamManager().getActiveTeam())) {
+            if (member == null) continue;
             var av = member.getAvatar();
             var avData = av.getAvatarData();
             if (avData == null) continue;
@@ -131,19 +137,29 @@ public class Ability {
             var skillData = GameData.getAvatarSkillDataMap().get(skillId);
             if (skillData == null || skillData.getProudSkillGroupId() == 0) return;
             int level = skillLevelMap.getOrDefault(skillId, 1);
-            ProudSkillData proudSkill = GameData.getProudSkillDataMap().get(skillData.getProudSkillGroupId() * 100 + level);
-            if (proudSkill == null || proudSkill.getOpenConfig() == null) return;
-            var entry = GameData.getOpenConfigEntries().get(proudSkill.getOpenConfig());
-            if (entry == null || entry.getAbilityVarSetters() == null) return;
-            float[] params = proudSkill.getParamList();
-            if (params == null) return;
-            for (AbilityVarSetter setter : entry.getAbilityVarSetters()) {
-                if (!data.abilityName.equals(setter.getAbilityName())) continue;
-                int idx = setter.getParamIndex();
-                if (idx >= params.length) continue;
-                abilitySpecials.put(setter.getVarName(), params[idx]);
-            }
+            applyOpenConfigSpecials(
+                    GameData.getProudSkillDataMap().get(skillData.getProudSkillGroupId() * 100 + level));
         });
+        // Inherent passives (e.g. Cryo Traveler A1 Ice_Superconducted_Attack_Up_Ratio)
+        if (avatar.getProudSkillList() != null) {
+            for (int proudSkillId : avatar.getProudSkillList()) {
+                applyOpenConfigSpecials(GameData.getProudSkillDataMap().get(proudSkillId));
+            }
+        }
+    }
+
+    private void applyOpenConfigSpecials(ProudSkillData proudSkill) {
+        if (proudSkill == null || proudSkill.getOpenConfig() == null) return;
+        var entry = GameData.getOpenConfigEntries().get(proudSkill.getOpenConfig());
+        if (entry == null || entry.getAbilityVarSetters() == null) return;
+        float[] params = proudSkill.getParamList();
+        if (params == null) return;
+        for (AbilityVarSetter setter : entry.getAbilityVarSetters()) {
+            if (!data.abilityName.equals(setter.getAbilityName())) continue;
+            int idx = setter.getParamIndex();
+            if (idx < 0 || idx >= params.length) continue;
+            abilitySpecials.put(setter.getVarName(), params[idx]);
+        }
     }
 
     public void processOnAddedAbilityModifiers() {
@@ -154,13 +170,31 @@ public class Ability {
                 if (modifierAction.modifierName == null) continue;
                 else if (!data.modifiers.containsKey(modifierAction.modifierName)) continue;
 
+                // Must honor predicates — e.g. LupiBoreas RazorQuest_HPControl Limbo is quest-only.
+                // Applying it unconditionally leaves weekly Andrius stuck at 1 HP.
+                if (modifierAction.predicates != null && !modifierAction.predicates.isEmpty()) {
+                    try {
+                        @SuppressWarnings("unchecked")
+                        java.util.List<java.util.Map<String, Object>> preds =
+                                (java.util.List<java.util.Map<String, Object>>)
+                                        (java.util.List<?>) modifierAction.predicates;
+                        if (!emu.grasscutter.game.ability.PredicateEvaluator.all(
+                                preds, this, owner, owner, modifierAction)) {
+                            continue;
+                        }
+                    } catch (Throwable ignored) {
+                        continue;
+                    }
+                }
+
                 var modifierData = data.modifiers.get(modifierAction.modifierName);
-                owner.onAddAbilityModifier(modifierData);
+                owner.onAddAbilityModifier(modifierData, this, modifierAction.modifierName);
             }
         }
     }
 
     public static String getAbilityName(AbilityString abString) {
+        if (abString == null) return null;
         if (abString.hasStr()) return abString.getStr();
         if (abString.hasHash()) return GameData.getAbilityHashes().get(abString.getHash());
 

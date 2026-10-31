@@ -5,11 +5,11 @@ import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason;
-import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason;
-import emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason;
+import emu.grasscutter.net.proto.ChangeHpDebtsReason._ChangeHpDebtsReason;
+import emu.grasscutter.net.proto.ChangHpReasonOuterClass.ChangHpReason;
 import emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo;
 import emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString;
-import emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo;
+import emu.grasscutter.net.proto.DetailAbilityInfo._DetailAbilityInfo;
 import emu.grasscutter.net.proto.PropChangeDetailInfoOuterClass.PropChangeDetailInfo;
 import emu.grasscutter.net.proto.EntityFightPropChangeReasonNotifyOuterClass.EntityFightPropChangeReasonNotify;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
@@ -25,7 +25,7 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
             Float value,
             List<Integer> param,
             PropChangeReason reason,
-            ChangeHpReason changeHpReason) {
+            ChangHpReason changeHpReason) {
         super(PacketOpcodes.EntityFightPropChangeReasonNotify);
 
         EntityFightPropChangeReasonNotify.Builder proto =
@@ -48,7 +48,7 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
             FightProperty prop,
             Float value,
             PropChangeReason reason,
-            ChangeHpReason changeHpReason) {
+            ChangHpReason changeHpReason) {
         super(PacketOpcodes.EntityFightPropChangeReasonNotify);
 
         var detailAbility = entity.getDetailAbilityInfo();
@@ -109,7 +109,7 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
             FightProperty prop,
             Float value,
             PropChangeReason reason,
-            ChangeHpDebtsReason changeHpDebts) {
+            _ChangeHpDebtsReason changeHpDebts) {
         super(PacketOpcodes.EntityFightPropChangeReasonNotify);
 
         var detailAbility = entity.getDetailAbilityInfo();

@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.recv;
 
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.PlayerEnterDungeonReqOuterClass.PlayerEnterDungeonReq;
 import emu.grasscutter.server.game.GameSession;
@@ -14,10 +15,12 @@ public class HandlerPlayerEnterDungeonReq extends PacketHandler {
         PlayerEnterDungeonReq req = PlayerEnterDungeonReq.parseFrom(payload);
 
         var success =
-                session
-                        .getServer()
-                        .getDungeonSystem()
-                        .enterDungeon(session.getPlayer(), req.getPointId(), req.getDungeonId(), true);
+                DomainDungeonHelper.canEnterDungeonFromOpenWorld(
+                                session.getPlayer(), req.getPointId(), req.getDungeonId())
+                        && session
+                                .getServer()
+                                .getDungeonSystem()
+                                .enterDungeon(session.getPlayer(), req.getPointId(), req.getDungeonId(), true);
         session
                 .getPlayer()
                 .sendPacket(new PacketPlayerEnterDungeonRsp(req.getPointId(), req.getDungeonId(), success));

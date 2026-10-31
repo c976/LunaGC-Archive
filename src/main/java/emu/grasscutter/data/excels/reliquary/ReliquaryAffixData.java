@@ -20,4 +20,14 @@ public class ReliquaryAffixData extends GameResource {
     private float propValue;
     private int weight;
     private int upgradeWeight;
+
+    @Override
+    public void onLoad() {
+        if (this.weight <= 0) {
+            this.weight = RelicWeightDefaults.affix(this.fightProp);
+        }
+        if (this.upgradeWeight <= 0) {
+            this.upgradeWeight = RelicWeightDefaults.UPGRADE_WEIGHT;
+        }
+    }
 }

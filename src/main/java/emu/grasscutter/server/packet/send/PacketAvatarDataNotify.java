@@ -27,7 +27,7 @@ public class PacketAvatarDataNotify extends BasePacket {
                         (id, teamInfo) -> {
                             proto.putAvatarTeamMap(id, teamInfo.toProto(player));
                             if (id > 4) {
-
+                                proto.addBackupAvatarTeamOrderList(id);
                             }
                         });
 

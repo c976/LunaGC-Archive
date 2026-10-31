@@ -1,0 +1,4 @@
+syntax = "proto3";
+
+// Build-only import stub; the merged schema uses BPAEPJHBOFM from protocol.desc.
+message BPAEPJHBOFM {}

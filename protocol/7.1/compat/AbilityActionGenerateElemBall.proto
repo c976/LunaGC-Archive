@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "Vector.proto";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "AbilityActionGenerateElemBallOuterClass";
+
+// Recovered from 7.1 client skill invokes. The base descriptor's fields 1/7
+// and uint32 room_id at 14 do not match the observed packet wire types.
+message AbilityActionGenerateElemBall {
+  Vector pos = 11;
+  Vector rot = 14;
+}

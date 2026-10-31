@@ -1,0 +1,4 @@
+syntax = "proto3";
+
+// Build-only import stub. The canonical SceneWeaponInfo descriptor comes from protocol.desc.
+message SceneWeaponInfo {}

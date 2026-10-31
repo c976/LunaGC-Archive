@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.world.World;
 import emu.grasscutter.net.packet.*;
@@ -21,7 +22,7 @@ public class PacketScenePlayerInfoNotify extends BasePacket {
                             .setUid(p.getUid())
                             .setPeerId(p.getPeerId())
                             .setName(p.getNickname())
-                            .setSceneId(p.getSceneId())
+                            .setSceneId(DomainDungeonHelper.notifySceneId(p))
                             .setOnlinePlayerInfo(p.getOnlinePlayerInfo())
                             .build();
 

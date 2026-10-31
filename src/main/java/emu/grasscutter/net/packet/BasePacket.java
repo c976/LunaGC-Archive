@@ -1,6 +1,6 @@
 package emu.grasscutter.net.packet;
 
-import com.google.protobuf.GeneratedMessageV3;
+import com.google.protobuf.MessageLite;
 import emu.grasscutter.net.proto.PacketHeadOuterClass.PacketHead;
 import java.io.*;
 
@@ -65,12 +65,11 @@ public class BasePacket {
         this.data = data;
     }
 
-    public void setData(GeneratedMessageV3 proto) {
+    public void setData(MessageLite proto) {
         this.data = proto.toByteArray();
     }
 
-    @SuppressWarnings("rawtypes")
-    public void setData(GeneratedMessageV3.Builder proto) {
+    public void setData(MessageLite.Builder proto) {
         this.data = proto.build().toByteArray();
     }
 

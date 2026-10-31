@@ -59,11 +59,23 @@ public class BasicActivityConditionExecutor implements ActivityConditionExecutor
                         .map(
                                 c ->
                                         (BooleanSupplier)
-                                                () ->
-                                                        activityConditionsHandlers
+                                                () -> {
+                                                    try {
+                                                        return activityConditionsHandlers
                                                                 .getOrDefault(
                                                                         c.getType(), new UnknownActivityConditionHandler(c.getType()))
-                                                                .execute(activity, activityConfig, c.paramArray()))
+                                                                .execute(activity, activityConfig, c.paramArray());
+                                                    } catch (RuntimeException e) {
+                                                        // A handler reading a param the row does not have.
+                                                        Grasscutter.getLogger()
+                                                                .debug(
+                                                                        "Activity condition {} ({}) failed: {}",
+                                                                        activityCondId,
+                                                                        c.getType(),
+                                                                        e.toString());
+                                                        return false;
+                                                    }
+                                                })
                         .collect(Collectors.toList());
 
         return LogicType.calculate(condComb, predicates);

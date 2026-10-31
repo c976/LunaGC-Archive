@@ -15,7 +15,10 @@ public final class ServerTaskScheduler {
     private final ConcurrentHashMap<Integer, AsyncServerTask> asyncTasks = new ConcurrentHashMap<>();
 
     /* The ID assigned to the next runnable. */
-    private int nextTaskId = 0;
+    // Tasks are scheduled from packet threads and timers as well as the tick; a plain counter could
+    // hand two tasks the same id, and one would silently replace the other.
+    private final java.util.concurrent.atomic.AtomicInteger nextTaskId =
+            new java.util.concurrent.atomic.AtomicInteger();
 
     /**
      * Ran every server tick. Attempts to run all scheduled tasks. This method is synchronous and will
@@ -93,7 +96,7 @@ public final class ServerTaskScheduler {
      */
     public int scheduleAsyncTask(Runnable runnable) {
         // Get the next task ID.
-        var taskId = this.nextTaskId++;
+        var taskId = this.nextTaskId.getAndIncrement();
         // Create a new task.
         this.asyncTasks.put(taskId, new AsyncServerTask(runnable, taskId));
         // Return the task ID.
@@ -142,7 +145,7 @@ public final class ServerTaskScheduler {
      */
     public int scheduleDelayedRepeatingTask(Runnable runnable, int period, int delay) {
         // Get the next task ID.
-        var taskId = this.nextTaskId++;
+        var taskId = this.nextTaskId.getAndIncrement();
         // Create a new task.
         this.tasks.put(taskId, new ServerTask(runnable, taskId, period, delay));
         // Return the task ID.

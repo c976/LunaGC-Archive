@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.AbilityScalarTypeOuterClass;
@@ -15,16 +16,20 @@ public class PacketSyncTeamEntityNotify extends BasePacket {
     public PacketSyncTeamEntityNotify(Player player) {
         super(PacketOpcodes.SyncTeamEntityNotify);
 
-        AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry scalarValue = AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.newBuilder()
-                .setKey(AbilityStringOuterClass.AbilityString.newBuilder().setHash(Utils.abilityHash("SGV_PlayerTeam_Phlogiston"))
-                        .setStr("SGV_PlayerTeam_Phlogiston")
-                        .build())
-                .setFloatValue(player.getPhlogistonValue())
-                .build();
-        AbilitySyncStateInfo phlogiston = AbilitySyncStateInfo.newBuilder().addSgvDynamicValueMap(scalarValue).build();
+        AbilitySyncStateInfo.Builder teamAbilityInfo = AbilitySyncStateInfo.newBuilder();
+        if (player.isInNatlan()) {
+            teamAbilityInfo.addSgvDynamicValueMap(AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.newBuilder()
+                    .setKey(AbilityStringOuterClass.AbilityString.newBuilder()
+                            .setHash(Utils.abilityHash("SGV_PlayerTeam_Phlogiston"))
+                            .setStr("SGV_PlayerTeam_Phlogiston")
+                            .build())
+                    .setFloatValue(player.getPhlogistonValue())
+                    .build());
+        }
+        AbilitySyncStateInfo phlogiston = teamAbilityInfo.build();
 
         SyncTeamEntityNotify.Builder proto =
-                SyncTeamEntityNotify.newBuilder().setSceneId(player.getSceneId());
+                SyncTeamEntityNotify.newBuilder().setSceneId(DomainDungeonHelper.notifySceneId(player));
 
         if (player.getWorld().isMultiplayer()) {
             for (var p : player.getWorld()) {

@@ -18,5 +18,6 @@ public final class ExecIncQuestVar extends TalkExecHandler {
 
         mainQuest.incQuestVar(
                 Integer.parseInt(execParam.getParam()[0]), Integer.parseInt(execParam.getParam()[1]));
+        mainQuest.save();
     }
 }

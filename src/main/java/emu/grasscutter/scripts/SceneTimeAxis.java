@@ -14,15 +14,18 @@ public final class SceneTimeAxis {
     private final int groupId;
 
     private final String identifier;
+    /** Delay from ScriptLib.InitTimeAxis — official lua units are seconds. */
     private final int delay;
     private final boolean loop;
 
     /** Schedules the task to run. */
     public void start() {
+        // java.util.Timer expects milliseconds; lua InitTimeAxis passes seconds.
+        long delayMs = Math.max(0, (long) this.delay) * 1000L;
         if (this.loop) {
-            this.timer.scheduleAtFixedRate(new Task(), this.delay, this.delay);
+            this.timer.scheduleAtFixedRate(new Task(), delayMs, delayMs);
         } else {
-            this.timer.schedule(new Task(), this.delay);
+            this.timer.schedule(new Task(), delayMs);
         }
     }
 

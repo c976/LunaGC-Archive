@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+enum TpsAmmunitionUpdateType {
+  TpsAmmunitionUpdateType_COST = 0;
+  TpsAmmunitionUpdateType_RELOAD = 1;
+  TpsAmmunitionUpdateType_PICKED = 2;
+  TpsAmmunitionUpdateType_SUPPLY = 3;
+}

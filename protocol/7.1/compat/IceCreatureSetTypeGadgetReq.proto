@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "IceCreatureDataNotify.proto";
+
+// 7.1 CmdId 29885 (unnamed KBLIMHCPJHP in kitkat-multiverse/genshin-protocol 7.1.0; the name is
+// inferred). The client sends it when the player picks another look for a type on the build wheel;
+// the fields mirror IceCreatureTypeGadget on other numbers.
+message IceCreatureSetTypeGadgetReq {
+  uint32 gadget_id = 5;
+  uint32 type = 4;
+  IceCreatureAutoReplace auto_replace = 12;
+}

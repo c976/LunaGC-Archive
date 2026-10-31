@@ -7,6 +7,7 @@ import emu.grasscutter.game.activity.condition.*;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.net.proto.ActivityInfoOuterClass;
+import emu.grasscutter.server.packet.send.PacketActivityInfoNotify;
 import emu.grasscutter.server.packet.send.PacketActivityScheduleInfoNotify;
 import java.util.*;
 import java.util.concurrent.*;
@@ -45,7 +46,7 @@ public class ActivityManager extends BasePlayerManager {
                         });
 
         try {
-            DataLoader.loadList("ActivityConfig.json", ActivityConfigItem.class)
+            DataLoader.loadBundledList("ActivityConfig.json", ActivityConfigItem.class)
                     .forEach(
                             item -> {
                                 item.onLoad();
@@ -97,8 +98,6 @@ public class ActivityManager extends BasePlayerManager {
                             playerActivityDataMap.put(item.getActivityId(), data);
                         });
 
-        player.sendPacket(new PacketActivityScheduleInfoNotify(activityConfigItemMap.values()));
-
         conditionExecutor =
                 new BasicActivityConditionExecutor(
                         activityConfigItemMap,
@@ -106,6 +105,25 @@ public class ActivityManager extends BasePlayerManager {
                         PlayerActivityDataMappingBuilder.buildPlayerActivityDataByActivityCondId(
                                 playerActivityDataMap),
                         AllActivityConditionBuilder.buildActivityConditions());
+
+        player.sendPacket(new PacketActivityScheduleInfoNotify(activityConfigItemMap.values()));
+
+        // The schedule alone does not put an activity on screen: the client also needs its
+        // ActivityInfo, and it does not reliably ask for it before deciding whether to show the
+        // activity entry. Push it for every activity running now.
+        // One broken activity must not take the login down with it.
+        activityConfigItemMap.keySet().stream()
+                .filter(this::isActivityActive)
+                .forEach(
+                        activityId -> {
+                            try {
+                                player.sendPacket(
+                                        new PacketActivityInfoNotify(getInfoProtoByActivityId(activityId)));
+                            } catch (RuntimeException e) {
+                                Grasscutter.getLogger()
+                                        .warn("Unable to send activity {} at login.", activityId, e);
+                            }
+                        });
     }
 
     /** trigger activity watcher */
@@ -188,8 +206,14 @@ public class ActivityManager extends BasePlayerManager {
         activityConfigItemMap.forEach((k, v) -> v.getActivityHandler().triggerCondEvents(player));
     }
 
+    /** Returns null for an activity this server has not configured. */
     public ActivityInfoOuterClass.ActivityInfo getInfoProtoByActivityId(int activityId) {
-        var activityHandler = activityConfigItemMap.get(activityId).getActivityHandler();
+        var activityConfig = activityConfigItemMap.get(activityId);
+        if (activityConfig == null) {
+            return null;
+        }
+
+        var activityHandler = activityConfig.getActivityHandler();
         var activityData = playerActivityDataMap.get(activityId);
 
         return activityHandler.toProto(activityData, conditionExecutor);

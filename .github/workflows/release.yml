@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build and publish jar
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      # Best effort: the handbook is fetched from a third-party host, so a release should not fail
+      # because that host is down. Without it the jar simply ships without the handbook page.
+      - name: Download handbook
+        continue-on-error: true
+        run: |
+          mkdir -p src/main/resources/html
+          curl -fsSL --retry 3 --max-time 120 \
+            https://api.grasscutter.io/static/handbook.html \
+            -o src/main/resources/html/handbook.html
+
+      - name: Build jar
+        run: ./gradlew jar -PskipHandbook=1 -PjarFilename=grasscutter -Dorg.gradle.jvmargs=-Xmx4g
+
+      - name: Test
+        run: ./gradlew test -PexcludeTags=integration -Dorg.gradle.jvmargs=-Xmx4g
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: 7.1.${{ github.run_number }}
+          name: 7.1.${{ github.run_number }}
+          body: |
+            Automated build.
+
+            Commit: ${{ github.sha }}
+          files: grasscutter.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

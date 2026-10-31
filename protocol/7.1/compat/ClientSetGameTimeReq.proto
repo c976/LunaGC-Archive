@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "ClientSetGameTimeReqOuterClass";
+
+// 7.1 CmdId 9122. Base shape recovered from capyb2222/LunaGC_7.1.0 c3f203a.
+// The current 7.1 client sends client_game_time on field 7 (observed wire tag 0x38).
+message ClientSetGameTimeReq {
+  uint32 game_time = 5;
+  uint32 client_game_time = 7;
+  bool is_force_set = 15;
+}

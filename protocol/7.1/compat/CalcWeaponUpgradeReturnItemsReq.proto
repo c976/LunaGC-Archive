@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "CalcWeaponUpgradeReturnItemsReqOuterClass";
+
+import "ItemParam.proto";
+
+// 7.1 GOEOJKJAIGF, CmdId 7145. Recovered in invoker-bot/LunaGC commit 9b39ea5.
+message CalcWeaponUpgradeReturnItemsReq {
+  uint64 target_weapon_guid = 1;
+  repeated uint64 food_weapon_guid_list = 14;
+  repeated ItemParam item_param_list = 10;
+}

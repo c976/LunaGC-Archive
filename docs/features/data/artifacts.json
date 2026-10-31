@@ -1,0 +1,662 @@
+{
+    "10001": {
+        "chsName": "行者之心",
+        "enName": "Resolution of Sojourner",
+        "frName": "Cœur du Voyageur",
+        "ptName": "Resolução de Sojourner",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Решимость временщика",
+        "setIcon": "UI_RelicIcon_10001_4",
+        "setId": 10001
+    },
+    "10002": {
+        "chsName": "勇士之心",
+        "enName": "Brave Heart",
+        "frName": "Cœur du Brave",
+        "ptName": "Coração Valente",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Душа храбреца",
+        "setIcon": "UI_RelicIcon_10002_4",
+        "setId": 10002
+    },
+    "10003": {
+        "chsName": "守护之心",
+        "enName": "Defender's Will",
+        "frName": "Cœur du Gardien",
+        "ptName": "Guardião",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Воля защитника",
+        "setIcon": "UI_RelicIcon_10003_4",
+        "setId": 10003
+    },
+    "10004": {
+        "chsName": "奇迹",
+        "enName": "Tiny Miracle",
+        "frName": "Miracle",
+        "ptName": "Pequeno Milagre",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Маленькое чудо",
+        "setIcon": "UI_RelicIcon_10004_4",
+        "setId": 10004
+    },
+    "10005": {
+        "chsName": "战狂",
+        "enName": "Berserker",
+        "frName": "Berserker",
+        "ptName": "Berserker",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Берсерк",
+        "setIcon": "UI_RelicIcon_10005_4",
+        "setId": 10005
+    },
+    "10006": {
+        "chsName": "武人",
+        "enName": "Martial Artist",
+        "frName": "Artiste martial",
+        "ptName": "Artista Marcial",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Воин",
+        "setIcon": "UI_RelicIcon_10006_4",
+        "setId": 10006
+    },
+    "10007": {
+        "chsName": "教官",
+        "enName": "Instructor",
+        "frName": "Instructeur",
+        "ptName": "Instrutor",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Инструктор",
+        "setIcon": "UI_RelicIcon_10007_4",
+        "setId": 10007
+    },
+    "10008": {
+        "chsName": "赌徒",
+        "enName": "Gambler",
+        "frName": "Parieur",
+        "ptName": "Apostador",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Азартный игрок",
+        "setIcon": "UI_RelicIcon_10008_4",
+        "setId": 10008
+    },
+    "10009": {
+        "chsName": "流放者",
+        "enName": "The Exile",
+        "frName": "Exilé",
+        "ptName": "O Exilado",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Изгнанник",
+        "setIcon": "UI_RelicIcon_10009_4",
+        "setId": 10009
+    },
+    "10010": {
+        "chsName": "冒险家",
+        "enName": "Adventurer",
+        "frName": "Aventurier",
+        "ptName": "Aventureiro",
+        "qualityType": "QUALITY_BLUE",
+        "ruName": "Искатель приключений",
+        "setIcon": "UI_RelicIcon_10010_4",
+        "setId": 10010
+    },
+    "10011": {
+        "chsName": "幸运儿",
+        "enName": "Lucky Dog",
+        "frName": "Chanceux",
+        "ptName": "O Sortudo",
+        "qualityType": "QUALITY_BLUE",
+        "ruName": "Везунчик",
+        "setIcon": "UI_RelicIcon_10011_4",
+        "setId": 10011
+    },
+    "10012": {
+        "chsName": "学士",
+        "enName": "Scholar",
+        "frName": "Érudit",
+        "ptName": "O Estudioso",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Учёный",
+        "setIcon": "UI_RelicIcon_10012_4",
+        "setId": 10012
+    },
+    "10013": {
+        "chsName": "游医",
+        "enName": "Traveling Doctor",
+        "frName": "Médecin itinérant",
+        "ptName": "O Doutor viajante",
+        "qualityType": "QUALITY_BLUE",
+        "ruName": "Целитель",
+        "setIcon": "UI_RelicIcon_10013_4",
+        "setId": 10013
+    },
+    "14001": {
+        "chsName": "冰风迷途的勇士",
+        "enName": "Blizzard Strayer",
+        "frName": "Briseur de glace",
+        "ptName": "Herói Invernal",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Заблудший в метели",
+        "setIcon": "UI_RelicIcon_14001_4",
+        "setId": 14001
+    },
+    "14002": {
+        "chsName": "平息鸣雷的尊者",
+        "enName": "Thundersoother",
+        "frName": "Dompteur de foudre",
+        "ptName": "Lançador de Trovões",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Усмиряющий гром",
+        "setIcon": "UI_RelicIcon_14002_4",
+        "setId": 14002
+    },
+    "14003": {
+        "chsName": "渡过烈火的贤人",
+        "enName": "Lavawalker",
+        "frName": "Marcheur du feu",
+        "ptName": "Atravessador do Fogo",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ступающий по лаве",
+        "setIcon": "UI_RelicIcon_14003_4",
+        "setId": 14003
+    },
+    "14004": {
+        "chsName": "被怜爱的少女",
+        "enName": "Maiden Beloved",
+        "frName": "Amour chéri",
+        "ptName": "Donzela Amada",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Возлюбленная юная дева",
+        "setIcon": "UI_RelicIcon_14004_4",
+        "setId": 14004
+    },
+    "15000": {
+        "chsName": "???",
+        "enName": "???",
+        "frName": "???",
+        "ptName": "???",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "???",
+        "setIcon": "",
+        "setId": 15000
+    },
+    "15001": {
+        "chsName": "角斗士的终幕礼",
+        "enName": "Gladiator's Finale",
+        "frName": "Rideau du Gladiateur",
+        "ptName": "Último Juramento do Gladiador",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Конец гладиатора",
+        "setIcon": "UI_RelicIcon_15001_4",
+        "setId": 15001
+    },
+    "15002": {
+        "chsName": "翠绿之影",
+        "enName": "Viridescent Venerer",
+        "frName": "Ombre de la Verte Chasseuse",
+        "ptName": "Sombra Verde",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Изумрудная тень",
+        "setIcon": "UI_RelicIcon_15002_4",
+        "setId": 15002
+    },
+    "15003": {
+        "chsName": "流浪大地的乐团",
+        "enName": "Wanderer's Troupe",
+        "frName": "Bande vagabonde",
+        "ptName": "Trupe Itinerante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Странствующий ансамбль",
+        "setIcon": "UI_RelicIcon_15003_4",
+        "setId": 15003
+    },
+    "15004": {
+        "chsName": "冰之川与雪之砂",
+        "enName": "Glacier and Snowfield",
+        "frName": "Neige et glace",
+        "ptName": "Rios de Gelo e Areia de Neve",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Снег и лёд",
+        "setIcon": "UI_RelicIcon_15004_4",
+        "setId": 15004
+    },
+    "15005": {
+        "chsName": "如雷的盛怒",
+        "enName": "Thundering Fury",
+        "frName": "Colère de tonnerre",
+        "ptName": "Trovão Furioso",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Громогласный рёв ярости",
+        "setIcon": "UI_RelicIcon_15005_4",
+        "setId": 15005
+    },
+    "15006": {
+        "chsName": "炽烈的炎之魔女",
+        "enName": "Crimson Witch of Flames",
+        "frName": "Sorcière des flammes ardentes",
+        "ptName": "A Bruxa das Chamas Carmesim",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Горящая алая ведьма",
+        "setIcon": "UI_RelicIcon_15006_4",
+        "setId": 15006
+    },
+    "15007": {
+        "chsName": "昔日宗室之仪",
+        "enName": "Noblesse Oblige",
+        "frName": "Ancien rituel royal",
+        "ptName": "Antigo Ritual Real",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Церемония древней знати",
+        "setIcon": "UI_RelicIcon_15007_4",
+        "setId": 15007
+    },
+    "15008": {
+        "chsName": "染血的骑士道",
+        "enName": "Bloodstained Chivalry",
+        "frName": "Chevalerie ensanglantée",
+        "ptName": "Cavaleiro Manchado de Sangue",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Рыцарь крови",
+        "setIcon": "UI_RelicIcon_15008_4",
+        "setId": 15008
+    },
+    "15009": {
+        "chsName": "祭火之人",
+        "enName": "Prayers for Illumination",
+        "frName": "Sacrifieur Pyro",
+        "ptName": "Xamã do Ritual Pyro",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шаман огня",
+        "setIcon": "UI_RelicIcon_15009_3",
+        "setId": 15009
+    },
+    "15010": {
+        "chsName": "祭水之人",
+        "enName": "Prayers for Destiny",
+        "frName": "Sacrifieur Hydro",
+        "ptName": "Orações para o Destino",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шаман воды",
+        "setIcon": "UI_RelicIcon_15010_3",
+        "setId": 15010
+    },
+    "15011": {
+        "chsName": "祭雷之人",
+        "enName": "Prayers for Wisdom",
+        "frName": "Sacrifieur Électro",
+        "ptName": "Xamã do Ritual Electro",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шаман молнии",
+        "setIcon": "UI_RelicIcon_15011_3",
+        "setId": 15011
+    },
+    "15012": {
+        "chsName": "祭风之人",
+        "enName": "Prayers to the Firmament",
+        "frName": "Sacrifieur Anémo",
+        "ptName": "Xamã do Ritual Anemo",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шаман ветра",
+        "setIcon": "UI_RelicIcon_15012_3",
+        "setId": 15012
+    },
+    "15013": {
+        "chsName": "祭冰之人",
+        "enName": "Prayers to Springtime",
+        "frName": "Sacrifieur Cryo",
+        "ptName": "Orações para a Primavera",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шаман льда",
+        "setIcon": "UI_RelicIcon_15013_3",
+        "setId": 15013
+    },
+    "15014": {
+        "chsName": "悠古的磐岩",
+        "enName": "Archaic Petra",
+        "frName": "Roche ancienne",
+        "ptName": "Pedra Arcaica",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Архаичный камень",
+        "setIcon": "UI_RelicIcon_15014_4",
+        "setId": 15014
+    },
+    "15015": {
+        "chsName": "逆飞的流星",
+        "enName": "Retracing Bolide",
+        "frName": "Météore inversé",
+        "ptName": "Meteoro Invertido",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Встречная комета",
+        "setIcon": "UI_RelicIcon_15015_4",
+        "setId": 15015
+    },
+    "15016": {
+        "chsName": "沉沦之心",
+        "enName": "Heart of Depth",
+        "frName": "Âme des profondeurs",
+        "ptName": "Profundezas do Coração",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сердце глубин",
+        "setIcon": "UI_RelicIcon_15016_4",
+        "setId": 15016
+    },
+    "15017": {
+        "chsName": "千岩牢固",
+        "enName": "Tenacity of the Millelith",
+        "frName": "Ténacité du Millelithe",
+        "ptName": "Millelith Firmes",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Стойкость Миллелита",
+        "setIcon": "UI_RelicIcon_15017_4",
+        "setId": 15017
+    },
+    "15018": {
+        "chsName": "苍白之火",
+        "enName": "Pale Flame",
+        "frName": "Flamme blême",
+        "ptName": "Chama Pálida",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Бледный огонь",
+        "setIcon": "UI_RelicIcon_15018_4",
+        "setId": 15018
+    },
+    "15019": {
+        "chsName": "追忆之注连",
+        "enName": "Shimenawa's Reminiscence",
+        "frName": "Réminiscence nostalgique",
+        "ptName": "Reminiscência Nostálgica",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Воспоминания Симэнавы",
+        "setIcon": "UI_RelicIcon_15019_4",
+        "setId": 15019
+    },
+    "15020": {
+        "chsName": "绝缘之旗印",
+        "enName": "Emblem of Severed Fate",
+        "frName": "Emblème du destin brisé",
+        "ptName": "Selo da Insulação",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Эмблема рассечённой судьбы",
+        "setIcon": "UI_RelicIcon_15020_4",
+        "setId": 15020
+    },
+    "15021": {
+        "chsName": "华馆梦醒形骸记",
+        "enName": "Husk of Opulent Dreams",
+        "frName": "Coquille des rêves opulents",
+        "ptName": "Casca de Sonhos Opulentos",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кокон сладких грёз",
+        "setIcon": "UI_RelicIcon_15021_4",
+        "setId": 15021
+    },
+    "15022": {
+        "chsName": "海染砗磲",
+        "enName": "Ocean-Hued Clam",
+        "frName": "Palourde aux teintes océaniques",
+        "ptName": "Concha Tingida Pelo Mar",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Моллюск морских красок",
+        "setIcon": "UI_RelicIcon_15022_4",
+        "setId": 15022
+    },
+    "15023": {
+        "chsName": "辰砂往生录",
+        "enName": "Vermillion Hereafter",
+        "frName": "Au-delà cinabrin",
+        "ptName": "Além-vida Cinábrio",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Киноварное загробье",
+        "setIcon": "UI_RelicIcon_15023_4",
+        "setId": 15023
+    },
+    "15024": {
+        "chsName": "来歆余响",
+        "enName": "Echoes of an Offering",
+        "frName": "Échos d'une offrande",
+        "ptName": "Eco do Sacrifício",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Отголоски подношения",
+        "setIcon": "UI_RelicIcon_15024_4",
+        "setId": 15024
+    },
+    "15025": {
+        "chsName": "深林的记忆",
+        "enName": "Deepwood Memories",
+        "frName": "Souvenir de forêt",
+        "ptName": "Memórias da Floresta",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Воспоминания дремучего леса",
+        "setIcon": "UI_RelicIcon_15025_4",
+        "setId": 15025
+    },
+    "15026": {
+        "chsName": "饰金之梦",
+        "enName": "Gilded Dreams",
+        "frName": "Rêve doré",
+        "ptName": "Sonhos Dourados",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Позолоченные сны",
+        "setIcon": "UI_RelicIcon_15026_4",
+        "setId": 15026
+    },
+    "15027": {
+        "chsName": "沙上楼阁史话",
+        "enName": "Desert Pavilion Chronicle",
+        "frName": "Chronique du Pavillon du désert",
+        "ptName": "Crônicas do Pavilhão do Deserto",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Хроники Чертогов в пустыне",
+        "setIcon": "UI_RelicIcon_15027_4",
+        "setId": 15027
+    },
+    "15028": {
+        "chsName": "乐园遗落之花",
+        "enName": "Flower of Paradise Lost",
+        "frName": "Fleur du paradis perdu",
+        "ptName": "Flor do Paraíso Perdido",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Цветок потерянного рая",
+        "setIcon": "UI_RelicIcon_15028_4",
+        "setId": 15028
+    },
+    "15029": {
+        "chsName": "水仙之梦",
+        "enName": "Nymph's Dream",
+        "frName": "Rêve de la nymphe",
+        "ptName": "Sonho da Ninfa",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сон нимфы",
+        "setIcon": "UI_RelicIcon_15029_4",
+        "setId": 15029
+    },
+    "15030": {
+        "chsName": "花海甘露之光",
+        "enName": "Vourukasha's Glow",
+        "frName": "Lueur du vourukasha",
+        "ptName": "Brilho Vourukasha",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сияние Вурукаши",
+        "setIcon": "UI_RelicIcon_15030_4",
+        "setId": 15030
+    },
+    "15031": {
+        "chsName": "逐影猎人",
+        "enName": "Marechaussee Hunter",
+        "frName": "Chasseur de la Maréchaussée",
+        "ptName": "Caçador das Sombras",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Охотник Сумеречного двора",
+        "setIcon": "UI_RelicIcon_15031_4",
+        "setId": 15031
+    },
+    "15032": {
+        "chsName": "黄金剧团",
+        "enName": "Golden Troupe",
+        "frName": "Troupe dorée",
+        "ptName": "Trupe Dourada",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Золотая труппа",
+        "setIcon": "UI_RelicIcon_15032_4",
+        "setId": 15032
+    },
+    "15033": {
+        "chsName": "昔时之歌",
+        "enName": "Song of Days Past",
+        "frName": "Chanson des jours d'antan",
+        "ptName": "Canção do Passado",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Песнь былых времён",
+        "setIcon": "UI_RelicIcon_15033_4",
+        "setId": 15033
+    },
+    "15034": {
+        "chsName": "回声之林夜话",
+        "enName": "Nighttime Whispers in the Echoing Woods",
+        "frName": "Murmure nocturne en forêt d'échos",
+        "ptName": "Ecos da Floresta Noturna",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ночной шёпот в Лесу откликающегося эха",
+        "setIcon": "UI_RelicIcon_15034_4",
+        "setId": 15034
+    },
+    "15035": {
+        "chsName": "谐律异想断章",
+        "enName": "Fragment of Harmonic Whimsy",
+        "frName": "Fragment d'harmonie divergente",
+        "ptName": "Fragmento da Harmonia Fantástica",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Фрагмент гармонической фантазии",
+        "setIcon": "UI_RelicIcon_15035_4",
+        "setId": 15035
+    },
+    "15036": {
+        "chsName": "未竟的遐思",
+        "enName": "Unfinished Reverie",
+        "frName": "Rêverie incomplète",
+        "ptName": "Reminiscência Incompleta",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Незаконченные грёзы",
+        "setIcon": "UI_RelicIcon_15036_4",
+        "setId": 15036
+    },
+    "15037": {
+        "chsName": "烬城勇者绘卷",
+        "enName": "Scroll of the Hero of Cinder City",
+        "frName": "Parchemin du héros de la Cité de braise",
+        "ptName": "Pergaminho do Herói da Cidade Incandescente",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Свиток героя сожжённого города",
+        "setIcon": "UI_RelicIcon_15037_4",
+        "setId": 15037
+    },
+    "15038": {
+        "chsName": "黑曜秘典",
+        "enName": "Obsidian Codex",
+        "frName": "Codex d'obsidienne",
+        "ptName": "Códice de Obsidiana",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Обсидиановый фолиант",
+        "setIcon": "UI_RelicIcon_15038_4",
+        "setId": 15038
+    },
+    "15039": {
+        "chsName": "长夜之誓",
+        "enName": "Long Night's Oath",
+        "frName": "Serment de la longue nuit",
+        "ptName": "Juramento da Noite Eterna",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Клятва долгой ночи",
+        "setIcon": "UI_RelicIcon_15039_4",
+        "setId": 15039
+    },
+    "15040": {
+        "chsName": "深廊终曲",
+        "enName": "Finale of the Deep Galleries",
+        "frName": "Finale des galeries profondes",
+        "ptName": "Epílogo do Corredor",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Финал галерей глубин",
+        "setIcon": "UI_RelicIcon_15040_4",
+        "setId": 15040
+    },
+    "15041": {
+        "chsName": "穹境示现之夜",
+        "enName": "Night of the Sky's Unveiling",
+        "frName": "Nuit de la révélation céleste",
+        "ptName": "Noite da Revelação do Céu",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ночь открытия неба",
+        "setIcon": "UI_RelicIcon_15041_4",
+        "setId": 15041
+    },
+    "15042": {
+        "chsName": "纺月的夜歌",
+        "enName": "Silken Moon's Serenade",
+        "frName": "Sérénade de la lune soyeuse",
+        "ptName": "Serenata da Lua de Seda",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Серенада шёлковой луны",
+        "setIcon": "UI_RelicIcon_15042_4",
+        "setId": 15042
+    },
+    "15043": {
+        "chsName": "晨星与月的晓歌",
+        "enName": "Aubade of Morningstar and Moon",
+        "frName": "Aubade d'astre et de lune",
+        "ptName": "Serenata das Estrelas e da Lua",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Рассветная песнь звезды и луны",
+        "setIcon": "UI_RelicIcon_15043_4",
+        "setId": 15043
+    },
+    "15044": {
+        "chsName": "风起之日",
+        "enName": "A Day Carved From Rising Winds",
+        "frName": "Journée sculptée par les vents ascendants",
+        "ptName": "Ascensão Zéfira",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "День восходящих ветров",
+        "setIcon": "UI_RelicIcon_15044_4",
+        "setId": 15044
+    },
+    "15045": {
+        "chsName": "天之美赐",
+        "enName": "Celestial Gift",
+        "frName": "Don céleste",
+        "ptName": "Dádiva Celestial",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Дар небес",
+        "setIcon": "UI_RelicIcon_15045_4",
+        "setId": 15045
+    },
+    "15046": {
+        "chsName": "影中沉凝的幻灭",
+        "enName": "Disenchantment in Deep Shadow",
+        "frName": "Désenchantement dans l'ombre profonde",
+        "ptName": "Desencantamento na Sombra Profunda",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Застывшее в тени разочарование",
+        "setIcon": "UI_RelicIcon_15046_4",
+        "setId": 15046
+    },
+    "15047": {
+        "chsName": "血红之证",
+        "enName": "Scarlet Proof",
+        "frName": "Preuve écarlate",
+        "ptName": "Prova Escarlate",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Багряное доказательство",
+        "setIcon": "UI_RelicIcon_15047_4",
+        "setId": 15047
+    },
+    "15048": {
+        "chsName": "炉火融炼之心",
+        "enName": "Heart of the Furnace",
+        "frName": "Cœur de la fournaise",
+        "ptName": "Coração Forjado",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сердце горна",
+        "setIcon": "UI_RelicIcon_15048_4",
+        "setId": 15048
+    }
+}

@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.avatar;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.data.ResourceType.LoadPriority;
 import emu.grasscutter.data.common.FightPropData;
@@ -12,6 +13,8 @@ public class AvatarTalentData extends GameResource {
     private long nameTextMapHash;
     private String icon;
     private int mainCostItemId;
+    @SerializedName("KCHDANFBCGD")
+    private Integer encodedMainCostItemId;
     private int mainCostItemCount;
     private String openConfig;
     private FightPropData[] addProps;
@@ -56,6 +59,16 @@ public class AvatarTalentData extends GameResource {
 
     @Override
     public void onLoad() {
+        // In the 7.1 dump, this key is the material id and mainCostItemId holds the
+        // previous talent. Keep them separate: both keys occur in the same row,
+        // so a SerializedName alternate would depend on JSON key order.
+        if (this.encodedMainCostItemId != null) {
+            if (this.prevTalent == 0 && this.mainCostItemId != this.encodedMainCostItemId) {
+                this.prevTalent = this.mainCostItemId;
+            }
+            this.mainCostItemId = this.encodedMainCostItemId;
+        }
+
         ArrayList<FightPropData> parsed = new ArrayList<FightPropData>(getAddProps().length);
         for (FightPropData prop : getAddProps()) {
             if (prop.getPropType() != null || prop.getValue() == 0f) {

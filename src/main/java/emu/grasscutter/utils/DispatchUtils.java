@@ -46,7 +46,7 @@ public interface DispatchUtils {
                 if (account == null) yield null;
 
                 // Check if the token is valid.
-                yield account.getToken().equals(token) ? account : null;
+                yield account.matchesLoginToken(token) ? account : null;
             }
         };
     }

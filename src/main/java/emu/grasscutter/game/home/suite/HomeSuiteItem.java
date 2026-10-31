@@ -10,14 +10,18 @@ import emu.grasscutter.net.proto.HomeMarkPointSuiteDataOuterClass;
 import java.util.List;
 import java.util.Objects;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.jetbrains.annotations.Nullable;
 
 @Entity
 @Builder(builderMethodName = "of")
 @Getter
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@AllArgsConstructor(access = AccessLevel.PACKAGE)
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class HomeSuiteItem implements HomeMarkPointProtoFactory {
     public static final int SUITE_FURNITURE_ID = 377101;

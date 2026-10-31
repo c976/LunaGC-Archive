@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 27673 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message HomeSceneJumpReq {
+  bool is_enter_room_scene = 8;
+}

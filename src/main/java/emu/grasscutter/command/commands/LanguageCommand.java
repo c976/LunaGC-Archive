@@ -3,54 +3,71 @@ package emu.grasscutter.command.commands;
 import static emu.grasscutter.utils.lang.Language.translate;
 
 import emu.grasscutter.Grasscutter;
-import emu.grasscutter.command.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
+import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.utils.Utils;
-import java.util.*;
+import java.util.Locale;
+import picocli.CommandLine;
+import picocli.CommandLine.Parameters;
 
 @Command(
         label = "language",
-        usage = {"[<language code>]"},
         aliases = {"lang"},
         targetRequirement = Command.TargetRequirement.NONE)
 public final class LanguageCommand implements CommandHandler {
-
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        if (args.isEmpty()) {
-            String curLangCode = null;
-            if (sender != null) {
-                curLangCode = Utils.getLanguageCode(sender.getAccount().getLocale());
-            } else {
-                curLangCode = Grasscutter.getLanguage().getLanguageCode();
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        return new CommandLine(new Args(sender));
+    }
+
+    @CommandLine.Command(name = "language")
+    private static final class Args implements Runnable {
+        private final Player sender;
+
+        @Parameters(index = "0", arity = "0..1", paramLabel = "[language-code]")
+        private String languageCode;
+
+        private Args(Player sender) {
+            this.sender = sender;
+        }
+
+        @Override
+        public void run() {
+            if (languageCode == null) {
+                String current =
+                        sender != null
+                                ? Utils.getLanguageCode(sender.getAccount().getLocale())
+                                : Grasscutter.getLanguage().getLanguageCode();
+                CommandOutput.sendMessage(
+                        sender, translate(sender, "commands.language.current_language", current));
+                return;
             }
-            CommandHandler.sendMessage(
-                    sender, translate(sender, "commands.language.current_language", curLangCode));
-            return;
+
+            var language = Grasscutter.getLanguage(languageCode);
+            var actualCode = language.getLanguageCode();
+            var locale = Locale.forLanguageTag(actualCode);
+
+            if (sender != null) {
+                var account = sender.getAccount();
+                account.setLocale(locale);
+                DatabaseHelper.saveAccountFieldsAsync(account, "locale");
+            } else {
+                Grasscutter.setLanguage(language);
+                var config = Grasscutter.getConfig();
+                config.language.language = locale;
+                Grasscutter.saveConfig(config);
+            }
+
+            if (!languageCode.equals(actualCode)) {
+                CommandOutput.sendMessage(
+                        sender,
+                        translate(sender, "commands.language.language_not_found", languageCode));
+            }
+            CommandOutput.sendMessage(
+                    sender, translate(sender, "commands.language.language_changed", actualCode));
         }
-
-        String langCode = args.get(0);
-
-        var languageInst = Grasscutter.getLanguage(langCode);
-        var actualLangCode = languageInst.getLanguageCode();
-        var locale = Locale.forLanguageTag(actualLangCode);
-        if (sender != null) {
-            var account = sender.getAccount();
-            account.setLocale(locale);
-            account.save();
-        } else {
-            Grasscutter.setLanguage(languageInst);
-            var config = Grasscutter.getConfig();
-            config.language.language = locale;
-            Grasscutter.saveConfig(config);
-        }
-
-        if (!langCode.equals(actualLangCode)) {
-            CommandHandler.sendMessage(
-                    sender, translate(sender, "commands.language.language_not_found", langCode));
-        }
-
-        CommandHandler.sendMessage(
-                sender, translate(sender, "commands.language.language_changed", actualLangCode));
     }
 }

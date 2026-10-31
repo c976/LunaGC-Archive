@@ -73,7 +73,7 @@ public final class DispatchServer extends WebSocketServer implements IDispatcher
 
         // Get the account from the database.
         var account = DatabaseHelper.getAccountById(accountId);
-        var valid = account != null && account.getToken().equals(token);
+        var valid = account != null && account.matchesLoginToken(token);
         // Create the response message.
         var response = new JsonObject();
         response.addProperty("valid", valid);

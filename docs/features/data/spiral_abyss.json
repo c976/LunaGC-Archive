@@ -1,0 +1,1252 @@
+{
+    "1": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-07-01 00:00:00",
+        "closeTime": "2020-07-16 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "10": {
+        "icon": "UI_TowerBlessing_5",
+        "openTime": "2020-11-16 04:00:00",
+        "closeTime": "2020-12-01 03:59:59",
+        "enBuffName": "Guardian Moon",
+        "chsBuffName": "坚守之月",
+        "ptBuffName": "Guardião da Lua",
+        "frBuffName": "Lune gardienne",
+        "ruBuffName": "Охранительная луна"
+    },
+    "100": {
+        "icon": "UI_TowerBlessing_87",
+        "openTime": "2024-10-16 04:00:00",
+        "closeTime": "2024-11-16 03:59:59",
+        "enBuffName": "Rugged Moon",
+        "chsBuffName": "刚坚之月",
+        "ptBuffName": "Lua Robusta",
+        "frBuffName": "Lune inébranlable",
+        "ruBuffName": "Крепкая луна"
+    },
+    "101": {
+        "icon": "UI_TowerBlessing_88",
+        "openTime": "2024-11-16 04:00:00",
+        "closeTime": "2024-12-16 03:59:59",
+        "enBuffName": "Vigorous Moon",
+        "chsBuffName": "遒劲之月",
+        "ptBuffName": "Lua Vigorosa",
+        "frBuffName": "Lune vigoureuse",
+        "ruBuffName": "Неистовая луна"
+    },
+    "102": {
+        "icon": "UI_TowerBlessing_89",
+        "openTime": "2024-12-16 04:00:00",
+        "closeTime": "2025-01-16 03:59:59",
+        "enBuffName": "Shield-Piercing Moon",
+        "chsBuffName": "攻盾之月",
+        "ptBuffName": "Lua Rompe-Escudos",
+        "frBuffName": "Lune transperçante",
+        "ruBuffName": "Благоприятная луна"
+    },
+    "103": {
+        "icon": "UI_TowerBlessing_90",
+        "openTime": "2025-01-16 04:00:00",
+        "closeTime": "2025-02-16 03:59:59",
+        "enBuffName": "Scorching Moon",
+        "chsBuffName": "炽烈之月",
+        "ptBuffName": "Lua Escaldante",
+        "frBuffName": "Lune embrasée",
+        "ruBuffName": "Пылающая луна"
+    },
+    "104": {
+        "icon": "UI_TowerBlessing_91",
+        "openTime": "2025-02-16 04:00:00",
+        "closeTime": "2025-03-16 03:59:59",
+        "enBuffName": "Stirring Moon",
+        "chsBuffName": "振顿之月",
+        "ptBuffName": "Lua Estabilizadora",
+        "frBuffName": "Lune vibrante",
+        "ruBuffName": "Будоражащая луна"
+    },
+    "105": {
+        "icon": "UI_TowerBlessing_92",
+        "openTime": "2025-03-16 04:00:00",
+        "closeTime": "2025-04-16 03:59:59",
+        "enBuffName": "Plunging Moon",
+        "chsBuffName": "轰坠之月",
+        "ptBuffName": "Lua Desmoronada",
+        "frBuffName": "Lune plongeante",
+        "ruBuffName": "Ниспадающая луна"
+    },
+    "106": {
+        "icon": "UI_TowerBlessing_93",
+        "openTime": "2025-04-16 04:00:00",
+        "closeTime": "2025-05-16 03:59:59",
+        "enBuffName": "Dreadfrost Moon",
+        "chsBuffName": "寒粟之月",
+        "ptBuffName": "Lua da Geada do Pavor",
+        "frBuffName": "Lune givrante",
+        "ruBuffName": "Луна ужасающего мороза"
+    },
+    "107": {
+        "icon": "UI_TowerBlessing_94",
+        "openTime": "2025-05-16 04:00:00",
+        "closeTime": "2025-06-16 03:59:59",
+        "enBuffName": "Interwoven Moon",
+        "chsBuffName": "多绪之月",
+        "ptBuffName": "Lua Entrelaçada",
+        "frBuffName": "Lune énergisée",
+        "ruBuffName": "Переплетённая луна"
+    },
+    "108": {
+        "icon": "UI_TowerBlessing_95",
+        "openTime": "2025-06-16 04:00:00",
+        "closeTime": "2025-07-16 03:59:59",
+        "enBuffName": "Ice-Cloven Moon",
+        "chsBuffName": "斩冰之月",
+        "ptBuffName": "Lua Fendida",
+        "frBuffName": "Lune brise-glace",
+        "ruBuffName": "Ледяная луна"
+    },
+    "109": {
+        "icon": "UI_TowerBlessing_93",
+        "openTime": "2025-07-16 04:00:00",
+        "closeTime": "2025-08-16 03:59:59",
+        "enBuffName": "Bitterfreeze Moon",
+        "chsBuffName": "狂冻之月",
+        "ptBuffName": "Lua Congelada",
+        "frBuffName": "Lune réfrigérée",
+        "ruBuffName": "Луна стужи"
+    },
+    "11": {
+        "icon": "UI_TowerBlessing_6",
+        "openTime": "2020-12-01 04:00:00",
+        "closeTime": "2020-12-16 03:59:59",
+        "enBuffName": "Bejeweled Moon",
+        "chsBuffName": "宝石之月",
+        "ptBuffName": "Lua Preciosa",
+        "frBuffName": "Lune précieuse",
+        "ruBuffName": "Самоцветная луна"
+    },
+    "110": {
+        "icon": "UI_TowerBlessing_96",
+        "openTime": "2025-08-16 04:00:00",
+        "closeTime": "2025-09-16 03:59:59",
+        "enBuffName": "Wavering Moon",
+        "chsBuffName": "迸涛之月",
+        "ptBuffName": "Lua Minguante",
+        "frBuffName": "Lune ondulante",
+        "ruBuffName": "Луна прилива"
+    },
+    "111": {
+        "icon": "UI_TowerBlessing_97",
+        "openTime": "2025-09-16 04:00:00",
+        "closeTime": "2025-10-16 03:59:59",
+        "enBuffName": "Surging Moon",
+        "chsBuffName": "迸浪之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune déferlante",
+        "ruBuffName": "Луна вздымающихся волн"
+    },
+    "112": {
+        "icon": "UI_TowerBlessing_98",
+        "openTime": "2025-10-16 04:00:00",
+        "closeTime": "2025-11-16 03:59:59",
+        "enBuffName": "Abundant Moon",
+        "chsBuffName": "蔓茂之月",
+        "ptBuffName": "Lua Abundante",
+        "frBuffName": "Lune abondante",
+        "ruBuffName": "Луна изобилия"
+    },
+    "113": {
+        "icon": "UI_TowerBlessing_99",
+        "openTime": "2025-11-16 04:00:00",
+        "closeTime": "2025-12-16 03:59:59",
+        "enBuffName": "Oathbound Moon",
+        "chsBuffName": "定契之月",
+        "ptBuffName": "Lua Juramentada",
+        "frBuffName": "Lune liante",
+        "ruBuffName": "Луна клятвы"
+    },
+    "114": {
+        "icon": "UI_TowerBlessing_100",
+        "openTime": "2025-12-16 04:00:00",
+        "closeTime": "2026-01-16 03:59:59",
+        "enBuffName": "Whirlwind Moon",
+        "chsBuffName": "奔飙之月",
+        "ptBuffName": "Lua do Furacão",
+        "frBuffName": "Lune tournoyante",
+        "ruBuffName": "Луна бурь"
+    },
+    "115": {
+        "icon": "UI_TowerBlessing_101",
+        "openTime": "2026-01-16 04:00:00",
+        "closeTime": "2026-02-16 03:59:59",
+        "enBuffName": "Surgestrike Moon",
+        "chsBuffName": "迸击之月",
+        "ptBuffName": "Lua Esmagadora",
+        "frBuffName": "Lune percutante",
+        "ruBuffName": "Таранная луна"
+    },
+    "116": {
+        "icon": "UI_TowerBlessing_102",
+        "openTime": "2026-02-16 04:00:00",
+        "closeTime": "2026-03-16 03:59:59",
+        "enBuffName": "Stonehold Moon",
+        "chsBuffName": "岩固之月",
+        "ptBuffName": "Lua Impenetrável",
+        "frBuffName": "Lune solide",
+        "ruBuffName": "Непоколебимая луна"
+    },
+    "117": {
+        "icon": "UI_TowerBlessing_100",
+        "openTime": "2026-03-16 04:00:00",
+        "closeTime": "2026-04-16 03:59:59",
+        "enBuffName": "Windlash Moon",
+        "chsBuffName": "风厉之月",
+        "ptBuffName": "Lua do Vento Ruidoso",
+        "frBuffName": "Lune ventée",
+        "ruBuffName": "Луна суровых ветров"
+    },
+    "118": {
+        "icon": "UI_TowerBlessing_102",
+        "openTime": "2026-04-16 04:00:00",
+        "closeTime": "2026-05-16 03:59:59",
+        "enBuffName": "Rumbling Moon",
+        "chsBuffName": "岩奏之月",
+        "ptBuffName": "Lua Retumbante",
+        "frBuffName": "Lune grondante",
+        "ruBuffName": "Неприступная луна"
+    },
+    "119": {
+        "icon": "UI_TowerBlessing_103",
+        "openTime": "2026-05-16 04:00:00",
+        "closeTime": "2026-06-16 03:59:59",
+        "enBuffName": "Shield-Shattering Moon",
+        "chsBuffName": "彻盾之月",
+        "ptBuffName": "Lua Rompe-Escudos",
+        "frBuffName": "Lune briseuse",
+        "ruBuffName": "Луна сокрушения щитов"
+    },
+    "12": {
+        "icon": "UI_TowerBlessing_7",
+        "openTime": "2020-12-16 04:00:00",
+        "closeTime": "2021-01-01 03:59:59",
+        "enBuffName": "Defiant Moon",
+        "chsBuffName": "抗争之月",
+        "ptBuffName": "Lua da Resistência",
+        "frBuffName": "Lune rebelle",
+        "ruBuffName": "Непокорная луна"
+    },
+    "120": {
+        "icon": "UI_TowerBlessing_104",
+        "openTime": "2026-06-16 04:00:00",
+        "closeTime": "2026-07-16 03:59:59",
+        "enBuffName": "Frost-Surging Moon",
+        "chsBuffName": "霜迸之月",
+        "ptBuffName": "Lua Crescente Gélida",
+        "frBuffName": "Lune glacelée",
+        "ruBuffName": "Луна буйного инея"
+    },
+    "121": {
+        "icon": "UI_TowerBlessing_105",
+        "openTime": "2026-07-16 04:00:00",
+        "closeTime": "2026-08-06 03:59:59",
+        "enBuffName": "Ice-Surging Moon",
+        "chsBuffName": "冰迸之月",
+        "ptBuffName": "Lua do Gelo Corrente",
+        "frBuffName": "Lune réfrigérée",
+        "ruBuffName": "Луна ледяного всплеска"
+    },
+    "122": {
+        "icon": "UI_TowerBlessing_106",
+        "openTime": "2026-08-06 04:00:00",
+        "closeTime": "2026-08-07 03:59:59",
+        "enBuffName": "Luster-Piercing Moon",
+        "chsBuffName": "攻辉之月",
+        "ptBuffName": "Lua Perfurante do Esplendor",
+        "frBuffName": "Lune perçante",
+        "ruBuffName": "Сверкающая луна"
+    },
+    "123": {
+        "icon": "UI_TowerBlessing_107",
+        "openTime": "2026-08-07 04:00:00",
+        "closeTime": "2026-08-08 03:59:59",
+        "enBuffName": "Cascading Moon",
+        "chsBuffName": "辉卷之月",
+        "ptBuffName": "Lua em Cascata",
+        "frBuffName": "Lune cascadante",
+        "ruBuffName": "Каскадная луна"
+    },
+    "13": {
+        "icon": "UI_TowerBlessing_8",
+        "openTime": "2021-01-01 04:00:00",
+        "closeTime": "2021-01-16 03:59:59",
+        "enBuffName": "Snowfall Moon",
+        "chsBuffName": "初雪之月",
+        "ptBuffName": "Lua da Neve",
+        "frBuffName": "Lune enneigée",
+        "ruBuffName": "Луна первого снега"
+    },
+    "14": {
+        "icon": "UI_TowerBlessing_9",
+        "openTime": "2021-01-16 04:00:00",
+        "closeTime": "2021-02-01 03:59:59",
+        "enBuffName": "Midwinter Moon",
+        "chsBuffName": "仲冬之月",
+        "ptBuffName": "Lua do Meio do Inverno",
+        "frBuffName": "Lune hivernale",
+        "ruBuffName": "Луна середины зимы"
+    },
+    "15": {
+        "icon": "UI_TowerBlessing_10",
+        "openTime": "2021-02-01 04:00:00",
+        "closeTime": "2021-02-16 03:59:59",
+        "enBuffName": "Rime-Worn Moon",
+        "chsBuffName": "霜噬之月",
+        "ptBuffName": "Lua de Gelo",
+        "frBuffName": "Lune gelée",
+        "ruBuffName": "Луна кусачего инея"
+    },
+    "16": {
+        "icon": "UI_TowerBlessing_11",
+        "openTime": "2021-02-16 04:00:00",
+        "closeTime": "2021-03-01 03:59:59",
+        "enBuffName": "Righteous Moon",
+        "chsBuffName": "正行之月",
+        "ptBuffName": "Lua da Justiça",
+        "frBuffName": "Lune juste",
+        "ruBuffName": "Праведная луна"
+    },
+    "17": {
+        "icon": "UI_TowerBlessing_12",
+        "openTime": "2021-03-01 04:00:00",
+        "closeTime": "2021-03-16 03:59:59",
+        "enBuffName": "Refreshing Moon",
+        "chsBuffName": "吐故之月",
+        "ptBuffName": "Lua da Renovação",
+        "frBuffName": "Lune réminiscente",
+        "ruBuffName": "Освежающая луна"
+    },
+    "18": {
+        "icon": "UI_TowerBlessing_13",
+        "openTime": "2021-03-16 04:00:00",
+        "closeTime": "2021-04-01 03:59:59",
+        "enBuffName": "Majestic Moon",
+        "chsBuffName": "明威之月",
+        "ptBuffName": "Lua Majestosa",
+        "frBuffName": "Lune majestueuse",
+        "ruBuffName": "Величественная луна"
+    },
+    "19": {
+        "icon": "UI_TowerBlessing_14",
+        "openTime": "2021-04-01 04:00:00",
+        "closeTime": "2021-04-16 03:59:59",
+        "enBuffName": "Windward Moon",
+        "chsBuffName": "风行之月",
+        "ptBuffName": "Lua da Ventania",
+        "frBuffName": "Lune venteuse",
+        "ruBuffName": "Ветреная луна"
+    },
+    "2": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-07-16 04:00:00",
+        "closeTime": "2020-08-01 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "20": {
+        "icon": "UI_TowerBlessing_15",
+        "openTime": "2021-04-16 04:00:00",
+        "closeTime": "2021-05-01 03:59:59",
+        "enBuffName": "Skyward Moon",
+        "chsBuffName": "天行之月",
+        "ptBuffName": "Lua Celestial",
+        "frBuffName": "Lune céleste",
+        "ruBuffName": "Небесная луна"
+    },
+    "20096": {
+        "icon": "UI_TowerBlessing_107",
+        "openTime": "2026-08-08 04:00:00",
+        "closeTime": "2026-08-25 03:59:59",
+        "enBuffName": "",
+        "chsBuffName": "辉卷之月",
+        "ptBuffName": "",
+        "frBuffName": "",
+        "ruBuffName": ""
+    },
+    "20097": {
+        "icon": "UI_TowerBlessing_107",
+        "openTime": "2026-08-25 04:00:00",
+        "closeTime": "2026-09-16 03:59:59",
+        "enBuffName": "",
+        "chsBuffName": "骇星之月",
+        "ptBuffName": "",
+        "frBuffName": "",
+        "ruBuffName": ""
+    },
+    "21": {
+        "icon": "UI_TowerBlessing_17",
+        "openTime": "2021-05-01 04:00:00",
+        "closeTime": "2021-05-16 03:59:59",
+        "enBuffName": "Blade-Dance Moon",
+        "chsBuffName": "剑舞之月",
+        "ptBuffName": "Lua de Dança da Lâmina",
+        "frBuffName": "Lune de la danse de l'épée",
+        "ruBuffName": "Месяц танца мечей"
+    },
+    "22": {
+        "icon": "UI_TowerBlessing_18",
+        "openTime": "2021-05-16 04:00:00",
+        "closeTime": "2021-06-01 03:59:59",
+        "enBuffName": "Thorny Moon",
+        "chsBuffName": "荆棘之月",
+        "ptBuffName": "Lua Espinhosa",
+        "frBuffName": "Lune épineuse",
+        "ruBuffName": "Месяц шипов"
+    },
+    "23": {
+        "icon": "UI_TowerBlessing_19",
+        "openTime": "2021-06-01 04:00:00",
+        "closeTime": "2021-06-16 03:59:59",
+        "enBuffName": "Rebellious Moon",
+        "chsBuffName": "叛逆之月",
+        "ptBuffName": "Lua Rebelde",
+        "frBuffName": "Lune insoumise",
+        "ruBuffName": "Месяц протеста"
+    },
+    "24": {
+        "icon": "UI_TowerBlessing_20",
+        "openTime": "2021-06-16 04:00:00",
+        "closeTime": "2021-07-01 03:59:59",
+        "enBuffName": "Whirlpool Moon",
+        "chsBuffName": "涡旋之月",
+        "ptBuffName": "Lua do Vórtice",
+        "frBuffName": "Lune du vortex",
+        "ruBuffName": "Лунный водоворот"
+    },
+    "25": {
+        "icon": "UI_TowerBlessing_21",
+        "openTime": "2021-07-01 04:00:00",
+        "closeTime": "2021-07-16 03:59:59",
+        "enBuffName": "Breezecall Moon",
+        "chsBuffName": "风来之月",
+        "ptBuffName": "Lua da Brisa",
+        "frBuffName": "Lune de la brise",
+        "ruBuffName": "Луна ветров"
+    },
+    "26": {
+        "icon": "UI_TowerBlessing_22",
+        "openTime": "2021-07-16 04:00:00",
+        "closeTime": "2021-08-01 03:59:59",
+        "enBuffName": "Brumous Moon",
+        "chsBuffName": "山岚之月",
+        "ptBuffName": "Lua da Montanha",
+        "frBuffName": "Lune de la brume",
+        "ruBuffName": "Туманная луна"
+    },
+    "27": {
+        "icon": "UI_TowerBlessing_23",
+        "openTime": "2021-08-01 04:00:00",
+        "closeTime": "2021-08-16 03:59:59",
+        "enBuffName": "Shattering Moon",
+        "chsBuffName": "粉碎之月",
+        "ptBuffName": "Lua do Despedaçamento",
+        "frBuffName": "Lune fracassante",
+        "ruBuffName": "Раздробленная луна"
+    },
+    "28": {
+        "icon": "UI_TowerBlessing_24",
+        "openTime": "2021-08-16 04:00:00",
+        "closeTime": "2021-09-01 03:59:59",
+        "enBuffName": "Brimful Moon",
+        "chsBuffName": "充盈之月",
+        "ptBuffName": "Lua da Abundância",
+        "frBuffName": "Lune d'abondance",
+        "ruBuffName": "Изобильная луна"
+    },
+    "29": {
+        "icon": "UI_TowerBlessing_25",
+        "openTime": "2021-09-01 04:00:00",
+        "closeTime": "2021-09-16 03:59:59",
+        "enBuffName": "Stalwart Moon",
+        "chsBuffName": "昂藏之月",
+        "ptBuffName": "Lua da Robustez",
+        "frBuffName": "Lune fidèle",
+        "ruBuffName": "Величественная луна"
+    },
+    "3": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-08-01 04:00:00",
+        "closeTime": "2020-08-16 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "30": {
+        "icon": "UI_TowerBlessing_26",
+        "openTime": "2021-09-16 04:00:00",
+        "closeTime": "2021-10-01 03:59:59",
+        "enBuffName": "Renewing Moon",
+        "chsBuffName": "晦朔之月",
+        "ptBuffName": "Lua Moribunda",
+        "frBuffName": "Lune moribonde",
+        "ruBuffName": "Угасающая луна"
+    },
+    "31": {
+        "icon": "UI_TowerBlessing_27",
+        "openTime": "2021-10-01 04:00:00",
+        "closeTime": "2021-10-16 03:59:59",
+        "enBuffName": "Cavorting Moon",
+        "chsBuffName": "乱舞之月",
+        "ptBuffName": "Lua Dançante",
+        "frBuffName": "Lune dansante",
+        "ruBuffName": "Пляшущая луна"
+    },
+    "32": {
+        "icon": "UI_TowerBlessing_28",
+        "openTime": "2021-10-16 04:00:00",
+        "closeTime": "2021-11-01 03:59:59",
+        "enBuffName": "Vanguard Moon",
+        "chsBuffName": "先阵之月",
+        "ptBuffName": "Lua de Vanguarda",
+        "frBuffName": "Lune d'avant-garde",
+        "ruBuffName": "Луна авангарда"
+    },
+    "33": {
+        "icon": "UI_TowerBlessing_29",
+        "openTime": "2021-11-01 04:00:00",
+        "closeTime": "2021-11-16 03:59:59",
+        "enBuffName": "Chiliastic Moon",
+        "chsBuffName": "万千言祝之月",
+        "ptBuffName": "Lua Efusiva",
+        "frBuffName": "Lune chiliastique",
+        "ruBuffName": "Луна благопожеланий"
+    },
+    "34": {
+        "icon": "UI_TowerBlessing_30",
+        "openTime": "2021-11-16 04:00:00",
+        "closeTime": "2021-12-01 03:59:59",
+        "enBuffName": "Splendiferous Moon",
+        "chsBuffName": "万华之月",
+        "ptBuffName": "Lua Esplendorosa",
+        "frBuffName": "Lune sublimissime",
+        "ruBuffName": "Прекраснейшая луна"
+    },
+    "35": {
+        "icon": "UI_TowerBlessing_31",
+        "openTime": "2021-12-01 04:00:00",
+        "closeTime": "2021-12-16 03:59:59",
+        "enBuffName": "Exacting Moon",
+        "chsBuffName": "萃炼之月",
+        "ptBuffName": "Lua do Refinamento",
+        "frBuffName": "Lune extraite",
+        "ruBuffName": "Закалённая луна"
+    },
+    "36": {
+        "icon": "UI_TowerBlessing_33",
+        "openTime": "2021-12-16 04:00:00",
+        "closeTime": "2022-01-01 03:59:59",
+        "enBuffName": "Stonesoul Moon",
+        "chsBuffName": "灵石之月",
+        "ptBuffName": "Lua da Pedra Espiritual",
+        "frBuffName": "Lune platonique",
+        "ruBuffName": "Луна камня душ"
+    },
+    "37": {
+        "icon": "UI_TowerBlessing_32",
+        "openTime": "2022-01-01 04:00:00",
+        "closeTime": "2022-01-16 03:59:59",
+        "enBuffName": "Pureshade Moon",
+        "chsBuffName": "纯色之月",
+        "ptBuffName": "Lua da Cor Pura",
+        "frBuffName": "Lune ombragée",
+        "ruBuffName": "Луна чистого цвета"
+    },
+    "38": {
+        "icon": "UI_TowerBlessing_34",
+        "openTime": "2022-01-16 04:00:00",
+        "closeTime": "2022-02-01 03:59:59",
+        "enBuffName": "Blade-Flourish Moon",
+        "chsBuffName": "舞剑之月",
+        "ptBuffName": "Lua de Esgrima",
+        "frBuffName": "Lune de l'épée dansante",
+        "ruBuffName": "Луна сражения"
+    },
+    "39": {
+        "icon": "UI_TowerBlessing_35",
+        "openTime": "2022-02-01 04:00:00",
+        "closeTime": "2022-02-16 03:59:59",
+        "enBuffName": "Blooming Moon",
+        "chsBuffName": "盛放之月",
+        "ptBuffName": "Lua de Desabrochante",
+        "frBuffName": "Lune d'éclosion",
+        "ruBuffName": "Луна цветения"
+    },
+    "4": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-08-16 04:00:00",
+        "closeTime": "2020-09-01 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "40": {
+        "icon": "UI_TowerBlessing_36",
+        "openTime": "2022-02-16 04:00:00",
+        "closeTime": "2022-03-01 03:59:59",
+        "enBuffName": "Awakening Moon",
+        "chsBuffName": "苏醒之月",
+        "ptBuffName": "Lua Despertada",
+        "frBuffName": "Lune d'éveil",
+        "ruBuffName": "Луна пробуждения"
+    },
+    "41": {
+        "icon": "UI_TowerBlessing_37",
+        "openTime": "2022-03-01 04:00:00",
+        "closeTime": "2022-03-16 03:59:59",
+        "enBuffName": "Lightning Moon",
+        "chsBuffName": "稻光之月",
+        "ptBuffName": "Lua Brilhante",
+        "frBuffName": "Lune brillante",
+        "ruBuffName": "Светящаяся луна"
+    },
+    "42": {
+        "icon": "UI_TowerBlessing_38",
+        "openTime": "2022-03-16 04:00:00",
+        "closeTime": "2022-04-01 03:59:59",
+        "enBuffName": "Godcall Moon",
+        "chsBuffName": "神鸣之月",
+        "ptBuffName": "Lua Invocadora de Deuses",
+        "frBuffName": "Lune invocatrice",
+        "ruBuffName": "Луна призыва божества"
+    },
+    "43": {
+        "icon": "UI_TowerBlessing_39",
+        "openTime": "2022-04-01 04:00:00",
+        "closeTime": "2022-04-16 03:59:59",
+        "enBuffName": "Sheet-Ice Moon",
+        "chsBuffName": "薄冰之月",
+        "ptBuffName": "Lua Glacial",
+        "frBuffName": "Lune glaciale",
+        "ruBuffName": "Луна наледи"
+    },
+    "44": {
+        "icon": "UI_TowerBlessing_40",
+        "openTime": "2022-04-16 04:00:00",
+        "closeTime": "2022-05-01 03:59:59",
+        "enBuffName": "Snap-Rain Moon",
+        "chsBuffName": "骤雨之月",
+        "ptBuffName": "Lua Torrencial",
+        "frBuffName": "Lune pluviale",
+        "ruBuffName": "Луна внезапного дождя"
+    },
+    "45": {
+        "icon": "UI_TowerBlessing_41",
+        "openTime": "2022-05-01 04:00:00",
+        "closeTime": "2022-05-16 03:59:59",
+        "enBuffName": "Iris Moon",
+        "chsBuffName": "初虹之月",
+        "ptBuffName": "Lua Iridescente",
+        "frBuffName": "Lune irisée",
+        "ruBuffName": "Луна первой радуги"
+    },
+    "46": {
+        "icon": "UI_TowerBlessing_39",
+        "openTime": "2022-05-16 04:00:00",
+        "closeTime": "2022-06-01 03:59:59",
+        "enBuffName": "Sheet-Ice Moon",
+        "chsBuffName": "薄冰之月",
+        "ptBuffName": "Lua Glacial",
+        "frBuffName": "Lune glaciale",
+        "ruBuffName": "Луна наледи"
+    },
+    "47": {
+        "icon": "UI_TowerBlessing_42",
+        "openTime": "2022-06-01 04:00:00",
+        "closeTime": "2022-06-16 03:59:59",
+        "enBuffName": "Closing Moon",
+        "chsBuffName": "近寄之月",
+        "ptBuffName": "Lua Iminente",
+        "frBuffName": "Lune approchante",
+        "ruBuffName": "Луна веры"
+    },
+    "48": {
+        "icon": "UI_TowerBlessing_43",
+        "openTime": "2022-06-16 04:00:00",
+        "closeTime": "2022-07-01 03:59:59",
+        "enBuffName": "Matched Moon",
+        "chsBuffName": "纸一重之月",
+        "ptBuffName": "Lua Tênue",
+        "frBuffName": "Lune éthérée",
+        "ruBuffName": "Двуликая луна"
+    },
+    "49": {
+        "icon": "UI_TowerBlessing_44",
+        "openTime": "2022-07-01 04:00:00",
+        "closeTime": "2022-07-16 03:59:59",
+        "enBuffName": "Steelsunder Moon",
+        "chsBuffName": "斩铁之月",
+        "ptBuffName": "Lua Decepadora",
+        "frBuffName": "Lune brise-fer",
+        "ruBuffName": "Стальная луна"
+    },
+    "5": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-09-01 04:00:00",
+        "closeTime": "2020-09-16 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "50": {
+        "icon": "UI_TowerBlessing_45",
+        "openTime": "2022-07-16 04:00:00",
+        "closeTime": "2022-08-01 03:59:59",
+        "enBuffName": "Valiant Moon",
+        "chsBuffName": "奋勇之月",
+        "ptBuffName": "Lua Intrépida",
+        "frBuffName": "Lune intrépide",
+        "ruBuffName": "Доблестная луна"
+    },
+    "51": {
+        "icon": "UI_TowerBlessing_46",
+        "openTime": "2022-08-01 04:00:00",
+        "closeTime": "2022-08-16 03:59:59",
+        "enBuffName": "Windswept Moon",
+        "chsBuffName": "风洗之月",
+        "ptBuffName": "Lua Turbilhoante",
+        "frBuffName": "Lune tourbillonnante",
+        "ruBuffName": "Ветреная луна"
+    },
+    "52": {
+        "icon": "UI_TowerBlessing_47",
+        "openTime": "2022-08-16 04:00:00",
+        "closeTime": "2022-09-01 03:59:59",
+        "enBuffName": "Shivered Moon",
+        "chsBuffName": "碎破之月",
+        "ptBuffName": "Lua Fragmentada",
+        "frBuffName": "Lune tremblante",
+        "ruBuffName": "Дрожащая луна"
+    },
+    "53": {
+        "icon": "UI_TowerBlessing_49",
+        "openTime": "2022-09-01 04:00:00",
+        "closeTime": "2022-09-16 03:59:59",
+        "enBuffName": "Efflorescent Moon",
+        "chsBuffName": "绽放之月",
+        "ptBuffName": "Lua Florescente",
+        "frBuffName": "Lune florissante",
+        "ruBuffName": "Цветущая луна"
+    },
+    "54": {
+        "icon": "UI_TowerBlessing_48",
+        "openTime": "2022-09-16 04:00:00",
+        "closeTime": "2022-10-01 03:59:59",
+        "enBuffName": "Reviving Moon",
+        "chsBuffName": "苏生之月",
+        "ptBuffName": "Lua da Ressurreição",
+        "frBuffName": "Lune vivifiante",
+        "ruBuffName": "Луна воскрешения"
+    },
+    "55": {
+        "icon": "UI_TowerBlessing_50",
+        "openTime": "2022-10-01 04:00:00",
+        "closeTime": "2022-10-16 03:59:59",
+        "enBuffName": "Pruning Moon",
+        "chsBuffName": "疏果之月",
+        "ptBuffName": "Lua de Poda",
+        "frBuffName": "Lune d'élagage",
+        "ruBuffName": "Истончившаяся луна"
+    },
+    "56": {
+        "icon": "UI_TowerBlessing_51",
+        "openTime": "2022-10-16 04:00:00",
+        "closeTime": "2022-11-01 03:59:59",
+        "enBuffName": "Ascending Moon",
+        "chsBuffName": "攀附之月",
+        "ptBuffName": "Lua de Ascensão",
+        "frBuffName": "Lune ascendante",
+        "ruBuffName": "Восходящая луна"
+    },
+    "57": {
+        "icon": "UI_TowerBlessing_52",
+        "openTime": "2022-11-01 04:00:00",
+        "closeTime": "2022-11-16 03:59:59",
+        "enBuffName": "Rupturing Moon",
+        "chsBuffName": "迸发之月",
+        "ptBuffName": "Lua da Ruptura",
+        "frBuffName": "Lune de rupture",
+        "ruBuffName": "Раскалывающаяся луна"
+    },
+    "58": {
+        "icon": "UI_TowerBlessing_53",
+        "openTime": "2022-11-16 04:00:00",
+        "closeTime": "2022-12-01 03:59:59",
+        "enBuffName": "Hailing Moon",
+        "chsBuffName": "惊霰之月",
+        "ptBuffName": "Lua Surpreendente",
+        "frBuffName": "Lune grêlante",
+        "ruBuffName": "Удивительная луна"
+    },
+    "59": {
+        "icon": "UI_TowerBlessing_54",
+        "openTime": "2022-12-01 04:00:00",
+        "closeTime": "2022-12-16 03:59:59",
+        "enBuffName": "Lush Moon",
+        "chsBuffName": "狂蔓之月",
+        "ptBuffName": "Lua Exuberante",
+        "frBuffName": "Lune luxuriante",
+        "ruBuffName": "Буйная луна"
+    },
+    "6": {
+        "icon": "UI_TowerBlessing_1",
+        "openTime": "2020-09-16 04:00:00",
+        "closeTime": "2020-10-01 03:59:59",
+        "enBuffName": "Burgeoning Moon",
+        "chsBuffName": "新芽之月",
+        "ptBuffName": "Lua Crescente",
+        "frBuffName": "Lune bourgeonnante",
+        "ruBuffName": "Растущая луна"
+    },
+    "60": {
+        "icon": "UI_TowerBlessing_55",
+        "openTime": "2022-12-16 04:00:00",
+        "closeTime": "2023-01-01 03:59:59",
+        "enBuffName": "Terminal Moon",
+        "chsBuffName": "终战之月",
+        "ptBuffName": "Lua Terminal",
+        "frBuffName": "Lune terminale",
+        "ruBuffName": "Конечная луна"
+    },
+    "61": {
+        "icon": "UI_TowerBlessing_56",
+        "openTime": "2023-01-01 04:00:00",
+        "closeTime": "2023-01-16 03:59:59",
+        "enBuffName": "Breezecall Moon",
+        "chsBuffName": "风来之月",
+        "ptBuffName": "Lua da Brisa",
+        "frBuffName": "Lune de la brise",
+        "ruBuffName": "Луна ветров"
+    },
+    "62": {
+        "icon": "UI_TowerBlessing_57",
+        "openTime": "2023-01-16 04:00:00",
+        "closeTime": "2023-02-01 03:59:59",
+        "enBuffName": "Supreme Moon",
+        "chsBuffName": "压胜之月",
+        "ptBuffName": "Lua Suprema",
+        "frBuffName": "Lune suprême",
+        "ruBuffName": "Волшебная луна"
+    },
+    "63": {
+        "icon": "UI_TowerBlessing_58",
+        "openTime": "2023-02-01 04:00:00",
+        "closeTime": "2023-02-16 03:59:59",
+        "enBuffName": "Thorn-Twisted Moon",
+        "chsBuffName": "丛棘之月",
+        "ptBuffName": "Lua Lacerante",
+        "frBuffName": "Lune lacérante",
+        "ruBuffName": "Терновая луна"
+    },
+    "64": {
+        "icon": "UI_TowerBlessing_59",
+        "openTime": "2023-02-16 04:00:00",
+        "closeTime": "2023-03-01 03:59:59",
+        "enBuffName": "Verdant Moon",
+        "chsBuffName": "郁苍之月",
+        "ptBuffName": "Lua Verdejante",
+        "frBuffName": "Lune verdoyante",
+        "ruBuffName": "Луна зарослей"
+    },
+    "65": {
+        "icon": "UI_TowerBlessing_60",
+        "openTime": "2023-03-01 04:00:00",
+        "closeTime": "2023-03-16 03:59:59",
+        "enBuffName": "Luxuriant Moon",
+        "chsBuffName": "奋荣之月",
+        "ptBuffName": "Lua Exuberante",
+        "frBuffName": "Lune opulente",
+        "ruBuffName": "Луна разнотравья"
+    },
+    "66": {
+        "icon": "UI_TowerBlessing_61",
+        "openTime": "2023-03-16 04:00:00",
+        "closeTime": "2023-04-01 03:59:59",
+        "enBuffName": "Determined Moon",
+        "chsBuffName": "衔勇之月",
+        "ptBuffName": "Lua Determinada",
+        "frBuffName": "Lune déterminée",
+        "ruBuffName": "Непреклонная луна"
+    },
+    "67": {
+        "icon": "UI_TowerBlessing_62",
+        "openTime": "2023-04-01 04:00:00",
+        "closeTime": "2023-04-16 03:59:59",
+        "enBuffName": "Incisive Moon",
+        "chsBuffName": "劲锐之月",
+        "ptBuffName": "Lua Incisiva",
+        "frBuffName": "Lune incisive",
+        "ruBuffName": "Заточенная луна"
+    },
+    "68": {
+        "icon": "UI_TowerBlessing_63",
+        "openTime": "2023-04-16 04:00:00",
+        "closeTime": "2023-05-01 03:59:59",
+        "enBuffName": "Reverberating Moon",
+        "chsBuffName": "轰震之月",
+        "ptBuffName": "Lua Reverberante",
+        "frBuffName": "Lune réverbérante",
+        "ruBuffName": "Отражённая луна"
+    },
+    "69": {
+        "icon": "UI_TowerBlessing_64",
+        "openTime": "2023-05-01 04:00:00",
+        "closeTime": "2023-05-16 03:59:59",
+        "enBuffName": "Erupting Moon",
+        "chsBuffName": "迸烈之月",
+        "ptBuffName": "Lua Eruptiva",
+        "frBuffName": "Lune éruptante",
+        "ruBuffName": "Разрывающаяся луна"
+    },
+    "7": {
+        "icon": "UI_TowerBlessing_2",
+        "openTime": "2020-10-01 04:00:00",
+        "closeTime": "2020-10-16 03:59:59",
+        "enBuffName": "Steel Moon",
+        "chsBuffName": "钢铁之月",
+        "ptBuffName": "Lua de Aço",
+        "frBuffName": "Lune métallique",
+        "ruBuffName": "Стальная луна"
+    },
+    "70": {
+        "icon": "UI_TowerBlessing_65",
+        "openTime": "2023-05-16 04:00:00",
+        "closeTime": "2023-06-01 03:59:59",
+        "enBuffName": "Flourishing Moon",
+        "chsBuffName": "遒茂之月",
+        "ptBuffName": "Lua Deslumbrante",
+        "frBuffName": "Lune efflorescente",
+        "ruBuffName": "Слепящая луна"
+    },
+    "71": {
+        "icon": "UI_TowerBlessing_66",
+        "openTime": "2023-06-01 04:00:00",
+        "closeTime": "2023-06-16 03:59:59",
+        "enBuffName": "Drumming Moon",
+        "chsBuffName": "滚奏之月",
+        "ptBuffName": "Lua Retumbante",
+        "frBuffName": "Lune tambourinante",
+        "ruBuffName": "Трепещущая луна"
+    },
+    "72": {
+        "icon": "UI_TowerBlessing_40",
+        "openTime": "2023-06-16 04:00:00",
+        "closeTime": "2023-07-01 03:59:59",
+        "enBuffName": "Potent Moon",
+        "chsBuffName": "强形之月",
+        "ptBuffName": "Lua Potente",
+        "frBuffName": "Lune puissante",
+        "ruBuffName": "Сильная луна"
+    },
+    "73": {
+        "icon": "UI_TowerBlessing_67",
+        "openTime": "2023-07-01 04:00:00",
+        "closeTime": "2023-07-16 03:59:59",
+        "enBuffName": "Willowy Moon",
+        "chsBuffName": "纤堕之月",
+        "ptBuffName": "Lua Graciosa",
+        "frBuffName": "Lune svelte",
+        "ruBuffName": "Хрупкая луна"
+    },
+    "74": {
+        "icon": "UI_TowerBlessing_68",
+        "openTime": "2023-07-16 04:00:00",
+        "closeTime": "2023-08-01 03:59:59",
+        "enBuffName": "Fleeting Moon",
+        "chsBuffName": "迅节之月",
+        "ptBuffName": "Lua Fugaz",
+        "frBuffName": "Lune fugace",
+        "ruBuffName": "Мимолётная луна"
+    },
+    "75": {
+        "icon": "UI_TowerBlessing_69",
+        "openTime": "2023-08-01 04:00:00",
+        "closeTime": "2023-08-16 03:59:59",
+        "enBuffName": "Shifting Moon",
+        "chsBuffName": "变巧之月",
+        "ptBuffName": "Lua Oscilante",
+        "frBuffName": "Lune changeante",
+        "ruBuffName": "Изменчивая луна"
+    },
+    "76": {
+        "icon": "UI_TowerBlessing_70",
+        "openTime": "2023-08-16 04:00:00",
+        "closeTime": "2023-09-01 03:59:59",
+        "enBuffName": "Ingressing Moon",
+        "chsBuffName": "连步之月",
+        "ptBuffName": "Lua Vindoura",
+        "frBuffName": "Lune entrante",
+        "ruBuffName": "Приближающаяся луна"
+    },
+    "77": {
+        "icon": "UI_TowerBlessing_69",
+        "openTime": "2023-09-01 04:00:00",
+        "closeTime": "2023-09-16 03:59:59",
+        "enBuffName": "Keen Moon",
+        "chsBuffName": "灵醒之月",
+        "ptBuffName": "Lua do Despertar",
+        "frBuffName": "Lune vive",
+        "ruBuffName": "Вдохновляющая луна"
+    },
+    "78": {
+        "icon": "UI_TowerBlessing_69",
+        "openTime": "2023-09-16 04:00:00",
+        "closeTime": "2023-10-01 03:59:59",
+        "enBuffName": "Gyrating Moon",
+        "chsBuffName": "盘转之月",
+        "ptBuffName": "Lua Rodopiante",
+        "frBuffName": "Lune giratoire",
+        "ruBuffName": "Вращающаяся луна"
+    },
+    "79": {
+        "icon": "UI_TowerBlessing_69",
+        "openTime": "2023-10-01 04:00:00",
+        "closeTime": "2023-10-16 03:59:59",
+        "enBuffName": "Cleaving Moon",
+        "chsBuffName": "劲切之月",
+        "ptBuffName": "Lua Clivante",
+        "frBuffName": "Lune fendante",
+        "ruBuffName": "Отделяющаяся луна"
+    },
+    "8": {
+        "icon": "UI_TowerBlessing_2",
+        "openTime": "2020-10-16 04:00:00",
+        "closeTime": "2020-11-01 03:59:59",
+        "enBuffName": "Steel Moon",
+        "chsBuffName": "钢铁之月",
+        "ptBuffName": "Lua de Aço",
+        "frBuffName": "Lune métallique",
+        "ruBuffName": "Стальная луна"
+    },
+    "80": {
+        "icon": "UI_TowerBlessing_71",
+        "openTime": "2023-10-16 04:00:00",
+        "closeTime": "2023-11-01 03:59:59",
+        "enBuffName": "Converging Moon",
+        "chsBuffName": "分进之月",
+        "ptBuffName": "Lua Convergente",
+        "frBuffName": "Lune convergente",
+        "ruBuffName": "Сходящаяся луна"
+    },
+    "81": {
+        "icon": "UI_TowerBlessing_55",
+        "openTime": "2023-11-01 04:00:00",
+        "closeTime": "2023-11-16 03:59:59",
+        "enBuffName": "Coalescing Moon",
+        "chsBuffName": "并力之月",
+        "ptBuffName": "Lua Coalescente",
+        "frBuffName": "Lune coalescente",
+        "ruBuffName": "Синергическая луна"
+    },
+    "82": {
+        "icon": "UI_TowerBlessing_72",
+        "openTime": "2023-11-16 04:00:00",
+        "closeTime": "2023-12-01 03:59:59",
+        "enBuffName": "Tidal Moon",
+        "chsBuffName": "潮信之月",
+        "ptBuffName": "Lua do Maremoto",
+        "frBuffName": "Lune tidale",
+        "ruBuffName": "Луна прилива"
+    },
+    "83": {
+        "icon": "UI_TowerBlessing_73",
+        "openTime": "2023-12-01 04:00:00",
+        "closeTime": "2023-12-16 03:59:59",
+        "enBuffName": "Uncanny Moon",
+        "chsBuffName": "诡殊之月",
+        "ptBuffName": "Lua Estranha",
+        "frBuffName": "Lune étrange",
+        "ruBuffName": "Причудливая луна"
+    },
+    "84": {
+        "icon": "UI_TowerBlessing_74",
+        "openTime": "2023-12-16 04:00:00",
+        "closeTime": "2024-01-01 03:59:59",
+        "enBuffName": "Soaring Moon",
+        "chsBuffName": "鹰扬之月",
+        "ptBuffName": "Lua do Falcão",
+        "frBuffName": "Lune montante",
+        "ruBuffName": "Парящая луна"
+    },
+    "85": {
+        "icon": "UI_TowerBlessing_75",
+        "openTime": "2024-01-01 04:00:00",
+        "closeTime": "2024-01-16 03:59:59",
+        "enBuffName": "Sturdy Moon",
+        "chsBuffName": "壮固之月",
+        "ptBuffName": "Lua Resistente",
+        "frBuffName": "Lune robuste",
+        "ruBuffName": "Прочная луна"
+    },
+    "86": {
+        "icon": "UI_TowerBlessing_76",
+        "openTime": "2024-01-16 04:00:00",
+        "closeTime": "2024-02-01 03:59:59",
+        "enBuffName": "Bursting Moon",
+        "chsBuffName": "迸断之月",
+        "ptBuffName": "Lua Fragmentada",
+        "frBuffName": "Lune éclatante",
+        "ruBuffName": "Взрывающаяся луна"
+    },
+    "87": {
+        "icon": "UI_TowerBlessing_72",
+        "openTime": "2024-02-01 04:00:00",
+        "closeTime": "2024-02-16 03:59:59",
+        "enBuffName": "Ascendant Moon",
+        "chsBuffName": "涨势之月",
+        "ptBuffName": "Lua Ascendente",
+        "frBuffName": "Lune élevante",
+        "ruBuffName": "Восходящая луна"
+    },
+    "88": {
+        "icon": "UI_TowerBlessing_78",
+        "openTime": "2024-02-16 04:00:00",
+        "closeTime": "2024-03-01 03:59:59",
+        "enBuffName": "Resilient Moon",
+        "chsBuffName": "劲韧之月",
+        "ptBuffName": "Lua Resiliente",
+        "frBuffName": "Lune résiliente",
+        "ruBuffName": "Стойкая луна"
+    },
+    "89": {
+        "icon": "UI_TowerBlessing_79",
+        "openTime": "2024-03-01 04:00:00",
+        "closeTime": "2024-03-16 03:59:59",
+        "enBuffName": "Plummeting Moon",
+        "chsBuffName": "陨坠之月",
+        "ptBuffName": "Lua Desabando",
+        "frBuffName": "Lune tombante",
+        "ruBuffName": "Падающая луна"
+    },
+    "9": {
+        "icon": "UI_TowerBlessing_3",
+        "openTime": "2020-11-01 04:00:00",
+        "closeTime": "2020-11-16 03:59:59",
+        "enBuffName": "Efflorescent Moon",
+        "chsBuffName": "绽放之月",
+        "ptBuffName": "Lua Florescente",
+        "frBuffName": "Lune florissante",
+        "ruBuffName": "Цветущая луна"
+    },
+    "90": {
+        "icon": "UI_TowerBlessing_80",
+        "openTime": "2024-03-16 04:00:00",
+        "closeTime": "2024-04-01 03:59:59",
+        "enBuffName": "Sundered Moon",
+        "chsBuffName": "迸裂之月",
+        "ptBuffName": "Lua Destruída",
+        "frBuffName": "Lune fissurée",
+        "ruBuffName": "Расколотая луна"
+    },
+    "91": {
+        "icon": "UI_TowerBlessing_81",
+        "openTime": "2024-04-01 04:00:00",
+        "closeTime": "2024-04-16 03:59:59",
+        "enBuffName": "Gravel Moon",
+        "chsBuffName": "砾石之月",
+        "ptBuffName": "Lua do Cascalho",
+        "frBuffName": "Lune graveleuse",
+        "ruBuffName": "Гравийная луна"
+    },
+    "92": {
+        "icon": "UI_TowerBlessing_56",
+        "openTime": "2024-04-16 04:00:00",
+        "closeTime": "2024-05-01 03:59:59",
+        "enBuffName": "Arrowgale Moon",
+        "chsBuffName": "箭风之月",
+        "ptBuffName": "Lua do Vento",
+        "frBuffName": "Lune mistralée",
+        "ruBuffName": "Луна штормовых ветров"
+    },
+    "93": {
+        "icon": "UI_TowerBlessing_82",
+        "openTime": "2024-05-01 04:00:00",
+        "closeTime": "2024-05-16 03:59:59",
+        "enBuffName": "Flame-Fanning Moon",
+        "chsBuffName": "扇烈之月",
+        "ptBuffName": "Lua Flamejante",
+        "frBuffName": "Lune flamboyante",
+        "ruBuffName": "Огнедышащая луна"
+    },
+    "94": {
+        "icon": "UI_TowerBlessing_83",
+        "openTime": "2024-05-16 04:00:00",
+        "closeTime": "2024-06-01 03:59:59",
+        "enBuffName": "Valorous Moon",
+        "chsBuffName": "奋戈之月",
+        "ptBuffName": "Lua Valorosa",
+        "frBuffName": "Lune valeureuse",
+        "ruBuffName": "Благородная луна"
+    },
+    "95": {
+        "icon": "UI_TowerBlessing_69",
+        "openTime": "2024-06-01 04:00:00",
+        "closeTime": "2024-06-16 03:59:59",
+        "enBuffName": "Tactical Moon",
+        "chsBuffName": "得策之月",
+        "ptBuffName": "Lua Tática",
+        "frBuffName": "Lune tactique",
+        "ruBuffName": "Тактическая луна"
+    },
+    "96": {
+        "icon": "UI_TowerBlessing_85",
+        "openTime": "2024-06-16 04:00:00",
+        "closeTime": "2024-07-16 03:59:59",
+        "enBuffName": "Thrusting Moon",
+        "chsBuffName": "锐进之月",
+        "ptBuffName": "Lua do Avanço",
+        "frBuffName": "Lune avançante",
+        "ruBuffName": "Стремительная луна"
+    },
+    "97": {
+        "icon": "UI_TowerBlessing_83",
+        "openTime": "2024-07-16 04:00:00",
+        "closeTime": "2024-08-16 03:59:59",
+        "enBuffName": "Transfusing Moon",
+        "chsBuffName": "攻疗之月",
+        "ptBuffName": "Lua da Transfusão",
+        "frBuffName": "Lune transfusante",
+        "ruBuffName": "Исцеляющая луна"
+    },
+    "98": {
+        "icon": "UI_TowerBlessing_84",
+        "openTime": "2024-08-16 04:00:00",
+        "closeTime": "2024-09-16 03:59:59",
+        "enBuffName": "Searing Moon",
+        "chsBuffName": "炽灼之月",
+        "ptBuffName": "Lua Abrasante",
+        "frBuffName": "Lune brûlante",
+        "ruBuffName": "Жгучая луна"
+    },
+    "99": {
+        "icon": "UI_TowerBlessing_86",
+        "openTime": "2024-09-16 04:00:00",
+        "closeTime": "2024-10-16 03:59:59",
+        "enBuffName": "Contending Moon",
+        "chsBuffName": "角争之月",
+        "ptBuffName": "Lua Concorrente",
+        "frBuffName": "Lune compétitrice",
+        "ruBuffName": "Противостоящая луна"
+    }
+}

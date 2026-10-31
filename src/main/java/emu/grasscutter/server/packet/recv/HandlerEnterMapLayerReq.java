@@ -8,7 +8,7 @@ public class HandlerEnterMapLayerReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        emu.grasscutter.Grasscutter.getLogger().info("[Gacha] EnterMapLayerReq received — sending EnterMapLayerRsp (retcode=0)");
+        emu.grasscutter.Grasscutter.getLogger().debug("EnterMapLayerReq received - sending EnterMapLayerRsp (retcode=0)");
         session.send(new BasePacket(PacketOpcodes.EnterMapLayerRsp));
     }
 }

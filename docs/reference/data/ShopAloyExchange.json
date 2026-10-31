@@ -1,0 +1,28 @@
+[
+  {
+    "shopId": 1001,
+    "items": [
+      {
+        "goodsId": 102607,
+        "goodsItem": {
+          "id": 1062,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 221,
+            "count": 34
+          }
+        ],
+        "minLevel": 1,
+        "maxLevel": 99,
+        "secondarySheetId": 2,
+        "buyLimit": 1,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      }
+    ]
+  }
+]

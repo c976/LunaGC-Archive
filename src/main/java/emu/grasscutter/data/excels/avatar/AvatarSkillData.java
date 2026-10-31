@@ -22,12 +22,15 @@ public class AvatarSkillData extends GameResource {
     private long nameTextMapHash;
     private long descTextMapHash;
     private String abilityName;
+    // Despite the names, specialEnergyMin is the size of the bar (Mavuika 200, Skirk 100) and
+    // specialEnergyMax what a burst needs (100, 50). 7.1 spells them specialEnergyCostMax and
+    // specialEnergyCostStart; read as zero, Mavuika had no bar and her burst drained elemental energy.
     @SerializedName(
             value = "specialEnergyMin",
-            alternate = {"LNEGGCDIDCP"})
+            alternate = {"LNEGGCDIDCP", "specialEnergyCostMax"})
     public float specialEnergyMin;
     @SerializedName(
             value = "specialEnergyMax",
-            alternate = {"GHCNBMAPHML"})
+            alternate = {"GHCNBMAPHML", "specialEnergyCostStart"})
     public float specialEnergyMax;
 }

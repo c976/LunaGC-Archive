@@ -12,6 +12,7 @@ public final class ExecStartBargain extends QuestExecHandler {
     public boolean execute(GameQuest quest, QuestData.QuestExecParam condition, String... paramStr) {
         // Get the bargain data from the quest parameters.
         var bargainId = Integer.parseInt(condition.getParam()[0]);
+        if (LiyueBargainSupport.prepare(quest.getOwner(), bargainId)) return true;
 
         try {
             // Start the bargain.

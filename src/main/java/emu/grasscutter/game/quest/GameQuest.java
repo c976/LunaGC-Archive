@@ -7,7 +7,9 @@ import emu.grasscutter.data.excels.*;
 import emu.grasscutter.data.excels.quest.QuestData;
 import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.game.player.PushTipsManager;
 import emu.grasscutter.game.props.ActionReason;
+import emu.grasscutter.game.props.WatcherTriggerType;
 import emu.grasscutter.game.quest.enums.*;
 import emu.grasscutter.net.proto.ChapterStateOuterClass;
 import emu.grasscutter.net.proto.QuestOuterClass.Quest;
@@ -93,7 +95,7 @@ public class GameQuest {
                     .sendPacket(
                             new PacketChapterStateNotify(
                                     ChapterData.getBeginQuestChapterMap().get(subQuestId).getId(),
-                                    ChapterStateOuterClass.ChapterState.CHAPTER_STATE_BEGIN));
+                                    ChapterStateOuterClass.ChapterState.ChapterState_BEGIN));
         }
 
         // Some subQuests and talks become active when some other subQuests are unfinished (even from
@@ -104,6 +106,11 @@ public class GameQuest {
                 .getBeginExec()
                 .forEach(e -> getOwner().getServer().getQuestSystem().triggerExec(this, e, e.getParam()));
         this.getOwner().getQuestManager().checkQuestAlreadyFulfilled(this);
+        MondstadtStoryQuestSupport.enableDungeonEntry(this);
+        AmberFlightExamSupport.ensure(this);
+        RazorWolfQuestSupport.ensure(this);
+        if (this.mainQuestId == 1012 && this.subQuestId == 101210)
+            LiyuePerfumeQuestSupport.sendFormulas(getOwner());
 
         if (DebugConstants.LOG_QUEST_START) {
             Grasscutter.getLogger().debug("Quest {} is started", subQuestId);
@@ -145,6 +152,18 @@ public class GameQuest {
     public void setConfig(QuestData config) {
         if (config == null || getSubQuestId() != config.getId()) return;
         this.questData = config;
+
+        // An older save may have a different number of condition slots.
+        // Positional flags cannot be safely mapped when the 7.1 definition changed.
+        this.finishProgressList =
+                reconcileProgress(this.finishProgressList, config.getFinishCond().size());
+        this.failProgressList =
+                reconcileProgress(this.failProgressList, config.getFailCond().size());
+    }
+
+    private static int[] reconcileProgress(int[] saved, int expectedSize) {
+        if (saved != null && saved.length == expectedSize) return saved;
+        return new int[expectedSize];
     }
 
     public void setFinishProgress(int index, int value) {
@@ -156,6 +175,9 @@ public class GameQuest {
     }
 
     public boolean clearProgress(boolean notifyDelete) {
+        LiyueRescuePlotRecovery.clearReportForRollback(this);
+        if (getMainQuestId() == 1008 && getSubQuestId() == 100808)
+            getMainQuest().setLiyueAmberSuite(0);
         // TODO improve
         var oldState = state;
         if (questData.getAcceptCond() != null && questData.getAcceptCond().size() != 0) {
@@ -217,6 +239,8 @@ public class GameQuest {
             this.state = QuestState.QUEST_STATE_FINISHED;
         }
         this.finishTime = Utils.getCurrentSeconds();
+        AmberFlightExamSupport.stopWithQuest(this);
+        RazorWolfQuestSupport.onQuestFinished(this);
 
         this.getOwner().sendPacket(new PacketQuestListUpdateNotify(this));
 
@@ -244,6 +268,16 @@ public class GameQuest {
                 .queueEvent(QuestContent.QUEST_CONTENT_FINISH_PLOT, this.subQuestId, 0);
         this.triggerStateEvents();
         this.getOwner()
+                .getActivityManager()
+                .triggerWatcher(
+                        WatcherTriggerType.TRIGGER_FINISH_QUEST_AND, String.valueOf(this.subQuestId));
+        try {
+            PushTipsManager.of(this.getOwner()).onQuestFinished(this.subQuestId);
+        } catch (Throwable t) {
+            Grasscutter.getLogger()
+                    .warn("[PushTips] quest {} hook failed: {}", this.subQuestId, t.toString());
+        }
+        this.getOwner()
                 .getScene()
                 .triggerDungeonEvent(DungeonPassConditionType.DUNGEON_COND_FINISH_QUEST, getSubQuestId());
 
@@ -255,7 +289,7 @@ public class GameQuest {
                     .sendPacket(
                             new PacketChapterStateNotify(
                                     ChapterData.getEndQuestChapterMap().get(subQuestId).getId(),
-                                    ChapterStateOuterClass.ChapterState.CHAPTER_STATE_END));
+                                    ChapterStateOuterClass.ChapterState.ChapterState_END));
         }
 
         // Give items for completing the quest.
@@ -271,6 +305,7 @@ public class GameQuest {
     public void fail() {
         this.state = QuestState.QUEST_STATE_FAILED;
         this.finishTime = Utils.getCurrentSeconds();
+        AmberFlightExamSupport.stopWithQuest(this);
 
         this.getOwner().sendPacket(new PacketQuestListUpdateNotify(this));
 
@@ -287,6 +322,8 @@ public class GameQuest {
                     .forEach(t -> this.getOwner().getTeamManager().removeTrialAvatar(t));
         }
 
+        // A failed quest must survive a disconnect before the next rewind.
+        this.save();
         Grasscutter.getLogger().debug("Quest {} is failed", subQuestId);
     }
 

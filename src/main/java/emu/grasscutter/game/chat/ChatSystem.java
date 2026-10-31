@@ -4,6 +4,7 @@ import static emu.grasscutter.config.Configuration.GAME_INFO;
 
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.command.CommandMap;
+import emu.grasscutter.game.dps.DPSMeter;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.proto.ChatInfoOuterClass.ChatInfo;
 import emu.grasscutter.server.event.player.PlayerChatEvent;
@@ -33,6 +34,9 @@ public class ChatSystem implements ChatSystemHandler {
     }
 
     private boolean tryInvokeCommand(Player sender, Player target, String rawMessage) {
+        if (rawMessage.isEmpty()) return false;
+        // The DPS test is prefix-free: sending "dps30" in chat starts it. See DPSMeter.
+        if (DPSMeter.handleChat(sender, rawMessage)) return true;
         if (!RE_PREFIXES.matcher(rawMessage.substring(0, 1)).matches()) return false;
         for (String line : rawMessage.substring(1).split("\n[/!]"))
             CommandMap.getInstance().invoke(sender, target, line);
@@ -42,68 +46,36 @@ public class ChatSystem implements ChatSystemHandler {
     /********************
      * Chat history handling
      ********************/
-    private void putInHistory(int uid, int partnerId, ChatInfo info) {
+    private synchronized void putInHistory(int uid, int partnerId, ChatInfo info) {
         this.history
                 .computeIfAbsent(uid, x -> new HashMap<>())
                 .computeIfAbsent(partnerId, x -> new ArrayList<>())
                 .add(info);
     }
 
-    public void clearHistoryOnLogout(Player player) {
+    public synchronized void clearHistoryOnLogout(Player player) {
         this.history.remove(player.getUid());
     }
 
+    /** Copies one conversation so packets never iterate the live list. */
+    private synchronized List<ChatInfo> copyHistory(int uid, int partnerId) {
+        return new ArrayList<>(
+                this.history.getOrDefault(uid, Map.of()).getOrDefault(partnerId, List.of()));
+    }
+
     public void handlePullPrivateChatReq(Player player, int partnerId) {
-        var chatHistory =
-                this.history
-                        .computeIfAbsent(player.getUid(), x -> new HashMap<>())
-                        .computeIfAbsent(partnerId, x -> new ArrayList<>());
-        player.sendPacket(new PacketPullPrivateChatRsp(chatHistory));
+        player.sendPacket(new PacketPullPrivateChatRsp(copyHistory(player.getUid(), partnerId)));
     }
 
     public void handlePullRecentChatReq(Player player) {
-        // If this user has no chat history yet, create it by sending the server welcome messages.
-        if (!this.history
-                .computeIfAbsent(player.getUid(), x -> new HashMap<>())
-                .containsKey(GameConstants.SERVER_CONSOLE_UID)) {
-            this.sendServerWelcomeMessages(player);
-        }
-
-        // For now, we send the list three messages from the server for the recent chat history.
-        // This matches the previous behavior, but ultimately, we should probably keep track of the last
-        // chat partner
-        // for every given player and return the last messages exchanged with that partner.
-        int historyLength =
-                this.history.get(player.getUid()).get(GameConstants.SERVER_CONSOLE_UID).size();
-        var messages =
-                this.history
-                        .get(player.getUid())
-                        .get(GameConstants.SERVER_CONSOLE_UID)
-                        .subList(Math.max(historyLength - 3, 0), historyLength);
-        player.sendPacket(new PacketPullRecentChatRsp(messages));
+        this.ensureServerConversation(player);
     }
 
     /********************
      * Sending messages
      ********************/
     public void sendPrivateMessageFromServer(int targetUid, String message) {
-        // Sanity checks.
-        if (message == null || message.length() == 0) {
-            return;
-        }
-
-        // Get target.
-        Player target = getServer().getPlayerByUid(targetUid);
-        if (target == null) {
-            return;
-        }
-
-        // Create chat packet and put in history.
-        var packet = new PacketPrivateChatNotify(GameConstants.SERVER_CONSOLE_UID, targetUid, message);
-        putInHistory(targetUid, GameConstants.SERVER_CONSOLE_UID, packet.getChatInfo());
-
-        // Send.
-        target.sendPacket(packet);
+        sendPrivateMessageFromBot(GameConstants.SERVER_CONSOLE_UID, targetUid, message);
     }
 
     public void sendPrivateMessageFromServer(int targetUid, int emote) {
@@ -121,6 +93,24 @@ public class ChatSystem implements ChatSystemHandler {
         target.sendPacket(packet);
     }
 
+    public void sendPrivateMessageFromBot(int fromUid, int targetUid, String message) {
+        if (message == null || message.isEmpty()) {
+            return;
+        }
+        if (!GameConstants.isServerBotUid(fromUid)) {
+            fromUid = GameConstants.SERVER_CONSOLE_UID;
+        }
+
+        Player target = getServer().getPlayerByUid(targetUid);
+        if (target == null) {
+            return;
+        }
+
+        var packet = new PacketPrivateChatNotify(fromUid, targetUid, message);
+        putInHistory(targetUid, fromUid, packet.getChatInfo());
+        target.sendPacket(packet);
+    }
+
     public void sendPrivateMessage(Player player, int targetUid, String message) {
         // Sanity checks.
         if (message == null || message.length() == 0) {
@@ -129,7 +119,7 @@ public class ChatSystem implements ChatSystemHandler {
 
         // Get target.
         var target = getServer().getPlayerByUid(targetUid);
-        if (target == null && targetUid != GameConstants.SERVER_CONSOLE_UID) {
+        if (target == null && !GameConstants.isServerBotUid(targetUid)) {
             return;
         }
 
@@ -139,7 +129,7 @@ public class ChatSystem implements ChatSystemHandler {
         if (event.isCanceled()) return;
 
         // Fetch the new target.
-        if (targetUid != GameConstants.SERVER_CONSOLE_UID) {
+        if (!GameConstants.isServerBotUid(targetUid)) {
             targetUid = event.getTargetUid();
             if (targetUid == -1) return;
         }
@@ -155,6 +145,17 @@ public class ChatSystem implements ChatSystemHandler {
         player.sendPacket(packet);
         putInHistory(player.getUid(), targetUid, packet.getChatInfo());
 
+        // DPS commander: handles DPS only and replies with usage for anything else
+        if (targetUid == GameConstants.SERVER_DPS_UID) {
+            if (!DPSMeter.handleChat(player, message)) {
+                sendPrivateMessageFromBot(
+                        GameConstants.SERVER_DPS_UID,
+                        player.getUid(),
+                        "Usage: send dps30 (or dps60) to start a run; send dpsstop to end it early.");
+            }
+            return;
+        }
+
         // Check if command
         var isCommand = tryInvokeCommand(player, target, message);
 
@@ -167,7 +168,7 @@ public class ChatSystem implements ChatSystemHandler {
     public void sendPrivateMessage(Player player, int targetUid, int emote) {
         // Get target.
         var target = getServer().getPlayerByUid(targetUid);
-        if (target == null && targetUid != GameConstants.SERVER_CONSOLE_UID) {
+        if (target == null && !GameConstants.isServerBotUid(targetUid)) {
             return;
         }
 
@@ -177,7 +178,7 @@ public class ChatSystem implements ChatSystemHandler {
         if (event.isCanceled()) return;
 
         // Fetch the new target.
-        if (targetUid != GameConstants.SERVER_CONSOLE_UID) {
+        if (!GameConstants.isServerBotUid(targetUid)) {
             targetUid = event.getTargetUid();
             if (targetUid == -1) return;
         }
@@ -257,5 +258,26 @@ public class ChatSystem implements ChatSystemHandler {
         if (joinOptions.welcomeMessage != null && joinOptions.welcomeMessage.length() > 0) {
             this.sendPrivateMessageFromServer(player.getUid(), joinOptions.welcomeMessage);
         }
+    }
+
+    /**
+     * Sends the console conversation (welcome messages on first use) so the bot chat is there right
+     * after login, not only once the client pulls it after a teleport.
+     */
+    public void ensureServerConversation(Player player) {
+        var serverHistory = copyHistory(player.getUid(), GameConstants.SERVER_CONSOLE_UID);
+        if (serverHistory.isEmpty()) {
+            this.sendServerWelcomeMessages(player);
+            serverHistory = copyHistory(player.getUid(), GameConstants.SERVER_CONSOLE_UID);
+        }
+
+        if (serverHistory.isEmpty()) {
+            return;
+        }
+
+        int historyLength = serverHistory.size();
+        var recentMessages = serverHistory.subList(Math.max(historyLength - 3, 0), historyLength);
+        player.sendPacket(new PacketPullRecentChatRsp(recentMessages));
+        player.sendPacket(new PacketPullPrivateChatRsp(serverHistory));
     }
 }

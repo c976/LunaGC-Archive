@@ -5,23 +5,25 @@ import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.GetSceneAreaRspOuterClass.GetSceneAreaRsp;
 
 public class PacketGetSceneAreaRsp extends BasePacket {
-
     public PacketGetSceneAreaRsp(Player player, int sceneId) {
         super(PacketOpcodes.GetSceneAreaRsp);
 
         this.buildHeader(0);
 
-        GetSceneAreaRsp p =
+        // Map fog is a client presentation setting; never grant area unlocks while replying.
+        GetSceneAreaRsp.Builder b =
                 GetSceneAreaRsp.newBuilder()
                         .setSceneId(sceneId)
-                        .addAllAreaIdList(player.getUnlockedSceneAreas(sceneId))
-                        .addCityInfoList(player.getSotsManager().getCityInfo(1).toProto())
-                        .addCityInfoList(player.getSotsManager().getCityInfo(2).toProto())
-                        .addCityInfoList(player.getSotsManager().getCityInfo(3).toProto())
-                        .addCityInfoList(player.getSotsManager().getCityInfo(4).toProto())
-                        .addCityInfoList(player.getSotsManager().getCityInfo(5).toProto())
-                        .build();
+                        .addAllAreaIdList(SceneAreaVisibility.forPlayer(player, sceneId));
 
-        this.setData(p);
+        // Cities 1..10 (Mondstadt..Nod-Krai era); SotS trees / statue levels.
+        for (int cityId = 1; cityId <= 10; cityId++) {
+            try {
+                b.addCityInfoList(player.getSotsManager().getCityInfo(cityId).toProto());
+            } catch (Throwable ignored) {
+            }
+        }
+
+        this.setData(b.build());
     }
 }

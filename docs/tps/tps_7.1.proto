@@ -1,0 +1,115 @@
+// TPS (third-person shooter) protocol of 7.1.0, recovered by structure from the obfuscated dump.
+// Each message notes its 7.1 obfuscated name and the 7.0 message it was matched to.
+// Fields named in UPPER CASE are still unidentified. Lower-case names the 7.0 TPS name list gets
+// wrong (see README.md) are replaced by descriptive ones and marked "descriptive".
+//
+// Generated into src/generated: everything down to TpsEquipChangeNotify, plus the renamed fields
+// of SceneWeaponInfo / SceneAvatarInfo / AvatarInfo / _TpsWeapon at the bottom.
+syntax = "proto3";
+
+// CmdId: 20756   7.1 BLBLCMEFDEK  <- 7.0 DHOKPFPMBAL (8152)
+message WearTpsEquipReq {
+  uint64 avatar_guid = 5;
+  repeated uint64 equip_guid_list = 13;   // the full list the avatar should wear
+}
+
+// CmdId: 25902   7.1 CNHCNOGBKAH  <- 7.0 JAPMAEHMHPG (27549)
+message WearTpsEquipRsp {
+  int32 retcode = 7;
+  uint64 avatar_guid = 12;
+  repeated uint64 equip_guid_list = 13;
+}
+
+// CmdId: 21312   7.1 FGIDLEPIPAG  <- 7.0 PJFEBILHHJJ (25951)
+message TpsEquipChangeNotify {
+  uint64 avatar_guid = 3;
+  repeated SceneWeaponInfo tps_weapon_list = 7;   // MJGFMDADPJE, as in SceneAvatarInfo.31; not weapon_list (OCBIBFHOCAG)
+}
+
+// 7.1 JENJHKPCEOK. Payload of AbilityInvokeArgument 31 (ABILITY_META_UPDATE_TPS_WEAPON_AMMUNITION).
+message AbilityMetaUpdateTpsWeaponAmmunition {
+  TpsAmmunitionUpdateType update_type = 3;
+  bool FENKFADBDID = 7;                                 // 7.0 EMAGJIJHBGM, unnamed
+  repeated TpsWeaponAccessoryInfo accessory_list = 8;   // 7.0 field 6
+  repeated TpsAmmunitionChange ammunition_list = 9;     // 7.0 field 4
+}
+
+// 7.1 MKNDJEMPCJK (value names survive in the dump)
+enum TpsAmmunitionUpdateType {
+  TpsAmmunitionUpdateType_COST = 0;
+  TpsAmmunitionUpdateType_RELOAD = 1;
+  TpsAmmunitionUpdateType_PICKED = 2;
+  TpsAmmunitionUpdateType_SUPPLY = 3;
+}
+
+// 7.1 MLCOEDLCCAA  <- 7.0 IBIMPAJBFOP
+message TpsAmmunitionChange {
+  uint32 ammunition_config_id = 7;   // PPFJCENMNEO, TpsAmmunitionExcelConfigData id (1001...); not item_id
+  int32 change_count = 12;           // CEAMPEAIPPJ, descriptive: 7.1's change_count is DOCFIDJNIFO
+}
+
+// 7.1 EGFFJBICIHP  <- 7.0 ANLNAOGOBFM
+message TpsWeaponAccessoryInfo {
+  uint32 ammunition_type = 7;   // ammo slot id (101, 102, ...)
+  uint32 ammunition_config_id = 11;
+  uint32 KAPHEDKKFGK = 12;      // 7.0 list: slot_index / level. Neither is 7.1's level (MLADOODEJDP)
+  uint32 MHFBBNKOBPK = 14;
+}
+
+// 7.1 EGKCABANFKE  <- 7.0 IMPFHAGJHCE. Field numbers identical to 7.0.
+message TpsWeaponAmmunitionInfo {
+  uint32 ammunition_type = 1;
+  uint32 ammunition_config_id = 2;
+  uint32 current_ammunition = 3;
+}
+
+// ---- Matched, not generated (no handler uses them yet) ----
+
+// CmdId: 6579    7.1 JONAGHOAMLH  <- 7.0 JPHBCDGGFOF (23690)
+message TpsRegionalPlaySupplyInfoNotify {
+  repeated TpsSupplyProgressInfo supply_progress_list = 11;
+}
+
+// 7.1 EBPGOAKBPBG  <- 7.0 HJOPNGJBLBN
+message TpsSupplyProgressInfo {
+  uint32 ammunition_config_id = 1;   // PPFJCENMNEO, same name as in TpsAmmunitionChange
+  uint32 supply_progress = 14;       // DFEMHODHAAP, descriptive: 7.1's progress is GLEDHAJBGBN
+}
+
+// CmdId: 24371   7.1 ONMCNLDIGJK  <- 7.0 HGKMLCKCHBD (24406). No real name in either
+// translation; the element uses the same field names as TpsAmmunitionChange, hence the name.
+message TpsAmmunitionChangeNotify {
+  repeated TpsAmmunitionChangeNotifyEntry ammunition_list = 6;
+}
+
+// 7.1 BOOHJPLDHBO  <- 7.0 JCGFEBNFLJP
+message TpsAmmunitionChangeNotifyEntry {
+  int32 change_count = 4;            // CEAMPEAIPPJ, as in TpsAmmunitionChange
+  uint32 ammunition_config_id = 8;   // PPFJCENMNEO
+}
+
+// 7.1 DDGNBAHLAPL  <- 7.0 FHDLHJICDHB. Weapon record inside the TPS Mercenaries record.
+message TpsMercenariesWeapon {
+  uint32 use_weapon_id = 1;
+  repeated uint32 accessory_id_list = 2;
+  repeated Uint32Pair affix_list = 3;
+}
+
+// Widget quick slots. SetReq is named by the 7.1 translation; the two Rsp candidates have the
+// same shape and field names, so which one is Get and which is Set cannot be told from the dumps.
+//   CmdId 21516  HJAKNEHFCHL  _SetWidgetQuickSlotListReq { repeated uint32 material_id_list = 11; uint32 current_slot_num = 5; }
+//   CmdId  5047  DBFECABICCB  Get/SetWidgetQuickSlotListRsp { material_id_list = 13; retcode = 7; current_slot_num = 14; }
+//   CmdId  6316  KCCBLAGFICF  Get/SetWidgetQuickSlotListRsp { material_id_list = 3; retcode = 15; current_slot_num = 13; }
+//   GetWidgetQuickSlotListReq is empty: 658 empty messages in 7.1, not identifiable.
+// QuickUseWidgetReq (1490, CELAGCPDGJK): client_sequence = 856 (FFFAMCIGDLE, same name as
+// QuickUseWidgetRsp field 3), is_force_ignore_cd = 1653 (MCJMJFEJJHI).
+//
+// TpsEntityFightPropUpdateNotify (7.0 translation KHAAHLBEIAC): no 7.1 packet has its shape other
+// than EntityFightPropUpdateNotify (9736) and EntityFightPropNotify (27270), already in use.
+
+// ---- Fields of existing messages, renamed ----
+// SceneWeaponInfo (DKNCOJDGJDN):  repeated TpsWeaponAmmunitionInfo ammunition_list = 12;
+// SceneAvatarInfo (KLCICGEAJGM):  repeated SceneWeaponInfo tps_weapon_list = 31;   // 7.1 MJGFMDADPJE
+// AvatarInfo      (BOGJDPMGBCF):  repeated SceneWeaponInfo tps_weapon_list = 37;   // 7.1 MJGFMDADPJE
+// _TpsWeapon      (LKOFLFILCGE):  repeated uint32 accessory_id_list = 2;           // 7.1 PIEHFOHGDBI
+// Item            (DJOOINOLFCO):  _TpsWeapon tps_weapon = 10;                      // already named

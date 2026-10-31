@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "_TakeAllForgeOutputRspOuterClass";
+
+import "ItemHint.proto";
+
+message _TakeAllForgeOutputRsp {
+  repeated ItemHint output_item_list = 12;
+  repeated ItemHint extra_output_item_list = 7;
+  repeated ItemHint return_item_list = 5;
+  repeated int32 unknown_list = 9;
+  int32 retcode = 2;
+}

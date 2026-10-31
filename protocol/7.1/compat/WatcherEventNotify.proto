@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 23532 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message WatcherEventNotify {
+  uint32 add_progress = 15;
+  uint32 watcher_id = 11;
+}

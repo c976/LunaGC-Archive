@@ -9,6 +9,7 @@ public class PlayerGachaInfo {
     private PlayerGachaBannerInfo eventCharacterBanner;
     private PlayerGachaBannerInfo eventWeaponBanner;
     private PlayerGachaBannerInfo chronicleBanner;
+    private PlayerGachaBannerInfo chronicleWeaponBanner;
 
     public PlayerGachaInfo() {
         this.standardBanner = new PlayerGachaBannerInfo();
@@ -39,6 +40,11 @@ public class PlayerGachaInfo {
     public PlayerGachaBannerInfo getChronicleBanner() {
         if (this.chronicleBanner == null) this.chronicleBanner = new PlayerGachaBannerInfo();
         return this.chronicleBanner;
+    }
+
+    public PlayerGachaBannerInfo getChronicleWeaponBanner() {
+        if (this.chronicleWeaponBanner == null) this.chronicleWeaponBanner = new PlayerGachaBannerInfo();
+        return this.chronicleWeaponBanner;
     }
 
     public PlayerGachaBannerInfo getBannerInfo(GachaBanner banner) {

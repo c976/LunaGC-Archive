@@ -3,8 +3,10 @@ package emu.grasscutter.game.avatar;
 import static emu.grasscutter.config.Configuration.GAME_OPTIONS;
 
 import dev.morphia.annotations.*;
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.GameConstants;
 import emu.grasscutter.data.GameData;
+import emu.grasscutter.data.binout.ExtraTalents;
 import emu.grasscutter.data.binout.OpenConfigEntry;
 import emu.grasscutter.data.binout.OpenConfigEntry.SkillPointModifier;
 import emu.grasscutter.data.common.FightPropData;
@@ -16,10 +18,15 @@ import emu.grasscutter.data.excels.reliquary.*;
 import emu.grasscutter.data.excels.trial.TrialAvatarTemplateData;
 import emu.grasscutter.data.excels.weapon.*;
 import emu.grasscutter.database.DatabaseHelper;
+import emu.grasscutter.game.ability.AbilityMaxHpRatioHelper;
+import emu.grasscutter.game.ability.SymphonistWeaponHelper;
+import emu.grasscutter.game.ability.WaterResonanceHelper;
+import emu.grasscutter.game.avatar.AvatarStatePersist;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AvatarFetterInfoOuterClass.AvatarFetterInfo;
 import emu.grasscutter.net.proto.AvatarInfoOuterClass.AvatarInfo;
 import emu.grasscutter.net.proto.AvatarSkillInfoOuterClass.AvatarSkillInfo;
@@ -35,6 +42,10 @@ import emu.grasscutter.utils.helpers.ProtoHelper;
 import it.unimi.dsi.fastutil.ints.*;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 import javax.annotation.*;
 import lombok.*;
@@ -64,6 +75,9 @@ public class Avatar {
 
     private List<Integer> fetters;
 
+    // TPS weapons this avatar wears, by item id (each TPS weapon is unique per player).
+    private List<Integer> tpsWeaponIds;
+
     private Map<Integer, Integer> skillLevelMap = new Int2IntArrayMap(7); // Talent levels
 
     @Transient @Getter
@@ -79,6 +93,7 @@ public class Avatar {
 
     @Getter @Setter private int flyCloak;
     @Getter @Setter private int costume;
+    @Getter @Setter private int weaponSkinId;
     @Getter private int bornTime;
 
     @Getter @Setter private int fetterLevel = 1;
@@ -86,6 +101,7 @@ public class Avatar {
 
     @Getter @Setter private int nameCardRewardId;
     @Getter @Setter private int nameCardId;
+    private Set<Integer> rewardedFetterLevels = new HashSet<>();
     @Getter @Setter private int traceEffect;
 
     // trial avatar property
@@ -356,6 +372,8 @@ public class Avatar {
         if (depot != null && depot.getEnergySkillData() != null) {
             ElementType element = depot.getElementType();
             var maxEnergy = depot.getEnergySkillData().getCostElemVal();
+            // Saves from before the refill cap can hold more than the max.
+            if (maxEnergy > 0 && currentEnergy > maxEnergy) currentEnergy = maxEnergy;
             this.setFightProperty(element.getMaxEnergyProp(), maxEnergy);
             this.setFightProperty(
                     element.getCurEnergyProp(), GAME_OPTIONS.energyUsage ? currentEnergy : maxEnergy);
@@ -411,7 +429,10 @@ public class Avatar {
         this.skillDepot
                 .getSkillsAndEnergySkill()
                 .forEach(
-                        skillId -> map.put(skillId, this.skillLevelMap.putIfAbsent(skillId, 1).intValue()));
+                        // putIfAbsent returns the old value, null for a skill the save has never
+                        // seen, so every avatar saved before a depot gained a skill (the attack
+                        // mode skill, for one) failed to load and its player could not log in.
+                        skillId -> map.put(skillId, this.skillLevelMap.computeIfAbsent(skillId, id -> 1).intValue()));
         return map;
     }
 
@@ -453,6 +474,13 @@ public class Avatar {
             // One below the lowest locked talent, or 6 if there are no locked talents.
             return lockedTalents.intStream().map(i -> i % 10).min().orElse(7) - 1;
         } else return 0;
+    }
+
+    public List<Integer> getTpsWeaponIds() {
+        if (this.tpsWeaponIds == null) {
+            this.tpsWeaponIds = new ArrayList<>();
+        }
+        return this.tpsWeaponIds;
     }
 
     public boolean equipItem(GameItem item, boolean shouldRecalc) {
@@ -525,6 +553,81 @@ public class Avatar {
         return false;
     }
 
+    // --- AvatarFightPropNotify coalescing ---------------------------------
+    // recalcStats() used to send one AvatarFightPropNotify per call. Combat calls it once per
+    // modifier add/remove, so a single ClientAbilityChangeNotify fanned out into dozens of these
+    // - measured at 550/s for one avatar, which starved the client's frame loop. Coalesced here:
+    // the first send goes out immediately, further ones inside the window collapse into a single
+    // trailing send so the client always ends on the final state.
+    private static final long FIGHT_PROP_COALESCE_MS = 120L;
+    private static final ConcurrentHashMap<Long, Long> FIGHT_PROP_LAST_SENT =
+            new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<Long, Avatar> FIGHT_PROP_PENDING =
+            new ConcurrentHashMap<>();
+    private static final ScheduledExecutorService FIGHT_PROP_FLUSH =
+            Executors.newSingleThreadScheduledExecutor(
+                    runnable -> {
+                        Thread thread = new Thread(runnable, "avatar-fightprop-flush");
+                        thread.setDaemon(true);
+                        return thread;
+                    });
+
+    private void sendFightPropNotifyNow() {
+        Player player = this.getPlayer();
+        if (player == null || !player.hasSentLoginPackets()) {
+            return;
+        }
+        player.sendPacket(new PacketAvatarFightPropNotify(this));
+    }
+
+    /**
+     * Coalesced full-props send. Prefer this over building a {@link PacketAvatarFightPropNotify} by
+     * hand: the first call in a window goes out immediately, later calls inside the same window
+     * collapse into one trailing send that carries the final state.
+     */
+    public void queueFightPropNotify() {
+        long guid = this.getGuid();
+        long now = System.nanoTime();
+        Long last = FIGHT_PROP_LAST_SENT.get(guid);
+        if (last == null || now - last >= TimeUnit.MILLISECONDS.toNanos(FIGHT_PROP_COALESCE_MS)) {
+            FIGHT_PROP_LAST_SENT.put(guid, now);
+            this.sendFightPropNotifyNow();
+            return;
+        }
+        if (FIGHT_PROP_PENDING.putIfAbsent(guid, this) == null) {
+            FIGHT_PROP_FLUSH.schedule(
+                    () -> {
+                        Avatar pending = FIGHT_PROP_PENDING.remove(guid);
+                        if (pending == null) {
+                            return;
+                        }
+                        FIGHT_PROP_LAST_SENT.put(guid, System.nanoTime());
+                        try {
+                            pending.sendFightPropNotifyNow();
+                        } catch (Throwable ignored) {
+                            // The player may have gone offline between queue and flush.
+                        }
+                    },
+                    FIGHT_PROP_COALESCE_MS,
+                    TimeUnit.MILLISECONDS);
+        }
+    }
+
+    /** Drops this player coalescing state so the static maps do not outlive the session. */
+    public static void clearFightPropNotifyState(Player player) {
+        if (player == null || player.getAvatars() == null) {
+            return;
+        }
+        for (Avatar avatar : player.getAvatars().getAvatars().values()) {
+            if (avatar == null) {
+                continue;
+            }
+            long guid = avatar.getGuid();
+            FIGHT_PROP_PENDING.remove(guid);
+            FIGHT_PROP_LAST_SENT.remove(guid);
+        }
+    }
+
     public void recalcStats() {
         recalcStats(false);
     }
@@ -574,10 +677,19 @@ public class Avatar {
         this.setFightProperty(FightProperty.FIGHT_PROP_CRITICAL, data.getBaseCritical());
         this.setFightProperty(FightProperty.FIGHT_PROP_CRITICAL_HURT, data.getBaseCriticalHurt());
         this.setFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 1f);
+        // Character-sheet base EM (AvatarExcelConfigData.elementMastery), e.g. Lauma 200 / Nefer 100.
+        // Ascension EM (if any) is added below via promoteData.
+        this.setFightProperty(FightProperty.FIGHT_PROP_ELEMENT_MASTERY, data.getElementMastery());
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_SPECIAL_ENERGY, specialEnergy);
         this.setFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP, nyxValue);
-        this.setFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY, 200);
-        this.setFightProperty(FightProperty.FIGHT_PROP_START_SPECIAL_ENERGY, 100);
+        // The burst's own specialEnergyMin, not a flat 200: Mavuika's Fighting Spirit does want 200
+        // but Skirk's wants 100, and a doubled bar never fills.
+        float maxSpecialEnergy = 0f;
+        if (this.getSkillDepot() != null && this.getSkillDepot().getEnergySkillData() != null) {
+            maxSpecialEnergy = this.getSkillDepot().getEnergySkillData().getSpecialEnergyMin();
+        }
+        this.setFightProperty(FightProperty.FIGHT_PROP_MAX_SPECIAL_ENERGY, maxSpecialEnergy);
+        this.setFightProperty(FightProperty.FIGHT_PROP_START_SPECIAL_ENERGY, maxSpecialEnergy / 2f);
 
         if (promoteData != null) {
             for (FightPropData fightPropData : promoteData.getAddProps()) {
@@ -696,7 +808,11 @@ public class Avatar {
             }
         }
 
+        // TPS weapons: their affix openConfigs carry the Avatar_TPS_* aim, shoot and reload abilities
+        TpsWeaponSystem.applyAffixes(this);
+
         // Add proud skills and unlock them if needed
+        var talentOwners = new HashSet<String>();
         AvatarSkillDepotData skillDepot =
                 GameData.getAvatarSkillDepotDataMap().get(this.getSkillDepotId());
         this.getProudSkillList().clear();
@@ -734,20 +850,31 @@ public class Avatar {
 
             // Add any embryos from this proud skill
             this.addToExtraAbilityEmbryos(proudSkillData.getOpenConfig());
+            talentOwners.add(ExtraTalents.owner(proudSkillData.getOpenConfig()));
         }
 
+        // Skill openConfigs (e.g. PlayerGirl_Ice_SkillUpgrade_1 AddAbility for
+        // StarSuperconducted_Attack01..05). Without these embryos, ice-infusion pattern
+        // replacement has no attack abilities → visual infusion, zero hits.
         if (skillDepot != null) {
+            var skillLevelMap = this.getSkillLevelMap();
             skillDepot
                     .getSkillsAndEnergySkill()
-                    .mapToObj(GameData.getAvatarSkillDataMap()::get)
-                    .filter(Objects::nonNull)
-                    .mapToInt(AvatarSkillData::getProudSkillGroupId)
-                    .filter(groupId -> groupId > 0)
-                    .mapToObj(groupId -> GameData.getProudSkillDataMap().get((groupId * 100) + 1))
-                    .filter(Objects::nonNull)
-                    .map(ProudSkillData::getOpenConfig)
-                    .filter(Objects::nonNull)
-                    .forEach(this::addToExtraAbilityEmbryos);
+                    .forEach(
+                            skillId -> {
+                                var skillCfg = GameData.getAvatarSkillDataMap().get(skillId);
+                                if (skillCfg == null || skillCfg.getProudSkillGroupId() == 0) {
+                                    return;
+                                }
+                                int level = skillLevelMap.getOrDefault(skillId, 1);
+                                ProudSkillData skillProud =
+                                        GameData.getProudSkillDataMap()
+                                                .get(skillCfg.getProudSkillGroupId() * 100 + level);
+                                if (skillProud != null) {
+                                    this.addToExtraAbilityEmbryos(skillProud.getOpenConfig());
+                                    talentOwners.add(ExtraTalents.owner(skillProud.getOpenConfig()));
+                                }
+                            });
         }
 
         // Constellations
@@ -757,6 +884,13 @@ public class Avatar {
                 .filter(Objects::nonNull)
                 .map(AvatarTalentData::getOpenConfig)
                 .filter(Objects::nonNull)
+                .forEach(
+                        openConfig -> {
+                            this.addToExtraAbilityEmbryos(openConfig);
+                            talentOwners.add(ExtraTalents.owner(openConfig));
+                        });
+
+        ExtraTalents.forOwners(talentOwners, this.getAvatarData().getName())
                 .forEach(this::addToExtraAbilityEmbryos);
         // Add any skill strings from this constellation
 
@@ -773,9 +907,16 @@ public class Avatar {
         this.fightProperties.putAll(this.fightPropOverrides);
 
         // Set current hp
+        // Clamped to the freshly computed max: a max-HP-ratio modifier (Actor_MaxHPRatio, e.g.
+        // Columbina C2 / Yelan C4 / Furina overflow) can leave CUR_HP above MAX_HP once it expires,
+        // and an unclamped value survives every recalc - hpPercent then stays above 1 and is fed
+        // straight back in - and gets persisted. Such a character's HP bar reads full while the real
+        // value sits above the cap, so damage appears to do nothing until the surplus is eaten.
+        float restoredHp =
+                this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent;
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
-                this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent);
+                Math.min(restoredHp, this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP)));
 
         // Set HP Debts
         this.setFightProperty(
@@ -786,14 +927,39 @@ public class Avatar {
 
         // Packet
         if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {
-            // Update stats for client
-            getPlayer().sendPacket(new PacketAvatarFightPropNotify(this));
+            // Update stats for client (coalesced, see queueFightPropNotify)
+            this.queueFightPropNotify();
             // Update client abilities
             EntityAvatar entity = this.getAsEntity();
             if (entity != null
                     && (!this.getExtraAbilityEmbryos().equals(prevExtraAbilityEmbryos)
                             || forceSendAbilityChange)) {
                 getPlayer().sendPacket(new PacketAbilityChangeNotify(entity));
+            }
+        }
+
+        runRecalcHook("Symphonist recalc hook", () -> SymphonistWeaponHelper.onAfterRecalc(this));
+        runRecalcHook("MaxHPRatio afterRecalc", () -> AbilityMaxHpRatioHelper.afterRecalc(this));
+        runRecalcHook("WaterResonance afterRecalc", () -> WaterResonanceHelper.afterRecalc(this));
+        AvatarStatePersist.afterRecalc(this);
+    }
+
+    /**
+     * Runs one post-recalc hook, and reports a failure once rather than once per recalc.
+     *
+     * <p>Stats are recalculated constantly - on every equip, level, constellation and talent - so a
+     * hook that fails for one avatar fails for every recalc of it. One broken hook produced 1206 of
+     * the 1363 lines in a single server log.
+     */
+    private static void runRecalcHook(String name, Runnable hook) {
+        try {
+            hook.run();
+        } catch (Throwable t) {
+            var line = name + ": " + t;
+            if (REPORTED_RECALC_FAILURES.add(line)) {
+                Grasscutter.getLogger().warn("{} (further identical failures are at debug)", line);
+            } else {
+                Grasscutter.getLogger().debug(line);
             }
         }
     }
@@ -849,6 +1015,15 @@ public class Avatar {
     }
 
     public void recalcConstellations() {
+        // Team talent / temporary ExtraLevel bonuses store negative-key contributions in this map.
+        // Clearing without restore leaves Skirk/Tartaglia/Lohen bonuses missing until refresh.
+        java.util.HashMap<Integer, Integer> teamBonusPreserve = new java.util.HashMap<>();
+        for (var entry : this.proudSkillBonusMap.entrySet()) {
+            if (entry.getKey() != null && entry.getKey() < 0 && entry.getValue() != null && entry.getValue() > 0) {
+                teamBonusPreserve.put(entry.getKey(), entry.getValue());
+            }
+        }
+
         // Clear first
         this.proudSkillBonusMap.clear();
         this.skillExtraChargeMap.clear();
@@ -868,6 +1043,33 @@ public class Avatar {
                 .map(GameData.getOpenConfigEntries()::get)
                 .filter(Objects::nonNull)
                 .forEach(e -> this.calcConstellation(e, false));
+
+        for (var entry : teamBonusPreserve.entrySet()) {
+            int groupId = -entry.getKey();
+            int contrib = entry.getValue();
+            this.proudSkillBonusMap.put(entry.getKey(), contrib);
+            this.proudSkillBonusMap.merge(groupId, contrib, Integer::sum);
+        }
+
+        try {
+            if (this.getPlayer() != null) {
+                SkirkTeamBonusHelper.onConstellationRecalc(this.getPlayer());
+            }
+        } catch (Throwable throwable) {
+            Grasscutter.getLogger().warn("Avatar recalcConstellations Skirk bonus: {}", throwable.toString());
+        }
+        try {
+            if (this.getPlayer() != null) {
+                TartagliaTeamBonusHelper.onConstellationRecalc(this.getPlayer());
+            }
+        } catch (Throwable throwable) {
+            Grasscutter.getLogger().warn("Avatar recalcConstellations Tartaglia bonus: {}", throwable.toString());
+        }
+        try {
+            emu.grasscutter.game.ability.LohenExtraArtSkillLevelHelper.onConstellationRecalc(this);
+        } catch (Throwable throwable) {
+            Grasscutter.getLogger().warn("Avatar recalcConstellations Lohen bonus: {}", throwable.toString());
+        }
     }
 
     private boolean calcConstellationExtraCharges(OpenConfigEntry entry) {
@@ -979,6 +1181,10 @@ public class Avatar {
     }
 
     public boolean unlockConstellation(int talentId, boolean skipPayment) {
+        return unlockConstellation(talentId, skipPayment, true);
+    }
+
+    private boolean unlockConstellation(int talentId, boolean skipPayment, boolean finalizeChange) {
         // Get talent
         AvatarTalentData talentData = GameData.getAvatarTalentDataMap().get(talentId);
         if (talentData == null) return false;
@@ -1003,25 +1209,31 @@ public class Avatar {
         // Proud skill bonus map (Extra skills)
         this.calcConstellation(GameData.getOpenConfigEntries().get(talentData.getOpenConfig()), true);
 
-        // Recalc + save avatar
-        this.recalcStats(true);
-        this.save();
+        // Ordinary unlocks commit immediately; GM bulk changes finalize once.
+        if (finalizeChange) {
+            this.recalcStats(true);
+            this.save();
+        }
         return true;
     }
 
     public void forceConstellationLevel(int level) {
         if (level > 6) return; // Sanity check
 
-        if (level < 0) { // Special case for resetConst to remove inactive depots too
+        if (level < 0) { // Reset also removes constellations from inactive depots.
             this.talentIdList.clear();
-            this.recalcStats();
-            this.save();
-            return;
+        } else {
+            this.talentIdList.removeAll(this.getTalentIdList());
+            for (int i = 0; i < level; i++) {
+                int nextLevel = this.getCoreProudSkillLevel();
+                if (this.skillDepot == null || nextLevel < 0
+                        || nextLevel >= this.skillDepot.getTalents().size()
+                        || !this.unlockConstellation(
+                                this.skillDepot.getTalents().get(nextLevel), true, false)) break;
+            }
         }
-        this.talentIdList.removeAll(
-                this.getTalentIdList()); // Only remove constellations from active depot
-        for (int i = 0; i < level; i++) this.unlockConstellation(true);
-        this.recalcStats();
+        this.recalcConstellations();
+        this.recalcStats(true);
         this.save();
     }
 
@@ -1038,8 +1250,17 @@ public class Avatar {
         return true;
     }
 
+    /** Post-recalc hook failures already reported, so each distinct one is named once. */
+    private static final Set<String> REPORTED_RECALC_FAILURES = ConcurrentHashMap.newKeySet();
+
     public EntityAvatar getAsEntity() {
-        for (EntityAvatar entity : getPlayer().getTeamManager().getActiveTeam()) {
+        // An avatar that is not attached to a player has no entity in any world. /give builds one
+        // before handing it over, and every recalc on it used to throw here and be caught and
+        // logged one layer up - 1206 warnings from a single /give all.
+        var owner = getPlayer();
+        if (owner == null || owner.getTeamManager() == null) return null;
+
+        for (EntityAvatar entity : owner.getTeamManager().getActiveTeam()) {
             if (entity.getAvatar() == this) {
                 return entity;
             }
@@ -1054,6 +1275,24 @@ public class Avatar {
 
     public void save() {
         DatabaseHelper.saveAvatar(this);
+    }
+
+    /**
+     * Fetter levels whose reward was claimed. The name card counts once the player owns it, so a
+     * card granted by command or claimed before this was tracked clears the red dot too.
+     */
+    public Set<Integer> getRewardedFetterLevels() {
+        var levels = new TreeSet<Integer>();
+        if (this.rewardedFetterLevels != null) levels.addAll(this.rewardedFetterLevels);
+        if (this.nameCardId != 0 && this.getPlayer().getNameCardList().contains(this.nameCardId)) {
+            levels.add(10);
+        }
+        return levels;
+    }
+
+    public void addRewardedFetterLevel(int fetterLevel) {
+        if (this.rewardedFetterLevels == null) this.rewardedFetterLevels = new HashSet<>();
+        this.rewardedFetterLevels.add(fetterLevel);
     }
 
     public AvatarInfo toProto() {
@@ -1073,11 +1312,7 @@ public class Avatar {
                                             .setFetterState(FetterState.FINISH.getValue())));
         }
 
-        int cardId = this.getNameCardId();
-
-        if (this.getPlayer().getNameCardList().contains(cardId)) {
-            avatarFetter.addRewardedFetterLevelList(10);
-        }
+        avatarFetter.addAllRewardedFetterLevelList(this.getRewardedFetterLevels());
 
         AvatarInfo.Builder avatarInfo =
                 AvatarInfo.newBuilder()
@@ -1096,7 +1331,8 @@ public class Avatar {
                         .setFetterInfo(avatarFetter)
                         .setWearingFlycloakId(this.getFlyCloak())
                         .setCostumeId(this.getCostume())
-                        .setTraceEffectId(this.getTraceEffect());
+                        .setTraceEffectId(this.getTraceEffect())
+                        .setWeaponSkinId(this.getWeaponSkinId());
 
         this.getSkillExtraChargeMap()
                 .forEach(
@@ -1105,6 +1341,7 @@ public class Avatar {
                                         skillId, AvatarSkillInfo.newBuilder().setMaxChargeCount(count).build()));
 
         this.getEquips().forEach((k, item) -> avatarInfo.addEquipGuidList(item.getGuid()));
+        avatarInfo.addAllTpsWeaponList(TpsWeaponSystem.getSceneWeaponInfos(this));
 
         avatarInfo.putPropMap(
                 PlayerProperty.PROP_LEVEL.getId(),
@@ -1122,6 +1359,15 @@ public class Avatar {
                 PlayerProperty.PROP_SATIATION_PENALTY_TIME.getId(),
                 ProtoHelper.newPropValue(
                         PlayerProperty.PROP_SATIATION_PENALTY_TIME, this.getSatiationPenalty()));
+
+        var expeditionInfo = this.getPlayer().getExpeditionInfo(this.getGuid());
+        if (expeditionInfo != null) {
+            avatarInfo.setExpeditionStateValue(expeditionInfo.getState());
+        }
+
+        // 7.x extra level (90->95->100): send the effective max level / extra tier so the
+        // character screen shows the breakthrough; without this the client never enables it.
+        emu.grasscutter.game.avatar.AvatarExtraLevelHelper.applyAvatarInfoExtraLevel(avatarInfo, this);
 
         return avatarInfo.build();
     }
@@ -1143,7 +1389,8 @@ public class Avatar {
                         .putAllSkillLevelMap(this.getSkillLevelMap())
                         .putAllProudSkillExtraLevelMap(this.getProudSkillBonusMap())
                         .setFetterInfo(avatarFetter)
-                        .setCostumeId(this.getCostume());
+                        .setCostumeId(this.getCostume())
+                        .setWeaponSkinId(this.getWeaponSkinId());
 
         showAvatarInfo.putPropMap(
                 PlayerProperty.PROP_LEVEL.getId(),
@@ -1218,7 +1465,7 @@ public class Avatar {
      */
     public int getTrialSkillLevel() {
         // Use default data if custom data not available.
-        if (GameData.getTrialAvatarCustomData().isEmpty()) {
+        if (GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId()) == null) {
             var template = getTrialTemplate(); // round trial level to fit template levels
 
             var templateData = GameData.getTrialAvatarTemplateDataMap().get(template);
@@ -1244,7 +1491,7 @@ public class Avatar {
      */
     public int getTrialWeaponId() {
         // Use default data if custom data not available.
-        if (GameData.getTrialAvatarCustomData().isEmpty()) {
+        if (GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId()) == null) {
             if (GameData.getTrialAvatarDataMap().get(this.getTrialAvatarId()) == null)
                 return this.getAvatarData().getInitialWeapon();
 
@@ -1268,7 +1515,7 @@ public class Avatar {
      */
     public List<Integer> getTrialReliquary() {
         // Use default data if custom data not available.
-        if (GameData.getTrialAvatarCustomData().isEmpty()) {
+        if (GameData.getTrialAvatarCustomData().get(this.getTrialAvatarId()) == null) {
             int trialAvatarTemplateLevel = getTrialTemplate();
 
             TrialAvatarTemplateData templateData =
@@ -1373,11 +1620,41 @@ public class Avatar {
     }
 
     @PostLoad
-    private void onLoad() {}
+    private void onLoad() {
+        // 存档里的 currentHp 是权威值。构造期 recalc 已经把 CUR_HP 写成过
+        // “属性表还没加载完时算出的临时上限”（例如 5311），如果直接 stash 这个临时值，
+        // 后续 recalc 会把临时值当成“玩家当前血”恢复回去，存档血就永远丢了。
+        // 这里先把存档血写回战斗属性，再 stash，保证恢复链拿到的是存档血。
+        float miaoSavedHp = this.currentHp;
+        if (miaoSavedHp > 1.0f) {
+            this.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP, miaoSavedHp);
+        }
+        AvatarStatePersist.stash(this, miaoSavedHp, this.currentEnergy, this.nyxValue);
+    }
 
     @PrePersist
     private void prePersist() {
+        float miaoCurProp = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+        float miaoMax = this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+        if (Math.abs(miaoCurProp - this.currentHp) > 1.0f) {
+        }
+        // Never persist an above-max HP: a max-HP-ratio modifier (Actor_MaxHPRatio) raises the cap
+        // while it is active, and persisting that inflated value makes it permanent once the
+        // modifier is gone. MAX_HP is fully computed by the time we save, so clamping here is safe.
         this.currentHp = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+        float persistedMaxHp = this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+        if (persistedMaxHp > 0f && this.currentHp > persistedMaxHp) {
+            this.currentHp = persistedMaxHp;
+        }
+        try {
+            AvatarSkillDepotData depot = this.getSkillDepot();
+            if (depot != null && depot.getElementType() != null) {
+                this.currentEnergy = this.getFightProperty(depot.getElementType().getCurEnergyProp());
+            }
+        } catch (Throwable ignored) {
+            // Keep persistence of HP even when a partially loaded depot is present.
+        }
+        this.nyxValue = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_NATLAN_HP);
     }
 
     @AllArgsConstructor

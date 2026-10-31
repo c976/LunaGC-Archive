@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "PlatformInfo.proto";
+
+// 7.1 CmdId 29891 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message PlatformStartRouteNotify {
+  PlatformInfo platform = 7;
+  uint32 entity_id = 2;
+  uint32 scene_time = 11;
+}

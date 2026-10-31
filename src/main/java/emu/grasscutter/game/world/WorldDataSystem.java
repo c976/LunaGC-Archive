@@ -48,19 +48,6 @@ public class WorldDataSystem extends BaseGameSystem {
         return chestInteractHandlerMap;
     }
 
-    public RewardPreviewData getRewardByBossId(int monsterId) {
-        var investigationMonsterData =
-                GameData.getInvestigationMonsterDataMap().values().parallelStream()
-                        .filter(imd -> imd.getMonsterIdList() != null && !imd.getMonsterIdList().isEmpty())
-                        .filter(imd -> imd.getMonsterIdList().contains(monsterId))
-                        .findFirst();
-
-        return investigationMonsterData
-                .map(
-                        monsterData -> GameData.getRewardPreviewDataMap().get(monsterData.getRewardPreviewId()))
-                .orElse(null);
-    }
-
     private SceneGroup getInvestigationGroup(int sceneId, int groupId) {
         var key = sceneId + "_" + groupId;
         if (!sceneInvestigationGroupMap.containsKey(key)) {
@@ -89,47 +76,13 @@ public class WorldDataSystem extends BaseGameSystem {
 
     private InvestigationMonsterOuterClass.InvestigationMonster getInvestigationMonster(
             Player player, InvestigationMonsterData imd) {
-        if (imd.getGroupIdList().isEmpty() || imd.getMonsterIdList().isEmpty()) {
+        try {
+            return InvestigationTrackHelper.buildInvestigationMonster(player, imd);
+        } catch (Throwable t) {
+            Grasscutter.getLogger()
+                    .warn("InvestigationTrackHelper failed id={}: {}", imd.getId(), t.toString());
             return null;
         }
-
-        var groupId = imd.getGroupIdList().get(0);
-        var monsterId = imd.getMonsterIdList().get(0);
-        var sceneId = imd.getCityData().getSceneId();
-        var group = getInvestigationGroup(sceneId, groupId);
-
-        if (group == null || group.monsters == null) {
-            return null;
-        }
-
-        var monster =
-                group.monsters.values().stream().filter(x -> x.monster_id == monsterId).findFirst();
-        if (monster.isEmpty()) {
-            return null;
-        }
-
-        var builder = InvestigationMonsterOuterClass.InvestigationMonster.newBuilder();
-
-        builder
-                .setId(imd.getId())
-                .setCityId(imd.getCityId())
-                .setSceneId(imd.getCityData().getSceneId())
-                .setGroupId(groupId)
-                .setMonsterId(monsterId)
-                .setLevel(getMonsterLevel(monster.get(), player.getWorld()))
-                .setIsAlive(true)
-                .setNextRefreshTime(Integer.MAX_VALUE)
-                .setRefreshInterval(Integer.MAX_VALUE)
-                .setPos(monster.get().pos.toProto());
-
-        if ("Boss".equals(imd.getMonsterCategory())) {
-            var bossChest = group.searchBossChestInGroup();
-            if (bossChest.isPresent()) {
-                builder.setResin(bossChest.get().resin);
-                builder.setMaxBossChestNum(bossChest.get().take_num);
-            }
-        }
-        return builder.build();
     }
 
     public List<InvestigationMonsterOuterClass.InvestigationMonster> getInvestigationMonstersByCityId(
@@ -140,7 +93,8 @@ public class WorldDataSystem extends BaseGameSystem {
             return List.of();
         }
 
-        return GameData.getInvestigationMonsterDataMap().values().parallelStream()
+        // Sequential: InvestigationTrackHelper loads Lua groups via shared ScriptLoader bindings.
+        return GameData.getInvestigationMonsterDataMap().values().stream()
                 .filter(imd -> imd.getCityId() == cityId)
                 .map(imd -> this.getInvestigationMonster(player, imd))
                 .filter(Objects::nonNull)

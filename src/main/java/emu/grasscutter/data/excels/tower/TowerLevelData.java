@@ -14,6 +14,10 @@ public class TowerLevelData extends GameResource {
     private int dungeonId;
     private List<TowerLevelCond> conds;
     private int monsterLevel;
+    /** Chamber first-clear reward from RewardExcelConfigData. */
+    private int firstPassRewardId;
+    /** Weighted buff pools; one buff is rolled from each entry for the selection UI. */
+    private List<String> towerBuffConfigStrList;
 
     public static class TowerLevelCond {
         private TowerCondType towerCondType;

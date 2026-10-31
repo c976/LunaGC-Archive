@@ -6,12 +6,14 @@ import static emu.grasscutter.scripts.constants.EventType.EVENT_TIMER_EVENT;
 import com.github.davidmoten.rtreemulti.RTree;
 import com.github.davidmoten.rtreemulti.geometry.Geometry;
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.config.Configuration;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.server.Grid;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.platform.BaseRoute;
 import emu.grasscutter.game.props.EntityIdType;
+import emu.grasscutter.game.props.SceneType;
 import emu.grasscutter.game.quest.*;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.net.proto.VisionTypeOuterClass;
@@ -37,13 +39,20 @@ import org.luaj.vm2.lib.jse.CoerceJavaToLua;
 
 public class SceneScriptManager {
     private final Scene scene;
+    private final SealBattleManager sealBattleManager;
     private final Map<String, Integer> variables;
+    /** Mutable fallbacks when a group instance is not cached yet (tower stage/TPL_TIME writes). */
+    private final Map<Integer, Map<String, Integer>> orphanGroupVariables = new ConcurrentHashMap<>();
     private SceneMeta meta;
     private volatile boolean isInit;
     private volatile boolean initAttempted;
+    private volatile boolean destroyed;
+    private int executingEvents;
+    private final SceneScriptInitGate initialization = new SceneScriptInitGate();
     private boolean noCacheGroupGridsToDisk;
 
     private final Map<String, SceneTimeAxis> timeAxis = new ConcurrentHashMap<>();
+    private final Map<Integer, Set<Integer>> pendingCutsceneGroups = new HashMap<>();
 
     /** current triggers controlled by RefreshGroup */
     private final Map<Integer, Set<SceneTrigger>> currentTriggers;
@@ -51,17 +60,23 @@ public class SceneScriptManager {
     private final Set<SceneTrigger> ongoingTriggers;
     private final Map<String, Set<SceneTrigger>> triggersByGroupScene;
     private final Map<Integer, Set<Pair<String, Integer>>> activeGroupTimers;
+    private final LiyueCloudDungeonTimers liyueDungeonTimers = new LiyueCloudDungeonTimers(this);
+    private CompletableFuture<Void> liyueFireEvents = CompletableFuture.completedFuture(null);
+    private final Map<Integer, CompletableFuture<Void>> amberQuestEvents = new HashMap<>();
     private final Map<String, AtomicInteger> triggerInvocations;
     private final Map<Integer, EntityRegion> regions; // <EntityId-Region>
     private final Map<Integer, SceneGroup> sceneGroups;
     private final Map<Integer, SceneGroupInstance> sceneGroupsInstances;
     private final Map<Integer, SceneGroupInstance> cachedSceneGroupsInstances;
     private ScriptMonsterTideService scriptMonsterTideService;
+    private final List<ScriptMonsterTideService> monsterTides = new ArrayList<>();
+    private boolean restoringMonster;
     private ScriptMonsterSpawnService scriptMonsterSpawnService;
     /** blockid - loaded groupSet */
     private final Map<Integer, Set<SceneGroup>> loadedGroupSetPerBlock;
 
-    private static final Int2ObjectMap<List<Grid>> groupGridsCache = new Int2ObjectOpenHashMap<>();
+    private static final Int2ObjectMap<List<Grid>> groupGridsCache =
+            Int2ObjectMaps.synchronize(new Int2ObjectOpenHashMap<>()); // scenes init on their own threads
     public static final ExecutorService eventExecutor;
 
     static {
@@ -78,6 +93,7 @@ public class SceneScriptManager {
 
     public SceneScriptManager(Scene scene) {
         this.scene = scene;
+        this.sealBattleManager = new SealBattleManager(this);
         this.currentTriggers = new ConcurrentHashMap<>();
         this.ongoingTriggers = ConcurrentHashMap.newKeySet();
         this.triggersByGroupScene = new ConcurrentHashMap<>();
@@ -95,6 +111,8 @@ public class SceneScriptManager {
         // TEMPORARY
         if (this.getScene().getId() < 10
                 && !Grasscutter.getConfig().server.game.enableScriptInBigWorld) {
+            this.initAttempted = true;
+            this.initialization.complete(false);
             return;
         }
 
@@ -104,6 +122,34 @@ public class SceneScriptManager {
 
     public Scene getScene() {
         return scene;
+    }
+
+    /** Used under this monitor before nonlethal commission suspension. */
+    public synchronized boolean isExecutingScripts() {
+        return executingEvents != 0;
+    }
+
+    public int getTriggerInvocationCount(String name) {
+        var count = triggerInvocations.get(name);
+        return count == null ? 0 : count.get();
+    }
+
+    public void restoreTriggerInvocation(SceneTrigger trigger, int count) {
+        if (count < 0) throw new IllegalArgumentException("Negative trigger invocation count");
+        registerTrigger(trigger);
+        triggerInvocations.get(trigger.getName()).set(count);
+    }
+
+    public Set<Integer> getRegisteredRegionConfigs(int groupId) {
+        Set<Integer> result = new HashSet<>();
+        for (var region : regions.values()) {
+            if (region.getGroupId() == groupId) result.add(region.getMetaRegion().config_id);
+        }
+        return result;
+    }
+
+    public SealBattleManager getSealBattleManager() {
+        return sealBattleManager;
     }
 
     public SceneConfig getConfig() {
@@ -120,12 +166,31 @@ public class SceneScriptManager {
     }
 
     public Map<Integer, SceneBlock> getBlocks() {
-        return meta.blocks;
+        // init() leaves meta null when the scene has no script meta on disk, and getConfig()
+        // already reports that case gracefully. Iterating blocks must not be the thing that throws.
+        return this.meta == null ? Collections.emptyMap() : this.meta.blocks;
     }
 
-    @Nullable public Map<String, Integer> getVariables(int group_id) {
-        if (this.getCachedGroupInstanceById(group_id) == null) return Collections.emptyMap();
-        return getCachedGroupInstanceById(group_id).getCachedVariables();
+    /**
+     * Per-group Lua variables. Never return an immutable empty map: tower scripts write {@code
+     * stage}/{@code TPL_TIME} across groups, and {@link Collections#emptyMap()} throws on put.
+     */
+    public Map<String, Integer> getVariables(int group_id) {
+        var instance = this.getCachedGroupInstanceById(group_id);
+        if (instance == null) {
+            instance = this.getGroupInstanceById(group_id);
+        }
+        if (instance != null) {
+            var vars = instance.getCachedVariables();
+            if (vars != null) {
+                return vars;
+            }
+            // Morphia can leave the map null on older documents.
+            instance.ensureCachedVariables();
+            return instance.getCachedVariables();
+        }
+        // Group not loaded yet — still allow cross-group writes (e.g. stage on 233717005).
+        return this.orphanGroupVariables.computeIfAbsent(group_id, id -> new ConcurrentHashMap<>());
     }
 
     public Set<SceneTrigger> getTriggersByEvent(int eventId) {
@@ -200,6 +265,23 @@ public class SceneScriptManager {
         triggersByGroupScene.put(group.id + "_" + suiteIndex, groupSceneTriggers);
     }
 
+    /** Reloading an open-world group is not a request to reset its puzzle progress. */
+    public int restoreGroup(SceneGroupInstance instance, int overrideSuite) {
+        var group = instance.getLuaGroup();
+        int savedSuite = instance.getActiveSuiteId();
+        if (getScene() != null && getScene().getSceneType() == SceneType.SCENE_WORLD && overrideSuite == 0
+                && group != null && group.suites != null
+                && group.getSuiteByIndex(savedSuite) != null) {
+            // The previous scene's entities/triggers are gone. Recreate the saved suite,
+            // without resetting variables or refresh timestamps. Keep the loader's
+            // existing refresh notification so scripts can initialize their runtime hooks.
+            addGroupSuite(instance, group.getSuiteByIndex(savedSuite));
+            callEvent(new ScriptArgs(instance.getGroupId(), EventType.EVENT_GROUP_REFRESH));
+            return savedSuite;
+        }
+        return refreshGroup(instance, overrideSuite, false);
+    }
+
     public void refreshGroup(SceneGroupInstance groupInstance) {
         if (groupInstance == null || groupInstance.getLuaGroup().suites == null) {
             return;
@@ -222,6 +304,8 @@ public class SceneScriptManager {
             boolean excludePrevSuite,
             List<GameEntity> entitiesAdded) {
         SceneGroup group = groupInstance.getLuaGroup();
+        if (LiyueCloudDungeonSupport.isTimerGroup(getScene(), group.id))
+            liyueDungeonTimers.cancelGroup(group.id);
         if (suiteIndex == 0) {
             if (excludePrevSuite) {
                 suiteIndex = group.findInitSuiteIndex(groupInstance.getActiveSuiteId());
@@ -288,6 +372,7 @@ public class SceneScriptManager {
                 });
 
         groupInstance.setActiveSuiteId(suiteIndex);
+        emu.grasscutter.game.quest.LiyueSceneGroupRecovery.onSuiteChanged(getScene(), groupInstance);
         groupInstance.setLastTimeRefreshed(getScene().getWorld().getGameTime());
 
         // Call EVENT_GROUP_REFRESH for any action trigger waiting for it
@@ -322,16 +407,44 @@ public class SceneScriptManager {
         return true;
     }
 
+    /**
+     * Store only the latest quest-owned scene suite for a (scene, group) pair.
+     * A successful reset to suite 0 drops the override entirely.
+     */
+    static boolean rememberQuestGroupSuite(
+            List<QuestGroupSuite> saved, int sceneId, int groupId, int suiteId) {
+        if (saved == null || sceneId <= 0 || groupId <= 0 || suiteId < 0) return false;
+        synchronized (saved) {
+            int matches = 0;
+            int oldSuite = -1;
+            for (var entry : saved) {
+                if (entry != null && entry.getScene() == sceneId && entry.getGroup() == groupId) {
+                    matches++;
+                    oldSuite = entry.getSuite();
+                }
+            }
+            if ((suiteId == 0 && matches == 0)
+                    || (suiteId > 0 && matches == 1 && oldSuite == suiteId)) return false;
+            saved.removeIf(
+                    entry -> entry != null && entry.getScene() == sceneId && entry.getGroup() == groupId);
+            if (suiteId > 0) {
+                saved.add(QuestGroupSuite.of().scene(sceneId).group(groupId).suite(suiteId).build());
+            }
+            return true;
+        }
+    }
+
     public boolean refreshGroupSuite(int groupId, int suiteId, GameQuest quest) {
         var result = refreshGroupSuite(groupId, suiteId);
-        if (suiteId != 0 && quest != null) {
-            quest
-                    .getMainQuest()
-                    .getQuestGroupSuites()
-                    .add(
-                            QuestGroupSuite.of().scene(getScene().getId()).group(groupId).suite(suiteId).build());
+        if (result && quest != null) {
+            boolean changed =
+                    rememberQuestGroupSuite(
+                            quest.getMainQuest().getQuestGroupSuites(),
+                            getScene().getId(), groupId, suiteId);
+            // The task's beginExec may execute after the initial GameQuest.start save.
+            // Persist an applied suite transition so relog cannot replay stale waves.
+            if (changed) quest.save();
         }
-
         return result;
     }
 
@@ -398,6 +511,7 @@ public class SceneScriptManager {
     public SceneGroup getGroupById(int groupId) {
         for (var block : getBlocks().values()) {
             this.getScene().loadBlock(block);
+            if (block.groups == null) continue;
 
             var group = block.groups.get(groupId);
             if (group == null) {
@@ -413,12 +527,49 @@ public class SceneScriptManager {
         return null;
     }
 
+    /**
+     * Looks a group up in the block metadata WITHOUT loading it.
+     *
+     * <p>getGroupById loads any group it finds that is not already instanced. Calling it from
+     * inside the load path therefore re-entered the load for the group being loaded, and every
+     * monster and chest in it was created twice.
+     */
+    private SceneGroup findGroupById(int groupId) {
+        for (var block : getBlocks().values()) {
+            this.getScene().loadBlock(block);
+            if (block.groups == null) continue;
+
+            var group = block.groups.get(groupId);
+            if (group != null) return group;
+        }
+        return null;
+    }
+
     public SceneGroupInstance getGroupInstanceById(int groupId) {
         return sceneGroupsInstances.getOrDefault(groupId, null);
     }
 
     public Map<Integer, SceneGroupInstance> getCachedGroupInstances() {
         return cachedSceneGroupsInstances;
+    }
+
+    /** Reset tower mid-half carry vars so a retry starts the chamber from the upper half again. */
+    public void resetTowerStageVariables() {
+        java.util.function.Consumer<Map<String, Integer>> reset =
+                vars -> {
+                    if (vars == null) return;
+                    if (vars.containsKey("stage") || vars.containsKey("TPL_TIME")) {
+                        vars.put("stage", 0);
+                        vars.put("TPL_TIME", 0);
+                    }
+                };
+        for (var instance : sceneGroupsInstances.values()) {
+            if (instance != null) reset.accept(instance.getCachedVariables());
+        }
+        for (var instance : cachedSceneGroupsInstances.values()) {
+            if (instance != null) reset.accept(instance.getCachedVariables());
+        }
+        orphanGroupVariables.values().forEach(reset);
     }
 
     public SceneGroupInstance getCachedGroupInstanceById(int groupId) {
@@ -428,7 +579,7 @@ public class SceneScriptManager {
             if (instance != null) {
                 cachedSceneGroupsInstances.put(groupId, instance);
                 this.cachedSceneGroupsInstances.get(groupId).setCached(false);
-                this.cachedSceneGroupsInstances.get(groupId).setLuaGroup(getGroupById(groupId));
+                this.cachedSceneGroupsInstances.get(groupId).setLuaGroup(findGroupById(groupId));
             }
         }
 
@@ -462,25 +613,27 @@ public class SceneScriptManager {
     }
 
     private void init() {
-        var event = new SceneMetaLoadEvent(getScene());
-        event.call();
-
-        if (event.isOverride()) {
-            // Group grids should not be cached to disk when a scene
-            // group override is in effect. Otherwise, when the server
-            // next runs without that override, the cached content
-            // will not make sense.
-            noCacheGroupGridsToDisk = true;
+        try {
+            if (this.destroyed) return;
+            var event = new SceneMetaLoadEvent(getScene());
+            event.call();
+            if (event.isOverride()) {
+                noCacheGroupGridsToDisk = true;
+            }
+            if (!this.destroyed) {
+                var loadedMeta = ScriptLoader.getSceneMeta(getScene().getId());
+                if (loadedMeta != null) {
+                    this.meta = loadedMeta;
+                    this.isInit = true;
+                }
+            }
+        } catch (RuntimeException exception) {
+            Grasscutter.getLogger().error(
+                    "Scene {} script initialization failed", scene.getId(), exception);
+        } finally {
+            this.initAttempted = true;
+            this.initialization.complete(this.isInit && !this.destroyed);
         }
-
-        var meta = ScriptLoader.getSceneMeta(getScene().getId());
-        if (meta != null) {
-            this.meta = meta;
-
-            // TEMP
-            this.isInit = true;
-        }
-        this.initAttempted = true;
     }
 
     public List<Grid> getGroupGrids() {
@@ -643,6 +796,24 @@ public class SceneScriptManager {
         return isInit;
     }
 
+    /**
+     * Whether init() has finished, regardless of whether it found a scene meta. init() runs on its
+     * own thread, so isInit() alone cannot tell "this scene has no scripts" apart from "the scripts
+     * have not loaded yet" - and those two want opposite spawn behaviour.
+     */
+    public boolean isInitAttempted() {
+        return initAttempted;
+    }
+
+    /** One-shot callback for the actual scene script initialization outcome. */
+    public void whenInitialized(java.util.function.Consumer<Boolean> callback) {
+        this.initialization.whenComplete(callback);
+    }
+
+    public boolean isDestroyed() {
+        return destroyed;
+    }
+
     public void loadBlockFromScript(SceneBlock block) {
         block.load(scene.getId(), meta.context);
     }
@@ -672,9 +843,17 @@ public class SceneScriptManager {
                             variables.put(variable.name, variable.value);
                     });
         }
+
+        // Apply any cross-group Lua writes that landed before this instance existed.
+        var orphan = this.orphanGroupVariables.remove(group.id);
+        if (orphan != null && !orphan.isEmpty()) {
+            this.getVariables(group.id).putAll(orphan);
+        }
     }
 
     public void unregisterGroup(SceneGroup group) {
+        if (LiyueCloudDungeonSupport.isTimerGroup(getScene(), group.id))
+            liyueDungeonTimers.cancelGroup(group.id);
         this.sceneGroups.remove(group.id);
         this.sceneGroupsInstances.values().removeIf(i -> i.getLuaGroup().equals(group));
         this.cachedSceneGroupsInstances.values().stream()
@@ -683,53 +862,15 @@ public class SceneScriptManager {
     }
 
     public void checkRegions() {
-        if (this.regions.size() == 0) {
-            return;
-        }
+        RegionMembershipTick.check(this, this.regions);
+    }
 
-        for (var region : this.regions.values()) {
-            // currently all condition_ENTER_REGION Events check for avatar, so we have no necessary to
-            // add other types of entity
-            var entities =
-                    getScene().getEntities().values().stream()
-                            .filter(e -> region.getMetaRegion().contains(e.getPosition()))
-                            .toList();
-
-            var entitiesIds = entities.stream().map(GameEntity::getId).toList();
-            var enterEntities =
-                    entitiesIds.stream().filter(e -> !region.getEntities().contains(e)).toList();
-            var leaveEntities =
-                    region.getEntities().stream().filter(e -> !entitiesIds.contains(e)).toList();
-
-            entities.forEach(region::addEntity);
-
-            for (var targetId : enterEntities) {
-                if (EntityIdType.toEntityType(targetId >> ENTITY_ID_BIT_SHIFT).getValue() == 19) continue;
-                Grasscutter.getLogger()
-                        .trace("Call EVENT_ENTER_REGION_{}", region.getMetaRegion().config_id);
-                this.callEvent(
-                        new ScriptArgs(region.getGroupId(), EventType.EVENT_ENTER_REGION, region.getConfigId())
-                                .setEventSource(EntityIdType.toEntityType(targetId >> ENTITY_ID_BIT_SHIFT).getValue())
-                                .setSourceEntityId(region.getId())
-                                .setTargetEntityId(targetId));
-            }
-
-            for (var entityId : region.getEntities()) {
-                var entity = this.getScene().getEntityById(entityId);
-                if (entity == null || !region.getMetaRegion().contains(entity.getPosition())) {
-                    region.removeEntity(entityId);
-                }
-            }
-
-            for (var targetId : leaveEntities) {
-                if (EntityIdType.toEntityType(targetId >> ENTITY_ID_BIT_SHIFT).getValue() == 19) continue;
-                this.callEvent(
-                        new ScriptArgs(region.getGroupId(), EventType.EVENT_LEAVE_REGION, region.getConfigId())
-                                .setEventSource(EntityIdType.toEntityType(targetId >> ENTITY_ID_BIT_SHIFT).getValue())
-                                .setSourceEntityId(region.getId())
-                                .setTargetEntityId(targetId));
-            }
-        }
+    /** A script-requested permanent kill is independent of ordinary oneoff death rules. */
+    static boolean shouldSpawnGadget(
+            boolean alreadySpawned, boolean scriptDestroyed,
+            boolean oneoff, boolean persistent, boolean ordinaryDead) {
+        return !alreadySpawned && !scriptDestroyed
+                && (!oneoff || !persistent || !ordinaryDead);
     }
 
     public List<EntityGadget> getGadgetsInGroupSuite(
@@ -739,10 +880,15 @@ public class SceneScriptManager {
                 .filter(
                         m -> {
                             var entity = scene.getEntityByConfigId(m.config_id, group.id);
-                            return (entity == null || entity.getGroupId() != group.id)
-                                    && (!m.isOneoff
-                                            || !m.persistent
-                                            || !groupInstance.getDeadEntities().contains(m.config_id));
+                            return shouldSpawnGadget(
+                                    entity != null && entity.getGroupId() == group.id,
+                                    groupInstance.isScriptGadgetDestroyed(m.config_id),
+                                    m.isOneoff,
+                                    // Many oculus gather points are oneoff without persistent.
+                                    m.persistent
+                                            || emu.grasscutter.game.world.OpenWorldSpawnHelper
+                                                    .isPermanentGatherPoint(m.point_type),
+                                    groupInstance.getDeadEntities().contains(m.config_id));
                         })
                 .map(g -> createGadget(group.id, group.block_id, g, groupInstance.getCachedGadgetState(g)))
                 .filter(Objects::nonNull)
@@ -819,15 +965,44 @@ public class SceneScriptManager {
 
     public void startMonsterTideInGroup(
             String source, SceneGroup group, Integer[] ordersConfigId, int tideCount, int sceneLimit) {
-        this.scriptMonsterTideService =
-                new ScriptMonsterTideService(this, source, group, tideCount, sceneLimit, ordersConfigId);
+        ScriptMonsterTideService tide;
+        synchronized (this) {
+            if (destroyed) return;
+            tide = ScriptMonsterTideService.prepare(this, source, group, tideCount, sceneLimit, ordersConfigId);
+            this.scriptMonsterTideService = tide;
+            this.monsterTides.add(tide);
+        }
+        // Scene departure locks scene -> scripts. Never wait for the scene while holding this
+        // manager's monitor; a cancellation between registration and spawning must also be respected.
+        tide.spawnFirstTurn();
     }
 
-    public void unloadCurrentMonsterTide() {
+    /** Every tide started in this scene; Lua may start several per group. */
+    public synchronized List<ScriptMonsterTideService> getMonsterTides(int groupId) {
+        return this.monsterTides.stream().filter(tide -> tide.getGroupId() == groupId).toList();
+    }
+
+    public synchronized void restoreMonsterTide(SceneGroup group, ScriptMonsterTideService.State state) {
+        this.scriptMonsterTideService = ScriptMonsterTideService.restore(this, group, state);
+        this.monsterTides.add(this.scriptMonsterTideService);
+    }
+
+    /** Drops a finished or discarded encounter's tides so stale counts cannot leak into a new one. */
+    public synchronized void unloadMonsterTides(int groupId) {
+        for (var tide : getMonsterTides(groupId)) {
+            tide.unload();
+            this.monsterTides.remove(tide);
+            if (this.scriptMonsterTideService == tide) this.scriptMonsterTideService = null;
+        }
+    }
+
+    public synchronized void unloadCurrentMonsterTide() {
         if (this.getScriptMonsterTideService() == null) {
             return;
         }
-        this.getScriptMonsterTideService().unload();
+        this.monsterTides.remove(this.scriptMonsterTideService);
+        this.scriptMonsterTideService.unload();
+        this.scriptMonsterTideService = null;
     }
 
     public void spawnMonstersByConfigId(SceneGroup group, int configId, int delayTime) {
@@ -852,6 +1027,9 @@ public class SceneScriptManager {
     }
 
     public Future<?> callEvent(@Nonnull ScriptArgs params) {
+        if (this.destroyed) {
+            return CompletableFuture.completedFuture(null);
+        }
         /**
          * We use ThreadLocal to trans SceneScriptManager context to ScriptLib, to avoid eval script for
          * every groups' trigger in every scene instances. But when callEvent is called in a ScriptLib
@@ -859,11 +1037,50 @@ public class SceneScriptManager {
          * not get it. e.g. CallEvent -> set -> ScriptLib.xxx -> CallEvent -> set -> remove -> NPE ->
          * (remove) So we use thread pool to clean the stack to avoid this new issue.
          */
+        if (emu.grasscutter.game.quest.AmberFlightExamSupport.isFlightGroup(getScene(), params.getGroupId())
+                || emu.grasscutter.game.quest.MondstadtStoryQuestSupport.isAmberWaterGroup(getScene(), params.getGroupId())) {
+            return enqueueAmberQuestEvent(params);
+        }
+        if (LiyueCloudDungeonSupport.isFireLinkGroup(getScene(), params.getGroupId())) {
+            return enqueueLiyueFireEvent(params);
+        }
         return eventExecutor.submit(() -> this.realCallEvent(params));
     }
 
+    private synchronized Future<?> enqueueAmberQuestEvent(ScriptArgs params) {
+        // Coin batches and the two water switches update shared Lua counters; preserve event order.
+        var previous = amberQuestEvents.getOrDefault(params.getGroupId(), CompletableFuture.completedFuture(null));
+        var next = previous.handleAsync((ignored, failure) -> {
+            realCallEvent(params);
+            return (Void) null;
+        }, eventExecutor);
+        amberQuestEvents.put(params.getGroupId(), next);
+        return next;
+    }
+
+    private synchronized Future<?> enqueueLiyueFireEvent(ScriptArgs params) {
+        // Lua changes enqueue further state/variable events. Keep their guard flags in FIFO order.
+        liyueFireEvents = liyueFireEvents.handleAsync((ignored, failure) -> {
+            realCallEvent(params);
+            return null;
+        }, eventExecutor);
+        return liyueFireEvents;
+    }
+
     private void realCallEvent(@Nonnull ScriptArgs params) {
+        // Before the event is counted: an early return after the increment would leave the count
+        // up, and the deferred destroy-time save would never run.
+        if (params.type == EVENT_TIMER_EVENT
+                && LiyueCloudDungeonSupport.isTimerGroup(getScene(), params.getGroupId())
+                && !liyueDungeonTimers.consume(params)) return;
+        synchronized (this) {
+            if (this.destroyed) return;
+            executingEvents++;
+        }
         try {
+            if (params.type == EventType.EVENT_ANY_MONSTER_DIE) {
+                this.sealBattleManager.onMonsterDeath(params.getGroupId(), params.param1);
+            }
             ScriptLoader.getScriptLib().setSceneScriptManager(this);
 
             var eventType = params.type;
@@ -887,8 +1104,18 @@ public class SceneScriptManager {
                                 .collect(Collectors.toSet());
                     };
 
-            for (SceneTrigger trigger : relevantTriggers) {
-                handleEventForTrigger(params, trigger);
+            if (LiyueCloudDungeonSupport.isFireLinkGroup(getScene(), params.getGroupId())) {
+                // Select against the same state before any action can make its opposite condition true.
+                var selected = relevantTriggers.stream()
+                        .filter(trigger -> selectLiyueFireTrigger(params, trigger))
+                        .toList();
+                for (SceneTrigger trigger : selected) {
+                    runSelectedLiyueFireTrigger(params, trigger);
+                }
+            } else {
+                for (SceneTrigger trigger : relevantTriggers) {
+                    handleEventForTrigger(params, trigger);
+                }
             }
         } catch (Throwable throwable) {
             Grasscutter.getLogger()
@@ -896,6 +1123,37 @@ public class SceneScriptManager {
         } finally {
             // make sure it is removed
             ScriptLoader.getScriptLib().removeSceneScriptManager();
+            synchronized (this) {
+                // A destroy during this event left its final save to us.
+                if (--executingEvents == 0 && destroyed) clearDestroyedState();
+            }
+        }
+    }
+
+    private boolean selectLiyueFireTrigger(ScriptArgs params, SceneTrigger trigger) {
+        try {
+            ScriptLoader.getScriptLib().setCurrentGroup(trigger.currentGroup);
+            ScriptLoader.getScriptLib().setCurrentCallParams(params);
+            return evaluateTriggerCondition(trigger, params);
+        } catch (Throwable ex) {
+            Grasscutter.getLogger()
+                    .error("Condition Trigger " + trigger.getName() + " triggered exception", ex);
+            return false;
+        } finally {
+            ScriptLoader.getScriptLib().removeCurrentGroup();
+        }
+    }
+
+    private void runSelectedLiyueFireTrigger(ScriptArgs params, SceneTrigger trigger) {
+        try {
+            ScriptLoader.getScriptLib().setCurrentGroup(trigger.currentGroup);
+            ScriptLoader.getScriptLib().setCurrentCallParams(params);
+            callTrigger(trigger, params);
+        } catch (Throwable ex) {
+            Grasscutter.getLogger()
+                    .error("Action Trigger " + trigger.getName() + " triggered exception", ex);
+        } finally {
+            ScriptLoader.getScriptLib().removeCurrentGroup();
         }
     }
 
@@ -942,46 +1200,54 @@ public class SceneScriptManager {
     private void callTrigger(SceneTrigger trigger, ScriptArgs params) {
         // the SetGroupVariableValueByGroup in tower need the param to record the first stage time
         ongoingTriggers.add(trigger);
-        var ret = this.callScriptFunc(trigger.getAction(), trigger.currentGroup, params);
-        var invocationsCounter = triggerInvocations.get(trigger.getName());
-        var invocations = invocationsCounter.incrementAndGet();
-        Grasscutter.getLogger().trace("Call Action Trigger {}", trigger.getAction());
+        try {
+            var ret = this.callScriptFunc(trigger.getAction(), trigger.currentGroup, params);
+            // A trigger registered before this manager saw it has no counter yet
+            var invocationsCounter =
+                    triggerInvocations.computeIfAbsent(trigger.getName(), name -> new AtomicInteger());
+            var invocations = invocationsCounter.incrementAndGet();
+            Grasscutter.getLogger().trace("Call Action Trigger {}", trigger.getAction());
 
-        var activeChallenge = scene.getChallenge();
-        if (activeChallenge != null) {
-            activeChallenge.onGroupTriggerDeath(trigger);
-        }
+            var activeChallenge = scene.getChallenge();
+            if (activeChallenge != null) {
+                activeChallenge.onGroupTriggerDeath(trigger);
+            }
 
-        if (trigger.getEvent() == EventType.EVENT_ENTER_REGION) {
-            var region =
-                    this.regions.values().stream()
-                            .filter(p -> p.getConfigId() == params.param1)
-                            .toList()
-                            .get(0);
-            this.getScene().getPlayers().forEach(p -> p.onEnterRegion(region.getMetaRegion()));
-        } else if (trigger.getEvent() == EventType.EVENT_LEAVE_REGION) {
-            var region =
-                    this.regions.values().stream()
-                            .filter(p -> p.getConfigId() == params.param1)
-                            .toList()
-                            .get(0);
-            this.getScene().getPlayers().forEach(p -> p.onLeaveRegion(region.getMetaRegion()));
-        }
+            var event = trigger.getEvent();
+            if (event == EventType.EVENT_ENTER_REGION || event == EventType.EVENT_LEAVE_REGION) {
+                // The region an event names is not always still loaded - get(0) on the empty result
+                // threw out of here, leaving the trigger ongoing and never deregistering it
+                this.regions.values().stream()
+                        .filter(p -> p.getConfigId() == params.param1)
+                        .findFirst()
+                        .ifPresent(
+                                region -> {
+                                    var metaRegion = region.getMetaRegion();
+                                    this.getScene()
+                                            .getPlayers()
+                                            .forEach(
+                                                    p -> {
+                                                        if (event == EventType.EVENT_ENTER_REGION) {
+                                                            p.onEnterRegion(metaRegion);
+                                                        } else {
+                                                            p.onLeaveRegion(metaRegion);
+                                                        }
+                                                    });
+                                });
+            }
 
-        if (trigger.getEvent() == EVENT_TIMER_EVENT) {
-            cancelGroupTimerEvent(trigger.currentGroup.id, trigger.getSource());
+            // always deregister on error, otherwise only if the count is reached
+            // or the trigger should be preserved after a RefreshGroup call
+            if (trigger.isPreserved()) {
+                trigger.setPreserved(false);
+            } else if (ret.isboolean() && !ret.checkboolean()
+                    || ret.isint() && ret.checkint() != 0
+                    || trigger.getTrigger_count() > 0 && invocations >= trigger.getTrigger_count()) {
+                deregisterTrigger(trigger);
+            }
+        } finally {
+            ongoingTriggers.remove(trigger);
         }
-
-        // always deregister on error, otherwise only if the count is reached
-        // or the trigger should be preserved after a RefreshGroup call
-        if (trigger.isPreserved()) {
-            trigger.setPreserved(false);
-        } else if (ret.isboolean() && !ret.checkboolean()
-                || ret.isint() && ret.checkint() != 0
-                || trigger.getTrigger_count() > 0 && invocations >= trigger.getTrigger_count()) {
-            deregisterTrigger(trigger);
-        }
-        ongoingTriggers.remove(trigger);
     }
 
     private LuaValue callScriptFunc(String funcName, SceneGroup group, ScriptArgs params) {
@@ -1007,14 +1273,16 @@ public class SceneScriptManager {
     public LuaValue safetyCall(String name, LuaValue func, LuaValue args, SceneGroup group) {
         try {
             return func.call(ScriptLoader.getScriptLibLua(), args);
-        } catch (LuaError error) {
+        } catch (RuntimeException error) {
+            // LuaError, but also the odd crash inside luaj's own traceback builder, which used to
+            // escape a method whose whole job is to contain script failures
             ScriptLib.logger.error(
                     "[LUA] call trigger failed in group {} with {},{}", group.id, name, args, error);
             return LuaValue.valueOf(-1);
         }
     }
 
-    public ScriptMonsterTideService getScriptMonsterTideService() {
+    public synchronized ScriptMonsterTideService getScriptMonsterTideService() {
         return scriptMonsterTideService;
     }
 
@@ -1027,6 +1295,10 @@ public class SceneScriptManager {
     }
 
     public EntityGadget createGadget(int groupId, int blockId, SceneGadget g, int state) {
+        if (!emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.maySpawn(this, groupId)) return null;
+        if (scene.getSceneType() == SceneType.SCENE_WORLD
+                && !scene.getBlossomManager().isActiveAuthoredGadget(groupId, g.config_id, g.gadget_id))
+            return null;
         if (g.isOneoff) {
             var hasEntity =
                     getScene().getEntities().values().stream()
@@ -1062,7 +1334,60 @@ public class SceneScriptManager {
         return new EntityNPC(getScene(), npc, blockId, suiteId);
     }
 
+    /** Same as {@link #createMonster}, but the caller chooses where it appears. Backs ScriptLib. */
+    public EntityMonster createMonsterByConfigIdByPos(
+            SceneGroup group, int configId, Position pos, Position rot) {
+        if (!emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.maySpawnFromGroup(this, group)) return null;
+        if (group == null || group.monsters == null) return null;
+
+        var monster = group.monsters.get(configId);
+        if (monster == null) {
+            Grasscutter.getLogger()
+                    .warn("Could not find monster config {} in group {}.", configId, group.id);
+            return null;
+        }
+
+        var data = GameData.getMonsterDataMap().get(monster.monster_id);
+        if (data == null) return null;
+
+        var level = getScene().getLevelForMonster(monster.config_id, monster.level);
+        var entity =
+                new EntityMonster(
+                        getScene(),
+                        data,
+                        pos != null ? pos : monster.pos,
+                        rot != null ? rot : monster.rot,
+                        level);
+        entity.setGroupId(group.id);
+        entity.setBlockId(group.block_id);
+        entity.setConfigId(monster.config_id);
+        entity.setPoseId(monster.pose_id);
+        entity.setMetaMonster(monster);
+
+        this.getScriptMonsterSpawnService()
+                .onMonsterCreatedListener
+                .forEach(action -> action.onNotify(entity));
+
+        return entity;
+    }
+
+    /** Rebuilds a monster that was alive when its group was suspended; it is not a new spawn. */
+    public EntityMonster restoreMonster(int groupId, int blockId, SceneMonster monster) {
+        boolean previous = this.restoringMonster;
+        this.restoringMonster = true;
+        try {
+            return createMonster(groupId, blockId, monster);
+        } finally {
+            this.restoringMonster = previous;
+        }
+    }
+
+    public boolean isRestoringMonster() {
+        return this.restoringMonster;
+    }
+
     public EntityMonster createMonster(int groupId, int blockId, SceneMonster monster) {
+        if (!emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.maySpawn(this, groupId)) return null;
         if (monster == null) {
             return null;
         }
@@ -1084,9 +1409,11 @@ public class SceneScriptManager {
         entity.setPoseId(monster.pose_id);
         entity.setMetaMonster(monster);
 
-        this.getScriptMonsterSpawnService()
-                .onMonsterCreatedListener
-                .forEach(action -> action.onNotify(entity));
+        if (!this.isRestoringMonster()) {
+            this.getScriptMonsterSpawnService()
+                    .onMonsterCreatedListener
+                    .forEach(action -> action.onNotify(entity));
+        }
 
         return entity;
     }
@@ -1115,6 +1442,12 @@ public class SceneScriptManager {
     }
 
     public void removeMonstersInGroup(SceneGroup group) {
+        // Java-created challenges (including ley-line outcrops) use an ephemeral
+        // SceneGroup with no Lua monster definitions. Nothing remains to remove
+        // once the last spawned challenge monster dies.
+        if (group == null || group.monsters == null || group.monsters.isEmpty()) {
+            return;
+        }
         var configSet =
                 group.monsters.values().stream().map(m -> m.config_id).collect(Collectors.toSet());
         var toRemove =
@@ -1176,7 +1509,8 @@ public class SceneScriptManager {
     }
 
     public int createGroupTimerEvent(int groupID, String source, double time) {
-        // TODO also remove timers when refreshing and test
+        if (LiyueCloudDungeonSupport.isTimerGroup(getScene(), groupID))
+            return liyueDungeonTimers.create(groupID, source, time);
         var group = getGroupById(groupID);
         if (group == null || group.triggers == null) {
             Grasscutter.getLogger()
@@ -1186,56 +1520,59 @@ public class SceneScriptManager {
                             source);
             return 1;
         }
-        Grasscutter.getLogger()
-                .debug(
-                        "creating group timer event for group {} with source {} and time {}",
-                        groupID,
-                        source,
-                        time);
-        for (SceneTrigger trigger : group.triggers.values()) {
-            if (trigger.getEvent() == EVENT_TIMER_EVENT && trigger.getSource().equals(source)) {
-                Grasscutter.getLogger()
-                        .debug(
-                                "[LUA] Found timer trigger with source {} for group {} : {}",
-                                source,
-                                groupID,
-                                trigger.getName());
-                this.cancelGroupTimerEvent(groupID, source);
-                var taskIdentifier =
-                        Grasscutter.getGameServer()
-                                .getScheduler()
-                                .scheduleDelayedRepeatingTask(
-                                        () ->
-                                                callEvent(
-                                                        new ScriptArgs(groupID, EVENT_TIMER_EVENT).setEventSource(source)),
-                                        (int) time,
-                                        (int) time);
-                var groupTasks = activeGroupTimers.computeIfAbsent(groupID, k -> new HashSet<>());
-                groupTasks.add(new Pair<>(source, taskIdentifier));
-            }
+        boolean hasTrigger =
+                group.triggers.values().stream()
+                        .anyMatch(t -> t.getEvent() == EVENT_TIMER_EVENT
+                                && (t.getSource().isEmpty() || t.getSource().equals(source)));
+        if (!hasTrigger) return 0;
+
+        // Lua passes seconds; the scene scheduler counts ticks and stops while the scene is paused.
+        int ticks =
+                Math.max(1, (int) Math.ceil(time * 1000d / Math.max(1, Configuration.GAME_INFO.tickRateMs)));
+        synchronized (this) {
+            cancelGroupTimerEvent(groupID, source);
+            var timers = activeGroupTimers.computeIfAbsent(groupID, k -> new HashSet<>());
+            var timer = new int[1];
+            timer[0] =
+                    getScene()
+                            .getScheduler()
+                            .scheduleDelayedTask(
+                                    () -> {
+                                        // One-shot: a cancelled or replaced timer has left the set.
+                                        synchronized (this) {
+                                            if (!timers.remove(new Pair<>(source, timer[0]))) return;
+                                        }
+                                        callEvent(new ScriptArgs(groupID, EVENT_TIMER_EVENT).setEventSource(source));
+                                    },
+                                    ticks);
+            timers.add(new Pair<>(source, timer[0]));
         }
         return 0;
     }
 
     public int cancelGroupTimerEvent(int groupID, String source) {
-        // TODO test
-        var groupTimers = activeGroupTimers.get(groupID);
-        if (groupTimers != null && !groupTimers.isEmpty()) {
-            for (var timer : new HashSet<>(groupTimers)) {
-                if (timer.component1().equals(source)) {
-                    Grasscutter.getGameServer().getScheduler().cancelTask(timer.component2());
-                    groupTimers.remove(timer);
-                    return 0;
-                }
+        // Outside this manager's lock: the Liyue timers take their own lock and then call back in.
+        if (LiyueCloudDungeonSupport.isTimerGroup(getScene(), groupID))
+            return liyueDungeonTimers.cancel(groupID, source);
+        synchronized (this) {
+            var groupTimers = activeGroupTimers.get(groupID);
+            if (groupTimers != null) {
+                groupTimers.removeIf(
+                        timer -> {
+                            if (!timer.component1().equals(source)) return false;
+                            getScene().getScheduler().cancelTask(timer.component2());
+                            return true;
+                        });
             }
         }
-
-        Grasscutter.getLogger()
-                .warn("trying to cancel a timer that's not active {} {}", groupID, source);
         return 0;
     }
 
-    // todo use killed monsters instead of spawned entites for check?
+    /** Dead scene-map entities must not block a cleared-group objective. */
+    static boolean isLivingGroupMonster(boolean dead, int entityGroupId, int groupId) {
+        return !dead && entityGroupId == groupId;
+    }
+
     public boolean isClearedGroupMonsters(int groupId) {
         val groupInstance = getGroupInstanceById(groupId);
         if (groupInstance == null || groupInstance.getLuaGroup() == null) return false;
@@ -1248,7 +1585,7 @@ public class SceneScriptManager {
                 .noneMatch(
                         m -> {
                             val entity = scene.getEntityByConfigId(m.config_id, groupId);
-                            return entity != null && entity.getGroupId() == groupId;
+                            return entity != null && isLivingGroupMonster(entity.isDead(), entity.getGroupId(), groupId);
                         });
     }
 
@@ -1258,7 +1595,16 @@ public class SceneScriptManager {
      * @param timeAxis The time axis.
      */
     public void initTimeAxis(SceneTimeAxis timeAxis) {
-        this.timeAxis.put(timeAxis.getIdentifier(), timeAxis);
+        if (this.destroyed) {
+            timeAxis.stop();
+            return;
+        }
+        // Each time axis owns a Timer thread; one replaced without being stopped keeps firing
+        // (and keeps its thread) until the server stops.
+        var previous = this.timeAxis.put(timeAxis.getIdentifier(), timeAxis);
+        if (previous != null && previous != timeAxis) {
+            previous.stop();
+        }
     }
 
     /**
@@ -1267,17 +1613,103 @@ public class SceneScriptManager {
      * @param identifier The identifier of the time axis.
      */
     public void stopTimeAxis(String identifier) {
-        var timeAxis = this.timeAxis.get(identifier);
+        var timeAxis = this.timeAxis.remove(identifier);
         if (timeAxis != null) {
             timeAxis.stop();
         }
     }
 
-    public void onDestroy() {
+    /** Associates a scene cutscene with the groups waiting for its completion. */
+    public synchronized void registerCutscene(int cutsceneId, int groupId) {
+        if (destroyed || cutsceneId <= 0 || groupId <= 0) return;
+        pendingCutsceneGroups.computeIfAbsent(cutsceneId, id -> new HashSet<>()).add(groupId);
+    }
+
+    /** Whether a scripted scene is already waiting for a genuine cutscene completion. */
+    public synchronized boolean hasPendingCutscene(int cutsceneId) {
+        return !destroyed && pendingCutsceneGroups.containsKey(cutsceneId);
+    }
+
+    /** Consumes the pending request once, even if multiple clients report completion. */
+    public synchronized void finishCutscene(int cutsceneId) {
+        var groups = pendingCutsceneGroups.remove(cutsceneId);
+        if (destroyed || groups == null) return;
+        for (int groupId : groups) {
+            callEvent(new ScriptArgs(groupId, EventType.EVENT_CUTSCENE_END, cutsceneId));
+        }
+    }
+
+    public synchronized void onDestroy() {
+        if (this.destroyed) {
+            return;
+        }
+        this.destroyed = true;
+        this.liyueDungeonTimers.clear();
+        this.initialization.complete(false);
+        this.pendingCutsceneGroups.clear();
+        this.sealBattleManager.clear();
+
         activeGroupTimers.forEach(
                 (gid, times) ->
                         times.forEach(
-                                (e) -> Grasscutter.getGameServer().getScheduler().cancelTask(e.getSecond())));
+                                (e) -> {
+                                    try {
+                                        getScene().getScheduler().cancelTask(e.getSecond());
+                                    } catch (Throwable ignored) {
+                                        // Server shutdown may already have disposed the scheduler.
+                                    }
+                                }));
         activeGroupTimers.clear();
+
+        // SceneTimeAxis owns a java.util.Timer. Stopping it is required to release the manager,
+        // scene and player graph after the scene has been deregistered.
+        for (SceneTimeAxis axis : new ArrayList<>(timeAxis.values())) {
+            try {
+                axis.stop();
+            } catch (Throwable ignored) {
+                // A cancelled timer is already in the desired state.
+            }
+        }
+        timeAxis.clear();
+
+        if (scriptMonsterTideService != null) {
+            try {
+                scriptMonsterTideService.unload();
+            } catch (Throwable ignored) {
+                // Listener cleanup should not prevent the remaining scene state from clearing.
+            }
+            scriptMonsterTideService = null;
+        }
+        if (scriptMonsterSpawnService != null) {
+            scriptMonsterSpawnService.onMonsterCreatedListener.clear();
+            scriptMonsterSpawnService.onMonsterDeadListener.clear();
+            scriptMonsterSpawnService = null;
+        }
+
+        if (executingEvents == 0) clearDestroyedState();
+    }
+
+    /**
+     * Saves open-world group progress, then drops the script state.
+     *
+     * <p>Only open-world scenes keep it. Group instances are stored per host and group and every
+     * scene loads them back, so saving a dungeon's end state would bring its dead monsters, gadget
+     * states and variables back on the next run of a weekly boss, quest dungeon or Abyss chamber.
+     */
+    private synchronized void clearDestroyedState() {
+        if (scene.getSceneType() == emu.grasscutter.game.props.SceneType.SCENE_WORLD) {
+            scene.saveGroups();
+        }
+        monsterTides.clear(); // After saveGroups, which snapshots pending tides.
+        currentTriggers.clear();
+        ongoingTriggers.clear();
+        triggersByGroupScene.clear();
+        triggerInvocations.clear();
+        regions.clear();
+        sceneGroups.clear();
+        sceneGroupsInstances.clear();
+        cachedSceneGroupsInstances.clear();
+        loadedGroupSetPerBlock.clear();
+        variables.clear();
     }
 }

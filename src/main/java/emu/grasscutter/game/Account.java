@@ -2,6 +2,7 @@ package emu.grasscutter.game;
 
 import static emu.grasscutter.config.Configuration.*;
 
+import at.favre.lib.crypto.bcrypt.BCrypt;
 import dev.morphia.annotations.*;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.database.DatabaseHelper;
@@ -32,6 +33,16 @@ public class Account {
     private int banEndTime;
     private int banStartTime;
     private boolean isBanned;
+
+    /**
+     * The address that got this account banned, when the ban came from an IP ban rather than a
+     * person.
+     *
+     * <p>Held as its own field so unbanning an IP can find the accounts it took down by querying
+     * this, rather than pattern-matching the human-readable ban reason - which would stop working
+     * the moment anyone reworded that message.
+     */
+    private String bannedByIp;
 
     @Deprecated
     public Account() {
@@ -122,6 +133,10 @@ public class Account {
         return this.sessionKey;
     }
 
+    public void setSessionKey(String sessionKey) {
+        this.sessionKey = sessionKey;
+    }
+
     public String generateSessionKey() {
         this.sessionKey = Utils.bytesToHex(Crypto.createSessionKey(32));
         this.save();
@@ -138,6 +153,16 @@ public class Account {
         if (this.password == null || this.password.isEmpty()) {
             return true;
         }
+        if (password == null) {
+            return false;
+        }
+        // BCrypt-hashed password (new-style accounts).
+        if (this.password.startsWith("$2")) {
+            return BCrypt.verifyer()
+                    .verify(password.toCharArray(), this.password.toCharArray())
+                    .verified;
+        }
+        // Legacy plaintext password.
         return this.password.equals(password);
     }
 
@@ -147,6 +172,14 @@ public class Account {
 
     public void setLocale(Locale locale) {
         this.locale = locale;
+    }
+
+    public String getBannedByIp() {
+        return this.bannedByIp;
+    }
+
+    public void setBannedByIp(String bannedByIp) {
+        this.bannedByIp = bannedByIp;
     }
 
     public String getBanReason() {
@@ -174,11 +207,35 @@ public class Account {
     }
 
     public boolean isBanned() {
-        if (banEndTime > 0 && banEndTime < System.currentTimeMillis() / 1000) {
+        long now = System.currentTimeMillis() / 1000;
+        if (isBanned && bannedByIp != null) {
+            // A former IP ban cannot keep an account banned after the address ban expires,
+            // is lifted, or is replaced by a shorter/longer end time.
+            var ipBan = DatabaseHelper.getBannedIp(bannedByIp);
+            if (ipBan == null || !ipBan.isActiveAt(now)) {
+                isBanned = false;
+                banEndTime = 0;
+                banStartTime = 0;
+                banReason = null;
+                bannedByIp = null;
+                save();
+                return false;
+            }
+            int linkedEndTime = ipBan.accountBanEndTime();
+            if (banEndTime != linkedEndTime) {
+                banEndTime = linkedEndTime;
+                save();
+            }
+            // IP ban records are authoritative even beyond the signed 2038 account field.
+            return true;
+        }
+
+        if (banEndTime > 0 && banEndTime <= now) {
             this.isBanned = false;
             this.banEndTime = 0;
             this.banStartTime = 0;
             this.banReason = null;
+            this.bannedByIp = null;
             save();
         }
 
@@ -231,6 +288,24 @@ public class Account {
         this.permissions.clear();
     }
 
+    /** Rejects absent credentials before comparing either login or session tokens. */
+    public static boolean credentialMatches(String expected, String candidate) {
+        return expected != null
+                && !expected.isBlank()
+                && candidate != null
+                && expected.equals(candidate);
+    }
+
+    /** Checks the credential used by GetPlayerTokenReq. */
+    public boolean matchesLoginToken(String candidate) {
+        return credentialMatches(this.token, candidate);
+    }
+
+    /** Checks the account/session credential used by the HTTP login and combo flows. */
+    public boolean matchesSessionKey(String candidate) {
+        return credentialMatches(this.sessionKey, candidate);
+    }
+
     // TODO make unique
     public String generateLoginToken() {
         this.token = Utils.bytesToHex(Crypto.createSessionKey(32));
@@ -244,11 +319,8 @@ public class Account {
 
     @PreLoad
     public void onLoad(Document document) {
-        // Grant the superuser permissions to accounts created before the permissions update
-        if (!document.containsKey("permissions")) {
-            this.addPermission("*");
-        }
-
+        // Missing permissions on legacy documents must not imply administrator access.
+        // Only explicitly stored grants and configured ACCOUNT.defaultPermissions apply.
         // Set account default language as server default language
         if (!document.containsKey("locale")) {
             this.locale = LANGUAGE;

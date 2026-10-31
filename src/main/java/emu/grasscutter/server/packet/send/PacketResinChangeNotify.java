@@ -14,7 +14,7 @@ public class PacketResinChangeNotify extends BasePacket {
                 ResinChangeNotify.newBuilder()
                         .setCurValue(player.getProperty(PlayerProperty.PROP_PLAYER_RESIN))
                         .setNextAddTimestamp(player.getNextResinRefresh())
-                        .setCurBuyCount(player.getResinBuyCount())
+                        .setCurBuyCount(player.getResinManager().getClientResinBuyCount())
                         .build();
 
         this.setData(proto);

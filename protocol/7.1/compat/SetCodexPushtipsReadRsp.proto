@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 22326 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message SetCodexPushtipsReadRsp {
+  uint32 type_id = 15;
+  uint32 codex_id = 8;
+  int32 retcode = 6;
+}

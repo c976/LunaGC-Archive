@@ -22,6 +22,7 @@ import emu.grasscutter.data.excels.monster.MonsterCurveData;
 import emu.grasscutter.data.excels.monster.MonsterData;
 import emu.grasscutter.data.excels.monster.MonsterDescribeData;
 import emu.grasscutter.data.excels.monster.MonsterSpecialNameData;
+import emu.grasscutter.data.excels.monster.MonsterTitleData;
 import emu.grasscutter.data.excels.quest.QuestData;
 import emu.grasscutter.data.excels.quest.QuestGlobalVarData;
 import emu.grasscutter.data.excels.reliquary.ReliquaryAffixData;
@@ -30,7 +31,10 @@ import emu.grasscutter.data.excels.reliquary.ReliquaryMainPropData;
 import emu.grasscutter.data.excels.reliquary.ReliquarySetData;
 import emu.grasscutter.data.excels.scene.*;
 import emu.grasscutter.data.excels.tower.TowerFloorData;
+import emu.grasscutter.data.excels.tps.*;
+import emu.grasscutter.data.excels.tower.TowerBuffData;
 import emu.grasscutter.data.excels.tower.TowerLevelData;
+import emu.grasscutter.data.excels.tower.TowerRewardData;
 import emu.grasscutter.data.excels.tower.TowerScheduleData;
 import emu.grasscutter.data.excels.trial.*;
 import emu.grasscutter.data.excels.weapon.WeaponCurveData;
@@ -85,6 +89,18 @@ public final class GameData {
     // ExcelConfigs
     @Getter
     private static final Int2ObjectMap<ActivityCondExcelConfigData> activityCondExcelConfigDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<emu.grasscutter.data.excels.DailyTaskData> dailyTaskDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<emu.grasscutter.data.excels.DailyTaskLevelData> dailyTaskLevelDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<emu.grasscutter.data.excels.DailyTaskRewardData> dailyTaskRewardDataMap =
             new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -178,6 +194,10 @@ public final class GameData {
     private static final Int2ObjectMap<BlossomRefreshExcelConfigData>
             blossomRefreshExcelConfigDataMap = new Int2ObjectOpenHashMap<>();
 
+    @Getter
+    private static final Int2ObjectMap<BlossomCampData> blossomCampDataMap =
+            new Int2ObjectOpenHashMap<>();
+
     @Getter private static final Int2ObjectMap<BuffData> buffDataMap = new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -187,6 +207,18 @@ public final class GameData {
 
     @Getter
     private static final Int2ObjectMap<CodexAnimalData> codexAnimalDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<PushTipsConfigData> pushTipsConfigDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<PushTipsCodexExcelConfigData> pushTipsCodexExcelConfigDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<GlobalWatcherConfigData> globalWatcherConfigDataMap =
             new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -319,6 +351,18 @@ public final class GameData {
     @Getter private static final Int2ObjectMap<ItemData> itemDataMap = new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<TpsAmmunitionData> tpsAmmunitionDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<TpsWeaponAccessoryData> tpsWeaponAccessoryDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<TpsWeaponData> tpsWeaponDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<MapLayerData> mapLayerDataMap = new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -342,6 +386,10 @@ public final class GameData {
 
     @Getter
     private static final Int2ObjectMap<MonsterSpecialNameData> monsterSpecialNameDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<MonsterTitleData> monsterTitleDataMap =
             new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -404,6 +452,10 @@ public final class GameData {
             new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<CutsceneData> cutsceneDataMap =
+            new Int2ObjectLinkedOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<SceneData> sceneDataMap = new Int2ObjectLinkedOpenHashMap<>();
 
     @Getter
@@ -419,11 +471,27 @@ public final class GameData {
             new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<TowerBuffData> towerBuffDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<TowerLevelData> towerLevelDataMap =
             new Int2ObjectOpenHashMap<>();
 
     @Getter
     private static final Int2ObjectMap<TowerScheduleData> towerScheduleDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
+    private static final Int2ObjectMap<TowerRewardData> towerRewardDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    /**
+     * DungeonLevelEntityConfigData: one schedule/floor id can map to several levelConfigName rows
+     * (blessing + monster HP curve, etc.).
+     */
+    @Getter
+    private static final Int2ObjectMap<List<String>> dungeonLevelEntityConfigMap =
             new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -471,6 +539,10 @@ public final class GameData {
             new Int2ObjectOpenHashMap<>();
 
     @Getter
+    private static final Int2ObjectMap<CityLevelupData> cityLevelupDataMap =
+            new Int2ObjectOpenHashMap<>();
+
+    @Getter
     private static final Int2ObjectMap<WeatherData> weatherDataMap = new Int2ObjectOpenHashMap<>();
 
     @Getter
@@ -491,6 +563,7 @@ public final class GameData {
     private static final Int2ObjectMap<RefreshPolicyExcelConfigData> refreshPolicyExcelConfigDataMap =
             new Int2ObjectOpenHashMap<>();
 
+    @Getter
     private static final Int2ObjectMap<AvatarPromoteData> avatarPromoteDataMap =
             new Int2ObjectOpenHashMap<>();
     private static final Int2ObjectMap<FetterData> fetterDataMap = new Int2ObjectOpenHashMap<>();
@@ -635,6 +708,10 @@ public final class GameData {
 
     public static StatuePromoteData getStatuePromoteData(int cityId, int promoteLevel) {
         return statuePromoteDataMap.get((cityId << 8) + promoteLevel);
+    }
+
+    public static CityLevelupData getCityLevelupData(int cityId, int level) {
+        return cityLevelupDataMap.get((cityId << 8) + level);
     }
 
     public static ReliquaryLevelData getRelicLevelData(int rankLevel, int level) {

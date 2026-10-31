@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 3404 and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message DelMailReq {
+  repeated uint32 mail_id_list = 15;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "Vector.proto";
+
+// 7.1 CmdId 23234 (unnamed MAJEFOKBOEB; the name is inferred). Broadcast every 2 seconds
+// (SnezhnayaTrainOverallExcelConfigData interval) while the player's train is out.
+message SnezhnayaTrainStateNotify {
+  Vector pos = 1;
+  uint32 dest_station_id = 2;
+  repeated uint32 reached_station_list = 7;
+  uint32 curve_id = 11;
+  uint32 segment = 12;
+  uint32 source_id = 13;
+  repeated uint32 station_list = 14;
+  SnezhnayaTrainState state = 15;
+}
+
+// PMICHOOBLEI
+enum SnezhnayaTrainState {
+  SNEZHNAYA_TRAIN_STATE_NONE = 0;
+  SNEZHNAYA_TRAIN_STATE_RUNNING = 1;
+  SNEZHNAYA_TRAIN_STATE_STOPPED = 2;
+}

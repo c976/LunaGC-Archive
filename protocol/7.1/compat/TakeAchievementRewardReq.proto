@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Captured 7.1 command 25857 carries packed/unpacked achievement IDs on field 15.
+message TakeAchievementRewardReq {
+  repeated uint32 id_list = 15;
+}

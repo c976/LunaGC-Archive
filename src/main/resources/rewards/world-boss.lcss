@@ -1,0 +1,1506 @@
+/* 来源待核验：数值对照的是继承的历史服务端表，不构成官方原始奖励证据。
+ * 来源边界详见 docs/rewards/source-provenance.md。 */
+
+/* ========================================================================== */
+/* 世界 Boss：身份、通用奖励、材料例外、宝石、圣遗物 */
+/* ========================================================================== */
+
+/* World Boss rewards: 身份绑定材料及元素，通用等级规则决定数量。 */
+
+/* 身份绑定：48 种 Boss，按 tag 排序。 */
+
+/* 兆载永劫龙兽 */
+boss[type="world"][tag="aeonblight_drake"] {
+    --material: perpetual_caliber;
+    --element: [hydro, cryo];
+}
+
+/* 半永恒统辖矩阵 */
+boss[type="world"][tag="algorithm_semi_intransient_matrix"] {
+    --material: light_guiding_tetrahedron;
+    --element: [pyro, anemo];
+}
+
+/* 无相之风 */
+boss[type="world"][tag="anemo_hypostasis"] {
+    --material: hurricane_seed;
+    --element: anemo;
+}
+
+/* 深海龙蜥组合 */
+boss[type="world"][tag="bathysmal_vishap_herd"] {
+    --material: dragonheirs_false_fin;
+    --element: [electro, cryo];
+}
+
+/* 嵌合翼骏狮 */
+boss[type="world"][tag="chimera_sky_roamer"] {
+    --material: severed_tail_of_the_sky_roamer;
+    --element: [hydro, anemo];
+}
+
+/* 无相之冰 */
+boss[type="world"][tag="cryo_hypostasis"] {
+    --material: crystalline_bloom;
+    --element: cryo;
+}
+
+/* 急冻树 */
+boss[type="world"][tag="cryo_regisvine"] {
+    --material: hoarfrost_core;
+    --element: cryo;
+}
+
+/* 无相之草 */
+boss[type="world"][tag="dendro_hypostasis"] {
+    --material: quelled_creeper;
+    --element: dendro;
+}
+
+/* 无相之雷 */
+boss[type="world"][tag="electro_hypostasis"] {
+    --material: lightning_prism;
+    --element: electro;
+}
+
+/* 掣电树 */
+boss[type="world"][tag="electro_regisvine"] {
+    --material: thunderclap_fruitcore;
+    --element: electro;
+}
+
+/* 铁甲熔火帝皇 */
+boss[type="world"][tag="emperor_of_fire_and_iron"] {
+    --material: emperors_resolution;
+    --element: pyro;
+}
+
+/* 实验性场力发生装置 */
+boss[type="world"][tag="experimental_field_generator"] {
+    --material: tourbillon_device;
+    --element: geo;
+}
+
+/* 霜夜灵嗣 */
+boss[type="world"][tag="frostnight_scion"] {
+    --material: frostnights_glory;
+    --element: [hydro, cryo];
+}
+
+/* 无相之岩 */
+boss[type="world"][tag="geo_hypostasis"] {
+    --material: basalt_pillar;
+    --element: geo;
+}
+
+/* 贪食匿叶龙山王 */
+boss[type="world"][tag="gluttonous_yumkasaur_mountain_king"] {
+    --material: overripe_flamegranate;
+    --element: dendro;
+}
+
+/* 黄金王兽 */
+boss[type="world"][tag="golden_wolflord"] {
+    --material: riftborn_regalia;
+    --element: geo;
+}
+
+/* 金焰绒翼龙暴君 */
+boss[type="world"][tag="goldflame_qucusaure_tyrant"] {
+    --material: mark_of_the_binding_blessing;
+    --element: pyro;
+}
+
+/* 灵觉隐修的迷者 */
+boss[type="world"][tag="holawaqa_ngoubou"] {
+    --material: talisman_of_the_enigmatic_land;
+    --element: cryo;
+}
+
+/* 无相之水 */
+boss[type="world"][tag="hydro_hypostasis"] {
+    --material: dew_of_repudiation;
+    --element: hydro;
+}
+
+/* 水形幻人 */
+boss[type="world"][tag="hydro_tulpa"] {
+    --material: water_that_failed_to_transcend;
+    --element: hydro;
+}
+
+/* 冰风组曲 */
+boss[type="world"][tag="icewind_suite"] {
+    --material: [
+        artificed_spare_clockwork_component_coppelia,
+        artificed_spare_clockwork_component_coppelius
+    ];
+    --element: [anemo, cryo];
+}
+
+/* 翠翎恐蕈 */
+boss[type="world"][tag="jadeplume_terrorshroom"] {
+    --material: majestic_hooked_beak;
+    --element: dendro;
+}
+
+/* 重拳出击鸭 */
+boss[type="world"][tag="knuckle_duck"] {
+    --material: precision_kuuvahki_stamping_die;
+    --element: electro;
+}
+
+/* 熔岩辉龙像 */
+boss[type="world"][tag="lava_dragon_statue"] {
+    --material: sparkless_statue_core;
+    --element: pyro;
+}
+
+/* 魔像督军 */
+boss[type="world"][tag="legatus_golem"] {
+    --material: fragment_of_a_golden_melody;
+    --element: [pyro, geo];
+}
+
+/* 蕴光月幻蝶 */
+boss[type="world"][tag="lightbearing_lunar_moth"] {
+    --material: lightbearing_scale_feather;
+    --element: [pyro, dendro];
+}
+
+/* 深邃魹语之主 */
+boss[type="world"][tag="lord_of_the_deep_dreadwing"] {
+    --material: remnant_of_the_dreadwing;
+    --element: electro;
+}
+
+/* 魔偶剑鬼 */
+boss[type="world"][tag="maguu_kenki"] {
+    --material: marionette_core;
+    --element: [anemo, cryo];
+}
+
+/* 千年珍珠骏麟 */
+boss[type="world"][tag="millennial_pearl_seahorse"] {
+    --material: fontemer_unihorn;
+    --element: electro;
+}
+
+/* 纯水精灵 */
+boss[type="world"][tag="oceanid"] {
+    --material: cleansing_heart;
+    --element: hydro;
+}
+
+/* 恒常机关阵列 */
+boss[type="world"][tag="perpetual_mechanical_array"] {
+    --material: perpetual_heart;
+    --element: [cryo, geo];
+}
+
+/* 精密发条机关 */
+boss[type="world"][tag="precision_clockwork"] {
+    --material: precision_clockwork_core;
+    --element: [pyro, cryo];
+}
+
+/* 原初监视者 */
+boss[type="world"][tag="primal_watcher"] {
+    --material: plume_of_the_fallen_watcher;
+    --element: geo;
+}
+
+/* 古岩龙蜥冰 */
+boss[type="world"][tag="primo_geovishap_cryo"] {
+    --material: juvenile_jade;
+    --element: [cryo, geo];
+}
+
+/* 古岩龙蜥电 */
+boss[type="world"][tag="primo_geovishap_electro"] {
+    --material: juvenile_jade;
+    --element: [electro, geo];
+}
+
+/* 古岩龙蜥水 */
+boss[type="world"][tag="primo_geovishap_hydro"] {
+    --material: juvenile_jade;
+    --element: [hydro, geo];
+}
+
+/* 古岩龙蜥火 */
+boss[type="world"][tag="primo_geovishap_pyro"] {
+    --material: juvenile_jade;
+    --element: [pyro, geo];
+}
+
+/* 无相之火 */
+boss[type="world"][tag="pyro_hypostasis"] {
+    --material: smoldering_pearl;
+    --element: pyro;
+}
+
+/* 爆炎树 */
+boss[type="world"][tag="pyro_regisvine"] {
+    --material: everflame_seed;
+    --element: pyro;
+}
+
+/* 蕴光异兽 */
+boss[type="world"][tag="radiant_beast"] {
+    --material: prismatic_severed_tail;
+    --element: geo;
+}
+
+/* 遗迹巨蛇 */
+boss[type="world"][tag="ruin_serpent"] {
+    --material: runic_fang;
+    --element: geo;
+}
+
+/* 秘源机兵·构型械 */
+boss[type="world"][tag="secret_source_automaton_configuration_device"] {
+    --material: gold_inscribed_secret_source_core;
+    --element: electro;
+}
+
+/* 秘源机兵·统御械 */
+boss[type="world"][tag="secret_source_automaton_overseer"] {
+    --material: secret_source_airflow_accumulator;
+    --element: hydro;
+}
+
+/* 风蚀沙虫 */
+boss[type="world"][tag="setekh_wenut"] {
+    --material: pseudo_stamens;
+    --element: anemo;
+}
+
+/* 隐山猊兽 */
+boss[type="world"][tag="solitary_suanni"] {
+    --material: cloudseam_scale;
+    --element: [hydro, anemo];
+}
+
+/* 深邃摹结株 */
+boss[type="world"][tag="tenebrous_papilla"] {
+    --material: ensnaring_gaze;
+    --element: [pyro, electro, anemo];
+}
+
+/* 雷音权现 */
+boss[type="world"][tag="thunder_manifestation"] {
+    --material: storm_beads;
+    --element: electro;
+}
+
+/* 不灭衍生造物 */
+boss[type="world"][tag="undying_replicant"] {
+    --material: unscorched_blossom_branch;
+    --element: pyro;
+}
+
+/* 通用等级奖励：摩拉、经验、材料数量。突破材料权重保留参考表的小数精度。 */
+
+boss[type="world"] {
+    genshin.experience.adventure: 200;
+}
+
+boss[type="world"] {
+    &[1 <= level <= 4] {
+        genshin.currency.mora: 1825;
+        genshin.experience.companionship: 15;
+        genshin.experience.character: 100;
+        genshin.avatar_ascension.$material: "1:3307, 2:1693";
+    }
+
+    &[5 <= level <= 9] {
+        genshin.currency.mora: 2100;
+        genshin.experience.companionship: 20;
+        genshin.experience.character: 104;
+        genshin.avatar_ascension.$material: "1:5711, 2:4289";
+    }
+
+    &[10 <= level <= 14] {
+        genshin.currency.mora: 2375;
+        genshin.experience.companionship: 20;
+        genshin.experience.character: 110;
+        genshin.avatar_ascension.$material: "1:4583, 2:5417";
+    }
+
+    &[15 <= level <= 19] {
+        genshin.currency.mora: 2575;
+        genshin.experience.companionship: 25;
+        genshin.experience.character: 116;
+        genshin.avatar_ascension.$material: "1:691, 2:1309";
+    }
+
+    &[20 <= level <= 24] {
+        genshin.currency.mora: 2825;
+        genshin.experience.companionship: 25;
+        genshin.experience.character: 121;
+        genshin.avatar_ascension.$material: "1:2327, 2:7673";
+    }
+
+    &[25 <= level <= 29] {
+        genshin.currency.mora: 3050;
+        genshin.experience.companionship: 25;
+        genshin.experience.character: 127;
+        genshin.avatar_ascension.$material: "1:1199, 2:8801";
+    }
+
+    &[30 <= level <= 34] {
+        genshin.currency.mora: 3300;
+        genshin.experience.companionship: 30;
+        genshin.experience.character: 133;
+        genshin.avatar_ascension.$material: "1:2391, 2:2609";
+    }
+
+    &[35 <= level <= 39] {
+        genshin.currency.mora: 3450;
+        genshin.experience.companionship: 30;
+        genshin.experience.character: 138;
+        genshin.avatar_ascension.$material: "1:49, 2:76";
+    }
+
+    &[40 <= level <= 44] {
+        genshin.currency.mora: 3650;
+        genshin.experience.companionship: 30;
+        genshin.experience.character: 144;
+        genshin.avatar_ascension.$material: "1:3059, 2:6941";
+    }
+
+    &[45 <= level <= 49] {
+        genshin.currency.mora: 3725;
+        genshin.experience.companionship: 30;
+        genshin.experience.character: 149;
+        genshin.avatar_ascension.$material: "1:2197, 2:7803";
+    }
+
+    &[50 <= level <= 54] {
+        genshin.currency.mora: 3850;
+        genshin.experience.companionship: 35;
+        genshin.experience.character: 155;
+        genshin.avatar_ascension.$material: "1:167, 2:1083";
+    }
+
+    &[55 <= level <= 59] {
+        genshin.currency.mora: 3975;
+        genshin.experience.companionship: 35;
+        genshin.experience.character: 161;
+        genshin.avatar_ascension.$material: "1:237, 2:4763";
+    }
+
+    &[60 <= level <= 64] {
+        genshin.currency.mora: 4125;
+        genshin.experience.companionship: 35;
+        genshin.experience.character: 166;
+        genshin.avatar_ascension.$material: "2:9613, 3:387";
+    }
+
+    &[65 <= level <= 69] {
+        genshin.currency.mora: 4325;
+        genshin.experience.companionship: 35;
+        genshin.experience.character: 172;
+        genshin.avatar_ascension.$material: "2:547, 3:78";
+    }
+
+    &[70 <= level <= 74] {
+        genshin.currency.mora: 4450;
+        genshin.experience.companionship: 40;
+        genshin.experience.character: 178;
+        genshin.avatar_ascension.$material: "2:789, 3:211";
+    }
+
+    &[75 <= level <= 79] {
+        genshin.currency.mora: 4600;
+        genshin.experience.companionship: 40;
+        genshin.experience.character: 183;
+        genshin.avatar_ascension.$material: "2:7029, 3:2971";
+    }
+
+    &[80 <= level <= 84] {
+        genshin.currency.mora: 4725;
+        genshin.experience.companionship: 40;
+        genshin.experience.character: 189;
+        genshin.avatar_ascension.$material: "2:6167, 3:3833";
+    }
+
+    &[85 <= level <= 89] {
+        genshin.currency.mora: 4850;
+        genshin.experience.companionship: 40;
+        genshin.experience.character: 194;
+        genshin.avatar_ascension.$material: "2:2653, 3:2347";
+    }
+
+    &[90 <= level <= 92] {
+        genshin.currency.mora: 5200;
+        genshin.experience.companionship: 45;
+        genshin.experience.character: 200;
+        genshin.avatar_ascension.$material: "2:1111, 3:1389";
+    }
+
+    &[level >= 93] {
+        genshin.currency.mora: 6000;
+        genshin.experience.companionship: 45;
+        genshin.experience.character: 200;
+        genshin.avatar_ascension.$material: "2:1111, 3:1389";
+    }
+}
+
+/* 材料例外：覆盖通用等级数量。 */
+
+/* 以下 25 种 Boss 在 1-29 级缺少历史材料子表，显式置零。 */
+boss[type="world"][tag in (
+    "aeonblight_drake", "algorithm_semi_intransient_matrix", "anemo_hypostasis",
+    "bathysmal_vishap_herd", "cryo_hypostasis", "cryo_regisvine", "dendro_hypostasis",
+    "electro_hypostasis", "electro_regisvine", "geo_hypostasis", "golden_wolflord",
+    "hydro_hypostasis", "jadeplume_terrorshroom", "maguu_kenki", "oceanid",
+    "perpetual_mechanical_array", "primo_geovishap_cryo", "primo_geovishap_electro",
+    "primo_geovishap_hydro", "primo_geovishap_pyro", "pyro_hypostasis", "pyro_regisvine",
+    "ruin_serpent", "setekh_wenut", "thunder_manifestation"
+)][1 <= level <= 29] {
+    genshin.avatar_ascension.$material: 0;
+}
+
+/* 爆炎树、纯水精灵：30-99 级的专用分布。 */
+
+boss[type="world"][tag in ("oceanid", "pyro_regisvine")] {
+    &[30 <= level <= 34] {
+            genshin.avatar_ascension.$material: "1:16301, 2:33699";
+    }
+
+    &[35 <= level <= 39] {
+            genshin.avatar_ascension.$material: "1:289, 2:961";
+    }
+
+    &[40 <= level <= 44] {
+            genshin.avatar_ascension.$material: "1:13649, 2:86351";
+    }
+
+    &[45 <= level <= 49] {
+            genshin.avatar_ascension.$material: "1:4167, 2:95833";
+    }
+
+    &[50 <= level <= 54] {
+            genshin.avatar_ascension.$material: "2:11837, 3:663";
+    }
+
+    &[55 <= level <= 59] {
+            genshin.avatar_ascension.$material: "2:42607, 3:7393";
+    }
+
+    &[60 <= level <= 64] {
+            genshin.avatar_ascension.$material: "2:75743, 3:24257";
+    }
+
+    &[65 <= level <= 69] {
+            genshin.avatar_ascension.$material: "2:2071, 3:1054";
+    }
+
+    &[70 <= level <= 74] {
+            genshin.avatar_ascension.$material: "2:5679, 3:4321";
+    }
+
+    &[75 <= level <= 79] {
+            genshin.avatar_ascension.$material: "2:47319, 3:52681";
+    }
+
+    &[80 <= level <= 84] {
+            genshin.avatar_ascension.$material: "2:37837, 3:62163";
+    }
+
+    &[85 <= level <= 89] {
+            genshin.avatar_ascension.$material: "2:14183, 3:35817";
+    }
+
+    &[90 <= level <= 99] {
+            genshin.avatar_ascension.$material: "2:4721, 3:20279";
+    }
+
+    /* 级起仍使用上述两种 Boss 在 90-99 级的分布。 */
+    &[level >= 100] {
+        genshin.avatar_ascension.$material: "2:4721, 3:20279";
+    }
+}
+
+/* 这 23 种 Boss 从 100 级起抽取 3 或 4 份材料。
+ * 冰风组曲的每种绑定材料分别独立抽取。
+ */
+boss[type="world"][tag in (
+    "chimera_sky_roamer", "emperor_of_fire_and_iron", "experimental_field_generator",
+    "gluttonous_yumkasaur_mountain_king", "goldflame_qucusaure_tyrant", "holawaqa_ngoubou",
+    "hydro_tulpa", "icewind_suite", "knuckle_duck", "lava_dragon_statue", "legatus_golem",
+    "lightbearing_lunar_moth", "lord_of_the_deep_dreadwing", "millennial_pearl_seahorse",
+    "precision_clockwork", "primal_watcher", "radiant_beast",
+    "secret_source_automaton_configuration_device", "secret_source_automaton_overseer",
+    "setekh_wenut", "solitary_suanni", "tenebrous_papilla", "undying_replicant"
+)][level >= 100] {
+    genshin.avatar_ascension.$material: "3:3, 4:1";
+}
+
+/* 宝石：CSS 决定执行次数与固定掉落；YAML 选择加权候选。 */
+
+/* 宝石组 1：15 种 Boss，单元素，每批 3 个，自 1 级起。 */
+
+boss[type="world"][tag in (
+    "anemo_hypostasis", "cryo_hypostasis", "cryo_regisvine", "dendro_hypostasis",
+    "electro_hypostasis", "electro_regisvine", "geo_hypostasis", "golden_wolflord",
+    "hydro_hypostasis", "jadeplume_terrorshroom", "oceanid", "pyro_hypostasis",
+    "pyro_regisvine", "ruin_serpent", "thunder_manifestation"
+)] {
+    &[1 <= level <= 4] {
+        genshin.avatar_ascension.$element.2: "3:53, 6:47";
+    }
+
+    &[5 <= level <= 9] {
+        genshin.avatar_ascension.$element.2: "3:43, 6:57";
+    }
+
+    &[10 <= level <= 14] {
+        genshin.avatar_ascension.$element.2: "3:30, 6:70";
+    }
+
+    &[15 <= level <= 19] {
+        genshin.avatar_ascension.$element.2: "3:18, 6:82";
+    }
+
+    &[20 <= level <= 24] {
+        genshin.avatar_ascension.$element.2: "3:6, 6:94";
+    }
+
+    &[25 <= level <= 29] {
+        genshin.avatar_ascension.$element.2: "6:93, 9:7";
+    }
+
+    &[30 <= level <= 34] {
+        genshin.avatar_ascension.$element.2: "6:81, 9:19";
+    }
+
+    &[35 <= level <= 39] {
+        genshin.avatar_ascension.$element.2: "6:68, 9:32";
+    }
+
+    &[40 <= level <= 44] {
+        astaps.loot.world_gem_two<3,$element>: "1:56, 2:44";
+    }
+
+    &[45 <= level <= 49] {
+        astaps.loot.world_gem_two<3,$element>: "1:40, 2:60";
+    }
+
+    &[50 <= level <= 54] {
+        astaps.loot.world_gem_two<3,$element>: "1:25, 2:75";
+    }
+
+    &[55 <= level <= 59] {
+        astaps.loot.world_gem_two<3,$element>: "1:9, 2:91";
+    }
+
+    &[60 <= level <= 64] {
+        astaps.loot.world_gem_three<3,$element>: "2:82, 3:18";
+    }
+
+    &[65 <= level <= 69] {
+        astaps.loot.world_gem_three<3,$element>: "2:66, 3:34";
+    }
+
+    &[70 <= level <= 74] {
+        astaps.loot.world_gem_three<3,$element>: "2:49, 3:51";
+    }
+
+    &[75 <= level <= 79] {
+        astaps.loot.world_gem_four<3,$element>: "2:31, 3:69";
+    }
+
+    &[80 <= level <= 84] {
+        astaps.loot.world_gem_four<3,$element>: "2:15, 3:85";
+    }
+
+    &[85 <= level <= 89] {
+        astaps.loot.world_gem_four<3,$element>: "3:98, 4:2";
+    }
+
+    &[level >= 90] {
+        astaps.loot.world_gem_four<3,$element>: "3:82, 4:18";
+    }
+
+    /* 40 级起额外断片池，独立于主宝石池。 */
+    &[level >= 40] {
+        astaps.loot.world_gem_fragment<1,$element>: "3:88, 6:12";
+    }
+}
+
+
+/* 宝石组 2：9 种 Boss，双元素，每批 3 个，自 1 级起。 */
+
+boss[type="world"][tag in (
+    "aeonblight_drake", "algorithm_semi_intransient_matrix", "bathysmal_vishap_herd",
+    "maguu_kenki", "perpetual_mechanical_array", "primo_geovishap_cryo",
+    "primo_geovishap_electro", "primo_geovishap_hydro", "primo_geovishap_pyro"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "1:53, 2:47";
+    }
+
+    &[5 <= level <= 9] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "1:43, 2:57";
+    }
+
+    &[10 <= level <= 14] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "1:30, 2:70";
+    }
+
+    &[15 <= level <= 19] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "1:18, 2:82";
+    }
+
+    &[20 <= level <= 24] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "1:6, 2:94";
+    }
+
+    &[25 <= level <= 29] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "2:93, 3:7";
+    }
+
+    &[30 <= level <= 34] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "2:81, 3:19";
+    }
+
+    &[35 <= level <= 39] {
+        astaps.loot.world_gem_one<$element[0],$element[1]>: "2:68, 3:32";
+    }
+
+    &[40 <= level <= 44] {
+        astaps.loot.world_gem_two<3,$element[0],$element[1]>: "1:56, 2:44";
+    }
+
+    &[45 <= level <= 49] {
+        astaps.loot.world_gem_two<3,$element[0],$element[1]>: "1:40, 2:60";
+    }
+
+    &[50 <= level <= 54] {
+        astaps.loot.world_gem_two<3,$element[0],$element[1]>: "1:25, 2:75";
+    }
+
+    &[55 <= level <= 59] {
+        astaps.loot.world_gem_two<3,$element[0],$element[1]>: "1:9, 2:91";
+    }
+
+    &[60 <= level <= 64] {
+        astaps.loot.world_gem_three<3,$element[0],$element[1]>: "2:82, 3:18";
+    }
+
+    &[65 <= level <= 69] {
+        astaps.loot.world_gem_three<3,$element[0],$element[1]>: "2:66, 3:34";
+    }
+
+    &[70 <= level <= 74] {
+        astaps.loot.world_gem_three<3,$element[0],$element[1]>: "2:49, 3:51";
+    }
+
+    &[75 <= level <= 79] {
+        astaps.loot.world_gem_four<3,$element[0],$element[1]>: "2:31, 3:69";
+    }
+
+    &[80 <= level <= 84] {
+        astaps.loot.world_gem_four<3,$element[0],$element[1]>: "2:15, 3:85";
+    }
+
+    &[85 <= level <= 89] {
+        astaps.loot.world_gem_four<3,$element[0],$element[1]>: "3:98, 4:2";
+    }
+
+    &[level >= 90] {
+        astaps.loot.world_gem_four<3,$element[0],$element[1]>: "3:82, 4:18";
+    }
+
+    /* 40 级起额外断片池，独立于主宝石池。 */
+    &[level >= 40] {
+        astaps.loot.world_gem_fragment<3,$element[0],$element[1]>: "1:88, 2:12";
+    }
+}
+
+/* 宝石组 3：单元素，每批 9 个；风蚀沙虫自 1 级起，其余 13 种自 30 级起。 */
+
+boss[type="world"][tag="setekh_wenut"] {
+    &[1 <= level <= 4] {
+        genshin.avatar_ascension.$element.2: "9:53, 18:47";
+    }
+
+    &[5 <= level <= 9] {
+        genshin.avatar_ascension.$element.2: "9:43, 18:57";
+    }
+
+    &[10 <= level <= 14] {
+        genshin.avatar_ascension.$element.2: "9:30, 18:70";
+    }
+
+    &[15 <= level <= 19] {
+        genshin.avatar_ascension.$element.2: "9:18, 18:82";
+    }
+
+    &[20 <= level <= 24] {
+        genshin.avatar_ascension.$element.2: "9:6, 18:94";
+    }
+
+    &[25 <= level <= 29] {
+        genshin.avatar_ascension.$element.2: "18:93, 27:7";
+    }
+}
+
+boss[type="world"][tag in (
+    "emperor_of_fire_and_iron", "experimental_field_generator",
+    "gluttonous_yumkasaur_mountain_king", "goldflame_qucusaure_tyrant", "holawaqa_ngoubou",
+    "hydro_tulpa", "knuckle_duck", "millennial_pearl_seahorse", "primal_watcher",
+    "radiant_beast", "secret_source_automaton_configuration_device",
+    "secret_source_automaton_overseer", "setekh_wenut", "undying_replicant"
+)] {
+    &[30 <= level <= 34] {
+        genshin.avatar_ascension.$element.2: "18:81, 27:19";
+    }
+
+    &[35 <= level <= 39] {
+        genshin.avatar_ascension.$element.2: "18:68, 27:32";
+    }
+
+    &[40 <= level <= 44] {
+        astaps.loot.world_gem_two<9,$element>: "1:56, 2:44";
+    }
+
+    &[45 <= level <= 49] {
+        astaps.loot.world_gem_two<9,$element>: "1:40, 2:60";
+    }
+
+    &[50 <= level <= 54] {
+        astaps.loot.world_gem_two<9,$element>: "1:25, 2:75";
+    }
+
+    &[55 <= level <= 59] {
+        astaps.loot.world_gem_two<9,$element>: "1:9, 2:91";
+    }
+
+    &[60 <= level <= 64] {
+        astaps.loot.world_gem_three<9,$element>: "2:82, 3:18";
+    }
+
+    &[65 <= level <= 69] {
+        astaps.loot.world_gem_three<9,$element>: "2:66, 3:34";
+    }
+
+    &[70 <= level <= 74] {
+        astaps.loot.world_gem_three<9,$element>: "2:49, 3:51";
+    }
+
+    &[75 <= level <= 79] {
+        astaps.loot.world_gem_four<9,$element>: "2:31, 3:69";
+    }
+
+    &[80 <= level <= 84] {
+        astaps.loot.world_gem_four<9,$element>: "2:15, 3:85";
+    }
+
+    &[85 <= level <= 89] {
+        astaps.loot.world_gem_four<9,$element>: "3:98, 4:2";
+    }
+
+    &[level >= 90] {
+        astaps.loot.world_gem_four<9,$element>: "3:82, 4:18";
+    }
+
+    /* 40 级起额外断片池，独立于主宝石池。 */
+    &[level >= 40] {
+        astaps.loot.world_gem_fragment<1,$element>: "9:88, 18:12";
+    }
+}
+
+/* 宝石组 4：2 种 Boss，双元素，每批 9 个，自 30 级起。 */
+
+boss[type="world"][tag in ("lightbearing_lunar_moth", "precision_clockwork")] {
+    &[30 <= level <= 34] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:81, 3:19";
+    }
+
+    &[35 <= level <= 39] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:68, 3:32";
+    }
+
+    &[40 <= level <= 44] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "1:56, 2:44";
+    }
+
+    &[45 <= level <= 49] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "1:40, 2:60";
+    }
+
+    &[50 <= level <= 54] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "1:25, 2:75";
+    }
+
+    &[55 <= level <= 59] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "1:9, 2:91";
+    }
+
+    &[60 <= level <= 64] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:82, 3:18";
+    }
+
+    &[65 <= level <= 69] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:66, 3:34";
+    }
+
+    &[70 <= level <= 74] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:49, 3:51";
+    }
+
+    &[75 <= level <= 79] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:31, 3:69";
+    }
+
+    &[80 <= level <= 84] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "2:15, 3:85";
+    }
+
+    &[85 <= level <= 89] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "3:98, 4:2";
+    }
+
+    &[level >= 90] {
+        astaps.loot.world_gem_four<9,$element[0],$element[1]>: "3:82, 4:18";
+    }
+
+    /* 40 级起额外断片池，独立于主宝石池。 */
+    &[level >= 40] {
+        astaps.loot.world_gem_fragment<9,$element[0],$element[1]>: "1:88, 2:12";
+    }
+}
+
+/* 宝石组 5：5 种 Boss，双元素碎屑与断片各固定发放 9 个。 */
+
+boss[type="world"][tag in (
+    "chimera_sky_roamer", "frostnight_scion", "icewind_suite", "legatus_golem",
+    "solitary_suanni"
+)] {
+    genshin.avatar_ascension.$element[0].fragment: 9;
+    genshin.avatar_ascension.$element[0].sliver: 9;
+    genshin.avatar_ascension.$element[1].fragment: 9;
+    genshin.avatar_ascension.$element[1].sliver: 9;
+}
+
+/* 宝石组 6：2 种 Boss，单元素碎屑与断片各固定发放 9 个。 */
+
+boss[type="world"][tag in ("lava_dragon_statue", "lord_of_the_deep_dreadwing")] {
+    genshin.avatar_ascension.$element.3: 9;
+    genshin.avatar_ascension.$element.2: 9;
+}
+
+/* 宝石组 7：深邃摹结株，三元素碎屑与断片各固定发放 9 个。 */
+
+boss[type="world"][tag="tenebrous_papilla"] {
+    genshin.avatar_ascension.$element[0].fragment: 9;
+    genshin.avatar_ascension.$element[0].sliver: 9;
+    genshin.avatar_ascension.$element[1].fragment: 9;
+    genshin.avatar_ascension.$element[1].sliver: 9;
+    genshin.avatar_ascension.$element[2].fragment: 9;
+    genshin.avatar_ascension.$element[2].sliver: 9;
+}
+
+/* 圣遗物：48 种 Boss，按套装和等级分别声明掉落。
+ * 精密发条机关缺失的候选子表及内部权重借用爆炎树配置。
+ * 相同池的独立分支已合并执行次数分布，避免 CSS 同名覆盖。
+ */
+
+/* 圣遗物组 1：6 种 Boss，按等级排列。 */
+boss[type="world"][tag in (
+    "aeonblight_drake", "bathysmal_vishap_herd", "cryo_hypostasis", "cryo_regisvine",
+    "perpetual_mechanical_array", "primo_geovishap_cryo"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<lucky_dog>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<lucky_dog>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<lucky_dog>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<lucky_dog>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<lucky_dog>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<berserker,lucky_dog,the_exile,prayers_to_springtime>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_to_springtime>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* Artifact group 2: 5 Boss identities, levels in ascending order.
+ * Precision Clockwork: historical reference branch counts and weights match this group at all
+ * 25 source levels; client preview 15209 matches Pyro Regisvine preview 15140.
+ * Missing candidate pools and their internal weights borrow Pyro Regisvine's
+ * configuration by explicit user choice; this is not a recovered original subtable.
+ */
+boss[type="world"][tag in (
+    "algorithm_semi_intransient_matrix", "precision_clockwork", "primo_geovishap_pyro",
+    "pyro_hypostasis", "pyro_regisvine"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<adventurer>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<adventurer>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<adventurer>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<adventurer>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<adventurer>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor,prayers_for_illumination>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe,prayers_for_illumination>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 3：2 种 Boss，按等级排列。 */
+boss[type="world"][tag in ("anemo_hypostasis", "maguu_kenki")] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<lucky_dog>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<lucky_dog>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<lucky_dog>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<lucky_dog>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<lucky_dog>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<lucky_dog>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<berserker,instructor,lucky_dog>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 4：22 种 Boss，按等级排列。 */
+boss[type="world"][tag in (
+    "chimera_sky_roamer", "emperor_of_fire_and_iron", "experimental_field_generator",
+    "frostnight_scion", "gluttonous_yumkasaur_mountain_king", "goldflame_qucusaure_tyrant",
+    "holawaqa_ngoubou", "hydro_tulpa", "icewind_suite", "knuckle_duck", "lava_dragon_statue",
+    "legatus_golem", "lightbearing_lunar_moth", "lord_of_the_deep_dreadwing",
+    "millennial_pearl_seahorse", "primal_watcher", "radiant_beast",
+    "secret_source_automaton_configuration_device", "secret_source_automaton_overseer",
+    "solitary_suanni", "tenebrous_papilla", "undying_replicant"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_goblet<1>: "3:11, 4:39";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "1:143, 2:107";
+        astaps.loot.world_artifact_5star_goblet<1>: "2:57, 3:193";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:81, 3:44";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_goblet<1>: "1:143, 2:107";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:3, 3:47";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "1:143, 2:107";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "3:11, 4:39";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "0:4, 1:21";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "3:16, 4:9";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:1501, 2:478, 3:21";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "2:3, 3:47";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:1073, 2:1154, 3:273";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "2:12, 3:13";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:1961, 2:5078, 3:2961";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "2:9, 3:1";
+    }
+
+    &[93 <= level <= 99] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "2:53, 3:47";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "2:9, 3:1";
+    }
+
+    &[level >= 100] {
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "1:3, 2:1";
+    }
+}
+
+/* 圣遗物组 5：2 种 Boss，按等级排列。 */
+boss[type="world"][tag in ("dendro_hypostasis", "jadeplume_terrorshroom")] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<adventurer>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<adventurer>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<adventurer>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<adventurer>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<adventurer>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,instructor>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,instructor,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 6：4 种 Boss，按等级排列。 */
+boss[type="world"][tag in (
+    "electro_hypostasis", "electro_regisvine", "primo_geovishap_electro",
+    "thunder_manifestation"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<traveling_doctor>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<traveling_doctor>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor,prayers_for_wisdom>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe,prayers_for_wisdom>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 7：3 种 Boss，按等级排列。 */
+boss[type="world"][tag in ("geo_hypostasis", "golden_wolflord", "ruin_serpent")] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<traveling_doctor>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<traveling_doctor>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<traveling_doctor>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<traveling_doctor>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<instructor,the_exile,traveling_doctor>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<gladiators_finale,instructor,the_exile,wanderers_troupe>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 8：3 种 Boss，按等级排列。 */
+boss[type="world"][tag in (
+    "hydro_hypostasis", "oceanid", "primo_geovishap_hydro"
+)] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_1star<adventurer>: "3:11, 4:39";
+        astaps.loot.world_artifact_2star<adventurer>: "0:29, 1:21";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_1star<adventurer>: "2:57, 3:193";
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_1star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_2star<adventurer>: "2:81, 3:44";
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "0:29, 1:21";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_2star<adventurer>: "2:3, 3:47";
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_2star<adventurer>: "1:143, 2:107";
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "3:11, 4:39";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "0:29, 1:21";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "3:16, 4:9";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "0:4, 1:21";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "2:3, 3:47";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "2:12, 3:13";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: "0:37, 1:63";
+    }
+
+    &[level >= 93] {
+        astaps.loot.world_artifact_3star<adventurer,berserker,the_exile,prayers_for_destiny>: "2:9, 3:1";
+        astaps.loot.world_artifact_4star<berserker,gladiators_finale,the_exile,wanderers_troupe,prayers_for_destiny>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star: 1;
+    }
+}
+
+/* 圣遗物组 9：1 种 Boss，按等级排列。 */
+boss[type="world"][tag="setekh_wenut"] {
+    &[1 <= level <= 4] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_goblet<0>: "3:11, 4:39";
+    }
+
+    &[5 <= level <= 14] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:143, 2:107";
+        astaps.loot.world_artifact_5star_goblet<0>: "2:57, 3:193";
+    }
+
+    &[15 <= level <= 24] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "2:81, 3:44";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_goblet<0>: "1:143, 2:107";
+    }
+
+    &[25 <= level <= 34] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "2:3, 3:47";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "1:37, 2:13";
+    }
+
+    &[35 <= level <= 44] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:143, 2:107";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:57, 3:193";
+    }
+
+    &[45 <= level <= 59] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "0:29, 1:21";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "3:11, 4:39";
+    }
+
+    &[60 <= level <= 69] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "0:4, 1:21";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "3:16, 4:9";
+    }
+
+    &[70 <= level <= 79] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:19, 2:1";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:3, 3:47";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "0:79, 1:21";
+    }
+
+    &[80 <= level <= 89] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:37, 2:13";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:12, 3:13";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "0:29, 1:21";
+    }
+
+    &[90 <= level <= 92] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:9, 3:1";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: "0:37, 1:63";
+    }
+
+    &[93 <= level <= 99] {
+        astaps.loot.world_artifact_5star_plume_goblet<0,0>: "1:53, 2:47";
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "2:9, 3:1";
+        astaps.loot.world_artifact_5star_plume_goblet<4,3>: 1;
+    }
+
+    &[level >= 100] {
+        astaps.loot.world_artifact_5star_plume_goblet<2,1>: "1:3, 2:1";
+    }
+}

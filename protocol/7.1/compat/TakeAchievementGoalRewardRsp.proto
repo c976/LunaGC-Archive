@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "ItemParam.proto";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Verified native 7.1 getter/reader and achievement goal receive handler: command 22054.
+message TakeAchievementGoalRewardRsp {
+  int32 retcode = 7;
+  repeated uint32 id_list = 8;
+  repeated ItemParam item_list = 9;
+}

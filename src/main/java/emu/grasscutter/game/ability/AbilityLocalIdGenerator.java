@@ -62,18 +62,23 @@ public class AbilityLocalIdGenerator {
         if (!preserveActionIndex) actionIndex = 0;
     }
 
+    /**
+     * Numbers these mixins, continuing whatever {@code mixinIndex} the generator already holds.
+     *
+     * <p>The client keeps one running counter across every modifier of an ability, so the caller owns
+     * where the count starts: an ability-level list begins at zero, and a per-modifier list picks up
+     * where the previous modifier left off. Resetting here instead would restart the count on every
+     * modifier and shift every id after the first one off the client's.
+     */
     public void initializeMixinsLocalIds(
             AbilityMixinData[] mixins, Map<Integer, AbilityMixinData> localIdToAction) {
         if (mixins == null) return;
-        this.mixinIndex = 0;
         for (var mixin : mixins) {
             var id = GetLocalId();
             localIdToAction.put((int) id, mixin);
 
             this.mixinIndex++;
         }
-
-        this.mixinIndex = 0;
     }
 
     public long GetLocalId() {

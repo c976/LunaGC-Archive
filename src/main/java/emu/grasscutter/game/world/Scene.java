@@ -11,6 +11,10 @@ import emu.grasscutter.data.excels.monster.MonsterData;
 import emu.grasscutter.data.excels.scene.SceneData;
 import emu.grasscutter.data.excels.world.WorldLevelData;
 import emu.grasscutter.data.server.Grid;
+import emu.grasscutter.game.ability.ArlecchinoBoLSync;
+import emu.grasscutter.game.ability.ArlecchinoBoLUtil;
+import emu.grasscutter.game.ability.ArlecchinoBurstBoL;
+import emu.grasscutter.game.ability.PartyReviveHelper;
 import emu.grasscutter.game.avatar.Avatar;
 import emu.grasscutter.game.dungeons.DungeonManager;
 import emu.grasscutter.game.dungeons.DungeonSettleListener;
@@ -28,7 +32,7 @@ import emu.grasscutter.game.world.data.TeleportProperties;
 import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.proto.*;
 import emu.grasscutter.net.proto.AttackResultOuterClass.AttackResult;
-import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass;
+import emu.grasscutter.net.proto.ChangeHpDebtsReason;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass;
 import emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType;
 import emu.grasscutter.scripts.SceneIndexManager;
@@ -62,12 +66,14 @@ public class Scene {
     @Getter private final Set<SpawnDataEntry> deadSpawnedEntities;
     @Getter private final Set<SceneBlock> loadedBlocks;
     @Getter private final Set<SceneGroup> loadedGroups;
+    @Getter @Setter private transient emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.State dailyTaskGroups;
     @Getter private final BlossomManager blossomManager;
     private final HashSet<Integer> unlockedForces;
     private final long startWorldTime;
     @Getter @Setter DungeonManager dungeonManager;
     @Getter Int2ObjectMap<Route> sceneRoutes;
     private Set<SpawnDataEntry.GridBlockId> loadedGridBlocks;
+    private int loadedBlossomRevision;
     @Getter @Setter private boolean dontDestroyWhenEmpty;
     @Getter private final SceneScriptManager scriptManager;
     @Getter @Setter private WorldChallenge challenge;
@@ -77,14 +83,19 @@ public class Scene {
     @Getter @Setter private int killedMonsterCount;
     private Set<SceneNpcBornEntry> npcBornEntrySet;
     @Getter private boolean finishedLoading = false;
+    private int lastReportedSceneTime = Integer.MIN_VALUE;
+    private String lastReportedFrozenState = null;
     @Getter protected int tickCount = 0;
     @Getter private boolean isPaused = false;
 
-    private final List<Runnable> afterLoadedCallbacks = new ArrayList<>();
+    private final SceneLoadCallbackGate afterLoadedCallbacks = new SceneLoadCallbackGate();
+    private final ScenePlayerEntryGate playerEntryCallbacks = new ScenePlayerEntryGate();
     private final List<Runnable> afterHostInitCallbacks = new ArrayList<>();
 
     @Getter private GameEntity sceneEntity;
     @Getter private final ServerTaskScheduler scheduler;
+    /** ICD for Arlecchino Masque NA BoL consume (official ~0.03s). */
+    private final Map<Integer, Long> arlecchinoNaBoLReduceMs = new ConcurrentHashMap<>();
 
     public Scene(World world, SceneData sceneData) {
         this.world = world;
@@ -105,7 +116,7 @@ public class Scene {
         this.loadedGridBlocks = new HashSet<>();
         this.npcBornEntrySet = ConcurrentHashMap.newKeySet();
         this.scriptManager = new SceneScriptManager(this);
-        this.blossomManager = new BlossomManager(this);
+        this.blossomManager = getSceneType() == SceneType.SCENE_WORLD ? new BlossomManager(this) : null;
         this.unlockedForces = new HashSet<>();
         this.sceneEntity = new EntityScene(this);
         this.scheduler = new ServerTaskScheduler();
@@ -207,21 +218,33 @@ public class Scene {
         return this.entities.containsKey(entity.getId());
     }
 
-    public synchronized void addPlayer(Player player) {
-
-        if (getPlayers().contains(player)) {
-            return;
+    public void addPlayer(Player player) {
+        // Leave the old scene before taking this scene's lock. Holding one scene's lock while
+        // waiting for another's deadlocks two players swapping between the same two scenes.
+        var previous = player.getScene();
+        if (previous != null && previous != this) {
+            previous.removePlayer(player);
         }
 
-        if (player.getScene() != null) {
-            player.getScene().removePlayer(player);
+        synchronized (this) {
+            if (getPlayers().contains(player)) {
+                return;
+            }
+
+            getPlayers().add(player);
+            player.setSceneId(this.getId());
+            player.setScene(this);
+
+            // Refresh the HUD gate on every scene entry, including teleport and relogin.
+            int phlogistonEnabled = player.isInNatlan() ? 1 : 0;
+            if (player.getProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE) != phlogistonEnabled) {
+                player.setProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE, phlogistonEnabled);
+            }
+            emu.grasscutter.game.player.SnezhnayaFrigid.syncForSceneEntry(player);
+
+            this.setupPlayerAvatars(player);
         }
-
-        getPlayers().add(player);
-        player.setSceneId(this.getId());
-        player.setScene(this);
-
-        this.setupPlayerAvatars(player);
+        this.playerEntryCallbacks.enter(player.getUid());
     }
 
     public synchronized void removePlayer(Player player) {
@@ -231,6 +254,7 @@ public class Scene {
         }
 
         getPlayers().remove(player);
+        this.playerEntryCallbacks.leave(player.getUid());
         player.setScene(null);
 
         this.removePlayerAvatars(player);
@@ -266,14 +290,15 @@ public class Scene {
                 }
                 if (avatar == null) continue;
             }
-            player
-                    .getTeamManager()
-                    .getActiveTeam()
-                    .add(
-                            EntityCreationEvent.call(
-                                    EntityAvatar.class,
-                                    new Class<?>[] {Scene.class, Avatar.class},
-                                    new Object[] {player.getScene(), avatar}));
+            var entity =
+                    EntityCreationEvent.call(
+                            EntityAvatar.class,
+                            new Class<?>[] {Scene.class, Avatar.class},
+                            new Object[] {player.getScene(), avatar});
+            if (entity == null) {
+                continue;
+            }
+            player.getTeamManager().getActiveTeam().add(entity);
         }
 
         if (player.getTeamManager().getCurrentCharacterIndex()
@@ -289,6 +314,9 @@ public class Scene {
         var team = player.getTeamManager().getActiveTeam();
 
         team.forEach(e -> removeEntity(e, VisionType.VisionType_VISION_REMOVE));
+        // The team is rebuilt with new entities on the next scene, so the off-field members' ids
+        // are dead too.
+        team.forEach(EntityRuntimeStateCleanup::clear);
         team.clear();
     }
 
@@ -312,6 +340,7 @@ public class Scene {
 
     private void addEntityDirectly(GameEntity entity) {
         getEntities().put(entity.getId(), entity);
+        if (blossomManager != null) blossomManager.onSceneEntityCreated(entity);
         entity.onCreate();
     }
 
@@ -325,27 +354,38 @@ public class Scene {
         player.sendPacket(new PacketSceneEntityAppearNotify(entity));
     }
 
+    /** Wildlife meat that official scatters as one ground pickup per unit. */
+    private static boolean isSplitGroundDropItem(int itemId) {
+        return itemId == 100061 // raw meat
+                || itemId == 100064 // fowl
+                || itemId == 100086 // chunk of raw meat
+                || itemId == 100087 // bird egg / small fowl
+                || itemId == 100094 // chilled meat
+                || itemId == 100097; // mysterious meat
+    }
+
     public void addDropEntity(GameItem item, GameEntity bornForm, Player player, boolean share) {
 
         ItemData itemData = GameData.getItemDataMap().get(item.getItemId());
         if (itemData == null) return;
-        if (itemData.isEquip()) {
-            float range = (1.5f + (.05f * item.getCount()));
-            for (int j = 0; j < item.getCount(); j++) {
+        int count = Math.max(item.getCount(), 1);
+        // Equip + wildlife meat: one EntityItem per unit. Other materials stay stacked.
+        boolean split = itemData.isEquip() || isSplitGroundDropItem(item.getItemId());
+        if (split) {
+            float range = 1.5f + (.05f * count);
+            for (int j = 0; j < count; j++) {
                 Position pos = bornForm.getPosition().nearby2d(range).addY(0.5f);
-                EntityItem entity = new EntityItem(this, player, itemData, pos, item.getCount(), share);
-                addEntity(entity);
+                addEntity(new EntityItem(this, player, itemData, pos, 1, share));
             }
         } else {
-            EntityItem entity =
+            addEntity(
                     new EntityItem(
                             this,
                             player,
                             itemData,
                             bornForm.getPosition().clone().addY(0.5f),
-                            item.getCount(),
-                            share);
-            addEntity(entity);
+                            count,
+                            share));
         }
     }
 
@@ -400,6 +440,7 @@ public class Scene {
     public synchronized void removeEntity(GameEntity entity, VisionType visionType) {
         GameEntity removed = this.removeEntityDirectly(entity);
         if (removed != null) {
+            EntityRuntimeStateCleanup.clear(removed);
             this.broadcastPacket(new PacketSceneEntityDisappearNotify(removed, visionType));
         }
     }
@@ -411,6 +452,7 @@ public class Scene {
                         .map(this::removeEntityDirectly)
                         .filter(Objects::nonNull)
                         .toList();
+        toRemove.forEach(EntityRuntimeStateCleanup::clear);
         if (!toRemove.isEmpty()) {
             this.broadcastPacket(new PacketSceneEntityDisappearNotify(toRemove, visionType));
         }
@@ -440,12 +482,19 @@ public class Scene {
     }
 
     public void handleAttack(AttackResult result) {
+        // Remap OSREL defenseId + clamp ore/breakable damage (multi-hit HP).
+        try {
+            result = emu.grasscutter.game.entity.gadget.OreMiningHelper.fixAttackResult(this, result);
+        } catch (Throwable ignored) {
+        }
         GameEntity target = getEntityById(result.getDefenseId());
         ElementType attackType = ElementType.getTypeByValue(result.getElementType());
 
         if (target == null) {
-            Grasscutter.getLogger().info("handleAttack: target not found defenseId={} attackerId={} damage={}", result.getDefenseId(), result.getAttackerId(), result.getDamage());
-            Grasscutter.getLogger().info("handleAttack unknownFields (defense_id = the monster entityId): {}", result.getUnknownFields().toString().replaceAll("\\s+", " "));
+            // Ordinary: the client keeps swinging at something the server already removed. One
+            // line per hit, and nobody acts on any of them.
+            Grasscutter.getLogger().debug("handleAttack: target not found defenseId={} attackerId={} damage={}", result.getDefenseId(), result.getAttackerId(), result.getDamage());
+            Grasscutter.getLogger().debug("handleAttack unknownFields (defense_id = the monster entityId): {}", result.getUnknownFields().toString().replaceAll("\\s+", " "));
             return;
         }
         if (target instanceof EntityAvatar) {
@@ -454,7 +503,37 @@ public class Scene {
             }
         }
 
+        // World chests are interact-only; AoE / auto-attacks must not break them
+        // (otherwise explore helpers treat them as gone and respawn, giving double F prompts).
+        // Exception: bramble/frozen/rock seals must still accept the matching element.
+        if (target instanceof EntityGadget chestGadget) {
+            try {
+                boolean isChest =
+                        chestGadget.getContent() instanceof emu.grasscutter.game.entity.gadget.GadgetChest
+                                || (chestGadget.getGadgetData() != null
+                                        && chestGadget.getGadgetData().getType() == EntityType.Chest);
+                if (isChest) {
+                    if (emu.grasscutter.game.entity.EnvironmentalSealHelper.tryProcessAttack(
+                            chestGadget, result.getDamage(), attackType)) {
+                        return;
+                    }
+                    return;
+                }
+            } catch (Throwable ignored) {
+            }
+        }
+
         GameEntity attacker = getEntityById(result.getAttackerId());
+        // Dulin's Blood ice break: while the buff is held, hitting solid ice or an ice seal shatters it
+        // immediately and consumes the buff.
+        try {
+            if (emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.trySmashIce(
+                    this, attacker, target)) {
+                return;
+            }
+        } catch (Throwable t) {
+            Grasscutter.getLogger().warn("ScarletQuartz trySmashIce: {}", t.toString());
+        }
         if (attacker instanceof EntityClientGadget && target instanceof EntityAvatar) {
             if (target.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS) > 0f) return;
             float curHp = target.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
@@ -473,57 +552,139 @@ public class Scene {
 
         target.damage(result.getDamage(), result.getAttackerId(), attackType);
 
-        if (attacker instanceof EntityAvatar arlecAttacker
-                && arlecAttacker.getAvatar().getAvatarId() == 10000096
-                && !(target instanceof EntityAvatar)) {
-            reduceArlecchinoBoL(arlecAttacker);
+        if (!(target instanceof EntityAvatar)) {
+            EntityAvatar arlecAttacker = resolveArlecchinoAttacker(attacker);
+            if (arlecAttacker != null) {
+                synchronized (arlecAttacker) {
+                    // Q slash often reports ElementalBurst_Gadget as attackerId - still settle BoL clear.
+                    if (ArlecchinoBurstBoL.isPending(arlecAttacker.getId())
+                            || (attacker instanceof EntityAvatar)) {
+                        ArlecchinoBurstBoL.onAttack(arlecAttacker, result);
+                    }
+                    // Masque of the Red Death: only avatar Normal Attacks consume BoL, not gadget / CA / plunge / E / Q.
+                    if (attacker instanceof EntityAvatar) {
+                        reduceArlecchinoBoLOnNormalAttack(arlecAttacker, result);
+                    }
+                }
+            }
         }
 
-        if (attacker instanceof EntityAvatar clorindeAttacker
-                && clorindeAttacker.getAvatar().getAvatarId() == 10000098
-                && !(target instanceof EntityAvatar)) {
-            reduceClorindeBoL(clorindeAttacker);
+        // Clorinde: BoL is only paid down by Impale the Night healing. Normal attacks and Swift Hunt never
+        // consume it; the mistaken Arlecchino-style on-hit drain has been removed.
+    }
+
+    /**
+     * Arlecchino Q damage is frequently attributed to {@code Arlecchino_ElementalBurst_Gadget}
+     * instead of the avatar entity. Map that (and nested gadgets) back to the casting avatar.
+     */
+    private EntityAvatar resolveArlecchinoAttacker(GameEntity attacker) {
+        if (attacker instanceof EntityAvatar avatar
+                && avatar.getAvatar() != null
+                && avatar.getAvatar().getAvatarId() == 10000096) {
+            return avatar;
         }
+        if (!(attacker instanceof EntityClientGadget gadget)) {
+            return null;
+        }
+        int ownerId = gadget.getOriginalOwnerEntityId();
+        if (ownerId <= 0) {
+            ownerId = gadget.getOwnerEntityId();
+        }
+        if (ownerId > 0) {
+            GameEntity owner = getEntityById(ownerId);
+            if (owner instanceof EntityClientGadget nested) {
+                ownerId =
+                        nested.getOriginalOwnerEntityId() > 0
+                                ? nested.getOriginalOwnerEntityId()
+                                : nested.getOwnerEntityId();
+                owner = ownerId > 0 ? getEntityById(ownerId) : null;
+            }
+            if (owner instanceof EntityAvatar avatar
+                    && avatar.getAvatar() != null
+                    && avatar.getAvatar().getAvatarId() == 10000096) {
+                return avatar;
+            }
+        }
+        Player player = gadget.getOwner();
+        if (player == null || player.getTeamManager() == null) {
+            return null;
+        }
+        for (EntityAvatar avatar : player.getTeamManager().getActiveTeam()) {
+            if (avatar != null
+                    && avatar.getAvatar() != null
+                    && avatar.getAvatar().getAvatarId() == 10000096
+                    && ArlecchinoBurstBoL.isPending(avatar.getId())) {
+                return avatar;
+            }
+        }
+        return null;
     }
 
-    private void reduceClorindeBoL(EntityAvatar clorinde) {
-        float curDebt = clorinde.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
-        if (curDebt <= 0f) return;
-        float reduction = curDebt * 0.015f;
-        float newDebt = Math.max(0f, curDebt - reduction);
-        float change = newDebt - curDebt;
-        clorinde.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS, newDebt);
-        broadcastPacket(new PacketEntityFightPropUpdateNotify(clorinde, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
-        var debtsReason = newDebt <= 0f
-            ? ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY_FINISH
-            : ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY;
-        broadcastPacket(new PacketEntityFightPropChangeReasonNotify(
-            clorinde,
-            FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
-            change,
-            PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY,
-            debtsReason
-        ));
-    }
-
-    private void reduceArlecchinoBoL(EntityAvatar arlecchino) {
+    /**
+     * Masque of the Red Death: BoL ≥ 30% MaxHP. Official FireAttack_ReduceHPDebts only runs on
+     * NormalAttack_01..06 tags - 7.5% of current BoL, ICD ~0.03s. Charged/plunge/skill must not
+     * consume.
+     */
+    private void reduceArlecchinoBoLOnNormalAttack(EntityAvatar arlecchino, AttackResult result) {
+        float maxHp = arlecchino.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
         float curDebt = arlecchino.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
-        if (curDebt <= 0f) return;
-        float reduction = curDebt * 0.024f;
+        if (maxHp <= 0f || curDebt < 0.30f * maxHp) {
+            return;
+        }
+        if (!isArlecchinoRedDeathNormalHit(result)) {
+            return;
+        }
+        long now = System.currentTimeMillis();
+        Long last = arlecchinoNaBoLReduceMs.get(arlecchino.getId());
+        if (last != null && now - last < 30L) {
+            return;
+        }
+        arlecchinoNaBoLReduceMs.put(arlecchino.getId(), now);
+
+        if (ArlecchinoBurstBoL.isPending(arlecchino.getId())) {
+            return;
+        }
+        float reduction = curDebt * 0.075f;
         float newDebt = Math.max(0f, curDebt - reduction);
         float change = newDebt - curDebt;
-        arlecchino.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS, newDebt);
-        broadcastPacket(new PacketEntityFightPropUpdateNotify(arlecchino, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
-        var debtsReason = newDebt <= 0f
-            ? ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY_FINISH
-            : ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_PAY;
-        broadcastPacket(new PacketEntityFightPropChangeReasonNotify(
-            arlecchino,
-            FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
-            change,
-            PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY,
-            debtsReason
-        ));
+        if (change == 0f) {
+            return;
+        }
+        var debtsReason =
+                newDebt <= 0f
+                        ? ChangeHpDebtsReason._ChangeHpDebtsReason
+                                ._ChangeHpDebtsReason_CHANGE_HP_DEBTS_PAY_FINISH
+                        : ChangeHpDebtsReason._ChangeHpDebtsReason
+                                ._ChangeHpDebtsReason_CHANGE_HP_DEBTS_PAY;
+        ArlecchinoBoLSync.pushBoL(arlecchino, newDebt, change, debtsReason);
+    }
+
+    private static boolean isArlecchinoRedDeathNormalHit(AttackResult result) {
+        if (result == null) {
+            return false;
+        }
+        // 7.0 often sends hashed anim ids with an empty string - use the util's hash table.
+        if (ArlecchinoBoLUtil.isRedDeathNormalAttackHit(result)) {
+            return true;
+        }
+        String anim = result.getAnimEventId();
+        if (anim == null || anim.isEmpty()) {
+            return false;
+        }
+        String s = anim.toLowerCase(Locale.ROOT);
+        if (s.contains("extraattack")
+                || s.contains("charged")
+                || s.contains("plunge")
+                || s.contains("burst")
+                || s.contains("elementalart")
+                || s.contains("elemental_art")
+                || s.contains("elementalburst")) {
+            return false;
+        }
+        return s.contains("normalattack")
+                || s.contains("normal_attack")
+                || s.contains("fireattack")
+                || (s.contains("atk") && s.contains("plus"));
     }
 
     public void killEntity(GameEntity target) {
@@ -557,15 +718,32 @@ public class Scene {
 
         this.broadcastPacket(new PacketLifeStateChangeNotify(attackerId, target, LifeState.LIFE_DEAD));
 
+        // Barbara C6: send LIFE_DEAD first so the character goes down, then immediately revive to full HP,
+        // keeping her on-field without a switch.
+        if (target instanceof EntityAvatar deadAvatar) {
+            try {
+                if (PartyReviveHelper.tryBarbaraC6AfterDeath(deadAvatar)) {
+                    if (this.getEntityById(deadAvatar.getId()) == null) {
+                        this.addEntity(deadAvatar);
+                    }
+                    return;
+                }
+            } catch (Throwable t) {
+                Grasscutter.getLogger().warn("[BarbaraC6] killEntity revive failed", t);
+            }
+        }
+
         var world = this.getWorld();
         if (target instanceof EntityMonster monster && this.getSceneType() != SceneType.SCENE_DUNGEON) {
-            if (monster.getMetaMonster() != null
-                    && !world.getServer().getDropSystem().handleMonsterDrop(monster)) {
-                Grasscutter.getLogger()
-                        .debug(
-                                "Can not solve monster drop: drop_id = {}, drop_tag = {}. Falling back to legacy drop system.",
-                                monster.getMetaMonster().drop_id,
-                                monster.getMetaMonster().drop_tag);
+            boolean handled = world.getServer().getDropSystem().handleMonsterDrop(monster);
+            if (!handled) {
+                if (monster.getMetaMonster() != null) {
+                    Grasscutter.getLogger()
+                            .debug(
+                                    "Can not solve monster drop: drop_id = {}, drop_tag = {}. Falling back to legacy drop system.",
+                                    monster.getMetaMonster().drop_id,
+                                    monster.getMetaMonster().drop_tag);
+                }
                 world.getServer().getDropSystemLegacy().callDrop(monster);
             }
         }
@@ -580,7 +758,17 @@ public class Scene {
             }
         }
 
-        this.removeEntity(target);
+        // Weekly bosses (e.g. Dvalin): VISION_DIE leaves a stuck corpse; remove immediately.
+        if (target instanceof EntityMonster boss
+                && emu.grasscutter.game.dungeons.WeeklyBossModelCleanup.shouldForceRemoveModel(
+                        this, boss)) {
+            emu.grasscutter.game.dungeons.WeeklyBossModelCleanup.removeBossAndOwnedGadgets(this, boss);
+        } else if (target instanceof EntityVehicle vehicle
+                && emu.grasscutter.game.ability.NatsaurusVehicleHelper.isNatsaurusMount(vehicle)) {
+            scheduleVehicleRemoval(vehicle);
+        } else {
+            this.removeEntity(target);
+        }
 
         if (target instanceof EntityClientGadget cg && cg.getOwner() != null) {
             cg.getOwner().getTeamManager().getGadgets().remove(cg);
@@ -589,6 +777,38 @@ public class Scene {
         target.onDeath(attackerId);
         this.triggerDungeonEvent(
                 DungeonPassConditionType.DUNGEON_COND_KILL_MONSTER_COUNT, ++killedMonsterCount);
+    }
+
+    /**
+     * Kills a mount the way its own model knows how: collapse first, then take the corpse away.
+     *
+     * <p>Each vision type on its own gets one half wrong. {@code VISION_REMOVE} alone drops the mount at
+     * once, so the client never plays the death animation it has; {@code VISION_DIE} alone gives the
+     * collapse but leaves the corpse, and a Saurian mount gadget with nobody on it *is* a soul candle, so
+     * what the player sees is the dragon they rode turning into a candle they cannot interact with.
+     * Holding the candle back is worse than either: the mount is still there while the rider is told to
+     * dismount, and the client plays its "possession ended" transformation instead of the death.
+     *
+     * <p>So this removes with {@code VISION_DIE}, which the client animates, and then - after the die
+     * block's own {@code dieEndTime}, 1.5s for the Natlan Saurians - broadcasts the removal itself. The
+     * entity is already out of the scene by then, so there is nothing left to remove and only the notify
+     * needs sending.
+     */
+    private void scheduleVehicleRemoval(EntityVehicle vehicle) {
+        var combat = vehicle.getConfigGadget() == null ? null : vehicle.getConfigGadget().getCombat();
+        var die = combat == null ? null : combat.getDie();
+        double seconds = die == null || !die.isHasAnimatorDie() ? 0d : die.getDieEndTime();
+
+        this.removeEntity(vehicle, VisionType.VisionType_VISION_DIE);
+
+        if (seconds <= 0d) return;
+
+        int tickRateMs = Math.max(1, emu.grasscutter.config.Configuration.GAME_INFO.tickRateMs);
+        int ticks = (int) Math.ceil(seconds * 1000d / tickRateMs);
+        this.scheduler.scheduleDelayedTask(
+            () -> this.broadcastPacket(
+                    new PacketSceneEntityDisappearNotify(vehicle, VisionType.VisionType_VISION_REMOVE)),
+            ticks);
     }
 
     public void onTick() {
@@ -612,6 +832,7 @@ public class Scene {
         }
 
         this.scriptManager.checkRegions();
+        this.scriptManager.getSealBattleManager().onTick();
 
         if (challenge != null) {
             challenge.onCheckTimeOut();
@@ -627,18 +848,76 @@ public class Scene {
                     } else e.onTick(sceneTime);
                 });
 
-        blossomManager.onTick();
+        if (getSceneType() == SceneType.SCENE_WORLD) {
+            blossomManager.onTick();
+        }
 
-        var towerManager = getPlayers().get(0).getTowerManager();
-        if (towerManager != null && towerManager.isInProgress()) {
-            towerManager.onTick();
+        // Remote Player may not carry this hook; settle delayed Q BoL clear from the scene tick.
+        for (Player player : this.getPlayers()) {
+            ArlecchinoBurstBoL.onTick(player);
+        }
+
+        if (!getPlayers().isEmpty()) {
+            var towerManager = getPlayers().get(0).getTowerManager();
+            if (towerManager != null && towerManager.isInProgress()) {
+                towerManager.onTick();
+            }
         }
 
         this.checkNpcGroup();
 
         this.finishLoading();
         this.checkPlayerRespawn();
+        if (this.tickCount % 50 == 0) this.reportFrozenState();
         if (this.tickCount++ % 10 == 0) this.broadcastPacket(new PacketSceneTimeNotify(this));
+    }
+
+    /**
+     * Reports the handful of flags that stop the client's world dead while its menus keep working:
+     * a paused world or scene, locked game time, a scene time that is not advancing, or a player
+     * stuck short of {@link Player.SceneLoadState#LOADED}. Any of these looks identical in game -
+     * the avatar will not walk and everything else stands still - and none of them logs anything on
+     * its own, so say so here rather than leaving it to be guessed at.
+     */
+    private void reportFrozenState() {
+        var world = this.getWorld();
+        if (world == null) return;
+
+        var sceneTime = this.getSceneTime();
+        var stalled = sceneTime == this.lastReportedSceneTime;
+        this.lastReportedSceneTime = sceneTime;
+
+        var notLoaded =
+                this.players.stream()
+                        .anyMatch(p -> p.getSceneLoadState() != Player.SceneLoadState.LOADED);
+        var frozen = this.isPaused || world.isPaused() || world.isTimeLocked() || stalled || notLoaded;
+
+        var line =
+                "Scene {} tick: sceneTime={} ({}), scenePaused={}, worldPaused={}, timeLocked={},"
+                    + " entities={}, players={}";
+        Object[] args = {
+            this.getId(),
+            sceneTime,
+            stalled ? "not advancing" : "advancing",
+            this.isPaused,
+            world.isPaused(),
+            world.isTimeLocked(),
+            this.getEntities().size(),
+            this.players.stream().map(p -> p.getUid() + ":" + p.getSceneLoadState()).toList()
+        };
+
+        // Only worth an operator's attention when something is wrong, and only when it is
+        // news: a world that stays frozen says so once, not every ten seconds forever.
+        var state = frozen + "/" + this.isPaused + "/" + world.isPaused() + "/" + world.isTimeLocked()
+                + "/" + stalled + "/" + notLoaded;
+        var changed = !state.equals(this.lastReportedFrozenState);
+        this.lastReportedFrozenState = state;
+
+        if (frozen && changed) {
+            Grasscutter.getLogger().warn(line, args);
+        } else {
+            Grasscutter.getLogger().debug(line, args);
+        }
     }
 
     protected void checkPlayerRespawn() {
@@ -665,12 +944,14 @@ public class Scene {
     }
 
     public Position getDefaultLocation(Player player) {
-        val defaultPosition = getScriptManager().getConfig().born_pos;
+        var config = getScriptManager().getConfig();
+        val defaultPosition = config != null ? config.resolveBornPos() : null;
         return defaultPosition != null ? defaultPosition : player.getPosition();
     }
 
     public Position getDefaultRotation(Player player) {
-        var defaultRotation = this.getScriptManager().getConfig().born_rot;
+        var config = this.getScriptManager().getConfig();
+        var defaultRotation = config != null ? config.resolveBornRot() : null;
         return defaultRotation != null ? defaultRotation : player.getRotation();
     }
 
@@ -709,17 +990,17 @@ public class Scene {
         if (this.finishedLoading) return;
 
         this.finishedLoading = true;
-        this.afterLoadedCallbacks.forEach(Runnable::run);
-        this.afterLoadedCallbacks.clear();
+        this.afterLoadedCallbacks.complete();
     }
 
     public void runWhenFinished(Runnable runnable) {
-        if (this.isFinishedLoading()) {
-            runnable.run();
-            return;
-        }
+        this.afterLoadedCallbacks.whenComplete(runnable);
+    }
 
-        this.afterLoadedCallbacks.add(runnable);
+    /** Register a one-shot callback for when the specified player enters this scene. */
+    public void runWhenPlayerEnters(Player player, Runnable runnable) {
+        if (player == null || runnable == null) return;
+        this.playerEntryCallbacks.whenPresent(player.getUid(), runnable);
     }
 
     public void playerSceneInitialized(Player player) {
@@ -783,11 +1064,14 @@ public class Scene {
         if (!leavingBlocks.isEmpty()) {
             this.getDeadSpawnedEntities().removeIf(entry -> leavingBlocks.contains(entry.getBlockId()));
         }
-        if (this.loadedGridBlocks.containsAll(
-                loadedGridBlocks)) {
+        int blossomRevision = getSceneType() == SceneType.SCENE_WORLD
+                ? blossomManager.getActiveSetRevision() : 0;
+        if (this.loadedGridBlocks.equals(loadedGridBlocks)
+                && loadedBlossomRevision == blossomRevision) {
             return;
         }
         this.loadedGridBlocks = loadedGridBlocks;
+        this.loadedBlossomRevision = blossomRevision;
         var spawnLists = GameDepot.getSpawnLists();
         Set<SpawnDataEntry> visible = new HashSet<>();
         for (var block : loadedGridBlocks) {
@@ -795,6 +1079,10 @@ public class Scene {
             if (spawns != null) {
                 visible.addAll(spawns);
             }
+        }
+
+        if (getSceneType() == SceneType.SCENE_WORLD) {
+            visible.removeIf(entry -> !blossomManager.isActiveSpawn(entry));
         }
 
         WorldLevelData worldLevelData = GameData.getWorldLevelDataMap().get(getWorld().getWorldLevel());
@@ -810,6 +1098,21 @@ public class Scene {
         for (SpawnDataEntry entry : visible) {
 
             if (!spawnedEntities.contains(entry) && !this.getDeadSpawnedEntities().contains(entry)) {
+                // The dead set is per scene instance and forgets a collected oculus on relog.
+                if (entry.getGatherItemId() > 0
+                        && entry.getGroup() != null
+                        && OpenWorldSpawnHelper.isPermanentGather(entry.getGatherItemId())
+                        && OpenWorldSpawnHelper.isEntityRespawnBlocked(
+                                this, entry.getGroup().getGroupId(), entry.getConfigId())) {
+                    Grasscutter.getLogger()
+                            .debug(
+                                    "[Spawn] skip collected oculus item={} group={} cfg={}",
+                                    entry.getGatherItemId(),
+                                    entry.getGroup().getGroupId(),
+                                    entry.getConfigId());
+                    this.getDeadSpawnedEntities().add(entry);
+                    continue;
+                }
 
                 GameEntity entity = null;
 
@@ -844,7 +1147,9 @@ public class Scene {
                     gadget.setFightProperty(FightProperty.FIGHT_PROP_MAX_HP, Float.POSITIVE_INFINITY);
 
                     entity = gadget;
-                    blossomManager.initBlossom(gadget);
+                    if (getSceneType() == SceneType.SCENE_WORLD) {
+                        blossomManager.initBlossom(gadget);
+                    }
                 }
 
                 if (entity == null) continue;
@@ -858,7 +1163,9 @@ public class Scene {
             var spawnEntry = entity.getSpawnEntry();
             if (spawnEntry != null
                     && !(entity instanceof EntityWeapon)
-                    && !visible.contains(spawnEntry)) {
+                    && !visible.contains(spawnEntry)
+                    && !(getSceneType() == SceneType.SCENE_WORLD
+                            && blossomManager.isNativeCampSpawn(spawnEntry))) {
                 toRemove.add(entity);
                 spawnedEntities.remove(spawnEntry);
             }
@@ -873,7 +1180,9 @@ public class Scene {
             toRemove.forEach(this::removeEntityDirectly);
             this.broadcastPacket(
                     new PacketSceneEntityDisappearNotify(toRemove, VisionType.VisionType_VISION_REMOVE));
-            blossomManager.recycleGadgetEntity(toRemove);
+            if (getSceneType() == SceneType.SCENE_WORLD) {
+                blossomManager.recycleGadgetEntity(toRemove);
+            }
         }
     }
 
@@ -925,8 +1234,10 @@ public class Scene {
                                 g -> {
                                     for (var b : scriptManager.getBlocks().values()) {
                                         loadBlock(b);
+                                        if (b.groups == null) continue;
                                         SceneGroup group = b.groups.getOrDefault(g, null);
-                                        if (group != null && !group.dynamic_load) return group;
+                                        if (group != null && !group.dynamic_load
+                                                && !isReplacedByLoadedDynamicGroup(group)) return group;
                                     }
 
                                     return null;
@@ -936,6 +1247,51 @@ public class Scene {
 
         this.onLoadGroup(toLoad);
         if (!toLoad.isEmpty()) this.onRegisterGroups();
+        try {
+            emu.grasscutter.game.world.InvestigationSpawnHelper.ensureNearby(this);
+        } catch (Throwable __t) {
+            emu.grasscutter.Grasscutter.getLogger().error("InvestigationSpawnHelper nearby check failed", __t);
+        }
+        try {
+            emu.grasscutter.game.world.NodKraiExploreSpawnHelper.ensureNearby(this);
+        } catch (Throwable __t) {
+            emu.grasscutter.Grasscutter.getLogger().error("NodKraiExploreSpawnHelper nearby check failed", __t);
+        }
+        try {
+            emu.grasscutter.game.world.SnezhnayaExploreSpawnHelper.ensureNearby(this);
+        } catch (Throwable __t) {
+            emu.grasscutter.Grasscutter.getLogger().error("SnezhnayaExploreSpawnHelper nearby check failed", __t);
+        }
+        try {
+            emu.grasscutter.game.activity.leylinechallenge.LeyLineChallengeGroupLoader.ensureNearby(this);
+        } catch (Throwable __t) {
+            emu.grasscutter.Grasscutter.getLogger()
+                    .error("LeyLineChallengeGroupLoader nearby check failed", __t);
+        }
+        try {
+            emu.grasscutter.game.world.OfferingSpawnHelper.ensureNearby(this);
+        } catch (Throwable __t) {
+            emu.grasscutter.Grasscutter.getLogger()
+                    .error("OfferingSpawnHelper nearby check failed", __t);
+        }
+        if (getSceneType() == SceneType.SCENE_WORLD) {
+            blossomManager.ensureScriptedSpawns();
+        }
+        emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.tick(this);
+    }
+
+    /** Authored replacement edges are scene-local policy only while their dynamic group is loaded. */
+    private boolean isReplacedByLoadedDynamicGroup(SceneGroup group) {
+        if (group.is_replaceable == null) return false;
+        for (var replacement : this.loadedGroups) {
+            if (!replacement.dynamic_load || replacement.is_replaceable == null) continue;
+            var data = GameData.getGroupReplacements().get(replacement.id);
+            if (data == null || data.replace_groups == null || !data.replace_groups.contains(group.id)) continue;
+            if ((group.is_replaceable.value
+                            && group.is_replaceable.version <= replacement.is_replaceable.version)
+                    || group.is_replaceable.new_bin_only) return true;
+        }
+        return false;
     }
 
     public void onLoadBlock(SceneBlock block, List<Player> players) {
@@ -997,9 +1353,10 @@ public class Scene {
                 group -> {
                     if (GameData.getGroupReplacements().containsKey((int) group)) {
                         var data = GameData.getGroupReplacements().get((int) group);
+                        // An earlier replacement in the sorted order may already have unloaded this one.
                         var sceneGroupReplacement =
-                                this.loadedGroups.stream().filter(g -> g.id == group).findFirst().orElseThrow();
-                        if (sceneGroupReplacement.is_replaceable != null) {
+                                this.loadedGroups.stream().filter(g -> g.id == group).findFirst().orElse(null);
+                        if (sceneGroupReplacement != null && sceneGroupReplacement.is_replaceable != null) {
                             var it = data.replace_groups.iterator();
                             while (it.hasNext()) {
                                 var replace_group = it.next();
@@ -1014,7 +1371,6 @@ public class Scene {
                                                 || sceneGroup.is_replaceable.new_bin_only)) {
                                     this.unloadGroup(
                                             scriptManager.getBlocks().get(sceneGroup.block_id), replace_group);
-                                    it.remove();
                                     Grasscutter.getLogger().debug("Graph ordering: unloaded {}", replace_group);
                                 }
                             }
@@ -1065,15 +1421,16 @@ public class Scene {
                 groupInstance = cachedInstance;
             }
 
-            this.getScriptManager()
-                    .refreshGroup(groupInstance, 0, false);
+            emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.load(
+                    this.getScriptManager(), groupInstance,
+                    emu.grasscutter.game.quest.LiyueSceneGroupRecovery.selectSuite(this, groupInstance));
 
             this.loadedGroups.add(group);
         }
 
         this.scriptManager.meetEntities(entities);
-        groups.forEach(
-                g -> scriptManager.callEvent(new ScriptArgs(g.id, EventType.EVENT_GROUP_LOAD, g.id)));
+        groups.forEach(g -> emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.groupLoad(
+                scriptManager, new ScriptArgs(g.id, EventType.EVENT_GROUP_LOAD, g.id)));
 
         Grasscutter.getLogger().trace("Scene {} loaded {} group(s)", this.getId(), groups.size());
     }
@@ -1081,16 +1438,33 @@ public class Scene {
     public void unloadGroup(SceneBlock block, int group_id) {
         List<GameEntity> toRemove =
                 this.getEntities().values().stream()
-                        .filter(e -> e != null && (e.getBlockId() == block.id && e.getGroupId() == group_id))
+                        .filter(
+                                e ->
+                                        e != null
+                                                && e.getGroupId() == group_id
+                                                && (block == null || e.getBlockId() == block.id))
                         .toList();
 
         if (toRemove.size() > 0) {
             toRemove.forEach(this::removeEntityDirectly);
             this.broadcastPacket(
                     new PacketSceneEntityDisappearNotify(toRemove, VisionType.VisionType_VISION_REMOVE));
+            if (getSceneType() == SceneType.SCENE_WORLD) {
+                blossomManager.recycleGadgetEntity(toRemove);
+            }
         }
 
-        var group = block.groups.get(group_id);
+        var group =
+                block == null || block.groups == null
+                        ? this.scriptManager.getGroupById(group_id)
+                        : block.groups.get(group_id);
+        if (group == null) {
+            // The group's script never loaded, so there is nothing to tear down. The entities are
+            // already gone above; tell the client the group is unloaded and stop.
+            this.broadcastPacket(new PacketGroupUnloadNotify(List.of(group_id)));
+            return;
+        }
+
         if (group.triggers != null) {
             group.triggers.values().forEach(getScriptManager()::deregisterTrigger);
         }
@@ -1101,10 +1475,17 @@ public class Scene {
             challenge.fail();
         }
 
-        scriptManager.getLoadedGroupSetPerBlock().get(block.id).remove(group);
+        // A null block means the group's block is gone; only the per-block bookkeeping is skipped.
+        if (block != null) {
+            var blockGroups = scriptManager.getLoadedGroupSetPerBlock().get(block.id);
+            if (blockGroups != null) {
+                blockGroups.remove(group);
+            }
+        }
         this.loadedGroups.remove(group);
 
-        if (this.scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {
+        if (block != null && scriptManager.getLoadedGroupSetPerBlock().get(block.id) != null
+                && this.scriptManager.getLoadedGroupSetPerBlock().get(block.id).isEmpty()) {
             this.scriptManager.getLoadedGroupSetPerBlock().remove(block.id);
             Grasscutter.getLogger().trace("Scene {} block {} is unloaded.", this.getId(), block.id);
         }
@@ -1168,23 +1549,31 @@ public class Scene {
     }
 
     public void addItemEntity(int itemId, int amount, GameEntity bornForm) {
+        addEntities(prepareItemEntities(itemId, amount, bornForm));
+    }
+
+    /** Construct and validate every pickup before any entity is added to the scene. */
+    public List<EntityItem> prepareItemEntities(int itemId, int amount, GameEntity bornFrom) {
         ItemData itemData = GameData.getItemDataMap().get(itemId);
-        if (itemData == null) {
-            return;
+        if (itemData == null || itemData.getItemType() == null || amount <= 0
+                || bornFrom == null || bornFrom.getScene() != this) {
+            throw new IllegalArgumentException("Invalid ground reward: " + itemId + " x" + amount);
         }
-        if (itemData.isEquip()) {
-            float range = (1.5f + (.05f * amount));
+        var items = new ArrayList<EntityItem>();
+        boolean split = itemData.isEquip() || isSplitGroundDropItem(itemId);
+        if (split) {
+            float range = 1.5f + (.05f * amount);
             for (int i = 0; i < amount; i++) {
-                Position pos = bornForm.getPosition().nearby2d(range).addZ(.9f);
-                EntityItem entity = new EntityItem(this, null, itemData, pos, 1);
-                addEntity(entity);
+                Position pos = bornFrom.getPosition().nearby2d(range).addZ(.9f);
+                items.add(new EntityItem(this, null, itemData, pos, 1));
             }
         } else {
-            EntityItem entity =
-                    new EntityItem(
-                            this, null, itemData, bornForm.getPosition().clone().addZ(.9f), amount);
-            addEntity(entity);
+            items.add(new EntityItem(this, null, itemData,
+                    bornFrom.getPosition().clone().addZ(.9f), amount));
         }
+        // Force serialization before admission, so malformed pickup metadata fails before payouts.
+        items.forEach(EntityItem::toProto);
+        return List.copyOf(items);
     }
 
     public void loadNpcForPlayerEnter(Player player) {
@@ -1211,9 +1600,20 @@ public class Scene {
         sceneNpcBornCanidates.forEach(
                 i -> {
                     var groupInstance = scriptManager.getGroupInstanceById(i.getGroupId());
-                    if (groupInstance == null) return;
-                    if (i.getSuiteIdList() != null
-                            && !i.getSuiteIdList().contains(groupInstance.getActiveSuiteId())) return;
+                    if (groupInstance != null) {
+                        if (i.getSuiteIdList() != null
+                                && !i.getSuiteIdList()
+                                        .contains(groupInstance.getActiveSuiteId())) {
+                            return;
+                        }
+                    } else {
+                        // Server is missing many late-region Lua groups (Fontaine+/Natlan SotS).
+                        // Client still has them locally - GroupSuiteNotify alone loads the NPC.
+                        // Skipping here left goddess statues with no F tip after unlock.
+                        if (i.getSuiteIdList() == null || i.getSuiteIdList().isEmpty()) {
+                            return;
+                        }
+                    }
                     sceneNpcBornEntries.add(i);
                 });
 
@@ -1274,6 +1674,7 @@ public class Scene {
     }
 
     public void saveGroups() {
+        emu.grasscutter.game.dailytask.DailyTaskGroupLifecycle.captureAll(this);
         this.getScriptManager().getCachedGroupInstances().values().forEach(SceneGroupInstance::save);
     }
 }

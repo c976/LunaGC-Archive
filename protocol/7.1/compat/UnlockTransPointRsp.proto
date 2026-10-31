@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 8462 and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message UnlockTransPointRsp {
+  int32 retcode = 5;
+}

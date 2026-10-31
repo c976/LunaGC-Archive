@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "AvatarInfo.proto";
+import "AvatarRenameInfo.proto";
+import "AvatarTeam.proto";
+
+// 7.1 field numbers from kitkat-multiverse/genshin-protocol 7.1.0. protocol.desc had
+// owned_flycloak_list (5) and _owned_trace_effect_list (13) swapped, so the client read the
+// owned gliders as trace effects and never showed them.
+message AvatarDataNotify {
+  repeated uint32 backup_avatar_team_order_list = 1;
+  repeated AvatarInfo avatar_list = 7;
+  repeated uint32 owned_costume_list = 6;
+  map<uint32, AvatarTeam> avatar_team_map = 8;
+  repeated AvatarRenameInfo avatar_rename_list = 14;
+  repeated uint32 _owned_trace_effect_list = 13;
+  repeated uint64 temp_avatar_guid_list = 12;
+  repeated uint32 owned_flycloak_list = 5;
+  uint64 choose_avatar_guid = 9;
+  uint32 cur_avatar_team_id = 3;
+}

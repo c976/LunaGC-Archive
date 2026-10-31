@@ -9,13 +9,10 @@ import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.game.props.*;
-import emu.grasscutter.net.proto.BattlePassCycleOuterClass.BattlePassCycle;
 import emu.grasscutter.net.proto.BattlePassRewardTakeOptionOuterClass.BattlePassRewardTakeOption;
 import emu.grasscutter.net.proto.BattlePassScheduleOuterClass.BattlePassSchedule;
 import emu.grasscutter.net.proto.BattlePassUnlockStatusOuterClass.BattlePassUnlockStatus;
 import emu.grasscutter.server.packet.send.*;
-import java.time.*;
-import java.time.temporal.TemporalAdjusters;
 import java.util.*;
 import lombok.Getter;
 import org.bson.types.ObjectId;
@@ -111,8 +108,11 @@ public class BattlePassManager extends BasePlayerDataManager {
     }
 
     public boolean isPaid() {
-        // ToDo: Change this when we actually support unlocking "paid" BP.
-        return true;
+        return this.paid;
+    }
+
+    public void setPaid(boolean paid) {
+        this.paid = paid;
     }
 
     public Map<Integer, BattlePassReward> getTakenRewards() {
@@ -278,7 +278,7 @@ public class BattlePassManager extends BasePlayerDataManager {
                         new BattlePassReward(
                                 tag.getLevel(),
                                 tag.getRewardId(),
-                                tag.getUnlockStatus() == BattlePassUnlockStatus.BattlePassUnlockSTATUS_BATTLE_PASS_UNLOCK_PAID);
+                                tag.getUnlockStatus() == BattlePassUnlockStatus.BattlePassUnlockStatus_BATTLE_PASS_UNLOCK_PAID);
                 this.getTakenRewards().put(bpReward.getRewardId(), bpReward);
             }
 
@@ -293,23 +293,39 @@ public class BattlePassManager extends BasePlayerDataManager {
         getPlayer().sendPacket(new PacketTakeBattlePassRewardRsp(takeOptionList, rewardItems));
     }
 
-    public int buyLevels(int buyLevel) {
-        int boughtLevels = Math.min(buyLevel, GameConstants.BATTLE_PASS_MAX_LEVEL - buyLevel);
+    /** A validated purchase quote, shared by GM and client-level purchases. */
+    public record LevelPurchase(int levels, int cost) {}
 
-        if (boughtLevels > 0) {
-            int price = GameConstants.BATTLE_PASS_LEVEL_PRICE * boughtLevels;
+    public static LevelPurchase quoteLevelPurchase(int currentLevel, int requestedLevels) {
+        if (requestedLevels <= 0 || currentLevel < 0
+                || currentLevel >= GameConstants.BATTLE_PASS_MAX_LEVEL) {
+            return new LevelPurchase(0, 0);
+        }
+        int levels = Math.min(requestedLevels, GameConstants.BATTLE_PASS_MAX_LEVEL - currentLevel);
+        return new LevelPurchase(levels, levels * GameConstants.BATTLE_PASS_LEVEL_PRICE);
+    }
 
-            if (getPlayer().getPrimogems() < price) {
-                return 0;
-            }
+    /**
+     * Purchase levels through the same path for both the BP UI and GM command.
+     * A rejected or cancelled primogem debit must not advance the BP level.
+     */
+    public synchronized int buyLevels(int requestedLevels) {
+        LevelPurchase quote = quoteLevelPurchase(this.level, requestedLevels);
+        if (quote.levels() == 0 || this.getPlayer() == null) return 0;
 
-            this.level += boughtLevels;
-            this.save();
-
-            getPlayer().sendPacket(new PacketBattlePassCurScheduleUpdateNotify(getPlayer()));
+        Player player = this.getPlayer();
+        int balance = player.getPrimogems();
+        if (balance < quote.cost() || !player.setPrimogems(balance - quote.cost())) {
+            return 0;
         }
 
-        return boughtLevels;
+        // Preserve the current fractional BP points when buying whole levels.
+        this.level += quote.levels();
+        player.save();
+        this.save();
+        player.sendPacket(new PacketBattlePassCurScheduleUpdateNotify(player));
+        player.sendPacket(new PacketBeyondBattlePassCurScheduleUpdateNotify(player));
+        return quote.levels();
     }
 
     public void resetDailyMissions() {
@@ -331,6 +347,15 @@ public class BattlePassManager extends BasePlayerDataManager {
     }
 
     public void resetWeeklyMissions() {
+        var resetMissions = resetWeeklyProgress();
+        this.save();
+
+        this.getPlayer().sendPacket(new PacketBattlePassMissionUpdateNotify(resetMissions));
+        this.getPlayer().sendPacket(new PacketBattlePassCurScheduleUpdateNotify(this.getPlayer()));
+    }
+
+    List<BattlePassMission> resetWeeklyProgress() {
+        this.cyclePoints = 0;
         var resetMissions = new ArrayList<BattlePassMission>();
 
         for (var mission : this.missions.values()) {
@@ -343,48 +368,14 @@ public class BattlePassManager extends BasePlayerDataManager {
             }
         }
 
-        this.getPlayer().sendPacket(new PacketBattlePassMissionUpdateNotify(resetMissions));
-        this.getPlayer().sendPacket(new PacketBattlePassCurScheduleUpdateNotify(this.getPlayer()));
+        return resetMissions;
     }
 
     //
     public BattlePassSchedule getScheduleProto() {
-        var currentDate = LocalDate.now();
-        var nextSundayDate =
-                (currentDate.getDayOfWeek() == DayOfWeek.SUNDAY)
-                        ? currentDate
-                        : LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.SUNDAY));
-        var nextSundayTime =
-                LocalDateTime.of(
-                        nextSundayDate.getYear(),
-                        nextSundayDate.getMonthValue(),
-                        nextSundayDate.getDayOfMonth(),
-                        23,
-                        59,
-                        59);
-
-        BattlePassSchedule.Builder schedule =
-                BattlePassSchedule.newBuilder()
-                        .setScheduleId(2700)
-                        .setLevel(this.getLevel())
-                        .setPoint(this.getPoint())
-                        .setBeginTime(0)
-                        .setEndTime(2059483200)
-                        .setUnlockStatus(
-                                this.isPaid()
-                                        ? BattlePassUnlockStatus.BattlePassUnlockSTATUS_BATTLE_PASS_UNLOCK_PAID
-                                        : BattlePassUnlockStatus.BattlePassUnlockSTATUS_BATTLE_PASS_UNLOCK_FREE)
-                        .setCurCycle(
-                                BattlePassCycle.newBuilder()
-                                        .setBeginTime(0)
-                                        .setEndTime((int) nextSundayTime.atZone(ZoneId.systemDefault()).toEpochSecond())
-                                        .setCycleIdx(3));
-
-        for (BattlePassReward reward : getTakenRewards().values()) {
-            schedule.addRewardTakenList(reward.toProto());
-        }
-
-        return schedule.build();
+        // LunaGC/0be043a path: schedule 6700 + reward plans. The old inline 2700 proto had no
+        // reward-plan options, so the client showed an empty track and a ~3000-day timer.
+        return SafeBattlePassSchedule.build(this);
     }
 
     public void save() {

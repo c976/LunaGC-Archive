@@ -19,7 +19,7 @@ public class HandlerGetFriendShowNameCardInfoReq extends PacketHandler {
         Player target = session.getServer().getPlayerByUid(targetUid, true);
 
         if (target == null) {
-            if (targetUid == GameConstants.SERVER_CONSOLE_UID) {
+            if (GameConstants.isServerBotUid(targetUid)) {
                 session.send(new PacketGetFriendShowNameCardInfoRsp(targetUid, List.of()));
             }
             return;

@@ -35,7 +35,12 @@ public final class EntityCreationEvent extends Event {
             return this.entityType
                     .getConstructor(this.constructorArgTypes)
                     .newInstance(this.constructorArgs);
-        } catch (ReflectiveOperationException ignored) {
+        } catch (ReflectiveOperationException e) {
+            // The constructor's own exception is the useful part; without it a failed entity is
+            // just a null that breaks something else later.
+            var cause = e instanceof java.lang.reflect.InvocationTargetException ite ? ite.getTargetException() : e;
+            emu.grasscutter.Grasscutter.getLogger()
+                    .error("Unable to create {}.", this.entityType.getSimpleName(), cause);
             return null;
         }
     }

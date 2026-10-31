@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Native 7.1 command 29488: team 2 success payload is 28 02.
+message ChooseCurAvatarTeamRsp {
+  uint32 cur_team_id = 5;
+  int32 retcode = 12;
+}

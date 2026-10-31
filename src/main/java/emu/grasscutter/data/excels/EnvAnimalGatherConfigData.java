@@ -32,4 +32,18 @@ public class EnvAnimalGatherConfigData extends GameResource {
     public ItemParamData getGatherItem() {
         return gatherItemList != null && gatherItemList.size() > 0 ? gatherItemList.get(0) : null;
     }
+
+    /**
+     * Every item the animal drops when gathered.
+     *
+     * <p>{@link #getGatherItem()} only ever answers the first entry, so animals whose excel row
+     * lists more than one drop (most fowl drop meat plus a feather) handed out a single item. The
+     * caller falls back to {@code getGatherItem()} when this is null, so a row with no list at all
+     * still behaves as before.
+     *
+     * @return the raw drop list, or {@code null} when the row declares none
+     */
+    public List<ItemParamData> getGatherItemList() {
+        return gatherItemList;
+    }
 }

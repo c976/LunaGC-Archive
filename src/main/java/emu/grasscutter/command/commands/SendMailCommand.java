@@ -12,9 +12,13 @@ import java.util.*;
 @SuppressWarnings("ConstantConditions")
 @Command(
         label = "sendMail",
-        usage = {"(<userId>|all) [<templateId>]", "help"},
         permission = "server.sendmail",
         targetRequirement = Command.TargetRequirement.NONE)
+/**
+ * The pre-picocli step-by-step mail builder, kept because GrasscutterTools' mail page drives it:
+ * {@code sendMail <uid|all>}, then title, body, sender, any {@code <itemId> <count> <level>} lines and
+ * {@code finish}, each as its own command. {@code mail send} is the one-line form.
+ */
 public final class SendMailCommand implements CommandHandler {
 
     // TODO: You should be able to do /sendmail and then just send subsequent messages until you

@@ -18,6 +18,19 @@ public class RewardPreviewData extends GameResource {
         return previewItemsArray;
     }
 
+    /**
+     * Previews advertise possible items even when the 7.1 resource omits a count.
+     * This is identity evidence only, never a payable quantity or probability.
+     */
+    public java.util.Set<Integer> getAdvertisedItemIds() {
+        if (previewItems == null) return java.util.Set.of();
+        var ids = new java.util.HashSet<Integer>();
+        for (ItemParamStringData item : previewItems) {
+            if (item != null && item.getId() > 0) ids.add(item.getId());
+        }
+        return java.util.Set.copyOf(ids);
+    }
+
     @Override
     public void onLoad() {
         if (this.previewItems != null && this.previewItems.length > 0) {

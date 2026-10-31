@@ -3,54 +3,53 @@ package emu.grasscutter.game.ability.actions;
 import com.google.protobuf.ByteString;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.game.ability.Ability;
+import emu.grasscutter.game.ability.PartyReviveHelper;
 import emu.grasscutter.game.entity.GameEntity;
-import emu.grasscutter.game.entity.EntityAvatar;
-import emu.grasscutter.game.entity.EntityClientGadget;
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.FightProperty;
-import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
-import emu.grasscutter.server.packet.send.PacketAvatarFightPropUpdateNotify;
-import emu.grasscutter.server.packet.send.PacketAvatarLifeStateChangeNotify;
 import it.unimi.dsi.fastutil.objects.Object2FloatOpenHashMap;
-import java.util.List;
 
-@AbilityAction(AbilityModifierAction.Type.ReviveAvatar)
+/** Fills in ReviveDeadAvatar, charging the Qiqi or Barbara cooldown by which ability owns the revive so
+ * merely having Qiqi in the party cannot burn her cooldown. */
+@AbilityAction({
+    AbilityModifierAction.Type.ReviveAvatar,
+    AbilityModifierAction.Type.ReviveDeadAvatar
+})
 public final class ActionReviveAvatar extends AbilityActionHandler {
     @Override
     public boolean execute(
             Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
-            Player player = ability.getPlayerOwner();
+        Player player = ability.getPlayerOwner();
+        if (player == null) {
+            return false;
+        }
 
-            var owner = ability.getOwner();
-            if (owner instanceof EntityClientGadget ownerGadget) {
-                owner = ownerGadget.getScene().getEntityById(ownerGadget.getOwnerEntityId());
-            }
-            var properties = new Object2FloatOpenHashMap<String>();
+        var owner = ability.getOwner();
+        if (owner instanceof emu.grasscutter.game.entity.EntityClientGadget ownerGadget) {
+            owner = ownerGadget.getScene().getEntityById(ownerGadget.getOwnerEntityId());
+        }
+        if (owner == null) {
+            owner = ability.getOwner();
+        }
+
+        var properties = new Object2FloatOpenHashMap<String>();
+        if (owner != null) {
             for (var property : FightProperty.values()) {
-                var name = property.name();
-                var value = owner.getFightProperty(property);
-                properties.put(name, value);
+                properties.put(property.name(), owner.getFightProperty(property));
             }
-    
+            owner.getGlobalAbilityValues().forEach(properties::put);
+        }
         properties.putAll(ability.getAbilitySpecials());
 
         float ratio = action.amountByTargetMaxHPRatio.get(properties, 0.0f);
-        player.getTeamManager().getActiveTeam().forEach(entityAvatar -> {
-            boolean wasDead = !entityAvatar.isAlive(); // Check if alive but idrk sob
+        if (ratio <= 0.01f) {
+            ratio = action.amount.get(properties, 0.0f);
+        }
+        if (ratio <= 0.01f) {
+            ratio = PartyReviveHelper.QIQI_REVIVE_RATIO;
+        }
 
-            if (wasDead) {
-                float maxHp = entityAvatar.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-                float healAmount = maxHp * ratio;
-
-                // tthis should work, plz
-                entityAvatar.getWorld().broadcastPacket(
-                    new PacketAvatarLifeStateChangeNotify(entityAvatar.getAvatar())
-                );
-                entityAvatar.heal(healAmount, false);
-            }
-
-        });
+        PartyReviveHelper.reviveFallenFromAbility(ability, ratio);
         return true;
     }
 }

@@ -11,7 +11,10 @@ import io.javalin.http.Context;
 /** Handles all generic, hard-coded responses. */
 public final class GenericHandler implements Router {
     private static void serverStatus(Context ctx) {
-        int playerCount = Grasscutter.getGameServer().getPlayers().size();
+        // A dispatch-only node has no game server, and this used to throw there rather than
+        // answer with zero.
+        var gameServer = Grasscutter.getGameServer();
+        int playerCount = gameServer == null ? 0 : gameServer.getPlayers().size();
         int maxPlayer = ACCOUNT.maxPlayer;
         String version = GameConstants.VERSION;
 
@@ -60,7 +63,7 @@ public final class GenericHandler implements Router {
         javalin.get(
                 "/hk4e_global/mdk/shield/api/loadConfig",
                 new HttpJsonResponse(
-                        "{\"retcode\":0,\"message\":\"OK\",\"data\":{\"id\":6,\"game_key\":\"hk4e_global\",\"client\":\"PC\",\"identity\":\"I_IDENTITY\",\"guest\":false,\"ignore_versions\":\"\",\"scene\":\"S_NORMAL\",\"name\":\"原神海外\",\"disable_regist\":false,\"enable_email_captcha\":false,\"thirdparty\":[\"fb\",\"tw\"],\"disable_mmt\":false,\"server_guest\":false,\"thirdparty_ignore\":{\"tw\":\"\",\"fb\":\"\"},\"enable_ps_bind_account\":false,\"thirdparty_login_configs\":{\"tw\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800},\"fb\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800}}}}"));
+                        "{\"retcode\":0,\"message\":\"OK\",\"data\":{\"id\":6,\"game_key\":\"hk4e_global\",\"client\":\"PC\",\"identity\":\"I_IDENTITY\",\"guest\":false,\"ignore_versions\":\"\",\"scene\":\"S_NORMAL\",\"name\":\"\u539f\u795e\u6d77\u5916\",\"disable_regist\":false,\"enable_email_captcha\":false,\"thirdparty\":[\"fb\",\"tw\"],\"disable_mmt\":false,\"server_guest\":false,\"thirdparty_ignore\":{\"tw\":\"\",\"fb\":\"\"},\"enable_ps_bind_account\":false,\"thirdparty_login_configs\":{\"tw\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800},\"fb\":{\"token_type\":\"TK_GAME_TOKEN\",\"game_token_expires_in\":604800}}}}"));
         // Test api?
         // abtest-api-data-sg.hoyoverse.com
         javalin.post(
@@ -76,9 +79,15 @@ public final class GenericHandler implements Router {
         this.allRoutes(javalin, "/perf/config/verify", new HttpJsonResponse("{\"code\":0}"));
 
         // webstatic-sea.hoyoverse.com
+        // The SDK's localisation bundles - the strings on the login screen. plat_os is the path
+        // the Android client asks for and plat_oversea the one the PC client asks for; both are
+        // served from the same webstatic bundles.
+        //
+        // plat_os used to answer "{}", which is a valid but empty bundle, so the Android client
+        // had no strings to render and fell back to printing the raw keys.
         javalin.get("/admin/mi18n/plat_oversea/*", new WebStaticVersionResponse());
-
-        javalin.get("/admin/mi18n/plat_os/*", ctx -> ctx.result("{}"));
+        javalin.get("/admin/mi18n/plat_os/*", new WebStaticVersionResponse());
+        javalin.get("/admin/mi18n/plat_cn/*", new WebStaticVersionResponse());
 
         this.allRoutes(javalin, "/hk4e_global/account/ma-passport/api/getConfig",
                 new HttpJsonResponse("{\"retcode\":0,\"message\":\"OK\",\"data\":{\"support_reactivate_account\":false,\"enable_ps_bind_account\":false,\"login_mode\":\"account_login\",\"guest_mode\":\"close\",\"realperson_mode\":\"none\",\"safeguard_type\":\"none\",\"apple_login_enabled\":false,\"facebook_login_enabled\":false,\"google_login_enabled\":false,\"twitter_login_enabled\":false}}"));

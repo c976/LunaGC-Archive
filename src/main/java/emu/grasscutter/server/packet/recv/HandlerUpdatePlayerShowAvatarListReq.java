@@ -13,10 +13,13 @@ public class HandlerUpdatePlayerShowAvatarListReq extends PacketHandler {
                 UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq.parseFrom(payload);
 
         session.getPlayer().setShowAvatars(req.getIsShowAvatar());
+        session.getPlayer().setShowConstellationNum(req.getIsShowConstellationNum());
         session.getPlayer().setShowAvatarList(req.getShowAvatarIdListList());
 
         session.send(
                 new PacketUpdatePlayerShowAvatarListRsp(
-                        req.getIsShowAvatar(), req.getShowAvatarIdListList()));
+                        req.getIsShowAvatar(),
+                        req.getIsShowConstellationNum(),
+                        req.getShowAvatarIdListList()));
     }
 }

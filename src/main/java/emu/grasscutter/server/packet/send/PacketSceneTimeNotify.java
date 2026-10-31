@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.world.Scene;
 import emu.grasscutter.net.packet.*;
@@ -16,7 +17,7 @@ public class PacketSceneTimeNotify extends BasePacket {
 
         var proto =
                 SceneTimeNotify.newBuilder()
-                        .setSceneId(scene.getId())
+                        .setSceneId(DomainDungeonHelper.notifySceneId(scene.getId()))
                         .setSceneTime(scene.getSceneTime())
                         .setIsPaused(scene.isPaused())
                         .build();

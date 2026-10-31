@@ -32,6 +32,23 @@ public class MapMark {
         this.questId = mapMarkPoint.getQuestId();
     }
 
+    public MapMark(
+            int sceneId,
+            String name,
+            Position position,
+            MapMarkPointType pointType,
+            MapMarkFromType fromType,
+            int monsterId,
+            int questId) {
+        this.sceneId = sceneId;
+        this.name = name;
+        this.position = position;
+        this.mapMarkPointType = pointType;
+        this.mapMarkFromType = fromType;
+        this.monsterId = monsterId;
+        this.questId = questId;
+    }
+
     public int getSceneId() {
         return this.sceneId;
     }

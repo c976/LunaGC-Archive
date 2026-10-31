@@ -114,6 +114,13 @@
       "need_target_online": "Questo comando richiede un UID bersaglio online, ma il bersaglio corrente è offline. Aggiungi un argomento <@UID> diverso o imposta un target persistente con /target @UID.",
       "need_target_offline": "Questo comando richiede un UID bersaglio offline, ma il bersaglio corrente è online. Aggiungi un argomento <@UID> diverso o imposta un target persistente con /target @UID."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "Abilitato",
       "disabled": "Disabilitato",
@@ -174,6 +181,12 @@
       "description": "Modifica le proprietà di un entità esistente",
       "not_found_error": "L'entità non esiste."
     },
+    "avatar": {
+      "description": "Gestisci i personaggi: elenco, costellazioni, talenti, statistiche di combattimento, amicizia, livelli extra e potenziamento massimo."
+    },
+    "battlepass": {
+      "description": "Gestisce l'acquisto dei livelli e lo stato premium del pass battaglia."
+    },
     "give": {
       "usage_relic": "Utilizzo: give <IDmanufatto> [mainPropID] [<appendPropID>[,<volte>]]... [lv<livello 0-20>]",
       "illegal_relic": "Questo ID manufatto appartiene ad una blacklist, potrebbe non essere quello che volevi.",
@@ -217,7 +230,7 @@
       "language_not_found": "Attualmente, il server non ha quella lingua.",
       "description": "Mostra o cambia la lingua corrente"
     },
-    "list": {
+    "player": {
       "success": "Ci sono %s player online:",
       "description": "Lista player online"
     },
@@ -233,11 +246,25 @@
       "success": "Coordinate: %s, %s, %s\nRotazione:%s, %s, %s\nID scena: %a",
       "description": "Ottiene informazioni sulla posizione e sulla rotazione attuale del giocatore"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "Missione %s aggiunta.",
       "finished": "Missione completata %s.",
       "not_found": "Missione non trovata.",
       "invalid_id": "ID missione non valido.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "Aggiungi o completa missioni",
       "running": "Missione %s è %s (%s).",
       "talking": "Talk %s è %s per la missione principale %s (%s).",
@@ -263,7 +290,10 @@
       "description": "Riproduce una cutscene"
     },
     "sound": {
-      "description": "Riproduce un suono"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "Ricarica in configurazione.",
@@ -302,9 +332,13 @@
       "error": "ERRORE: fase di costruzione %s non valida. Controlla lo stacktrace della console.",
       "description": "Invia posta all'utente specificato. L'utilizzo di questo comando cambia in base al suo stato di composizione"
     },
-    "sendMessage": {
+    "say": {
       "success": "Messaggio inviato.",
-      "description": "Invia un messaggio a un giocatore come server. Se usato senza bersaglio, invia a tutti i giocatori sul server."
+      "description": "Invia un messaggio del server a tutti i giocatori online."
+    },
+    "sayto": {
+      "success": "Messaggio inviato.",
+      "description": "Invia un messaggio del server a un giocatore online."
     },
     "setConst": {
       "range_error": "Il livello della costellazione deve essere compreso tra 0 e 6.",
@@ -321,8 +355,11 @@
       "level_error": "Livello di amicizia non valido.",
       "description": "Imposta il tuo livello di amicizia per il tuo attuale personaggio attivo"
     },
-    "setProp": {
-      "description": "Imposta le proprietà dell'intero account. Cose come godmode possono essere abilitate in questo modo, oltre a cambiare cose come il pavimento dell'abisso sbloccato e il progresso del pass battaglia.\n\tValori per <prop> (senza distinzione tra maiuscole e minuscole): GodMode | UnlimitedStamina | UnlimitedEnergy | TowerLevel | WorldLevel | BPLevel | SetOpenState | UnsetOpenState | UnlockMap\n\t(cont.) vedi PlayerProperty enum per altri possibili valori, nella forma PROP_MAX_SPRING_VOLUME -> max_spring_volume"
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "Imposta le proprietà dell'intero account. Cose come godmode possono essere abilitate in questo modo, oltre a cambiare cose come il pavimento dell'abisso sbloccato e il progresso del pass battaglia. Use `unlock map` for map unlocks and `openstate` for OpenStates."
     },
     "setSceneTag": {
       "description": "Imposta i tag di scena specifici dell'account. Questo controlla cose come le rocce che bloccano le porte, gli edifici visibili e altre cose (di solito legate alle missioni) che influenzano ciò che è visibile nel mondo."
@@ -379,7 +416,7 @@
       "success": "Teletrasportato %s a %s, %s, %s nella scena %s.",
       "description": "Cambia la posizione del giocatore"
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "Manipola le funzionalità dell'attività Trial del personaggio. Ciò include la commutazione degli stati dei dungeon e delle ricompense.",
       "not_found": "Dati giocatore attività personaggi di prova non trovati. Forse l'attività non è abilitata.",
       "invalid_param": "Parametro non valido.",
@@ -399,7 +436,7 @@
       "success": "Successo.",
       "failure": "Fallito, giocatore non trovato.",
       "invalid_time": "Impossibile analizzare il timestamp.",
-      "description": "Banna un giocatore"
+      "description": "Banna un account o un indirizzo IPv4"
     },
     "unlockall": {
       "success": "Sbloccato tutti gli open state per %s.",
@@ -471,6 +508,12 @@
       "not_present": "Il plugin %s non ha una versione API specifica.",
       "lower": "Il plugin %s sta usando la versione API %s, mentre il server sta usando la versione API %s.",
       "outdated": "Il plugin %s sta usando un metodo API obsoleto."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

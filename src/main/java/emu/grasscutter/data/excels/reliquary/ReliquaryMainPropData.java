@@ -17,4 +17,11 @@ public class ReliquaryMainPropData extends GameResource {
     private FightProperty fightProp;
 
     private int weight;
+
+    @Override
+    public void onLoad() {
+        if (this.weight <= 0) {
+            this.weight = RelicWeightDefaults.mainProp(this.propDepotId, this.fightProp);
+        }
+    }
 }

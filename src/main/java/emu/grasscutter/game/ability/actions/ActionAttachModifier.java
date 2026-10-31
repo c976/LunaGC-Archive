@@ -6,6 +6,7 @@ import emu.grasscutter.data.binout.AbilityModifier;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.game.ability.Ability;
 import emu.grasscutter.game.ability.AbilityModifierController;
+import emu.grasscutter.game.ability.LohenExtraArtSkillLevelHelper;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.props.FightProperty;
 
@@ -26,14 +27,33 @@ public final class ActionAttachModifier extends AbilityActionHandler {
             return applyToAllPlayerAvatars(ability, action, modifierData, abilityData);
         }
 
-        Grasscutter.getLogger().debug("[Ability] AttachModifier fallback target={}", action.target);
+        GameEntity attachTarget = resolveTarget(ability, target, action.target);
+        if (attachTarget == null) {
+            attachTarget = target != null ? target : ability.getOwner();
+        }
+
+        Grasscutter.getLogger().debug(
+                "[Ability] AttachModifier target={} resolved={}", action.target,
+                attachTarget != null ? attachTarget.getId() : -1);
 
         ability.getModifiers().put(action.modifierName,
             new AbilityModifierController(ability, ability.getData(), modifierData));
 
-        var manager = ability.getManager();
-        if (manager != null) {
-            manager.attachModifier(target, ability, action.modifierName, abilityData, 1);
+        if (LohenExtraArtSkillLevelHelper.isExtraArtModifier(action.modifierName)) {
+            LohenExtraArtSkillLevelHelper.onModifierApplied(ability);
+        }
+
+        // Team targets used to be registered without running onAdded, but the Lauma C1 TeamHandler needs
+        // the AvatarHandler attached immediately.
+        // Other targets are still left to the client MODIFIER_CHANGE, so the orchestrated path cannot run twice.
+        if ("Team".equals(action.target)) {
+            var manager = ability.getManager();
+            if (manager != null && modifierData.onAdded != null) {
+                for (var a : modifierData.onAdded) {
+                    if (a == null) continue;
+                    manager.executeActionNow(ability, a, abilityData, attachTarget);
+                }
+            }
         }
         return true;
     }
@@ -67,8 +87,11 @@ public final class ActionAttachModifier extends AbilityActionHandler {
                 float curHp = avatarEntity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
                 if (maxHp > 0f && curHp / maxHp <= hpFloor) continue;
             }
-            // full attach: applies the modifier's properties, runs onAdded, follows its mixins
-            manager.attachModifier(avatarEntity, ability, action.modifierName, abilityData, 1);
+            if (modifierData.onAdded == null) continue;
+            for (var a : modifierData.onAdded) {
+                if (a == null) continue;
+                manager.executeActionNow(ability, a, abilityData, avatarEntity);
+            }
         }
         return true;
     }

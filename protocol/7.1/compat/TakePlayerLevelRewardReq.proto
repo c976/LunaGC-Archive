@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// Captured 7.1 Katheryne rank 2/3/4 requests use varint field 15.
+message TakePlayerLevelRewardReq {
+  uint32 level = 15;
+}

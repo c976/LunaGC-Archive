@@ -42,8 +42,8 @@ public class BattlePassReward {
                 .setRewardId(this.getRewardId())
                 .setUnlockStatus(
                         this.isPaid()
-                                ? BattlePassUnlockStatus.BattlePassUnlockSTATUS_BATTLE_PASS_UNLOCK_PAID
-                                : BattlePassUnlockStatus.BattlePassUnlockSTATUS_BATTLE_PASS_UNLOCK_FREE);
+                                ? BattlePassUnlockStatus.BattlePassUnlockStatus_BATTLE_PASS_UNLOCK_PAID
+                                : BattlePassUnlockStatus.BattlePassUnlockStatus_BATTLE_PASS_UNLOCK_FREE);
 
         return protoBuilder.build();
     }

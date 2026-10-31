@@ -2,6 +2,7 @@ package emu.grasscutter.server.packet.send;
 
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.game.player.PushTipsManager;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.CodexDataFullNotifyOuterClass.CodexDataFullNotify;
 import emu.grasscutter.net.proto.CodexTypeDataOuterClass.CodexTypeData;
@@ -98,6 +99,12 @@ public class PacketCodexDataFullNotify extends BasePacket {
                                     .addCodexIdList(reliquarySuit)
                                     .addAllHaveViewedList(Collections.singleton(true));
                         });
+
+        // Tips the player has recorded (and that have a codex entry).
+        var pushTips = PushTipsManager.of(player);
+        for (int codexId : pushTips.unlockedCodexIds()) {
+            pushTipsTypeData.addCodexIdList(codexId).addHaveViewedList(pushTips.isCodexViewed(codexId));
+        }
 
         CodexDataFullNotify.Builder proto =
                 CodexDataFullNotify.newBuilder()

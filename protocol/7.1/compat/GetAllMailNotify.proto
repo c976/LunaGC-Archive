@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 28960 and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message GetAllMailNotify {
+  bool is_collected = 2;
+}

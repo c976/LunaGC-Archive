@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "ProfilePicture.proto";
+
+// 7.1 CmdId 1191 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message SetPlayerHeadImageRsp {
+  ProfilePicture profile_picture = 14;
+  int32 retcode = 6;
+}

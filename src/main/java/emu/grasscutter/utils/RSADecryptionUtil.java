@@ -68,7 +68,7 @@ public class RSADecryptionUtil {
 
         String plaintext = new String(encryptedBytes, StandardCharsets.UTF_8);
         if (isPrintable(plaintext)) {
-            Grasscutter.getLogger().info("RSA decrypt: using plaintext fallback, value=" + plaintext);
+            Grasscutter.getLogger().debug("RSA decrypt: using plaintext fallback.");
             return plaintext;
         }
 
@@ -82,7 +82,7 @@ public class RSADecryptionUtil {
             cipher.init(Cipher.DECRYPT_MODE, key);
             byte[] decrypted = cipher.doFinal(data);
             String result = new String(decrypted, StandardCharsets.UTF_8);
-            Grasscutter.getLogger().info("RSA decrypt succeeded with " + label + " -> [" + result + "]");
+            Grasscutter.getLogger().debug("RSA decrypt succeeded with " + label);
             return result;
         } catch (Exception e) {
             Grasscutter.getLogger().debug("RSA decrypt failed with " + label + ": " + e.getMessage());

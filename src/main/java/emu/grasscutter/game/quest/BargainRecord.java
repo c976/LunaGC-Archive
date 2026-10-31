@@ -61,14 +61,14 @@ public final class BargainRecord {
             // Decrease the mood.
             this.currentMood -= Utils.randomRange(1, 3);
             // Return a failure.
-            return this.result = BargainResultType.BARGAIN_SINGLE_FAIL;
+            return this.result = BargainResultType.BargainResultType_BARGAIN_SINGLE_FAIL;
         }
 
         if (offer > this.getExpectedPrice()) {
             // Complete the bargain.
             this.setFinished(true);
             // Return a success.
-            return this.result = BargainResultType.BARGAIN_COMPLETE_SUCC;
+            return this.result = BargainResultType.BargainResultType_BARGAIN_COMPLETE_SUCC;
         }
 
         // Compare the offer against the mood and expected price.
@@ -79,12 +79,12 @@ public final class BargainRecord {
             // Decrease the mood.
             this.currentMood -= Utils.randomRange(1, 3);
             // Return a failure.
-            return this.result = BargainResultType.BARGAIN_SINGLE_FAIL;
+            return this.result = BargainResultType.BargainResultType_BARGAIN_SINGLE_FAIL;
         } else {
             // Complete the bargain.
             this.setFinished(true);
             // Return a success.
-            return this.result = BargainResultType.BARGAIN_COMPLETE_SUCC;
+            return this.result = BargainResultType.BargainResultType_BARGAIN_COMPLETE_SUCC;
         }
     }
 
@@ -95,8 +95,8 @@ public final class BargainRecord {
         return BargainSnapshot.newBuilder()
                 .setBargainId(this.getBargainId())
                 .setCurMood(this.getCurrentMood())
-                .setBALOPACHCDB(this.getExpectedPrice())
-                .setIOCNPJJNHLD(this.getLowestPrice())
+                .setPGNJBNJCBLP(this.getExpectedPrice())
+                .setFLCAIJFGLNP(this.getLowestPrice())
                 .build();
     }
 }

@@ -15,6 +15,7 @@ import lombok.experimental.FieldDefaults;
 @Getter
 public class AnnouncementSystem extends BaseGameSystem {
     private final Map<Integer, AnnounceConfigItem> announceConfigItemMap;
+    private final TemporaryAnnouncementIds temporaryIds = new TemporaryAnnouncementIds();
 
     public AnnouncementSystem(GameServer server) {
         super(server);
@@ -25,7 +26,7 @@ public class AnnouncementSystem extends BaseGameSystem {
     private int loadConfig() {
         try {
             List<AnnounceConfigItem> announceConfigItems =
-                    DataLoader.loadList("Announcement.json", AnnounceConfigItem.class);
+                    DataLoader.loadBundledList("Announcement.json", AnnounceConfigItem.class);
 
             announceConfigItemMap.clear();
             announceConfigItems.forEach(i -> announceConfigItemMap.put(i.getTemplateId(), i));
@@ -57,8 +58,37 @@ public class AnnouncementSystem extends BaseGameSystem {
         getOnlinePlayers().forEach(i -> i.sendPacket(new PacketServerAnnounceNotify(list)));
     }
 
+    /** Sends the announcements that are currently live to one player, e.g. right after login. */
+    public void sendActive(Player player) {
+        var now = new java.util.Date();
+        var list =
+                announceConfigItemMap.values().stream()
+                        .filter(i -> i.getBeginTime() == null || now.after(i.getBeginTime()))
+                        .filter(i -> i.getEndTime() == null || now.before(i.getEndTime()))
+                        .map(AnnounceConfigItem::toProto)
+                        .map(AnnounceDataOuterClass.AnnounceData.Builder::build)
+                        .toList();
+        if (player != null && !list.isEmpty()) player.sendPacket(new PacketServerAnnounceNotify(list));
+    }
+
     public int refresh() {
         return loadConfig();
+    }
+
+    /** Broadcast a short-lived announcement and return its unique ID. */
+    public int broadcastTemporary(String text) {
+        int id = temporaryIds.issue(new HashSet<>(announceConfigItemMap.keySet()));
+        getOnlinePlayers().forEach(
+                player -> player.sendPacket(new PacketServerAnnounceNotify(text, id)));
+        return id;
+    }
+
+    /** Revoke a configured template or a currently live temporary announcement. */
+    public boolean revokeKnown(int id) {
+        boolean temporary = temporaryIds.revoke(id);
+        if (!temporary && !announceConfigItemMap.containsKey(id)) return false;
+        revoke(id);
+        return true;
     }
 
     public void revoke(int tplId) {
@@ -91,11 +121,23 @@ public class AnnouncementSystem extends BaseGameSystem {
                     .setBeginTime(Utils.getCurrentSeconds() + 1)
                     .setEndTime(Utils.getCurrentSeconds() + 10);
 
-            if (type == AnnounceType.CENTER) {
-                proto.setCenterSystemText(content).setCenterSystemFrequency(frequency);
-            } else {
-                proto.setCountDownText(content).setCountDownFrequency(frequency);
-            }
+            // The text was never put on the wire at all: the client was handed a config id and
+            // three empty strings, and went looking for content that does not exist.
+            //
+            // 7.0 renumbered this message and left the three string fields unnamed. Between them
+            // they are the centre-screen text, the countdown text and the dungeon-entry text -
+            // which is which is not recoverable from the proto dump, so all three carry the
+            // content. Whichever one the client reads for this announce type, it finds the text.
+            var text = content == null ? "" : content;
+            proto.setDungeonConfirmText(text).setCountDownText(text).setCenterSystemText(text);
+
+            // The original code set the frequency for the announce type, and an announcement with no
+            // frequency is the likely reason none appeared. 7.1 leaves both unnamed, but they are the only
+            // two uint32 fields not accounted for (fields 2 and 11), so both get the frequency and
+            // whichever one is the centre-screen one takes effect. AnnouncementTask still does the
+            // re-broadcasting on the config's own `interval`.
+            int times = Math.max(1, frequency);
+            proto.setCenterSystemFrequency(times).setCountDownFrequency(times);
 
             return proto;
         }

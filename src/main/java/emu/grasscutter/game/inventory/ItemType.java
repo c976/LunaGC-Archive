@@ -12,7 +12,9 @@ public enum ItemType {
     ITEM_RELIQUARY(3),
     ITEM_WEAPON(4),
     ITEM_DISPLAY(5),
-    ITEM_FURNITURE(6);
+    ITEM_FURNITURE(6),
+    // Server-side only: the client never sees this value, TpsWeaponExcelConfigData names it.
+    ITEM_TPS_WEAPON(7);
 
     private static final Int2ObjectMap<ItemType> map = new Int2ObjectOpenHashMap<>();
     private static final Map<String, ItemType> stringMap = new HashMap<>();

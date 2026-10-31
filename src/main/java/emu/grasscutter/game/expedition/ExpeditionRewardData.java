@@ -9,7 +9,11 @@ public class ExpeditionRewardData {
     @Getter private int minCount;
     @Getter private int maxCount;
 
+    /** Server-side multiplier applied to every expedition claim. */
+    private static final int REWARD_MULTIPLIER = 3;
+
     public GameItem getReward() {
-        return new GameItem(itemId, Utils.randomRange(minCount, maxCount));
+        int count = Utils.randomRange(minCount, maxCount) * REWARD_MULTIPLIER;
+        return new GameItem(itemId, count);
     }
 }

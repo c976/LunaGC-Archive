@@ -1,0 +1,82 @@
+services:
+  mongodb-run:
+    image: ${MONGO_IMAGE:-mongo:7.0}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${MONGO_RUN_PORT:-27017}:27017"  # Optional: host access for database tools
+    volumes:
+      - ./docker_volumes/mongodb-run:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mongodb-dev:
+    profiles: ["dev"]
+    image: ${MONGO_IMAGE:-mongo:7.0}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${MONGO_DEV_PORT:-27018}:27017"  # Optional: host access for database tools
+    volumes:
+      - ./docker_volumes/mongodb-dev:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  astaps-run:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+      args:
+        GRADLE_IMAGE: ${GRADLE_IMAGE:-gradle:9.8.1-jdk21}
+        NODE_IMAGE: ${NODE_IMAGE:-node:22-bookworm-slim}
+        JRE_IMAGE: ${JRE_IMAGE:-eclipse-temurin:21-jre}
+    depends_on:
+      mongodb-run:
+        condition: service_healthy
+    user: "${ASTAPS_UID:-1000}:${ASTAPS_GID:-1000}"
+    working_dir: /runtime
+    volumes:
+      - ./docker_volumes/astaps-run:/runtime
+      - ./resources:/runtime/resources:ro
+      - ./data:/runtime/data
+    ports:
+      - "${ASTAPS_HTTP_PORT:-8088}:8088"
+      - "${ASTAPS_GAME_PORT:-22101}:22101/tcp"
+      - "${ASTAPS_GAME_PORT:-22101}:22101/udp"
+    stdin_open: true
+    tty: true
+
+  astaps-dev:
+    profiles: ["dev"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+      args:
+        GRADLE_IMAGE: ${GRADLE_IMAGE:-gradle:9.8.1-jdk21}
+        NODE_IMAGE: ${NODE_IMAGE:-node:22-bookworm-slim}
+        JRE_IMAGE: ${JRE_IMAGE:-eclipse-temurin:21-jre}
+    depends_on:
+      mongodb-dev:
+        condition: service_healthy
+    user: "${ASTAPS_UID:-1000}:${ASTAPS_GID:-1000}"
+    environment:
+      HOME: /home/gradle
+      GRADLE_USER_HOME: /home/gradle/.gradle
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - ./docker_volumes/astaps-dev/gradle-cache:/home/gradle/.gradle
+      - ./docker_volumes/astaps-dev/handbook-node-modules:/workspace/src/handbook/node_modules
+    ports:
+      - "${ASTAPS_HTTP_PORT:-8088}:8088"
+      - "${ASTAPS_GAME_PORT:-22101}:22101/tcp"
+      - "${ASTAPS_GAME_PORT:-22101}:22101/udp"
+    stdin_open: true
+    tty: true
+    command: ["bash"]

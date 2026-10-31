@@ -9,6 +9,8 @@ import emu.grasscutter.data.common.ItemParamData;
 import emu.grasscutter.data.excels.ItemData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.gacha.GachaBanner.BannerType;
+import emu.grasscutter.game.gacha.GachaEpitomizedCompanionHelper;
+import emu.grasscutter.game.gacha.GachaEpitomizedPrefabHelper;
 import emu.grasscutter.game.inventory.*;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.WatcherTriggerType;
@@ -21,6 +23,7 @@ import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import emu.grasscutter.server.event.player.PlayerWishEvent;
 import emu.grasscutter.server.game.*;
 import emu.grasscutter.server.packet.send.PacketDoGachaRsp;
+import emu.grasscutter.server.packet.send.PacketGachaSimpleInfoNotify;
 import emu.grasscutter.utils.*;
 import it.unimi.dsi.fastutil.ints.*;
 import java.nio.file.*;
@@ -37,6 +40,8 @@ public class GachaSystem extends BaseGameSystem {
     public GachaSystem(GameServer server) {
         super(server);
         this.gachaBanners = new Int2ObjectOpenHashMap<>();
+        GachaEpitomizedPrefabHelper.load();
+        GachaEpitomizedCompanionHelper.load();
         this.load();
         this.startWatcher(server);
     }
@@ -50,6 +55,12 @@ public class GachaSystem extends BaseGameSystem {
     }
 
     public int getRandom(int[] array) {
+        if (array == null || array.length == 0) {
+            // randomRange(0, -1) would reach nextInt(0) and throw. 0 is not a valid item id, so
+            // doPulls() skips the roll instead of aborting a pull the player has already paid for.
+            Grasscutter.getLogger().warn("[Gacha] Tried to roll from an empty item pool.");
+            return 0;
+        }
         return array[randomRange(0, array.length - 1)];
     }
 
@@ -58,7 +69,7 @@ public class GachaSystem extends BaseGameSystem {
         int autoScheduleId = 1000;
         int autoSortId = 9000;
         try {
-            var banners = DataLoader.loadTableToList("Banners", GachaBanner.class);
+            var banners = DataLoader.loadBundledTableToList("Banners", GachaBanner.class);
             if (!banners.isEmpty()) {
                 for (var banner : banners) {
                     banner.onLoad();
@@ -73,6 +84,9 @@ public class GachaSystem extends BaseGameSystem {
                         if (banner.sortId < 0) banner.sortId = autoSortId--;
                         getGachaBanners().put(banner.scheduleId, banner);
                     }
+                }
+                for (var banner : getGachaBanners().values()) {
+                    banner.ensureFallback4Pools();
                 }
                 Grasscutter.getLogger().debug("Banners successfully loaded.");
             } else {
@@ -105,7 +119,12 @@ public class GachaSystem extends BaseGameSystem {
             }
             total += weight;
         }
-        int roll = ThreadLocalRandom.current().nextInt((total < cutoff) ? total : cutoff);
+        int bound = Math.min(total, cutoff);
+        if (bound <= 0) {
+            // nextInt() requires a positive bound; nothing is drawable anyway.
+            return 0;
+        }
+        int roll = ThreadLocalRandom.current().nextInt(bound);
         int subTotal = 0;
         for (int i = 0; i < weights.length; i++) {
             subTotal += weights[i];
@@ -155,7 +174,13 @@ public class GachaSystem extends BaseGameSystem {
         }
     }
 
-    private synchronized int doRarePull(
+    /**
+     * The outcome of a single roll. {@code capturedRadiance} is set when a lost coinflip was turned
+     * into the featured item by Capturing Radiance, which the client shows its own animation for.
+     */
+    private record PullResult(int itemId, boolean capturedRadiance) {}
+
+    private synchronized PullResult doRarePull(
             int[] featured,
             int[] fallback1,
             int[] fallback2,
@@ -172,8 +197,17 @@ public class GachaSystem extends BaseGameSystem {
                 (gachaInfo.getFailedFeaturedItemPulls(rarity) >= 1); // Lost previous coinflip
         boolean rollFeatured =
                 (this.randomRange(1, 100) <= banner.getEventChance(rarity)); // Won this coinflip
-        boolean pullFeatured = pityFeatured || rollFeatured;
+        boolean capturedRadiance = false;
+        if ((rarity == 5) && !pityFeatured && !rollFeatured) {
+            // Capturing Radiance: a lost coinflip can still be turned into a featured item, the more
+            // coinflips were lost in a row the likelier it is
+            int radianceChance =
+                    banner.getCapturingRadianceChance(gachaInfo.getConsecutiveFeaturedLosses());
+            capturedRadiance = (radianceChance > 0) && (this.randomRange(1, 100) <= radianceChance);
+        }
+        boolean pullFeatured = pityFeatured || rollFeatured || capturedRadiance;
 
+        boolean captured = false; // Whether this very item is the one Capturing Radiance saved
         if (epitomized && pityEpitomized) { // Auto pick item when epitomized points reached
             gachaInfo.setFailedFeaturedItemPulls(
                     rarity, 0); // Epitomized item will always be a featured one
@@ -181,11 +215,15 @@ public class GachaSystem extends BaseGameSystem {
         } else {
             if (pullFeatured && (featured.length > 0)) {
                 gachaInfo.setFailedFeaturedItemPulls(rarity, 0);
+                // Only an actual coinflip ends a losing streak, the guaranteed pull after one does not
+                if ((rarity == 5) && !pityFeatured) gachaInfo.setConsecutiveFeaturedLosses(0);
+                captured = capturedRadiance;
                 itemId = getRandom(featured);
             } else {
                 gachaInfo.addFailedFeaturedItemPulls(
                         rarity,
                         1); // This could be moved into doFallbackRarePull but having it here makes it clearer
+                if ((rarity == 5) && !pityFeatured) gachaInfo.addConsecutiveFeaturedLosses(1);
                 itemId = doFallbackRarePull(fallback1, fallback2, rarity, banner, gachaInfo);
             }
         }
@@ -197,10 +235,10 @@ public class GachaSystem extends BaseGameSystem {
                 gachaInfo.addFailedChosenItemPulls(1);
             }
         }
-        return itemId;
+        return new PullResult(itemId, captured);
     }
 
-    private synchronized int doPull(
+    private synchronized PullResult doPull(
             GachaBanner banner, PlayerGachaBannerInfo gachaInfo, BannerPools pools) {
         // Pre-increment all pity pools (yes this makes all calculations assume 1-indexed pity)
         gachaInfo.incPityAll();
@@ -230,7 +268,7 @@ public class GachaSystem extends BaseGameSystem {
                         banner,
                         gachaInfo);
             default:
-                yield getRandom(banner.getFallbackItems3());
+                yield new PullResult(getRandom(banner.getFallbackItems3()), false);
         };
     }
 
@@ -267,7 +305,7 @@ public class GachaSystem extends BaseGameSystem {
                                 gachaInfo.getPity4(),
                                 gachaInfo.getFailedFeaturedItemPulls(4) > 0,
                                 banner.hasEpitomized()
-                                        ? gachaInfo.getFailedChosenItemPulls() >= 2
+                                        ? gachaInfo.getFailedChosenItemPulls() >= banner.getWishMaxProgress()
                                         : gachaInfo.getFailedFeaturedItemPulls(5) > 0));
         if (!event.call()) {
             player.sendPacket(new PacketDoGachaRsp(Retcode.RET_SVR_ERROR));
@@ -294,9 +332,10 @@ public class GachaSystem extends BaseGameSystem {
 
         // Add to character
         gachaInfo.addTotalPulls(times);
-        BannerPools pools = new BannerPools(banner);
+        BannerPools pools = new BannerPools(banner, player);
         List<GachaItem> list = new ArrayList<>();
         int stardust = 0, starglitter = 0;
+        boolean anyGold = false; // 本次响应是否含 5★，用于触发捕获明光
 
         if (banner.isRemoveC6FromPool()) { // The ultimate form of pity (non-vanilla)
             pools.rateUpItems4 = removeC6FromPool(pools.rateUpItems4, player);
@@ -310,10 +349,18 @@ public class GachaSystem extends BaseGameSystem {
         var items = new ArrayList<PlayerWishEvent.WishCompute>();
         for (int i = 0; i < times; i++) {
             // Roll
-            int itemId = doPull(banner, gachaInfo, pools);
+            PullResult pull = doPull(banner, gachaInfo, pools);
+            int itemId = pull.itemId();
             ItemData itemData = GameData.getItemDataMap().get(itemId);
             if (itemData == null) {
-                continue; // Maybe we should bail out if an item fails instead of rolling the rest?
+                // The roll is dropped, but the player already paid for it, so say which id is bad
+                // instead of silently handing back nothing.
+                Grasscutter.getLogger()
+                        .warn(
+                                "[Gacha] Banner {} rolled item {}, which does not exist in the loaded resources. Fix the pools in Banners.json.",
+                                banner.getScheduleId(),
+                                itemId);
+                continue;
             }
 
             // Write gacha record
@@ -322,6 +369,9 @@ public class GachaSystem extends BaseGameSystem {
 
             // Create gacha item
             GachaItem.Builder gachaItem = GachaItem.newBuilder();
+            // Plays the Capturing Radiance animation on this card
+            if (pull.capturedRadiance()) gachaItem.setIsFlashCard(true);
+            if (itemData.getRankLevel() == 5) anyGold = true; // 出金 -> 客户端播捕获明光
             int addStardust = 0, addStarglitter = 0;
             boolean isTransferItem = false;
 
@@ -348,9 +398,18 @@ public class GachaSystem extends BaseGameSystem {
                             pools.removeFromAllPools(new int[] {itemId});
                         }
                         addStarglitter = (itemData.getRankLevel() == 5) ? 10 : 2;
-                        int constItemId =
-                                itemId + 100; // This may not hold true for future characters. Examples of strictly
-                        // correct constellation item lookup are elsewhere for now.
+                        // Cards from 4101 on are not 100 below their constellation item, so ask the
+                        // owned avatar's skill depot, as ItemUseGainAvatar does when it hands it out.
+                        int constItemId = itemId + 100;
+                        var ownedAvatar =
+                                player.getAvatars()
+                                        .getAvatarById(
+                                                InventorySystem.getAvatarIdFromItem(itemId));
+                        if (ownedAvatar != null
+                                && ownedAvatar.getSkillDepot() != null
+                                && ownedAvatar.getSkillDepot().getTalentCostItemId() > 0) {
+                            constItemId = ownedAvatar.getSkillDepot().getTalentCostItemId();
+                        }
                         boolean haveConstItem =
                                 inventory.getInventoryTab(ItemType.ITEM_MATERIAL).getItemById(constItemId) == null;
                         gachaItem.addTransferItems(
@@ -413,8 +472,12 @@ public class GachaSystem extends BaseGameSystem {
             inventory.addItem(starglitterId, starglitter);
         }
 
-        // Packets
-        player.sendPacket(new PacketDoGachaRsp(banner, list, gachaInfo));
+            // Packets
+        player.sendPacket(new PacketDoGachaRsp(banner, list, gachaInfo, anyGold));
+
+        if (banner.isChronicleMixedBanner()) {
+            player.sendPacket(new PacketGachaSimpleInfoNotify(false));
+        }
 
         // Battle Pass trigger
         player.getBattlePassManager().triggerMission(WatcherTriggerType.TRIGGER_GACHA_NUM, 0, times);
@@ -444,7 +507,10 @@ public class GachaSystem extends BaseGameSystem {
     public synchronized void watchBannerJson(GameServerTickEvent tickEvent) {
         if (GAME_OPTIONS.watchGachaConfig) {
             try {
-                WatchKey watchKey = watchService.take();
+                // poll(), not take() - this runs on the server tick thread, and take() parks it until
+                // somebody happens to touch a file in the data directory.
+                WatchKey watchKey = watchService.poll();
+                if (watchKey == null) return;
 
                 for (WatchEvent<?> event : watchKey.pollEvents()) {
                     final Path changed = (Path) event.context();
@@ -452,6 +518,14 @@ public class GachaSystem extends BaseGameSystem {
                         Grasscutter.getLogger()
                                 .info("Change detected with banners.json. Reloading gacha config");
                         this.load();
+                    } else if (changed.endsWith("GachaEpitomizedCompanions.json")) {
+                        Grasscutter.getLogger()
+                                .info("Change detected with GachaEpitomizedCompanions.json. Reloading epitomized companions");
+                        GachaEpitomizedCompanionHelper.load();
+                    } else if (changed.endsWith("GachaEpitomizedPrefabMap.json")) {
+                        Grasscutter.getLogger()
+                                .info("Change detected with GachaEpitomizedPrefabMap.json. Reloading epitomized prefabs");
+                        GachaEpitomizedPrefabHelper.load();
                     }
                 }
 
@@ -472,30 +546,38 @@ public class GachaSystem extends BaseGameSystem {
 
         long currentTime = System.currentTimeMillis() / 1000L;
 
-        Grasscutter.getLogger().info("[Gacha] Building GetGachaInfoRsp — {} total banners configured, currentTime={}",
-            getGachaBanners().size(), currentTime);
-
+        int linkedCharWish = GachaEpitomizedPrefabHelper.resolveChronicleCharacterWish(player);
+        int linkedWeaponWish = GachaEpitomizedPrefabHelper.resolveChronicleWeaponWish(player);
+        var activeBanners = new ArrayList<GachaBanner>();
         for (GachaBanner banner : getGachaBanners().values()) {
             boolean timeOk = banner.getEndTime() >= currentTime && banner.getBeginTime() <= currentTime;
             boolean isStandard = banner.getBannerType() == BannerType.STANDARD;
-            if (timeOk || isStandard) {
-                var info = banner.toProto(player);
-                Grasscutter.getLogger().info("[Gacha]   INCLUDED gachaType={} scheduleId={} prefabPath='{}' previewPrefab='{}' endTime={} isStandard={}",
-                    info.getGachaType(), info.getScheduleId(),
-                    info.getGachaPrefabPath(), info.getGachaPreviewPrefabPath(),
-                    banner.getEndTime(), isStandard);
-                proto.addGachaInfoList(info);
-            } else {
-                Grasscutter.getLogger().info("[Gacha]   SKIPPED gachaType={} scheduleId={} (beginTime={} endTime={} — outside window)",
-                    banner.getGachaType(), banner.getScheduleId(),
-                    banner.getBeginTime(), banner.getEndTime());
+            if (!timeOk && !isStandard) {
+                Grasscutter.getLogger()
+                        .debug(
+                                "[Gacha] Banner {} (schedule {}) is outside its window {}-{}, skipping.",
+                                banner.getGachaType(),
+                                banner.getScheduleId(),
+                                banner.getBeginTime(),
+                                banner.getEndTime());
+                continue;
             }
+            if (banner.getScheduleId() == 5099 && linkedCharWish <= 0
+                    || banner.getScheduleId() == 5098 && linkedWeaponWish <= 0) {
+                continue;
+            }
+            activeBanners.add(banner);
+        }
+        activeBanners.sort(Comparator.comparingInt(GachaBanner::getTabSortId).reversed());
+        for (GachaBanner banner : activeBanners) {
+            proto.addGachaInfoList(banner.toProto(player));
         }
 
-        int count = proto.getGachaInfoListCount();
-        Grasscutter.getLogger().info("[Gacha] Sending {} banner(s) to client.", count);
-        if (count == 0) {
-            Grasscutter.getLogger().warn("[Gacha] WARNING: zero banners in response — client will likely softlock.");
+        if (proto.getGachaInfoListCount() == 0) {
+            Grasscutter.getLogger()
+                    .warn(
+                            "[Gacha] No banner is currently active - the wish screen will be empty. Check the beginTime/endTime of the {} banner(s) in Banners.json.",
+                            getGachaBanners().size());
         }
 
         return proto.build();
@@ -513,9 +595,24 @@ public class GachaSystem extends BaseGameSystem {
         public int[] fallbackItems5Pool1;
         public int[] fallbackItems5Pool2;
 
-        public BannerPools(GachaBanner banner) {
-            rateUpItems4 = banner.getRateUpItems4();
+        public BannerPools(GachaBanner banner, Player player) {
+            banner.ensureFallback4Pools();
+            int wishItemId = player.getGachaInfo().getBannerInfo(banner).getWishItemId();
+            rateUpItems4 = GachaEpitomizedCompanionHelper.resolveRateUp4(banner, wishItemId);
             rateUpItems5 = banner.getRateUpItems5();
+            if (banner.getScheduleId() == 5099) {
+                int linkedWish = GachaEpitomizedPrefabHelper.resolveChronicleCharacterWish(player);
+                if (linkedWish > 0) {
+                    rateUpItems5 = new int[] {linkedWish};
+                    rateUpItems4 = GachaEpitomizedCompanionHelper.resolveCharacterRateUp4(linkedWish, banner.getRateUpItems4());
+                }
+            } else if (banner.getScheduleId() == 5098) {
+                int linkedWish = GachaEpitomizedPrefabHelper.resolveChronicleWeaponWish(player);
+                if (linkedWish > 0) {
+                    rateUpItems5 = new int[] {linkedWish};
+                }
+                rateUpItems4 = GachaEpitomizedCompanionHelper.resolveRateUp4(banner, wishItemId);
+            }
             fallbackItems4Pool1 = banner.getFallbackItems4Pool1();
             fallbackItems4Pool2 = banner.getFallbackItems4Pool2();
             fallbackItems5Pool1 = banner.getFallbackItems5Pool1();

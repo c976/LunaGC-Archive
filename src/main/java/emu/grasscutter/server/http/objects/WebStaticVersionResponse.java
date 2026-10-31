@@ -25,7 +25,11 @@ public class WebStaticVersionResponse implements Handler {
 
     @Override
     public void handle(Context ctx) throws IOException {
-        String requestFor = ctx.path().substring(ctx.path().lastIndexOf("-") + 1);
+        // The bundle is named <id>-<language>.json, e.g. m2020030410-zh-cn.json. Cutting at the
+        // last '-' turned zh-cn into "cn.json", which does not exist, so every Chinese client got
+        // no strings and its login screen showed the raw keys.
+        String file = ctx.path().substring(ctx.path().lastIndexOf("/") + 1);
+        String requestFor = file.substring(file.indexOf("-") + 1);
 
         getPageResources("/webstatic/" + requestFor, ctx);
     }

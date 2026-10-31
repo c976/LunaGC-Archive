@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 25624 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message UnlockedFurnitureFormulaDataNotify {
+  repeated uint32 furniture_id_list = 6;
+  bool is_all = 13;
+}

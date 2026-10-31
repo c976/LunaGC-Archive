@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 6095 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message CombineDataNotify {
+  repeated uint32 combine_id_list = 7;
+}

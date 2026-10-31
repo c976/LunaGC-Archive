@@ -8,11 +8,13 @@ import emu.grasscutter.data.excels.world.WeatherData;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.*;
 import emu.grasscutter.game.ability.AbilityManager;
+import emu.grasscutter.game.ability.ArlecchinoBurstBoL;
 import emu.grasscutter.game.achievement.Achievements;
 import emu.grasscutter.game.activity.ActivityManager;
 import emu.grasscutter.game.avatar.*;
 import emu.grasscutter.game.battlepass.BattlePassManager;
 import emu.grasscutter.game.city.CityInfoData;
+import emu.grasscutter.game.dailytask.DailyTaskManager;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.expedition.ExpeditionInfo;
 import emu.grasscutter.game.friends.*;
@@ -28,6 +30,7 @@ import emu.grasscutter.game.managers.forging.*;
 import emu.grasscutter.game.managers.mapmark.*;
 import emu.grasscutter.game.managers.stamina.StaminaManager;
 import emu.grasscutter.game.props.*;
+import emu.grasscutter.game.quest.ForcedQuests;
 import emu.grasscutter.game.quest.QuestManager;
 import emu.grasscutter.game.quest.enums.*;
 import emu.grasscutter.game.shop.ShopLimit;
@@ -44,7 +47,6 @@ import emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType;
 import emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo;
 import emu.grasscutter.net.proto.*;
 import emu.grasscutter.net.proto.PlayerLocationInfoOuterClass.PlayerLocationInfo;
-import emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
 import emu.grasscutter.net.proto.SocialDetailOuterClass.SocialDetail;
 import emu.grasscutter.plugin.api.PlayerHook;
@@ -80,16 +82,21 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private String nickname;
     @Getter private String signature;
     @Getter private int headImage;
+    @Getter private int profileFrameId = 100011;
     @Getter private Map<Integer, Set<Integer>> sceneTags;
     @Getter private int nameCardId = 210001;
     @Getter private Position position;
     @Getter @Setter private Position prevPos;
     @Getter @Setter private Position prevPosForHome;
     @Getter @Setter private int prevScene;
+    // Written and read only as a pair, unlike prevScene, which entering a home also overwrites.
+    @Getter @Setter private Position prevPosForDungeon;
+    @Getter @Setter private int prevSceneForDungeon;
     @Getter private Position rotation;
     @Getter private PlayerBirthday birthday;
     @Getter private PlayerCodex codex;
     @Getter @Setter private boolean showAvatars;
+    @Getter @Setter private boolean showConstellationNum;
     @Getter @Setter private List<Integer> showAvatarList;
     @Getter @Setter private List<Integer> showNameCardList;
     @Getter private Map<Integer, Integer> properties;
@@ -106,6 +113,7 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private Set<Integer> flyCloakList;
     @Getter private Set<Integer> traceEffectList;
     @Getter private Set<Integer> costumeList;
+    @Getter private Set<Integer> weaponSkinList;
     @Getter private Set<Integer> personalLineList;
     @Getter @Setter private Set<Integer> rewardedLevels;
     @Getter @Setter private Set<Integer> homeRewardedLevels;
@@ -121,16 +129,63 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private Map<Integer, ActiveCookCompoundData> activeCookCompounds;
     @Getter private Map<Integer, Integer> questGlobalVariables;
     @Getter private Map<Integer, Integer> openStates;
+    // TPS ammunition reserve, keyed by TpsAmmunitionExcelConfigData id.
+    private Map<Integer, Integer> tpsAmmunition;
+    // TPS weapons the TPS traveler wears; it is a trial avatar and is never saved itself.
+    private List<Integer> tpsLoadout;
+    // Snezhnaya Ice Creatures this player built.
+    private List<emu.grasscutter.game.icecreature.IceCreatureRecord> iceCreatures;
+    /** The look the Ice Creature build wheel uses per creature type, as the client last chose. */
+    private Map<Integer, Integer> iceCreatureTypeGadgets;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedSceneAreas;
+    /** Map area states a quest changed with QUEST_EXEC_CHANGE_MAP_AREA_STATE, by map area id. */
+    private Map<Integer, Boolean> mapAreaStates;
     @Getter @Setter private Map<Integer, Set<Integer>> unlockedScenePoints;
+    /** Separate first-entry reward receipts; handbook unlocks do not establish discovery. */
+    private Map<Integer, Set<Integer>> rewardedDungeonEntries;
+    /** First activations whose independent LootCSS reward has not been settled. */
+    private Map<Integer, Set<Integer>> pendingTransPointRewards;
+    /** Frozen first-activation payouts, keyed by scene.point; an empty map is intentional zero. */
+    private Map<String, Map<Integer, Integer>> transPointRewardSnapshots;
+    /** Debug/test: points forced locked even if GetScenePointRsp would otherwise unlock-all. */
+    @Getter @Setter private Map<Integer, Set<Integer>> forceLockedScenePoints;
     @Getter @Setter private List<Integer> chatEmojiIdList;
+    @Getter @Setter private boolean playedFirstLoginCutscene;
 
+    /**
+     * Whether this player has yet to see the welcome notice.
+     *
+     * <p>Defaults to true, so a player whose document predates this field sees the notice once.
+     */
+    @Getter @Setter private boolean pendingWelcomeNotice = true;
+
+    /**
+     * The server build this player last entered the world on, so a restart onto a new build can say
+     * so once. Null until they have entered at least once.
+     */
+    @Getter @Setter private String lastSeenBuildHash;
+    /** Whether EntryNotice has run for this login. */
+    @Transient @Getter @Setter private boolean entryNoticeChecked;
+    @Getter @Setter private int lastBirthdayMailYear;
+    private Set<Integer> forcedFinishedQuests;
+    /** SotS goddess GroupSuiteNotify debounce (groupId) — not persisted. */
+    @Transient @Getter
+    private final Set<Integer> goddessSuiteNotified = ConcurrentHashMap.newKeySet();
+    /**
+     * Spawned statue worktop proxy entity ids by pointId (may be several for thick pillars) —
+     * not persisted.
+     */
+    @Transient @Getter
+    private final Map<Integer, java.util.List<Integer>> goddessNpcEntityByPoint =
+            new ConcurrentHashMap<>();
     @Transient private long nextGuid = 0;
     @Transient @Getter @Setter private int peerId;
-    @Transient private World world;
+    // volatile rather than guarded by the player lock: Scene and World set these while holding
+    // their own locks, and Player.onTick holds the player lock while it reaches into the scene.
+    @Transient private volatile World world;
     @Transient @Getter @Setter private HomeWorld curHomeWorld;
     @Transient @Getter @Setter private boolean hasSentInitPacketInHome;
-    @Transient private Scene scene;
+    @Transient private volatile Scene scene;
     @Transient @Getter private int weatherId = 0;
     @Transient @Getter private ClimateType climate = ClimateType.CLIMATE_SUNNY;
     @Transient @Getter private int areaId = 0;
@@ -152,6 +207,7 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter private transient DeforestationManager deforestationManager;
     @Getter private transient FurnitureManager furnitureManager;
     @Getter private transient BattlePassManager battlePassManager;
+    @Getter private transient DailyTaskManager dailyTaskManager;
     @Getter private transient CookingManager cookingManager;
     @Getter private transient CookingCompoundManager cookingCompoundManager;
     @Getter private transient ActivityManager activityManager;
@@ -195,6 +251,13 @@ public class Player implements PlayerHook, FieldFetch {
     private HashMap<String, MapMark> mapMarks;
     @Getter @Setter private int nextResinRefresh;
     @Getter @Setter private int resinBuyCount;
+    private WeeklyBossClaimState weeklyBossClaimState;
+
+    public synchronized WeeklyBossClaimState getWeeklyBossClaimState() {
+        if (weeklyBossClaimState == null) weeklyBossClaimState = new WeeklyBossClaimState();
+        return weeklyBossClaimState;
+    }
+
     @Getter @Setter private int lastDailyReset;
     @Getter private transient MpSettingType mpSetting = MpSettingType.MpSettingType_MP_SETTING_ENTER_AFTER_APPLY;
     @Getter private long playerGameTime = 540000;
@@ -205,7 +268,7 @@ public class Player implements PlayerHook, FieldFetch {
     @Getter @Setter private ElementType mainCharacterElement = ElementType.None;
 
     @Getter @Setter private Map<Integer, CityInfoData> cityInfoData;
-    @Getter @Setter private float phlogistonValue;
+    @Getter private float phlogistonValue = 100.0f; // 燃素值
 
     @Deprecated
     @SuppressWarnings({"rawtypes", "unchecked"})
@@ -238,11 +301,13 @@ public class Player implements PlayerHook, FieldFetch {
         this.flyCloakList = new HashSet<>();
         this.traceEffectList = new HashSet<>();
         this.costumeList = new HashSet<>();
+        this.weaponSkinList = new HashSet<>();
         this.personalLineList = new HashSet<>();
         this.towerData = new TowerData();
         this.collectionRecordStore = new PlayerCollectionRecords();
         this.unlockedForgingBlueprints = new HashSet<>();
         this.unlockedCombines = new HashSet<>();
+        this.forcedFinishedQuests = new HashSet<>();
         this.unlockedFurniture = new HashSet<>();
         this.unlockedFurnitureSuite = new HashSet<>();
         this.activeCookCompounds = new HashMap<>();
@@ -253,6 +318,10 @@ public class Player implements PlayerHook, FieldFetch {
         this.sceneTags = new HashMap<>();
         this.unlockedSceneAreas = new HashMap<>();
         this.unlockedScenePoints = new HashMap<>();
+        this.rewardedDungeonEntries = new HashMap<>();
+        this.pendingTransPointRewards = new HashMap<>();
+        this.transPointRewardSnapshots = new HashMap<>();
+        this.forceLockedScenePoints = new HashMap<>();
         this.chatEmojiIdList = new ArrayList<>();
         this.playerProgress = new PlayerProgress();
         this.activeQuestTimers = new HashSet<>();
@@ -304,7 +373,7 @@ public class Player implements PlayerHook, FieldFetch {
         this.applyProperties();
         this.applyStartingSceneTags();
         this.getFlyCloakList().add(140001);
-        this.getNameCardList().add(210001);
+        for (int __nc = 210001; __nc <= 210100; __nc++) { this.getNameCardList().add(__nc); }
         setPhlogistonValue(100);
         for(int t=0; t < 20; t++){
             this.getTraceEffectList().add(215001+t);
@@ -327,6 +396,15 @@ public class Player implements PlayerHook, FieldFetch {
     public Player getPlayer() {
         return this;
     }
+    public void setPhlogistonValue(float value) {
+        if (value < 0) value = 0;
+        else if (value > 100) value = 100;
+
+        if (value == this.phlogistonValue) return;
+
+        this.phlogistonValue = value;
+    }
+
     public float addPhlogistonValue(float amount) {
         setPhlogistonValue(getPhlogistonValue() + amount);
         return getPhlogistonValue();
@@ -387,19 +465,48 @@ public class Player implements PlayerHook, FieldFetch {
         return this.getSession().getServer();
     }
 
-    public synchronized World getWorld() {
+    public World getWorld() {
         return this.world;
     }
 
-    public synchronized void setWorld(World world) {
+    public void setWorld(World world) {
         this.world = world;
     }
 
-    public synchronized Scene getScene() {
+    public Scene getScene() {
         return scene;
     }
 
-    public synchronized void setScene(Scene scene) {
+    /** Check location, not only scene ID: Natlan shares Teyvat's scene 3. */
+    public boolean isInNatlan() {
+        return this.scene != null && PhlogistonRegion.contains(this.scene.getId(), this.position);
+    }
+
+    /** Update both client embryos and server ability IDs on a seamless regional crossing. */
+    public void refreshPhlogistonRegion() {
+        if (this.scene == null || this.session == null || this.teamManager == null) return;
+        boolean inNatlan = this.isInNatlan();
+        int enabled = inNatlan ? 1 : 0;
+        if (this.getProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE) == enabled) return;
+
+        this.setProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE, enabled);
+        for (var avatar : this.teamManager.getActiveTeam()) {
+            if (avatar == null) continue;
+            this.abilityManager.syncPhlogistonAvatarAbility(avatar, inNatlan);
+            this.sendPacket(new PacketAbilityChangeNotify(avatar));
+        }
+        var teamEntity = this.teamManager.getEntity();
+        if (teamEntity != null) {
+            this.sendPacket(new PacketAbilityChangeNotify(
+                    teamEntity.getId(), this.teamManager.getAbilityControlBlock()));
+            if (inNatlan) {
+                this.sendPacket(new PacketServerGlobalValueChangeNotify(
+                        teamEntity.getId(), "SGV_PlayerTeam_Phlogiston", this.getPhlogistonValue()));
+            }
+        }
+    }
+
+    public void setScene(Scene scene) {
         this.scene = scene;
     }
 
@@ -440,6 +547,12 @@ public class Player implements PlayerHook, FieldFetch {
 
     public void setHeadImage(int picture) {
         this.headImage = picture;
+        this.updateProfile();
+        this.save();
+    }
+
+    public void setProfileFrameId(int frameId) {
+        this.profileFrameId = frameId;
         this.updateProfile();
         this.save();
     }
@@ -500,8 +613,51 @@ public class Player implements PlayerHook, FieldFetch {
         return this.unlockedSceneAreas.computeIfAbsent(sceneId, i -> new CopyOnWriteArraySet<>());
     }
 
+    public Map<Integer, Boolean> getMapAreaStates() {
+        if (this.mapAreaStates == null) this.mapAreaStates = new HashMap<>();
+        return this.mapAreaStates;
+    }
+
     public Set<Integer> getUnlockedScenePoints(int sceneId) {
         return this.unlockedScenePoints.computeIfAbsent(sceneId, i -> new CopyOnWriteArraySet<>());
+    }
+
+    public Map<Integer, Set<Integer>> getPendingTransPointRewards() {
+        if (this.pendingTransPointRewards == null) {
+            this.pendingTransPointRewards = new HashMap<>();
+        }
+        return this.pendingTransPointRewards;
+    }
+
+    public Map<String, Map<Integer, Integer>> getTransPointRewardSnapshots() {
+        if (this.transPointRewardSnapshots == null) this.transPointRewardSnapshots = new HashMap<>();
+        return this.transPointRewardSnapshots;
+    }
+
+    public Set<Integer> getPendingTransPointRewards(int sceneId) {
+        return getPendingTransPointRewards().computeIfAbsent(sceneId, i -> new CopyOnWriteArraySet<>());
+    }
+
+    public Set<Integer> getRewardedDungeonEntries(int sceneId) {
+        if (this.rewardedDungeonEntries == null) {
+            this.rewardedDungeonEntries = new HashMap<>();
+        }
+        return this.rewardedDungeonEntries.computeIfAbsent(sceneId, i -> new CopyOnWriteArraySet<>());
+    }
+
+    public Set<Integer> getForceLockedScenePoints(int sceneId) {
+        if (this.forceLockedScenePoints == null) {
+            this.forceLockedScenePoints = new HashMap<>();
+        }
+        return this.forceLockedScenePoints.computeIfAbsent(sceneId, i -> new CopyOnWriteArraySet<>());
+    }
+
+    public boolean isScenePointForceLocked(int sceneId, int pointId) {
+        if (this.forceLockedScenePoints == null) {
+            return false;
+        }
+        var locked = this.forceLockedScenePoints.get(sceneId);
+        return locked != null && locked.contains(pointId);
     }
 
     public int getLevel() {
@@ -521,6 +677,15 @@ public class Player implements PlayerHook, FieldFetch {
             this.getProgressManager().tryUnlockOpenStates();
             this.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_PLAYER_LEVEL_UP, level);
             this.getQuestManager().queueEvent(QuestCond.QUEST_COND_PLAYER_LEVEL_EQUAL_GREATER, level);
+            // Keep ley-line markers synchronized after any Adventure Rank change,
+            // including downward changes and direct jumps across unlock thresholds.
+            if (this.scene != null && this.scene.getBlossomManager() != null) {
+                this.scene.getBlossomManager().notifyIcon(this);
+            }
+            if (level >= emu.grasscutter.game.dailytask.DailyTaskManager.UNLOCK_LEVEL
+                    && this.getDailyTaskManager() != null) {
+                this.getDailyTaskManager().ensureDailyTasksForToday();
+            }
 
             return true;
         }
@@ -563,6 +728,18 @@ public class Player implements PlayerHook, FieldFetch {
         this.setOrFetch(PlayerProperty.PROP_PLAYER_LEVEL, 1);
         this.setOrFetch(PlayerProperty.PROP_IS_SPRING_AUTO_USE, 1);
         this.setOrFetch(PlayerProperty.PROP_SPRING_AUTO_USE_PERCENT, 50);
+        // The statue's spring volume is only ever written by SotSManager.refillSpringVolume(),
+        // which runs off the auto-recover timer that starts on entering a statue region. Without
+        // these the client's 神像的恩泽 panel reads 0/0 and offers nothing to heal, and
+        // checkAndHealAvatar() can never heal because the balance stays at zero.
+        // Statue healing no longer charges the spring volume (see SotSManager), so the balance is
+        // display-only. Set it outright rather than with setOrFetch: setOrFetch keeps a previously
+        // saved non-zero value, which left a half-drained balance creeping back up over minutes
+        // instead of reading full. MAX first, because CUR's sanity check clamps against it.
+        this.setProperty(PlayerProperty.PROP_MAX_SPRING_VOLUME,
+            PlayerProperty.PROP_MAX_SPRING_VOLUME.getMax(), false);
+        this.setProperty(PlayerProperty.PROP_CUR_SPRING_VOLUME,
+            PlayerProperty.PROP_MAX_SPRING_VOLUME.getMax(), false);
         this.setOrFetch(PlayerProperty.PROP_IS_FLYABLE,
             withQuesting ? 0 : 1);
         this.setOrFetch(PlayerProperty.PROP_PLAYER_CAN_DIVE,
@@ -573,8 +750,9 @@ public class Player implements PlayerHook, FieldFetch {
         this.setOrFetch(PlayerProperty.PROP_DIVE_MAX_STAMINA,
                 withQuesting ? 10000 : 0);
         this.setOrFetch(PlayerProperty.PROP_PLAYER_RESIN, 200);
-
-        this.setProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE, 1);
+        this.setOrFetch(PlayerProperty.PROP_PHLOGISTON_MAX_VALUE, 10000);
+        // The active scene enables phlogiston when the player actually enters Natlan.
+        this.setProperty(PlayerProperty.PROP_PHLOGISTON_ENABLE, 0, false);
 
         this.setProperty(PlayerProperty.PROP_CUR_PERSIST_STAMINA,
             this.getProperty(PlayerProperty.PROP_MAX_STAMINA));
@@ -936,8 +1114,31 @@ public class Player implements PlayerHook, FieldFetch {
     }
 
     public void addCostume(int costumeId) {
+        if (this.getCostumeList().contains(costumeId)) {
+            return;
+        }
         this.getCostumeList().add(costumeId);
         this.sendPacket(new PacketAvatarGainCostumeNotify(costumeId));
+    }
+
+    /** 0 means "no skin" (unequip) and must count as valid, otherwise the client's
+     * unequip/resend request gets a failure retcode and shows "server error". */
+    public boolean hasWeaponSkin(int weaponSkinId) {
+        return weaponSkinId <= 0 || this.getWeaponSkinList().contains(weaponSkinId);
+    }
+
+    /** Unlocks one or more weapon skins (from ITEM_USE_ADD_WEAPON_SKIN materials). */
+    public void addWeaponSkins(List<Integer> skinIds) {
+        boolean changed = false;
+        for (int id : skinIds) {
+            if (id != 0 && this.getWeaponSkinList().add(id)) {
+                changed = true;
+            }
+        }
+        if (changed) {
+            this.save();
+            this.sendPacket(new PacketAvatarWeaponSkinDataNotify(this));
+        }
     }
 
     public void addTraceEffect(int traceEffectId) {
@@ -1013,6 +1214,16 @@ public class Player implements PlayerHook, FieldFetch {
         }
 
         target.onInteract(this, interactReq);
+        // EntityGadget, EntityItem and EntityMonster credit the quest themselves once the interaction
+        // goes through; a client-created gadget has no interaction logic of its own and still counts.
+        if (target instanceof emu.grasscutter.game.entity.EntityClientGadget clientGadget) {
+            onGadgetInteracted(clientGadget.getGadgetId());
+        }
+    }
+
+    /** Quest credit for a gadget interaction that went through. */
+    public void onGadgetInteracted(int gadgetId) {
+        this.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_INTERACT_GADGET, gadgetId);
     }
 
     public void onPause() {
@@ -1033,9 +1244,9 @@ public class Player implements PlayerHook, FieldFetch {
             .setNickname(this.getNickname())
             .setPlayerLevel(this.getLevel())
             .setMpSettingType(this.getMpSetting())
-            .setNameCardId(this.getNameCardId())
+            .setNameCardId(this.getNameCardId() == 0 || this.getNameCardId() == 210001 ? 210003 : this.getNameCardId())
             .setSignature(this.getSignature())
-            .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(this.getHeadImage()));
+            .setProfilePicture(ProfilePictureHelper.toProto(this.getHeadImage()).toBuilder().setProfileFrameId(this.getProfileFrameId()).build());
 
         if (this.getWorld() != null) {
             onlineInfo.setCurPlayerNumInWorld(getWorld().getPlayerCount());
@@ -1057,51 +1268,60 @@ public class Player implements PlayerHook, FieldFetch {
 
     public SocialDetail.Builder getSocialDetail() {
         List<SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo> socialShowAvatarInfoList = new ArrayList<>();
+        boolean showConstellation = this.isShowConstellationNum();
         if (this.isOnline()) {
             if (this.getShowAvatarList() != null) {
                 for (int avatarId : this.getShowAvatarList()) {
                     socialShowAvatarInfoList.add(
                         socialShowAvatarInfoList.size(),
-                        SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.newBuilder()
-                            .setAvatarId(avatarId)
-                            .setLevel(getAvatars().getAvatarById(avatarId).getLevel())
-                            .setCostumeId(getAvatars().getAvatarById(avatarId).getCostume())
-                            .build()
-                    );
+                        this.toSocialShowAvatarInfo(
+                            avatarId, getAvatars().getAvatarById(avatarId), showConstellation));
                 }
             }
         } else {
-            List<Integer> showAvatarList = DatabaseHelper.getPlayerByUid(id).getShowAvatarList();
-            AvatarStorage avatars = DatabaseHelper.getPlayerByUid(id).getAvatars();
+            Player offlinePlayer = DatabaseHelper.getPlayerByUid(id);
+            List<Integer> showAvatarList = offlinePlayer.getShowAvatarList();
+            showConstellation = offlinePlayer.isShowConstellationNum();
+            AvatarStorage avatars = offlinePlayer.getAvatars();
             avatars.loadFromDatabase();
             if (showAvatarList != null) {
                 for (int avatarId : showAvatarList) {
                     socialShowAvatarInfoList.add(
                         socialShowAvatarInfoList.size(),
-                        SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.newBuilder()
-                            .setAvatarId(avatarId)
-                            .setLevel(avatars.getAvatarById(avatarId).getLevel())
-                            .setCostumeId(avatars.getAvatarById(avatarId).getCostume())
-                            .build()
-                    );
+                        this.toSocialShowAvatarInfo(
+                            avatarId, avatars.getAvatarById(avatarId), showConstellation));
                 }
             }
         }
 
         return SocialDetail.newBuilder()
             .setUid(this.getUid())
-            .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(this.getHeadImage()))
+            .setProfilePicture(ProfilePictureHelper.toProto(this.getHeadImage()).toBuilder().setProfileFrameId(this.getProfileFrameId()).build())
             .setNickname(this.getNickname())
             .setSignature(this.getSignature())
             .setLevel(this.getLevel())
             .setBirthday(this.getBirthday().getFilledProtoWhenNotEmpty())
             .setWorldLevel(this.getWorldLevel())
-            .setNameCardId(this.getNameCardId())
+            .setNameCardId(this.getNameCardId() == 0 || this.getNameCardId() == 210001 ? 210003 : this.getNameCardId())
             .setIsShowAvatar(this.isShowAvatars())
+            .setIsShowConstellationNum(showConstellation)
             .addAllShowAvatarInfoList(socialShowAvatarInfoList)
             .addAllShowNameCardIdList(this.getShowNameCardInfoList())
             .setFinishAchievementNum(this.getFinishedAchievementNum())
             .setFriendEnterHomeOptionValue(this.getHome() == null ? 0 : this.getHome().getEnterHomeOption());
+    }
+
+    private SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo toSocialShowAvatarInfo(
+            int avatarId, Avatar avatar, boolean showConstellation) {
+        SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.Builder builder =
+                SocialShowAvatarInfoOuterClass.SocialShowAvatarInfo.newBuilder()
+                        .setAvatarId(avatarId)
+                        .setLevel(avatar.getLevel())
+                        .setCostumeId(avatar.getCostume());
+        if (showConstellation) {
+            builder.setTalentLevel(avatar.getCoreProudSkillLevel());
+        }
+        return builder.build();
     }
 
     public int getFinishedAchievementNum() {
@@ -1144,7 +1364,7 @@ public class Player implements PlayerHook, FieldFetch {
 
     public PlayerWorldLocationInfoOuterClass.PlayerWorldLocationInfo getWorldPlayerLocationInfo() {
         return PlayerWorldLocationInfoOuterClass.PlayerWorldLocationInfo.newBuilder()
-            .setSceneId(this.getSceneId())
+            .setSceneId(emu.grasscutter.game.dungeons.DomainDungeonHelper.notifySceneId(this.getSceneId()))
             .setPlayerLoc(this.getPlayerLocationInfo())
             .build();
     }
@@ -1161,6 +1381,19 @@ public class Player implements PlayerHook, FieldFetch {
         if (this.battlePassManager != null) return;
         this.battlePassManager = DatabaseHelper.loadBattlePass(this);
         this.battlePassManager.getMissions().values().removeIf(mission -> mission.getData() == null);
+    }
+
+    public void loadDailyTaskManager() {
+        if (this.dailyTaskManager != null) return;
+        this.dailyTaskManager = DatabaseHelper.loadDailyTaskManager(this);
+    }
+
+    /** Lazily created: saves written before the field existed carry no list at all. */
+    public Set<Integer> getForcedFinishedQuests() {
+        if (this.forcedFinishedQuests == null) {
+            this.forcedFinishedQuests = new HashSet<>();
+        }
+        return this.forcedFinishedQuests;
     }
 
     public PlayerCollectionRecords getCollectionRecordStore() {
@@ -1196,7 +1429,7 @@ public class Player implements PlayerHook, FieldFetch {
             this.getUid(),
             this.getNickname(),
             false,
-            PlayerApplyEnterHomeResultNotifyOuterClass.PlayerApplyEnterHomeResultNotify.Reason.SYSTEM_JUDGE));
+            PlayerApplyEnterHomeResultNotifyOuterClass.PlayerApplyEnterHomeResultNotify.Reason.Reason_SYSTEM_JUDGE));
         req.getRequester().sendPacket(new PacketTryEnterHomeRsp());
         return true;
     }
@@ -1215,13 +1448,26 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getBuffManager().onTick();
 
-        if (this.getWorld() != null) {
+        // Settles an Arlecchino burst whose damage frame never arrived - a cast that hit
+        // nothing sends no AttackResult, so nothing else would ever clear the debt.
+        ArlecchinoBurstBoL.onTick(this);
 
-            this.sendPacket(new PacketWorldPlayerRTTNotify(this.getWorld()));
+        // Drop SkillSucc burst energy pending if ability never confirmed (e.g. dash-recovery false Q).
+        try {
+            this.getEnergyManager().onTick();
+        } catch (Throwable ignored) {
+            // Energy pending expiry must not break the player tick.
+        }
+
+        // Read the world once: a duplicate login can clear it from another thread mid-tick.
+        var world = this.getWorld();
+        if (world != null) {
+
+            this.sendPacket(new PacketWorldPlayerRTTNotify(world));
 
             long time = System.currentTimeMillis();
-            if (this.getWorld().isMultiplayer() && this.getScene() != null && time > nextSendPlayerLocTime) {
-                this.sendPacket(new PacketWorldPlayerLocationNotify(this.getWorld()));
+            if (world.isMultiplayer() && this.getScene() != null && time > nextSendPlayerLocTime) {
+                this.sendPacket(new PacketWorldPlayerLocationNotify(world));
                 this.sendPacket(new PacketScenePlayerLocationNotify(this.getScene()));
                 this.resetSendPlayerLocTime();
             }
@@ -1259,8 +1505,8 @@ public class Player implements PlayerHook, FieldFetch {
 
         int currentTime = Utils.getCurrentSeconds();
 
-        var currentDate = LocalDate.ofInstant(Instant.ofEpochSecond(currentTime), ZoneId.systemDefault());
-        var lastResetDate = LocalDate.ofInstant(Instant.ofEpochSecond(this.getLastDailyReset()), ZoneId.systemDefault());
+        var currentDate = GameDay.date(currentTime);
+        var lastResetDate = GameDay.date(this.getLastDailyReset());
 
         if (!currentDate.isAfter(lastResetDate)) {
             return;
@@ -1270,13 +1516,18 @@ public class Player implements PlayerHook, FieldFetch {
 
         this.getBattlePassManager().resetDailyMissions();
 
+        if (GameDay.crossedWeeklyReset(this.getLastDailyReset(), currentTime)) {
+            this.getBattlePassManager().resetWeeklyMissions();
+        }
         this.getBattlePassManager().triggerMission(WatcherTriggerType.TRIGGER_LOGIN);
 
-        if (currentDate.getDayOfWeek() == DayOfWeek.MONDAY) {
-            this.getBattlePassManager().resetWeeklyMissions();
+        if (this.dailyTaskManager != null) {
+            this.dailyTaskManager.resetDailyTasksForNewDay();
         }
 
         this.setResinBuyCount(0);
+
+        BirthdayMailSystem.checkAndSend(this, currentDate);
 
         this.setLastDailyReset(currentTime);
     }
@@ -1290,6 +1541,34 @@ public class Player implements PlayerHook, FieldFetch {
         this.getCodex().setPlayer(this);
         this.getProgressManager().setPlayer(this);
         this.getTeamManager().setPlayer(this);
+    }
+
+    public List<Integer> getTpsLoadout() {
+        if (this.tpsLoadout == null) {
+            this.tpsLoadout = new ArrayList<>();
+        }
+        return this.tpsLoadout;
+    }
+
+    public List<emu.grasscutter.game.icecreature.IceCreatureRecord> getIceCreatures() {
+        if (this.iceCreatures == null) {
+            this.iceCreatures = new ArrayList<>();
+        }
+        return this.iceCreatures;
+    }
+
+    public Map<Integer, Integer> getIceCreatureTypeGadgets() {
+        if (this.iceCreatureTypeGadgets == null) {
+            this.iceCreatureTypeGadgets = new HashMap<>();
+        }
+        return this.iceCreatureTypeGadgets;
+    }
+
+    public Map<Integer, Integer> getTpsAmmunition() {
+        if (this.tpsAmmunition == null) {
+            this.tpsAmmunition = new HashMap<>();
+        }
+        return this.tpsAmmunition;
     }
 
     public void save() {
@@ -1309,28 +1588,71 @@ public class Player implements PlayerHook, FieldFetch {
         }
 
         var runner = Grasscutter.getThreadPool();
-        runner.submit(() -> this.achievements = Achievements.getByPlayer(this));
+        var achievementsLoad = runner.submit(() -> this.achievements = Achievements.getByPlayer(this));
 
-        runner.submit(this.getAvatars()::loadFromDatabase);
-        runner.submit(this.getInventory()::loadFromDatabase);
+        var avatarsLoad = runner.submit(this.getAvatars()::loadFromDatabase);
+        var inventoryLoad = runner.submit(this.getInventory()::loadFromDatabase);
 
         runner.submit(this.getFriendsList()::loadFromDatabase);
         runner.submit(this.getMailHandler()::loadFromDatabase);
-        runner.submit(this.getQuestManager()::loadFromDatabase);
+        var questsLoad = runner.submit(this.getQuestManager()::loadFromDatabase);
 
-        runner.submit(this::loadBattlePassManager);
+        var battlePassLoad = runner.submit(this::loadBattlePassManager);
+        var dailyTasksLoad = runner.submit(this::loadDailyTaskManager);
 
-        Utils.waitFor(() ->
-            this.getAvatars().isLoaded() &&
-                this.getInventory().isLoaded());
+        // With asyncLogin off this runs on the one thread that handles every player's packets.
+        // Waiting on the loaded flags forever meant a loader that threw - its exception swallowed
+        // by the pool - or a pool full of stuck tasks froze the whole server. Fail this one login
+        // instead.
+        awaitLoginLoads(avatarsLoad, inventoryLoad, achievementsLoad, questsLoad, battlePassLoad, dailyTasksLoad);
 
         this.getPlayerProgress().setPlayer(this);
     }
 
+    private static final long LOAD_TIMEOUT_SECONDS = 30;
+
+    void awaitLoginLoads(Future<?> avatarsLoad, Future<?> inventoryLoad, Future<?> achievementsLoad,
+            Future<?> questsLoad, Future<?> battlePassLoad, Future<?> dailyTasksLoad) {
+        awaitLoad("avatars", avatarsLoad);
+        awaitLoad("inventory", inventoryLoad);
+        awaitLoad("achievements", achievementsLoad);
+        awaitLoad("quests", questsLoad);
+        awaitLoad("battle pass", battlePassLoad);
+        awaitLoad("daily tasks", dailyTasksLoad);
+    }
+
+    private void awaitLoad(String what, java.util.concurrent.Future<?> load) {
+        try {
+            load.get(LOAD_TIMEOUT_SECONDS, java.util.concurrent.TimeUnit.SECONDS);
+        } catch (java.util.concurrent.ExecutionException e) {
+            throw new IllegalStateException(
+                    "Loading " + what + " for uid " + this.getUid() + " failed.", e.getCause());
+        } catch (java.util.concurrent.TimeoutException e) {
+            load.cancel(true);
+            throw new IllegalStateException(
+                    "Loading " + what + " for uid " + this.getUid() + " took over "
+                            + LOAD_TIMEOUT_SECONDS + "s; the load pool may be stuck.");
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IllegalStateException("Interrupted loading " + what + " for uid " + this.getUid());
+        }
+    }
+
     public void onLogin() {
+        // A trial avatar saved into a team (e.g. logging out inside a trial dungeon) has no avatar
+        // to build an entity from.
+        this.getTeamManager().removeUnownedAvatarsFromTeams();
 
         if (this.getSceneTags().isEmpty() || this.getSceneTags() == null) {
             this.applyStartingSceneTags();
+        }
+
+        // A TPS dungeon is not saved: logging back into one finds no dungeon running, an empty
+        // scene and a client that never finishes loading. Start in Teyvat instead.
+        var savedScene = GameData.getSceneDataMap().get(this.getSceneId());
+        if (emu.grasscutter.game.tps.TpsAvatarSystem.isTpsScene(savedScene)) {
+            this.setSceneId(3);
+            this.position.set(ScriptLoader.getSceneMeta(3).config.born_pos);
         }
 
         if (GameHome.HOME_SCENE_IDS.contains(this.getSceneId())) {
@@ -1340,6 +1662,21 @@ public class Player implements PlayerHook, FieldFetch {
                 pos = ScriptLoader.getSceneMeta(this.getSceneId()).config.born_pos;
             }
             this.position.set(pos);
+        }
+
+        // The same holds for every other dungeon, and mid-quest it strands the step: the scene
+        // comes back with no running dungeon, so the subquest never gets its rewind. Arriving in
+        // the world is what fires ENTER_MY_WORLD and lets the quest's own fail/rollback execs
+        // restart the segment, so send the player back to where they walked in from.
+        savedScene = GameData.getSceneDataMap().get(this.getSceneId());
+        if (savedScene != null && savedScene.getSceneType() == SceneType.SCENE_DUNGEON) {
+            var originScene = this.prevSceneForDungeon > 0 ? this.prevSceneForDungeon : 3;
+            var originPos = this.getPrevPosForDungeon();
+            this.setSceneId(originScene);
+            this.position.set(
+                    originPos != null && !originPos.equals(Position.ZERO)
+                            ? originPos
+                            : ScriptLoader.getSceneMeta(originScene).config.born_pos);
         }
 
         World world = new World(this);
@@ -1356,19 +1693,46 @@ public class Player implements PlayerHook, FieldFetch {
         session.send(new PacketStoreWeightLimitNotify());
         session.send(new PacketPlayerStoreNotify(this));
         session.send(new PacketAvatarDataNotify(this));
+        session.send(new PacketCraftingAvatarDataNotify());
+        session.send(new PacketAvatarWeaponSkinDataNotify(this));
+        // 登录时下发头像/头像框数据：否则重登后个人主页的头像框会显示成"?"，要重新应用一次才恢复。
+        // (HandlerMiao21517 修复头像框时发的也是这一组：25989+6326+4162。)
+        session.send(new PacketBeyondProfilePictureDataNotify(this));
+        session.send(new PacketBeyondPlayerDetailRsp(this));
+        session.send(new PacketGetPlayerSocialDetailRsp(this.getSocialDetail(), 0));
 
         this.getProgressManager().onPlayerLogin();
+        try {
+            emu.grasscutter.game.player.DomainHandbookHelper.onPlayerLogin(this);
+        } catch (Throwable ignored) {
+        }
 
         session.send(new PacketFinishedParentQuestNotify(this));
         session.send(new PacketBattlePassAllDataNotify(this));
         session.send(new PacketQuestListNotify(this));
         session.send(new PacketQuestGlobalVarNotify(this));
+        // Tips met before they were tracked, so the codex matches this account's progress.
+        try {
+            PushTipsManager.of(this)
+                    .backfill(
+                            subQuestId -> {
+                                var quest = this.getQuestManager().getQuestById(subQuestId);
+                                return quest != null && quest.getState() == QuestState.QUEST_STATE_FINISHED;
+                            },
+                            monsterId -> this.getCodex().getUnlockedAnimal().containsKey(monsterId));
+        } catch (RuntimeException e) {
+            Grasscutter.getLogger().warn("[PushTips] uid={} backfill failed", this.getUid(), e);
+        }
         session.send(new PacketCodexDataFullNotify(this));
+        session.send(new PacketPushTipsAllDataNotify(PushTipsManager.of(this).states()));
         session.send(new PacketAllWidgetDataNotify(this));
 
         this.achievements.onLogin(this);
 
         session.send(new PacketWidgetGadgetAllDataNotify());
+        // Re-attach follower pet ability group after widget slot is restored
+        WidgetPetHelper.syncEquippedWidget(this);
+        this.getServer().getCombineSystem().onPlayerLogin(this);
         session.send(new PacketCombineDataNotify(this.unlockedCombines));
         session.send(new PacketGetChatEmojiCollectionRsp(this.getChatEmojiIdList()));
         this.forgingManager.sendForgeDataNotify();
@@ -1376,6 +1740,17 @@ public class Player implements PlayerHook, FieldFetch {
         this.cookingManager.sendCookDataNotify();
         this.cookingCompoundManager.onPlayerLogin();
         this.teamManager.onPlayerLogin();
+
+        // Idempotent, and not merely a null check: the load is submitted to the pool and nothing
+        // waits on it, so skipping here would silently cost the player a day of commissions.
+        this.loadDailyTaskManager();
+        this.dailyTaskManager.onPlayerLogin();
+
+        // The client is told nothing about these on its own - they exist only as a forged notify,
+        // so a relog has to re-assert them or the quests come back unfinished.
+        if (this.forcedFinishedQuests != null && !this.forcedFinishedQuests.isEmpty()) {
+            ForcedQuests.notify(this, this.forcedFinishedQuests);
+        }
 
         getTodayMoonCard();
 
@@ -1390,6 +1765,7 @@ public class Player implements PlayerHook, FieldFetch {
         home.onOwnerLogin(this);
 
         this.activityManager = new ActivityManager(this);
+        getQuestManager().onActivitiesReady();
 
         session.send(new PacketPlayerEnterSceneNotify(this));
         session.send(new PacketPlayerLevelRewardUpdateNotify(rewardedLevels));
@@ -1415,7 +1791,17 @@ public class Player implements PlayerHook, FieldFetch {
 
             getStaminaManager().stopSustainedStaminaHandler();
 
-            this.getServer().getDungeonSystem().exitDungeon(this);
+            // Static per-player combat state (and the repeating tasks some of it drives) would
+            // otherwise keep this player and their world reachable after they leave.
+            PlayerRuntimeStateCleanup.clear(this);
+
+            // Leaving the dungeon (trial team, TPS traveler) must not keep the player in the world:
+            // a world left behind keeps ticking and sending to the closed session forever.
+            try {
+                this.getServer().getDungeonSystem().exitDungeon(this);
+            } catch (Throwable e) {
+                Grasscutter.getLogger().warn("Player (UID {}) could not leave the dungeon on logout", getUid(), e);
+            }
 
             if (this.getWorld() != null) {
                 this.getWorld().removePlayer(this);
@@ -1427,16 +1813,16 @@ public class Player implements PlayerHook, FieldFetch {
             this.getEnterHomeRequests().values().forEach(req -> this.expireEnterHomeRequest(req, true));
             this.getEnterHomeRequests().clear();
 
-            this.save();
-            this.getTeamManager().saveAvatars();
-            this.getFriendsList().save();
-
             PlayerQuitEvent event = new PlayerQuitEvent(this);
             event.call();
         } catch (Throwable e) {
-            e.printStackTrace();
-            Grasscutter.getLogger().warn("Player (UID {}) save failure", getUid());
+            Grasscutter.getLogger().warn("Player (UID {}) save failure", getUid(), e);
         } finally {
+            Utils.runAll(
+                    "Player (UID " + getUid() + ") logout save",
+                    this::save,
+                    () -> this.getTeamManager().saveAvatars(),
+                    () -> this.getFriendsList().save());
             removeFromServer();
         }
     }

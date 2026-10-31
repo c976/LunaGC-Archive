@@ -8,6 +8,7 @@ import emu.grasscutter.net.packet.BasePacket;
 import emu.grasscutter.net.proto.ChatInfoOuterClass;
 import emu.grasscutter.net.proto.SystemHintOuterClass;
 import emu.grasscutter.net.proto.SystemHintTypeOuterClass;
+import emu.grasscutter.server.born.BornIntroGate;
 import emu.grasscutter.server.game.GameServer;
 import emu.grasscutter.server.packet.send.PacketDelTeamEntityNotify;
 import emu.grasscutter.server.packet.send.PacketPlayerChatNotify;
@@ -25,12 +26,30 @@ public class HomeWorld extends World {
     public HomeWorld(GameServer server, Player owner) {
         super(server, owner);
 
-        this.home = owner.isOnline() ? owner.getHome() : GameHome.getByUid(owner.getUid());
-        this.refreshModuleManager();
+        GameHome ownerHome = owner.getHome();
+        boolean freshBorn = BornIntroGate.isAwaiting(owner.getSession());
+
+        // A brand-new 7.1 player has no persisted Home yet. Avoid putting the synchronous database
+        // miss/default-home save on the first scene-entry critical path.
+        this.home =
+                ownerHome != null
+                        ? ownerHome
+                        : freshBorn
+                                ? GameHome.create(owner.getUid())
+                                : GameHome.getByUid(owner.getUid());
+
+        // Fresh players also have no realm selected yet. Build the module manager once a valid realm
+        // exists instead of creating unusable Home scenes during the native born handoff.
+        if (!freshBorn || owner.getCurrentRealmId() > 0) {
+            this.refreshModuleManager();
+        }
     }
 
     @Override
     public boolean onTick() {
+        if (this.getPlayerCount() == 0) {
+            return true;
+        }
         if (this.moduleManager == null) {
             return false;
         }
@@ -73,21 +92,17 @@ public class HomeWorld extends World {
 
     @Override
     public synchronized void addPlayer(Player player) {
-        // Check if player already in
         if (this.getPlayers().contains(player)) {
             return;
         }
 
-        // Remove player from prev world
         if (player.getWorld() != null) {
             player.getWorld().removePlayer(player);
         }
 
-        // Register
         player.setWorld(this);
         this.getPlayers().add(player);
 
-        // Set player variables
         if (this.getHost().equals(player)) {
             player.setPeerId(1);
             this.getGuests().forEach(player1 -> player1.setPeerId(player1.getPeerId() + 1));
@@ -97,7 +112,6 @@ public class HomeWorld extends World {
 
         player.getTeamManager().setEntity(new EntityTeam(player));
 
-        // Copy main team to multiplayer team
         if (this.isMultiplayer()) {
             player
                     .getTeamManager()
@@ -120,11 +134,9 @@ public class HomeWorld extends World {
             }
         }
 
-        // Add to scene
         var scene = this.getSceneById(player.getSceneId());
         scene.addPlayer(player);
 
-        // Info packet for other players
         if (this.getPlayers().size() > 1) {
             this.updatePlayerInfos(player);
         }
@@ -132,7 +144,6 @@ public class HomeWorld extends World {
 
     @Override
     public synchronized void removePlayer(Player player) {
-        // Remove team entities
         this.broadcastPacket(
                 new PacketDelTeamEntityNotify(
                         player.getSceneId(),
@@ -144,17 +155,14 @@ public class HomeWorld extends World {
                                                         : p.getTeamManager().getEntity().getId())
                                 .toList()));
 
-        // Deregister
         this.getPlayers().remove(player);
         player.setWorld(null);
 
-        // Remove from scene
         var scene = this.getSceneById(player.getSceneId());
         if (scene != null) {
             scene.removePlayer(player);
         }
 
-        // Info packet for other players
         if (!this.getPlayers().isEmpty()) {
             this.updatePlayerInfos(player);
         }

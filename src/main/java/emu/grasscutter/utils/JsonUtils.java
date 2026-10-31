@@ -27,6 +27,26 @@ public final class JsonUtils {
                     .disableHtmlEscaping()
                     .create();
 
+    /** For ability dumps, whose number fields may hold global-value names or formulas. */
+    static final Gson lenientGson =
+            gson.newBuilder()
+                    .registerTypeAdapter(int.class, LenientNumberAdapter.INT)
+                    .registerTypeAdapter(Integer.class, LenientNumberAdapter.INT)
+                    .registerTypeAdapter(long.class, LenientNumberAdapter.LONG)
+                    .registerTypeAdapter(Long.class, LenientNumberAdapter.LONG)
+                    .registerTypeAdapter(float.class, LenientNumberAdapter.FLOAT)
+                    .registerTypeAdapter(Float.class, LenientNumberAdapter.FLOAT)
+                    .registerTypeAdapter(double.class, LenientNumberAdapter.DOUBLE)
+                    .registerTypeAdapter(Double.class, LenientNumberAdapter.DOUBLE)
+                    .create();
+
+    /** Like {@link #loadToList(Path, Class)}, but tolerant of non-numeric values in number fields. */
+    public static <T> List<T> loadToListLenient(Path filename, Class<T> classType) throws IOException {
+        try (var fileReader = Files.newBufferedReader(filename, StandardCharsets.UTF_8)) {
+            return lenientGson.fromJson(fileReader, TypeToken.getParameterized(List.class, classType).getType());
+        }
+    }
+
     /**
      * Converts the given object to a JsonElement.
      *

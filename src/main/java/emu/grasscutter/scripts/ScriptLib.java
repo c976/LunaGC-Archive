@@ -3,20 +3,28 @@ package emu.grasscutter.scripts;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.game.activity.ActivityManager;
+import emu.grasscutter.game.dungeons.DungeonManager;
 import emu.grasscutter.game.dungeons.challenge.DungeonChallenge;
 import emu.grasscutter.game.dungeons.challenge.enums.FatherChallengeProperty;
 import emu.grasscutter.game.dungeons.challenge.factory.ChallengeFactory;
 import emu.grasscutter.game.entity.*;
 import emu.grasscutter.game.entity.gadget.GadgetWorktop;
 import emu.grasscutter.game.entity.gadget.platform.*;
+import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.quest.enums.*;
+import emu.grasscutter.game.quest.LiyueCloudDungeonSupport;
 import emu.grasscutter.game.world.*;
+import emu.grasscutter.game.world.data.TeleportProperties;
 import emu.grasscutter.net.proto.EnterTypeOuterClass;
 import emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType;
 import emu.grasscutter.scripts.constants.*;
 import emu.grasscutter.scripts.data.*;
+import emu.grasscutter.server.event.player.PlayerTeleportEvent.TeleportType;
 import emu.grasscutter.server.packet.send.*;
+import emu.grasscutter.server.packet.send.PacketSceneEntityAppearNotify;
+import emu.grasscutter.server.packet.send.PacketSceneEntityDisappearNotify;
+import emu.grasscutter.server.packet.send.PacketScenePlayerLocationNotify;
 import io.netty.util.concurrent.FastThreadLocal;
 import lombok.val;
 import org.luaj.vm2.*;
@@ -24,6 +32,7 @@ import org.slf4j.*;
 
 import javax.annotation.Nullable;
 import java.util.*;
+import java.util.function.Supplier;
 
 import static emu.grasscutter.GameConstants.ENTITY_ID_BIT_SHIFT;
 import static emu.grasscutter.game.props.EnterReason.Lua;
@@ -58,6 +67,14 @@ public class ScriptLib {
         return Optional.of(sceneScriptManager.get()).get();
     }
 
+    public int GetDungeonId() {
+        SceneScriptManager manager = sceneScriptManager.getIfExists();
+        if (manager == null || manager.getScene() == null) return 0;
+        DungeonManager dungeonManager = manager.getScene().getDungeonManager();
+        if (dungeonManager == null || dungeonManager.getDungeonData() == null) return 0;
+        return dungeonManager.getDungeonData().getId();
+    }
+
     private String printTable(LuaTable table) {
         StringBuilder sb = new StringBuilder();
         sb.append("{");
@@ -90,6 +107,30 @@ public class ScriptLib {
 
     public void removeCurrentEntity() {
         this.currentEntity.remove();
+    }
+
+    /** Entity callbacks need the same scene and group context as scene-script triggers. */
+    public <T> T withEntityContext(GameEntity entity, Supplier<T> callback) {
+        var previousManager = sceneScriptManager.getIfExists();
+        var previousGroup = currentGroup.getIfExists();
+        var previousEntity = currentEntity.getIfExists();
+        var manager = entity.getScene().getScriptManager();
+        var instance = manager.getGroupInstanceById(entity.getGroupId());
+        sceneScriptManager.set(manager);
+        currentGroup.set(instance != null ? instance.getLuaGroup() : null);
+        currentEntity.set(entity);
+        try {
+            return callback.get();
+        } finally {
+            restoreContext(sceneScriptManager, previousManager);
+            restoreContext(currentGroup, previousGroup);
+            restoreContext(currentEntity, previousEntity);
+        }
+    }
+
+    private static <T> void restoreContext(FastThreadLocal<T> context, T previous) {
+        if (previous == null) context.remove();
+        else context.set(previous);
     }
 
     public Optional<GameEntity> getCurrentEntity() {
@@ -187,15 +228,47 @@ public class ScriptLib {
         var existingChallenge = scene.getChallenge();
         if (existingChallenge != null && existingChallenge.inProgress()) {
             logger.warn("ActiveChallenge: tried to create challenge while one is already in progress");
-            return 0;
+            return emu.grasscutter.game.quest.AmberFlightExamSupport.isFlightChallenge(
+                    scene, getCurrentGroup().get(), challengeId, challengeIndex) ? 1 : 0;
         }
 
-        var towerManager = scene.getPlayers().get(0).getTowerManager();
-        if (towerManager.isInProgress() && towerManager.getCurrentTimeLimit() > 0) {
-
-            timeLimitOrGroupId = towerManager.getCurrentTimeLimit() - timeLimitOrGroupId;
-            if (timeLimitOrGroupId < 0) {
-                timeLimitOrGroupId = 0;
+        var players = scene.getPlayers();
+        var towerManager = players.isEmpty() ? null : players.get(0).getTowerManager();
+        if (towerManager != null && towerManager.isAwaitingTeamReconfigure()) {
+            logger.info(
+                    "ActiveChallenge blocked (awaiting tower team reconfigure) id={} index={}",
+                    challengeId,
+                    challengeIndex);
+            return 0;
+        }
+        // Tower lower-half lua passes TPL_TIME = remaining seconds as the 3rd ActiveChallenge arg.
+        // Do NOT subtract from currentTimeLimit (old Grasscutter carry-over): that treated remaining
+        // as elapsed and collapsed e.g. 9:27 left into ~27 seconds.
+        // Also prefer TowerManager-carried remaining when the lua variable looks corrupted.
+        if (towerManager != null) {
+            var dungeonManager = scene.getDungeonManager();
+            if (dungeonManager != null && dungeonManager.isTowerDungeon()) {
+                try {
+                    var m =
+                            towerManager
+                                    .getClass()
+                                    .getMethod("resolveAbyssChallengeTimeLimit", int.class);
+                    int corrected = (Integer) m.invoke(towerManager, timeLimitOrGroupId);
+                    if (corrected != timeLimitOrGroupId) {
+                        timeLimitOrGroupId = corrected;
+                    }
+                } catch (ReflectiveOperationException ignored) {
+                    // Method absent on older jars — keep lua timeLimit as-is.
+                }
+                logger.info(
+                        "Tower ActiveChallenge uid={} id={} index={} timeLimit={} stageVar={}",
+                        players.isEmpty() ? -1 : players.get(0).getUid(),
+                        challengeId,
+                        challengeIndex,
+                        timeLimitOrGroupId,
+                        getSceneScriptManager()
+                                .getVariables(groupId)
+                                .getOrDefault("stage", -1));
             }
         }
 
@@ -254,10 +327,18 @@ public class ScriptLib {
 
     public int AddQuestProgress(String var1) {
         logger.debug("[LUA] Call AddQuestProgress with {}", var1);
+        boolean liyueProgress = getSceneScriptManager().getScene().getId() == 3
+                && ("13310390801".equals(var1) || "133101914".equals(var1)
+                    || "133101915".equals(var1) || "133101916".equals(var1)
+                    || emu.grasscutter.game.quest.LiyueChargePotRecovery.isProgressKey(var1));
+        // The condition dispatcher indexes params[0] even for a string-keyed Lua notification.
+        // Always provide the neutral value, including the Golden House completion callback.
+        int[] params = new int[] {0};
         for (var player : getSceneScriptManager().getScene().getPlayers()) {
             player.getPlayerProgress().addToCurrentProgress(var1, 1);
-            player.getQuestManager().queueEvent(QuestCond.QUEST_COND_LUA_NOTIFY, var1);
-            player.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_LUA_NOTIFY, var1);
+            if (liyueProgress) player.save();
+            player.getQuestManager().queueEvent(QuestCond.QUEST_COND_LUA_NOTIFY, var1, params);
+            player.getQuestManager().queueEvent(QuestContent.QUEST_CONTENT_LUA_NOTIFY, var1, params);
         }
 
         return 0;
@@ -348,6 +429,24 @@ public class ScriptLib {
         val groupId = currentGroup.get().id;
         val variables = getSceneScriptManager().getVariables(groupId);
 
+        // These three seals store pickup receipts as bits, not a numeric counter.
+        // Repeated or concurrent reports for one light must not add its bit twice.
+        if (groupId >= 133007228 && groupId <= 133007230
+                && "Temp_Point_Value".equals(var) && (value == 1 || value == 2 || value == 4)) {
+            final int old;
+            final int updated;
+            synchronized (variables) {
+                old = variables.getOrDefault(var, 0);
+                updated = old | value;
+                variables.put(var, updated);
+            }
+            if (updated != old) {
+                getSceneScriptManager().callEvent(new ScriptArgs(groupId,
+                        EventType.EVENT_VARIABLE_CHANGE, updated, old).setEventSource(var));
+            }
+            return LuaValue.ZERO;
+        }
+
         val old = variables.getOrDefault(var, 0);
         variables.put(var, old + value);
         getSceneScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_VARIABLE_CHANGE, old + value, old).setEventSource(var));
@@ -374,6 +473,18 @@ public class ScriptLib {
         return this.getSceneScriptManager().getScene().getWorld().isMultiplayer();
     }
 
+    /**
+     * Whether the entity with this config id is currently alive in this group.
+     *
+     * <p>Returns a boolean rather than the usual 0-for-success int: the scripts use it directly as a
+     * condition ({@code return not ScriptLib.CheckIsInGroup(...)}), and in Lua every number is
+     * truthy - a 0 would read as "yes it is there" and invert the check.
+     */
+    public boolean CheckIsInGroup(int groupId, int configId) {
+        logger.debug("[LUA] Call CheckIsInGroup with {},{}", groupId, configId);
+        return getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId) != null;
+    }
+
     public int CheckRemainGadgetCountByGroupId(LuaTable table) {
         logger.debug("[LUA] Call CheckRemainGadgetCountByGroupId with {}", printTable(table));
         var groupId = table.get("group_id").toint();
@@ -390,8 +501,7 @@ public class ScriptLib {
     }
 
     public int ClearPlayerEyePoint(int var1) {
-        logger.warn("[LUA] Call unimplemented ClearPlayerEyePoint with {}", var1);
-
+        // No-op stub: Cryo Regisvine (and similar) scripts spam this every tick.
         return 0;
     }
 
@@ -458,8 +568,48 @@ public class ScriptLib {
             return 1;
         }
 
+        // After weekly-boss settle, TransPlayerToPos used to ENTER_GOTO and re-fire ENTER_REGION,
+        // which CreateMonster'd Dvalin again (flower unclaimable + BOSS NAME bar). Block it.
+        try {
+            var scene = getSceneScriptManager().getScene();
+            var dm = scene != null ? scene.getDungeonManager() : null;
+            if (dm != null && dm.isFinishedSuccessfully()) {
+                logger.info(
+                        "[LUA] CreateMonster blocked after dungeon settle scene={} config={}",
+                        scene.getId(),
+                        configId);
+                return 0;
+            }
+        } catch (Throwable ignored) {
+        }
+
+        if (emu.grasscutter.game.quest.RazorWolfQuestSupport.scheduleStoryWolf(
+                getSceneScriptManager().getScene(), getCurrentGroup().get(), configId, delayTime)) return 0;
         getSceneScriptManager().spawnMonstersByConfigId(getCurrentGroup().get(), configId, delayTime);
         return 0;
+    }
+
+    /** Spawns a monster from the group's config at a position the script chooses. */
+    public int CreateMonsterByConfigIdByPos(int configId, LuaTable bornPos, LuaTable face) {
+        logger.debug("[LUA] Call CreateMonsterByConfigIdByPos with {}, {}, {}", configId, bornPos, face);
+
+        var group = this.currentGroup.getIfExists();
+        if (group == null) return 1;
+
+        var entity =
+                getSceneScriptManager()
+                        .createMonsterByConfigIdByPos(
+                                group, configId, luaTablePosition(bornPos), luaTablePosition(face));
+        if (entity == null) return 2;
+
+        getSceneScriptManager().addEntity(entity);
+        return 0;
+    }
+
+    private static Position luaTablePosition(LuaTable table) {
+        if (table == null || table.isnil()) return null;
+        return new Position(
+                table.get("x").tofloat(), table.get("y").tofloat(), table.get("z").tofloat());
     }
 
     public int CreateMonsterFaceAvatar(LuaTable var1) {
@@ -838,17 +988,37 @@ public class ScriptLib {
         return true;
     }
 
+    /** Use Lua's explicit target group when a quest event affects another group. */
+    static int killEntityTargetGroup(int requestedGroupId, int currentGroupId) {
+        return requestedGroupId > 0 ? requestedGroupId : currentGroupId;
+    }
+
     public int KillEntityByConfigId(LuaTable table) {
         logger.debug("[LUA] Call KillEntityByConfigId with {}", printTable(table));
         var configId = table.get("config_id");
-        if (configId == LuaValue.NIL) {
-            return 1;
+        if (!configId.isnumber() || configId.toint() <= 0) return 1;
+        var groupValue = table.get("group_id");
+        var activeGroup = getCurrentGroup().get();
+        int groupId = killEntityTargetGroup(
+                groupValue.isnumber() ? groupValue.toint() : 0,
+                activeGroup != null ? activeGroup.id : 0);
+        if (groupId <= 0) return 1;
+        var scriptManager = getSceneScriptManager();
+        // Q39403 can remove an off-grid seal gadget from another Lua group.
+        // Record the explicit script kill before looking up a spawned entity.
+        var group = scriptManager.getGroupById(groupId);
+        if (group != null && group.gadgets != null
+                && group.gadgets.containsKey(configId.toint())) {
+            var instance = scriptManager.getGroupInstanceById(groupId);
+            if (instance != null && instance.markScriptGadgetDestroyed(configId.toint())) {
+                instance.save();
+            }
         }
-        var entity = getSceneScriptManager().getScene().getEntityByConfigId(configId.toint(), getCurrentGroup().get().id);
-        if (entity == null) {
-            return 0;
+        var entity = scriptManager.getScene().getEntityByConfigId(
+                configId.toint(), groupId);
+        if (entity != null) {
+            getSceneScriptManager().getScene().killEntity(entity, 0);
         }
-        getSceneScriptManager().getScene().killEntity(entity, 0);
         return 0;
     }
 
@@ -925,8 +1095,16 @@ public class ScriptLib {
     }
 
     public int PlayCutScene(int cutsceneId, int var2) {
-        logger.warn("[LUA] Call unchecked PlayCutScene with {} {}", cutsceneId, var2);
-        sceneScriptManager.get().getScene().broadcastPacket(new PacketCutsceneBeginNotify(cutsceneId));
+        logger.debug("[LUA] Call PlayCutScene with {} {}", cutsceneId, var2);
+        var scriptManager = getSceneScriptManager();
+        getCurrentGroup().ifPresent(group -> scriptManager.registerCutscene(cutsceneId, group.id));
+        if (emu.grasscutter.config.Configuration.GAME_OPTIONS.disableCutscenes) {
+            logger.debug("Cutscene {} suppressed by game.disableCutscenes.", cutsceneId);
+            scriptManager.finishCutscene(cutsceneId);
+            return 0;
+        }
+        // Scene triggers need the client's finish acknowledgement to resume after the movie.
+        scriptManager.getScene().broadcastPacket(new PacketCutsceneBeginNotify(cutsceneId, true));
 
         return 0;
     }
@@ -958,16 +1136,31 @@ public class ScriptLib {
     }
 
     public int RefreshGroup(LuaTable table) {
-        logger.warn("[LUA] Call improperly implemented RefreshGroup with {}", printTable(table));
+        int groupId = table.get("group_id").optint(0);
+        int suite = table.get("suite").optint(0);
+        boolean excludePrev = table.get("exclude_prev").optboolean(false);
+        int refreshLevelRevise = table.get("refresh_level_revise").optint(0);
 
-        int groupId = table.get("group_id").toint();
-        int suite = table.get("suite").toint();
-        SceneGroupInstance groupInstance = getSceneScriptManager().getGroupInstanceById(groupId);
+        var manager = sceneScriptManager.getIfExists();
+        if (manager == null) {
+            logger.warn("[LUA] RefreshGroup without scene context for group {}", groupId);
+            return 1;
+        }
+
+        SceneGroupInstance groupInstance = manager.getGroupInstanceById(groupId);
         if (groupInstance == null) {
             logger.warn("[LUA] trying to refresh unloaded group {}", groupId);
             return 1;
         }
-        getSceneScriptManager().refreshGroup(groupInstance, suite, false);
+
+        if (refreshLevelRevise != 0) {
+            logger.warn(
+                    "[LUA] RefreshGroup refresh_level_revise={} is not implemented for group {}",
+                    refreshLevelRevise,
+                    groupId);
+        }
+
+        manager.refreshGroup(groupInstance, suite, excludePrev);
         return 0;
     }
 
@@ -1074,11 +1267,53 @@ public class ScriptLib {
 
     public int SetGadgetEnableInteract(int groupId, int configId, boolean enable) {
         logger.debug("[LUA] Call SetGadgetEnableInteract with {} {} {}", groupId, configId, enable);
-        var entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
-        if (!(entity instanceof EntityGadget gadget)) {
+
+        EntityGadget gadget = null;
+
+        // ExecuteGadgetLua controller callbacks carry currentEntity but do not necessarily
+        // install a SceneScriptManager context. Prefer the exact context gadget first.
+        var current = getCurrentEntityGadget();
+        if (current != null
+                && current.getGroupId() == groupId
+                && current.getConfigId() == configId) {
+            gadget = current;
+        }
+
+        // Group scripts normally have SceneScriptManager context, so retain the scene lookup
+        // for calls targeting another gadget.
+        if (gadget == null) {
+            var manager = sceneScriptManager.getIfExists();
+            if (manager != null && manager.getScene() != null) {
+                var entity = manager.getScene().getEntityByConfigId(configId, groupId);
+                if (entity instanceof EntityGadget found) {
+                    gadget = found;
+                }
+            }
+        }
+
+        if (gadget == null) {
+            logger.warn(
+                    "SetGadgetEnableInteract: no gadget group={} config={} enable={}",
+                    groupId,
+                    configId,
+                    enable);
             return -1;
         }
-        gadget.setInteractEnabled(enable);
+        if (enable) {
+            try {
+                emu.grasscutter.game.entity.gadget.GatherInteractHelper.onGatherReady(gadget);
+            } catch (Throwable ignored) {
+            }
+            if (!gadget.isInteractEnabled()) {
+                gadget.setInteractEnabled(true);
+            }
+        } else {
+            try {
+                emu.grasscutter.game.entity.gadget.GatherInteractHelper.markGatherInteractDisabled(gadget);
+            } catch (Throwable ignored) {
+            }
+            gadget.setInteractEnabled(false);
+        }
         return 0;
     }
 
@@ -1096,6 +1331,11 @@ public class ScriptLib {
         logger.debug("[LUA] Call SetGroupGadgetStateByConfigId with {},{},{}", groupId, configId, gadgetState);
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
         if (!(entity instanceof EntityGadget gadget)) {
+            // Same story as SetWorktopOptionsByGroupId: the caller aborts on this, so say which
+            // gadget was missing rather than failing the whole Lua action quietly.
+            logger.warn(
+                    "SetGroupGadgetStateByConfigId: no gadget {} in group {} of scene {}",
+                    configId, groupId, getSceneScriptManager().getScene().getId());
             return -1;
         }
         gadget.updateState(gadgetState);
@@ -1152,10 +1392,9 @@ public class ScriptLib {
     public int SetMonsterBattleByGroup(int configId, int groupId) {
         logger.debug("[LUA] Call SetMonsterBattleByGroup with {} {}", configId, groupId);
 
-        var entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
-        if (entity instanceof EntityMonster monster) {
-            this.getSceneScriptManager().getScene().broadcastPacket(new PacketMonsterForceAlertNotify(monster.getId()));
-        }
+        // Hard-disable ForceAlert from LUA. ENTER_REGION false-fires on group load under the
+        // player and MonsterForceAlertNotify plays the hilichurl charge horn globally via
+        // broadcast. Real aggro still happens through normal AI / damage.
         return 0;
     }
 
@@ -1170,19 +1409,29 @@ public class ScriptLib {
             return 2;
         }
 
-        var routeConfig = entityGadget.getRouteConfig();
-        if (!(routeConfig instanceof PointArrayRoute)) {
-            routeConfig = new PointArrayRoute((entityGadget).getMetaGadget());
-            entityGadget.setRouteConfig(routeConfig);
+        synchronized (entityGadget) {
+            var routeConfig = entityGadget.getRouteConfig();
+            if (!(routeConfig instanceof PointArrayRoute)) {
+                // A config route's scheduled points must not keep moving the gadget after the swap.
+                entityGadget.invalidatePlatformRouteRun();
+                if (routeConfig instanceof ConfigRoute configRoute) {
+                    for (int id : configRoute.getScheduledIndexes()) {
+                        sceneScriptManager.get().getScene().getScheduler().cancelTask(id);
+                    }
+                    configRoute.getScheduledIndexes().clear();
+                }
+                routeConfig = new PointArrayRoute((entityGadget).getMetaGadget());
+                entityGadget.setRouteConfig(routeConfig);
+            }
+
+            val configRoute = (PointArrayRoute) routeConfig;
+
+            if (configRoute.getPointArrayId() == pointArrayId) {
+                return -1;
+            }
+
+            configRoute.setPointArrayId(pointArrayId);
         }
-
-        val configRoute = (PointArrayRoute) routeConfig;
-
-        if (configRoute.getPointArrayId() == pointArrayId) {
-            return -1;
-        }
-
-        configRoute.setPointArrayId(pointArrayId);
 
         sceneScriptManager.get().getScene().broadcastPacket(new PacketPlatformChangeRouteNotify(entityGadget));
 
@@ -1200,27 +1449,43 @@ public class ScriptLib {
             return 2;
         }
 
-        var routeConfig = entityGadget.getRouteConfig();
-        if (!(routeConfig instanceof ConfigRoute)) {
-            routeConfig = new ConfigRoute((entityGadget).getMetaGadget());
-            entityGadget.setRouteConfig(routeConfig);
-        }
+        synchronized (entityGadget) {
+            var routeConfig = entityGadget.getRouteConfig();
+            if (!(routeConfig instanceof ConfigRoute)) {
+                routeConfig = new ConfigRoute(entityGadget.getMetaGadget());
+                entityGadget.setRouteConfig(routeConfig);
+            }
 
-        val configRoute = (ConfigRoute) routeConfig;
-        if (configRoute.getRouteId() == routeId) {
+            val configRoute = (ConfigRoute) routeConfig;
+            if (configRoute.getRouteId() == routeId) {
+                return 0;
+            }
+
+            entityGadget.invalidatePlatformRouteRun();
+            configRoute.setRouteId(routeId);
+            configRoute.setStartIndex(0);
+            configRoute.setStarted(false);
+            for (var task : configRoute.getScheduledIndexes()) {
+                sceneScriptManager.get().getScene().getScheduler().cancelTask(task);
+            }
+            configRoute.getScheduledIndexes().clear();
+
+            if (emu.grasscutter.net.packet.PacketOpcodes.PlatformChangeRouteNotify > 0) {
+                sceneScriptManager
+                        .get()
+                        .getScene()
+                        .broadcastPacket(new PacketPlatformChangeRouteNotify(entityGadget));
+            } else {
+                var scene = sceneScriptManager.get().getScene();
+                scene.broadcastPacket(
+                        new PacketSceneEntityDisappearNotify(
+                                entityGadget, VisionType.VisionType_VISION_REFRESH));
+                scene.broadcastPacket(
+                        new PacketSceneEntityAppearNotify(
+                                entityGadget, VisionType.VisionType_VISION_REFRESH, 0));
+            }
             return 0;
         }
-
-        configRoute.setRouteId(routeId);
-        configRoute.setStartIndex(0);
-        configRoute.setStarted(false);
-        for (var task : configRoute.getScheduledIndexes()) {
-            sceneScriptManager.get().getScene().getScheduler().cancelTask(task);
-        }
-        configRoute.getScheduledIndexes().clear();
-
-        sceneScriptManager.get().getScene().broadcastPacket(new PacketPlatformChangeRouteNotify(entityGadget));
-        return 0;
     }
 
     public int SetPlayerInteractOption(String var1) {
@@ -1241,10 +1506,33 @@ public class ScriptLib {
         return 0;
     }
 
-    public int SetWeatherAreaState(int var1, int var2) {
-        logger.debug("[LUA] Call SetWeatherAreaState with {} {}", var1, var2);
-        this.getSceneScriptManager().getScene().getPlayers()
-                .forEach(p -> p.setWeather(var1, ClimateType.getTypeByValue(var2)));
+    /**
+     * Official Lua: {@code SetWeatherAreaState(context, weatherAreaId, state)} where {@code state}
+     * is 1=enable / 0=disable — not a ClimateType.
+     *
+     * <p>Previously treated {@code state} as climate and always applied {@code weatherAreaId}, so
+     * {@code SetWeatherAreaState(4, 0)} after Andrius left players stuck on
+     * {@code ESP_Monster_LupiBoreas} (cyan fog / silhouette open-world).
+     */
+    public int SetWeatherAreaState(int weatherAreaId, int state) {
+        logger.debug("[LUA] Call SetWeatherAreaState with {} {}", weatherAreaId, state);
+        var scene = this.getSceneScriptManager().getScene();
+        if (scene == null) {
+            return 0;
+        }
+        if (state != 0) {
+            // Enable: apply this weather area; climate comes from WeatherExcel defaultClimate.
+            scene.getPlayers().forEach(p -> p.setWeather(weatherAreaId, ClimateType.CLIMATE_NONE));
+        } else {
+            // Disable: only clear players still holding this area, restore open-world sunny.
+            scene.getPlayers()
+                    .forEach(
+                            p -> {
+                                if (p.getWeatherId() == weatherAreaId) {
+                                    p.setWeather(1, ClimateType.CLIMATE_SUNNY);
+                                }
+                            });
+        }
         return 0;
     }
 
@@ -1283,11 +1571,20 @@ public class ScriptLib {
         logger.debug("[LUA] Call SetWorktopOptionsByGroupId with {},{},{}", groupId, configId, options);
         val entity = getSceneScriptManager().getScene().getEntityByConfigId(configId, groupId);
 
+        // Both failures abort the whole Lua action that called this - the abyss puts its second-half
+        // worktop up this way, and a silent 1 here left the half swapped in with nothing to start it.
         if (!(entity instanceof EntityGadget gadget)) {
+            logger.warn(
+                    "SetWorktopOptionsByGroupId: no gadget {} in group {} of scene {}",
+                    configId, groupId, getSceneScriptManager().getScene().getId());
             return 1;
         }
 
         if (!(gadget.getContent() instanceof GadgetWorktop worktop)) {
+            logger.warn(
+                    "SetWorktopOptionsByGroupId: gadget {} in group {} is not a worktop but {}",
+                    configId, groupId,
+                    gadget.getContent() == null ? "nothing" : gadget.getContent().getClass().getSimpleName());
             return 2;
         }
 
@@ -1347,13 +1644,19 @@ public class ScriptLib {
         return entityGadget.startPlatform() ? 0 : 2;
     }
 
-    public int StartSealBattle(int gadgetId, LuaTable var2) {
-        logger.warn("[LUA] unimplemented Call StartSealBattle with {} {}", gadgetId, printTable(var2));
-
-        return 0;
+    public int StartSealBattle(int gadgetId, LuaTable parameters) {
+        var group = getCurrentGroup().get();
+        if (group == null) return 1;
+        return getSceneScriptManager().getSealBattleManager().start(
+                group.id, gadgetId, parameters.get("monster_group_id").toint(),
+                parameters.get("max_progress").toint(), parameters.get("kill_time").toint(),
+                parameters.get("radius").todouble(), parameters.get("battle_type").toint());
     }
 
     public int StopChallenge(int var1, int var2) {
+        var scene = getSceneScriptManager().getScene();
+        if (LiyueCloudDungeonSupport.isTargetScene(scene) && var1 >= 100 && var1 <= 102)
+            return LiyueCloudDungeonSupport.stopFireChallenge(scene, var1, var2);
         logger.warn("[LUA] Call unimplemented StopChallenge with {} {}", var1, var2);
 
         return 0;
@@ -1381,10 +1684,19 @@ public class ScriptLib {
         return 0;
     }
 
+    public int TowerMirrorTeamSetUp(int team) {
+        return TowerMirrorTeamSetUp(team, 0);
+    }
+
     public int TowerMirrorTeamSetUp(int team, int var1) {
         logger.debug("[LUA] Call TowerMirrorTeamSetUp with {},{}", team, var1);
         getSceneScriptManager().unloadCurrentMonsterTide();
-        getSceneScriptManager().getScene().getPlayers().get(0).getTowerManager().mirrorTeamSetUp(team - 1);
+        // This is the mid-chamber team swap on two-team floors, driven from the floor's Lua.
+        var players = getSceneScriptManager().getScene().getPlayers();
+        if (players.isEmpty()) {
+            return 0;
+        }
+        players.get(0).getTowerManager().mirrorTeamSetUp(team - 1);
         return 0;
     }
 
@@ -1412,18 +1724,83 @@ public class ScriptLib {
             return 2;
         }
 
-        var targetPos = new Position(x.toint(), y.toint(), z.toint());
+        var targetPos = new Position(x.tofloat(), y.tofloat(), z.tofloat());
+        Position targetRot = null;
+        if (!rot.isnil() && rot.istable()) {
+            float rx = rot.get("x").isnumber() ? rot.get("x").tofloat() : 0f;
+            float ry = rot.get("y").isnumber() ? rot.get("y").tofloat() : 0f;
+            float rz = rot.get("z").isnumber() ? rot.get("z").tofloat() : 0f;
+            targetRot = new Position(rx, ry, rz);
+        }
 
         var scene = scriptManager.getScene();
-        scene.getPlayers().stream().filter(p -> targets.contains(p.getUid())).forEach(p -> {
-            scene.removePlayer(p);
-            scene.addPlayer(p);
-            p.getPosition().set(targetPos);
+        // Settle teleports must NOT removePlayer/ENTER_GOTO — that reloads the group, re-registers
+        // ENTER_REGION triggers, and respawns weekly bosses (Dvalin) on the flower platform.
+        final boolean softTeleport;
+        {
+            boolean soft = false;
+            try {
+                var dm = scene.getDungeonManager();
+                soft = dm != null && dm.isFinishedSuccessfully();
+            } catch (Throwable ignored) {
+            }
+            softTeleport = soft;
+        }
 
-            p.sendPacket(new PacketPlayerEnterSceneNotify(p, EnterTypeOuterClass.EnterType.EnterType_ENTER_GOTO, Lua, scene.getId(), targetPos));
-            p.sendPacket(new PacketEnterScenePeerNotify(p));
-        });
-        return 0;
+        final Position finalRot = targetRot;
+        final Position dest = targetPos;
+        boolean accepted = true;
+        for (var p : List.copyOf(scene.getPlayers())) {
+            if (!targets.contains(p.getUid())) continue;
+            if (softTeleport) {
+                softTeleportInScene(scene, p, dest, finalRot);
+                continue;
+            }
+            // Through the world: a same-scene transfer keeps the scene and its scripts alive.
+            accepted &=
+                    p.getWorld()
+                            .transferPlayerToScene(
+                                    p,
+                                    TeleportProperties.builder()
+                                            .sceneId(scene.getId())
+                                            .teleportType(TeleportType.SCRIPT)
+                                            .enterReason(Lua)
+                                            .enterType(EnterTypeOuterClass.EnterType.EnterType_ENTER_GOTO)
+                                            .teleportTo(dest)
+                                            .teleportRot(finalRot)
+                                            .build());
+        }
+        return accepted ? 0 : 3;
+    }
+
+    /** Move player/avatars in-place without leaving the scene (no group reload). */
+    private static void softTeleportInScene(
+            Scene scene, Player p, Position targetPos, Position targetRot) {
+        p.getPosition().set(targetPos);
+        if (targetRot != null && p.getRotation() != null) {
+            p.getRotation().set(targetRot);
+        }
+        var team = p.getTeamManager().getActiveTeam();
+        if (team == null || team.isEmpty()) {
+            return;
+        }
+        List<GameEntity> entities = new ArrayList<>(team);
+        scene.broadcastPacket(
+                new PacketSceneEntityDisappearNotify(entities, VisionType.VisionType_VISION_REMOVE));
+        for (var avatar : team) {
+            avatar.getPosition().set(targetPos);
+            if (targetRot != null && avatar.getRotation() != null) {
+                avatar.getRotation().set(targetRot);
+            }
+        }
+        scene.broadcastPacket(
+                new PacketSceneEntityAppearNotify(entities, VisionType.VisionType_VISION_BORN));
+        p.sendPacket(new PacketScenePlayerLocationNotify(scene));
+        logger.info(
+                "[LUA] soft TransPlayerToPos uid={} scene={} -> {}",
+                p.getUid(),
+                scene.getId(),
+                targetPos);
     }
 
     public int TryReallocateEntityAuthority(int uid, int endConfig, int var3) {

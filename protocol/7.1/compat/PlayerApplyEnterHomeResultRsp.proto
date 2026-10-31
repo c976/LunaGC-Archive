@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 7815 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message PlayerApplyEnterHomeResultRsp {
+  int32 retcode = 5;
+  uint32 apply_uid = 4;
+  bool is_agreed = 12;
+  uint32 param = 15;
+}

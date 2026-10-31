@@ -9,6 +9,7 @@ import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.entity.EntityWeapon;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo;
 import emu.grasscutter.net.proto.EquipOuterClass.Equip;
 import emu.grasscutter.net.proto.FurnitureOuterClass.Furniture;
@@ -51,13 +52,37 @@ public class GameItem {
     // Relic
     @Getter @Setter private int mainPropId;
     @Getter private List<Integer> appendPropIdList;
+    /** Purple define-mark / star on relic card (Reliquary._is_relic_starred). */
+    @Getter @Setter private boolean relicStarred;
+    /**
+     * Affix ids chosen when defined at the Artifact Transmuter (Reliquary._purchased_append_prop_id_list).
+     * Client uses this for the define icon / tooltip.
+     */
+    @Getter @Setter private List<Integer> purchasedAppendPropIdList;
+    /**
+     * Affix ids that receive shared upgrade guarantees (Reliquary._definite_append_prop_id_list).
+     * Official: at least 2 upgrade hits on these lines by +20, split across them.
+     */
+    @Getter @Setter private List<Integer> definiteAppendPropIdList;
 
     @Getter @Setter private int equipCharacter;
+
+    // TPS weapon: unlocked TpsWeaponAccessoryExcelConfigData ids.
+    @Setter private List<Integer> tpsAccessoryIds;
     @Transient @Getter @Setter private EntityWeapon weaponEntity;
     @Transient @Getter private boolean newItem = false;
 
     public GameItem() {
         // Morphia only
+    }
+
+    /**
+     * Assign an item ID before queueing its first asynchronous write. Reuse it for all writes,
+     * so an early delete cannot race with an insert that Morphia gave a different ID.
+     */
+    public synchronized ObjectId ensurePersistenceId() {
+        if (id == null) id = new ObjectId();
+        return id;
     }
 
     public GameItem(int itemId) {
@@ -96,6 +121,11 @@ public class GameItem {
                     }
                 }
                 break;
+            case ITEM_TPS_WEAPON:
+                this.count = 1;
+                this.level = 1;
+                this.tpsAccessoryIds = new ArrayList<>();
+                break;
             case ITEM_RELIQUARY:
                 this.count = 1;
                 this.level = 1;
@@ -110,8 +140,44 @@ public class GameItem {
                 this.addAppendProps(data.getAppendPropNum());
                 break;
             default:
-                this.count = Math.min(count, data.getStackLimit());
+                // Preserve input quantity; inventory admission checks the stack limit.
+                this.count = count;
         }
+    }
+
+    /**
+     * Create an unowned, unsaved copy for a different inventory recipient. Share immutable
+     * item definition data, but never share identity, owner or mutable affix collections.
+     * This also preserves a rolled artifact's stats rather than rolling them again.
+     */
+    public GameItem copyForGrant() {
+        GameItem copy = new GameItem();
+        copy.itemId = this.itemId;
+        copy.itemData = this.itemData;
+        copy.count = this.count;
+        copy.level = this.level;
+        copy.exp = this.exp;
+        copy.totalExp = this.totalExp;
+        copy.promoteLevel = this.promoteLevel;
+        copy.favourite = this.favourite;
+        copy.locked = this.locked;
+        copy.affixes = this.affixes == null ? null : new ArrayList<>(this.affixes);
+        copy.refinement = this.refinement;
+        copy.mainPropId = this.mainPropId;
+        copy.appendPropIdList =
+                this.appendPropIdList == null ? null : new ArrayList<>(this.appendPropIdList);
+        copy.relicStarred = this.relicStarred;
+        copy.purchasedAppendPropIdList =
+                this.purchasedAppendPropIdList == null
+                        ? null : new ArrayList<>(this.purchasedAppendPropIdList);
+        copy.definiteAppendPropIdList =
+                this.definiteAppendPropIdList == null
+                        ? null : new ArrayList<>(this.definiteAppendPropIdList);
+        // A new recipient must never inherit another owner's equipped-avatar linkage.
+        copy.equipCharacter = 0;
+        copy.tpsAccessoryIds =
+                this.tpsAccessoryIds == null ? null : new ArrayList<>(this.tpsAccessoryIds);
+        return copy;
     }
 
     public int getOwnerId() {
@@ -128,6 +194,13 @@ public class GameItem {
         if (inventory.getItemById(this.itemId) == null) {
             this.newItem = true;
         }
+    }
+
+    public List<Integer> getTpsAccessoryIds() {
+        if (this.tpsAccessoryIds == null) {
+            this.tpsAccessoryIds = new ArrayList<>();
+        }
+        return this.tpsAccessoryIds;
     }
 
     public ObjectId getObjectId() {
@@ -168,21 +241,29 @@ public class GameItem {
     }
 
     public void addAppendProp() {
+        this.addAppendProp(ArtifactRollBias.NONE);
+    }
+
+    public void addAppendProp(ArtifactRollBias bias) {
         if (this.appendPropIdList == null) {
             this.appendPropIdList = new ArrayList<>();
         }
 
         if (this.appendPropIdList.size() < 4) {
-            this.addNewAppendProp();
+            this.addNewAppendProp(bias);
         } else {
-            this.upgradeRandomAppendProp();
+            this.upgradeRandomAppendProp(bias);
         }
     }
 
     public void addAppendProps(int quantity) {
+        this.addAppendProps(quantity, ArtifactRollBias.NONE);
+    }
+
+    public void addAppendProps(int quantity, ArtifactRollBias bias) {
         int num = Math.max(quantity, 0);
         for (int i = 0; i < num; i++) {
-            this.addAppendProp();
+            this.addAppendProp(bias);
         }
     }
 
@@ -199,7 +280,7 @@ public class GameItem {
         return props;
     }
 
-    private void addNewAppendProp() {
+    private void addNewAppendProp(ArtifactRollBias bias) {
         List<ReliquaryAffixData> affixList =
                 GameDepot.getRelicAffixList(this.itemData.getAppendPropDepotId());
 
@@ -219,7 +300,7 @@ public class GameItem {
         WeightedList<ReliquaryAffixData> randomList = new WeightedList<>();
         for (ReliquaryAffixData affix : affixList) {
             if (!blacklist.contains(affix.getFightProp())) {
-                randomList.add(affix.getWeight(), affix);
+                randomList.add(affix.getWeight() * bias.weigh(affix), affix);
             }
         }
 
@@ -232,7 +313,7 @@ public class GameItem {
         this.appendPropIdList.add(affixData.getId());
     }
 
-    private void upgradeRandomAppendProp() {
+    private void upgradeRandomAppendProp(ArtifactRollBias bias) {
         List<ReliquaryAffixData> affixList =
                 GameDepot.getRelicAffixList(this.itemData.getAppendPropDepotId());
 
@@ -240,15 +321,30 @@ public class GameItem {
             return;
         }
 
-        // Build whitelist
+        // Build whitelist of fight props already on the relic
         Set<FightProperty> whitelist = this.getAppendFightProperties();
+
+        // Defined artifacts: the chosen substats must gain at least 2 upgrades in total before max level,
+        // split evenly when several are chosen.
+        Set<FightProperty> guarantee = this.getDefiniteFightPropsNeedingGuarantee();
+        if (!guarantee.isEmpty()) {
+            Set<FightProperty> forced = new HashSet<>(whitelist);
+            forced.retainAll(guarantee);
+            if (!forced.isEmpty()) {
+                whitelist = forced;
+            }
+        }
 
         // Build random list
         WeightedList<ReliquaryAffixData> randomList = new WeightedList<>();
         for (ReliquaryAffixData affix : affixList) {
             if (whitelist.contains(affix.getFightProp())) {
-                randomList.add(affix.getUpgradeWeight(), affix);
+                randomList.add(affix.getUpgradeWeight() * bias.weigh(affix), affix);
             }
+        }
+
+        if (randomList.size() == 0) {
+            return;
         }
 
         // Add random stat
@@ -256,10 +352,75 @@ public class GameItem {
         this.appendPropIdList.add(affixData.getId());
     }
 
+    /** Fight props from definite append ids that still need guaranteed upgrade hits. */
+    private Set<FightProperty> getDefiniteFightPropsNeedingGuarantee() {
+        Set<FightProperty> defs = this.resolveDefiniteFightProps();
+        if (defs.isEmpty()) {
+            return Set.of();
+        }
+        int hits = 0;
+        for (int appendPropId : this.appendPropIdList) {
+            ReliquaryAffixData affixData = GameData.getReliquaryAffixDataMap().get(appendPropId);
+            if (affixData != null && defs.contains(affixData.getFightProp())) {
+                hits++;
+            }
+        }
+        // Initial define rolls already occupy one slot each; only count extra upgrades.
+        int upgradeHits = Math.max(0, hits - defs.size());
+        if (upgradeHits >= 2) {
+            return Set.of();
+        }
+        return defs;
+    }
+
+    private Set<FightProperty> resolveDefiniteFightProps() {
+        Set<FightProperty> out = new HashSet<>();
+        if (this.definiteAppendPropIdList == null) {
+            return out;
+        }
+        for (int id : this.definiteAppendPropIdList) {
+            ReliquaryAffixData affix = GameData.getReliquaryAffixDataMap().get(id);
+            if (affix != null && affix.getFightProp() != null) {
+                out.add(affix.getFightProp());
+            } else {
+                // Allow storing FightProperty ids directly (e.g. 20/22/28).
+                FightProperty fp = FightProperty.getPropById(id);
+                if (fp != null && fp != FightProperty.FIGHT_PROP_NONE) {
+                    out.add(fp);
+                }
+            }
+        }
+        return out;
+    }
+
+    /**
+     * Mark as Artifact Transmuter defined: purchased/definite drive the purple guarantee UI.
+     *
+     * <p>Do not set {@code relicStarred}. That bit is the bag star toggle
+     * ({@code SetReliquaryStarState}); leaving it true on define pushes clients into a broken
+     * StarUp enhance panel (Lv.00 / Option A / ? cost). e3a3240 set both; production shows only
+     * purchased+definite is safe for enhance.
+     */
+    public void markAsDefinedReliquary(List<Integer> chosenAffixIds) {
+        if (chosenAffixIds == null || chosenAffixIds.isEmpty()) {
+            return;
+        }
+        List<Integer> copy = new ArrayList<>(chosenAffixIds);
+        this.purchasedAppendPropIdList = new ArrayList<>(copy);
+        this.definiteAppendPropIdList = new ArrayList<>(copy);
+        // Keep existing player star as-is; never force-on at define time.
+    }
+
     @PostLoad
     public void onLoad() {
         if (this.itemData == null) {
             this.itemData = GameData.getItemDataMap().get(getItemId());
+        }
+        if (this.purchasedAppendPropIdList == null) {
+            this.purchasedAppendPropIdList = new ArrayList<>();
+        }
+        if (this.definiteAppendPropIdList == null) {
+            this.definiteAppendPropIdList = new ArrayList<>();
         }
     }
 
@@ -272,6 +433,11 @@ public class GameItem {
     }
 
     public SceneWeaponInfo createSceneWeaponInfo() {
+        return createSceneWeaponInfo(0);
+    }
+
+    /** {@code weaponSkinId} is the avatar's equipped weapon skin (7.1 SceneWeaponInfo field 11). */
+    public SceneWeaponInfo createSceneWeaponInfo(int weaponSkinId) {
         var weaponInfo =
                 SceneWeaponInfo.newBuilder()
                         .setEntityId(this.getWeaponEntity() != null ? this.getWeaponEntity().getId() : 0)
@@ -285,6 +451,10 @@ public class GameItem {
             for (int affix : this.getAffixes()) {
                 weaponInfo.putAffixMap(affix, this.getRefinement());
             }
+        }
+
+        if (weaponSkinId != 0) {
+            weaponInfo.setWeaponSkinId(weaponSkinId);
         }
 
         return weaponInfo.build();
@@ -325,8 +495,13 @@ public class GameItem {
                         .setPromoteLevel(this.getPromoteLevel())
                         .setMainPropId(this.getMainPropId())
                         .addAllAppendPropIdList(this.getAppendPropIdList());
-
-        return relic.build();
+        // Defined relics: purple guarantee = purchased/definite. Do NOT wire _is_relic_starred
+        // for them - that bit opens a broken StarUp enhance UI on current clients.
+        boolean defined =
+                this.purchasedAppendPropIdList != null && !this.purchasedAppendPropIdList.isEmpty();
+        ReliquaryProtoCompat.applyStarred(relic, !defined && this.isRelicStarred());
+        return ReliquaryProtoCompat.finish(
+                relic, this.purchasedAppendPropIdList, this.definiteAppendPropIdList);
     }
 
     public Item toProto() {
@@ -340,6 +515,9 @@ public class GameItem {
             case ITEM_RELIQUARY:
                 Reliquary relic = this.toReliquaryProto();
                 proto.setEquip(Equip.newBuilder().setReliquary(relic).setIsLocked(this.isLocked()).build());
+                break;
+            case ITEM_TPS_WEAPON:
+                proto.setTpsWeapon(TpsWeaponSystem.toTpsWeaponProto(this));
                 break;
             case ITEM_FURNITURE:
                 Furniture furniture = Furniture.newBuilder().setCount(getCount()).build();

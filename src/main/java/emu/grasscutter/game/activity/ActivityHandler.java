@@ -59,23 +59,9 @@ public abstract class ActivityHandler {
     }
 
     protected void triggerCondEvents(Player player) {
-        if (activityData == null) {
-            return;
-        }
-
         var questManager = player.getQuestManager();
-        activityData
-                .getCondGroupId()
-                .forEach(
-                        condGroupId -> {
-                            var condGroup = GameData.getActivityCondGroupMap().get((int) condGroupId);
-                            if (condGroup != null)
-                                condGroup
-                                        .getCondIds()
-                                        .forEach(
-                                                condition ->
-                                                        questManager.queueEvent(QuestCond.QUEST_COND_ACTIVITY_COND, condition));
-                        });
+        getActivityConditions()
+                .forEach(condition -> questManager.queueEvent(QuestCond.QUEST_COND_ACTIVITY_COND, condition));
     }
 
     private List<Integer> getActivityConditions() {
@@ -83,12 +69,22 @@ public abstract class ActivityHandler {
             return new ArrayList<>();
         }
 
-        return activityData.getCondGroupId().stream()
-                .map(condGroupId -> GameData.getActivityCondGroupMap().get((int) condGroupId))
-                .filter(Objects::nonNull)
-                .map(ActivityCondGroup::getCondIds)
-                .flatMap(Collection::stream)
-                .toList();
+        var groups =
+                activityData.getCondGroupId().stream()
+                        .map(condGroupId -> GameData.getActivityCondGroupMap().get((int) condGroupId))
+                        .toList();
+        if (groups.contains(null)) {
+            // Server/ActivityCondGroups.json stops short of the newest activities. Their condition
+            // ids are the activity id followed by three digits, the same rule
+            // PlayerActivityDataMappingBuilder uses to tie a condition to its activity.
+            int activityId = activityData.getId();
+            return GameData.getActivityCondExcelConfigDataMap().keySet().stream()
+                    .filter(condId -> condId / 1000 == activityId)
+                    .sorted()
+                    .toList();
+        }
+
+        return groups.stream().map(ActivityCondGroup::getCondIds).flatMap(Collection::stream).toList();
     }
 
     // TODO handle possible overwrites

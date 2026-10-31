@@ -114,6 +114,13 @@
       "need_target_online": "Această comandă necesită un UID țintă online, dar ținta actuală este offline. Adaugă un argument <@UID> diferit sau setați o țintă persistentă cu /target @UID.",
       "need_target_offline": "Această comandă necesită un UID țintă offline, dar ținta actuală este online. Adaugă un argument <@UID> diferit sau setați o țintă persistentă cu /target @UID."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "Activat",
       "disabled": "Dezactivat",
@@ -174,6 +181,12 @@
       "description": "🇺🇸Modify an existing entity's properties",
       "not_found_error": "🇺🇸Entity does not exist"
     },
+    "avatar": {
+      "description": "Gestionează personajele: listă, constelații, talente, statistici de luptă, prietenie, niveluri suplimentare și îmbunătățiri maxime."
+    },
+    "battlepass": {
+      "description": "Gestionează achiziția nivelurilor și accesul la recompensele premium ale permisului de luptă."
+    },
     "give": {
       "usage_relic": "Utilizare: give <artifactID> [mainPropID] [<appendPropID>[,<t>]]... [lv<nivel 0-20>]",
       "illegal_relic": "Acest ID de artefact aparține unui interval de pe lista neagră, este posibil să nu fie cel pe care l-ați dorit.",
@@ -217,7 +230,7 @@
       "language_not_found": "În prezent, serverul nu are această limbă.",
       "description": "Afișează sau modifică limba curentă."
     },
-    "list": {
+    "player": {
       "success": "Există %s jucător(i) online:",
       "description": "Enumeră jucătorii online."
     },
@@ -233,11 +246,25 @@
       "success": "Coordonate: %s, %s, %s\nGravitează：%s, %s, %s\nScene ID: %s",
       "description": "Obține informații despre poziție și rotație"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "Misiunea %s adăugată.",
       "finished": "Ați terminat misiunea %s.",
       "not_found": "Misiunea nu a fost găsită.",
       "invalid_id": "ID-ul misiunii nu a fost găsit.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "Adaugă sau termină misiuni",
       "running": "🇺🇸Quest %s is %s (%s).",
       "talking": "🇺🇸Talk %s is %s for main quest %s (%s).",
@@ -263,7 +290,10 @@
       "description": "🇺🇸Plays a cutscene"
     },
     "sound": {
-      "description": "🇺🇸Plays a sound"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "Se reîncarcă configurația.",
@@ -302,9 +332,13 @@
       "error": "EROARE: Etapă de construcție invalidă %s. Verificați consola pentru stacktrace.",
       "description": "Trimite corespondența către utilizatorul specificat. Utilizarea acestei comenzi se modifică în funcție de starea de compunere a acesteia."
     },
-    "sendMessage": {
+    "say": {
       "success": "Mesaj trimis.",
-      "description": "Trimite un mesaj unui jucător în calitate de server. Dacă este utilizat fără țintă, trimite mesajul către toți jucătorii de pe server."
+      "description": "Trimite un mesaj de la server tuturor jucătorilor conectați."
+    },
+    "sayto": {
+      "success": "Mesaj trimis.",
+      "description": "Trimite un mesaj de la server unui jucător conectat."
     },
     "setConst": {
       "range_error": "🇺🇸Constellation level must be between 0 and 6.",
@@ -321,8 +355,11 @@
       "level_error": "Nivel Fetter nevalabil.",
       "description": "Stabilește nivelul Fetter pentru personajul tău activ curent."
     },
-    "setProp": {
-      "description": "Stabilește proprietățile la nivel de cont. Lucruri precum godmode pot fi activate în acest fel, precum și schimbarea unor lucuri precum etajul abisului deblocat și progresul battle pass.\n\tValori pentru <prop>: godmode | nostamina | unlimitedenergy | abyss | worldlevel | bplevel\n\t(cont.) see PlayerProperty enum for other possible values, of form PROP_MAX_SPRING_VOLUME -> max_spring_volume"
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "Stabilește proprietățile la nivel de cont. Lucruri precum godmode pot fi activate în acest fel, precum și schimbarea unor lucuri precum etajul abisului deblocat și progresul battle pass. Use `unlock map` for map unlocks and `openstate` for OpenStates."
     },
     "setSceneTag": {
       "description": "Stabilește etichetele de scenă specifice contului. Aceasta controlează lucruri precum rocile care blochează ușile, clădirile care sunt vizibile și alte lucruri (de obicei legate de misiuni) care afectează ceea ce este vizibil în lumea ta."
@@ -368,6 +405,20 @@
       "avatar_not_found": "Avatarul %d nu a fost găsit.",
       "description": "Modifică-ți echipa manual."
     },
+    "teapot": {
+      "description": "Manipulați funcțiile oală serenitea. \n\tValori pentru setLevel<1-10> \n\tValori pentru unlockModule<1-4> \n\tValori pentru lockModule<1-4> \n\tValori pentru giveAllFurniture<număr> \n\tValori pentru refreshLimitedShop<none >",
+      "level_range_error": "Nivelul oală Serenitea trebuie să fie între 1 și 10.",
+      "level_success": "Nivelul oală Serenitea setat la %s.",
+      "invalid_param": "Parametru invalid.",
+      "module_sumeru_error": "Modulul Sumeru nu este acceptat momentan.",
+      "module_range_error": "Numărul modulului trebuie să fie între 1 - 4.",
+      "unlock_module_contain_error": "Modulul este deja deblocat.",
+      "unlock_module_success": "Modulul deblocat %s.",
+      "lock_module_in_scene_error": "Modulul activ nu poate fi blocat.",
+      "lock_module_contain_error": "Modulul nu există.",
+      "lock_module_success": "Modulul blocat %s.",
+      "give_furniture_success": "Am dat toată mobila."
+    },
     "teleportAll": {
       "success": "Ai chemat toți jucătorii în locația ta.",
       "error": "Puteți utiliza această comandă numai în modul MP.",
@@ -379,7 +430,7 @@
       "success": "Teleportat %s la %s, %s, %s în scena %s.",
       "description": "Schimbă poziția jucătorului."
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "Manipulați funcționalitățile activității de probă avatarului. Aceasta include comutarea stărilor de temniță și recompensă.",
       "not_found": "Nie znaleziono danych gracza o aktywności awatara w wersji próbnej. Być może aktywność nie jest włączona.",
       "invalid_param": "Niewłaściwy parametr.",
@@ -399,7 +450,7 @@
       "success": "Succes.",
       "failure": "Eșec. Jucătorul nu a fost găsit.",
       "invalid_time": "Imposibil de analizat durata.",
-      "description": "Interziceți un jucător"
+      "description": "Interzice un cont sau o adresă IPv4"
     },
     "unlockall": {
       "success": "🇺🇸Unlocked all open states for %s.",
@@ -471,6 +522,12 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

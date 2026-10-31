@@ -21,12 +21,32 @@ public class TowerLevelRecord {
     }
 
     public TowerLevelRecord setLevelStars(int levelId, int stars) {
+        if (passedLevelMap == null) {
+            passedLevelMap = new HashMap<>();
+        }
+        // Drop string-key duplicates Morphia may have hydrated beside the int key.
+        passedLevelMap.entrySet().removeIf(e -> e.getKey() != null && e.getKey() != levelId
+                && String.valueOf(levelId).equals(String.valueOf(e.getKey())));
         passedLevelMap.put(levelId, stars);
         return this;
     }
 
     public int getLevelStars(int levelId) {
-        return passedLevelMap.get(levelId);
+        if (passedLevelMap == null || passedLevelMap.isEmpty()) {
+            return 0;
+        }
+        Integer direct = passedLevelMap.get(levelId);
+        if (direct != null) {
+            return direct;
+        }
+        for (var entry : passedLevelMap.entrySet()) {
+            if (entry.getKey() != null
+                    && String.valueOf(levelId).equals(String.valueOf(entry.getKey()))
+                    && entry.getValue() != null) {
+                return entry.getValue();
+            }
+        }
+        return 0;
     }
 
     public int getStarCount() {

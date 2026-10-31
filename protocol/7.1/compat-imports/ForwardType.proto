@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+// Build-only import stub. The canonical ForwardType descriptor comes from protocol.desc.
+enum ForwardType {
+  FORWARDTYPE_STUB = 0;
+}

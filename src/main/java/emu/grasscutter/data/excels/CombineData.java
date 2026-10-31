@@ -28,11 +28,16 @@ public class CombineData extends GameResource {
     @Override
     public void onLoad() {
         super.onLoad();
-        // clean data
-        randomItems =
-                randomItems.stream().filter(item -> item.getId() > 0).collect(Collectors.toList());
-        materialItems =
-                materialItems.stream().filter(item -> item.getId() > 0).collect(Collectors.toList());
+        // Both lists are absent from rows that do not use them, and the throw that caused took
+        // the whole of CombineExcelConfigData.json down with it, not just the row.
+        randomItems = withoutPlaceholders(randomItems);
+        materialItems = withoutPlaceholders(materialItems);
+    }
+
+    /** Drops the id-0 padding entries the resource files use to fill fixed-width lists. */
+    private static List<ItemParamData> withoutPlaceholders(List<ItemParamData> items) {
+        if (items == null) return List.of();
+        return items.stream().filter(item -> item.getId() > 0).collect(Collectors.toList());
     }
 
     public int getCombineId() {

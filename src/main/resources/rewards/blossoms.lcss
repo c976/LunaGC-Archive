@@ -1,0 +1,94 @@
+/* 来源待核验：当前配置尚无逐项原始样本证据；不能据此认定官服奖励。
+ * 来源边界详见 docs/rewards/source-provenance.md。 */
+
+/* ========================================================================== */
+/* 地脉：基础经验、藏金之花、启示之花 */
+/* ========================================================================== */
+
+/* 每次领取地脉之花固定获得 100 冒险阅历。 */
+blossom {
+    genshin.experience.adventure: 100;
+}
+
+/* 藏金之花：世界等级 WR 决定摩拉和好感经验。 */
+
+blossom[type="wealth"] {
+    &[WR=0] {
+        genshin.currency.mora: 12000;
+        genshin.experience.companionship: 10;
+    }
+
+    &[WR=1] {
+        genshin.currency.mora: 20000;
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=2] {
+        genshin.currency.mora: 28000;
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=3] {
+        genshin.currency.mora: 36000;
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=4] {
+        genshin.currency.mora: 44000;
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=5] {
+        genshin.currency.mora: 52000;
+        genshin.experience.companionship: 20;
+    }
+
+    &[6 <= WR <= 9] {
+        genshin.currency.mora: 60000;
+        genshin.experience.companionship: 20;
+    }
+}
+
+/* 启示之花：经验书数量独立抽样，范围含两端。 */
+
+blossom[type="revelation"] {
+    &[WR=0] {
+        genshin.avatar_up.wanderers_advice: "7~8";
+        genshin.avatar_up.adventurers_experience: "3~4";
+        genshin.experience.companionship: 10;
+    }
+
+    &[WR=1] {
+        genshin.avatar_up.wanderers_advice: "10~12";
+        genshin.avatar_up.adventurers_experience: "5~6";
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=2] {
+        genshin.avatar_up.adventurers_experience: "10~11";
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=3] {
+        genshin.avatar_up.adventurers_experience: "13~14";
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=4] {
+        genshin.avatar_up.adventurers_experience: "6~7";
+        genshin.avatar_up.heros_wit: "2~3";
+        genshin.experience.companionship: 15;
+    }
+
+    &[WR=5] {
+        genshin.avatar_up.adventurers_experience: "6~7";
+        genshin.avatar_up.heros_wit: "3~4";
+        genshin.experience.companionship: 20;
+    }
+
+    &[6 <= WR <= 9] {
+        genshin.avatar_up.adventurers_experience: "6~7";
+        genshin.avatar_up.heros_wit: "4~5";
+        genshin.experience.companionship: 20;
+    }
+}

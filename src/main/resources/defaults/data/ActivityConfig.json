@@ -16,6 +16,95 @@
       5072013
     ],
     "beginTime": "2022-05-01T00:00:00+08:00",
-    "endTime": "2023-05-01T00:00:00+08:00"
+    "endTime": "2999-05-01T23:59:59+08:00"
+  },
+  {
+    "activityId": 5343,
+    "activityType": 0,
+    "scheduleId": 5343001,
+    "meetCondList": [
+      5343001,
+      5343002,
+      5343003,
+      5343004,
+      5343005,
+      5343006,
+      5343007,
+      5343008,
+      5343009,
+      5343010,
+      5343011,
+      5343012
+    ],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5344,
+    "activityType": 0,
+    "scheduleId": 5344001,
+    "meetCondList": [
+      5344001,
+      5344002,
+      5344003,
+      5344004,
+      5344005,
+      5344006,
+      5344007
+    ],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5345,
+    "activityType": 2100,
+    "scheduleId": 5345001,
+    "meetCondList": [],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5346,
+    "activityType": 0,
+    "scheduleId": 5346001,
+    "meetCondList": [
+      5346001,
+      5346002,
+      5346003
+    ],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5347,
+    "activityType": 0,
+    "scheduleId": 5347001,
+    "meetCondList": [],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5348,
+    "activityType": 0,
+    "scheduleId": 5348001,
+    "meetCondList": [],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5349,
+    "activityType": 0,
+    "scheduleId": 5349001,
+    "meetCondList": [],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
+  },
+  {
+    "activityId": 5351,
+    "activityType": 0,
+    "scheduleId": 5351001,
+    "meetCondList": [],
+    "beginTime": "2026-09-15T00:00:00+08:00",
+    "endTime": "2030-12-31T23:59:59+08:00"
   }
 ]

@@ -31,7 +31,7 @@ public class ActionSummon extends AbilityActionHandler {
             return false;
         }
 
-        var pos = new Position(summonPosRot.getPos());
+        var pos = resolveSummonPosition(target, action, summonPosRot.getPos());
         var rot = new Position(summonPosRot.getRot());
         var monsterId = action.monsterID;
 
@@ -66,5 +66,32 @@ public class ActionSummon extends AbilityActionHandler {
         } else {
             return false;
         }
+    }
+
+    /**
+     * The position to place this summon at.
+     *
+     * <p>A summon born on a global position key takes the server's copy of that key, which
+     * {@link ActionSetGlobalPos} wrote. The vector packed in the notify is not usable there: proto3
+     * leaves zero-valued fields out of the wire, and the client has nothing to report for a position
+     * the server never told it about, so it parses back as the world origin - thousands of units from
+     * the caster, where the entity falls through the terrain and {@code die_y} culls it.
+     *
+     * <p>Born types that are not keyed on a global position keep the client's value, which is
+     * correct for them.
+     */
+    private static Position resolveSummonPosition(
+            GameEntity caster,
+            AbilityModifierAction action,
+            emu.grasscutter.net.proto.VectorOuterClass.Vector clientPos) {
+        var born = action.born;
+        if (born != null && "ConfigBornByGlobalValue".equals(String.valueOf(born.get("$type")))) {
+            Object key = born.get("positionKey");
+            if (key != null && caster != null) {
+                Position stored = caster.getGlobalAbilityPositions().get(String.valueOf(key));
+                if (stored != null) return new Position(stored);
+            }
+        }
+        return new Position(clientPos);
     }
 }

@@ -18,9 +18,14 @@ public interface ChatSystemHandler {
 
     void sendPrivateMessageFromServer(int targetUid, int emote);
 
+    /** Sends a whisper from a given bot UID (console or DPS). */
+    void sendPrivateMessageFromBot(int fromUid, int targetUid, String message);
+
     void handlePullPrivateChatReq(Player player, int targetUid);
 
     void clearHistoryOnLogout(Player player);
 
     void handlePullRecentChatReq(Player player);
+
+    void ensureServerConversation(Player player);
 }

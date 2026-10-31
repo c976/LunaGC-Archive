@@ -2,6 +2,7 @@ package emu.grasscutter.server.packet.recv;
 
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.DungeonEntryInfoReqOuterClass.DungeonEntryInfoReq;
+import emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair;
 import emu.grasscutter.server.game.GameSession;
 
 @Opcodes(PacketOpcodes.DungeonEntryInfoReq)
@@ -14,6 +15,12 @@ public class HandlerDungeonEntryInfoReq extends PacketHandler {
         session
                 .getServer()
                 .getDungeonSystem()
-                .sendEntryInfoFor(session.getPlayer(), req.getPointId(), req.getSceneId());
+                .sendEntryInfoFor(
+                        session.getPlayer(),
+                        req.getScenePointIdListCount() > 0
+                                ? req.getScenePointIdListList()
+                                : java.util.List.of(Uint32Pair.newBuilder()
+                                        .setKey(req.getSceneId()).setValue(req.getPointId()).build()),
+                        req.getHGBKKNDDABP());
     }
 }

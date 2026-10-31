@@ -6,12 +6,14 @@ import java.util.List;
 
 public class PacketUpdatePlayerShowAvatarListRsp extends BasePacket {
 
-    public PacketUpdatePlayerShowAvatarListRsp(boolean isShowAvatar, List<Integer> avatarIds) {
+    public PacketUpdatePlayerShowAvatarListRsp(
+            boolean isShowAvatar, boolean isShowConstellationNum, List<Integer> avatarIds) {
         super(PacketOpcodes.UpdatePlayerShowAvatarListRsp);
 
         UpdatePlayerShowAvatarListRsp proto =
                 UpdatePlayerShowAvatarListRsp.newBuilder()
                         .setIsShowAvatar(isShowAvatar)
+                        .setIsShowConstellationNum(isShowConstellationNum)
                         .addAllShowAvatarIdList(avatarIds)
                         .setRetcode(0)
                         .build();

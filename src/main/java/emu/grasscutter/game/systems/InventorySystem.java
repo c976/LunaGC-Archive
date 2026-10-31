@@ -12,7 +12,7 @@ import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.props.ItemUseAction.*;
 import emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam;
-import emu.grasscutter.net.proto.MaterialInfoOuterClass.MaterialInfo;
+import emu.grasscutter.net.proto.MaterilaInfoOuterClass.MaterilaInfo;
 import emu.grasscutter.server.event.player.*;
 import emu.grasscutter.server.game.*;
 import emu.grasscutter.server.packet.send.*;
@@ -50,14 +50,12 @@ public class InventorySystem extends BaseGameSystem {
         super(server);
     }
 
-    public static synchronized int checkPlayerAvatarConstellationLevel(Player player, int id) {
-        // Try to accept itemId OR avatarId
-        int avatarId = 0;
+    /** The avatar an id stands for: the avatar id itself, or the avatar a card item grants. 0 if neither. */
+    public static int getAvatarIdFromItem(int id) {
         if (GameData.getAvatarDataMap().containsKey(id)) {
-            avatarId = id;
-        } else {
-            avatarId =
-                    Optional.ofNullable(GameData.getItemDataMap().get(id))
+            return id;
+        }
+        return Optional.ofNullable(GameData.getItemDataMap().get(id))
                             .map(itemData -> itemData.getItemUseActions())
                             .flatMap(
                                     actions ->
@@ -70,7 +68,11 @@ public class InventorySystem extends BaseGameSystem {
                                                                             .getI())
                                                     .findFirst())
                             .orElse(0);
-        }
+    }
+
+    public static synchronized int checkPlayerAvatarConstellationLevel(Player player, int id) {
+        // Try to accept itemId OR avatarId
+        int avatarId = getAvatarIdFromItem(id);
 
         if (avatarId == 0) return -2; // Not an Avatar
 
@@ -243,6 +245,11 @@ public class InventorySystem extends BaseGameSystem {
         // Packet
         player.sendPacket(new PacketStoreItemChangeNotify(relic));
         player.sendPacket(new PacketReliquaryUpgradeRsp(relic, rate, oldLevel, oldAppendPropIdList));
+
+        try {
+            emu.grasscutter.game.player.InvestigationHandbookHelper.refreshAndNotify(player);
+        } catch (Throwable ignored) {
+        }
     }
 
     public List<ItemParam> calcWeaponUpgradeReturnItems(
@@ -447,6 +454,11 @@ public class InventorySystem extends BaseGameSystem {
 
         // Call PlayerLevelItemEvent.
         new PlayerLevelItemEvent(player, oldLevel, weapon);
+
+        try {
+            emu.grasscutter.game.player.InvestigationHandbookHelper.refreshAndNotify(player);
+        } catch (Throwable ignored) {
+        }
     }
 
     private List<ItemParam> getLeftoverOres(int leftover) {
@@ -641,6 +653,11 @@ public class InventorySystem extends BaseGameSystem {
         // TODO Send entity prop update packet to world
         avatar.recalcStats(true);
         avatar.save();
+
+        try {
+            emu.grasscutter.game.player.InvestigationHandbookHelper.refreshAndNotify(player);
+        } catch (Throwable ignored) {
+        }
     }
 
     // Old upgrade UI
@@ -844,12 +861,12 @@ public class InventorySystem extends BaseGameSystem {
         avatar.unlockConstellation();
     }
 
-    public void destroyMaterial(Player player, List<MaterialInfo> list) {
+    public void destroyMaterial(Player player, List<MaterilaInfo> list) {
         // Return materials
         val returnMaterialMap = new Int2IntOpenHashMap();
         val inventory = player.getInventory();
 
-        for (MaterialInfo info : list) {
+        for (MaterilaInfo info : list) {
             // Sanity check
             if (info.getCount() <= 0) {
                 continue;

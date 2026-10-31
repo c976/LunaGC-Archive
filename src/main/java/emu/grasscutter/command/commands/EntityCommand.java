@@ -1,138 +1,147 @@
 package emu.grasscutter.command.commands;
 
-import static emu.grasscutter.command.CommandHelpers.*;
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import emu.grasscutter.command.*;
-import emu.grasscutter.game.entity.*;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
+import emu.grasscutter.game.entity.EntityGadget;
+import emu.grasscutter.game.entity.EntityMonster;
+import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.game.props.*;
-import emu.grasscutter.game.world.Scene;
+import emu.grasscutter.game.props.ElementType;
+import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.server.event.entity.EntityDamageEvent;
 import emu.grasscutter.server.packet.send.PacketEntityFightPropUpdateNotify;
-import java.util.*;
-import java.util.function.BiConsumer;
-import java.util.regex.Pattern;
-import lombok.Setter;
+import java.util.ArrayList;
+import java.util.List;
+import picocli.CommandLine;
+import picocli.CommandLine.Option;
+import picocli.CommandLine.Parameters;
 
-@Command(
-        label = "entity",
-        usage = {
-            "<configId gadget> [state<state>] [maxhp<maxhp>] [hp<hp>(0 for infinite)] [atk<atk>] [def<def>]",
-            "<configId monster> [ai<aiId>] [maxhp<maxhp>] [hp<hp>(0 for infinite)] [atk<atk>] [def<def>]"
-        },
-        permission = "server.entity")
+@Command(label = "entity", permission = "server.entity")
 public final class EntityCommand implements CommandHandler {
-    private static final Map<Pattern, BiConsumer<EntityParameters, Integer>> intCommandHandlers =
-            Map.ofEntries(
-                    Map.entry(stateRegex, EntityParameters::setState),
-                    Map.entry(maxHPRegex, EntityParameters::setMaxHP),
-                    Map.entry(hpRegex, EntityParameters::setHp),
-                    Map.entry(defRegex, EntityParameters::setDef),
-                    Map.entry(atkRegex, EntityParameters::setAtk),
-                    Map.entry(aiRegex, EntityParameters::setAi));
 
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        EntityParameters param = new EntityParameters();
-
-        parseIntParameters(args, param, intCommandHandlers);
-
-        // At this point, first remaining argument MUST be the id and the rest the pos
-        if (args.size() != 1) {
-            sendUsageMessage(sender); // Reachable if someone does `/give lv90` or similar
-            throw new IllegalArgumentException();
-        }
-
-        try {
-            param.configId = Integer.parseInt(args.get(0));
-        } catch (NumberFormatException ignored) {
-            CommandHandler.sendMessage(sender, translate(sender, "commands.generic.invalid.cfgId"));
-        }
-
-        param.scene = targetPlayer.getScene();
-        // TODO Might want to allow groupId specification,
-        // because there can be more than one entity with
-        // the given config ID.
-        var entity = param.scene.getFirstEntityByConfigId(param.configId);
-
-        if (entity == null) {
-            CommandHandler.sendMessage(sender, translate(sender, "commands.entity.not_found_error"));
-            return;
-        }
-        applyFightProps(entity, param);
-        applyGadgetParams(entity, param);
-        applyMonsterParams(entity, param);
-
-        CommandHandler.sendMessage(sender, translate(sender, "commands.status.success"));
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        return new CommandLine(new Args(sender, targetPlayer));
     }
 
-    private void applyGadgetParams(GameEntity entity, EntityParameters param) {
-        if (!(entity instanceof EntityGadget)) {
-            return;
+    @CommandLine.Command(name = "entity")
+    private static final class Args implements Runnable {
+        private final Player sender;
+        private final Player targetPlayer;
+
+        @Parameters(index = "0", paramLabel = "<configId>")
+        private int configId;
+
+        @Option(names = "--entity-id", description = "Resolve the runtime entity ID instead of config ID")
+        private boolean byEntityId;
+
+        @Option(names = "--state")
+        private Integer state;
+
+        @Option(names = "--ai")
+        private Integer ai;
+
+        @Option(names = "--max-hp")
+        private Integer maxHp;
+
+        @Option(names = "--hp")
+        private Integer hp;
+
+        @Option(names = "--atk")
+        private Integer atk;
+
+        @Option(names = "--def")
+        private Integer def;
+
+        private Args(Player sender, Player targetPlayer) {
+            this.sender = sender;
+            this.targetPlayer = targetPlayer;
         }
-        if (param.state != -1) {
-            ((EntityGadget) entity).updateState(param.state);
+
+        @Override
+        public void run() {
+            if (targetPlayer == null || !targetPlayer.isOnline() || targetPlayer.getScene() == null) {
+                CommandOutput.sendMessage(sender, "Entity operations require an online player in a scene.");
+                return;
+            }
+            if (configId <= 0) {
+                CommandOutput.sendMessage(sender, "Entity identifier must be positive.");
+                return;
+            }
+            GameEntity entity = byEntityId
+                    ? targetPlayer.getScene().getEntityById(configId)
+                    : targetPlayer.getScene().getFirstEntityByConfigId(configId);
+            if (entity == null) {
+                CommandOutput.sendMessage(sender, translate(sender, "commands.entity.not_found_error"));
+                return;
+            }
+            if (state == null && ai == null && maxHp == null && hp == null && atk == null && def == null) {
+                CommandOutput.sendMessage(sender,
+                        "Entity ID=" + entity.getId() + ", config ID=" + entity.getConfigId()
+                                + ", type=" + entity.getClass().getSimpleName()
+                                + ", HP=" + entity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP)
+                                + "/" + entity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP));
+                return;
+            }
+            if ((state != null && !(entity instanceof EntityGadget))
+                    || (ai != null && !(entity instanceof EntityMonster))) {
+                CommandOutput.sendMessage(sender, "Requested state/AI operation is not supported by this entity type.");
+                return;
+            }
+            if (!validStats(maxHp, hp, atk, def) || (state != null && state < 0)
+                    || (ai != null && ai < 0)) {
+                CommandOutput.sendMessage(sender, "Entity properties must be non-negative (max HP must be positive).");
+                return;
+            }
+            applyFightProps(entity, maxHp, hp, atk, def);
+            if (state != null && entity instanceof EntityGadget gadget) gadget.updateState(state);
+            if (ai != null && entity instanceof EntityMonster monster) monster.setAiId(ai);
+            CommandOutput.sendMessage(sender, translate(sender, "commands.status.success"));
         }
     }
 
-    private void applyMonsterParams(GameEntity entity, EntityParameters param) {
-        if (!(entity instanceof EntityMonster)) {
-            return;
-        }
+    static boolean validStats(Integer maxHp, Integer hp, Integer atk, Integer def) {
+        return (maxHp == null || maxHp > 0) && (hp == null || hp >= 0)
+                && (atk == null || atk >= 0) && (def == null || def >= 0);
+    }
 
-        if (param.ai != -1) {
-            ((EntityMonster) entity).setAiId(param.ai);
-            // TODO notify
+    private static void applyFightProps(GameEntity entity, Integer maxHp, Integer hp, Integer atk, Integer def) {
+        var changed = new ArrayList<FightProperty>();
+        float previousHp = entity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+        float max = maxHp != null ? maxHp
+                : entity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+        if (maxHp != null) {
+            setFightProperty(entity, FightProperty.FIGHT_PROP_MAX_HP, max, changed);
+        }
+        // A lower maximum clamps the existing current HP as well.
+        float newHp = hp != null ? hp : previousHp;
+        if (max > 0) newHp = Math.min(newHp, max);
+        if (hp != null || newHp != previousHp) {
+            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_HP, newHp, changed);
+            if (newHp < previousHp) {
+                entity.runLuaCallbacks(new EntityDamageEvent(
+                        entity, previousHp - newHp, ElementType.None, null));
+            }
+        }
+        if (atk != null) {
+            setFightProperty(entity, FightProperty.FIGHT_PROP_ATTACK, atk, changed);
+            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_ATTACK, atk, changed);
+        }
+        if (def != null) {
+            setFightProperty(entity, FightProperty.FIGHT_PROP_DEFENSE, def, changed);
+            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_DEFENSE, def, changed);
+        }
+        if (!changed.isEmpty()) {
+            entity.getScene().broadcastPacket(new PacketEntityFightPropUpdateNotify(entity, changed));
         }
     }
 
-    private void applyFightProps(GameEntity entity, EntityParameters param) {
-        var changedFields = new ArrayList<FightProperty>();
-        if (param.maxHP != -1) {
-            setFightProperty(entity, FightProperty.FIGHT_PROP_MAX_HP, param.maxHP, changedFields);
-        }
-        if (param.hp != -1) {
-            float targetHp = param.hp == 0 ? Float.MAX_VALUE : param.hp;
-            float oldHp = entity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
-            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_HP, targetHp, changedFields);
-            EntityDamageEvent event =
-                    new EntityDamageEvent(entity, oldHp - targetHp, ElementType.None, null);
-            callHPEvents(entity, event);
-        }
-        if (param.atk != -1) {
-            setFightProperty(entity, FightProperty.FIGHT_PROP_ATTACK, param.atk, changedFields);
-            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_ATTACK, param.atk, changedFields);
-        }
-        if (param.def != -1) {
-            setFightProperty(entity, FightProperty.FIGHT_PROP_DEFENSE, param.def, changedFields);
-            setFightProperty(entity, FightProperty.FIGHT_PROP_CUR_DEFENSE, param.def, changedFields);
-        }
-        if (!changedFields.isEmpty()) {
-            entity
-                    .getScene()
-                    .broadcastPacket(new PacketEntityFightPropUpdateNotify(entity, changedFields));
-        }
-    }
-
-    private void callHPEvents(GameEntity entity, EntityDamageEvent event) {
-        entity.runLuaCallbacks(event);
-    }
-
-    private void setFightProperty(
-            GameEntity entity, FightProperty property, float value, List<FightProperty> modifiedProps) {
+    private static void setFightProperty(
+            GameEntity entity, FightProperty property, float value, List<FightProperty> changed) {
         entity.setFightProperty(property, value);
-        modifiedProps.add(property);
-    }
-
-    private static class EntityParameters {
-        @Setter public int configId = -1;
-        @Setter public int state = -1;
-        @Setter public int hp = -1;
-        @Setter public int maxHP = -1;
-        @Setter public int atk = -1;
-        @Setter public int def = -1;
-        @Setter public int ai = -1;
-        public Scene scene = null;
+        changed.add(property);
     }
 }

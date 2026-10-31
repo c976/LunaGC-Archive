@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.world.Scene;
 import emu.grasscutter.net.packet.*;
@@ -11,7 +12,8 @@ public class PacketScenePlayerLocationNotify extends BasePacket {
         super(PacketOpcodes.ScenePlayerLocationNotify);
 
         ScenePlayerLocationNotify.Builder proto =
-                ScenePlayerLocationNotify.newBuilder().setSceneId(scene.getId());
+                ScenePlayerLocationNotify.newBuilder()
+                        .setSceneId(DomainDungeonHelper.notifySceneId(scene.getId()));
 
         for (Player p : scene.getPlayers()) {
             proto.addPlayerLocList(p.getPlayerLocationInfo());

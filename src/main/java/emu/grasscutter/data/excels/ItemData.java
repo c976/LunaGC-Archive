@@ -16,7 +16,8 @@ import lombok.Getter;
             "MaterialExcelConfigData.json",
             "WeaponExcelConfigData.json",
             "ReliquaryExcelConfigData.json",
-            "HomeWorldFurnitureExcelConfigData.json"
+            "HomeWorldFurnitureExcelConfigData.json",
+            "TpsWeaponExcelConfigData.json"
         })
 @Getter
 public class ItemData extends GameResource {
@@ -57,6 +58,7 @@ public class ItemData extends GameResource {
     private int mainPropDepotId;
     private int appendPropDepotId;
     private int appendPropNum;
+    @SerializedName(value = "setId", alternate = "setID")
     private int setId;
     private int[] addPropLevels;
     private int baseConvExp;
@@ -144,6 +146,40 @@ public class ItemData extends GameResource {
                             .map(ItemUseAction::fromItemUseData)
                             .filter(Objects::nonNull)
                             .toList();
+        }
+
+        // 7.1 data leaves useOnGain off every avatar card and costume and most gliders, so they fell
+        // through to the "lacks isUseOnGain" branch and were thrown away: a character pulled from a
+        // wish never arrived. A card whose only job is to grant the thing is always used on gain.
+        if (!this.useOnGain && this.itemUseActions != null) {
+            var gainOp =
+                    switch (this.materialType) {
+                        case MATERIAL_AVATAR -> ItemUseOp.ITEM_USE_GAIN_AVATAR;
+                        case MATERIAL_FLYCLOAK -> ItemUseOp.ITEM_USE_GAIN_FLYCLOAK;
+                        case MATERIAL_COSTUME -> ItemUseOp.ITEM_USE_GAIN_COSTUME;
+                        case MATERIAL_NAMECARD -> ItemUseOp.ITEM_USE_GAIN_NAME_CARD;
+                        default -> null;
+                    };
+            if (gainOp != null
+                    && this.itemUseActions.stream().anyMatch(a -> a.getItemUseOp() == gainOp)) {
+                this.useOnGain = true;
+            }
+        }
+
+        // Elemental particles (MATERIAL_ADSORBATE: 元素球 / 燃素球) lost useOnGain in 7.1 data too, so
+        // collecting one stored it as a bag material and the burst never charged. Their useTarget is
+        // already ITEM_USE_TARGET_CUR_TEAM, which is exactly the on-field/off-field split that
+        // ItemUseAddEnergy applies. Only rows whose action really grants energy get flipped.
+        if (!this.useOnGain
+                && this.materialType == MaterialType.MATERIAL_ADSORBATE
+                && this.itemUseActions != null
+                && this.itemUseActions.stream()
+                        .anyMatch(
+                                a ->
+                                        a.getItemUseOp() == ItemUseOp.ITEM_USE_ADD_ELEM_ENERGY
+                                                || a.getItemUseOp()
+                                                        == ItemUseOp.ITEM_USE_ADD_ALL_ENERGY)) {
+            this.useOnGain = true;
         }
     }
 

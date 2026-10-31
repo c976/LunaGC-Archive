@@ -114,6 +114,13 @@
       "need_target_online": "이 명령어는 온라인 상태인 실행 대상의 UID가 필요하지만, 설정된 대상은 오프라인 상태입니다. 다른 <@UID>인수를 추가하거나 /target @UID로 영구적인 대상을 설정합니다.",
       "need_target_offline": "이 명령어는 오프라인 상태인 실행 대상의 UID가 필요하지만, 설정된 대상은 온라인 상태입니다. 다른 <@UID>인수를 추가하거나 /target @UID로 영구적인 대상을 설정합니다."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "활성화됨",
       "disabled": "비활성화됨",
@@ -174,6 +181,12 @@
       "description": "🇺🇸Modify an existing entity's properties",
       "not_found_error": "🇺🇸Entity does not exist"
     },
+    "avatar": {
+      "description": "보유 캐릭터의 목록, 운명의 자리, 특성, 전투 능력치, 호감도, 추가 레벨과 최대 강화를 관리합니다."
+    },
+    "battlepass": {
+      "description": "기행 레벨 구매와 유료 보상 상태를 관리합니다."
+    },
     "give": {
       "usage_relic": "사용법: give <성유물ID> [mainPropID] [<appendPropID>[,<times>]]... [lv<레벨 0-20>]",
       "illegal_relic": "이 성유물ID는 블랙리스트 범위에 있습니다. 원하는 ID가 아닐 수 있습니다.",
@@ -217,7 +230,7 @@
       "language_not_found": "현재 서버에 해당 언어가 없습니다.",
       "description": "현재 언어를 표시하거나 변경합니다"
     },
-    "list": {
+    "player": {
       "success": "%s명의 플레이어가 온라인입니다:",
       "description": "온라인 상태의 플레이어를 표시합니다."
     },
@@ -233,11 +246,25 @@
       "success": "좌표: %s, %s, %s\n회전：%s, %s, %s\nScene ID: %s",
       "description": "위치 및 회전 정보를 가져옵니다"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "%s 퀘스트가 추가되었습니다.",
       "finished": "%s 퀘스트를 마쳤습니다.",
       "not_found": "퀘스트를 찾을 수 없습니다.",
       "invalid_id": "퀘스트ID를 찾을 수 없습니다.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "퀘스트를 추가하거나 완료합니다.",
       "running": "🇺🇸Quest %s is %s (%s).",
       "talking": "🇺🇸Talk %s is %s for main quest %s (%s).",
@@ -263,7 +290,10 @@
       "description": "🇺🇸Plays a cutscene"
     },
     "sound": {
-      "description": "🇺🇸Plays a sound"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "구성 설정을 다시 불러오는중...",
@@ -302,9 +332,13 @@
       "error": "오류: 잘못된 시공 단계 %s. Console에서 스택을 확인하십시오.",
       "description": "지정된 사용자에게 메세지를 보냅니다. 이 명령어의 사용법은 세부 내용에 따라 달라집니다."
     },
-    "sendMessage": {
+    "say": {
       "success": "메세지 전송 성공.",
-      "description": "서버가 플레이어에게 메세지를 전송합니다. 목표를 지정하지 않고 명령어를 사용하는 경우, 서버의 모든 인원에게 메세지가 발송됩니다."
+      "description": "접속 중인 모든 플레이어에게 서버 메시지를 전송합니다."
+    },
+    "sayto": {
+      "success": "메세지 전송 성공.",
+      "description": "접속 중인 특정 플레이어에게 서버 메시지를 전송합니다."
     },
     "setConst": {
       "range_error": "별자리 레벨은 0과 6사이여야 합니다.",
@@ -321,8 +355,11 @@
       "level_error": "잘못된 호감도 지수",
       "description": "파티 내 자신의 캐릭터의 호감도를 설정합니다."
     },
-    "setProp": {
-      "description": "계정의 속성을 변경합니다. godmode등이 이를 통해 활성화 될 수 있으며, 나선비경을 잠금해제하거나, 기행의 레벨을 조정하는 등의 명령또한 이를 통해 가능합니다."
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
+    },
+    "prop": {
+      "description": "계정의 속성을 변경합니다. godmode등이 이를 통해 활성화 될 수 있으며, 나선비경을 잠금해제하거나, 기행의 레벨을 조정하는 등의 명령또한 이를 통해 가능합니다. Use `unlock map` for map unlocks and `openstate` for OpenStates."
     },
     "setSceneTag": {
       "description": "계정별 장면 태그를 설정합니다. 이는 바위가 문을 막거나 건물이 보이거나, 월드에 표시되는 것에 영향을 주는 기타(주로 퀘스트 관련) 것들을 제어합니다."
@@ -368,6 +405,20 @@
       "avatar_not_found": "캐릭터 %d 발견되지 않음.",
       "description": "당신의 팀을 수정으로 수정합니다."
     },
+    "teapot": {
+      "description": "serenitea pot 기능을 조작합니다. \n\tsetLevel<1-10>의 값 \n\tunlockModule<1-4>의 값 \n\tlockModule<1-4>의 값 \n\tgiveAllFurniture<count>의 값 \n\trefreshLimitedShop<none의 값 >",
+      "level_range_error": "Serenitea 냄비 레벨은 1에서 10 사이여야 합니다.",
+      "level_success": "Serenitea 냄비 수준이 %s(으)로 설정되었습니다.",
+      "invalid_param": "잘못된 매개 변수.",
+      "module_sumeru_error": "Sumeru 모듈은 현재 지원되지 않습니다.",
+      "module_range_error": "모듈 번호는 1 - 4 사이여야 합니다.",
+      "unlock_module_contain_error": "모듈이 이미 잠금 해제되었습니다.",
+      "unlock_module_success": "잠금 해제된 모듈 %s.",
+      "lock_module_in_scene_error": "활성 모듈을 잠금 수 없습니다.",
+      "lock_module_contain_error": "모듈이 존재하지 않습니다.",
+      "lock_module_success": "잠긴 모듈 %s.",
+      "give_furniture_success": "모든 가구를 제공합니다."
+    },
     "teleportAll": {
       "success": "모든 플레이어를 당신의 위치로 이동합니다.",
       "error": "MP 모드.",
@@ -379,7 +430,7 @@
       "success": " %s 을(를) %s, %s, %s 로 이동시켰습니다. scene %s.",
       "description": "플레이어의 위치를 이동시킵니다."
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "평가판 아바타 활동의 기능을 조작합니다. 여기에는 던전 및 보상 상태 전환이 포함됩니다.",
       "not_found": "평가판 아바타 활동 플레이어 데이터를 찾을 수 없습니다. 활동이 활성화되지 않았을 수 있습니다.",
       "invalid_param": "잘못된 매개 변수.",
@@ -399,7 +450,7 @@
       "success": "성공.",
       "failure": "실패, 플레이어가 발견되지 않았습니다.",
       "invalid_time": "timestamp를 분석할 수 없습니다.",
-      "description": "플레이어를 밴합니다."
+      "description": "계정 또는 IPv4 주소를 차단합니다."
     },
     "unlockall": {
       "success": "%s의 모든 오픈 스탯을 잠금 해제합니다.",
@@ -471,6 +522,12 @@
       "not_present": "🇺🇸Plugin %s does not specify an API version.",
       "lower": "🇺🇸Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "🇺🇸Plugin %s is using an outdated API method."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

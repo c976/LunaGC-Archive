@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.monster;
 
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.data.ResourceType.LoadPriority;
@@ -74,6 +75,11 @@ public class MonsterData extends GameResource {
 
     @Override
     public void onLoad() {
+        // 1527 of the 3408 rows omit "affix" entirely, so Gson leaves it null. Callers pass it
+        // straight to addAllAffixList, where protobuf rejects a null and the throw kills the tick
+        // that was spawning the monster - which is every tick, for 45% of all monsters.
+        if (this.affix == null) this.affix = List.of();
+
         for (int id : this.equips) {
             if (id == 0) {
                 continue;
@@ -84,22 +90,16 @@ public class MonsterData extends GameResource {
                 continue;
             }
 
-            if (gadget.getItemJsonName().equals("Default_MonsterWeapon")) {
+            // 13001 of the 30557 gadget rows omit itemJsonName. This runs while resources load,
+            // so a throw here costs the whole MonsterExcelConfigData.json, not one row.
+            if ("Default_MonsterWeapon".equals(gadget.getItemJsonName())) {
                 this.weaponId = id;
             }
         }
 
         this.describeData = GameData.getMonsterDescribeDataMap().get(this.getDescribeId());
 
-        if (this.describeData == null) {
-            return;
-        }
-        for (var entry : GameData.getMonsterSpecialNameDataMap().int2ObjectEntrySet()) {
-            if (entry.getValue().getSpecialNameLabId() == this.getDescribeData().getSpecialNameLabId()) {
-                this.specialNameId = entry.getIntKey();
-                break;
-            }
-        }
+        this.specialNameId = MonsterNameResolver.defaultSpecialNameId(this.describeData);
     }
 
     public float getFightProperty(FightProperty prop) {

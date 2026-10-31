@@ -74,16 +74,12 @@ public class AbilityModifier implements Serializable {
 
     @SerializedName(value = "modifierMixins", alternate = "IIECHMHLPDM")
     public AbilityMixinData[] modifierMixins;
-    public Map<String, DynamicFloat> properties;
+    public AbilityModifierProperty properties;
 
     public ElementType elementType;
     public DynamicFloat elementDurability = DynamicFloat.ZERO;
 
     @ToString
-    public static class GadgetInfo implements Serializable {
-        public int configID;
-    }
-
     public static class AbilityModifierAction implements Serializable {
         public enum Type {
            PhlogistonCostMixin,
@@ -94,6 +90,9 @@ public class AbilityModifier implements Serializable {
             AddClimateMeter,
             AddElementDurability,
             AddHPDebts,
+            // 7.1 renamed these three; they carry Mavuika's Fighting Spirit, Skirk's Serpent's
+            // Subtlety and every Nightsoul point, so under the old names alone none of them ran.
+            @SerializedName(value = "AddSpecialEnergy", alternate = "ReviveSpecialEnergy")
             AddSpecialEnergy,
             GetHPPaidDebts,
             ChangePhlogiston,
@@ -142,7 +141,9 @@ public class AbilityModifier implements Serializable {
             CreateTile,
             DamageByAttackValue,
             DebugLog,
+            @SerializedName(value = "NyxSet", alternate = "SetNyxValue")
             NyxSet,
+            @SerializedName(value = "NyxAdd", alternate = "AddNyxValue")
             NyxAdd,
             DestroyTile,
             DoBlink,
@@ -253,6 +254,7 @@ public class AbilityModifier implements Serializable {
             SetGlobalValue,
             SetGlobalValueByTargetDistance,
             SetGlobalValueToOverrideMap,
+            SetGlobalValueV2,
             SetKeepInAirVelocityForce,
             SetMaterialParamFloatByTransform,
             SetNeuronEnable,
@@ -318,6 +320,10 @@ public class AbilityModifier implements Serializable {
 
         public String target;
 
+        // "Normal" is a real death, "Disappear" is the entity fading out or flying away: wildlife and
+        // timed-out gadgets use it, and it must not be handled as a kill.
+        public String killSelfType;
+
         @JsonAdapter(NullSafeStringAdapter.class)
         @SerializedName(value = "animatorParamName", alternate = {"triggerID", "boolID", "intID", "floatID"})
         public String animatorParamName;
@@ -354,6 +360,9 @@ public class AbilityModifier implements Serializable {
 
         public DynamicFloat limboByTargetMaxHPRatio = DynamicFloat.ZERO;
 
+        // The ability JSON spells this "HealRatio"; without the alias the ratio silently falls back
+        // to ONE and every HealHP amount that scales by it comes out unscaled.
+        @SerializedName(value = "HealRatio", alternate = "healRatio")
         public DynamicFloat healRatio = DynamicFloat.ONE;
         public DynamicFloat speed = DynamicFloat.ONE;
 
@@ -373,12 +382,22 @@ public class AbilityModifier implements Serializable {
         public String campTargetType;
         public int campID;
         public int gadgetID;
-        public GadgetInfo gadgetInfo;
         public boolean ownerIsTarget;
 
+        /** KillGadget names its target here rather than in a flat gadgetID. */
+        public GadgetInfo gadgetInfo;
+
         public boolean isFromOwner;
+        @SerializedName(value = "healTag", alternate = {"FFNEJGGNAFF"})
         public String healTag;
         public String key;
+        /**
+         * The born block a position-writing action carries, and the one a Summon carries when its
+         * position is keyed on a global value. Kept as a raw map because the block is a union of
+         * {@code ConfigBornBy*} variants and only three keys are ever read ({@code $type},
+         * {@code positionKey}, {@code offset}).
+         */
+        public Map<String, Object> born;
         public String abilityName;
         public String globalValueKey;
         public String abilityFormula;
@@ -389,6 +408,9 @@ public class AbilityModifier implements Serializable {
 
         public Map<String, Object> otherTargets;
 
+        /** How often a Randomed block takes its success branch, from 0 to 1. */
+        public DynamicFloat chance = DynamicFloat.ZERO;
+
         public DynamicFloat minValue = DynamicFloat.ZERO;
         public DynamicFloat maxValue = DynamicFloat.ZERO;
         public DynamicFloat targetValue = DynamicFloat.ZERO;
@@ -396,12 +418,27 @@ public class AbilityModifier implements Serializable {
         public DynamicFloat fightProp = DynamicFloat.ZERO;
         public boolean useLimitRange;
 
+        /** ChangePlayMode: e.g. {@code NyxState}, {@code Avatar_Chasca}. */
+        public String toPlayMode;
+        /** ChangePlayMode enable/disable (onRemoved often clears nightsoul play mode). */
+        @JsonAdapter(LenientBooleanAdapter.class)
+        public Boolean enable;
+
         public int skillID;
         public int resistanceListID;
+        // The ability JSON spells this "monsterId". Gson here uses the identity field naming
+        // policy, so the case mismatch left this at 0 and every Summon action failed with
+        // "Failed to find monster by ID 0" - the boss split minions never came into existence.
+        @SerializedName(value = "monsterId", alternate = "monsterID")
         public int monsterID;
         public int summonTag;
 
         public AbilityModifierAction[] actions;
+
+        /** Which gadget an action is about, where it does not carry a flat gadgetID. */
+        public static class GadgetInfo {
+            public int configID;
+        }
 
         @SerializedName(value = "successActions", alternate = "NCEBCLBNOFG")
         public AbilityModifierAction[] successActions;
@@ -413,8 +450,23 @@ public class AbilityModifier implements Serializable {
         public DynamicFloat baseEnergy;
         @SerializedName(value = "ratio", alternate = "value")
         public DynamicFloat ratio = DynamicFloat.ONE;
+
+        /**
+         * The value an action writes, as opposed to the one it multiplies by.
+         *
+         * <p>The field is shared between both senses, so it defaults to one - right for a
+         * multiplier, wrong for a write. Gson builds a fresh instance whenever the config carries a
+         * value of its own, so still holding the shared default means it carried none, and none
+         * means zero. Without this a bare "clear this mark" set it, and 629 of the 1058 animator
+         * bools in the corpus - the ones shipped with no value - were broadcast as true.
+         */
+        public DynamicFloat writtenValue() {
+            return this.ratio == DynamicFloat.ONE ? DynamicFloat.ZERO : this.ratio;
+        }
         public String determineType;
         public int configID;
+
+        public int[] configIdArray;
 
         public DynamicFloat valueRangeMin;
         public DynamicFloat valueRangeMax;
@@ -456,8 +508,15 @@ public class AbilityModifier implements Serializable {
     }
 
     public static class AbilityModifierProperty implements Serializable {
-        public float Actor_HpThresholdRatio;
-
+        // Usually a constant, but a config may also name an ability special to read it from.
+        public DynamicFloat Actor_HpThresholdRatio = DynamicFloat.ZERO;
+        /** Max HP multiplier added to FIGHT_PROP_HP_PERCENT (e.g. Yelan C4 / Furina overflow). */
+        public DynamicFloat Actor_MaxHPRatio = DynamicFloat.ZERO;
+        /**
+         * Stamina cost multiplier delta. Natlan nightsoul {@code Stamina_Free} modifiers ship
+         * {@code -2} so exploration movement spends nightsoul instead of stamina.
+         */
+        public DynamicFloat Actor_CostStaminaRatio = DynamicFloat.ZERO;
     }
 
     public enum State {
@@ -505,6 +564,45 @@ public class AbilityModifier implements Serializable {
         @Override
         public String read(JsonReader in) throws IOException {
             if (in.peek() == JsonToken.STRING) return in.nextString();
+            in.skipValue();
+            return null;
+        }
+    }
+
+    public static class LenientBooleanAdapter extends TypeAdapter<Boolean> {
+        @Override
+        public void write(JsonWriter out, Boolean value) throws IOException {
+            if (value == null) {
+                out.nullValue();
+            } else {
+                out.value(value);
+            }
+        }
+
+        @Override
+        public Boolean read(JsonReader in) throws IOException {
+            JsonToken peek = in.peek();
+            if (peek == JsonToken.BOOLEAN) {
+                return in.nextBoolean();
+            }
+            if (peek == JsonToken.NULL) {
+                in.nextNull();
+                return null;
+            }
+            if (peek == JsonToken.STRING) {
+                String str = in.nextString();
+                if ("true".equalsIgnoreCase(str)) return true;
+                if ("false".equalsIgnoreCase(str)) return false;
+                return null;
+            }
+            if (peek == JsonToken.NUMBER) {
+                try {
+                    return in.nextInt() != 0;
+                } catch (Exception ignored) {
+                    return null;
+                }
+            }
+            // If it's an object, array or unexpected structure (e.g. DungeonFogEffects Vector3 enable {x, y, z}):
             in.skipValue();
             return null;
         }

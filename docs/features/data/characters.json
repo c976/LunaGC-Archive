@@ -1,0 +1,2468 @@
+{
+    "10000002": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ayaka",
+        "GachaImg": "UI_Gacha_AvatarImg_Ayaka",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 342,
+            "def": 784,
+            "hp": 12858
+        },
+        "chsName": "神里绫华",
+        "element": "Cryo",
+        "enName": "Kamisato Ayaka",
+        "frName": "Kamisato Ayaka",
+        "ptName": "Kamisato Ayaka",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Аяка",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000003": {
+        "CardImg": "UI_Gacha_AvatarIcon_Qin",
+        "GachaImg": "UI_Gacha_AvatarImg_Qin",
+        "ascensionStats": {
+            "Healing Bonus%": 22.1,
+            "atk": 239,
+            "def": 769,
+            "hp": 14695
+        },
+        "chsName": "琴",
+        "element": "Anemo",
+        "enName": "Jean",
+        "frName": "Jean",
+        "ptName": "Jean",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Джинн",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_ANEMO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Anemo",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_CRYO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Cryo",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_DENDRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Dendro",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_ELECTRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Electro",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_GEO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Geo",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_HYDRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Hydro",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000005_PYRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Pyro",
+        "enName": "Traveler",
+        "frName": "Voyageur",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественник",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000006": {
+        "CardImg": "UI_Gacha_AvatarIcon_Lisa",
+        "GachaImg": "UI_Gacha_AvatarImg_Lisa",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 232,
+            "def": 573,
+            "hp": 9570
+        },
+        "chsName": "丽莎",
+        "element": "Electro",
+        "enName": "Lisa",
+        "frName": "Lisa",
+        "ptName": "Lisa",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Лиза",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000007_ANEMO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Anemo",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_CRYO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Cryo",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_DENDRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Dendro",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_ELECTRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Electro",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_GEO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Geo",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_HYDRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Hydro",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000007_PYRO": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 219,
+            "def": 705,
+            "hp": 11231
+        },
+        "chsName": "旅行者",
+        "element": "Pyro",
+        "enName": "Traveler",
+        "frName": "Voyageuse",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Путешественница",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000014": {
+        "CardImg": "UI_Gacha_AvatarIcon_Barbara",
+        "GachaImg": "UI_Gacha_AvatarImg_Barbara",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 159,
+            "def": 669,
+            "hp": 9787
+        },
+        "chsName": "芭芭拉",
+        "element": "Hydro",
+        "enName": "Barbara",
+        "frName": "Barbara",
+        "ptName": "Barbara",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Барбара",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000015": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kaeya",
+        "GachaImg": "UI_Gacha_AvatarImg_Kaeya",
+        "ascensionStats": {
+            "Energy Recharge%": 26.7,
+            "atk": 223,
+            "def": 792,
+            "hp": 11636
+        },
+        "chsName": "凯亚",
+        "element": "Cryo",
+        "enName": "Kaeya",
+        "frName": "Kaeya",
+        "ptName": "Kaeya",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Кэйа",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000016": {
+        "CardImg": "UI_Gacha_AvatarIcon_Diluc",
+        "GachaImg": "UI_Gacha_AvatarImg_Diluc",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 335,
+            "def": 784,
+            "hp": 12981
+        },
+        "chsName": "迪卢克",
+        "element": "Pyro",
+        "enName": "Diluc",
+        "frName": "Diluc",
+        "ptName": "Diluc",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Дилюк",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000020": {
+        "CardImg": "UI_Gacha_AvatarIcon_Razor",
+        "GachaImg": "UI_Gacha_AvatarImg_Razor",
+        "ascensionStats": {
+            "Physical DMG Bonus%": 30.0,
+            "atk": 234,
+            "def": 751,
+            "hp": 11962
+        },
+        "chsName": "雷泽",
+        "element": "Electro",
+        "enName": "Razor",
+        "frName": "Razor",
+        "ptName": "Razor",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Рэйзор",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000021": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ambor",
+        "GachaImg": "UI_Gacha_AvatarImg_Ambor",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 223,
+            "def": 601,
+            "hp": 9461
+        },
+        "chsName": "安柏",
+        "element": "Pyro",
+        "enName": "Amber",
+        "frName": "Amber",
+        "ptName": "Amber",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Эмбер",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000022": {
+        "CardImg": "UI_Gacha_AvatarIcon_Venti",
+        "GachaImg": "UI_Gacha_AvatarImg_Venti",
+        "ascensionStats": {
+            "Energy Recharge%": 32.0,
+            "atk": 263,
+            "def": 669,
+            "hp": 10531
+        },
+        "chsName": "温迪",
+        "element": "Anemo",
+        "enName": "Venti",
+        "frName": "Venti",
+        "ptName": "Venti",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Венти",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000023": {
+        "CardImg": "UI_Gacha_AvatarIcon_Xiangling",
+        "GachaImg": "UI_Gacha_AvatarImg_Xiangling",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 225,
+            "def": 669,
+            "hp": 10875
+        },
+        "chsName": "香菱",
+        "element": "Pyro",
+        "enName": "Xiangling",
+        "frName": "Xiangling",
+        "ptName": "Xiangling",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Сян Лин",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000024": {
+        "CardImg": "UI_Gacha_AvatarIcon_Beidou",
+        "GachaImg": "UI_Gacha_AvatarImg_Beidou",
+        "ascensionStats": {
+            "Electro DMG Bonus%": 24.0,
+            "atk": 225,
+            "def": 648,
+            "hp": 13050
+        },
+        "chsName": "北斗",
+        "element": "Electro",
+        "enName": "Beidou",
+        "frName": "Beidou",
+        "ptName": "Beidou",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Бэй Доу",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000025": {
+        "CardImg": "UI_Gacha_AvatarIcon_Xingqiu",
+        "GachaImg": "UI_Gacha_AvatarImg_Xingqiu",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 202,
+            "def": 758,
+            "hp": 10222
+        },
+        "chsName": "行秋",
+        "element": "Hydro",
+        "enName": "Xingqiu",
+        "frName": "Xingqiu",
+        "ptName": "Xingqiu",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Син Цю",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000026": {
+        "CardImg": "UI_Gacha_AvatarIcon_Xiao",
+        "GachaImg": "UI_Gacha_AvatarImg_Xiao",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 349,
+            "def": 799,
+            "hp": 12736
+        },
+        "chsName": "魈",
+        "element": "Anemo",
+        "enName": "Xiao",
+        "frName": "Xiao",
+        "ptName": "Xiao",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сяо",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000027": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ningguang",
+        "GachaImg": "UI_Gacha_AvatarImg_Ningguang",
+        "ascensionStats": {
+            "Geo DMG Bonus%": 24.0,
+            "atk": 212,
+            "def": 573,
+            "hp": 9787
+        },
+        "chsName": "凝光",
+        "element": "Geo",
+        "enName": "Ningguang",
+        "frName": "Ningguang",
+        "ptName": "Ningguang",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Нин Гуан",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000029": {
+        "CardImg": "UI_Gacha_AvatarIcon_Klee",
+        "GachaImg": "UI_Gacha_AvatarImg_Klee",
+        "ascensionStats": {
+            "Pyro DMG Bonus%": 28.8,
+            "atk": 311,
+            "def": 615,
+            "hp": 10287
+        },
+        "chsName": "可莉",
+        "element": "Pyro",
+        "enName": "Klee",
+        "frName": "Klee",
+        "ptName": "Klee",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кли",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000030": {
+        "CardImg": "UI_Gacha_AvatarIcon_Zhongli",
+        "GachaImg": "UI_Gacha_AvatarImg_Zhongli",
+        "ascensionStats": {
+            "Geo DMG Bonus%": 28.8,
+            "atk": 251,
+            "def": 738,
+            "hp": 14695
+        },
+        "chsName": "钟离",
+        "element": "Geo",
+        "enName": "Zhongli",
+        "frName": "Zhongli",
+        "ptName": "Zhongli",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Чжун Ли",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000031": {
+        "CardImg": "UI_Gacha_AvatarIcon_Fischl",
+        "GachaImg": "UI_Gacha_AvatarImg_Fischl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 244,
+            "def": 594,
+            "hp": 9189
+        },
+        "chsName": "菲谢尔",
+        "element": "Electro",
+        "enName": "Fischl",
+        "frName": "Fischl",
+        "ptName": "Fischl",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Фишль",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000032": {
+        "CardImg": "UI_Gacha_AvatarIcon_Bennett",
+        "GachaImg": "UI_Gacha_AvatarImg_Bennett",
+        "ascensionStats": {
+            "Energy Recharge%": 26.7,
+            "atk": 191,
+            "def": 771,
+            "hp": 12397
+        },
+        "chsName": "班尼特",
+        "element": "Pyro",
+        "enName": "Bennett",
+        "frName": "Bennett",
+        "ptName": "Bennett",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Беннет",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000033": {
+        "CardImg": "UI_Gacha_AvatarIcon_Tartaglia",
+        "GachaImg": "UI_Gacha_AvatarImg_Tartaglia",
+        "ascensionStats": {
+            "Hydro DMG Bonus%": 28.8,
+            "atk": 301,
+            "def": 815,
+            "hp": 13103
+        },
+        "chsName": "达达利亚",
+        "element": "Hydro",
+        "enName": "Tartaglia",
+        "frName": "Tartaglia",
+        "ptName": "Tartaglia",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Тарталья",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000034": {
+        "CardImg": "UI_Gacha_AvatarIcon_Noel",
+        "GachaImg": "UI_Gacha_AvatarImg_Noel",
+        "ascensionStats": {
+            "DEF%": 30.0,
+            "atk": 191,
+            "def": 799,
+            "hp": 12071
+        },
+        "chsName": "诺艾尔",
+        "element": "Geo",
+        "enName": "Noelle",
+        "frName": "Noëlle",
+        "ptName": "Noelle",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Ноэлль",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000035": {
+        "CardImg": "UI_Gacha_AvatarIcon_Qiqi",
+        "GachaImg": "UI_Gacha_AvatarImg_Qiqi",
+        "ascensionStats": {
+            "Healing Bonus%": 22.1,
+            "atk": 287,
+            "def": 922,
+            "hp": 12368
+        },
+        "chsName": "七七",
+        "element": "Cryo",
+        "enName": "Qiqi",
+        "frName": "Qiqi",
+        "ptName": "Qiqi",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ци Ци",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000036": {
+        "CardImg": "UI_Gacha_AvatarIcon_Chongyun",
+        "GachaImg": "UI_Gacha_AvatarImg_Chongyun",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 223,
+            "def": 648,
+            "hp": 10984
+        },
+        "chsName": "重云",
+        "element": "Cryo",
+        "enName": "Chongyun",
+        "frName": "Chongyun",
+        "ptName": "Chongyun",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Чун Юнь",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000037": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ganyu",
+        "GachaImg": "UI_Gacha_AvatarImg_Ganyu",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 335,
+            "def": 630,
+            "hp": 9797
+        },
+        "chsName": "甘雨",
+        "element": "Cryo",
+        "enName": "Ganyu",
+        "frName": "Ganyu",
+        "ptName": "Ganyu",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Гань Юй",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000038": {
+        "CardImg": "UI_Gacha_AvatarIcon_Albedo",
+        "GachaImg": "UI_Gacha_AvatarImg_Albedo",
+        "ascensionStats": {
+            "Geo DMG Bonus%": 28.8,
+            "atk": 251,
+            "def": 876,
+            "hp": 13226
+        },
+        "chsName": "阿贝多",
+        "element": "Geo",
+        "enName": "Albedo",
+        "frName": "Albedo",
+        "ptName": "Albedo",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Альбедо",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000039": {
+        "CardImg": "UI_Gacha_AvatarIcon_Diona",
+        "GachaImg": "UI_Gacha_AvatarImg_Diona",
+        "ascensionStats": {
+            "Cryo DMG Bonus%": 24.0,
+            "atk": 212,
+            "def": 601,
+            "hp": 9570
+        },
+        "chsName": "迪奥娜",
+        "element": "Cryo",
+        "enName": "Diona",
+        "frName": "Diona",
+        "ptName": "Diona",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Диона",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000041": {
+        "CardImg": "UI_Gacha_AvatarIcon_Mona",
+        "GachaImg": "UI_Gacha_AvatarImg_Mona",
+        "ascensionStats": {
+            "Energy Recharge%": 32.0,
+            "atk": 287,
+            "def": 653,
+            "hp": 10409
+        },
+        "chsName": "莫娜",
+        "element": "Hydro",
+        "enName": "Mona",
+        "frName": "Mona",
+        "ptName": "Mona",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Мона",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000042": {
+        "CardImg": "UI_Gacha_AvatarIcon_Keqing",
+        "GachaImg": "UI_Gacha_AvatarImg_Keqing",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 323,
+            "def": 799,
+            "hp": 13103
+        },
+        "chsName": "刻晴",
+        "element": "Electro",
+        "enName": "Keqing",
+        "frName": "Keqing",
+        "ptName": "Keqing",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кэ Цин",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000043": {
+        "CardImg": "UI_Gacha_AvatarIcon_Sucrose",
+        "GachaImg": "UI_Gacha_AvatarImg_Sucrose",
+        "ascensionStats": {
+            "Anemo DMG Bonus%": 24.0,
+            "atk": 170,
+            "def": 703,
+            "hp": 9244
+        },
+        "chsName": "砂糖",
+        "element": "Anemo",
+        "enName": "Sucrose",
+        "frName": "Sucrose",
+        "ptName": "Sucrose",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Сахароза",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000044": {
+        "CardImg": "UI_Gacha_AvatarIcon_Xinyan",
+        "GachaImg": "UI_Gacha_AvatarImg_Xinyan",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 249,
+            "def": 799,
+            "hp": 11201
+        },
+        "chsName": "辛焱",
+        "element": "Pyro",
+        "enName": "Xinyan",
+        "frName": "Xinyan",
+        "ptName": "Xinyan",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Синь Янь",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000045": {
+        "CardImg": "UI_Gacha_AvatarIcon_Rosaria",
+        "GachaImg": "UI_Gacha_AvatarImg_Rosaria",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 240,
+            "def": 710,
+            "hp": 12289
+        },
+        "chsName": "罗莎莉亚",
+        "element": "Cryo",
+        "enName": "Rosaria",
+        "frName": "Rosalia",
+        "ptName": "Rosaria",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Розария",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000046": {
+        "CardImg": "UI_Gacha_AvatarIcon_Hutao",
+        "GachaImg": "UI_Gacha_AvatarImg_Hutao",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 106,
+            "def": 876,
+            "hp": 15552
+        },
+        "chsName": "胡桃",
+        "element": "Pyro",
+        "enName": "Hu Tao",
+        "frName": "Hu Tao",
+        "ptName": "Hutao",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ху Тао",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000047": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kazuha",
+        "GachaImg": "UI_Gacha_AvatarImg_Kazuha",
+        "ascensionStats": {
+            "Elemental Mastery": 115.0,
+            "atk": 297,
+            "def": 807,
+            "hp": 13348
+        },
+        "chsName": "枫原万叶",
+        "element": "Anemo",
+        "enName": "Kaedehara Kazuha",
+        "frName": "Kaedehara Kazuha",
+        "ptName": "Kaedehara Kazuha",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кадзуха",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000048": {
+        "CardImg": "UI_Gacha_AvatarIcon_Feiyan",
+        "GachaImg": "UI_Gacha_AvatarImg_Feiyan",
+        "ascensionStats": {
+            "Pyro DMG Bonus%": 24.0,
+            "atk": 240,
+            "def": 587,
+            "hp": 9352
+        },
+        "chsName": "烟绯",
+        "element": "Pyro",
+        "enName": "Yanfei",
+        "frName": "Yanfei",
+        "ptName": "Yanfei",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Янь Фэй",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000049": {
+        "CardImg": "UI_Gacha_AvatarIcon_Yoimiya",
+        "GachaImg": "UI_Gacha_AvatarImg_Yoimiya",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 323,
+            "def": 615,
+            "hp": 10164
+        },
+        "chsName": "宵宫",
+        "element": "Pyro",
+        "enName": "Yoimiya",
+        "frName": "Yoimiya",
+        "ptName": "Yoimiya",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ёимия",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000050": {
+        "CardImg": "UI_Gacha_AvatarIcon_Tohma",
+        "GachaImg": "UI_Gacha_AvatarImg_Tohma",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 202,
+            "def": 751,
+            "hp": 10331
+        },
+        "chsName": "托马",
+        "element": "Pyro",
+        "enName": "Thoma",
+        "frName": "Thomas",
+        "ptName": "Thoma",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Тома",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000051": {
+        "CardImg": "UI_Gacha_AvatarIcon_Eula",
+        "GachaImg": "UI_Gacha_AvatarImg_Eula",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 342,
+            "def": 751,
+            "hp": 13226
+        },
+        "chsName": "优菈",
+        "element": "Cryo",
+        "enName": "Eula",
+        "frName": "Eula",
+        "ptName": "Eula",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Эола",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000052": {
+        "CardImg": "UI_Gacha_AvatarIcon_Shougun",
+        "GachaImg": "UI_Gacha_AvatarImg_Shougun",
+        "ascensionStats": {
+            "Energy Recharge%": 32.0,
+            "atk": 337,
+            "def": 789,
+            "hp": 12907
+        },
+        "chsName": "雷电将军",
+        "element": "Electro",
+        "enName": "Raiden Shogun",
+        "frName": "Shogun Raiden",
+        "ptName": "Shogun Raiden",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Райдэн",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000053": {
+        "CardImg": "UI_Gacha_AvatarIcon_Sayu",
+        "GachaImg": "UI_Gacha_AvatarImg_Sayu",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 244,
+            "def": 745,
+            "hp": 11854
+        },
+        "chsName": "早柚",
+        "element": "Anemo",
+        "enName": "Sayu",
+        "frName": "Sayu",
+        "ptName": "Sayu",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Саю",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000054": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kokomi",
+        "GachaImg": "UI_Gacha_AvatarImg_Kokomi",
+        "ascensionStats": {
+            "Hydro DMG Bonus%": 28.8,
+            "atk": 234,
+            "def": 657,
+            "hp": 13471
+        },
+        "chsName": "珊瑚宫心海",
+        "element": "Hydro",
+        "enName": "Sangonomiya Kokomi",
+        "frName": "Sangonomiya Kokomi",
+        "ptName": "Sangonomiya Kokomi",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кокоми",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000055": {
+        "CardImg": "UI_Gacha_AvatarIcon_Gorou",
+        "GachaImg": "UI_Gacha_AvatarImg_Gorou",
+        "ascensionStats": {
+            "Geo DMG Bonus%": 24.0,
+            "atk": 183,
+            "def": 648,
+            "hp": 9570
+        },
+        "chsName": "五郎",
+        "element": "Geo",
+        "enName": "Gorou",
+        "frName": "Gorou",
+        "ptName": "Gorou",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Горо",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000056": {
+        "CardImg": "UI_Gacha_AvatarIcon_Sara",
+        "GachaImg": "UI_Gacha_AvatarImg_Sara",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 195,
+            "def": 628,
+            "hp": 9570
+        },
+        "chsName": "九条裟罗",
+        "element": "Electro",
+        "enName": "Kujou Sara",
+        "frName": "Kujou Sara",
+        "ptName": "Kujou Sara",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Сара",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000057": {
+        "CardImg": "UI_Gacha_AvatarIcon_Itto",
+        "GachaImg": "UI_Gacha_AvatarImg_Itto",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 227,
+            "def": 959,
+            "hp": 12858
+        },
+        "chsName": "荒泷一斗",
+        "element": "Geo",
+        "enName": "Arataki Itto",
+        "frName": "Arataki Itto",
+        "ptName": "Arataki Itto",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Итто",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000058": {
+        "CardImg": "UI_Gacha_AvatarIcon_Yae",
+        "GachaImg": "UI_Gacha_AvatarImg_Yae",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 340,
+            "def": 569,
+            "hp": 10372
+        },
+        "chsName": "八重神子",
+        "element": "Electro",
+        "enName": "Yae Miko",
+        "frName": "Yae Miko",
+        "ptName": "Yae Miko",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Яэ Мико",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000059": {
+        "CardImg": "UI_Gacha_AvatarIcon_Heizo",
+        "GachaImg": "UI_Gacha_AvatarImg_Heizo",
+        "ascensionStats": {
+            "Anemo DMG Bonus%": 24.0,
+            "atk": 225,
+            "def": 684,
+            "hp": 10657
+        },
+        "chsName": "鹿野院平藏",
+        "element": "Anemo",
+        "enName": "Shikanoin Heizou",
+        "frName": "Shikanoin Heizou",
+        "ptName": "Shikanoin Heizou",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Хэйдзо",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000060": {
+        "CardImg": "UI_Gacha_AvatarIcon_Yelan",
+        "GachaImg": "UI_Gacha_AvatarImg_Yelan",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 244,
+            "def": 548,
+            "hp": 14450
+        },
+        "chsName": "夜兰",
+        "element": "Hydro",
+        "enName": "Yelan",
+        "frName": "Yelan",
+        "ptName": "Yelan",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Е Лань",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000061": {
+        "CardImg": "UI_Gacha_AvatarIcon_Momoka",
+        "GachaImg": "UI_Gacha_AvatarImg_Momoka",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 223,
+            "def": 546,
+            "hp": 12180
+        },
+        "chsName": "绮良良",
+        "element": "Dendro",
+        "enName": "Kirara",
+        "frName": "Kirara",
+        "ptName": "Kirara",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Кирара",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000062": {
+        "CardImg": "UI_Gacha_AvatarIcon_Aloy",
+        "GachaImg": "UI_Gacha_AvatarImg_Aloy",
+        "ascensionStats": {
+            "Cryo DMG Bonus%": 28.8,
+            "atk": 227,
+            "def": 656,
+            "hp": 10568
+        },
+        "chsName": "埃洛伊",
+        "element": "Cryo",
+        "enName": "Aloy",
+        "frName": "Aloy",
+        "ptName": "Aloy",
+        "qualityType": "QUALITY_ORANGE_SP",
+        "ruName": "Элой",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000063": {
+        "CardImg": "UI_Gacha_AvatarIcon_Shenhe",
+        "GachaImg": "UI_Gacha_AvatarImg_Shenhe",
+        "ascensionStats": {
+            "ATK%": 28.8,
+            "atk": 304,
+            "def": 830,
+            "hp": 12993
+        },
+        "chsName": "申鹤",
+        "element": "Cryo",
+        "enName": "Shenhe",
+        "frName": "Shenhe",
+        "ptName": "Shenhe",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Шэнь Хэ",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000064": {
+        "CardImg": "UI_Gacha_AvatarIcon_Yunjin",
+        "GachaImg": "UI_Gacha_AvatarImg_Yunjin",
+        "ascensionStats": {
+            "Energy Recharge%": 26.7,
+            "atk": 191,
+            "def": 734,
+            "hp": 10657
+        },
+        "chsName": "云堇",
+        "element": "Geo",
+        "enName": "Yun Jin",
+        "frName": "Yun Jin",
+        "ptName": "Yunjin",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Юнь Цзинь",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000065": {
+        "CardImg": "UI_Gacha_AvatarIcon_Shinobu",
+        "GachaImg": "UI_Gacha_AvatarImg_Shinobu",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 212,
+            "def": 751,
+            "hp": 12289
+        },
+        "chsName": "久岐忍",
+        "element": "Electro",
+        "enName": "Kuki Shinobu",
+        "frName": "Kuki Shinobu",
+        "ptName": "Kuki Shinobu",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Синобу",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000066": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ayato",
+        "GachaImg": "UI_Gacha_AvatarImg_Ayato",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 299,
+            "def": 769,
+            "hp": 13715
+        },
+        "chsName": "神里绫人",
+        "element": "Hydro",
+        "enName": "Kamisato Ayato",
+        "frName": "Kamisato Ayato",
+        "ptName": "Kamisato Ayato",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Аято",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000067": {
+        "CardImg": "UI_Gacha_AvatarIcon_Collei",
+        "GachaImg": "UI_Gacha_AvatarImg_Collei",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 200,
+            "def": 601,
+            "hp": 9787
+        },
+        "chsName": "柯莱",
+        "element": "Dendro",
+        "enName": "Collei",
+        "frName": "Collei",
+        "ptName": "Collei",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Коллеи",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000068": {
+        "CardImg": "UI_Gacha_AvatarIcon_Dori",
+        "GachaImg": "UI_Gacha_AvatarImg_Dori",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 223,
+            "def": 723,
+            "hp": 12397
+        },
+        "chsName": "多莉",
+        "element": "Electro",
+        "enName": "Dori",
+        "frName": "Dori",
+        "ptName": "Dori",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Дори",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000069": {
+        "CardImg": "UI_Gacha_AvatarIcon_Tighnari",
+        "GachaImg": "UI_Gacha_AvatarImg_Tighnari",
+        "ascensionStats": {
+            "Dendro DMG Bonus%": 28.8,
+            "atk": 268,
+            "def": 630,
+            "hp": 10850
+        },
+        "chsName": "提纳里",
+        "element": "Dendro",
+        "enName": "Tighnari",
+        "frName": "Tighnari",
+        "ptName": "Tighnari",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Тигнари",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000070": {
+        "CardImg": "UI_Gacha_AvatarIcon_Nilou",
+        "GachaImg": "UI_Gacha_AvatarImg_Nilou",
+        "ascensionStats": {
+            "HP%": 28.8,
+            "atk": 230,
+            "def": 729,
+            "hp": 15185
+        },
+        "chsName": "妮露",
+        "element": "Hydro",
+        "enName": "Nilou",
+        "frName": "Nilou",
+        "ptName": "Nilou",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Нилу",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000071": {
+        "CardImg": "UI_Gacha_AvatarIcon_Cyno",
+        "GachaImg": "UI_Gacha_AvatarImg_Cyno",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 318,
+            "def": 859,
+            "hp": 12491
+        },
+        "chsName": "赛诺",
+        "element": "Electro",
+        "enName": "Cyno",
+        "frName": "Cyno",
+        "ptName": "Cyno",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сайно",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000072": {
+        "CardImg": "UI_Gacha_AvatarIcon_Candace",
+        "GachaImg": "UI_Gacha_AvatarImg_Candace",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 212,
+            "def": 683,
+            "hp": 10875
+        },
+        "chsName": "坎蒂丝",
+        "element": "Hydro",
+        "enName": "Candace",
+        "frName": "Candace",
+        "ptName": "Candace",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Кандакия",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000073": {
+        "CardImg": "UI_Gacha_AvatarIcon_Nahida",
+        "GachaImg": "UI_Gacha_AvatarImg_Nahida",
+        "ascensionStats": {
+            "Elemental Mastery": 115.0,
+            "atk": 299,
+            "def": 630,
+            "hp": 10360
+        },
+        "chsName": "纳西妲",
+        "element": "Dendro",
+        "enName": "Nahida",
+        "frName": "Nahida",
+        "ptName": "Nahida",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Нахида",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000074": {
+        "CardImg": "UI_Gacha_AvatarIcon_Layla",
+        "GachaImg": "UI_Gacha_AvatarImg_Layla",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 217,
+            "def": 655,
+            "hp": 11092
+        },
+        "chsName": "莱依拉",
+        "element": "Cryo",
+        "enName": "Layla",
+        "frName": "Layla",
+        "ptName": "Layla",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Лайла",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000075": {
+        "CardImg": "UI_Gacha_AvatarIcon_Wanderer",
+        "GachaImg": "UI_Gacha_AvatarImg_Wanderer",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 328,
+            "def": 607,
+            "hp": 10164
+        },
+        "chsName": "流浪者",
+        "element": "Anemo",
+        "enName": "Wanderer",
+        "frName": "Nomade",
+        "ptName": "Andarilho",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Странник",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000076": {
+        "CardImg": "UI_Gacha_AvatarIcon_Faruzan",
+        "GachaImg": "UI_Gacha_AvatarImg_Faruzan",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 196,
+            "def": 628,
+            "hp": 9570
+        },
+        "chsName": "珐露珊",
+        "element": "Anemo",
+        "enName": "Faruzan",
+        "frName": "Faruzan",
+        "ptName": "Faruzan",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Фарузан",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000077": {
+        "CardImg": "UI_Gacha_AvatarIcon_Yaoyao",
+        "GachaImg": "UI_Gacha_AvatarImg_Yaoyao",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 212,
+            "def": 751,
+            "hp": 12289
+        },
+        "chsName": "瑶瑶",
+        "element": "Dendro",
+        "enName": "Yaoyao",
+        "frName": "Yaoyao",
+        "ptName": "Yaoyao",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Яо Яо",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000078": {
+        "CardImg": "UI_Gacha_AvatarIcon_Alhatham",
+        "GachaImg": "UI_Gacha_AvatarImg_Alhatham",
+        "ascensionStats": {
+            "Dendro DMG Bonus%": 28.8,
+            "atk": 313,
+            "def": 782,
+            "hp": 13348
+        },
+        "chsName": "艾尔海森",
+        "element": "Dendro",
+        "enName": "Alhaitham",
+        "frName": "Alhaitham",
+        "ptName": "Alhaitham",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Аль-Хайтам",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000079": {
+        "CardImg": "UI_Gacha_AvatarIcon_Dehya",
+        "GachaImg": "UI_Gacha_AvatarImg_Dehya",
+        "ascensionStats": {
+            "HP%": 28.8,
+            "atk": 265,
+            "def": 628,
+            "hp": 15675
+        },
+        "chsName": "迪希雅",
+        "element": "Pyro",
+        "enName": "Dehya",
+        "frName": "Dehya",
+        "ptName": "Dehya",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Дэхья",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000080": {
+        "CardImg": "UI_Gacha_AvatarIcon_Mika",
+        "GachaImg": "UI_Gacha_AvatarImg_Mika",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 223,
+            "def": 713,
+            "hp": 12506
+        },
+        "chsName": "米卡",
+        "element": "Cryo",
+        "enName": "Mika",
+        "frName": "Mika",
+        "ptName": "Mika",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Мика",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000081": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kaveh",
+        "GachaImg": "UI_Gacha_AvatarImg_Kaveh",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 234,
+            "def": 751,
+            "hp": 11962
+        },
+        "chsName": "卡维",
+        "element": "Dendro",
+        "enName": "Kaveh",
+        "frName": "Kaveh",
+        "ptName": "Kaveh",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Кавех",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000082": {
+        "CardImg": "UI_Gacha_AvatarIcon_Baizhuer",
+        "GachaImg": "UI_Gacha_AvatarImg_Baizhuer",
+        "ascensionStats": {
+            "HP%": 28.8,
+            "atk": 193,
+            "def": 500,
+            "hp": 13348
+        },
+        "chsName": "白术",
+        "element": "Dendro",
+        "enName": "Baizhu",
+        "frName": "Baizhu",
+        "ptName": "Baizhu",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Бай Чжу",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000083": {
+        "CardImg": "UI_Gacha_AvatarIcon_Linette",
+        "GachaImg": "UI_Gacha_AvatarImg_Linette",
+        "ascensionStats": {
+            "Anemo DMG Bonus%": 24.0,
+            "atk": 232,
+            "def": 712,
+            "hp": 12397
+        },
+        "chsName": "琳妮特",
+        "element": "Anemo",
+        "enName": "Lynette",
+        "frName": "Lynette",
+        "ptName": "Lynette",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Линетт",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000084": {
+        "CardImg": "UI_Gacha_AvatarIcon_Liney",
+        "GachaImg": "UI_Gacha_AvatarImg_Liney",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 318,
+            "def": 538,
+            "hp": 11021
+        },
+        "chsName": "林尼",
+        "element": "Pyro",
+        "enName": "Lyney",
+        "frName": "Lyney",
+        "ptName": "Lyney",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Лини",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000085": {
+        "CardImg": "UI_Gacha_AvatarIcon_Freminet",
+        "GachaImg": "UI_Gacha_AvatarImg_Freminet",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 255,
+            "def": 708,
+            "hp": 12071
+        },
+        "chsName": "菲米尼",
+        "element": "Cryo",
+        "enName": "Freminet",
+        "frName": "Fréminet",
+        "ptName": "Freminet",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Фремине",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000086": {
+        "CardImg": "UI_Gacha_AvatarIcon_Wriothesley",
+        "GachaImg": "UI_Gacha_AvatarImg_Wriothesley",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 311,
+            "def": 763,
+            "hp": 13593
+        },
+        "chsName": "莱欧斯利",
+        "element": "Cryo",
+        "enName": "Wriothesley",
+        "frName": "Wriothesley",
+        "ptName": "Wriothesley",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ризли",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000087": {
+        "CardImg": "UI_Gacha_AvatarIcon_Neuvillette",
+        "GachaImg": "UI_Gacha_AvatarImg_Neuvillette",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 208,
+            "def": 576,
+            "hp": 14695
+        },
+        "chsName": "那维莱特",
+        "element": "Hydro",
+        "enName": "Neuvillette",
+        "frName": "Neuvillette",
+        "ptName": "Neuvillette",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Нёвиллет",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000088": {
+        "CardImg": "UI_Gacha_AvatarIcon_Charlotte",
+        "GachaImg": "UI_Gacha_AvatarImg_Charlotte",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 173,
+            "def": 546,
+            "hp": 10766
+        },
+        "chsName": "夏洛蒂",
+        "element": "Cryo",
+        "enName": "Charlotte",
+        "frName": "Charlotte",
+        "ptName": "Charlotte",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шарлотта",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000089": {
+        "CardImg": "UI_Gacha_AvatarIcon_Furina",
+        "GachaImg": "UI_Gacha_AvatarImg_Furina",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 244,
+            "def": 696,
+            "hp": 15307
+        },
+        "chsName": "芙宁娜",
+        "element": "Hydro",
+        "enName": "Furina",
+        "frName": "Furina",
+        "ptName": "Furina",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Фурина",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000090": {
+        "CardImg": "UI_Gacha_AvatarIcon_Chevreuse",
+        "GachaImg": "UI_Gacha_AvatarImg_Chevreuse",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 193,
+            "def": 605,
+            "hp": 11962
+        },
+        "chsName": "夏沃蕾",
+        "element": "Pyro",
+        "enName": "Chevreuse",
+        "frName": "Chevreuse",
+        "ptName": "Chevreuse",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Шеврёз",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000091": {
+        "CardImg": "UI_Gacha_AvatarIcon_Navia",
+        "GachaImg": "UI_Gacha_AvatarImg_Navia",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 352,
+            "def": 793,
+            "hp": 12650
+        },
+        "chsName": "娜维娅",
+        "element": "Geo",
+        "enName": "Navia",
+        "frName": "Navia",
+        "ptName": "Navia",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Навия",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000092": {
+        "CardImg": "UI_Gacha_AvatarIcon_Gaming",
+        "GachaImg": "UI_Gacha_AvatarImg_Gaming",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 302,
+            "def": 703,
+            "hp": 11419
+        },
+        "chsName": "嘉明",
+        "element": "Pyro",
+        "enName": "Gaming",
+        "frName": "Gaming",
+        "ptName": "Gaming",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Ка Мин",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000093": {
+        "CardImg": "UI_Gacha_AvatarIcon_Liuyun",
+        "GachaImg": "UI_Gacha_AvatarImg_Liuyun",
+        "ascensionStats": {
+            "ATK%": 28.8,
+            "atk": 335,
+            "def": 573,
+            "hp": 10409
+        },
+        "chsName": "闲云",
+        "element": "Anemo",
+        "enName": "Xianyun",
+        "frName": "Xianyun",
+        "ptName": "Xianyun",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сянь Юнь",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000094": {
+        "CardImg": "UI_Gacha_AvatarIcon_Chiori",
+        "GachaImg": "UI_Gacha_AvatarImg_Chiori",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 323,
+            "def": 953,
+            "hp": 11438
+        },
+        "chsName": "千织",
+        "element": "Geo",
+        "enName": "Chiori",
+        "frName": "Chiori",
+        "ptName": "Chiori",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Тиори",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000095": {
+        "CardImg": "UI_Gacha_AvatarIcon_Sigewinne",
+        "GachaImg": "UI_Gacha_AvatarImg_Sigewinne",
+        "ascensionStats": {
+            "HP%": 28.8,
+            "atk": 193,
+            "def": 500,
+            "hp": 13348
+        },
+        "chsName": "希格雯",
+        "element": "Hydro",
+        "enName": "Sigewinne",
+        "frName": "Sigewinne",
+        "ptName": "Sigewinne",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сиджвин",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000096": {
+        "CardImg": "UI_Gacha_AvatarIcon_Arlecchino",
+        "GachaImg": "UI_Gacha_AvatarImg_Arlecchino",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 342,
+            "def": 765,
+            "hp": 13103
+        },
+        "chsName": "阿蕾奇诺",
+        "element": "Pyro",
+        "enName": "Arlecchino",
+        "frName": "Arlecchino",
+        "ptName": "Arlecchino",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Арлекино",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000097": {
+        "CardImg": "UI_Gacha_AvatarIcon_Sethos",
+        "GachaImg": "UI_Gacha_AvatarImg_Sethos",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 227,
+            "def": 560,
+            "hp": 9787
+        },
+        "chsName": "赛索斯",
+        "element": "Electro",
+        "enName": "Sethos",
+        "frName": "Sethos",
+        "ptName": "Sethos",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Сетос",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000098": {
+        "CardImg": "UI_Gacha_AvatarIcon_Clorinde",
+        "GachaImg": "UI_Gacha_AvatarImg_Clorinde",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 337,
+            "def": 784,
+            "hp": 12956
+        },
+        "chsName": "克洛琳德",
+        "element": "Electro",
+        "enName": "Clorinde",
+        "frName": "Clorinde",
+        "ptName": "Clorinde",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Клоринда",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000099": {
+        "CardImg": "UI_Gacha_AvatarIcon_Emilie",
+        "GachaImg": "UI_Gacha_AvatarImg_Emilie",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 335,
+            "def": 730,
+            "hp": 13568
+        },
+        "chsName": "艾梅莉埃",
+        "element": "Dendro",
+        "enName": "Emilie",
+        "frName": "Émilie",
+        "ptName": "Emilie",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Эмилия",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000100": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kachina",
+        "GachaImg": "UI_Gacha_AvatarImg_Kachina",
+        "ascensionStats": {
+            "Geo DMG Bonus%": 24.0,
+            "atk": 217,
+            "def": 792,
+            "hp": 11799
+        },
+        "chsName": "卡齐娜",
+        "element": "Geo",
+        "enName": "Kachina",
+        "frName": "Kachina",
+        "ptName": "Kachina",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Качина",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000101": {
+        "CardImg": "UI_Gacha_AvatarIcon_Kinich",
+        "GachaImg": "UI_Gacha_AvatarImg_Kinich",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 332,
+            "def": 802,
+            "hp": 12858
+        },
+        "chsName": "基尼奇",
+        "element": "Dendro",
+        "enName": "Kinich",
+        "frName": "Kinich",
+        "ptName": "Kinich",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Кинич",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000102": {
+        "CardImg": "UI_Gacha_AvatarIcon_Mualani",
+        "GachaImg": "UI_Gacha_AvatarImg_Mualani",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 182,
+            "def": 570,
+            "hp": 15185
+        },
+        "chsName": "玛拉妮",
+        "element": "Hydro",
+        "enName": "Mualani",
+        "frName": "Mualani",
+        "ptName": "Mualani",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Муалани",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000103": {
+        "CardImg": "UI_Gacha_AvatarIcon_Xilonen",
+        "GachaImg": "UI_Gacha_AvatarImg_Xilonen",
+        "ascensionStats": {
+            "DEF%": 36.0,
+            "atk": 275,
+            "def": 930,
+            "hp": 12405
+        },
+        "chsName": "希诺宁",
+        "element": "Geo",
+        "enName": "Xilonen",
+        "frName": "Xilonen",
+        "ptName": "Xilonen",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Шилонен",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000104": {
+        "CardImg": "UI_Gacha_AvatarIcon_Chasca",
+        "GachaImg": "UI_Gacha_AvatarImg_Chasca",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 347,
+            "def": 615,
+            "hp": 9797
+        },
+        "chsName": "恰斯卡",
+        "element": "Anemo",
+        "enName": "Chasca",
+        "frName": "Chasca",
+        "ptName": "Chasca",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Часка",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000105": {
+        "CardImg": "UI_Gacha_AvatarIcon_Olorun",
+        "GachaImg": "UI_Gacha_AvatarImg_Olorun",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 244,
+            "def": 587,
+            "hp": 9244
+        },
+        "chsName": "欧洛伦",
+        "element": "Electro",
+        "enName": "Ororon",
+        "frName": "Ororon",
+        "ptName": "Ororon",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Оророн",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000106": {
+        "CardImg": "UI_Gacha_AvatarIcon_Mavuika",
+        "GachaImg": "UI_Gacha_AvatarImg_Mavuika",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 359,
+            "def": 792,
+            "hp": 12552
+        },
+        "chsName": "玛薇卡",
+        "element": "Pyro",
+        "enName": "Mavuika",
+        "frName": "Mavuika",
+        "ptName": "Mavuika",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Мавуика",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000107": {
+        "CardImg": "UI_Gacha_AvatarIcon_Citlali",
+        "GachaImg": "UI_Gacha_AvatarImg_Citlali",
+        "ascensionStats": {
+            "Elemental Mastery": 115.0,
+            "atk": 127,
+            "def": 763,
+            "hp": 11634
+        },
+        "chsName": "茜特菈莉",
+        "element": "Cryo",
+        "enName": "Citlali",
+        "frName": "Citlali",
+        "ptName": "Citlali",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Ситлали",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000108": {
+        "CardImg": "UI_Gacha_AvatarIcon_Lanyan",
+        "GachaImg": "UI_Gacha_AvatarImg_Lanyan",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 251,
+            "def": 580,
+            "hp": 9244
+        },
+        "chsName": "蓝砚",
+        "element": "Anemo",
+        "enName": "Lan Yan",
+        "frName": "Lan Yan",
+        "ptName": "Lan Yan",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Лань Янь",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000109": {
+        "CardImg": "UI_Gacha_AvatarIcon_Mizuki",
+        "GachaImg": "UI_Gacha_AvatarImg_Mizuki",
+        "ascensionStats": {
+            "Elemental Mastery": 115.0,
+            "atk": 215,
+            "def": 757,
+            "hp": 12736
+        },
+        "chsName": "梦见月瑞希",
+        "element": "Anemo",
+        "enName": "Yumemizuki Mizuki",
+        "frName": "Yumemizuki Mizuki",
+        "ptName": "Yumemizuki Mizuki",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Мидзуки",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000110": {
+        "CardImg": "UI_Gacha_AvatarIcon_Iansan",
+        "GachaImg": "UI_Gacha_AvatarImg_Iansan",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 257,
+            "def": 638,
+            "hp": 10657
+        },
+        "chsName": "伊安珊",
+        "element": "Electro",
+        "enName": "Iansan",
+        "frName": "Iansan",
+        "ptName": "Iansan",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Иансан",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000111": {
+        "CardImg": "UI_Gacha_AvatarIcon_Varesa",
+        "GachaImg": "UI_Gacha_AvatarImg_Varesa",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 356,
+            "def": 782,
+            "hp": 12699
+        },
+        "chsName": "瓦雷莎",
+        "element": "Electro",
+        "enName": "Varesa",
+        "frName": "Varesa",
+        "ptName": "Varesa",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Вареса",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000112": {
+        "CardImg": "UI_Gacha_AvatarIcon_Escoffier",
+        "GachaImg": "UI_Gacha_AvatarImg_Escoffier",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 347,
+            "def": 732,
+            "hp": 13348
+        },
+        "chsName": "爱可菲",
+        "element": "Cryo",
+        "enName": "Escoffier",
+        "frName": "Escoffier",
+        "ptName": "Escoffier",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Эскофье",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000113": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ifa",
+        "GachaImg": "UI_Gacha_AvatarImg_Ifa",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 178,
+            "def": 605,
+            "hp": 10081
+        },
+        "chsName": "伊法",
+        "element": "Anemo",
+        "enName": "Ifa",
+        "frName": "Ifa",
+        "ptName": "Ifa",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Ифа",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000114": {
+        "CardImg": "UI_Gacha_AvatarIcon_SkirkNew",
+        "GachaImg": "UI_Gacha_AvatarImg_SkirkNew",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 359,
+            "def": 806,
+            "hp": 12417
+        },
+        "chsName": "丝柯克",
+        "element": "Cryo",
+        "enName": "Skirk",
+        "frName": "Skirk",
+        "ptName": "Skirk",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Скирк",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000115": {
+        "CardImg": "UI_Gacha_AvatarIcon_Dahlia",
+        "GachaImg": "UI_Gacha_AvatarImg_Dahlia",
+        "ascensionStats": {
+            "HP%": 24.0,
+            "atk": 189,
+            "def": 560,
+            "hp": 12506
+        },
+        "chsName": "塔利雅",
+        "element": "Hydro",
+        "enName": "Dahlia",
+        "frName": "Dahlia",
+        "ptName": "Dahlia",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Далия",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000116": {
+        "CardImg": "UI_Gacha_AvatarIcon_Ineffa",
+        "GachaImg": "UI_Gacha_AvatarImg_Ineffa",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 330,
+            "def": 828,
+            "hp": 12613
+        },
+        "chsName": "伊涅芙",
+        "element": "Electro",
+        "enName": "Ineffa",
+        "frName": "Ineffa",
+        "ptName": "Ineffa",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Инеффа",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000117": {
+        "CardImg": "UI_Gacha_AvatarIcon_MannequinBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_MannequinBoy",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 212,
+            "def": 683,
+            "hp": 10875
+        },
+        "chsName": "奇偶·男性",
+        "element": "Unknown",
+        "enName": "Manekin",
+        "frName": "Manekin",
+        "ptName": "Manequim",
+        "qualityType": "QUALITY_ORANGE_SP",
+        "ruName": "Манекен (м)",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000118": {
+        "CardImg": "UI_Gacha_AvatarIcon_MannequinGirl",
+        "GachaImg": "UI_Gacha_AvatarImg_MannequinGirl",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 212,
+            "def": 683,
+            "hp": 10875
+        },
+        "chsName": "奇偶·女性",
+        "element": "Unknown",
+        "enName": "Manekina",
+        "frName": "Manekina",
+        "ptName": "Manequina",
+        "qualityType": "QUALITY_ORANGE_SP",
+        "ruName": "Манекен (ж)",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000119": {
+        "CardImg": "UI_Gacha_AvatarIcon_Lauma",
+        "GachaImg": "UI_Gacha_AvatarImg_Lauma",
+        "ascensionStats": {
+            "Elemental Mastery": "315",
+            "atk": 255,
+            "def": 669,
+            "hp": 10654
+        },
+        "chsName": "菈乌玛",
+        "element": "Dendro",
+        "enName": "Lauma",
+        "frName": "Lauma",
+        "ptName": "Lauma",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Лаума",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000120": {
+        "CardImg": "UI_Gacha_AvatarIcon_Flins",
+        "GachaImg": "UI_Gacha_AvatarImg_Flins",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 352,
+            "def": 809,
+            "hp": 12491
+        },
+        "chsName": "菲林斯",
+        "element": "Electro",
+        "enName": "Flins",
+        "frName": "Flins",
+        "ptName": "Flins",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Флинс",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000121": {
+        "CardImg": "UI_Gacha_AvatarIcon_Aino",
+        "GachaImg": "UI_Gacha_AvatarImg_Aino",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 242,
+            "def": 607,
+            "hp": 11201
+        },
+        "chsName": "爱诺",
+        "element": "Hydro",
+        "enName": "Aino",
+        "frName": "Aino",
+        "ptName": "Aino",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Айно",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000122": {
+        "CardImg": "UI_Gacha_AvatarIcon_Nefer",
+        "GachaImg": "UI_Gacha_AvatarImg_Nefer",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "Elemental Mastery": "100",
+            "atk": 344,
+            "def": 799,
+            "hp": 12704
+        },
+        "chsName": "奈芙尔",
+        "element": "Dendro",
+        "enName": "Nefer",
+        "frName": "Nefer",
+        "ptName": "Nefer",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Нефер",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000123": {
+        "CardImg": "UI_Gacha_AvatarIcon_Durin",
+        "GachaImg": "UI_Gacha_AvatarImg_Durin",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 347,
+            "def": 822,
+            "hp": 12430
+        },
+        "chsName": "杜林",
+        "element": "Pyro",
+        "enName": "Durin",
+        "frName": "Durin",
+        "ptName": "Durin",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Дурин",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000124": {
+        "CardImg": "UI_Gacha_AvatarIcon_Jahoda",
+        "GachaImg": "UI_Gacha_AvatarImg_Jahoda",
+        "ascensionStats": {
+            "Healing Bonus%": 18.5,
+            "atk": 223,
+            "def": 580,
+            "hp": 9646
+        },
+        "chsName": "雅珂达",
+        "element": "Anemo",
+        "enName": "Jahoda",
+        "frName": "Jahoda",
+        "ptName": "Jahoda",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Ягода",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000125": {
+        "CardImg": "UI_Gacha_AvatarIcon_Columbina",
+        "GachaImg": "UI_Gacha_AvatarImg_Columbina",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 96,
+            "def": 515,
+            "hp": 14695
+        },
+        "chsName": "哥伦比娅",
+        "element": "Hydro",
+        "enName": "Columbina",
+        "frName": "Columbina",
+        "ptName": "Columbina",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Коломбина",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000126": {
+        "CardImg": "UI_Gacha_AvatarIcon_Zibai",
+        "GachaImg": "UI_Gacha_AvatarImg_Zibai",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 225,
+            "def": 957,
+            "hp": 12919
+        },
+        "chsName": "兹白",
+        "element": "Geo",
+        "enName": "Zibai",
+        "frName": "Zibai",
+        "ptName": "Zibai",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Цзы Бай",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000127": {
+        "CardImg": "UI_Gacha_AvatarIcon_Illuga",
+        "GachaImg": "UI_Gacha_AvatarImg_Illuga",
+        "ascensionStats": {
+            "Elemental Mastery": 96.0,
+            "atk": 191,
+            "def": 814,
+            "hp": 11962
+        },
+        "chsName": "叶洛亚",
+        "element": "Geo",
+        "enName": "Illuga",
+        "frName": "Illuga",
+        "ptName": "Illuga",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Иллуги",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000128": {
+        "CardImg": "UI_Gacha_AvatarIcon_Varka",
+        "GachaImg": "UI_Gacha_AvatarImg_Varka",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 353,
+            "def": 795,
+            "hp": 12613
+        },
+        "chsName": "法尔伽",
+        "element": "Anemo",
+        "enName": "Varka",
+        "frName": "Varka",
+        "ptName": "Varka",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Варка",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000129": {
+        "CardImg": "UI_Gacha_AvatarIcon_Lohen",
+        "GachaImg": "UI_Gacha_AvatarImg_Lohen",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 344,
+            "def": 784,
+            "hp": 12858
+        },
+        "chsName": "洛恩",
+        "element": "Cryo",
+        "enName": "Lohen",
+        "frName": "Lohen",
+        "ptName": "Lohen",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Лоэн",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000130": {
+        "CardImg": "UI_Gacha_AvatarIcon_Linnea",
+        "GachaImg": "UI_Gacha_AvatarImg_Linnea",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 144,
+            "def": 907,
+            "hp": 9895
+        },
+        "chsName": "莉奈娅",
+        "element": "Geo",
+        "enName": "Linnea",
+        "frName": "Linnea",
+        "ptName": "Linnea",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Линнея",
+        "weaponType": "WEAPON_BOW"
+    },
+    "10000131": {
+        "CardImg": "UI_Gacha_AvatarIcon_Nicole",
+        "GachaImg": "UI_Gacha_AvatarImg_Nicole",
+        "ascensionStats": {
+            "ATK%": 28.8,
+            "atk": 342,
+            "def": 563,
+            "hp": 10409
+        },
+        "chsName": "尼可",
+        "element": "Pyro",
+        "enName": "Nicole",
+        "frName": "Nicole",
+        "ptName": "Nicole",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Николь",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000132": {
+        "CardImg": "UI_Gacha_AvatarIcon_Prune",
+        "GachaImg": "UI_Gacha_AvatarImg_Prune",
+        "ascensionStats": {
+            "ATK%": 24.0,
+            "atk": 221,
+            "def": 580,
+            "hp": 9679
+        },
+        "chsName": "布伦妮",
+        "element": "Anemo",
+        "enName": "Prune",
+        "frName": "Prune",
+        "ptName": "Prune",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Прюн",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000133": {
+        "CardImg": "UI_Gacha_AvatarIcon_MarionetteNew",
+        "GachaImg": "UI_Gacha_AvatarImg_MarionetteNew",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 342,
+            "def": 752,
+            "hp": 13226
+        },
+        "chsName": "桑多涅",
+        "element": "Cryo",
+        "enName": "Sandrone",
+        "frName": "Sandrone",
+        "ptName": "Sandrone",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Сандроне",
+        "weaponType": "WEAPON_CLAYMORE"
+    },
+    "10000134": {
+        "CardImg": "UI_Gacha_AvatarIcon_PlayerBoy",
+        "GachaImg": "UI_Gacha_AvatarImg_PlayerBoy",
+        "ascensionStats": {
+            "atk": 3402,
+            "def": 2041,
+            "hp": 10205
+        },
+        "chsName": "旅行者",
+        "element": "Unknown",
+        "enName": "Traveler",
+        "frName": "#{M#voyageur}{F#voyageuse}",
+        "ptName": "Viajante",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "#{F#Путешественница}{M#Путешественник}",
+        "weaponType": "WEAPON_CROSSBOW"
+    },
+    "10000140": {
+        "CardImg": "UI_Gacha_AvatarIcon_Vodyanitsa",
+        "GachaImg": "UI_Gacha_AvatarImg_Vodyanitsa",
+        "ascensionStats": {
+            "HP%": 28.8,
+            "atk": 108,
+            "def": 484,
+            "hp": 14818
+        },
+        "chsName": "沃雅妮莎",
+        "element": "Hydro",
+        "enName": "Vodyanitsa",
+        "frName": "Vodyanitsa",
+        "ptName": "Vodyanitsa",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Водяница",
+        "weaponType": "WEAPON_CATALYST"
+    },
+    "10000143": {
+        "CardImg": "UI_Gacha_AvatarIcon_Vesna",
+        "GachaImg": "UI_Gacha_AvatarImg_Vesna",
+        "ascensionStats": {
+            "CRIT Rate%": 19.2,
+            "atk": 354,
+            "def": 730,
+            "hp": 13262
+        },
+        "chsName": "薇斯纳",
+        "element": "Anemo",
+        "enName": "Vesna",
+        "frName": "Vesna",
+        "ptName": "Vesna",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Весна",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    },
+    "10000148": {
+        "CardImg": "UI_Gacha_AvatarIcon_Alyosha",
+        "GachaImg": "UI_Gacha_AvatarImg_Alyosha",
+        "ascensionStats": {
+            "Energy Recharge%": 26.7,
+            "atk": 265,
+            "def": 703,
+            "hp": 11962
+        },
+        "chsName": "阿罗夏",
+        "element": "Electro",
+        "enName": "Alyosha",
+        "frName": "Alyosha",
+        "ptName": "Alyosha",
+        "qualityType": "QUALITY_PURPLE",
+        "ruName": "Алёша",
+        "weaponType": "WEAPON_POLE"
+    },
+    "10000150": {
+        "CardImg": "UI_Gacha_AvatarIcon_Odette",
+        "GachaImg": "UI_Gacha_AvatarImg_Odette",
+        "ascensionStats": {
+            "CRIT DMG%": 38.4,
+            "atk": 335,
+            "def": 787,
+            "hp": 12981
+        },
+        "chsName": "奥黛塔",
+        "element": "Cryo",
+        "enName": "Odette",
+        "frName": "Odette",
+        "ptName": "Odette",
+        "qualityType": "QUALITY_ORANGE",
+        "ruName": "Одетта",
+        "weaponType": "WEAPON_SWORD_ONE_HAND"
+    }
+}

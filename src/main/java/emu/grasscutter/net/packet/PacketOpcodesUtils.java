@@ -47,6 +47,14 @@ public class PacketOpcodesUtils {
         return opcodeMap.getOrDefault(opcode, "UNKNOWN");
     }
 
+    public static int getOpcode(String name) {
+        return opcodeMap.int2ObjectEntrySet().stream()
+                .filter(entry -> entry.getValue().equalsIgnoreCase(name))
+                .mapToInt(Int2ObjectMap.Entry::getIntKey)
+                .findFirst()
+                .orElse(-1);
+    }
+
     public static void dumpPacketIds() {
         try (var writer = new FileWriter("./PacketIds_" + GameConstants.VERSION + ".json")) {
 

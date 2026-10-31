@@ -25,7 +25,7 @@ public class PacketGetDungeonEntryExploreConditionRsp extends BasePacket {
                                 DungeonEntryCond.newBuilder()
                                         // There is also a DUNGEON_ENTRY_REASON_MULIPLE but only one param1
                                         // field to put values in. Only report the required level for now, then.
-                                        .setCondReason(DungeonEntryBlockReason.DUNGEON_ENTRY_REASON_LEVEL)
+                                        .setCondReason(DungeonEntryBlockReason.DungeonEntryBlockReason_DUNGEON_ENTRY_REASON_LEVEL)
                                         .setParam1(level))
                         .build();
 

@@ -144,6 +144,8 @@ public class StaminaManager extends BasePlayerManager {
     private GameSession cachedSession = null;
     private GameEntity cachedEntity = null;
     public int staminaRecoverDelay = 0;
+    /** Multiplier for positive stamina recovery ticks (standby/run/walk/etc). */
+    private static final int STAMINA_RECOVER_MULTIPLIER = 2;
     private long lastCostStaminaTime = 0;
     private int lastSkillId = 0;
     private int lastSkillCasterId = 0;
@@ -249,6 +251,13 @@ public class StaminaManager extends BasePlayerManager {
             return currentStamina;
         }
 
+        // Natlan nightsoul exploration: only Nyx/phlogiston should drain, not stamina.
+        if (isCharacterStamina
+                && consumption.amount < 0
+                && emu.grasscutter.game.ability.NightsoulStaminaExempt.shouldSkipCharacterStamina(player)) {
+            return currentStamina;
+        }
+
         // notify will update
         for (Map.Entry<String, BeforeUpdateStaminaListener> listener : beforeUpdateStaminaListeners.entrySet()) {
             Consumption overriddenConsumption = listener.getValue().onBeforeUpdateStamina(consumption.type.toString(), consumption, isCharacterStamina);
@@ -325,6 +334,23 @@ public class StaminaManager extends BasePlayerManager {
         entity.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP, 0);
         entity.getWorld().broadcastPacket(new PacketEntityFightPropUpdateNotify(entity, FightProperty.FIGHT_PROP_CUR_HP));
         entity.getWorld().broadcastPacket(new PacketLifeStateChangeNotify(0, entity, LifeState.LIFE_DEAD));
+
+        // Barbara C6: the death above already played, so revive to full HP immediately without removing
+        // the entity from the scene.
+        if (entity instanceof EntityAvatar deadAvatar) {
+            try {
+                if (emu.grasscutter.game.ability.PartyReviveHelper.tryBarbaraC6AfterDeath(deadAvatar)) {
+                    if (player.getScene() != null
+                            && player.getScene().getEntityById(deadAvatar.getId()) == null) {
+                        player.getScene().addEntity(deadAvatar);
+                    }
+                    return;
+                }
+            } catch (Throwable t) {
+                logger.warn("[BarbaraC6] fall/killAvatar revive failed", t);
+            }
+        }
+
         player.getScene().removeEntity(entity);
 
         if (entity instanceof EntityAvatar avatar)
@@ -385,10 +411,6 @@ public class StaminaManager extends BasePlayerManager {
     }
 
     public void handleCombatInvocationsNotify(@NotNull GameSession session, @NotNull EntityMoveInfo moveInfo, @NotNull GameEntity entity) {
-        // cache info for later use in SustainedStaminaHandler tick
-        this.cachedSession = session;
-        this.cachedEntity = entity;
-
         // Get the motion data.
         var motionInfo = moveInfo.getMotionInfo();
         var motionState = motionInfo.getState();
@@ -397,6 +419,10 @@ public class StaminaManager extends BasePlayerManager {
         if (notifyEntityId != currentAvatarEntityId && notifyEntityId != vehicleId) {
             return;
         }
+
+        // cache info for later use in SustainedStaminaHandler tick
+        this.cachedSession = session;
+        this.cachedEntity = entity;
 
         // Update previous motion state
         this.previousState = currentState;
@@ -511,6 +537,9 @@ public class StaminaManager extends BasePlayerManager {
                             logger.trace("Delaying recovery: " + staminaRecoverDelay);
                         }
                     }
+                    if (consumption.amount > 0) {
+                        consumption.amount *= STAMINA_RECOVER_MULTIPLIER;
+                    }
                     updateStaminaRelative(cachedSession, consumption, isCharacterStamina);
                 }
             }
@@ -525,8 +554,10 @@ public class StaminaManager extends BasePlayerManager {
         if (stamina < 10) {
             logger.trace(getCurrentCharacterStamina() + "/" +
                 getMaxCharacterStamina() + "\t" + currentState);
-            if (currentState != MotionState.MotionState_MOTION_SWIM_IDLE) {
-                killAvatar(cachedSession, cachedEntity, PlayerDieType.PlayerDieType_PLAYER_DIE_DRAWN);
+            var avatar = player.getTeamManager().getCurrentAvatarEntity();
+            if (currentState != MotionState.MotionState_MOTION_SWIM_IDLE
+                    && avatar != null && avatar == cachedEntity && avatar.isAlive()) {
+                killAvatar(cachedSession, avatar, PlayerDieType.PlayerDieType_PLAYER_DIE_DRAWN);
             }
         }
     }

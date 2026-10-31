@@ -77,6 +77,18 @@ public class EntityVehicle extends EntityBaseGadget {
         super.fillFightProps(configGadget);
         this.addFightProperty(FightProperty.FIGHT_PROP_CUR_SPEED, 0);
         this.addFightProperty(FightProperty.FIGHT_PROP_CHARGE_EFFICIENCY, 0);
+
+        // Every vehicle gadget in the data is flagged isInvincible, and fillFightProps reads that as an
+        // infinite CUR_HP - which made a ridden Saurian unable to be hurt at all. The same config carries
+        // a real HP figure (10000 for the Natlan mounts) and that is the bar the client draws, so it is
+        // used as the pool instead: the vehicle can be fought, and onDeath puts the rider off when it
+        // runs out.
+        if (!NatsaurusVehicleHelper.isNatsaurusMount(this)) return;
+
+        float maxHp = this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+        if (maxHp > 0f && maxHp != Float.POSITIVE_INFINITY) {
+            this.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP, maxHp);
+        }
     }
 
     private void addConfigAbility(ConfigAbilityData abilityData) {
@@ -102,8 +114,7 @@ public class EntityVehicle extends EntityBaseGadget {
                         .setAbilityInfo(AbilitySyncStateInfo.newBuilder())
                         .setRendererChangedInfo(EntityRendererChangedInfo.newBuilder())
                         .setAiInfo(
-                                SceneEntityAiInfo.newBuilder()
-                                        .setIsAiOpen(true))
+                                gadgetAiInfo())
                         .setBornPos(getPosition().toProto())
                         .build();
 
@@ -149,6 +160,39 @@ public class EntityVehicle extends EntityBaseGadget {
             for (var ability : this.configGadget.getAbilities()) {
                 this.addConfigAbility(ability);
             }
+        }
+    }
+
+    /**
+     * Puts the riders off once the mount's own death has been announced.
+     *
+     * <p>Two orderings were tried and lost. Telling the client to dismount while the mount is still in the
+     * scene makes it play its "possession ended, the Saurian becomes a soul candle" transformation instead
+     * of the death; not telling it at all leaves the player stuck in the dead dragon's camera, unable to
+     * switch back, with only a teleport out. {@code Scene.killEntity} broadcasts the death, takes the
+     * entity out, and only then gets here - so the collapse is already underway by the time the rider is
+     * released, and nothing is left standing to be turned into a candle.
+     */
+    @Override
+    public void onDeath(int killerId) {
+        super.onDeath(killerId);
+
+        if (!NatsaurusVehicleHelper.isNatsaurusMount(this)) return;
+        if (this.vehicleMembers.isEmpty()) return;
+
+        for (var member : new ArrayList<>(this.vehicleMembers)) {
+            Player rider = null;
+            for (var player : getScene().getPlayers()) {
+                if (player.getUid() == member.getUid()) {
+                    rider = player;
+                    break;
+                }
+            }
+            if (rider == null) {
+                this.vehicleMembers.remove(member);
+                continue;
+            }
+            NatsaurusVehicleHelper.dismount(rider, this, member);
         }
     }
 }

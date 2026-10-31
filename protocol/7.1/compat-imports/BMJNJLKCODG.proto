@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+// Build-only import stub. The canonical BMJNJLKCODG descriptor (SceneGadgetInfo field 27, the
+// curve-move state of the Snezhnaya trains) comes from protocol.desc.
+message BMJNJLKCODG {}

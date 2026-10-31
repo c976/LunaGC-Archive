@@ -6,6 +6,7 @@ import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.world.Position;
 import emu.grasscutter.scripts.*;
 import emu.grasscutter.server.event.game.SceneBlockLoadedEvent;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import javax.script.*;
@@ -19,7 +20,11 @@ public class SceneBlock {
     public Position min;
 
     public int sceneId;
-    public Map<Integer, SceneGroup> groups;
+    /**
+     * Never null. A block whose script is missing or fails to parse keeps an empty map, because
+     * the tick dereferences this every frame and a null here froze the entire scene.
+     */
+    public Map<Integer, SceneGroup> groups = new HashMap<>();
     public RTree<SceneGroup, Geometry> sceneGroupIndex;
 
     private transient boolean loaded; // Not an actual variable in the scripts either
@@ -52,6 +57,13 @@ public class SceneBlock {
                         "Scene/" + sceneId + "/scene" + sceneId + "_block" + this.id + ".lua");
 
         if (cs == null) {
+            // The block keeps its empty group map. loaded is already true, so this is not retried:
+            // a script that is missing now will still be missing next tick.
+            Grasscutter.getLogger()
+                    .warn(
+                            "Block {} in scene {} has no script, so it will spawn nothing.",
+                            this.id,
+                            sceneId);
             return null;
         }
 
@@ -72,6 +84,9 @@ public class SceneBlock {
             this.sceneGroupIndex =
                     SceneIndexManager.buildIndex(3, this.groups.values(), g -> g.pos.toPoint());
         } catch (ScriptException exception) {
+            // Same again: the map stays empty rather than half-built, so the block spawns nothing
+            // instead of taking the scene's tick down with it.
+            this.groups = new HashMap<>();
             Grasscutter.getLogger()
                     .error(
                             "An error occurred while loading block " + this.id + " in scene " + sceneId,

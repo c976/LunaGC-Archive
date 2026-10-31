@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId - and field number from kitkat-multiverse/genshin-protocol 7.1.0.
+message CompoundQueueData {
+	uint32 wait_count = 7;
+	uint32 compound_id = 10;
+	uint32 output_time = 1;
+	uint32 output_count = 2;
+}

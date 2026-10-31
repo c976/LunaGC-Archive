@@ -1,27 +1,21 @@
 package emu.grasscutter.server.packet.send;
 
-import com.google.protobuf.CodedOutputStream;
+import emu.grasscutter.game.dungeons.DomainDungeonHelper;
+import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.packet.*;
-import java.io.ByteArrayOutputStream;
+import emu.grasscutter.net.proto.SceneDataNotifyOuterClass.SceneDataNotify;
 
 public class PacketSceneDataNotify extends BasePacket {
-
-    private static final int F_SCENE_ID = 3;
-
-    public PacketSceneDataNotify(int sceneId) {
+    public PacketSceneDataNotify(Player player) {
         super(PacketOpcodes.SceneDataNotify);
-        this.setData(build(sceneId));
-    }
-
-    private static byte[] build(int sceneId) {
-        try {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream(16);
-            CodedOutputStream cos = CodedOutputStream.newInstance(baos);
-            if (sceneId != 0) cos.writeUInt32(F_SCENE_ID, sceneId);
-            cos.flush();
-            return baos.toByteArray();
-        } catch (Exception e) {
-            throw new RuntimeException("PacketSceneDataNotify.build failed", e);
-        }
+        int sceneId = DomainDungeonHelper.notifySceneId(player);
+        var host = player.getWorld().getHost();
+        var owner = host != null ? host : player;
+        // The native handler replaces this scene's active tags. An empty list here clears
+        // the tags already supplied by PlayerWorldSceneInfoListNotify during scene init.
+        this.setData(SceneDataNotify.newBuilder()
+                .setSceneId(sceneId)
+                .addAllSceneTagIdList(owner.getSceneTags().getOrDefault(sceneId, java.util.Set.of()))
+                .build());
     }
 }

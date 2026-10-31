@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.recv;
 
+import emu.grasscutter.game.quest.LiyueBargainSupport;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.GetBargainDataReqOuterClass.GetBargainDataReq;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
@@ -13,6 +14,7 @@ public final class HandlerGetBargainDataReq extends PacketHandler {
         var packet = GetBargainDataReq.parseFrom(payload);
 
         var bargainId = packet.getBargainId();
+        LiyueBargainSupport.prepare(session.getPlayer(), bargainId);
         var bargain = session.getPlayer().getPlayerProgress().getBargains().get(bargainId);
         if (bargain == null) {
             session.send(new PacketGetBargainDataRsp(Retcode.RET_BARGAIN_NOT_ACTIVATED));

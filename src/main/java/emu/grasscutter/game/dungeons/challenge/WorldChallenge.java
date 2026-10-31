@@ -1,6 +1,7 @@
 package emu.grasscutter.game.dungeons.challenge;
 
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.game.dungeons.DomainRewardStatueHelper;
 import emu.grasscutter.game.dungeons.challenge.trigger.ChallengeTrigger;
 import emu.grasscutter.game.dungeons.enums.DungeonPassConditionType;
 import emu.grasscutter.game.entity.*;
@@ -82,14 +83,21 @@ public class WorldChallenge {
             Grasscutter.getLogger().debug("Could not start a in progress challenge.");
             return;
         }
+        var player = scene.getPlayers().isEmpty() ? null : scene.getPlayers().get(0);
+        var towerManager = player != null ? player.getTowerManager() : null;
+        if (towerManager != null && towerManager.isAwaitingTeamReconfigure()) {
+            Grasscutter.getLogger()
+                    .info(
+                            "WorldChallenge.start blocked — awaiting tower team reconfigure uid={}",
+                            player.getUid());
+            return;
+        }
         this.progress = true;
         this.startedAt = getScene().getSceneTimeSeconds();
         getScene().broadcastPacket(new PacketDungeonChallengeBeginNotify(this));
         challengeTriggers.forEach(t -> t.onBegin(this));
 
-        var player = scene.getPlayers().get(0);
         var dungeonManager = scene.getDungeonManager();
-        var towerManager = player.getTowerManager();
         if (dungeonManager != null && dungeonManager.isTowerDungeon() && towerManager != null) {
             towerManager.onBegin();
         }
@@ -115,11 +123,44 @@ public class WorldChallenge {
                                                     String.valueOf(this.getChallengeId())));
         }
 
-        // TODO: record the time in PARAM2 and used in action
-        scriptManager.callEvent(
-                new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
-                        .setParam2(finishedTime)
-                        .setEventSource(this.getChallengeIndex()));
+        // Tower lua (TPL_TIME) expects REMAINING seconds in param2 (it records the remaining time).
+        // Non-tower scripts historically used elapsed; keep that unless this is a tower dungeon.
+        int param2 = finishedTime;
+        boolean towerDungeon = dungeonManager != null && dungeonManager.isTowerDungeon();
+        if (towerDungeon && this.timeLimit > 0) {
+            param2 = Math.max(0, this.timeLimit - this.finishedTime);
+            Grasscutter.getLogger()
+                    .info(
+                            "Tower challenge success param2=remaining {} (elapsed={}, limit={})",
+                            param2,
+                            finishedTime,
+                            this.timeLimit);
+            // Pin remaining on TowerManager — lower-half ActiveChallenge reads this if TPL_TIME races.
+            if (!scene.getPlayers().isEmpty()) {
+                var tm = scene.getPlayers().get(0).getTowerManager();
+                if (tm != null) {
+                    tm.rememberAbyssCarryRemaining(param2);
+                }
+            }
+        }
+        var challengeSuccess =
+                scriptManager.callEvent(
+                        new ScriptArgs(this.getGroup().id, EventType.EVENT_CHALLENGE_SUCCESS)
+                                .setParam2(param2)
+                                .setEventSource(this.getChallengeIndex()));
+
+        // Lua TowerMirrorTeamSetUp / stage=1 is async via callEvent. Pass-condition settle must
+        // wait, or the chamber settles on the upper half and the mid-half team swap is cancelled.
+        if (towerDungeon && challengeSuccess != null) {
+            try {
+                challengeSuccess.get(5, java.util.concurrent.TimeUnit.SECONDS);
+            } catch (Throwable t) {
+                Grasscutter.getLogger()
+                        .warn(
+                                "Tower wait EVENT_CHALLENGE_SUCCESS failed: {}",
+                                t.toString());
+            }
+        }
 
         this.getScene()
                 .triggerDungeonEvent(
@@ -142,6 +183,30 @@ public class WorldChallenge {
         challengeTriggers.forEach(t -> t.onFinish(this));
     }
 
+    /**
+     * Stop the challenge HUD without firing {@code EVENT_CHALLENGE_FAIL} and without despawning
+     * monsters (despawn can make Lua ActiveChallenge again and kill the team-config UI).
+     */
+    public void abortQuiet() {
+        this.progress = false;
+        this.success = false;
+        this.finishedTime =
+                Math.max(0, (int) (this.scene.getSceneTimeSeconds() - this.startedAt));
+        getScene().broadcastPacket(new PacketDungeonChallengeFinishNotify(this));
+    }
+
+    /**
+     * Mid-half handoff: clear the upper-half challenge HUD as a success without re-firing Lua
+     * success events or despawning (tide already unloaded by TowerMirrorTeamSetUp).
+     */
+    public void finishSuccessQuiet() {
+        this.progress = false;
+        this.success = true;
+        this.finishedTime =
+                Math.max(0, (int) (this.scene.getSceneTimeSeconds() - this.startedAt));
+        getScene().broadcastPacket(new PacketDungeonChallengeFinishNotify(this));
+    }
+
     private void finish(boolean success) {
         this.progress = false;
         this.success = success;
@@ -151,6 +216,9 @@ public class WorldChallenge {
         getScene().getScriptManager().removeMonstersInGroup(group);
 
         getScene().broadcastPacket(new PacketDungeonChallengeFinishNotify(this));
+        if (success) {
+            DomainRewardStatueHelper.onChallengeSuccess(getScene());
+        }
     }
 
     public int increaseScore() {
@@ -165,10 +233,14 @@ public class WorldChallenge {
             return 100;
         }
 
-        var curHp = guardEntity.getFightProperties().get(FightProperty.FIGHT_PROP_CUR_HP.getId());
-        var maxHp = guardEntity.getFightProperties().get(FightProperty.FIGHT_PROP_BASE_HP.getId());
-        int percent = (int) (curHp * 100 / maxHp);
-        return percent;
+        var curHp = guardEntity.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP);
+        var maxHp = guardEntity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
+        if (maxHp <= 0f) {
+            // No usable max hp to scale against - treat the entity as undamaged rather than
+            // reporting 0% and instantly failing the challenge.
+            return 100;
+        }
+        return (int) (curHp * 100 / maxHp);
     }
 
     public void onMonsterDeath(EntityMonster monster) {

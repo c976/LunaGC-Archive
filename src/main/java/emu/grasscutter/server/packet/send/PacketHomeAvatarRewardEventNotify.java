@@ -7,6 +7,11 @@ import emu.grasscutter.net.packet.PacketOpcodes;
 public class PacketHomeAvatarRewardEventNotify extends BasePacket {
     public PacketHomeAvatarRewardEventNotify(Player homeOwner) {
         super(PacketOpcodes.HomeAvatarRewardEventNotify);
-        this.setData(homeOwner.getCurHomeWorld().getModuleManager().toRewardEventProto());
+
+        var homeWorld = homeOwner.getCurHomeWorld();
+        var moduleManager = homeWorld == null ? null : homeWorld.getModuleManager();
+        if (moduleManager != null) {
+            this.setData(moduleManager.toRewardEventProto());
+        }
     }
 }

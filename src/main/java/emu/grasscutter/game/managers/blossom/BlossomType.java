@@ -6,8 +6,8 @@ import java.util.stream.*;
 import lombok.Getter;
 
 public enum BlossomType {
-    GOLD(70360056, 101001001, 1),
-    BLUE(70360057, 101002003, 2);
+    GOLD(70360056, 101001001, 1, 70210109),
+    BLUE(70360057, 101002003, 2, 70210110);
 
     private static final Int2ObjectMap<BlossomType> map =
             new Int2ObjectOpenHashMap<>(
@@ -15,11 +15,27 @@ public enum BlossomType {
     @Getter private final int gadgetId;
     @Getter private final int circleCampId;
     @Getter private final int blossomChestId;
+    @Getter private final int rewardChestGadgetId;
 
-    BlossomType(int gadgetId, int circleCampId, int blossomChestId) {
+    BlossomType(int gadgetId, int circleCampId, int blossomChestId, int rewardChestGadgetId) {
         this.gadgetId = gadgetId;
         this.circleCampId = circleCampId;
         this.blossomChestId = blossomChestId;
+        this.rewardChestGadgetId = rewardChestGadgetId;
+    }
+
+    public String rewardKind() {
+        return switch (this) {
+            case GOLD -> "wealth";
+            case BLUE -> "revelation";
+        };
+    }
+
+    public String refreshType() {
+        return switch (this) {
+            case GOLD -> "BLOSSOM_REFRESH_SCOIN";
+            case BLUE -> "BLOSSOM_REFRESH_EXP";
+        };
     }
 
     public static BlossomType valueOf(int i) {
@@ -28,6 +44,6 @@ public enum BlossomType {
 
     public static BlossomType random() {
         BlossomType[] values = values();
-        return values[Utils.randomRange(0, values.length)];
+        return values[Utils.randomRange(0, values.length - 1)];
     }
 }

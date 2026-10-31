@@ -104,6 +104,15 @@ public final class FileUtils {
     /* Apply after initialization. */
     private static final Path[] DATA_PATHS = {DATA_USER_PATH, DATA_DEFAULT_PATH};
 
+    /**
+     * The same two folders, jar first.
+     *
+     * <p>For the handful of files the server is expected to ship rather than have configured: the
+     * copy inside the jar is the one that gets updated with a new build, so a stale file left in
+     * the data folder from an older deployment must not silently win over it.
+     */
+    private static final Path[] BUNDLED_FIRST_DATA_PATHS = {DATA_DEFAULT_PATH, DATA_USER_PATH};
+
     public static Path getDataPathTsjJsonTsv(String filename) {
         return getDataPathTsjJsonTsv(filename, true);
     }
@@ -119,6 +128,27 @@ public final class FileUtils {
         return fallback
                 ? DATA_USER_PATH.resolve(name + ".tsj")
                 : null; // Maybe they want to write to a new file
+    }
+
+    /** As {@link #getDataPathTsjJsonTsv(String)}, but the jar's copy wins over the data folder. */
+    public static Path getBundledDataPathTsjJsonTsv(String filename) {
+        val name = getFilenameWithoutExtension(filename);
+        for (val data_path : BUNDLED_FIRST_DATA_PATHS) {
+            for (val ext : TSJ_JSON_TSV) {
+                val path = data_path.resolve(name + "." + ext);
+                if (Files.exists(path)) return path;
+            }
+        }
+        return DATA_USER_PATH.resolve(name + ".tsj");
+    }
+
+    /** As {@link #getDataPath(String)}, but the jar's copy wins over the data folder. */
+    public static Path getBundledDataPath(String path) {
+        Path defaultPath = DATA_DEFAULT_PATH.resolve(path);
+        if (Files.exists(defaultPath)) return defaultPath;
+        Path userPath = DATA_USER_PATH.resolve(path);
+        if (Files.exists(userPath)) return userPath;
+        return userPath;
     }
 
     public static Path getDataPath(String path) {

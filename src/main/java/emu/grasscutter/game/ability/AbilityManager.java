@@ -11,20 +11,23 @@ import emu.grasscutter.game.ability.mixins.*;
 import emu.grasscutter.game.avatar.Avatar;
 
 import emu.grasscutter.net.proto.AbilityMetaSpecialEnergyOuterClass;
-import emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo;
+import emu.grasscutter.net.proto.DetailAbilityInfo._DetailAbilityInfo;
 import emu.grasscutter.game.entity.EntityAvatar;
 import emu.grasscutter.game.entity.EntityClientGadget;
+import emu.grasscutter.game.entity.EntityMonster;
 import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.data.excels.ProudSkillData;
 import emu.grasscutter.data.excels.avatar.AvatarSkillDepotData;
 import emu.grasscutter.game.player.*;
 import emu.grasscutter.game.props.FightProperty;
+import emu.grasscutter.game.tps.TpsWeaponSystem;
 import emu.grasscutter.net.proto.AbilityInvokeEntryOuterClass.AbilityInvokeEntry;
 import emu.grasscutter.net.proto.AbilityMetaAddAbilityOuterClass.AbilityMetaAddAbility;
 import emu.grasscutter.net.proto.AbilityMetaModifierChangeOuterClass.AbilityMetaModifierChange;
 import emu.grasscutter.server.packet.send.PacketMonsterSummonTagNotify;
 import emu.grasscutter.net.proto.AbilityMetaReInitOverrideMapOuterClass.AbilityMetaReInitOverrideMap;
 import emu.grasscutter.net.proto.AbilityMetaSetKilledStateOuterClass.AbilityMetaSetKilledState;
+import emu.grasscutter.net.proto.AbilityMetaUpdateMoonOvergrowValueOuterClass.AbilityMetaUpdateMoonOvergrowValue;
 import emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType;
 import emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry;
 import emu.grasscutter.net.proto.ModifierActionOuterClass.ModifierAction;
@@ -35,7 +38,7 @@ import emu.grasscutter.utils.Utils;
 
 import emu.grasscutter.net.proto.AbilityInvokeArgumentOuterClass.AbilityInvokeArgument;
 import emu.grasscutter.net.proto.AbilityInvokeEntryHeadOuterClass.AbilityInvokeEntryHead;
-import emu.grasscutter.net.proto.ChangeHpDebtsReasonOuterClass;
+import emu.grasscutter.net.proto.ChangeHpDebtsReason;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass;
 import emu.grasscutter.server.packet.send.PacketAbilityInvocationsNotify;
 import emu.grasscutter.server.packet.send.PacketAvatarFightPropNotify;
@@ -59,6 +62,80 @@ public final class AbilityManager extends BasePlayerManager {
     public static final HashMap<AbilityMixinData.Type, AbilityMixinHandler> mixinHandlers =
         new HashMap<>();
 
+    /**
+     * onAdded actions the server is responsible for even when the modifier orchestrates nothing.
+     *
+     * <p>SetGlobalValue is here because a modifier's marks are what its own later blocks test: the
+     * one that spawns Sandrone's robot clears a mark, searches for a target, then spawns only if
+     * the mark came back set. Skipping the clear left the mark absent on the first hold, so the
+     * spawn never fired until a later attack had written it. Both reasons it used to be left out
+     * are gone - writes made here no longer reach the client, and a bare SetGlobalValue no longer
+     * reads as 1. Damage, healing and energy stay off the list: the client resolves those itself.
+     */
+    private static final java.util.EnumSet<AbilityModifierAction.Type> SERVER_OWNED_ON_ADDED =
+        java.util.EnumSet.of(
+            AbilityModifierAction.Type.Predicated,
+            AbilityModifierAction.Type.CreateGadget,
+            AbilityModifierAction.Type.SetGlobalValue,
+            // A Summon whose born block is keyed on a global position reads that position back from
+            // the server's copy. Leaving SetGlobalPos out meant the key was never written, so the
+            // summon fell back to the position packed in the notify - none, for a modifier removal -
+            // and spawned at the world origin thousands of units from its caster, where it fell
+            // through the floor and was culled by die_y. The Perpetual Mechanical Array's split
+            // minions were gone before the player could see them.
+            AbilityModifierAction.Type.SetGlobalPos);
+
+    /**
+     * What a server owned chain may run, at any depth.
+     *
+     * <p>The nested actions need the same restriction as the top level ones, and more sharply: a
+     * Predicated block hands its children whichever entity its search picked, so an unfiltered
+     * child that kills or hurts its target would fire straight at the nearest enemy - killing it
+     * outright, with no damage event behind it. Only state and spawning is allowed through.
+     */
+    private static final java.util.EnumSet<AbilityModifierAction.Type> SERVER_OWNED_CHAIN =
+        java.util.EnumSet.of(
+            AbilityModifierAction.Type.Predicated,
+            AbilityModifierAction.Type.CreateGadget,
+            AbilityModifierAction.Type.SetGlobalValue,
+            AbilityModifierAction.Type.AddGlobalValue,
+            AbilityModifierAction.Type.ClearGlobalValue,
+            AbilityModifierAction.Type.CopyGlobalValue);
+
+    public static boolean isAllowedInServerOwnedChain(AbilityModifierAction.Type type) {
+        return type != null && SERVER_OWNED_CHAIN.contains(type);
+    }
+
+    /**
+     * Set while the server runs a modifier chain the client did not ask it to run.
+     *
+     * <p>Values written in there are the server's own bookkeeping - a mark one block sets so a later
+     * block can test it - and the client has already worked them out for itself. Pushing them back
+     * overwrites state that was correct, so those writes stay local.
+     */
+    private static final ThreadLocal<Boolean> serverOwnedChain =
+        ThreadLocal.withInitial(() -> Boolean.FALSE);
+
+    public static boolean isServerOwnedChain() {
+        return serverOwnedChain.get();
+    }
+
+    /**
+     * Runs a block as the server's own bookkeeping.
+     *
+     * <p>Restores whatever the flag was rather than clearing it, so a chain that opens inside
+     * another one does not hand the rest of its parent back to the client half way through.
+     */
+    public static void runServerOwned(Runnable body) {
+        var previous = serverOwnedChain.get();
+        serverOwnedChain.set(Boolean.TRUE);
+        try {
+            body.run();
+        } finally {
+            serverOwnedChain.set(previous);
+        }
+    }
+
     public static final ExecutorService eventExecutor;
 
     static {
@@ -75,13 +152,35 @@ public final class AbilityManager extends BasePlayerManager {
         registerHandlers();
     }
 
-    @Getter
     private boolean abilityInvulnerable = false;
     private int burstCasterId;
     private int burstSkillId;
 
     private long arlecchinoChargedAttackTime = 0L;
     private long arlecchinoESkillTime = 0L;
+
+    /**
+     * Mixins the server runs itself when the client attaches the modifier carrying them.
+     *
+     * <p>Most mixins are a reaction the client reports: it invokes the local id and the server runs the
+     * handler. {@code TryEnterVehicleMixin} is the other shape - the client attaches {@code Avatar_Perform}
+     * and then only plays an animation, so nothing ever invokes it. Captures of Natlan's soul-attach
+     * (龙之魂附) show the hold producing a scan invoke, four modifier attaches and a
+     * {@code MOTION_NATSAURUS_ENTERING} state change, and no invoke against local id 4 at all. Without the
+     * server firing it the animation runs out and the camera falls back to the character.
+     */
+    private static final java.util.EnumSet<AbilityMixinData.Type> SERVER_OWNED_MIXIN_ON_ATTACH =
+        java.util.EnumSet.of(AbilityMixinData.Type.TryEnterVehicleMixin);
+
+    /**
+     * The entity the scan mixin last picked up, held between the scan invoke and the modifier attach that
+     * follows it. The attach carries no reference to the Saurian, so this is the only link between the two.
+     */
+    @Getter private volatile GameEntity scanTarget;
+
+    public void setScanTarget(GameEntity scanTarget) {
+        this.scanTarget = scanTarget;
+    }
 
     public AbilityManager(Player player) {
         super(player);
@@ -91,6 +190,15 @@ public final class AbilityManager extends BasePlayerManager {
     public void removePendingEnergyClear() {
         this.burstCasterId = 0;
         this.burstSkillId = 0;
+    }
+
+    public boolean isAbilityInvulnerable() {
+        try {
+            if (BurstInvulnHelper.isArmed(this)) return true;
+        } catch (Throwable ignored) {
+            // Compatibility hook must never interrupt ability processing.
+        }
+        return this.abilityInvulnerable;
     }
 
     private void onPossibleElementalBurst(Ability ability, AbilityModifier modifier, int entityId) {
@@ -119,16 +227,21 @@ public final class AbilityManager extends BasePlayerManager {
             && (ability.getAvatarSkillStartIds().contains(this.burstSkillId) || skillInvincibility)) {
             Grasscutter.getLogger()
                 .trace(
-                    "Caster ID's {} burst successful, clearing energy and setting invulnerability",
+                    "Caster ID's {} burst successful, setting invulnerability",
                     entityId);
             this.abilityInvulnerable = true;
-
-            this.player
-                .getEnergyManager()
-                .handleEvtDoSkillSuccNotify(
-                    this.player.getSession(), this.burstSkillId, this.burstCasterId);
-
+            int confirmedSkillId = this.burstSkillId;
             this.removePendingEnergyClear();
+            try {
+                GameEntity entity = this.player.getScene().getEntityById(entityId);
+                if (entity instanceof EntityAvatar entityAvatar) {
+                    this.player
+                            .getEnergyManager()
+                            .confirmBurstCast(entityAvatar.getAvatar(), confirmedSkillId);
+                }
+            } catch (Throwable ignored) {
+                // Energy confirm must not break invulnerability arming.
+            }
         }
     }
 
@@ -138,8 +251,10 @@ public final class AbilityManager extends BasePlayerManager {
         for (var obj : handlerClassesAction) {
             try {
                 if (obj.isAnnotationPresent(AbilityAction.class)) {
-                    AbilityModifierAction.Type abilityAction = obj.getAnnotation(AbilityAction.class).value();
-                    actionHandlers.put(abilityAction, obj.getDeclaredConstructor().newInstance());
+                    var handler = obj.getDeclaredConstructor().newInstance();
+                    for (var abilityAction : obj.getAnnotation(AbilityAction.class).value()) {
+                        actionHandlers.put(abilityAction, handler);
+                    }
                 } else {
                     continue;
                 }
@@ -165,6 +280,11 @@ public final class AbilityManager extends BasePlayerManager {
 
     public void executeAction(
         Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
+        try {
+            if (ability != null && target != null) ClorindeBoLUtil.onAbilityAction(ability, target);
+        } catch (Throwable ignored) {
+            // Character compatibility hooks are best-effort.
+        }
         var handler = actionHandlers.get(action.type);
         if (handler == null || ability == null) {
             if (DebugConstants.LOG_MISSING_ABILITY_HANDLERS) {
@@ -175,72 +295,132 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
+        boolean ownerWasLive = isLive(ability.getOwner());
         eventExecutor.submit(
             () -> {
-                if (!handler.execute(ability, action, abilityData, target)) {
+                try {
+                    if (ownerWasLive && !isLive(ability.getOwner())) return;
+                    if (!handler.execute(ability, action, abilityData, target)) {
+                        Grasscutter.getLogger()
+                            .debug("Ability execute action failed for {} at {}.", action.type, ability);
+                    }
+                } catch (Throwable e) {
+                    // submit() parks anything thrown in a Future nobody reads, so an action that
+                    // blew up left no trace at all - the skill just quietly did nothing.
                     Grasscutter.getLogger()
-                        .debug("Ability execute action failed for {} at {}.", action.type, ability);
+                        .error("Ability action {} threw at {}.", action.type, ability, e);
                 }
             });
     }
 
+    /**
+     * Runs an action on the calling thread instead of handing it to the pool.
+     *
+     * <p>A modifier's actions are a sequence, not a set: one block sets a value the next block
+     * reads. Submitted individually they race, and the read lands before the write often enough
+     * that whatever they were guarding happens an invocation late, or not at all.
+     */
+    public void executeActionNow(
+        Ability ability, AbilityModifierAction action, ByteString abilityData, GameEntity target) {
+        var handler = actionHandlers.get(action.type);
+        if (handler == null || ability == null) {
+            if (DebugConstants.LOG_MISSING_ABILITY_HANDLERS) {
+                Grasscutter.getLogger()
+                    .debug("Missing ability action handler for {} (invoker: {}).", action.type, ability);
+            }
+
+            return;
+        }
+
+        try {
+            if (!handler.execute(ability, action, abilityData, target)) {
+                Grasscutter.getLogger()
+                    .debug("Ability execute action failed for {} at {}.", action.type, ability);
+            }
+        } catch (Throwable e) {
+            Grasscutter.getLogger().error("Ability action {} threw at {}.", action.type, ability, e);
+        }
+    }
+
     public void executeMixin(Ability ability, AbilityMixinData mixinData, ByteString abilityData) {
 
-        var invoke = AbilityInvokeEntry.newBuilder().setAbilityData(abilityData).build();
-        var head = invoke.getHead();
         var handler = mixinHandlers.get(mixinData.type);
         GameEntity target = ability.getOwner();
-        Player player = getPlayer();
 
-        if (handler == mixinHandlers.get(AbilityMixinData.Type.PhlogistonCostMixin)) {
-
-            EntityAvatar avatarEntity = player.getTeamManager().getCurrentAvatarEntity();
-            Avatar avatar = avatarEntity.getAvatar();
-            if (avatar.getAvatarId() == 10000106 || avatar.getAvatarId() == 10000107 || avatar.getAvatarId() == 10000105 || avatar.getAvatarId() == 10000103 || avatar.getAvatarId() == 10000100) {
-
-                Grasscutter.getLogger().trace("NyxValue: " + avatarEntity.getNyxValue());
-                float curPhlogiston = player.getPhlogistonValue();
-                float consume = 0.67f;
-                float updatedPhlogistonValue = curPhlogiston - consume;
-                updatedPhlogistonValue = Math.max(0, Math.min(100, updatedPhlogistonValue));
-                player.setPhlogistonValue(updatedPhlogistonValue);
-
-                player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                    player.getTeamManager().getEntity().getId(),
-                    "SGV_PlayerTeam_Phlogiston",
-                    updatedPhlogistonValue
-                ));
-
-            }
+        // This mixin has no handler; it only marks Clorinde and Arlecchino as converting heals to HP debt.
+        if (mixinData.type == AbilityMixinData.Type.SwitchHealToHPDebtsMixin
+                && target instanceof EntityAvatar avatar
+                && (avatar.getAvatar().getAvatarId() == 10000098 || avatar.getAvatar().getAvatarId() == 10000096)) {
+            target.setConvertToHpDebt(true);
         }
 
-        if (handler == mixinHandlers.get(AbilityMixinData.Type.SwitchHealToHPDebtsMixin)) {
-
-            if (target instanceof EntityAvatar avatar) {
-
-                if (avatar.getAvatar().getAvatarId() == 10000098 || avatar.getAvatar().getAvatarId() == 10000096)
-                    target.setConvertToHpDebt(true);
-
-            }
-
-        }
-
-        if (handler == null || ability == null) {
+        if (handler == null) {
             Grasscutter.getLogger()
                 .trace("Could not execute ability mixin {} at {}", mixinData.type, ability);
             return;
         }
 
+        boolean ownerWasLive = isLive(target);
         eventExecutor.submit(
             () -> {
-                if (!handler.execute(ability, mixinData, abilityData, target)) {
+                try {
+                    if (ownerWasLive && !isLive(target)) return;
+                    if (!handler.execute(ability, mixinData, abilityData, target)) {
+                        Grasscutter.getLogger()
+                            .error("Ability execute action failed for {} at {}.", mixinData.type, ability);
+                    }
+                } catch (Throwable e) {
                     Grasscutter.getLogger()
-                        .error("Ability execute action failed for {} at {}.", mixinData.type, ability);
+                        .error("Ability mixin {} threw at {}.", mixinData.type, ability, e);
                 }
             });
     }
 
+    /** Queued work is dropped for an entity that has since left the player's scene or world. */
+    private boolean isLive(GameEntity entity) {
+        if (entity instanceof EntityAvatar a) {
+            return this.player.getWorld() != null && this.player.getTeamManager().getActiveTeam().contains(a);
+        }
+        // Scene identity, not entity-map membership: queued actions run on a pool in no fixed order,
+        // so a gadget's HealHP can run after its own KillSelf removed it, and that heal still counts.
+        var scene = this.player.getWorld() == null ? null : this.player.getScene();
+        return entity != null && scene != null && entity.getScene() == scene;
+    }
+
+    /**
+     * Fires the mixins the server owns on a modifier the client just attached.
+     *
+     * <p>See {@link #SERVER_OWNED_MIXIN_ON_ATTACH} for why these never arrive as an invoke.
+     */
+    private void runServerOwnedMixinsOnAttach(
+            Ability ability, AbilityModifier modifierData, ByteString abilityData) {
+        if (ability == null || modifierData == null || modifierData.modifierMixins == null) return;
+
+        for (var mixin : modifierData.modifierMixins) {
+            if (mixin == null || mixin.type == null) continue;
+            if (!SERVER_OWNED_MIXIN_ON_ATTACH.contains(mixin.type)) continue;
+            if (!mixinHandlers.containsKey(mixin.type)) continue;
+
+            executeMixin(ability, mixin, abilityData);
+        }
+    }
+
     public void onAbilityInvoke(AbilityInvokeEntry invoke) throws Exception {
+        if (invoke.getArgumentType()
+            == AbilityInvokeArgument.AbilityInvokeArgument_ABILITY_META_CHANGE_NYX_VALUE) {
+            NyxHelper.handleChangeNyxValue(this.player, invoke);
+            return;
+        }
+        if (invoke.getArgumentType()
+            == AbilityInvokeArgument.AbilityInvokeArgument_ABILITY_META_ADD_SPECIAL_ENERGY_VALUE) {
+            this.handleAddSpecialEnergy(invoke);
+            return;
+        }
+        if (invoke.getArgumentType()
+            == AbilityInvokeArgument.AbilityInvokeArgument_ABILITY_META_UPDATE_TPS_WEAPON_AMMUNITION) {
+            TpsWeaponSystem.onAmmunitionInvoke(this.player, invoke);
+            return;
+        }
         Grasscutter.getLogger()
             .trace(
                 "Ability invoke: "
@@ -252,6 +432,11 @@ public final class AbilityManager extends BasePlayerManager {
                     + "): "
                     + this.player.getScene().getEntityById(invoke.getEntityId()));
         var entity = this.player.getScene().getEntityById(invoke.getEntityId());
+        try {
+            SkirkInvokeLog.maybeLog(this.player, invoke, entity);
+        } catch (Throwable ignored) {
+            // Logging must never affect the invoke path.
+        }
         if (entity instanceof EntityAvatar avatarEntity && avatarEntity.getInstancedAbilities().isEmpty()) {
             initializeEntityAbilities(avatarEntity);
         }
@@ -282,6 +467,13 @@ public final class AbilityManager extends BasePlayerManager {
             Grasscutter.getLogger()
                 .trace("Target: " + this.player.getScene().getEntityById(invoke.getHead().getTargetId()));
         }
+        if (invoke.getArgumentType()
+                == AbilityInvokeArgument.AbilityInvokeArgument_ABILITY_MIXIN_CHANGE_SNEZHNAYA_FRIGID_VAR) {
+            this.logSnezhnayaFrigidInvoke(invoke);
+            emu.grasscutter.game.player.SnezhnayaFrigid.onInvoke(this.player, invoke);
+            return;
+        }
+
         if (invoke.getHead().getLocalId() != 0) {
             this.handleServerInvoke(invoke);
             return;
@@ -303,6 +495,8 @@ public final class AbilityManager extends BasePlayerManager {
 
             case AbilityInvokeArgument_ABILITY_META_SET_KILLED_SETATE -> this.handleKillState(invoke);
             case AbilityInvokeArgument_ABILITY_META_ADD_SPECIAL_ENERGY_VALUE -> this.handleAddSpecialEnergy(invoke);
+            case AbilityInvokeArgument_ABILITY_META_UPDATE_MOON_OVERGROW_VALUE ->
+                this.handleUpdateMoonOvergrowValue(invoke);
 
             default -> {
                 int typeVal = invoke.getArgumentTypeValue();
@@ -316,6 +510,29 @@ public final class AbilityManager extends BasePlayerManager {
                 }
             }
         }
+    }
+
+    /** Frigid invokes logged so far this session, capped so a long stay does not flood the log. */
+    private int snezhnayaFrigidInvokesLogged = 0;
+
+    /**
+     * Logs ABILITY_MIXIN_CHANGE_SNEZHNAYA_FRIGID_VAR invokes raw at debug level (start the server with
+     * -debug). Their payload has no named message in the 7.1 protocol, and it is what the server must act
+     * on to move the Frigid meter.
+     */
+    private void logSnezhnayaFrigidInvoke(AbilityInvokeEntry invoke) {
+        if (!Grasscutter.getLogger().isDebugEnabled() || this.snezhnayaFrigidInvokesLogged >= 200) return;
+        this.snezhnayaFrigidInvokesLogged++;
+        var head = invoke.getHead();
+        Grasscutter.getLogger()
+                .debug(
+                        "[SnezhnayaFrigid] invoke #{} entity={} ability={} modifier={} localId={} data={}",
+                        this.snezhnayaFrigidInvokesLogged,
+                        invoke.getEntityId(),
+                        head.getInstancedAbilityId(),
+                        head.getInstancedModifierId(),
+                        head.getLocalId(),
+                        java.util.HexFormat.of().formatHex(invoke.getAbilityData().toByteArray()));
     }
 
     private void handleClearGlobalFloatValue(AbilityInvokeEntry invoke)
@@ -337,8 +554,64 @@ public final class AbilityManager extends BasePlayerManager {
 
         if (key == null) return;
 
+        // A global reset alone does not identify a burst; it also occurs during normal sync.
+        if (isArlecchinoBoLFloatKey(key)
+                && entity instanceof EntityAvatar av
+                && av.getAvatar() != null
+                && av.getAvatar().getAvatarId() == 10000096) {
+            synchronized (av) {
+                float cur = av.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
+                if (cur > 0.5f) {
+                    if (!ArlecchinoBurstBoL.isConsumeBlocked(av)) {
+                        ArlecchinoBurstBoL.tryPreArmFromAbility(
+                                resolveInvocationAbility(entity, invoke), av);
+                    }
+                    av.getGlobalAbilityValues().put(key, cur);
+                    ArlecchinoBoLSync.repinUiBar(av);
+                    return;
+                }
+            }
+        }
+
         entity.getGlobalAbilityValues().remove(key);
         entity.onAbilityValueUpdate();
+    }
+
+    private static boolean isArlecchinoBoLFloatKey(String key) {
+        return "Cur_HPDebts".equals(key)
+                || "_HPDebts".equals(key)
+                || "_ABILITY_Cur_HPDebts".equals(key);
+    }
+
+    private static Ability resolveInvocationAbility(GameEntity entity, AbilityInvokeEntry invoke) {
+        var head = invoke.getHead();
+        var modifier = entity.getInstancedModifiers().get(head.getInstancedModifierId());
+        if (modifier != null && modifier.getAbility() != null) {
+            return modifier.getAbility();
+        }
+        int index = head.getInstancedAbilityId() - 1;
+        var abilities = entity.getInstancedAbilities();
+        return index >= 0 && index < abilities.size() ? abilities.get(index) : null;
+    }
+
+    /**
+     * Mirrors the party's Verdant Dew, which the client owns. Recorded, never echoed: the server
+     * evaluates ByTargetGlobalValue(MoonOvergrowPoint_All, Team) and would otherwise read zero.
+     */
+    private void handleUpdateMoonOvergrowValue(AbilityInvokeEntry invoke)
+        throws InvalidProtocolBufferException {
+        var update = AbilityMetaUpdateMoonOvergrowValue.parseFrom(invoke.getAbilityData());
+        if (update.getUpdateType() != AbilityMetaUpdateMoonOvergrowValue._UpdateType._UpdateType_SET) return;
+
+        var entity = this.player.getScene().getEntityById(invoke.getEntityId());
+        if (entity == null) entity = this.player.getTeamManager().getEntity();
+
+        entity.getGlobalAbilityValues().put(TeamManager.VERDANT_DEW, update.getFOMPMBNENPH());
+        entity.onAbilityValueUpdate();
+        try {
+            LaumaC1HealHelper.onMoonBloom(this.player);
+        } catch (Throwable ignored) {
+        }
     }
 
     private void handleAddSpecialEnergy(AbilityInvokeEntry invoke) throws InvalidProtocolBufferException {
@@ -352,6 +625,29 @@ public final class AbilityManager extends BasePlayerManager {
         var target = this.player.getScene().getEntityById(head.getTargetId());
         if (target == null) target = entity;
         float specialEnergyAdd = abilityMetaSpecialEnergy.getValue();
+        if (NyxHelper.isSkirkEntity(target) && target instanceof EntityAvatar) {
+            // Client often sends 0: ability JSON has ratio=0.0 alongside value=Pickable_Energy_Revive,
+            // and Gson keeps only ratio. Recover from the Pickable_Handler ability when present.
+            if (Math.abs(specialEnergyAdd) < 0.01f) {
+                Ability ability = null;
+                if (head.getInstancedAbilityId() != 0
+                        && (head.getInstancedAbilityId() - 1) < entity.getInstancedAbilities().size()) {
+                    ability = entity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+                }
+                if (ability == null) {
+                    ability = SkirkCunningHelper.findPickableHandlerAbility(entity);
+                }
+                if (ability != null && SkirkCunningHelper.isPickableEnergyAbility(ability)) {
+                    SkirkCunningHelper.ensurePickableEnergyReviveSpecial(ability, target);
+                    float revive = SkirkCunningHelper.resolvePickableEnergyRevive(ability);
+                    if (revive >= 0.5f) {
+                        specialEnergyAdd = revive;
+                    }
+                }
+            }
+            NyxHelper.syncFromSpecialEnergyInvoke(this.player, target, specialEnergyAdd);
+            return;
+        }
         target.addSpecialEnergy(specialEnergyAdd);
     }
 
@@ -393,7 +689,7 @@ public final class AbilityManager extends BasePlayerManager {
 
             var data = ability.getData();
 
-            var detailAbility = DetailAbilityInfo.newBuilder()
+            var detailAbility = _DetailAbilityInfo.newBuilder()
                 .setParentAbilityName(AbilityString.newBuilder().setStr(data.abilityName))
                 .setInstancedAbilityId(head.getInstancedAbilityId())
                 .setInstancedModifierId(head.getInstancedModifierId())
@@ -437,15 +733,25 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        if (currentAvatar.getAvatar().getAvatarId() == 10000098) {
-            if (skillId == 10982) {
-
-                applyClorindeBoL(currentAvatar, 0.35f);
-            } else if (skillId == 10985) {
-
-                applyClorindeBoL(currentAvatar, 0.66f);
-            }
+        try {
+            NyxSkillHook.handle(this, player, skillId, casterId);
+        } catch (Throwable ignored) {
+            // Compatibility hook must not cancel the normal skill event.
         }
+        try {
+            ClorindeBoLUtil.onSkillStart(currentAvatar, skillId);
+        } catch (Throwable ignored) {
+            // Compatibility hook must not cancel the normal skill event.
+        }
+        try {
+            LaumaC1HealHelper.onSkillStart(player, currentAvatar, skillId);
+        } catch (Throwable ignored) {
+            // Compatibility hook must not cancel the normal skill event.
+        }
+
+        // Clorinde BoL: E, Q and Swift Hunt all go through ClorindeBoLUtil. E grants nothing, Q follows the
+        // passive, and Swift Hunt grants on firing.
+        // The old stock applyClorindeBoL(0.35/0.66) wrongly granted on E and has been dropped.
 
         var skillData = GameData.getAvatarSkillDataMap().get(skillId);
         if (skillData == null) {
@@ -461,6 +767,11 @@ public final class AbilityManager extends BasePlayerManager {
 
         this.burstSkillId = skillId;
         this.burstCasterId = casterId;
+        try {
+            BurstInvulnHelper.arm(this);
+        } catch (Throwable ignored) {
+            // Compatibility hook must not cancel the normal skill event.
+        }
     }
 
     public void onSkillEnd(Player player) {
@@ -470,25 +781,40 @@ public final class AbilityManager extends BasePlayerManager {
         }
 
         if (!this.abilityInvulnerable) {
+            try {
+                BurstInvulnHelper.clear(this);
+            } catch (Throwable ignored) {
+                // Compatibility hook is best-effort.
+            }
             return;
         }
 
         this.abilityInvulnerable = false;
+        try {
+            BurstInvulnHelper.clear(this);
+        } catch (Throwable ignored) {
+            // Compatibility hook is best-effort.
+        }
     }
 
     private void setAbilityOverrideValue(Ability ability, AbilityScalarValueEntry valueChange) {
-        if (!valueChange.getKey().hasStr()) {
+        String key = null;
+        if (valueChange.getKey().hasStr()) {
+            key = valueChange.getKey().getStr();
+        } else if (valueChange.getKey().hasHash()) {
+            key = GameData.getAbilityHashes().get(valueChange.getKey().getHash());
+        }
+        if (key == null || key.isEmpty()) {
             Grasscutter.getLogger().trace("TODO: Calculate all the ability value hashes");
-
             return;
         }
 
-        ability.getAbilitySpecials().put(valueChange.getKey().getStr(), valueChange.getFloatValue());
+        ability.getAbilitySpecials().put(key, valueChange.getFloatValue());
         Grasscutter.getLogger()
             .trace(
                 "Ability {} changed {} to {}",
                 ability.getData().abilityName,
-                valueChange.getKey().getStr(),
+                key,
                 valueChange.getFloatValue());
     }
 
@@ -657,6 +983,11 @@ public final class AbilityManager extends BasePlayerManager {
             for (var variableChange : valueChanges.getOverrideMapList()) {
                 setAbilityOverrideValue(ability, variableChange);
             }
+            // Avatar REINIT is not covered by the gadget talent patch above; re-apply proud-skill
+            // specials so values like Hutao CrimsonPlum_LifeCostRatio are not left at 0.
+            if (entity instanceof EntityAvatar avatarOwner) {
+                applyAvatarTalentSpecials(ability, avatarOwner.getAvatar());
+            }
         }
 
         var resolvedAbility = ability;
@@ -676,12 +1007,13 @@ public final class AbilityManager extends BasePlayerManager {
         var modChange = AbilityMetaModifierChange.parseFrom(invoke.getAbilityData());
         var head = invoke.getHead();
 
-        boolean isRemove = modChange.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED;
+        boolean isRemove = modChange.getAction() == ModifierAction.ModifierAction_REMOVED;
         if ((head.getInstancedAbilityId() == 0 && !isRemove) || head.getInstancedModifierId() > 2000) {
             return;
         }
 
-        if (head.getIsServerbuffModifier()) {
+        // is_serverbuff_modifier has no named counterpart in the 7.0 AbilityInvokeEntryHead.
+        if (false) {
 
             this.player.getScene().broadcastPacket(new PacketAbilityInvocationsNotify(invoke));
             return;
@@ -696,7 +1028,7 @@ public final class AbilityManager extends BasePlayerManager {
             return;
         }
 
-        if (modChange.getAction() == ModifierAction.MODIFIER_ACTION_ADDED) {
+        if (modChange.getAction() == ModifierAction.ModifierAction_ADDED) {
             AbilityData instancedAbilityData = null;
             Ability instancedAbility = null;
             boolean fromParentName = false;
@@ -718,8 +1050,11 @@ public final class AbilityManager extends BasePlayerManager {
                 if (head.getTargetId() != 0) {
                     var targetEntity = this.player.getScene().getEntityById(head.getTargetId());
                     if (targetEntity != null) {
-                        if ((head.getInstancedAbilityId() - 1) < targetEntity.getInstancedAbilities().size()) {
-                            instancedAbility = targetEntity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+                        // An id of 0 means "no instanced ability" and is common - without the lower
+                        // bound that becomes get(-1) rather than a miss.
+                        var index = head.getInstancedAbilityId() - 1;
+                        if (index >= 0 && index < targetEntity.getInstancedAbilities().size()) {
+                            instancedAbility = targetEntity.getInstancedAbilities().get(index);
                             if (instancedAbility != null) instancedAbilityData = instancedAbility.getData();
                         }
                     }
@@ -727,8 +1062,9 @@ public final class AbilityManager extends BasePlayerManager {
             }
 
             if (instancedAbilityData == null) {
-                if ((head.getInstancedAbilityId() - 1) < entity.getInstancedAbilities().size()) {
-                    instancedAbility = entity.getInstancedAbilities().get(head.getInstancedAbilityId() - 1);
+                var index = head.getInstancedAbilityId() - 1;
+                if (index >= 0 && index < entity.getInstancedAbilities().size()) {
+                    instancedAbility = entity.getInstancedAbilities().get(index);
                     if (instancedAbility != null) instancedAbilityData = instancedAbility.getData();
                 }
             }
@@ -748,16 +1084,16 @@ public final class AbilityManager extends BasePlayerManager {
                 Grasscutter.getLogger().trace("handleModifierChange: modifiers map is null for ability={} entityId={}", instancedAbilityData.abilityName, invoke.getEntityId());
                 return;
             }
-            var modifierArray = instancedAbilityData.modifiers.values().toArray();
-            if (modChange.getModifierLocalId() >= modifierArray.length) {
+            var modifierLocalId = modChange.getModifierLocalId();
+            var modifierData = instancedAbilityData.modifierAt(modifierLocalId);
+            if (modifierData == null) {
                 Grasscutter.getLogger().trace(
                     "handleModifierChange: modifierLocalId={} out of bounds for ability={} (modifierCount={}), entityId={} modId={}",
-                    modChange.getModifierLocalId(), instancedAbilityData.abilityName, modifierArray.length,
+                    modifierLocalId, instancedAbilityData.abilityName, instancedAbilityData.modifierCount(),
                     invoke.getEntityId(), head.getInstancedModifierId());
                 return;
             }
 
-            var modifierData = (AbilityModifier) modifierArray[modChange.getModifierLocalId()];
             if (entity.getInstancedModifiers().containsKey(head.getInstancedModifierId())) {
                 Grasscutter.getLogger()
                     .trace(
@@ -798,9 +1134,9 @@ public final class AbilityManager extends BasePlayerManager {
             if (fromParentName && !hasOrchestration && resolvedParentName != null) {
                 outer:
                 for (var avatarEntity : this.player.getTeamManager().getActiveTeam()) {
-                    if (avatarEntity == entity) continue;
                     for (var a : avatarEntity.getInstancedAbilities()) {
-                        if (a != null && a.getData() != null
+                        if (a != null
+                                && a.getData() != null
                                 && resolvedParentName.equals(a.getData().abilityName)) {
                             instancedAbility = a;
                             break outer;
@@ -816,23 +1152,215 @@ public final class AbilityManager extends BasePlayerManager {
                 entity.getInstancedModifiers().put(head.getInstancedModifierId(), modifier);
             }
 
-            entity.applyModifierProperties(
-                    head.getInstancedModifierId(), modifierData, instancedAbility);
+            runServerOwnedMixinsOnAttach(instancedAbility, modifierData, invoke.getAbilityData());
 
-            if (fromParentName && hasOrchestration && modifierData.onAdded != null) {
+            // Light-lock gadgets report modifier additions by instance ID, without parentAbilityName.
+            // Their Lua receiver and follower cleanup must also run for that explicit client request.
+            if (((fromParentName && hasOrchestration)
+                    || isLightLockAbility(instancedAbilityData))
+                    && modifierData.onAdded != null) {
                 final var finalAbility = instancedAbility;
                 final var finalEntity = entity;
                 for (var a : modifierData.onAdded) {
-                    executeAction(finalAbility, a, invoke.getAbilityData(), finalEntity);
+                    executeActionNow(finalAbility, a, invoke.getAbilityData(), finalEntity);
+                }
+            } else if (modifierData.onAdded != null) {
+                // A modifier whose onAdded neither attaches nor applies another modifier used to run
+                // nothing at all here, so anything the server alone is meant to do - spawning an
+                // avatar's summon, most visibly - never happened. Only the state and spawn actions
+                // are run: damage, healing and energy stay off this path, since the client already
+                // resolves those and running them again would double them up.
+                final var ownedAbility = instancedAbility;
+                final var ownedEntity = entity;
+                runServerOwned(
+                    () -> {
+                        for (var a : modifierData.onAdded) {
+                            if (a != null && SERVER_OWNED_ON_ADDED.contains(a.type)) {
+                                executeActionNow(ownedAbility, a, invoke.getAbilityData(), ownedEntity);
+                            }
+                        }
+                    });
+            }
+
+            // Lauma C1: HealHP usually arrives only as MODIFIER_CHANGE, never through ApplyModifier.
+            try {
+                if (LaumaC1HealHelper.isLaumaC1Ability(instancedAbilityData.abilityName)) {
+                    LaumaC1HealHelper.onModifierAdded(this.player, instancedAbilityData.abilityName, modifierData);
+                }
+            } catch (Throwable ignored) {
+            }
+
+            try {
+                String lohenModName =
+                        instancedAbilityData.modifierNameAt(modChange.getModifierLocalId());
+                if (LohenExtraArtSkillLevelHelper.isExtraArtModifier(lohenModName) && instancedAbility != null) {
+                    LohenExtraArtSkillLevelHelper.onModifierApplied(
+                            instancedAbility, head.getInstancedModifierId());
+                }
+            } catch (Throwable ignored) {
+            }
+
+            // Max HP ratio props (Yelan C4 / Furina overflow / Columbina C2, etc.) arrive as
+            // client MODIFIER_CHANGE, not via ActionAttachModifier - apply here.
+            String resolvedModName = null;
+            try {
+                for (var e : instancedAbilityData.modifiers.entrySet()) {
+                    if (e.getValue() == modifierData) {
+                        resolvedModName = e.getKey();
+                        break;
+                    }
+                }
+                if (resolvedModName == null) {
+                    resolvedModName =
+                            instancedAbilityData.modifierNameAt(modChange.getModifierLocalId());
+                }
+                if (resolvedModName != null && AbilityMaxHpRatioHelper.hasMaxHpRatio(modifierData)) {
+                    AbilityMaxHpRatioHelper.onModifierAdded(
+                            instancedAbility, resolvedModName, modifierData, entity);
+                }
+            } catch (Throwable t) {
+                Grasscutter.getLogger().warn("[MaxHPRatio] modifierChange add failed: {}", t.toString());
+            }
+
+            // Hypostasis LockHP / Invincible / ShieldBar arrive as client MODIFIER_CHANGE.
+            try {
+                // Same resolved name the MaxHPRatio block above uses: the limbo bookkeeping keys on
+                // ability + modifier name, and a null name would leave the modifier untracked.
+                entity.onAddAbilityModifier(modifierData, instancedAbility, resolvedModName);
+                emu.grasscutter.game.world.EffigyCombatHelper.onModifiersChanged(entity);
+            } catch (Throwable ignored) {
+            }
+
+            // Arlecchino 重击回收 (CA mark reclaim): the client only sends the modifier ADD for
+            // ExtraAttack_AddHpDebts_1/2 (65%/130%) and never runs the onAdded AddHPDebts itself.
+            // AddHPDebts is not in SERVER_OWNED_ON_ADDED, so nobody granted the Bond and 重击回收
+            // looked dead. The modifier is attached to the CA's client gadget, so a plain
+            // target="Caster" resolves to a non-avatar and the grant is dropped ("Cannot add HP
+            // debt to non-avatar entity"). Retarget at the gadget's true owner (Arlecchino) and run
+            // the onAdded AddHPDebts on it to restore the reclaim.
+            if (resolvedModName != null
+                    && ArlecchinoBoLUtil.isExtraAttackAddHpDebtsModifier(resolvedModName)
+                    && modifierData.onAdded != null) {
+                GameEntity bolCaster = entity != null ? entity.getTrueOwner() : null;
+                if (!(bolCaster instanceof EntityAvatar)) {
+                    EntityAvatar cur = this.player.getTeamManager().getCurrentAvatarEntity();
+                    if (cur != null) {
+                        bolCaster = cur;
+                    }
+                }
+                if (bolCaster instanceof EntityAvatar bolAvatar
+                        && bolAvatar.getAvatar() != null
+                        && bolAvatar.getAvatar().getAvatarId() == 10000096
+                        && instancedAbilityData != null) {
+                    Ability bolAbility = new Ability(instancedAbilityData, bolAvatar, this.player);
+                    for (var bolAction : modifierData.onAdded) {
+                        if (bolAction != null
+                                && bolAction.type == AbilityModifierAction.Type.AddHPDebts) {
+                            executeActionNow(
+                                    bolAbility, bolAction, invoke.getAbilityData(), bolAvatar);
+                        }
+                    }
+                    Grasscutter.getLogger()
+                            .info(
+                                    "[BoL] ExtraAttack reclaim {} → caster uid {} onAdded AddHPDebts",
+                                    resolvedModName,
+                                    bolAvatar.getAvatar().getAvatarId());
+                } else {
+                    Grasscutter.getLogger()
+                            .info(
+                                    "[BoL] ExtraAttack reclaim {} caster unresolved (trueOwner={})",
+                                    resolvedModName,
+                                    bolCaster);
                 }
             }
-        } else if (modChange.getAction() == ModifierAction.MODIFIER_ACTION_REMOVED) {
-            entity.revertModifierProperties(head.getInstancedModifierId());
-            entity.getInstancedModifiers().remove(head.getInstancedModifierId());
+        } else if (modChange.getAction() == ModifierAction.ModifierAction_REMOVED) {
+            AbilityModifierController removed =
+                    entity.getInstancedModifiers().remove(head.getInstancedModifierId());
+            if (removed != null) {
+                emu.grasscutter.game.quest.LiyueAmberQuestSupport.onModifierRemoved(
+                        this.player, entity, removed.getAbilityData(), removed.getModifierData());
+            }
+            if (removed != null && isLightLockAbility(removed.getAbilityData())
+                    && removed.getModifierData().onRemoved != null) {
+                for (var action : removed.getModifierData().onRemoved) {
+                    executeActionNow(removed.getAbility(), action, invoke.getAbilityData(), entity);
+                }
+            }
+            try {
+                LohenExtraArtSkillLevelHelper.onModifierRemovedByInstance(
+                        this.player, head.getInstancedModifierId());
+            } catch (Throwable ignored) {
+            }
+            try {
+                if (removed != null && AbilityMaxHpRatioHelper.hasMaxHpRatio(removed.getModifierData())) {
+                    String modName = null;
+                    if (removed.getAbilityData() != null) {
+                        for (var e : removed.getAbilityData().modifiers.entrySet()) {
+                            if (e.getValue() == removed.getModifierData()) {
+                                modName = e.getKey();
+                                break;
+                            }
+                        }
+                    }
+                    if (modName == null) {
+                        modName = "instanced_" + head.getInstancedModifierId();
+                    }
+                    AbilityMaxHpRatioHelper.onModifierRemoved(removed.getAbility(), modName, entity);
+                }
+            } catch (Throwable t) {
+                Grasscutter.getLogger().warn("[MaxHPRatio] modifierChange remove failed: {}", t.toString());
+            }
+            try {
+                entity.refreshModifierLockHP();
+                entity.refreshModifierInvincible();
+                // Same story for limbo: the flag is sticky on the entity, so a limbo modifier the
+                // client just retired has to release the gate or the entity never takes damage
+                // below its threshold again.
+                if (removed != null && removed.getModifierData() != null) {
+                    boolean wasLimbo =
+                            removed.getModifierData().state
+                                    == emu.grasscutter.data.binout.AbilityModifier.State.Limbo;
+                    if (wasLimbo) {
+                        String limboModName = null;
+                        if (removed.getAbilityData() != null) {
+                            for (var e : removed.getAbilityData().modifiers.entrySet()) {
+                                if (e.getValue() == removed.getModifierData()) {
+                                    limboModName = e.getKey();
+                                    break;
+                                }
+                            }
+                        }
+                        if (limboModName == null && removed.getAbilityData() != null) {
+                            limboModName =
+                                    removed.getAbilityData()
+                                            .modifierNameAt(modChange.getModifierLocalId());
+                        }
+                        if (limboModName != null) {
+                            entity.onLimboModifierRemoved(removed.getAbility(), limboModName);
+                        }
+                    }
+                }
+                emu.grasscutter.game.world.EffigyCombatHelper.onModifiersChanged(entity);
+            } catch (Throwable ignored) {
+            }
         } else {
 
             Grasscutter.getLogger().debug("Unknown action");
         }
+        try {
+            ClorindeBoLUtil.onModifierChange(this.player, invoke);
+        } catch (Throwable ignored) {
+            // Compatibility hook must not affect modifier state.
+        }
+    }
+
+    private static boolean isLightLockAbility(AbilityData data) {
+        if (data == null || data.abilityName == null) return false;
+        return switch (data.abilityName) {
+            case "Test_LightLock_Point", "Test_LightLock_Seal",
+                    "Test_LightLock_Seal_Logic", "Test_LightLock_Bullet" -> true;
+            default -> false;
+        };
     }
 
     private void handleMixinCostStamina(AbilityInvokeEntry invoke)
@@ -841,11 +1369,20 @@ public final class AbilityManager extends BasePlayerManager {
 
     private void handleGenerateElemBall(AbilityInvokeEntry invoke)
         throws InvalidProtocolBufferException {
+        // Client energy orbs arrive as GENERATE_ELEM_BALL invokes; the ability-action
+        // path alone misses many avatars (Arlecchino / Nicole / etc.).
+        this.player.getEnergyManager().handleGenerateElemBall(invoke);
     }
 
     private void handleGlobalFloatValue(AbilityInvokeEntry invoke)
         throws InvalidProtocolBufferException {
         var entity = this.player.getScene().getEntityById(invoke.getEntityId());
+        if (entity == null && this.player.getTeamManager() != null) {
+            var teamEntity = this.player.getTeamManager().getEntity();
+            if (teamEntity != null && teamEntity.getId() == invoke.getEntityId()) {
+                entity = teamEntity;
+            }
+        }
         if (entity == null) return;
 
         var entry = AbilityScalarValueEntry.parseFrom(invoke.getAbilityData());
@@ -864,140 +1401,97 @@ public final class AbilityManager extends BasePlayerManager {
         float value = entry.getFloatValue();
         if (Float.isNaN(value)) return;
 
-        if (key.equals("MoonOvergrowPoint_All")) {
-            value = 50f;
-            this.player.sendPacket(new PacketServerGlobalValueChangeNotify(entity, key, 50f));
-        }
+        // MoonOvergrowPoint_All (dew points) is client-owned and capped at 3 in ability
+        // configs. Never force-echo a fake value - that wiped Columbina PermanentSkill_2's
+        // mountain dew grants and broke AddGlobalValue(max=3) bookkeeping.
 
         if ("_ABILITY_Clorinde_Dodge_HealFlag".equals(key) && value == 0f
                 && entity instanceof EntityAvatar clorinde
                 && clorinde.getAvatar().getAvatarId() == 10000098) {
+            // Stock clearing the flag would wrongly grant BoL - delegated to the util, which no-ops.
             applyClorindeBoL(clorinde);
         }
 
-        if ("_Arlecchino_HPDebtsMark_Level".equals(key)) {
-            Float prev = entity.getGlobalAbilityValues().get(key);
-            if (value == 0f && prev != null && prev > 0f) {
+        // Skirk void-rift absorb: AddSpecialEnergy is muteRemoteAction and never reaches the server.
+        // The client still syncs pickable count GVs - use those as the grant signal.
+        float previous = entity.getGlobalAbilityValues().getOrDefault(key, 0f);
+        try {
+            SkirkCunningHelper.onPickableGlobalFloat(this.player, entity, key, previous, value);
+        } catch (Throwable ignored) {
+        }
 
-                boolean isChargedAttack = arlecchinoChargedAttackTime > arlecchinoESkillTime
-                    && (System.currentTimeMillis() - arlecchinoChargedAttackTime) < 5000L;
-                if (isChargedAttack) {
-                    for (var teamMember : this.player.getTeamManager().getActiveTeam()) {
-                        if (teamMember.getAvatar().getAvatarId() == 10000096) {
-                            applyArlecchinoBoL(teamMember, prev.intValue());
-                            break;
-                        }
+        // Mavuika: the client drains Nightsoul through GLOBAL_FLOAT, not NyxSet/ChangeNyxValue.
+        // The hook must run before the put, otherwise Fighting Spirit cannot convert from that drain.
+        try {
+            if ("NyxValue".equals(key)
+                    || "_ABILITY_Mavuika_IsNyxState".equals(key)
+                    || "_ABILITY_Mavuika_IsSpecialMove".equals(key)) {
+                MavuikaSpiritHelper.beforeGlobalFloatPut(this.player, entity, key, value);
+            }
+        } catch (Throwable ignored) {
+        }
+
+        if ("NyxValue".equals(key) && value < previous) {
+            NightsoulStaminaExempt.markNyxCostActive(entity);
+        }
+
+        // Official reclaim is ExtraAttack_AddHpDebts_* via ActionAddHPDebts only.
+        // A second grant here previously double-stacked 65%/130% and capped BoL instantly.
+
+        // Preserve authoritative Bond on predicted resets, but only a burst source may arm Q.
+        if (isArlecchinoBoLFloatKey(key)
+                && entity instanceof EntityAvatar av
+                && av.getAvatar() != null
+                && av.getAvatar().getAvatarId() == 10000096) {
+            synchronized (av) {
+                float cur = av.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
+                if (cur > 0.5f && value <= Math.max(0.5f, cur * 0.15f)) {
+                    if (!ArlecchinoBurstBoL.isConsumeBlocked(av)) {
+                        ArlecchinoBurstBoL.tryPreArmFromAbility(
+                                resolveInvocationAbility(entity, invoke), av);
                     }
+                    entity.getGlobalAbilityValues().put(key, cur);
+                    entity.onAbilityValueUpdate();
+                    ArlecchinoBoLSync.repinUiBar(av);
+                    return;
                 }
             }
         }
 
         entity.getGlobalAbilityValues().put(key, value);
         entity.onAbilityValueUpdate();
+
+        try {
+            emu.grasscutter.game.world.EffigyCombatHelper.onGlobalValue(entity, key, value);
+        } catch (Throwable ignored) {
+        }
+
+        try {
+            if (("MoonOvergrowPoint_All".equals(key) || "RGV_TempMoonOvergrowPoint".equals(key))
+                    && value > previous + 0.01f) {
+                LaumaC1HealHelper.onMoonBloom(this.player);
+            }
+        } catch (Throwable ignored) {
+        }
     }
 
     private void applyClorindeBoL(EntityAvatar clorinde) {
-        applyClorindeBoL(clorinde, 0.35f);
+        ClorindeBoLUtil.applyNoArgHook(clorinde);
     }
 
     private void applyClorindeBoL(EntityAvatar clorinde, float ratio) {
-        float maxHp = clorinde.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-        float debtAmount = ratio * maxHp;
-        float curDebt = clorinde.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
-        float newDebt = Math.min(curDebt + debtAmount, 2f * maxHp);
-        float change = newDebt - curDebt;
-        if (change <= 0f) return;
-        clorinde.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS, newDebt);
-        var scene = this.player.getScene();
-        scene.broadcastPacket(new PacketEntityFightPropUpdateNotify(clorinde, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
-        scene.broadcastPacket(new PacketEntityFightPropChangeReasonNotify(
-            clorinde,
-            FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
-            change,
-            PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY,
-            ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_ADD_ABILITY
-        ));
+        ClorindeBoLUtil.applyFromSkillHook(clorinde, ratio);
     }
 
-    private float getArlecchinoBoLRatio(Avatar avatar, String varName) {
-        var depot = GameData.getAvatarSkillDepotDataMap().get(avatar.getSkillDepotId());
-        if (depot == null) return 0f;
-        var skillLevelMap = avatar.getSkillLevelMap();
-        var result = new float[]{0f};
-
-        depot.getSkillsAndEnergySkill().forEach(skillId -> {
-            if (result[0] > 0f) return;
-            var skillData = GameData.getAvatarSkillDataMap().get(skillId);
-            if (skillData == null || skillData.getProudSkillGroupId() == 0) return;
-            int level = skillLevelMap.getOrDefault(skillId, 1);
-            var proudSkill = GameData.getProudSkillDataMap().get(skillData.getProudSkillGroupId() * 100 + level);
-            if (proudSkill == null || proudSkill.getOpenConfig() == null) return;
-            var entry = GameData.getOpenConfigEntries().get(proudSkill.getOpenConfig());
-            if (entry == null || entry.getAbilityVarSetters() == null) return;
-            float[] params = proudSkill.getParamList();
-            if (params == null) return;
-            for (var setter : entry.getAbilityVarSetters()) {
-                if (!varName.equals(setter.getVarName())) continue;
-                int idx = setter.getParamIndex();
-                if (idx < params.length) { result[0] = params[idx]; return; }
-            }
-        });
-        if (result[0] > 0f) return result[0];
-
-        if (depot.getInherentProudSkillOpens() != null) {
-            for (var inherent : depot.getInherentProudSkillOpens()) {
-                if (result[0] > 0f) break;
-                if (inherent.getProudSkillGroupId() == 0) continue;
-                var proudSkill = GameData.getProudSkillDataMap().get(inherent.getProudSkillGroupId() * 100 + 1);
-                if (proudSkill == null || proudSkill.getOpenConfig() == null) continue;
-                var entry = GameData.getOpenConfigEntries().get(proudSkill.getOpenConfig());
-                if (entry == null || entry.getAbilityVarSetters() == null) continue;
-                float[] params = proudSkill.getParamList();
-                if (params == null) continue;
-                for (var setter : entry.getAbilityVarSetters()) {
-                    if (!varName.equals(setter.getVarName())) continue;
-                    int idx = setter.getParamIndex();
-                    if (idx < params.length) { result[0] = params[idx]; break; }
-                }
-            }
-        }
-        return result[0];
-    }
-
-    public void flushPendingBoL() {
-
-    }
+    public void flushPendingBoL() {}
 
     public void onArlecchinoSkillNotify(int skillId) {
+        // ys7.0 skill timestamps (CA / E). Burst arming is PR ArlecchinoBurstBoL.
         if (skillId == 10961) {
             arlecchinoChargedAttackTime = System.currentTimeMillis();
         } else if (skillId == 10962) {
             arlecchinoESkillTime = System.currentTimeMillis();
         }
-    }
-
-    private void applyArlecchinoBoL(EntityAvatar arlecchino, int markLevel) {
-        String varName = markLevel >= 2 ? "HpDebts_Level_2_Ratio" : "HpDebts_Level_1_Ratio";
-        float ratio = getArlecchinoBoLRatio(arlecchino.getAvatar(), varName);
-        if (ratio <= 0f) return;
-
-        float maxHp = arlecchino.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
-        float debt = ratio * maxHp;
-        float curDebt = arlecchino.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
-        float newDebt = Math.min(curDebt + debt, 2f * maxHp);
-        float change = newDebt - curDebt;
-        if (change <= 0f) return;
-
-        arlecchino.setFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS, newDebt);
-        var scene = this.player.getScene();
-        scene.broadcastPacket(new PacketEntityFightPropUpdateNotify(arlecchino, FightProperty.FIGHT_PROP_CUR_HP_DEBTS));
-        scene.broadcastPacket(new PacketEntityFightPropChangeReasonNotify(
-            arlecchino,
-            FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
-            change,
-            PropChangeReasonOuterClass.PropChangeReason.PropChangeReason_PROP_CHANGE_ABILITY,
-            ChangeHpDebtsReasonOuterClass.ChangeHpDebtsReason.CHANGE_HP_DEBTS_REASON_CHANGE_HP_DEBTS_ADD_ABILITY
-        ));
     }
 
     private void addAbilityByHash(EntityAvatar entity, int hash) {
@@ -1006,191 +1500,28 @@ public final class AbilityManager extends BasePlayerManager {
         entity.getInstancedAbilities().add(data != null ? new Ability(data, entity, player) : null);
     }
 
-    private static final int MAX_ATTACH_DEPTH = 8;
-
-    // guards re-entry: executeAction dispatches asynchronously, so a depth counter cannot
-    // bound recursion through ActionAttachModifier. A modifier stays attached until detached.
-    private final java.util.Set<String> attachedModifiers =
-            java.util.concurrent.ConcurrentHashMap.newKeySet();
-
-    private static String attachKey(GameEntity entity, Ability ability, String modifierName) {
-        return entity.getId() + "/" + ability.getData().abilityName + "/" + modifierName;
-    }
-
-    public static int syntheticModifierId(String abilityName, String modifierName) {
-        return -Math.abs((abilityName + "/" + modifierName).hashCode());
-    }
-
-    /** Server-side modifier attach: applies properties, runs onAdded, then follows the modifier's own mixins. */
-    public void attachModifier(
-            GameEntity entity, Ability ability, String modifierName, ByteString abilityData, int depth) {
-        if (entity == null || ability == null || modifierName == null || modifierName.isEmpty()) return;
-        if (depth > MAX_ATTACH_DEPTH) return;
-        if (ability.getData() == null || ability.getData().modifiers == null) return;
-
-        var modifierData = ability.getData().modifiers.get(modifierName);
-        if (modifierData == null) return;
-
-        if (!this.attachedModifiers.add(attachKey(entity, ability, modifierName))) return;
-
-        entity.applyModifierProperties(
-                syntheticModifierId(ability.getData().abilityName, modifierName), modifierData, ability);
-
-        if (modifierData.onAdded != null) {
-            for (var action : modifierData.onAdded) {
-                if (action != null) this.executeAction(ability, action, abilityData, entity);
-            }
+    /** Keep already-initialized server ability IDs in sync with changed avatar embryos. */
+    public void syncPhlogistonAvatarAbility(EntityAvatar avatar, boolean inNatlan) {
+        var abilities = avatar.getInstancedAbilities();
+        if (abilities.isEmpty()) return; // Lazy initialization will use the current region.
+        var base = avatar.getAvatar().getAvatarData().getAbilities();
+        int index = base == null ? 0 : base.size();
+        int phlogistonHash = Utils.abilityHash("DynamicAbility_Phlogiston");
+        for (int hash : GameConstants.DEFAULT_ABILITY_HASHES) {
+            if (hash == phlogistonHash) break;
+            index++;
         }
-
-        this.processModifierMixins(entity, ability, modifierData, abilityData, depth);
-    }
-
-    public void detachModifier(GameEntity entity, Ability ability, String modifierName) {
-        if (entity == null || ability == null || ability.getData() == null) return;
-        if (!this.attachedModifiers.remove(attachKey(entity, ability, modifierName))) return;
-        entity.revertModifierProperties(
-                syntheticModifierId(ability.getData().abilityName, modifierName));
-    }
-
-    private void processModifierMixins(
-            GameEntity entity,
-            Ability ability,
-            AbilityModifier modifierData,
-            ByteString abilityData,
-            int depth) {
-        if (modifierData.modifierMixins == null) return;
-
-        for (var mixin : modifierData.modifierMixins) {
-            if (mixin == null || mixin.type == null) continue;
-
-            switch (mixin.type) {
-                case AttachModifierToGlobalValueMixin -> this.evaluateGlobalValueMixin(
-                        entity, ability, mixin, abilityData, depth);
-                case CurLocalAvatarMixinV2, CurLocalAvatarMixin -> {
-                    var avatar = this.player.getTeamManager().getCurrentAvatarEntity();
-                    if (avatar != null
-                            && mixin.modifierName != null
-                            && !mixin.modifierName.isJsonNull()) {
-                        for (var name : mixin.getModifierNames()) {
-                            this.attachModifier(avatar, ability, name, abilityData, depth + 1);
-                        }
-                    }
-                }
-                default -> {}
-            }
+        if (index >= abilities.size()) return; // No fully initialized default-ability sequence.
+        var current = abilities.get(index);
+        boolean present = current != null && current.getData() != null
+                && "DynamicAbility_Phlogiston".equals(current.getData().abilityName);
+        if (inNatlan && !present) {
+            var name = GameData.getAbilityHashes().get(phlogistonHash);
+            var data = name == null ? null : GameData.getAbilityData(name);
+            abilities.add(index, data == null ? null : new Ability(data, avatar, player));
+        } else if (!inNatlan && present) {
+            abilities.remove(index);
         }
-    }
-
-    /** Attaches whichever modifierNameStep the watched global value currently selects. */
-    public void evaluateGlobalValueMixin(
-            GameEntity entity,
-            Ability ability,
-            AbilityMixinData mixin,
-            ByteString abilityData,
-            int depth) {
-        if (mixin.globalValueKey == null || mixin.modifierNameSteps.isEmpty()) return;
-
-        var source = this.resolveGlobalValueSource(entity, mixin.globalValueTarget);
-        if (source == null) return;
-
-        float value =
-                source.getGlobalAbilityValues()
-                        .getOrDefault(
-                                mixin.globalValueKey, mixin.defaultGlobalValueOnCreate.get(ability));
-
-        int step = -1;
-        if (mixin.valueSteps.isEmpty()) {
-            step = value > 0 ? 0 : -1;
-        } else {
-            for (int i = 0; i < mixin.valueSteps.size(); i++) {
-                float lower = mixin.valueSteps.get(i).get();
-                float upper =
-                        (i + 1) < mixin.valueSteps.size()
-                                ? mixin.valueSteps.get(i + 1).get()
-                                : Float.MAX_VALUE;
-                if (value >= lower && value < upper) {
-                    step = i;
-                    break;
-                }
-            }
-        }
-
-        for (int i = 0; i < mixin.modifierNameSteps.size(); i++) {
-            var name = mixin.modifierNameSteps.get(i);
-            if (name == null || name.isEmpty()) continue;
-
-            if (i == step) {
-                this.attachModifier(entity, ability, name, abilityData, depth + 1);
-            } else if (mixin.removeAppliedModifier) {
-                this.detachModifier(entity, ability, name);
-            }
-        }
-    }
-
-    private GameEntity resolveGlobalValueSource(GameEntity entity, String target) {
-        if (target == null) return entity;
-        return switch (target) {
-            case "Team" -> this.player.getTeamManager().getEntity();
-            case "CurLocalAvatar" -> this.player.getTeamManager().getCurrentAvatarEntity();
-            default -> entity;
-        };
-    }
-
-    /**
-     * Re-runs global-value watchers that act as roots (RegisterOnce mixins). A modifier is only a
-     * root when nothing else in the ability attaches it - otherwise its watcher would fire without
-     * the parent that is supposed to gate it.
-     */
-    public void refreshGlobalValueWatchers(GameEntity entity) {
-        if (entity == null) return;
-        for (var ability : entity.getInstancedAbilities()) {
-            if (ability == null || ability.getData() == null || ability.getData().modifiers == null)
-                continue;
-
-            var attachedByOthers = this.collectReferencedModifiers(ability);
-
-            for (var namedModifier : ability.getData().modifiers.entrySet()) {
-                var modifierData = namedModifier.getValue();
-                if (modifierData == null || modifierData.modifierMixins == null) continue;
-                if (attachedByOthers.contains(namedModifier.getKey())) continue;
-
-                for (var mixin : modifierData.modifierMixins) {
-                    if (mixin != null
-                            && mixin.type == AbilityMixinData.Type.AttachModifierToGlobalValueMixin) {
-                        this.evaluateGlobalValueMixin(
-                                entity, ability, mixin, ByteString.EMPTY, 0);
-                    }
-                }
-            }
-        }
-    }
-
-    /** Modifier names that some other modifier in this ability attaches or steps to. */
-    private java.util.Set<String> collectReferencedModifiers(Ability ability) {
-        var referenced = new java.util.HashSet<String>();
-        for (var modifierData : ability.getData().modifiers.values()) {
-            if (modifierData == null) continue;
-
-            for (var actions : new AbilityModifierAction[][] {
-                modifierData.onAdded, modifierData.onRemoved, modifierData.onThinkInterval
-            }) {
-                if (actions == null) continue;
-                for (var action : actions) {
-                    if (action != null && action.modifierName != null) referenced.add(action.modifierName);
-                }
-            }
-
-            if (modifierData.modifierMixins != null) {
-                for (var mixin : modifierData.modifierMixins) {
-                    if (mixin == null) continue;
-                    referenced.addAll(mixin.modifierNameSteps);
-                    if (mixin.modifierName != null && !mixin.modifierName.isJsonNull()) {
-                        referenced.addAll(mixin.getModifierNames());
-                    }
-                }
-            }
-        }
-        return referenced;
     }
 
     private void initializeEntityAbilities(EntityAvatar avatar) {
@@ -1198,10 +1529,10 @@ public final class AbilityManager extends BasePlayerManager {
         if (avatarData.getAbilities() != null) {
             for (int hash : avatarData.getAbilities()) addAbilityByHash(avatar, hash);
         }
-        boolean inNatlan = player.getScene() != null && player.getScene().getId() == 101;
-        int phlogistonHash = emu.grasscutter.utils.Utils.abilityHash("DynamicAbility_Phlogiston");
-        for (int hash : emu.grasscutter.GameConstants.DEFAULT_ABILITY_HASHES) {
-            if (hash == phlogistonHash && !inNatlan) continue;
+        // Match EntityAvatar.getAbilityControlBlock() exactly, including dense ability IDs.
+        boolean inNatlan = player.isInNatlan();
+        for (int hash : GameConstants.DEFAULT_ABILITY_HASHES) {
+            if (!GameConstants.shouldAttachDefaultAvatarAbility(hash, inNatlan)) continue;
             addAbilityByHash(avatar, hash);
         }
         for (int hash : player.getTeamManager().getTeamResonancesConfig()) {
@@ -1215,8 +1546,7 @@ public final class AbilityManager extends BasePlayerManager {
             var data = GameData.getAbilityData(name);
             avatar.getInstancedAbilities().add(data != null ? new Ability(data, avatar, player) : null);
         }
-
-        this.refreshGlobalValueWatchers(avatar);
+        emu.grasscutter.game.icecreature.IceCreatureAbilities.addInstances(player, avatar);
     }
 
     private void invokeAction(
@@ -1271,39 +1601,12 @@ public final class AbilityManager extends BasePlayerManager {
             (abilityName != null && abilityName.startsWith("Avatar_") && abilityName.endsWith("_MoonLight"))
             || getMoonLightAbilityHashes().contains(abHash);
 
-        if (isTeamMoonPhase) {
-            long moonCount = this.player.getTeamManager().getActiveTeam().stream()
-                .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(
-                    e.getAvatar().getAvatarId()))
-                .count();
-            var teamEntity = this.player.getTeamManager().getEntity();
-            int teamEntityId = teamEntity.getId();
-            teamEntity.getGlobalAbilityValues().put("SGV_MoonPhaseLevel", (float) moonCount);
-            this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                teamEntityId, "SGV_MoonPhaseLevel", (float) moonCount));
-            if (moonCount > 0) {
-                teamEntity.getGlobalAbilityValues().put("MoonOvergrowPoint_All", 50f);
-                this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                    teamEntityId, "MoonOvergrowPoint_All", 50f));
-            }
-            log.debug("TeamAbility_MoonPhase loaded: sent SGV_MoonPhaseLevel={}, MoonOvergrowPoint_All={}",
-                moonCount, moonCount > 0 ? 50 : 0);
-        }
-
-        if (isMoonLightAbility) {
-            long moonCount = this.player.getTeamManager().getActiveTeam().stream()
-                .filter(e -> PacketPlayerEnterSceneInfoNotify.getMoonphaseIds().contains(
-                    e.getAvatar().getAvatarId()))
-                .count();
-            if (moonCount > 0) {
-                var teamEntity = this.player.getTeamManager().getEntity();
-                int teamEntityId = teamEntity.getId();
-                teamEntity.getGlobalAbilityValues().put("MoonOvergrowPoint_All", 50f);
-                this.player.sendPacket(new PacketServerGlobalValueChangeNotify(
-                    teamEntityId, "MoonOvergrowPoint_All", 50f));
-                log.debug("MoonLight ability {} loaded: re-sent MoonOvergrowPoint_All=50 to team entity={}",
-                    abilityName, teamEntityId);
-            }
+        // Repeated here: the client only wires the Moonsign up once its ability exists.
+        if (isTeamMoonPhase || isMoonLightAbility) {
+            var teamManager = this.player.getTeamManager();
+            teamManager.sendMoonsignState();
+            log.debug("{} loaded: re-sent Moonsign level={} to team entity={}",
+                abilityName, teamManager.getMoonsignLevel(), teamManager.getEntity().getId());
         }
 
         if (abilityData == null) {
@@ -1392,9 +1695,23 @@ public final class AbilityManager extends BasePlayerManager {
 
         var killState = AbilityMetaSetKilledState.parseFrom(invoke.getAbilityData());
         if (killState.getKilled()) {
-            if (!(entity instanceof EntityAvatar) && !(entity instanceof EntityClientGadget)) {
-                scene.killEntity(entity);
+            // Avatar / client gadgets: never. Monsters: only when HP is already depleted -
+            // BurstAtk / shield cleanup often sends SetKilled on the boss entity id and must not
+            // clear weekly domains (Raiden 20125) or stack trounce flowers.
+            if (entity instanceof EntityAvatar || entity instanceof EntityClientGadget) {
+                return;
             }
+            if (entity instanceof EntityMonster monster) {
+                if (monster.isAlive()) {
+                    Grasscutter.getLogger()
+                            .debug(
+                                    "Ignored SetKilled on living monster entityId={} monsterId={}",
+                                    entity.getId(),
+                                    monster.getEntityTypeId());
+                    return;
+                }
+            }
+            scene.killEntity(entity);
         } else if (!entity.isAlive()) {
             if (entity instanceof EntityAvatar) {
 
@@ -1402,10 +1719,47 @@ public final class AbilityManager extends BasePlayerManager {
                     .trace("Entity of ID {} is EntityAvatar. Ignoring", invoke.getEntityId());
                 return;
             }
-            if (entity.getFightProperties() == null) return;
+            // Entities with no combat state of their own used to answer null here; they now answer
+            // an empty map, and reviving something that never had hit points is still meaningless.
+            if (entity.getFightProperties().isEmpty()) return;
             entity.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
                 entity.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP));
+        }
+    }
+
+    /** Re-applies ModifyAbility proud-skill params onto an avatar ability's specials map. */
+    private void applyAvatarTalentSpecials(Ability ability, Avatar avatar) {
+        if (ability == null || ability.getData() == null || avatar == null) return;
+        String abilityName = ability.getData().abilityName;
+        if (abilityName == null) return;
+
+        var talentVars = GameData.getAbilityTalentVarMap().get(abilityName);
+        if (talentVars == null || talentVars.isEmpty()) return;
+
+        AvatarSkillDepotData depot = GameData.getAvatarSkillDepotDataMap().get(avatar.getSkillDepotId());
+        for (var tv : talentVars) {
+            Integer groupId = GameData.getOpenConfigToProudSkillGroup().get(tv.openConfigName());
+            if (groupId == null) continue;
+
+            int skillLevel = 1;
+            if (depot != null) {
+                int resolvedGroupId = groupId;
+                skillLevel = depot.getSkillsAndEnergySkill()
+                    .filter(sid -> {
+                        var sc = GameData.getAvatarSkillDataMap().get(sid);
+                        return sc != null && sc.getProudSkillGroupId() == resolvedGroupId;
+                    })
+                    .mapToObj(sid -> avatar.getSkillLevelMap().getOrDefault(sid, 1))
+                    .findFirst()
+                    .orElse(1);
+            }
+
+            ProudSkillData proudSkill = GameData.getProudSkillDataMap().get(groupId * 100 + skillLevel);
+            if (proudSkill == null) continue;
+            float[] paramList = proudSkill.getParamList();
+            if (paramList == null || tv.paramIndex() < 0 || tv.paramIndex() >= paramList.length) continue;
+            ability.getAbilitySpecials().put(tv.varName(), paramList[tv.paramIndex()]);
         }
     }
 
@@ -1463,7 +1817,32 @@ public final class AbilityManager extends BasePlayerManager {
     public void addAbilityToEntity(GameEntity entity, AbilityData abilityData) {
         var ability = new Ability(abilityData, entity, this.player);
         entity.getInstancedAbilities().add(ability);
+        // Client SkillObj bullets (e.g. Venti Hexenzirkel infused NA) load with abilitySpecials at
+        // config defaults (Hexenzirkel_NormalAttack_Ratio=0). Without proud-skill Apply here the
+        // client may hit for 0 and the server combat fallback also sees ratio 0.
+        if (entity instanceof EntityClientGadget clientGadget) {
+            var ownerEntity = player.getScene() != null
+                    ? player.getScene().getEntityById(clientGadget.getOriginalOwnerEntityId())
+                    : null;
+            if (ownerEntity instanceof EntityAvatar avatarOwner) {
+                applyAvatarTalentSpecials(ability, avatarOwner.getAvatar());
+            }
+        }
         fireAbilityOnAdded(ability, entity);
+    }
+
+    /** Runs {@code onAbilityStart} - used when TriggerAbility re-fires an existing ability. */
+    public void fireAbilityOnAbilityStart(Ability ability, GameEntity entity) {
+        var data = ability.getData();
+        if (data == null || data.onAbilityStart == null) {
+            return;
+        }
+        for (var action : data.onAbilityStart) {
+            if (action == null || action.type == null) {
+                continue;
+            }
+            executeAction(ability, action, com.google.protobuf.ByteString.EMPTY, entity);
+        }
     }
 
     private void fireAbilityOnAdded(Ability ability, GameEntity entity) {

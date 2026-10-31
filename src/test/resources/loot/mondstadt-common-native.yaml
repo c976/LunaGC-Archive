@@ -1,0 +1,127 @@
+# 7.1 native ordinary Mondstadt puzzle chest fixture; generated from AstaPS-Resource
+# native_52010000: drop_tag=解谜低级蒙德, level=1
+# native_52010100: drop_tag=解谜低级蒙德, level=6
+# Numeric IDs deliberately retain the original resource data for regression tests.
+
+native_500100: &n500100
+  - {reward: 100061, count: "1", weight: 1000}
+  - {reward: 100064, count: "1", weight: 1000}
+
+native_52010011: &n52010011 []
+
+native_500000: &n500000
+  - {reward: 11101, count: "1", weight: 1000}
+  - {reward: 12101, count: "1", weight: 1000}
+  - {reward: 13101, count: "1", weight: 1000}
+  - {reward: 14101, count: "1", weight: 1000}
+  - {reward: 15101, count: "1", weight: 1000}
+
+native_500001: &n500001
+  - {reward: 11201, count: "1", weight: 1000}
+  - {reward: 12201, count: "1", weight: 1000}
+  - {reward: 13201, count: "1", weight: 1000}
+  - {reward: 14201, count: "1", weight: 1000}
+  - {reward: 15201, count: "1", weight: 1000}
+
+native_52010013: &n52010013
+  - {reward: *n500000, count: "1", weight: 8000}
+  - {reward: *n500001, count: "1", weight: 2000}
+
+native_52010014: &n52010014
+  - {reward: 104011, count: "2:90,3:10"}
+  - {reward: 104012, count: "0:80, 1:20"}
+
+native_520000: &n520000
+  - {reward: 60110, count: "1", weight: 1000}
+  - {reward: 60120, count: "1", weight: 1000}
+  - {reward: 60130, count: "1", weight: 1000}
+  - {reward: 60140, count: "1", weight: 1000}
+  - {reward: 60150, count: "1", weight: 1000}
+
+native_520100: &n520100
+  - {reward: 63110, count: "1", weight: 1000}
+  - {reward: 63120, count: "1", weight: 1000}
+  - {reward: 63130, count: "1", weight: 1000}
+  - {reward: 63140, count: "1", weight: 1000}
+  - {reward: 63150, count: "1", weight: 1000}
+
+native_541150: &n541150
+  - {reward: *n520000, count: "1", weight: 1000}
+  - {reward: *n520100, count: "1", weight: 1000}
+
+native_520005: &n520005
+  - {reward: 60210, count: "1", weight: 1000}
+  - {reward: 60220, count: "1", weight: 1000}
+  - {reward: 60230, count: "1", weight: 1000}
+  - {reward: 60240, count: "1", weight: 1000}
+  - {reward: 60250, count: "1", weight: 1000}
+
+native_520105: &n520105
+  - {reward: 63210, count: "1", weight: 1000}
+  - {reward: 63220, count: "1", weight: 1000}
+  - {reward: 63230, count: "1", weight: 1000}
+  - {reward: 63240, count: "1", weight: 1000}
+  - {reward: 63250, count: "1", weight: 1000}
+
+native_541155: &n541155
+  - {reward: *n520005, count: "1", weight: 1000}
+  - {reward: *n520105, count: "1", weight: 1000}
+
+native_520006: &n520006
+  - {reward: 60211, count: "1", weight: 1000}
+  - {reward: 60221, count: "1", weight: 1000}
+  - {reward: 60231, count: "1", weight: 1000}
+  - {reward: 60241, count: "1", weight: 1000}
+  - {reward: 60251, count: "1", weight: 1000}
+
+native_520106: &n520106
+  - {reward: 63211, count: "1", weight: 1000}
+  - {reward: 63221, count: "1", weight: 1000}
+  - {reward: 63231, count: "1", weight: 1000}
+  - {reward: 63241, count: "1", weight: 1000}
+  - {reward: 63251, count: "1", weight: 1000}
+
+native_541156: &n541156
+  - {reward: *n520006, count: "1", weight: 1000}
+  - {reward: *n520106, count: "1", weight: 1000}
+
+native_52010015: &n52010015
+  - {reward: *n541150, count: "1", weight: 9000}
+  - {reward: *n541155, count: "1", weight: 900}
+  - {reward: *n541156, count: "1", weight: 100}
+
+native_52010000: &n52010000
+  - {reward: 102, count: "10"}
+  - {reward: 305, count: "1"}
+  - {reward: 202, count: "240;360"}
+  - {reward: *n500100, count: "0:50, 1:50"}
+  - {reward: *n52010011, count: "1"}
+  - {reward: *n52010013, count: "0:60, 1:40"}
+  - {reward: *n52010014, count: "1"}
+  - {reward: *n52010015, count: "0:48, 1:52"}
+
+native_52010111: &n52010111 []
+
+native_52010113: &n52010113
+  - {reward: *n500000, count: "1", weight: 7800}
+  - {reward: *n500001, count: "1", weight: 2200}
+
+native_52010114: &n52010114
+  - {reward: 104011, count: "2:40,3:60"}
+  - {reward: 104012, count: "0:60, 1:40"}
+
+native_52010115: &n52010115
+  - {reward: *n541150, count: "1", weight: 9000}
+  - {reward: *n541155, count: "1", weight: 900}
+  - {reward: *n541156, count: "1", weight: 100}
+
+native_52010100: &n52010100
+  - {reward: 102, count: "10"}
+  - {reward: 305, count: "1"}
+  - {reward: 202, count: "240;360"}
+  - {reward: *n500100, count: "0:50, 1:50"}
+  - {reward: *n52010111, count: "1"}
+  - {reward: *n52010113, count: "0:50, 1:50"}
+  - {reward: *n52010114, count: "1"}
+  - {reward: *n52010115, count: "0:20, 1:80"}
+

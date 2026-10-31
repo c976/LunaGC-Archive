@@ -1,0 +1,37 @@
+{
+  "region_info": {
+    "gateserver_ip": "47.253.130.114",
+    "gateserver_port": 22102,
+    "pay_callback_url": "https://osusaoaserver.yuanshen.com/recharge",
+    "area_type": "USA",
+    "resource_url": "https://autopatchhk.yuanshen.com/client_game_res/7.0_live",
+    "data_url": "https://autopatchhk.yuanshen.com/client_design_data/7.0_live",
+    "feedback_url": "https://cs.hoyoverse.com/csc-service-center-fe/index.html?goToHall=true&sign_type=2&auth_appid=csc&authkey_ver=1&win_direction=portrait&login_type=account&page_id=1",
+    "resource_url_bak": "7.0_live",
+    "client_data_version": 47985349,
+    "handbook_url": "https://act.hoyoverse.com/ys/event/e20210601blue_post/vert.html?gamewebview=1&page_sn=ceb5eb2229564b00&mode=fullscreen&game_biz=hk4e_global&sign_type=2&auth_appid=bluepost&authkey_ver=1",
+    "client_silence_data_version": 47829085,
+    "client_data_md5": "{\"remoteName\": \"data_versions\", \"md5\": \"446d21867525df922c999c0a78f85e2f\", \"hash\": \"82082d3586a00d49\", \"fileSize\": 71416}\r\n{\"remoteName\": \"data_versions_medium\", \"md5\": \"348c914b438e151ea0bcae240948f9e7\", \"hash\": \"6d032538d7b3e438\", \"fileSize\": 7002}",
+    "client_silence_data_md5": "{\"remoteName\": \"data_versions\", \"md5\": \"24c9bf1e9519fa14d9f94c86d940fe4e\", \"hash\": \"495d781584de8a74\", \"fileSize\": 523}",
+    "res_version_config": {
+      "version": 47805902,
+      "md5": "{\"remoteName\": \"res_versions_external\", \"md5\": \"8de81c22487a6c54b1187b649dc1fd20\", \"hash\": \"f2d7767430830fe6\", \"fileSize\": 243133}\r\n{\"remoteName\": \"res_versions_medium\", \"md5\": \"ecff8459716f3d899b37d34d686fd8b5\", \"hash\": \"641a4a90dc59b441\", \"fileSize\": 49937}\r\n{\"remoteName\": \"res_versions_streaming\", \"md5\": \"8d1214c9b72d2aa1befe57d723f5bd70\", \"hash\": \"237de0050be61b70\", \"fileSize\": 38350}\r\n{\"remoteName\": \"base_revision\", \"md5\": \"0fd60729bb71c4b8199b14e52b34f609\", \"hash\": \"5540bc01b7c21ed2\", \"fileSize\": 19}\r\n{\"remoteName\": \"patch_node_versions\", \"md5\": \"fdcca732be64c4c4a08895b1ecfb3330\", \"hash\": \"146ecbaa52a6d88f\", \"fileSize\": 6916}",
+      "release_total_size": "0",
+      "version_suffix": "d533609003",
+      "branch": "7.0_live"
+    },
+    "official_community_url": "https://act.hoyoverse.com/ys/event/e20221107-community/index.html?game_biz=hk4e_global&sign_type=2&auth_appid=redpoint&authkey_ver=1&red_point=2214,2215",
+    "client_version_suffix": "bfcb7e8a62",
+    "client_silence_version_suffix": "ed32d801a4",
+    "account_bind_url": "https://account.hoyoverse.com",
+    "cdkey_url": "https://public-operation-hk4e.hoyoverse.com/common/apicdkey/api/exchangeCdkey?sign_type=2&auth_appid=apicdkey&authkey_ver=1",
+    "privacy_policy_url": "https://account.hoyoverse.com/#/about/privacyInGame?app_id=4&biz=hk4e_global",
+    "next_resource_url": "https://autopatchhk.yuanshen.com/client_game_res/7.0_live",
+    "next_res_version_config": {
+      "md5": "0",
+      "release_total_size": "0",
+      "branch": "7.0_live"
+    },
+    "game_biz": "hk4e_global"
+  }
+}

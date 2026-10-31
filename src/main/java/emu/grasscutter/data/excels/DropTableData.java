@@ -23,4 +23,10 @@ public class DropTableData extends GameResource {
     private int everydayLimit;
     private int historyLimit;
     private int activityLimit;
+
+    @Override
+    public void onLoad() {
+        // Some 7.1 rows (e.g. investigation point 1010100) are a header with no dropVec at all.
+        if (this.dropVec == null) this.dropVec = List.of();
+    }
 }

@@ -9,6 +9,7 @@ public class GatherData extends GameResource {
     private int gadgetId;
     private int itemId;
     private int cd; // Probably hours
+    private int refreshId;
     private boolean isForbidGuest;
     private boolean initDisableInteract;
 
@@ -31,6 +32,10 @@ public class GatherData extends GameResource {
 
     public int getCd() {
         return cd;
+    }
+
+    public int getRefreshId() {
+        return refreshId;
     }
 
     public boolean isForbidGuest() {

@@ -10,9 +10,18 @@ import okhttp3.Request;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-/** Testing entrypoint for {@link Grasscutter}. */
+/**
+ * Testing entrypoint for {@link Grasscutter}.
+ *
+ * <p>This boots a real server, so it needs a reachable MongoDB and the resources pack, which is
+ * gitignored and therefore absent from a fresh checkout. Without them {@code Grasscutter.main}
+ * calls {@code System.exit(1)} and takes the whole Gradle test executor down with it, so the tag
+ * lets CI leave this one out while still running everything else.
+ */
+@Tag("integration")
 public final class GrasscutterTest {
     @Getter private static final OkHttpClient httpClient = new OkHttpClient();
 

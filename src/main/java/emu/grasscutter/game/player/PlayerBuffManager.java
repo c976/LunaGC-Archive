@@ -51,7 +51,7 @@ public final class PlayerBuffManager extends BasePlayerManager {
                 .sendPacket(
                         new PacketServerBuffChangeNotify(
                                 getPlayer(),
-                                ServerBuffChangeType.SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF,
+                                ServerBuffChangeType.ServerBuffChangeType_DEL_SERVER_BUFF,
                                 this.buffs.values()));
 
         // Clear
@@ -121,13 +121,12 @@ public final class PlayerBuffManager extends BasePlayerManager {
                                 })
                         .orElse(false);
 
-        // Set duration
+        // Set duration. Excel uses -1 for permanent / leave-scene buffs.
         if (duration < 0f) {
             duration = buffData.getTime();
         }
-
-        // Don't add buff if duration is equal or less than 0
-        if (duration <= 0) {
+        boolean permanent = duration < 0f;
+        if (!permanent && duration <= 0f) {
             return success;
         }
 
@@ -135,14 +134,25 @@ public final class PlayerBuffManager extends BasePlayerManager {
         this.removeBuff(buffData.getGroupId());
 
         // Create and store buff
-        PlayerBuff buff = new PlayerBuff(getNextBuffUid(), buffData, duration);
+        PlayerBuff buff = new PlayerBuff(getNextBuffUid(), buffData, permanent ? -1f : duration);
         this.buffs.put(buff.getGroupId(), buff);
 
         // Packet
         getPlayer()
                 .sendPacket(
                         new PacketServerBuffChangeNotify(
-                                getPlayer(), ServerBuffChangeType.SERVER_BUFF_CHANGE_TYPE_ADD_SERVER_BUFF, buff));
+                                getPlayer(), ServerBuffChangeType.ServerBuffChangeType_ADD_SERVER_BUFF, buff));
+
+        // Dulin's Blood: ServerBuff alone is VFX-only; arm the smash GVs and ability for ice seals.
+        try {
+            if (buffId == emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.BUFF_ID
+                    || buffData.getGroupId()
+                            == emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.BUFF_GROUP_ID) {
+                emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.onBuffGranted(getPlayer());
+            }
+        } catch (Throwable t) {
+            Grasscutter.getLogger().warn("ScarletQuartz arm after buff failed: {}", t.toString());
+        }
 
         return true;
     }
@@ -160,7 +170,14 @@ public final class PlayerBuffManager extends BasePlayerManager {
             getPlayer()
                     .sendPacket(
                             new PacketServerBuffChangeNotify(
-                                    getPlayer(), ServerBuffChangeType.SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF, buff));
+                                    getPlayer(), ServerBuffChangeType.ServerBuffChangeType_DEL_SERVER_BUFF, buff));
+            try {
+                if (buffGroupId
+                        == emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.BUFF_GROUP_ID) {
+                    emu.grasscutter.game.entity.gadget.ScarletQuartzCombatHelper.onBuffCleared(getPlayer());
+                }
+            } catch (Throwable ignored) {
+            }
             return true;
         }
 
@@ -189,7 +206,7 @@ public final class PlayerBuffManager extends BasePlayerManager {
                     .sendPacket(
                             new PacketServerBuffChangeNotify(
                                     getPlayer(),
-                                    ServerBuffChangeType.SERVER_BUFF_CHANGE_TYPE_DEL_SERVER_BUFF,
+                                    ServerBuffChangeType.ServerBuffChangeType_DEL_SERVER_BUFF,
                                     this.pendingBuffs));
             this.pendingBuffs.clear();
         }
@@ -204,7 +221,10 @@ public final class PlayerBuffManager extends BasePlayerManager {
         public PlayerBuff(int uid, BuffData buffData, float duration) {
             this.uid = uid;
             this.buffData = buffData;
-            this.endTime = System.currentTimeMillis() + ((long) duration * 1000);
+            this.endTime =
+                    duration < 0f
+                            ? Long.MAX_VALUE
+                            : System.currentTimeMillis() + ((long) duration * 1000);
         }
 
         public int getGroupId() {

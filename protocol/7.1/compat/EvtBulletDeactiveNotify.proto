@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "ForwardType.proto";
+import "Vector.proto";
+
+// 7.1 CmdId 27581 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message EvtBulletDeactiveNotify {
+  Vector disappear_pos = 2;
+  uint32 entity_id = 12;
+  ForwardType forward_type = 13;
+}

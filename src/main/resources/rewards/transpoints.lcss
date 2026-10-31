@@ -1,0 +1,27 @@
+/* 来源待核验：当前配置尚无逐项原始样本证据；不能据此认定官服奖励。
+ * 来源边界详见 docs/rewards/source-provenance.md。 */
+
+/* ========================================================================== */
+/* 传送点：首次激活与活动例外 */
+/* ========================================================================== */
+
+/* 首次激活：锚点、七天神像、秘境入口。 */
+transpoint[type="waypoint"],
+transpoint[type="statue"],
+transpoint[type="domain"] {
+    genshin.experience.adventure: 50;
+    genshin.currency.primogem: 5;
+}
+
+/* 教学锚点：scene 3 / point 6，覆盖普通首次激活奖励。 */
+transpoint[scene=3][point=6] {
+    genshin.experience.adventure: 10;
+    genshin.currency.primogem: 0;
+}
+
+/* 三界路飨祭：scene 7 的专用奖励。 */
+transpoint[scene=7] {
+    genshin.currency.sigil.light_realm: 20;
+    genshin.experience.adventure: 0;
+    genshin.currency.primogem: 5;
+}

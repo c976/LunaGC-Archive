@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+message TpsAmmunitionChange {
+  uint32 ammunition_config_id = 7;
+  int32 change_count = 12;
+}

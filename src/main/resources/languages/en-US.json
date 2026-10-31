@@ -1,7 +1,7 @@
 {
   "messages": {
     "game": {
-      "address_bind": "Game Server started at \u001B[1m\u001B[33m%s:%s\u001B[0m",
+      "address_bind": "Game Server started at \u001b[1m\u001b[33m%s:%s\u001b[0m",
       "port_bind": "Game Server started on port %s",
       "connect": "Client connected from %s",
       "disconnect": "Client disconnected from %s",
@@ -9,7 +9,7 @@
       "command_error": "Command error:"
     },
     "dispatch": {
-      "address_bind": "[Dispatch] Dispatch server started at \u001B[1m\u001B[33m%s:%s\u001B[0m",
+      "address_bind": "[Dispatch] Dispatch server started at \u001b[1m\u001b[33m%s:%s\u001b[0m",
       "port_bind": "[Dispatch] Dispatch server started on port %s",
       "request": "[Dispatch] Client %s %s request: %s",
       "keystore": {
@@ -114,6 +114,13 @@
       "need_target_online": "This command requires an online target UID, but current target is offline. Add a different <@UID> argument or set a persistent target with /target @UID.",
       "need_target_offline": "This command requires an offline target UID, but current target is online. Add a different <@UID> argument or set a persistent target with /target @UID."
     },
+    "name": {
+      "description": "Set your nickname server-side, including rich text markup the in-game rename box rejects.\n\tUsage: name <text> | name gradient <text> <#start> <#end> | name uid | name reset",
+      "success": "Nickname updated (%s characters stored).",
+      "gradient_usage": "Usage: name gradient <text> <#startColor> <#endColor>  e.g. name gradient uid #FFFFFF #0080FF",
+      "bad_color": "Invalid colour. Use hex like #FFFFFF or #08F.",
+      "too_long": "Text is too long for a gradient. Maximum %s characters."
+    },
     "status": {
       "enabled": "Enabled",
       "disabled": "Disabled",
@@ -162,7 +169,7 @@
     },
     "coop": {
       "success": "Summoned %s to %s's world.",
-      "description": "Forces someone to join the world of others. If no one is targeted, it sends you into co-op mode anyway."
+      "description": "Moves a guest into an online host's world; the guest defaults to the current target."
     },
     "enter_dungeon": {
       "changed": "Changed to dungeon %s.",
@@ -173,6 +180,12 @@
     "entity": {
       "description": "Modify an existing entity's properties",
       "not_found_error": "Entity does not exist"
+    },
+    "avatar": {
+      "description": "Manage owned characters: list, constellations, talents, combat stats, friendship, extra levels, and max upgrades."
+    },
+    "battlepass": {
+      "description": "Manage battle-pass level purchases and premium reward access."
     },
     "give": {
       "usage_relic": "Usage: give <artifactID> [mainPropID] [<appendPropID>[,<times>]]... [lv<level 0-20>]",
@@ -200,7 +213,7 @@
     "kick": {
       "player_kick_player": "Player [%s:%s] has kicked player [%s:%s]",
       "server_kick_player": "Kicking player [%s:%s]...",
-      "description": "Kicks the specified player from the server (WIP)"
+      "description": "Disconnects an online player from the server"
     },
     "killall": {
       "scene_not_found_in_player_world": "Scene not found in player world.",
@@ -217,9 +230,9 @@
       "language_not_found": "Currently, the server does not have that language.",
       "description": "Display or change current language"
     },
-    "list": {
+    "player": {
       "success": "There are %s player(s) online:",
-      "description": "List online players"
+      "description": "List online players and inspect player details"
     },
     "permission": {
       "add": "Permission added.",
@@ -233,11 +246,25 @@
       "success": "Coordinates: %s, %s, %s\nRotation：%s, %s, %s\nScene ID: %s",
       "description": "Gets position and rotation information"
     },
+    "npc": {
+      "description": "Place an NPC model in front of you (no dialogue, does not move)",
+      "spawned": "Placed NPC %s in front of you.",
+      "cleared": "Removed %s NPCs placed by this command.",
+      "not_found": "NPC %s not found.",
+      "none_near": "No NPC within %s m.",
+      "group_sent": "Asked the client to load group %s suite %s; its NPCs appear where the script places them (you must be in that group's scene)."
+    },
+    "support": {
+      "description": "Toggle team-bar support buttons: Il Pierro (pierro), Valeriy (valeriy), support blast (blast)",
+      "on": "Support button on: %s. It lasts until logout.",
+      "off": "Support button off: %s."
+    },
     "quest": {
       "added": "Quest %s added.",
       "finished": "Finished quest %s.",
       "not_found": "Quest not found.",
       "invalid_id": "Invalid quest ID.",
+      "questing_off": "Questing is off, so an added quest would never reach the client. Set both gameOptions.questing.enabled and server.game.enableScriptInBigWorld to true in config.json and restart.",
       "description": "Add or finish quests",
       "running": "Quest %s is %s (%s).",
       "talking": "Talk %s is %s for main quest %s (%s).",
@@ -263,7 +290,10 @@
       "description": "Plays a cutscene"
     },
     "sound": {
-      "description": "Plays a sound"
+      "description": "Play a scene sound. sound list [filter] [--page N] searches observed sound names."
+    },
+    "lookup": {
+      "description": "Search game content names and IDs; paginate with --page N."
     },
     "reload": {
       "reload_start": "Reloading config.",
@@ -302,9 +332,13 @@
       "error": "ERROR: Invalid construction stage %s. Check console for stacktrace.",
       "description": "Sends mail to the specified user. The usage of this command changes based on its composition state"
     },
-    "sendMessage": {
+    "say": {
       "success": "Message sent.",
-      "description": "Sends a message to a player as the server. If used with no target, sends to all players on the server."
+      "description": "Broadcast a server message to all online players."
+    },
+    "sayto": {
+      "success": "Message sent.",
+      "description": "Send a server message to one online player."
     },
     "setConst": {
       "range_error": "Constellation level must be between 0 and 6.",
@@ -321,10 +355,13 @@
       "level_error": "Invalid fetter level.",
       "description": "Sets your fetter level for your current active character"
     },
-    "setProp": {
-      "description": "Sets accountwide properties. Things like godmode can be enabled this way, as well as changing things like unlocked abyss floor and battle pass progress.\n\tValues for <prop> (case-insensitive): GodMode | UnlimitedStamina | UnlimitedEnergy | TowerLevel | WorldLevel | BPLevel | SetOpenState | UnsetOpenState | UnlockMap\n\t(cont.) see PlayerProperty enum for other possible values, of the form PROP_MAX_SPRING_VOLUME -> max_spring_volume"
+    "openstate": {
+      "description": "Query or set OpenStates by name: openstate <name|id> [true|false]. Find names with openstate list [filter]."
     },
-    "setSceneTag":{
+    "prop": {
+      "description": "Query or modify player properties such as worldlevel, godmode, stamina, energy and battle-pass level. Omit [value] to query; supply it to set. Map unlocks use `unlock map`; OpenStates use `openstate`."
+    },
+    "setSceneTag": {
       "description": "Sets account-specific scene tags. This controls things like rocks blocking doors, buildings being visible, and other (usually quest-related) things that affect what is visible in your world."
     },
     "setStats": {
@@ -368,6 +405,21 @@
       "avatar_not_found": "Avatar %s not found.",
       "description": "Modify your team manually."
     },
+    "teapot": {
+      "description": "Manipulate serenitea pot functions.  \n\tValues for setLevel<1-10>  \n\tValues for unlockModule<1-4> \n\tValues for lockModule<1-4> \n\tValues for giveAllFurniture<count> \n\tValues for refreshLimitedShop<none>",
+      "level_range_error": "Serenitea pot level must be between 1 and 10.",
+      "level_success": "Serenitea pot level set to %s.",
+      "invalid_param": "Invalid parameter.",
+      "module_sumeru_error": "Sumeru module unsupported at the moment.",
+      "module_range_error": "Module number must be between 1 - 4.",
+      "unlock_module_contain_error": "Module already unlocked.",
+      "unlock_module_success": "Unlocked module %s.",
+      "lock_module_in_scene_error": "Cannot lock active module.",
+      "lock_module_contain_error": "Module doesn't exist.",
+      "lock_module_success": "Locked module %s.",
+      "give_furniture_success": "Gave all furniture.",
+      "refresh_limited_shop_success": "This feature is not yet available on this server."
+    },
     "teleportAll": {
       "success": "Summoned all players to your location.",
       "error": "You can only use this command in MP mode.",
@@ -379,7 +431,7 @@
       "success": "Teleported %s to %s, %s, %s in scene %s.",
       "description": "Change the player's position"
     },
-    "trialAvatarActivity": {
+    "trial": {
       "description": "Manipulate functionalities of Trial Avatar Activity. This includes toggling dungeon and reward states.",
       "not_found": "Trial avatar activity player data not found. Maybe the activity is not enabled.",
       "invalid_param": "Invalid parameter.",
@@ -399,7 +451,7 @@
       "success": "Successful.",
       "failure": "Failed, player not found.",
       "invalid_time": "Unable to parse timestamp.",
-      "description": "Ban a player"
+      "description": "Ban an account or IPv4 address"
     },
     "unlockall": {
       "success": "Unlocked all open states for %s.",
@@ -408,13 +460,58 @@
     "unban": {
       "success": "Successful.",
       "failure": "Failed, player not found.",
-      "description": "Unban a player"
+      "description": "Unban an account or IP address"
     },
     "info": {
       "description": "Provides the sender information about the server."
     },
     "debug": {
       "description": "Useful debugging commands for developers."
+    },
+    "barrier": {
+      "description": "Remove or restore the starter-region barrier for an online player."
+    },
+    "dailytask": {
+      "description": "Inspect and manage a player's daily commissions, including task groups, region, progress, and rewards."
+    },
+    "dps": {
+      "description": "Start or stop a timed damage-per-second test for an online player."
+    },
+    "kill": {
+      "description": "Kill the target player's active character or all entities in a scene."
+    },
+    "mail": {
+      "description": "Send or manage player and system mail, including attachments."
+    },
+    "namecard": {
+      "description": "Change the target player's profile namecard."
+    },
+    "proto": {
+      "description": "Configure live packet logging or inspect an opcode's protobuf message structure."
+    },
+    "restore": {
+      "description": "Restore the target player's HP, elemental energy, or both."
+    },
+    "sgv": {
+      "description": "Set a server global value for the target player."
+    },
+    "statue": {
+      "description": "Manage Statue of The Seven levels and scene point lock, unlock, and status."
+    },
+    "switchelement": {
+      "description": "Change the Traveler's element and optionally set a constellation level."
+    },
+    "tps": {
+      "description": "Manage third-person shooter weapons, equipment, and ammunition."
+    },
+    "trackmat": {
+      "description": "Mark a material's gathering points on the target player's world map."
+    },
+    "waypoints": {
+      "description": "Unlock or list teleport waypoints, optionally filtered by area."
+    },
+    "windy": {
+      "description": "Send client-side Lua scripts or apply supported client presentation settings."
     }
   },
   "gacha": {
@@ -471,6 +568,12 @@
       "not_present": "Plugin %s does not specify an API version.",
       "lower": "Plugin %s is using API version %s, while the server is using API version %s.",
       "outdated": "Plugin %s is using an outdated API method."
+    }
+  },
+  "mail": {
+    "birthday": {
+      "title": "Happy Birthday!",
+      "content": "Dear %s, wishing you a very happy birthday! Please accept this small gift from all of us. May your year ahead be filled with joy and adventure."
     }
   }
 }

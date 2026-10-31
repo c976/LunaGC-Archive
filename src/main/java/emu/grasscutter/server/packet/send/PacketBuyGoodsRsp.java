@@ -1,11 +1,13 @@
 package emu.grasscutter.server.packet.send;
 
+import emu.grasscutter.game.shop.ShopGoodsBuilder;
+import emu.grasscutter.game.shop.ShopInfo;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.*;
 import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 
 public class PacketBuyGoodsRsp extends BasePacket {
-    public PacketBuyGoodsRsp(int shopType, int boughtNum, ShopGoodsOuterClass.ShopGoods sg) {
+    public PacketBuyGoodsRsp(int shopType, int boughtNum, ShopInfo shopInfo, int nextRefreshTime) {
         super(PacketOpcodes.BuyGoodsRsp);
 
         BuyGoodsRspOuterClass.BuyGoodsRsp buyGoodsRsp =
@@ -13,7 +15,7 @@ public class PacketBuyGoodsRsp extends BasePacket {
                         .setShopType(shopType)
                         .setBuyCount(boughtNum)
                         .addGoodsList(
-                                ShopGoodsOuterClass.ShopGoods.newBuilder().mergeFrom(sg).setBoughtNum(boughtNum))
+                                ShopGoodsBuilder.fromShopInfo(shopInfo, boughtNum, nextRefreshTime))
                         .build();
 
         this.setData(buyGoodsRsp);

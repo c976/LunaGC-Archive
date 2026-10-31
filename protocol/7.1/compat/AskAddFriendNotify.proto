@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "FriendBrief.proto";
+
+// 7.1 CmdId 5093 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message AskAddFriendNotify {
+  FriendBrief target_friend_brief = 2;
+  uint32 target_uid = 9;
+}

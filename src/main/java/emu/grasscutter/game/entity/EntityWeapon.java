@@ -1,14 +1,18 @@
 package emu.grasscutter.game.entity;
 
 import emu.grasscutter.Grasscutter;
+import emu.grasscutter.GameConstants;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.data.binout.config.fields.ConfigAbilityData;
 import emu.grasscutter.data.excels.GadgetData;
 import emu.grasscutter.game.props.EntityIdType;
 import emu.grasscutter.game.world.*;
+import emu.grasscutter.net.proto.AbilityControlBlockOuterClass.AbilityControlBlock;
+import emu.grasscutter.net.proto.AbilityEmbryoOuterClass.AbilityEmbryo;
 import emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo;
 import emu.grasscutter.scripts.EntityControllerScriptManager;
+import emu.grasscutter.utils.Utils;
 import it.unimi.dsi.fastutil.ints.*;
 import javax.annotation.Nullable;
 import lombok.*;
@@ -70,6 +74,26 @@ public class EntityWeapon extends EntityBaseGadget {
                 this.addConfigAbility(ability);
             }
         }
+    }
+
+    /**
+     * The embryos of this weapon's gadget-config abilities. A TPS gun's {@code TPS_Weapon_*}
+     * abilities (innate state, fire, reload) live on the weapon entity, and the client needs them
+     * announced for that entity before the gun can fire.
+     */
+    public AbilityControlBlock getAbilityControlBlock() {
+        var block = AbilityControlBlock.newBuilder();
+        if (this.configGadget == null || this.configGadget.getAbilities() == null) return block.build();
+        int embryoId = 0;
+        for (var ability : this.configGadget.getAbilities()) {
+            if (ability.getAbilityName() == null || ability.getAbilityName().isEmpty()) continue;
+            block.addAbilityEmbryoList(
+                    AbilityEmbryo.newBuilder()
+                            .setAbilityId(++embryoId)
+                            .setAbilityNameHash(Utils.abilityHash(ability.getAbilityName()))
+                            .setAbilityOverrideNameHash(GameConstants.DEFAULT_ABILITY_NAME));
+        }
+        return block.build();
     }
 
     @Override

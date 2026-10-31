@@ -12,6 +12,10 @@ public class TowerFloorData extends GameResource {
     private int overrideMonsterLevel;
     private int teamNum;
     private int floorLevelConfigId;
+    /** 3/6/9 star chest rewards (RewardExcelConfigData ids). */
+    private int rewardIdThreeStars;
+    private int rewardIdSixStars;
+    private int rewardIdNineStars;
 
     @Override
     public int getId() {

@@ -2,86 +2,87 @@ package emu.grasscutter.command;
 
 import static emu.grasscutter.utils.lang.Language.translate;
 
-import emu.grasscutter.Grasscutter;
 import emu.grasscutter.game.player.Player;
-import emu.grasscutter.server.event.game.ReceiveCommandFeedbackEvent;
-import java.util.*;
+import java.util.List;
+import picocli.CommandLine;
 
+/** A command whose complete argument grammar is described by picocli. */
 public interface CommandHandler {
+    /** Compatibility for callers that only emit feedback, including older plugins. */
+    static void sendMessage(Player player, String message) {
+        CommandOutput.sendMessage(player, message);
+    }
+
+    static void sendTranslatedMessage(Player player, String key, Object... arguments) {
+        CommandOutput.sendTranslatedMessage(player, key, arguments);
+    }
+
+    /** Propagate a custom converter through Picocli subcommands, including nested routes. */
+    static <T> void registerConverterTree(
+            CommandLine root, Class<T> type, CommandLine.ITypeConverter<T> converter) {
+        root.registerConverter(type, converter);
+        for (CommandLine child : new java.util.HashSet<>(root.getSubcommands().values())) {
+            registerConverterTree(child, type, converter);
+        }
+    }
+
+    /** Picocli enum parsing settings are per-command and must reach each subcommand. */
+    static void allowCaseInsensitiveEnums(CommandLine root) {
+        root.setCaseInsensitiveEnumValuesAllowed(true);
+        for (CommandLine child : new java.util.HashSet<>(root.getSubcommands().values())) {
+            allowCaseInsensitiveEnums(child);
+        }
+    }
 
     /**
-     * Send a message to the target.
+     * Build this command's picocli tree for one invocation or for completion when both players are null.
      *
-     * @param player The player to send the message to, or null for the server console.
-     * @param message The message to send.
+     * <p>The default wraps {@link #execute}, so commands from plugins built before the picocli migration
+     * still register and run. Built-in commands override this.
      */
-    static void sendMessage(Player player, String message) {
-        // Call command feedback event.
-        ReceiveCommandFeedbackEvent event = new ReceiveCommandFeedbackEvent(player, message);
-        event.call();
-        if (event.isCanceled()) { // If event is not cancelled, continue.
-            return;
-        }
-
-        // Send message to target.
-        if (player == null) {
-            Grasscutter.getLogger().info(event.getMessage());
-        } else {
-            player.dropMessage(event.getMessage().replace("\n\t", "\n\n"));
-        }
+    default CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        return LegacyCommandLine.create(this, sender, targetPlayer);
     }
 
-    static void sendTranslatedMessage(Player player, String messageKey, Object... args) {
-        sendMessage(player, translate(player, messageKey, args));
+    /**
+     * The pre-picocli entry point, kept for plugins. Called with every argument after the command label
+     * and target selector when the command does not override {@link #createCommandLine}.
+     */
+    default void execute(Player sender, Player targetPlayer, List<String> args) {
+        sendUsageMessage(sender);
     }
 
+    /** Build a context-free command tree used as parser/completion/help metadata. */
+    default CommandLine createCompletionCommandLine() {
+        return createCommandLine(null, null);
+    }
+
+    default String getUsageString(Player player) {
+        return createCommandLine(player, null).getUsageMessage().stripTrailing();
+    }
+
+    default void sendUsageMessage(Player player) {
+        CommandOutput.sendMessage(player, getUsageString(player));
+    }
+
+    /** Pre-picocli signatures, which plugin binaries still call. */
     default String getUsageString(Player player, String... args) {
-        Command annotation = this.getClass().getAnnotation(Command.class);
-        String usage_prefix = translate(player, "commands.execution.usage_prefix");
-        String command = annotation.label();
-        for (String alias : annotation.aliases()) {
-            if (alias.length() < command.length()) command = alias;
-        }
-        if (player != null) {
-            command = "/" + command;
-        }
-        String target =
-                switch (annotation.targetRequirement()) {
-                    case NONE -> "";
-                    case OFFLINE -> "@<UID> "; // TODO: make translation keys for offline and online players
-                    case ONLINE -> (player == null)
-                            ? "@<UID> "
-                            : "[@<UID>] "; // TODO: make translation keys for offline and online players
-                    case PLAYER -> (player == null) ? "@<UID> " : "[@<UID>] ";
-                };
-        String[] usages = annotation.usage();
-        StringJoiner joiner = new StringJoiner("\n\t");
-        for (String usage : usages) joiner.add(usage_prefix + command + " " + target + usage);
-        return joiner.toString();
+        return getUsageString(player);
     }
 
     default void sendUsageMessage(Player player, String... args) {
-        sendMessage(player, getUsageString(player, args));
+        sendUsageMessage(player);
     }
 
     default String getLabel() {
-        return this.getClass().getAnnotation(Command.class).label();
+        return getClass().getAnnotation(Command.class).label();
     }
 
     default String getDescriptionKey() {
-        Command annotation = this.getClass().getAnnotation(Command.class);
-        return "commands.%s.description".formatted(annotation.label());
+        return "commands.%s.description".formatted(getLabel());
     }
 
     default String getDescriptionString(Player player) {
         return translate(player, getDescriptionKey());
     }
-
-    /**
-     * Called when a player/console invokes a command.
-     *
-     * @param sender The player/console that invoked the command.
-     * @param args The arguments to the command.
-     */
-    default void execute(Player sender, Player targetPlayer, List<String> args) {}
 }

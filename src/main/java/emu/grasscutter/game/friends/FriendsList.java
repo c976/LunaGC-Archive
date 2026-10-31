@@ -79,24 +79,27 @@ public class FriendsList extends BasePlayerManager {
         // Get target's friendship
         Friendship theirFriendship = null;
         if (target.isOnline()) {
-            theirFriendship = target.getFriendsList().getPendingFriendById(this.getPlayer().getUid());
+            theirFriendship = target.getFriendsList().getFriendshipById(this.getPlayer().getUid());
         } else {
             theirFriendship = DatabaseHelper.getReverseFriendship(myFriendship);
         }
 
         if (theirFriendship == null) {
             // They dont have us on their friends list anymore, rip
-            this.getPendingFriends().remove(myFriendship.getOwnerId());
+            this.getPendingFriends().remove(myFriendship.getFriendId());
             myFriendship.delete();
             return;
         }
 
         // Handle
-        if (result == DealAddFriendResultType.DealAddFriendResultType_DEAL_ADD_FRIEND_ACCEPT) { // Request accepted
+        if (theirFriendship.isFriend()
+                || result == DealAddFriendResultType.DealAddFriendResultType_DEAL_ADD_FRIEND_ACCEPT) {
+            // Already friends: report the accepted state, whatever was asked.
+            result = DealAddFriendResultType.DealAddFriendResultType_DEAL_ADD_FRIEND_ACCEPT;
             myFriendship.setIsFriend(true);
             theirFriendship.setIsFriend(true);
 
-            this.getPendingFriends().remove(myFriendship.getOwnerId());
+            this.getPendingFriends().remove(myFriendship.getFriendId());
             this.addFriend(myFriendship);
 
             if (target.isOnline()) {
@@ -108,11 +111,10 @@ public class FriendsList extends BasePlayerManager {
             theirFriendship.save();
         } else { // Request declined
             // Delete from my pending friends
-            this.getPendingFriends().remove(myFriendship.getOwnerId());
+            this.getPendingFriends().remove(myFriendship.getFriendId());
             myFriendship.delete();
-            // Delete from target uid
             if (target.isOnline()) {
-                theirFriendship = target.getFriendsList().getPendingFriendById(this.getPlayer().getUid());
+                target.getFriendsList().getPendingFriends().remove(this.getPlayer().getUid());
             }
             theirFriendship.delete();
         }

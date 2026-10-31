@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "HomeResource.proto";
+
+// 7.1 CmdId 27825 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message HomeResourceTakeFetterExpRsp {
+  HomeResource fetter_exp = 9;
+  int32 retcode = 8;
+}

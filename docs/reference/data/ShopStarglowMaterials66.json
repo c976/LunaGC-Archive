@@ -1,0 +1,133 @@
+[
+  {
+    "shopId": 1001,
+    "items": [
+      {
+        "goodsId": 102600,
+        "goodsItem": {
+          "id": 112137,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 222,
+            "count": 5
+          }
+        ],
+        "minLevel": 10,
+        "maxLevel": 99,
+        "secondarySheetId": 3,
+        "buyLimit": 16,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      },
+      {
+        "goodsId": 102601,
+        "goodsItem": {
+          "id": 112138,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 222,
+            "count": 15
+          }
+        ],
+        "minLevel": 10,
+        "maxLevel": 99,
+        "secondarySheetId": 3,
+        "buyLimit": 12,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      },
+      {
+        "goodsId": 102602,
+        "goodsItem": {
+          "id": 112140,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 222,
+            "count": 5
+          }
+        ],
+        "minLevel": 10,
+        "maxLevel": 99,
+        "secondarySheetId": 3,
+        "buyLimit": 16,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      },
+      {
+        "goodsId": 102603,
+        "goodsItem": {
+          "id": 112141,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 222,
+            "count": 15
+          }
+        ],
+        "minLevel": 10,
+        "maxLevel": 99,
+        "secondarySheetId": 3,
+        "buyLimit": 12,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      },
+      {
+        "goodsId": 102065,
+        "goodsItem": {
+          "id": 112139,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 221,
+            "count": 2
+          }
+        ],
+        "minLevel": 35,
+        "maxLevel": 99,
+        "secondarySheetId": 2,
+        "buyLimit": 8,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      },
+      {
+        "goodsId": 102066,
+        "goodsItem": {
+          "id": 112142,
+          "count": 1
+        },
+        "costItemList": [
+          {
+            "id": 221,
+            "count": 2
+          }
+        ],
+        "minLevel": 35,
+        "maxLevel": 99,
+        "secondarySheetId": 2,
+        "buyLimit": 8,
+        "refreshType": "SHOP_REFRESH_MONTHLY",
+        "shopRefreshParam": 1,
+        "beginTime": 1575129600,
+        "endTime": 2051193600
+      }
+    ]
+  }
+]

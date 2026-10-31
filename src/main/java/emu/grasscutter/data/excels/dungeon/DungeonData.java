@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels.dungeon;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import emu.grasscutter.data.excels.RewardPreviewData;
 import emu.grasscutter.game.dungeons.enums.*;
@@ -22,7 +23,9 @@ public class DungeonData extends GameResource {
     private DungeonInvolveType involveType;
     @Getter private int limitLevel;
     @Getter private int passCond;
-    @Getter private int passJumpDungeon;
+    // Native 7.1 name for the next segment of a chained story dungeon.
+    @Getter @SerializedName(value = "passJumpDungeon", alternate = {"DBMHBKIDAJH"})
+    private int passJumpDungeon;
     @Getter private int reviveMaxCount;
     @Getter private int settleCountdownTime;
     @Getter private int failSettleCountdownTime;
@@ -31,7 +34,9 @@ public class DungeonData extends GameResource {
     @Getter private int passRewardPreviewID;
     @Getter private int statueCostID;
     @Getter private int statueCostCount;
-    @Getter private int statueDrop;
+    // 7.1 resource field with the native dungeon drop-root ID.
+    @Getter @SerializedName(value = "IAOMJCLOIEL", alternate = {"statueDrop"})
+    private int statueDrop;
 
     // not part of DungeonExcelConfigData
     @Getter private RewardPreviewData rewardPreviewData;

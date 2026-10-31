@@ -6,6 +6,7 @@ import emu.grasscutter.data.binout.config.ConfigEntityGadget;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.game.quest.enums.QuestContent;
 import emu.grasscutter.game.world.*;
+import emu.grasscutter.net.proto.SceneEntityAiInfoOuterClass.SceneEntityAiInfo;
 import emu.grasscutter.scripts.data.ScriptArgs;
 import emu.grasscutter.server.event.entity.EntityDamageEvent;
 import lombok.Getter;
@@ -37,6 +38,14 @@ public abstract class EntityBaseGadget extends GameEntity {
         this.campType = campType;
     }
 
+    /**
+     * 机关、掉落物、载具下发时不标记「已进入战斗」。带战斗锁定配置的机关（如风神瞳）
+     * 被标成战斗中后，7.1 客户端会把镜头一直锁在它身上，走出锁定范围才松开。
+     */
+    public static SceneEntityAiInfo.Builder gadgetAiInfo() {
+        return SceneEntityAiInfo.newBuilder().setIsEnteredCombat(false);
+    }
+
     public abstract int getGadgetId();
 
     @Override
@@ -59,6 +68,14 @@ public abstract class EntityBaseGadget extends GameEntity {
     @Override
     public void runLuaCallbacks(EntityDamageEvent event) {
         super.runLuaCallbacks(event);
+        if (this instanceof EntityGadget gadget) {
+            EnvironmentalSealHelper.tryProcess(gadget, event);
+            try {
+                emu.grasscutter.game.entity.gadget.GatherInteractHelper.tryUnlockElementalFlora(
+                        gadget, event.getAttackElementType());
+            } catch (Throwable ignored) {
+            }
+        }
         getScene()
                 .getScriptManager()
                 .callEvent(

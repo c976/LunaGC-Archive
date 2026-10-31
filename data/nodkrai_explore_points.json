@@ -1,0 +1,4242 @@
+[
+  {
+    "id": 1,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1718.0179443359375,
+    "y": 296.2825622558594,
+    "z": 9426.771484375,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 2,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1616.6783447265625,
+    "y": 281.259765625,
+    "z": 9409.8203125,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 3,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1549.64013671875,
+    "y": 227.09886169433594,
+    "z": 9380.134765625,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 4,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1638.21240234375,
+    "y": 315.21038818359375,
+    "z": 9524.52734375,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 5,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1468.28369140625,
+    "y": 215.82508850097656,
+    "z": 9696.2177734375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 6,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1572.192138671875,
+    "y": 233.98956298828125,
+    "z": 9777.890625,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 7,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1560.840576171875,
+    "y": 205.0455322265625,
+    "z": 9895.5732421875,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 8,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1678.1688232421875,
+    "y": 268.24444580078125,
+    "z": 9799.0595703125,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 9,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1740.312744140625,
+    "y": 275.4401550292969,
+    "z": 9868.5087890625,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 10,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1654.1168212890625,
+    "y": 221.32923889160156,
+    "z": 9949.34765625,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 11,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1653.537841796875,
+    "y": 205.84716796875,
+    "z": 10096.263671875,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 12,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1289.078369140625,
+    "y": 200.8997039794922,
+    "z": 10074.29296875,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 13,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1892.826171875,
+    "y": 210.70074462890625,
+    "z": 9985.2392578125,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 14,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1754.781005859375,
+    "y": 230.11593627929688,
+    "z": 9780.919921875,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 15,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1814.8333740234375,
+    "y": 265.03717041015625,
+    "z": 9772.638671875,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 16,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1882.369384765625,
+    "y": 307.0032958984375,
+    "z": 9810.0,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 17,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1812.66015625,
+    "y": 242.8539276123047,
+    "z": 9663.65625,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 18,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2011.5860595703125,
+    "y": 259.316650390625,
+    "z": 9858.2060546875,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 19,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2071.7294921875,
+    "y": 215.6584930419922,
+    "z": 9775.333984375,
+    "name": "Generic Point 19"
+  },
+  {
+    "id": 20,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1858.71435546875,
+    "y": 351.3630676269531,
+    "z": 9362.8837890625,
+    "name": "Generic Point 20"
+  },
+  {
+    "id": 21,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1819.5821533203125,
+    "y": 239.95272827148438,
+    "z": 9236.03125,
+    "name": "Generic Point 21"
+  },
+  {
+    "id": 22,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1904.9976806640625,
+    "y": 204.22828674316406,
+    "z": 9063.025390625,
+    "name": "Generic Point 22"
+  },
+  {
+    "id": 23,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2077.285400390625,
+    "y": 212.17625427246094,
+    "z": 9063.8046875,
+    "name": "Generic Point 23"
+  },
+  {
+    "id": 24,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2049.741943359375,
+    "y": 233.1986846923828,
+    "z": 9204.5517578125,
+    "name": "Generic Point 24"
+  },
+  {
+    "id": 25,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2019.00048828125,
+    "y": 266.67138671875,
+    "z": 9310.7978515625,
+    "name": "Generic Point 25"
+  },
+  {
+    "id": 26,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2160.239501953125,
+    "y": 209.43736267089844,
+    "z": 9331.7646484375,
+    "name": "Generic Point 26"
+  },
+  {
+    "id": 27,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2193.77880859375,
+    "y": 222.16969299316406,
+    "z": 9475.349609375,
+    "name": "Generic Point 27"
+  },
+  {
+    "id": 28,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2243.5810546875,
+    "y": 255.74147033691406,
+    "z": 9391.6728515625,
+    "name": "Generic Point 28"
+  },
+  {
+    "id": 29,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2202.52490234375,
+    "y": 309.3155822753906,
+    "z": 9285.7236328125,
+    "name": "Generic Point 29"
+  },
+  {
+    "id": 30,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2366.832275390625,
+    "y": 209.2954559326172,
+    "z": 9338.6162109375,
+    "name": "Generic Point 30"
+  },
+  {
+    "id": 31,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2438.45654296875,
+    "y": 215.96852111816406,
+    "z": 9504.30859375,
+    "name": "Generic Point 31"
+  },
+  {
+    "id": 32,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1699.0235595703125,
+    "y": 230.6554718017578,
+    "z": 10418.79296875,
+    "name": "Generic Point 32"
+  },
+  {
+    "id": 33,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1718.5958251953125,
+    "y": 198.7734375,
+    "z": 10461.388671875,
+    "name": "Generic Point 33"
+  },
+  {
+    "id": 34,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1746.606689453125,
+    "y": 225.24058532714844,
+    "z": 10512.390625,
+    "name": "Generic Point 34"
+  },
+  {
+    "id": 35,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1440.509521484375,
+    "y": 216.1396942138672,
+    "z": 10630.4833984375,
+    "name": "Generic Point 35"
+  },
+  {
+    "id": 36,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1816.7943115234375,
+    "y": 212.98158264160156,
+    "z": 10566.7919921875,
+    "name": "Generic Point 36"
+  },
+  {
+    "id": 37,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1804.0159912109375,
+    "y": 176.71690368652344,
+    "z": 10523.6865234375,
+    "name": "Generic Point 37"
+  },
+  {
+    "id": 38,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1850.11474609375,
+    "y": 119.94476318359375,
+    "z": 10421.76171875,
+    "name": "Generic Point 38"
+  },
+  {
+    "id": 39,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1811.4140625,
+    "y": 201.34158325195312,
+    "z": 10319.4404296875,
+    "name": "Generic Point 39"
+  },
+  {
+    "id": 40,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1928.1173095703125,
+    "y": 286.6414489746094,
+    "z": 10373.1982421875,
+    "name": "Generic Point 40"
+  },
+  {
+    "id": 41,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1946.9886474609375,
+    "y": 265.092041015625,
+    "z": 10561.75,
+    "name": "Generic Point 41"
+  },
+  {
+    "id": 42,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2036.599853515625,
+    "y": 342.45831298828125,
+    "z": 10535.154296875,
+    "name": "Generic Point 42"
+  },
+  {
+    "id": 43,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1880.8297119140625,
+    "y": 237.87010192871094,
+    "z": 10563.142578125,
+    "name": "Generic Point 43"
+  },
+  {
+    "id": 44,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1960.575439453125,
+    "y": 206.78564453125,
+    "z": 10685.9384765625,
+    "name": "Generic Point 44"
+  },
+  {
+    "id": 45,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2011.2142333984375,
+    "y": 265.4130859375,
+    "z": 10632.68359375,
+    "name": "Generic Point 45"
+  },
+  {
+    "id": 46,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2026.3519287109375,
+    "y": 338.2982177734375,
+    "z": 10646.5830078125,
+    "name": "Generic Point 46"
+  },
+  {
+    "id": 47,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1779.0830078125,
+    "y": 211.27578735351562,
+    "z": 10714.8037109375,
+    "name": "Generic Point 47"
+  },
+  {
+    "id": 48,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1847.0068359375,
+    "y": 211.42941284179688,
+    "z": 10829.412109375,
+    "name": "Generic Point 48"
+  },
+  {
+    "id": 49,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1800.208984375,
+    "y": 203.49322509765625,
+    "z": 10945.1572265625,
+    "name": "Generic Point 49"
+  },
+  {
+    "id": 50,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1679.603515625,
+    "y": 207.4298553466797,
+    "z": 10920.39453125,
+    "name": "Generic Point 50"
+  },
+  {
+    "id": 51,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1659.16259765625,
+    "y": 241.8505096435547,
+    "z": 11039.9833984375,
+    "name": "Generic Point 51"
+  },
+  {
+    "id": 52,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1671.351806640625,
+    "y": 203.72425842285156,
+    "z": 11083.0927734375,
+    "name": "Generic Point 52"
+  },
+  {
+    "id": 53,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1650.1207275390625,
+    "y": 233.04148864746094,
+    "z": 11165.7294921875,
+    "name": "Generic Point 53"
+  },
+  {
+    "id": 54,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1522.19482421875,
+    "y": 223.76744079589844,
+    "z": 11110.9169921875,
+    "name": "Generic Point 54"
+  },
+  {
+    "id": 55,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1494.46923828125,
+    "y": 213.64602661132812,
+    "z": 11011.9013671875,
+    "name": "Generic Point 55"
+  },
+  {
+    "id": 56,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2035.54345703125,
+    "y": 218.0577850341797,
+    "z": 10880.2548828125,
+    "name": "Generic Point 56"
+  },
+  {
+    "id": 57,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1992.7679443359375,
+    "y": 206.21180725097656,
+    "z": 10996.005859375,
+    "name": "Generic Point 57"
+  },
+  {
+    "id": 58,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2082.65771484375,
+    "y": 116.22334289550781,
+    "z": 11226.25390625,
+    "name": "Generic Point 58"
+  },
+  {
+    "id": 59,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2124.9453125,
+    "y": 226.83042907714844,
+    "z": 10798.3125,
+    "name": "Generic Point 59"
+  },
+  {
+    "id": 60,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1954.39453125,
+    "y": 15.319988250732422,
+    "z": 10772.8076171875,
+    "name": "Generic Point 60"
+  },
+  {
+    "id": 61,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2231.039794921875,
+    "y": 245.7462158203125,
+    "z": 10735.0244140625,
+    "name": "Generic Point 61"
+  },
+  {
+    "id": 62,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2252.4716796875,
+    "y": 220.29415893554688,
+    "z": 10709.9169921875,
+    "name": "Generic Point 62"
+  },
+  {
+    "id": 63,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2353.57861328125,
+    "y": 260.3779602050781,
+    "z": 10688.619140625,
+    "name": "Generic Point 63"
+  },
+  {
+    "id": 64,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2492.5146484375,
+    "y": 209.4221954345703,
+    "z": 10640.95703125,
+    "name": "Generic Point 64"
+  },
+  {
+    "id": 65,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2356.99609375,
+    "y": 202.9571075439453,
+    "z": 10861.2373046875,
+    "name": "Generic Point 65"
+  },
+  {
+    "id": 66,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3386.6640625,
+    "y": 199.74887084960938,
+    "z": 9147.123046875,
+    "name": "Generic Point 66"
+  },
+  {
+    "id": 67,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3354.557861328125,
+    "y": 209.2703094482422,
+    "z": 9270.396484375,
+    "name": "Generic Point 67"
+  },
+  {
+    "id": 68,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3262.813720703125,
+    "y": 200.4967498779297,
+    "z": 9281.865234375,
+    "name": "Generic Point 68"
+  },
+  {
+    "id": 69,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3466.549560546875,
+    "y": 222.11569213867188,
+    "z": 9291.9951171875,
+    "name": "Generic Point 69"
+  },
+  {
+    "id": 70,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3468.5517578125,
+    "y": 201.5259246826172,
+    "z": 9329.9033203125,
+    "name": "Generic Point 70"
+  },
+  {
+    "id": 71,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3480.492431640625,
+    "y": 201.3667755126953,
+    "z": 9404.4287109375,
+    "name": "Generic Point 71"
+  },
+  {
+    "id": 72,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3549.224365234375,
+    "y": 204.5373992919922,
+    "z": 9471.8115234375,
+    "name": "Generic Point 72"
+  },
+  {
+    "id": 73,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3713.295166015625,
+    "y": 255.271484375,
+    "z": 9186.0732421875,
+    "name": "Generic Point 73"
+  },
+  {
+    "id": 74,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3431.18505859375,
+    "y": 267.714111328125,
+    "z": 9497.6201171875,
+    "name": "Generic Point 74"
+  },
+  {
+    "id": 75,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3424.698974609375,
+    "y": 200.2504119873047,
+    "z": 9521.7431640625,
+    "name": "Generic Point 75"
+  },
+  {
+    "id": 76,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3100.38134765625,
+    "y": 220.5874481201172,
+    "z": 9522.353515625,
+    "name": "Generic Point 76"
+  },
+  {
+    "id": 77,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3206.689697265625,
+    "y": 233.751220703125,
+    "z": 9634.658203125,
+    "name": "Generic Point 77"
+  },
+  {
+    "id": 78,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3087.552734375,
+    "y": 220.922607421875,
+    "z": 9680.9580078125,
+    "name": "Generic Point 78"
+  },
+  {
+    "id": 79,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3108.41943359375,
+    "y": 246.69418334960938,
+    "z": 9745.033203125,
+    "name": "Generic Point 79"
+  },
+  {
+    "id": 80,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2876.99462890625,
+    "y": 224.00083923339844,
+    "z": 9916.4189453125,
+    "name": "Generic Point 80"
+  },
+  {
+    "id": 81,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3018.13525390625,
+    "y": 233.13600158691406,
+    "z": 9992.1171875,
+    "name": "Generic Point 81"
+  },
+  {
+    "id": 82,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3263.9765625,
+    "y": 246.8089141845703,
+    "z": 10195.6611328125,
+    "name": "Generic Point 82"
+  },
+  {
+    "id": 83,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3271.583251953125,
+    "y": 149.78604125976562,
+    "z": 10094.6201171875,
+    "name": "Generic Point 83"
+  },
+  {
+    "id": 84,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3595.2294921875,
+    "y": 223.99838256835938,
+    "z": 9931.693359375,
+    "name": "Generic Point 84"
+  },
+  {
+    "id": 85,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3537.89013671875,
+    "y": 266.5471496582031,
+    "z": 9872.095703125,
+    "name": "Generic Point 85"
+  },
+  {
+    "id": 86,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3403.31103515625,
+    "y": 331.4283142089844,
+    "z": 9843.7646484375,
+    "name": "Generic Point 86"
+  },
+  {
+    "id": 87,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3145.1201171875,
+    "y": 358.2374572753906,
+    "z": 9881.6337890625,
+    "name": "Generic Point 87"
+  },
+  {
+    "id": 88,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3302.997314453125,
+    "y": 293.4293212890625,
+    "z": 9951.5693359375,
+    "name": "Generic Point 88"
+  },
+  {
+    "id": 89,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3261.91552734375,
+    "y": 417.6053466796875,
+    "z": 9957.6142578125,
+    "name": "Generic Point 89"
+  },
+  {
+    "id": 90,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 3262.691162109375,
+    "y": 490.1424560546875,
+    "z": 9899.28125,
+    "name": "Generic Point 90"
+  },
+  {
+    "id": 91,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2149.5,
+    "y": 281.5751037597656,
+    "z": 9090.3330078125,
+    "name": "Generic Point 91"
+  },
+  {
+    "id": 92,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2174.97802734375,
+    "y": 290.227783203125,
+    "z": 9127.8447265625,
+    "name": "Generic Point 92"
+  },
+  {
+    "id": 93,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2290.571533203125,
+    "y": 294.37005615234375,
+    "z": 9111.2783203125,
+    "name": "Generic Point 93"
+  },
+  {
+    "id": 94,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2320.296875,
+    "y": 265.70599365234375,
+    "z": 9118.0703125,
+    "name": "Generic Point 94"
+  },
+  {
+    "id": 95,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2192.711181640625,
+    "y": 221.94158935546875,
+    "z": 9477.294921875,
+    "name": "Generic Point 95"
+  },
+  {
+    "id": 96,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2372.17333984375,
+    "y": 231.2411651611328,
+    "z": 9217.6474609375,
+    "name": "Generic Point 96"
+  },
+  {
+    "id": 97,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2411.2802734375,
+    "y": 271.9054260253906,
+    "z": 9119.8974609375,
+    "name": "Generic Point 97"
+  },
+  {
+    "id": 98,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2474.575927734375,
+    "y": 214.3163299560547,
+    "z": 9058.490234375,
+    "name": "Generic Point 98"
+  },
+  {
+    "id": 99,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2554.101318359375,
+    "y": 373.20330810546875,
+    "z": 9220.1826171875,
+    "name": "Generic Point 99"
+  },
+  {
+    "id": 100,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2474.76806640625,
+    "y": 348.3736572265625,
+    "z": 9205.703125,
+    "name": "Generic Point 100"
+  },
+  {
+    "id": 101,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2605.14404296875,
+    "y": 233.4563751220703,
+    "z": 9072.5087890625,
+    "name": "Generic Point 101"
+  },
+  {
+    "id": 102,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2660.945068359375,
+    "y": 420.311767578125,
+    "z": 9045.7587890625,
+    "name": "Generic Point 102"
+  },
+  {
+    "id": 103,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2570.95751953125,
+    "y": 420.5159912109375,
+    "z": 8982.0400390625,
+    "name": "Generic Point 103"
+  },
+  {
+    "id": 104,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2541.515869140625,
+    "y": 264.9600524902344,
+    "z": 8850.3701171875,
+    "name": "Generic Point 104"
+  },
+  {
+    "id": 105,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2703.0859375,
+    "y": 467.2469787597656,
+    "z": 9157.0048828125,
+    "name": "Generic Point 105"
+  },
+  {
+    "id": 106,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2774.273193359375,
+    "y": 226.3278045654297,
+    "z": 9124.9853515625,
+    "name": "Generic Point 106"
+  },
+  {
+    "id": 107,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2846.5205078125,
+    "y": 213.37950134277344,
+    "z": 9219.3349609375,
+    "name": "Generic Point 107"
+  },
+  {
+    "id": 108,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2345.142578125,
+    "y": 202.1290283203125,
+    "z": 8738.05078125,
+    "name": "Generic Point 108"
+  },
+  {
+    "id": 109,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2270.466552734375,
+    "y": 213.15496826171875,
+    "z": 8659.818359375,
+    "name": "Generic Point 109"
+  },
+  {
+    "id": 110,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2204.861572265625,
+    "y": 206.43455505371094,
+    "z": 8592.548828125,
+    "name": "Generic Point 110"
+  },
+  {
+    "id": 111,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2259.48193359375,
+    "y": -162.37841796875,
+    "z": 8751.00390625,
+    "name": "Generic Point 111"
+  },
+  {
+    "id": 112,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 2207.93017578125,
+    "y": -194.2336883544922,
+    "z": 8757.2802734375,
+    "name": "Generic Point 112"
+  },
+  {
+    "id": 113,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1861.3529052734375,
+    "y": 347.6168212890625,
+    "z": 9361.298828125,
+    "name": "Generic Point 112"
+  },
+  {
+    "id": 114,
+    "kind": "moon_oculus",
+    "gadgetId": 70590088,
+    "pointType": 4021,
+    "x": 1614.975830078125,
+    "y": 280.14459228515625,
+    "z": 9408.7763671875,
+    "name": "Generic Point 113"
+  },
+  {
+    "id": 115,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2086.66650390625,
+    "y": 292.0842590332031,
+    "z": 10852.3427734375,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 116,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2016.0147705078125,
+    "y": 305.01513671875,
+    "z": 10482.671875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 117,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1786.4893798828125,
+    "y": 222.5113067626953,
+    "z": 10385.2333984375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 118,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1793.672607421875,
+    "y": 166.7747039794922,
+    "z": 10379.212890625,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 119,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1723.207275390625,
+    "y": 199.75668334960938,
+    "z": 11005.5869140625,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 120,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1680.595458984375,
+    "y": 259.72222900390625,
+    "z": 9985.7607421875,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 121,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1714.022705078125,
+    "y": 259.55657958984375,
+    "z": 9786.146484375,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 122,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1953.7763671875,
+    "y": 209.10108947753906,
+    "z": 9775.8251953125,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 123,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1890.1129150390625,
+    "y": 201.01454162597656,
+    "z": 9680.107421875,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 124,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1628.02978515625,
+    "y": 199.9792938232422,
+    "z": 9737.6484375,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 125,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1581.940673828125,
+    "y": 214.903564453125,
+    "z": 9745.458984375,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 126,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1563.27197265625,
+    "y": 213.6167449951172,
+    "z": 9737.8955078125,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 127,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1578.32861328125,
+    "y": 199.1387176513672,
+    "z": 9665.1259765625,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 128,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1497.56494140625,
+    "y": 204.31893920898438,
+    "z": 9406.4072265625,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 129,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1593.3819580078125,
+    "y": 230.12118530273438,
+    "z": 9380.6083984375,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 130,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1565.32568359375,
+    "y": 250.9609832763672,
+    "z": 9406.4111328125,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 131,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1637.7454833984375,
+    "y": 259.4855651855469,
+    "z": 9357.7880859375,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 132,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1615.147705078125,
+    "y": 249.9041748046875,
+    "z": 9400.8759765625,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 133,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1603.246337890625,
+    "y": 216.30755615234375,
+    "z": 9424.5859375,
+    "name": "Generic Point 19"
+  },
+  {
+    "id": 134,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1613.12548828125,
+    "y": 243.82566833496094,
+    "z": 9469.44140625,
+    "name": "Generic Point 20"
+  },
+  {
+    "id": 135,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1593.9638671875,
+    "y": 229.0789337158203,
+    "z": 9495.0986328125,
+    "name": "Generic Point 21"
+  },
+  {
+    "id": 136,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1629.68896484375,
+    "y": 225.13792419433594,
+    "z": 9457.00390625,
+    "name": "Generic Point 22"
+  },
+  {
+    "id": 137,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1678.3597412109375,
+    "y": 277.7596740722656,
+    "z": 9398.40625,
+    "name": "Generic Point 23"
+  },
+  {
+    "id": 138,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1685.9593505859375,
+    "y": 228.8956298828125,
+    "z": 9496.0361328125,
+    "name": "Generic Point 24"
+  },
+  {
+    "id": 139,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1746.170654296875,
+    "y": 226.1339569091797,
+    "z": 9473.6533203125,
+    "name": "Generic Point 25"
+  },
+  {
+    "id": 140,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1851.838623046875,
+    "y": 248.87510681152344,
+    "z": 9206.5107421875,
+    "name": "Generic Point 26"
+  },
+  {
+    "id": 141,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2139.7841796875,
+    "y": 202.26194763183594,
+    "z": 9573.1806640625,
+    "name": "Generic Point 27"
+  },
+  {
+    "id": 142,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2145.236572265625,
+    "y": 291.4454650878906,
+    "z": 9191.6123046875,
+    "name": "Generic Point 28"
+  },
+  {
+    "id": 143,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2324.703125,
+    "y": 265.28448486328125,
+    "z": 9123.8017578125,
+    "name": "Generic Point 29"
+  },
+  {
+    "id": 144,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2355.4609375,
+    "y": 215.9792022705078,
+    "z": 9239.009765625,
+    "name": "Generic Point 30"
+  },
+  {
+    "id": 145,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2273.97412109375,
+    "y": 262.60400390625,
+    "z": 8760.8740234375,
+    "name": "Generic Point 31"
+  },
+  {
+    "id": 146,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2186.70458984375,
+    "y": -206.7772674560547,
+    "z": 8790.3369140625,
+    "name": "Generic Point 32"
+  },
+  {
+    "id": 147,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2104.48876953125,
+    "y": 200.8979949951172,
+    "z": 9032.1640625,
+    "name": "Generic Point 33"
+  },
+  {
+    "id": 148,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2142.153564453125,
+    "y": -154.9498291015625,
+    "z": 9011.3203125,
+    "name": "Generic Point 34"
+  },
+  {
+    "id": 149,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2483.881103515625,
+    "y": 293.453369140625,
+    "z": 8947.2490234375,
+    "name": "Generic Point 35"
+  },
+  {
+    "id": 150,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2438.62744140625,
+    "y": 208.6449737548828,
+    "z": 9044.4423828125,
+    "name": "Generic Point 36"
+  },
+  {
+    "id": 151,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2487.927978515625,
+    "y": 212.76856994628906,
+    "z": 9064.552734375,
+    "name": "Generic Point 37"
+  },
+  {
+    "id": 152,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2615.408935546875,
+    "y": 359.276611328125,
+    "z": 9284.685546875,
+    "name": "Generic Point 38"
+  },
+  {
+    "id": 153,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2777.11376953125,
+    "y": 211.16343688964844,
+    "z": 9133.6748046875,
+    "name": "Generic Point 39"
+  },
+  {
+    "id": 154,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3251.396484375,
+    "y": 213.03282165527344,
+    "z": 9346.6689453125,
+    "name": "Generic Point 40"
+  },
+  {
+    "id": 155,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3531.09326171875,
+    "y": 211.38926696777344,
+    "z": 9255.5595703125,
+    "name": "Generic Point 41"
+  },
+  {
+    "id": 156,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3504.31298828125,
+    "y": 199.8604278564453,
+    "z": 9238.2578125,
+    "name": "Generic Point 42"
+  },
+  {
+    "id": 157,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3433.515869140625,
+    "y": 197.60423278808594,
+    "z": 9537.197265625,
+    "name": "Generic Point 43"
+  },
+  {
+    "id": 158,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3359.348876953125,
+    "y": 235.47361755371094,
+    "z": 9584.294921875,
+    "name": "Generic Point 44"
+  },
+  {
+    "id": 159,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3084.5263671875,
+    "y": 202.55615234375,
+    "z": 9683.140625,
+    "name": "Generic Point 45"
+  },
+  {
+    "id": 160,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3034.030517578125,
+    "y": 204.69839477539062,
+    "z": 9847.2216796875,
+    "name": "Generic Point 46"
+  },
+  {
+    "id": 161,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3104.1015625,
+    "y": 200.0375213623047,
+    "z": 10084.6416015625,
+    "name": "Generic Point 47"
+  },
+  {
+    "id": 162,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3293.674560546875,
+    "y": 143.3776092529297,
+    "z": 10118.5048828125,
+    "name": "Generic Point 48"
+  },
+  {
+    "id": 163,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3648.144287109375,
+    "y": 219.3496856689453,
+    "z": 9884.3125,
+    "name": "Generic Point 49"
+  },
+  {
+    "id": 164,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3569.9404296875,
+    "y": 202.50355529785156,
+    "z": 9950.056640625,
+    "name": "Generic Point 50"
+  },
+  {
+    "id": 165,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3410.09912109375,
+    "y": 362.96673583984375,
+    "z": 9984.2138671875,
+    "name": "Generic Point 51"
+  },
+  {
+    "id": 166,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3246.0517578125,
+    "y": 379.009765625,
+    "z": 9753.9833984375,
+    "name": "Generic Point 52"
+  },
+  {
+    "id": 167,
+    "kind": "chest_common",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3229.75341796875,
+    "y": 363.8045654296875,
+    "z": 9831.9130859375,
+    "name": "Generic Point 53"
+  },
+  {
+    "id": 168,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1568.8563232421875,
+    "y": 212.26266479492188,
+    "z": 10103.4873046875,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 169,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1676.0181884765625,
+    "y": 200.04306030273438,
+    "z": 10485.642578125,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 170,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1804.3759765625,
+    "y": 208.53172302246094,
+    "z": 10489.12890625,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 171,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1797.63427734375,
+    "y": 222.89247131347656,
+    "z": 10384.4609375,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 172,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1905.737060546875,
+    "y": 201.1879425048828,
+    "z": 10639.9599609375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 173,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1913.363037109375,
+    "y": 200.07826232910156,
+    "z": 10936.9326171875,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 174,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2069.27783203125,
+    "y": 200.07635498046875,
+    "z": 10914.5712890625,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 175,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2208.48486328125,
+    "y": 213.6194610595703,
+    "z": 10764.23828125,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 176,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1693.036376953125,
+    "y": 226.11207580566406,
+    "z": 10054.041015625,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 177,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": -23.015182495117188,
+    "y": 2.7475409507751465,
+    "z": 2.582317352294922,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 178,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1543.287841796875,
+    "y": 200.7254180908203,
+    "z": 9823.9365234375,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 179,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1903.6201171875,
+    "y": 200.28500366210938,
+    "z": 9889.6083984375,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 180,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1846.0975341796875,
+    "y": 228.98106384277344,
+    "z": 9604.013671875,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 181,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1937.74365234375,
+    "y": 200.4640655517578,
+    "z": 9534.8271484375,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 182,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1955.7921142578125,
+    "y": 252.72352600097656,
+    "z": 9460.53515625,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 183,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2000.14697265625,
+    "y": 213.63282775878906,
+    "z": 9375.056640625,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 184,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1831.100830078125,
+    "y": 256.5660400390625,
+    "z": 9335.583984375,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 185,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1806.7657470703125,
+    "y": 251.89881896972656,
+    "z": 9465.6298828125,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 186,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 17.49209213256836,
+    "y": 1.294617772102356,
+    "z": 10.843521118164062,
+    "name": "Generic Point 19"
+  },
+  {
+    "id": 187,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1917.2972412109375,
+    "y": 259.0602111816406,
+    "z": 9192.720703125,
+    "name": "Generic Point 20"
+  },
+  {
+    "id": 188,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2247.14208984375,
+    "y": 202.45130920410156,
+    "z": 9545.453125,
+    "name": "Generic Point 21"
+  },
+  {
+    "id": 189,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2259.343994140625,
+    "y": 201.8461151123047,
+    "z": 9468.3701171875,
+    "name": "Generic Point 22"
+  },
+  {
+    "id": 190,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2314.660888671875,
+    "y": 200.23143005371094,
+    "z": 9605.9482421875,
+    "name": "Generic Point 23"
+  },
+  {
+    "id": 191,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2377.0908203125,
+    "y": 200.9044952392578,
+    "z": 9363.6650390625,
+    "name": "Generic Point 24"
+  },
+  {
+    "id": 192,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2207.507080078125,
+    "y": 280.6203308105469,
+    "z": 9232.7568359375,
+    "name": "Generic Point 25"
+  },
+  {
+    "id": 193,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2212.603515625,
+    "y": 265.188232421875,
+    "z": 9037.0751953125,
+    "name": "Generic Point 26"
+  },
+  {
+    "id": 194,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2157.997314453125,
+    "y": 200.1286163330078,
+    "z": 8996.751953125,
+    "name": "Generic Point 27"
+  },
+  {
+    "id": 195,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2173.760009765625,
+    "y": 200.23973083496094,
+    "z": 8924.7783203125,
+    "name": "Generic Point 28"
+  },
+  {
+    "id": 196,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2227.019287109375,
+    "y": -201.97503662109375,
+    "z": 8899.78125,
+    "name": "Generic Point 29"
+  },
+  {
+    "id": 197,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2216.30712890625,
+    "y": -159.40489196777344,
+    "z": 8974.6298828125,
+    "name": "Generic Point 30"
+  },
+  {
+    "id": 198,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2140.63720703125,
+    "y": 200.2539825439453,
+    "z": 8723.6611328125,
+    "name": "Generic Point 31"
+  },
+  {
+    "id": 199,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2415.154296875,
+    "y": 200.2178192138672,
+    "z": 8757.8388671875,
+    "name": "Generic Point 32"
+  },
+  {
+    "id": 200,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2492.0791015625,
+    "y": 200.33041381835938,
+    "z": 8815.5712890625,
+    "name": "Generic Point 33"
+  },
+  {
+    "id": 201,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2592.7470703125,
+    "y": 382.0204162597656,
+    "z": 9165.0341796875,
+    "name": "Generic Point 34"
+  },
+  {
+    "id": 202,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2870.835205078125,
+    "y": 241.34056091308594,
+    "z": 9117.201171875,
+    "name": "Generic Point 35"
+  },
+  {
+    "id": 203,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2935.08447265625,
+    "y": 204.3909149169922,
+    "z": 9253.375,
+    "name": "Generic Point 36"
+  },
+  {
+    "id": 204,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3019.598388671875,
+    "y": 208.33514404296875,
+    "z": 9365.6943359375,
+    "name": "Generic Point 37"
+  },
+  {
+    "id": 205,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3135.207763671875,
+    "y": 202.0740509033203,
+    "z": 9296.4326171875,
+    "name": "Generic Point 38"
+  },
+  {
+    "id": 206,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3226.3046875,
+    "y": 200.44802856445312,
+    "z": 9243.169921875,
+    "name": "Generic Point 39"
+  },
+  {
+    "id": 207,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3279.80224609375,
+    "y": 200.0618438720703,
+    "z": 9307.5830078125,
+    "name": "Generic Point 40"
+  },
+  {
+    "id": 208,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3380.16943359375,
+    "y": 203.5875701904297,
+    "z": 9169.5048828125,
+    "name": "Generic Point 41"
+  },
+  {
+    "id": 209,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3439.31591796875,
+    "y": 237.2880401611328,
+    "z": 9362.4931640625,
+    "name": "Generic Point 42"
+  },
+  {
+    "id": 210,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3164.975341796875,
+    "y": 232.36497497558594,
+    "z": 9434.8125,
+    "name": "Generic Point 43"
+  },
+  {
+    "id": 211,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3198.525634765625,
+    "y": 227.16082763671875,
+    "z": 9516.4619140625,
+    "name": "Generic Point 44"
+  },
+  {
+    "id": 212,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3313.685546875,
+    "y": 199.94908142089844,
+    "z": 9497.69140625,
+    "name": "Generic Point 45"
+  },
+  {
+    "id": 213,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3262.607421875,
+    "y": 236.7323455810547,
+    "z": 9580.380859375,
+    "name": "Generic Point 46"
+  },
+  {
+    "id": 214,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3618.169921875,
+    "y": 202.50424194335938,
+    "z": 9866.7880859375,
+    "name": "Generic Point 47"
+  },
+  {
+    "id": 215,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3559.874267578125,
+    "y": 220.20115661621094,
+    "z": 9719.6953125,
+    "name": "Generic Point 48"
+  },
+  {
+    "id": 216,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3327.5107421875,
+    "y": 208.5653076171875,
+    "z": 10102.1669921875,
+    "name": "Generic Point 49"
+  },
+  {
+    "id": 217,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3107.675048828125,
+    "y": 356.68743896484375,
+    "z": 9826.20703125,
+    "name": "Generic Point 50"
+  },
+  {
+    "id": 218,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3278.872802734375,
+    "y": 425.5875549316406,
+    "z": 9959.912109375,
+    "name": "Generic Point 51"
+  },
+  {
+    "id": 219,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3292.408447265625,
+    "y": 321.6802673339844,
+    "z": 9865.9140625,
+    "name": "Generic Point 52"
+  },
+  {
+    "id": 220,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3301.1630859375,
+    "y": 369.7937316894531,
+    "z": 9845.0244140625,
+    "name": "Generic Point 53"
+  },
+  {
+    "id": 221,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3172.190673828125,
+    "y": 376.0151672363281,
+    "z": 9855.8603515625,
+    "name": "Generic Point 54"
+  },
+  {
+    "id": 222,
+    "kind": "chest_exquisite",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2840.132080078125,
+    "y": 204.3834991455078,
+    "z": 9975.025390625,
+    "name": "Generic Point 55"
+  },
+  {
+    "id": 223,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 1740.5360107421875,
+    "y": 242.35997009277344,
+    "z": 10004.9130859375,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 224,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 17.968994140625,
+    "y": 1.2923661470413208,
+    "z": 11.738842010498047,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 225,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2150.76123046875,
+    "y": 307.925537109375,
+    "z": 9340.5361328125,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 226,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2435.850341796875,
+    "y": 201.8506622314453,
+    "z": 9079.7294921875,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 227,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2194.51953125,
+    "y": -205.21107482910156,
+    "z": 8754.8759765625,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 228,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2800.02587890625,
+    "y": 255.86361694335938,
+    "z": 9161.91015625,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 229,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2782.606201171875,
+    "y": 197.33609008789062,
+    "z": 9016.8876953125,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 230,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 1734.6932373046875,
+    "y": 196.88427734375,
+    "z": 10427.6787109375,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 231,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 1997.3519287109375,
+    "y": 288.8017272949219,
+    "z": 10750.916015625,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 232,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2100.725830078125,
+    "y": 223.3093719482422,
+    "z": 10783.9912109375,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 233,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 1715.5941162109375,
+    "y": 201.02696228027344,
+    "z": 11078.451171875,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 234,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 1531.626708984375,
+    "y": 200.50425720214844,
+    "z": 11074.4443359375,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 235,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 3394.408447265625,
+    "y": 208.6987762451172,
+    "z": 9328.8447265625,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 236,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 3093.413818359375,
+    "y": 212.21426391601562,
+    "z": 9511.267578125,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 237,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 2937.9765625,
+    "y": 236.72605895996094,
+    "z": 9889.5810546875,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 238,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 3312.234130859375,
+    "y": 376.9111022949219,
+    "z": 9808.9560546875,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 239,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 3218.1875,
+    "y": 305.0970458984375,
+    "z": 9839.4345703125,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 240,
+    "kind": "chest_precious",
+    "gadgetId": 70211121,
+    "pointType": 0,
+    "x": 3225.330322265625,
+    "y": 337.477783203125,
+    "z": 9794.9375,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 241,
+    "kind": "chest_luxurious",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1729.58642578125,
+    "y": 183.4013214111328,
+    "z": 9713.12109375,
+    "name": "Only Quest"
+  },
+  {
+    "id": 242,
+    "kind": "chest_luxurious",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1671.8170166015625,
+    "y": 200.37301635742188,
+    "z": 11082.96875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 243,
+    "kind": "chest_luxurious",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3152.238525390625,
+    "y": 201.70358276367188,
+    "z": 9575.2333984375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 244,
+    "kind": "chest_luxurious",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3110.01904296875,
+    "y": 186.6813201904297,
+    "z": 9741.80078125,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 245,
+    "kind": "chest_luxurious",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3262.877685546875,
+    "y": 439.2086181640625,
+    "z": 9898.61328125,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 246,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1813.715576171875,
+    "y": 202.12393188476562,
+    "z": 10578.53125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 247,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1733.4691162109375,
+    "y": 202.13113403320312,
+    "z": 10583.4990234375,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 248,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2070.212158203125,
+    "y": 231.2078399658203,
+    "z": 10756.140625,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 249,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1778.8616943359375,
+    "y": 200.19775390625,
+    "z": 11074.2578125,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 250,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1682.6461181640625,
+    "y": 201.0341339111328,
+    "z": 11186.6748046875,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 251,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 1714.5634765625,
+    "y": 200.0303192138672,
+    "z": 10122.03125,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 252,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2159.59814453125,
+    "y": 209.52027893066406,
+    "z": 9330.7666015625,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 253,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2100.64013671875,
+    "y": 199.5517120361328,
+    "z": 9199.8271484375,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 254,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2361.484619140625,
+    "y": 200.16091918945312,
+    "z": 9638.3828125,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 255,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2247.03173828125,
+    "y": 270.0884704589844,
+    "z": 9224.755859375,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 256,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2256.900634765625,
+    "y": 229.37698364257812,
+    "z": 9137.8271484375,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 257,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2445.571533203125,
+    "y": 299.3315734863281,
+    "z": 9290.009765625,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 258,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2534.046875,
+    "y": 294.109130859375,
+    "z": 9347.4267578125,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 259,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 2707.3642578125,
+    "y": 382.7809143066406,
+    "z": 9291.06640625,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 260,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3062.979736328125,
+    "y": 206.93275451660156,
+    "z": 9386.6005859375,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 261,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3217.484375,
+    "y": 205.05291748046875,
+    "z": 9150.419921875,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 262,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3556.723388671875,
+    "y": 200.27818298339844,
+    "z": 9252.64453125,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 263,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3462.045654296875,
+    "y": 264.6447448730469,
+    "z": 9468.248046875,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 264,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3384.17822265625,
+    "y": 200.60113525390625,
+    "z": 9708.6396484375,
+    "name": "Generic Point 19"
+  },
+  {
+    "id": 265,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3201.97265625,
+    "y": 233.63153076171875,
+    "z": 10204.955078125,
+    "name": "Generic Point 20"
+  },
+  {
+    "id": 266,
+    "kind": "chest_remarkable",
+    "gadgetId": 70211131,
+    "pointType": 0,
+    "x": 3372.494384765625,
+    "y": 206.6657257080078,
+    "z": 10064.6943359375,
+    "name": "Generic Point 21"
+  },
+  {
+    "id": 267,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1650.2891845703125,
+    "y": 200.49876403808594,
+    "z": 10541.134765625,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 268,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1653.2581787109375,
+    "y": 199.26564025878906,
+    "z": 10482.2978515625,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 269,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1638.3642578125,
+    "y": 199.42649841308594,
+    "z": 10378.0458984375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 270,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1730.2005615234375,
+    "y": 199.5481414794922,
+    "z": 10275.9931640625,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 271,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1760.794189453125,
+    "y": 200.05490112304688,
+    "z": 10304.9755859375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 272,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1644.2933349609375,
+    "y": 199.71966552734375,
+    "z": 10167.712890625,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 273,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1835.917724609375,
+    "y": 166.22145080566406,
+    "z": 10412.935546875,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 274,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1815.8558349609375,
+    "y": 199.58114624023438,
+    "z": 10674.1484375,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 275,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2105.297607421875,
+    "y": 253.35044860839844,
+    "z": 10767.3525390625,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 276,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1628.3707275390625,
+    "y": 204.38587951660156,
+    "z": 9929.6767578125,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 277,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1630.098388671875,
+    "y": 203.2023162841797,
+    "z": 9892.6826171875,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 278,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1703.508544921875,
+    "y": 202.0048065185547,
+    "z": 9919.8857421875,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 279,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1544.9459228515625,
+    "y": 201.4720916748047,
+    "z": 9817.0380859375,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 280,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1618.4356689453125,
+    "y": 203.2559814453125,
+    "z": 9693.7412109375,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 281,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1758.7933349609375,
+    "y": 266.9185791015625,
+    "z": 9873.224609375,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 282,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1820.7587890625,
+    "y": 267.34368896484375,
+    "z": 9815.3330078125,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 283,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1712.3614501953125,
+    "y": 200.84124755859375,
+    "z": 9819.5498046875,
+    "name": "Generic Point 17"
+  },
+  {
+    "id": 284,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1780.8341064453125,
+    "y": 231.0146026611328,
+    "z": 9764.3291015625,
+    "name": "Generic Point 18"
+  },
+  {
+    "id": 285,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1755.21484375,
+    "y": 183.03758239746094,
+    "z": 9735.2744140625,
+    "name": "Generic Point 19"
+  },
+  {
+    "id": 286,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1745.997802734375,
+    "y": 251.82215881347656,
+    "z": 9716.3583984375,
+    "name": "Generic Point 20"
+  },
+  {
+    "id": 287,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1953.1312255859375,
+    "y": 209.21746826171875,
+    "z": 9776.4130859375,
+    "name": "Generic Point 21"
+  },
+  {
+    "id": 288,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1442.811279296875,
+    "y": 204.20404052734375,
+    "z": 9372.697265625,
+    "name": "Generic Point 22"
+  },
+  {
+    "id": 289,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1436.6273193359375,
+    "y": 201.9528350830078,
+    "z": 9395.7041015625,
+    "name": "Generic Point 23"
+  },
+  {
+    "id": 290,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1464.3228759765625,
+    "y": 207.9213104248047,
+    "z": 9416.3583984375,
+    "name": "Generic Point 24"
+  },
+  {
+    "id": 291,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1505.141845703125,
+    "y": 219.8499298095703,
+    "z": 9378.8232421875,
+    "name": "Generic Point 25"
+  },
+  {
+    "id": 292,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1564.214599609375,
+    "y": 247.8192138671875,
+    "z": 9415.474609375,
+    "name": "Generic Point 26"
+  },
+  {
+    "id": 293,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1541.6014404296875,
+    "y": 219.57810974121094,
+    "z": 9473.931640625,
+    "name": "Generic Point 27"
+  },
+  {
+    "id": 294,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1594.6302490234375,
+    "y": 223.5727081298828,
+    "z": 9361.1083984375,
+    "name": "Generic Point 28"
+  },
+  {
+    "id": 295,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1655.286376953125,
+    "y": 239.87733459472656,
+    "z": 9362.4296875,
+    "name": "Generic Point 29"
+  },
+  {
+    "id": 296,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1598.8328857421875,
+    "y": 252.15110778808594,
+    "z": 9527.044921875,
+    "name": "Generic Point 30"
+  },
+  {
+    "id": 297,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1689.9051513671875,
+    "y": 266.1572265625,
+    "z": 9584.388671875,
+    "name": "Generic Point 31"
+  },
+  {
+    "id": 298,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1675.0628662109375,
+    "y": 240.53038024902344,
+    "z": 9540.3388671875,
+    "name": "Generic Point 32"
+  },
+  {
+    "id": 299,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1659.39990234375,
+    "y": 256.6885070800781,
+    "z": 9565.720703125,
+    "name": "Generic Point 33"
+  },
+  {
+    "id": 300,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1891.871826171875,
+    "y": 238.61390686035156,
+    "z": 9272.23046875,
+    "name": "Generic Point 34"
+  },
+  {
+    "id": 301,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 1840.559814453125,
+    "y": 244.3153533935547,
+    "z": 9268.7080078125,
+    "name": "Generic Point 35"
+  },
+  {
+    "id": 302,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2051.395263671875,
+    "y": 292.9215087890625,
+    "z": 9289.7451171875,
+    "name": "Generic Point 36"
+  },
+  {
+    "id": 303,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2017.7822265625,
+    "y": 220.5456085205078,
+    "z": 9355.1357421875,
+    "name": "Generic Point 37"
+  },
+  {
+    "id": 304,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2010.8822021484375,
+    "y": 214.9495086669922,
+    "z": 9393.96875,
+    "name": "Generic Point 38"
+  },
+  {
+    "id": 305,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2299.232421875,
+    "y": 200.2081756591797,
+    "z": 9532.2041015625,
+    "name": "Generic Point 39"
+  },
+  {
+    "id": 306,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2292.069091796875,
+    "y": 201.6311798095703,
+    "z": 9413.78125,
+    "name": "Generic Point 40"
+  },
+  {
+    "id": 307,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2341.776123046875,
+    "y": 201.63677978515625,
+    "z": 9319.59765625,
+    "name": "Generic Point 41"
+  },
+  {
+    "id": 308,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2227.0078125,
+    "y": 253.65138244628906,
+    "z": 9265.0302734375,
+    "name": "Generic Point 42"
+  },
+  {
+    "id": 309,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2076.10302734375,
+    "y": 205.52667236328125,
+    "z": 9075.5419921875,
+    "name": "Generic Point 43"
+  },
+  {
+    "id": 310,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2104.9697265625,
+    "y": -156.28131103515625,
+    "z": 9004.03125,
+    "name": "Generic Point 44"
+  },
+  {
+    "id": 311,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2158.35986328125,
+    "y": -153.24729919433594,
+    "z": 9001.310546875,
+    "name": "Generic Point 45"
+  },
+  {
+    "id": 312,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2199.159912109375,
+    "y": -158.24859619140625,
+    "z": 8958.974609375,
+    "name": "Generic Point 46"
+  },
+  {
+    "id": 313,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2196.946533203125,
+    "y": 265.86932373046875,
+    "z": 9164.3955078125,
+    "name": "Generic Point 47"
+  },
+  {
+    "id": 314,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2250.753662109375,
+    "y": 267.2755126953125,
+    "z": 9128.197265625,
+    "name": "Generic Point 48"
+  },
+  {
+    "id": 315,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2257.62744140625,
+    "y": 229.44989013671875,
+    "z": 9163.6220703125,
+    "name": "Generic Point 49"
+  },
+  {
+    "id": 316,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2229.608154296875,
+    "y": 235.19264221191406,
+    "z": 9177.9501953125,
+    "name": "Generic Point 50"
+  },
+  {
+    "id": 317,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2212.487548828125,
+    "y": 213.53097534179688,
+    "z": 9132.345703125,
+    "name": "Generic Point 51"
+  },
+  {
+    "id": 318,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2356.680908203125,
+    "y": 215.72874450683594,
+    "z": 9239.12109375,
+    "name": "Generic Point 52"
+  },
+  {
+    "id": 319,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2413.72900390625,
+    "y": 221.1673126220703,
+    "z": 9209.57421875,
+    "name": "Generic Point 53"
+  },
+  {
+    "id": 320,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2429.52880859375,
+    "y": 203.25086975097656,
+    "z": 9083.3994140625,
+    "name": "Generic Point 54"
+  },
+  {
+    "id": 321,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2485.73828125,
+    "y": 341.814208984375,
+    "z": 9157.2421875,
+    "name": "Generic Point 55"
+  },
+  {
+    "id": 322,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2545.76171875,
+    "y": 342.91143798828125,
+    "z": 9235.408203125,
+    "name": "Generic Point 56"
+  },
+  {
+    "id": 323,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2566.267333984375,
+    "y": 350.3863220214844,
+    "z": 9224.9384765625,
+    "name": "Generic Point 57"
+  },
+  {
+    "id": 324,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2566.52685546875,
+    "y": 207.82180786132812,
+    "z": 9521.765625,
+    "name": "Generic Point 58"
+  },
+  {
+    "id": 325,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2769.65673828125,
+    "y": 205.23704528808594,
+    "z": 9127.421875,
+    "name": "Generic Point 59"
+  },
+  {
+    "id": 326,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2772.39111328125,
+    "y": 198.2686004638672,
+    "z": 9036.2353515625,
+    "name": "Generic Point 60"
+  },
+  {
+    "id": 327,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2657.111572265625,
+    "y": 204.8642120361328,
+    "z": 8866.6962890625,
+    "name": "Generic Point 61"
+  },
+  {
+    "id": 328,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3026.354736328125,
+    "y": 205.26695251464844,
+    "z": 9366.2666015625,
+    "name": "Generic Point 62"
+  },
+  {
+    "id": 329,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3115.366455078125,
+    "y": 216.96742248535156,
+    "z": 9510.5869140625,
+    "name": "Generic Point 63"
+  },
+  {
+    "id": 330,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3196.0224609375,
+    "y": 201.1626434326172,
+    "z": 9615.623046875,
+    "name": "Generic Point 64"
+  },
+  {
+    "id": 331,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3193.14501953125,
+    "y": 233.70936584472656,
+    "z": 9643.5546875,
+    "name": "Generic Point 65"
+  },
+  {
+    "id": 332,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3032.59326171875,
+    "y": 205.5400848388672,
+    "z": 9766.1123046875,
+    "name": "Generic Point 66"
+  },
+  {
+    "id": 333,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 2867.711181640625,
+    "y": 212.2936553955078,
+    "z": 9882.736328125,
+    "name": "Generic Point 67"
+  },
+  {
+    "id": 334,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3290.433837890625,
+    "y": 158.52992248535156,
+    "z": 10180.8125,
+    "name": "Generic Point 68"
+  },
+  {
+    "id": 335,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3652.76611328125,
+    "y": 201.7949981689453,
+    "z": 9875.9072265625,
+    "name": "Generic Point 69"
+  },
+  {
+    "id": 336,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3611.931396484375,
+    "y": 202.50094604492188,
+    "z": 9912.9462890625,
+    "name": "Generic Point 70"
+  },
+  {
+    "id": 337,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3581.413330078125,
+    "y": 236.7449493408203,
+    "z": 9935.5205078125,
+    "name": "Generic Point 71"
+  },
+  {
+    "id": 338,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3527.056640625,
+    "y": 247.39720153808594,
+    "z": 9871.76953125,
+    "name": "Generic Point 72"
+  },
+  {
+    "id": 339,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3347.16455078125,
+    "y": 201.01011657714844,
+    "z": 9264.970703125,
+    "name": "Generic Point 73"
+  },
+  {
+    "id": 340,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3391.472900390625,
+    "y": 204.18304443359375,
+    "z": 9299.21484375,
+    "name": "Generic Point 74"
+  },
+  {
+    "id": 341,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3447.6513671875,
+    "y": 209.77540588378906,
+    "z": 9344.888671875,
+    "name": "Generic Point 75"
+  },
+  {
+    "id": 342,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3249.71044921875,
+    "y": 216.04141235351562,
+    "z": 9264.255859375,
+    "name": "Generic Point 76"
+  },
+  {
+    "id": 343,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3240.973876953125,
+    "y": 207.4603729248047,
+    "z": 9307.8251953125,
+    "name": "Generic Point 77"
+  },
+  {
+    "id": 344,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3249.906494140625,
+    "y": 208.60537719726562,
+    "z": 9342.96484375,
+    "name": "Generic Point 78"
+  },
+  {
+    "id": 345,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3260.965576171875,
+    "y": 209.8202362060547,
+    "z": 9339.5126953125,
+    "name": "Generic Point 79"
+  },
+  {
+    "id": 346,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3383.2314453125,
+    "y": 234.47608947753906,
+    "z": 9610.7744140625,
+    "name": "Generic Point 80"
+  },
+  {
+    "id": 347,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3478.955322265625,
+    "y": 250.32766723632812,
+    "z": 9533.6611328125,
+    "name": "Generic Point 81"
+  },
+  {
+    "id": 348,
+    "kind": "chest_mora",
+    "gadgetId": 70211101,
+    "pointType": 0,
+    "x": 3428.76171875,
+    "y": 197.8035430908203,
+    "z": 9557.9951171875,
+    "name": "Generic Point 82"
+  },
+  {
+    "id": 349,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3298.715087890625,
+    "y": 201.00350952148438,
+    "z": 9239.962890625,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 350,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3199.042724609375,
+    "y": 209.70521545410156,
+    "z": 9618.09765625,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 351,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2442.18115234375,
+    "y": 200.34140014648438,
+    "z": 9098.67578125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 352,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3195.48388671875,
+    "y": 204.70394897460938,
+    "z": 9595.8544921875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 353,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3470.59521484375,
+    "y": 243.4491424560547,
+    "z": 9570.513671875,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 354,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3567.8076171875,
+    "y": 248.6228485107422,
+    "z": 9872.4189453125,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 355,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3591.398681640625,
+    "y": 202.50335693359375,
+    "z": 9936.8759765625,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 356,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3524.02099609375,
+    "y": 204.5038604736328,
+    "z": 9963.794921875,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 357,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3314.4970703125,
+    "y": 133.70892333984375,
+    "z": 10133.7958984375,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 358,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2997.443603515625,
+    "y": 204.4774627685547,
+    "z": 9839.822265625,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 359,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3013.3544921875,
+    "y": 204.7201690673828,
+    "z": 9961.4462890625,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 360,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3288.17041015625,
+    "y": 407.20513916015625,
+    "z": 9849.8193359375,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 361,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1632.5697021484375,
+    "y": 200.7876739501953,
+    "z": 10416.9541015625,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 362,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1740.25537109375,
+    "y": 172.80406188964844,
+    "z": 10485.1201171875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 363,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1776.3621826171875,
+    "y": 179.028564453125,
+    "z": 10545.3291015625,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 364,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2114.400634765625,
+    "y": 201.22940063476562,
+    "z": 10860.8291015625,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 365,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2197.278076171875,
+    "y": 199.3554229736328,
+    "z": 10808.4208984375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 366,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2260.08984375,
+    "y": 199.6414794921875,
+    "z": 10775.6435546875,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 367,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1707.0694580078125,
+    "y": 199.55429077148438,
+    "z": 9834.646484375,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 368,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1924.263916015625,
+    "y": 255.11863708496094,
+    "z": 9307.34375,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 369,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2069.841064453125,
+    "y": 293.728515625,
+    "z": 9280.6826171875,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 370,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1963.940673828125,
+    "y": 253.17913818359375,
+    "z": 9469.2587890625,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 371,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2233.08154296875,
+    "y": 216.44175720214844,
+    "z": 9111.6826171875,
+    "name": "Generic Point 11"
+  },
+  {
+    "id": 372,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2413.257568359375,
+    "y": 197.72427368164062,
+    "z": 9141.46875,
+    "name": "Generic Point 12"
+  },
+  {
+    "id": 373,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2733.580810546875,
+    "y": 201.0897674560547,
+    "z": 9112.09375,
+    "name": "Generic Point 13"
+  },
+  {
+    "id": 374,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2814.351318359375,
+    "y": 207.10311889648438,
+    "z": 9120.275390625,
+    "name": "Generic Point 14"
+  },
+  {
+    "id": 375,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3286.70947265625,
+    "y": 200.08523559570312,
+    "z": 9278.9482421875,
+    "name": "Generic Point 15"
+  },
+  {
+    "id": 376,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3311.04248046875,
+    "y": 199.90306091308594,
+    "z": 9221.552734375,
+    "name": "Generic Point 16"
+  },
+  {
+    "id": 377,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1885.1885986328125,
+    "y": 142.3859100341797,
+    "z": 10446.767578125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 378,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2525.09033203125,
+    "y": 293.9638977050781,
+    "z": 8833.6572265625,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 379,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2734.7822265625,
+    "y": 376.111328125,
+    "z": 9346.9130859375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 380,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2999.74169921875,
+    "y": 198.84033203125,
+    "z": 10423.0849609375,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 381,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1663.6707763671875,
+    "y": 200.1892852783203,
+    "z": 10334.78515625,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 382,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1731.720458984375,
+    "y": 223.84600830078125,
+    "z": 10381.931640625,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 383,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1897.9302978515625,
+    "y": 247.47682189941406,
+    "z": 10410.640625,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 384,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1946.365478515625,
+    "y": 257.5968322753906,
+    "z": 10387.7119140625,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 385,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2082.2353515625,
+    "y": 212.39703369140625,
+    "z": 10580.2802734375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 386,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2094.0048828125,
+    "y": 324.1218566894531,
+    "z": 10729.5908203125,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 387,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1859.754150390625,
+    "y": 200.35556030273438,
+    "z": 10834.7666015625,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 388,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1773.0859375,
+    "y": 198.7958526611328,
+    "z": 10873.087890625,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 389,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1830.00439453125,
+    "y": 200.17393493652344,
+    "z": 10988.466796875,
+    "name": "Generic Point 9"
+  },
+  {
+    "id": 390,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1665.835205078125,
+    "y": 199.7587127685547,
+    "z": 10828.6259765625,
+    "name": "Generic Point 10"
+  },
+  {
+    "id": 391,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1572.601806640625,
+    "y": 202.1840362548828,
+    "z": 9890.255859375,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 392,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1896.6112060546875,
+    "y": 200.96351623535156,
+    "z": 9604.7138671875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 393,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1859.672607421875,
+    "y": 238.9243621826172,
+    "z": 9352.0419921875,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 394,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2015.5546875,
+    "y": 200.75257873535156,
+    "z": 9361.23046875,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 395,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2161.613525390625,
+    "y": 201.6291961669922,
+    "z": 9554.7333984375,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 396,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2249.1328125,
+    "y": 266.8826904296875,
+    "z": 9130.4755859375,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 397,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2570.660400390625,
+    "y": 345.8733825683594,
+    "z": 9298.3623046875,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 398,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1459.2413330078125,
+    "y": 204.13922119140625,
+    "z": 9390.39453125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 399,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3274.621826171875,
+    "y": 153.0663299560547,
+    "z": 10167.1865234375,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 400,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3176.9130859375,
+    "y": 236.4636688232422,
+    "z": 9444.3828125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 401,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2892.05859375,
+    "y": 202.62303161621094,
+    "z": 9946.396484375,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 402,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3289.518310546875,
+    "y": 407.20452880859375,
+    "z": 9849.1123046875,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 403,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3175.725830078125,
+    "y": 371.0938415527344,
+    "z": 9851.453125,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 404,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3170.657958984375,
+    "y": 347.6470947265625,
+    "z": 9894.73046875,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 405,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1736.81494140625,
+    "y": 200.3577117919922,
+    "z": 10311.671875,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 406,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2089.92919921875,
+    "y": 200.00149536132812,
+    "z": 10892.115234375,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 407,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2197.844482421875,
+    "y": -179.27694702148438,
+    "z": 8764.1865234375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 408,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2197.30615234375,
+    "y": -158.40121459960938,
+    "z": 8961.3662109375,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 409,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3430.421630859375,
+    "y": 199.99317932128906,
+    "z": 9742.7626953125,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 410,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2011.404296875,
+    "y": 200.2207489013672,
+    "z": 10893.0078125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 411,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1659.62646484375,
+    "y": 201.17230224609375,
+    "z": 10184.3857421875,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 412,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1948.4189453125,
+    "y": 200.0225830078125,
+    "z": 9721.693359375,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 413,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2382.06005859375,
+    "y": 201.7041778564453,
+    "z": 9650.30859375,
+    "name": "Generic Point 4"
+  },
+  {
+    "id": 414,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2052.6748046875,
+    "y": 200.7099609375,
+    "z": 9097.0888671875,
+    "name": "Generic Point 5"
+  },
+  {
+    "id": 415,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 2772.8974609375,
+    "y": 261.3975830078125,
+    "z": 9059.9833984375,
+    "name": "Generic Point 6"
+  },
+  {
+    "id": 416,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3542.1025390625,
+    "y": 200.72238159179688,
+    "z": 9521.3056640625,
+    "name": "Generic Point 7"
+  },
+  {
+    "id": 417,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 3526.508056640625,
+    "y": 224.78077697753906,
+    "z": 9797.1953125,
+    "name": "Generic Point 8"
+  },
+  {
+    "id": 418,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1783.648193359375,
+    "y": 252.58013916015625,
+    "z": 9735.6162109375,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 419,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1771.8570556640625,
+    "y": 255.8103485107422,
+    "z": 9789.3955078125,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 420,
+    "kind": "chest_puzzle",
+    "gadgetId": 70211111,
+    "pointType": 0,
+    "x": 1774.8341064453125,
+    "y": 266.9091796875,
+    "z": 9864.0576171875,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 421,
+    "kind": "shrine",
+    "gadgetId": 73065005,
+    "pointType": 0,
+    "x": 1341.306396484375,
+    "y": 202.0901336669922,
+    "z": 10070.1142578125,
+    "name": "Generic Point 1"
+  },
+  {
+    "id": 422,
+    "kind": "shrine",
+    "gadgetId": 73065005,
+    "pointType": 0,
+    "x": 2216.029541015625,
+    "y": 251.50137329101562,
+    "z": 9376.55859375,
+    "name": "Generic Point 2"
+  },
+  {
+    "id": 423,
+    "kind": "shrine",
+    "gadgetId": 73065005,
+    "pointType": 0,
+    "x": 2230.257568359375,
+    "y": 200.47410583496094,
+    "z": 10794.98828125,
+    "name": "Generic Point 3"
+  },
+  {
+    "id": 424,
+    "kind": "shrine",
+    "gadgetId": 73065005,
+    "pointType": 0,
+    "x": 3601.53271484375,
+    "y": 201.38597106933594,
+    "z": 9348.642578125,
+    "name": "Generic Point 4"
+  }
+]

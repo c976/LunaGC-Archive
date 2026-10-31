@@ -4,6 +4,8 @@ import static emu.grasscutter.config.Configuration.*;
 
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.common.ItemParamData;
+import emu.grasscutter.game.gacha.GachaEpitomizedCompanionHelper;
+import emu.grasscutter.game.gacha.GachaEpitomizedPrefabHelper;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.proto.GachaInfoOuterClass.GachaInfo;
 import emu.grasscutter.net.proto.GachaUpInfoOuterClass.GachaUpInfo;
@@ -32,6 +34,12 @@ public class GachaBanner {
         11501, 11502, 12501, 12502, 13502, 13505, 14501, 14502, 15501, 15502
     }; // Default weapons
     static final int[] EMPTY_POOL = {}; // Used to remove a type of fallback
+    private static final int[] EPITOMIZED_EXCLUDED_CHAR_IDS = {1005, 1007};
+    // Capturing Radiance (5.0+): chance in % for a lost coinflip to still hand out a featured item,
+    // indexed by how many coinflips were lost in a row before it. So the first 50/50 is a plain
+    // 50/50, the one after a single loss is 55/45, the one after two losses is 75/25, and a fourth
+    // loss in a row cannot happen. Character banners only.
+    static final int[] DEFAULT_CAPTURING_RADIANCE = {0, 10, 50, 100};
     @Getter int scheduleId = -1;
     @Getter int sortId = -1;
     @Getter private int gachaType = -1;
@@ -65,6 +73,7 @@ public class GachaBanner {
     private int[][] weights5;
     private int eventChance4 = -1; // Chance to win a featured event item
     private int eventChance5 = -1; // Chance to win a featured event item
+    private int[] capturingRadianceChances = null; // Defaults to the banner type, see onLoad()
     //
     @Getter private boolean removeC6FromPool = false;
 
@@ -78,6 +87,12 @@ public class GachaBanner {
     // (avatar) or pool 2 (weapon)
     private int[][] poolBalanceWeights5 = {{1, 30}, {147, 150}, {181, 10230}};
     @Getter private int wishMaxProgress = 0;
+
+    // Epitomized-path routing fields introduced by the patched banner format.
+    private boolean epitomizedPath = false;
+    private int[] epitomizedItems5 = {};
+    private String pityGroup;
+    private String epitomizedTarget;
 
     // Deprecated fields that were tolerated in early May 2022 but have apparently still being
     // circulating in new custom configs
@@ -135,9 +150,25 @@ public class GachaBanner {
             this.fallbackItems5Pool1 = this.bannerType.fallbackItems5Pool1;
         if (this.fallbackItems5Pool2 == null)
             this.fallbackItems5Pool2 = this.bannerType.fallbackItems5Pool2;
-        // Set max wish progress based on wish type, otherwise its 0
-        if (this.bannerType.equals(BannerType.WEAPON)) this.wishMaxProgress = 2;
+        if (this.capturingRadianceChances == null)
+            this.capturingRadianceChances =
+                    switch (this.bannerType) {
+                        case EVENT, CHARACTER, CHARACTER2 -> DEFAULT_CAPTURING_RADIANCE;
+                        default -> EMPTY_POOL; // Capturing Radiance only exists on character banners
+                    };
+        // Set max wish progress based on wish type, otherwise its 0.
+        // The Epitomized Path costs one Fate Point since 5.0; it was two from 2.0 to 4.8.
+        if (this.bannerType.equals(BannerType.WEAPON)) this.wishMaxProgress = 1;
         if (this.bannerType.equals(BannerType.CHRONICLE)) this.wishMaxProgress = 1;
+        this.applyFallback4PoolRouting();
+    }
+
+    private void applyFallback4PoolRouting() {
+        if (this.isWeaponFocusedPool()) {
+            this.fallbackItems4Pool1 = EMPTY_POOL;
+        } else if (this.isCharacterFocusedPool()) {
+            this.fallbackItems4Pool2 = EMPTY_POOL;
+        }
     }
 
     public ItemParamData getCost(int numRolls) {
@@ -153,7 +184,126 @@ public class GachaBanner {
     }
 
     public boolean hasEpitomized() {
-        return bannerType.equals(BannerType.WEAPON) || bannerType.equals(BannerType.CHRONICLE);
+        if (isChronicleLinkedBanner()) return false;
+        return epitomizedPath || bannerType.equals(BannerType.WEAPON) || bannerType.equals(BannerType.CHRONICLE);
+    }
+
+    public boolean isWeaponFocusedPool() {
+        return scheduleId == 5098
+                || "CHRONICLE_WEAPON".equalsIgnoreCase(pityGroup)
+                || bannerType == BannerType.WEAPON;
+    }
+
+    public boolean isCharacterFocusedPool() {
+        if (scheduleId == 5099) return true;
+        if ("CHRONICLE".equalsIgnoreCase(pityGroup)
+                && !"CHRONICLE_WEAPON".equalsIgnoreCase(pityGroup)) return true;
+        return bannerType == BannerType.CHARACTER
+                || bannerType == BannerType.CHARACTER2
+                || bannerType == BannerType.EVENT;
+    }
+
+    public boolean isChronicleLinkedBanner() {
+        return scheduleId == 5098 || scheduleId == 5099;
+    }
+
+    public boolean isChronicleMixedBanner() {
+        return bannerType == BannerType.CHRONICLE && epitomizedPath && !isChronicleLinkedBanner();
+    }
+
+    public boolean isCharacterEpitomizedPool() {
+        return "CHARACTER".equalsIgnoreCase(epitomizedTarget);
+    }
+
+    public boolean isWeaponEpitomizedPool() {
+        return "WEAPON".equalsIgnoreCase(epitomizedTarget);
+    }
+
+    public boolean isValidEpitomizedWish(int itemId) {
+        if (itemId <= 0) return false;
+        if (scheduleId == 5098) return itemId >= 10000;
+        if (scheduleId == 5099) return itemId < 10000;
+        if (isCharacterEpitomizedPool() && itemId > 10000) return false;
+        if (isWeaponEpitomizedPool() && itemId > 0 && itemId < 10000) return false;
+        for (int candidate : resolveEpitomizedPathItems()) {
+            if (candidate == itemId) return true;
+        }
+        return !hasEpitomized() || rateUpItems5.length == 0 || rateUpItems5[0] == itemId;
+    }
+
+    private int[] resolveEpitomizedPathItems() {
+        int[] items;
+        if (epitomizedItems5 != null && epitomizedItems5.length > 0) items = epitomizedItems5;
+        else if (isCharacterEpitomizedPool() && fallbackItems5Pool1 != null && fallbackItems5Pool1.length > 0)
+            items = fallbackItems5Pool1;
+        else if (isWeaponEpitomizedPool() && fallbackItems5Pool2 != null && fallbackItems5Pool2.length > 0)
+            items = fallbackItems5Pool2;
+        else items = rateUpItems5;
+        return filterEpitomizedPathItems(items);
+    }
+
+    private int[] filterEpitomizedPathItems(int[] items) {
+        if (items == null || items.length == 0) return items == null ? EMPTY_POOL : items;
+        int kept = 0;
+        for (int id : items) if (!isExcludedEpitomizedItem(id)) kept++;
+        if (kept == items.length) return items;
+        int[] filtered = new int[kept];
+        int index = 0;
+        for (int id : items) if (!isExcludedEpitomizedItem(id)) filtered[index++] = id;
+        return filtered;
+    }
+
+    private boolean isExcludedEpitomizedItem(int itemId) {
+        if (!isCharacterEpitomizedPool()) return itemId == 20001;
+        if (itemId >= 3000 && itemId < 4000) return true;
+        for (int excluded : EPITOMIZED_EXCLUDED_CHAR_IDS) if (itemId == excluded) return true;
+        return false;
+    }
+
+    public boolean supportsCapturingRadiance() {
+        return false;
+    }
+
+    public int getTabSortId() {
+        return switch (scheduleId) {
+            case 803 -> 10000;
+            case 5002 -> 9000;
+            case 5003 -> 8000;
+            case 5099 -> 7000;
+            case 5098 -> 6000;
+            case 1 -> 5000;
+            default -> sortId;
+        };
+    }
+
+    public int sanitizeWishItemId(int itemId) {
+        return isValidEpitomizedWish(itemId) ? itemId : 0;
+    }
+
+    public void ensureFallback4Pools() {
+        this.applyFallback4PoolRouting();
+        if (this.isWeaponFocusedPool()) {
+            if (this.fallbackItems4Pool2 == null || this.fallbackItems4Pool2.length == 0) {
+                this.fallbackItems4Pool2 = GachaEpitomizedCompanionHelper.getAllFourStarWeapons();
+            }
+            if (this.fallbackItems4Pool2.length == 0) {
+                this.fallbackItems4Pool2 = DEFAULT_FALLBACK_ITEMS_4_POOL_2;
+            }
+        } else if (this.isCharacterFocusedPool()) {
+            if (this.fallbackItems4Pool1 == null || this.fallbackItems4Pool1.length == 0) {
+                this.fallbackItems4Pool1 = GachaEpitomizedCompanionHelper.getAllFourStarCharacters();
+            }
+            if (this.fallbackItems4Pool1.length == 0) {
+                this.fallbackItems4Pool1 = DEFAULT_FALLBACK_ITEMS_4_POOL_1;
+            }
+        } else {
+            if (this.fallbackItems4Pool1 == null) {
+                this.fallbackItems4Pool1 = DEFAULT_FALLBACK_ITEMS_4_POOL_1;
+            }
+            if (this.fallbackItems4Pool2 == null) {
+                this.fallbackItems4Pool2 = DEFAULT_FALLBACK_ITEMS_4_POOL_2;
+            }
+        }
     }
 
     public int getWeight(int rarity, int pity) {
@@ -168,6 +318,13 @@ public class GachaBanner {
             case 4 -> Utils.lerp(pity, poolBalanceWeights4);
             default -> Utils.lerp(pity, poolBalanceWeights5);
         };
+    }
+
+    public int getCapturingRadianceChance(int consecutiveLosses) {
+        if (capturingRadianceChances == null || capturingRadianceChances.length == 0) return 0;
+        // Streaks longer than the table keep the last (guaranteed) entry
+        int index = Math.min(Math.max(consecutiveLosses, 0), capturingRadianceChances.length - 1);
+        return capturingRadianceChances[index];
     }
 
     public int getEventChance(int rarity) {
@@ -206,6 +363,27 @@ public class GachaBanner {
 
         // Grasscutter.getLogger().info("record = " + record);
         PlayerGachaBannerInfo gachaInfo = player.getGachaInfo().getBannerInfo(this);
+        int rawWishItemId = gachaInfo.getWishItemId();
+        int linkedCharacterWish = GachaEpitomizedPrefabHelper.resolveChronicleCharacterWish(player);
+        int linkedWeaponWish = GachaEpitomizedPrefabHelper.resolveChronicleWeaponWish(player);
+        int wishItemId;
+        if (this.scheduleId == GachaEpitomizedPrefabHelper.LINKED_WEAPON_SCHEDULE_ID) {
+            wishItemId = linkedWeaponWish > 0 ? linkedWeaponWish : 0;
+            if (wishItemId > 0) gachaInfo.setWishItemId(wishItemId);
+        } else if (this.scheduleId == GachaEpitomizedPrefabHelper.LINKED_CHARACTER_SCHEDULE_ID) {
+            wishItemId = linkedCharacterWish > 0 ? linkedCharacterWish : 0;
+            if (wishItemId > 0) gachaInfo.setWishItemId(wishItemId);
+        } else {
+            wishItemId = this.sanitizeWishItemId(rawWishItemId);
+            if (wishItemId != rawWishItemId) {
+                boolean typeMismatchOnly =
+                        this.isCharacterEpitomizedPool() && rawWishItemId > 10000
+                                || this.isWeaponEpitomizedPool()
+                                        && rawWishItemId > 0
+                                        && rawWishItemId < 10000;
+                if (!typeMismatchOnly) gachaInfo.setWishItemId(wishItemId);
+            }
+        }
         int leftGachaTimes =
                 switch (gachaTimesLimit) {
                     case Integer.MAX_VALUE -> Integer.MAX_VALUE;
@@ -225,7 +403,7 @@ public class GachaBanner {
                         .setCostItemId(this.costItemId)
                         .setCostItemNum(this.costItemAmount)
                         .setTenCostItemNum(this.costItemAmount10)
-                        .setTenCostItemId(this.costItemId)
+                        .setTenCostItemId(this.costItemId10)
                         .setGachaPrefabPath(this.getPrefabPath())
                         .setGachaPreviewPrefabPath(previewPath)
                         .setGachaProbUrl(details)
@@ -234,11 +412,14 @@ public class GachaBanner {
                         .setGachaRecordUrlOversea(record)
                         .setLeftGachaTimes(leftGachaTimes)
                         .setGachaTimesLimit(gachaTimesLimit)
-                        .setGachaSortId(this.getSortId())
-                        .setIsNewWish(true);
+                        .setGachaSortId(this.getTabSortId())
+                        .setIsNewWish(true)
+                        // 7.1 has two unnamed bools here (410, 1937) and is_new_wish is one of them;
+                        // with only one set the Epitomized Path button did nothing, so both are.
+                        .setHMOJLEMLHDK(true);
 
         if (hasEpitomized()) {
-            info.setWishItemId(gachaInfo.getWishItemId())
+            info.setWishItemId(wishItemId)
                     .setWishProgress(gachaInfo.getFailedChosenItemPulls())
                     .setWishMaxProgress(this.getWishMaxProgress());
         }
@@ -252,24 +433,110 @@ public class GachaBanner {
 
             for (int id : getRateUpItems5()) {
                 upInfo.addItemIdList(id);
-                info.addDisplayUp5ItemList(id);
-                // NEEDED for new chronicle wish or else selector bugs
-                if (hasEpitomized()) info.addDisplayChronicle5ItemList(id);
+                if (!hasEpitomized()) info.addDisplayUp5ItemList(id);
             }
 
             info.addGachaUpInfoList(upInfo);
         }
 
-        if (this.getRateUpItems4().length > 0) {
-            GachaUpInfo.Builder upInfo = GachaUpInfo.newBuilder().setItemParentType(2);
+        if (this.hasEpitomized() && !this.isChronicleLinkedBanner()) {
+            for (int id : this.resolveEpitomizedPathItems()) {
+                info.addDisplayChronicle5ItemList(id);
+                info.addDisplayUp5ItemList(id);
+            }
+        }
 
-            for (int id : getRateUpItems4()) {
-                upInfo.addItemIdList(id);
-                if (info.getDisplayUp4ItemListCount() == 0) {
-                    info.addDisplayUp4ItemList(id);
+        if (this.scheduleId == GachaEpitomizedPrefabHelper.LINKED_CHARACTER_SCHEDULE_ID
+                && linkedCharacterWish > 0) {
+            info.setGachaType(BannerType.CHARACTER.gachaType);
+            GachaEpitomizedPrefabHelper.Skin skin =
+                    GachaEpitomizedPrefabHelper.resolve(linkedCharacterWish);
+            if (skin != null) {
+                info.setGachaPrefabPath(skin.getPrefabPath())
+                        .setGachaPreviewPrefabPath(skin.getPreviewPrefabPath());
+                if (skin.getTitlePath() != null && !skin.getTitlePath().isEmpty()) {
+                    info.setTitleTextmap(skin.getTitlePath());
                 }
             }
+            GachaUpInfo.Builder linkedUp = GachaUpInfo.newBuilder().setItemParentType(1);
+            linkedUp.addItemIdList(linkedCharacterWish);
+            info.addDisplayUp5ItemList(linkedCharacterWish).addGachaUpInfoList(linkedUp);
+            int[] companion4 =
+                    GachaEpitomizedCompanionHelper.resolveCharacterRateUp4(
+                            linkedCharacterWish, this.getRateUpItems4());
+            if (companion4.length > 0) {
+                GachaUpInfo.Builder up4 = GachaUpInfo.newBuilder().setItemParentType(1);
+                for (int id : companion4) {
+                    if (id <= 0) continue;
+                    up4.addItemIdList(id);
+                    info.addDisplayUp4ItemList(id);
+                }
+                info.addGachaUpInfoList(up4);
+            }
+        }
 
+        if (this.scheduleId == GachaEpitomizedPrefabHelper.LINKED_WEAPON_SCHEDULE_ID
+                && linkedWeaponWish > 0) {
+            info.setGachaType(BannerType.WEAPON.gachaType);
+            GachaEpitomizedPrefabHelper.Skin skin =
+                    GachaEpitomizedPrefabHelper.resolve(linkedWeaponWish);
+            if (skin != null) {
+                info.setGachaPrefabPath(skin.getPrefabPath())
+                        .setGachaPreviewPrefabPath(skin.getPreviewPrefabPath());
+                if (skin.getTitlePath() != null && !skin.getTitlePath().isEmpty()) {
+                    info.setTitleTextmap(skin.getTitlePath());
+                }
+            }
+            info.setWishItemId(linkedWeaponWish)
+                    .setWishProgress(gachaInfo.getFailedChosenItemPulls())
+                    .setWishMaxProgress(this.getWishMaxProgress());
+            GachaUpInfo.Builder linkedUp = GachaUpInfo.newBuilder().setItemParentType(2);
+            linkedUp.addItemIdList(linkedWeaponWish);
+            int[] displayPair = GachaEpitomizedPrefabHelper.resolveWeaponDisplayPair(linkedWeaponWish);
+            if (displayPair.length >= 2) {
+                for (int id : displayPair) {
+                    if (id <= 0) continue;
+                    info.addDisplayUp5ItemList(id);
+                    linkedUp.addItemIdList(id);
+                }
+            } else {
+                info.addDisplayUp5ItemList(linkedWeaponWish);
+            }
+            info.addGachaUpInfoList(linkedUp);
+            int[] display4 = GachaEpitomizedCompanionHelper.resolveRateUp4(this, linkedWeaponWish);
+            if (display4.length > 5) {
+                display4 = GachaEpitomizedCompanionHelper.pickDisplaySample(display4, 5);
+            }
+            if (display4.length > 0) {
+                GachaUpInfo.Builder up4 = GachaUpInfo.newBuilder().setItemParentType(2);
+                for (int id : display4) {
+                    if (id <= 0) continue;
+                    up4.addItemIdList(id);
+                    info.addDisplayUp4ItemList(id);
+                }
+                info.addGachaUpInfoList(up4);
+            }
+        }
+
+        int[] displayRateUp4 =
+                this.hasEpitomized() && !this.isChronicleLinkedBanner()
+                        ? GachaEpitomizedCompanionHelper.resolveRateUp4(this, wishItemId)
+                        : this.getRateUpItems4();
+        if (displayRateUp4.length > 0) {
+            int parentType4 = this.isCharacterEpitomizedPool() ? 1 : 2;
+            GachaUpInfo.Builder upInfo = GachaUpInfo.newBuilder().setItemParentType(parentType4);
+            for (int id : displayRateUp4) {
+                upInfo.addItemIdList(id);
+            }
+            int[] displaySample =
+                    this.isCharacterEpitomizedPool()
+                            ? GachaEpitomizedCompanionHelper.pickDisplaySample(displayRateUp4, 4)
+                            : displayRateUp4.length > 5
+                                    ? GachaEpitomizedCompanionHelper.pickDisplaySample(displayRateUp4, 5)
+                                    : displayRateUp4;
+            for (int id : displaySample) {
+                info.addDisplayUp4ItemList(id);
+            }
             info.addGachaUpInfoList(upInfo);
         }
 

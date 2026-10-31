@@ -3,10 +3,10 @@ package emu.grasscutter.game.friends;
 import dev.morphia.annotations.*;
 import emu.grasscutter.database.DatabaseHelper;
 import emu.grasscutter.game.player.Player;
+import emu.grasscutter.game.player.ProfilePictureHelper;
 import emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief;
 import emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState;
 import emu.grasscutter.net.proto.PlatformTypeOuterClass;
-import emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture;
 import org.bson.types.ObjectId;
 
 @Entity(value = "friendships", useDiscriminator = false)
@@ -94,7 +94,7 @@ public class Friendship {
                 .setNickname(getFriendProfile().getName())
                 .setLevel(getFriendProfile().getPlayerLevel())
                 .setProfilePicture(
-                        ProfilePicture.newBuilder().setAvatarId(getFriendProfile().getAvatarId()))
+                        ProfilePictureHelper.toProto(getFriendProfile().getAvatarId()))
                 .setWorldLevel(getFriendProfile().getWorldLevel())
                 .setSignature(getFriendProfile().getSignature())
                 .setOnlineState(

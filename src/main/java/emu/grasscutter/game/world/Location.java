@@ -1,27 +1,31 @@
 package emu.grasscutter.game.world;
 
-import dev.morphia.annotations.*;
+import dev.morphia.annotations.Entity;
+import dev.morphia.annotations.Transient;
 import lombok.*;
 
 @Entity
 public class Location extends Position {
-    @Transient @Getter @Setter private Scene scene;
+    private static final long serialVersionUID = 1L;
+
+    @Transient @Getter @Setter private transient Scene scene;
+
+    private Location() {
+        super();
+    }
 
     public Location(Scene scene, Position position) {
-        this.set(position);
-
+        super(position);
         this.scene = scene;
     }
 
     public Location(Scene scene, float x, float y) {
-        this.set(x, y);
-
+        super(x, y);
         this.scene = scene;
     }
 
     public Location(Scene scene, float x, float y, float z) {
-        this.set(x, y, z);
-
+        super(x, y, z);
         this.scene = scene;
     }
 

@@ -7,6 +7,7 @@ import lombok.Getter;
 @ResourceType(name = {"AnimalCodexExcelConfigData.json"})
 @Getter
 public class CodexAnimalData extends GameResource {
+    @SerializedName(value = "id", alternate = {"Id"})
     @Getter(onMethod_ = @Override)
     private int id;
 

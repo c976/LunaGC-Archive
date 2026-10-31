@@ -8,7 +8,9 @@ public class PacketAvatarTeamAllDataNotify extends BasePacket {
     public PacketAvatarTeamAllDataNotify(Player player) {
         super(PacketOpcodes.AvatarTeamAllDataNotify);
 
-        AvatarTeamAllDataNotify.Builder proto = AvatarTeamAllDataNotify.newBuilder();
+        AvatarTeamAllDataNotify.Builder proto =
+                AvatarTeamAllDataNotify.newBuilder()
+                        .setCurAvatarTeamId(player.getTeamManager().getCurrentTeamId());
 
         // Add the id list for custom teams.
         for (int id : player.getTeamManager().getTeams().keySet()) {

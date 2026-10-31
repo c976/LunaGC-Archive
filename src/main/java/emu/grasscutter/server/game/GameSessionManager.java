@@ -12,6 +12,13 @@ import lombok.Getter;
 public class GameSessionManager {
     @Getter private static final DefaultEventLoop logicThread = new DefaultEventLoop();
     private static final ConcurrentHashMap<Ukcp, GameSession> sessions = new ConcurrentHashMap<>();
+    private static volatile boolean closed;
+
+    /** Turns away new connections, so none log in while the server shuts down. */
+    public static void closeAdmission() {
+        closed = true;
+    }
+
     private static final KcpListener listener =
             new KcpListener() {
             @Override
@@ -34,6 +41,10 @@ public class GameSessionManager {
                     server = Grasscutter.getGameServer();
                 }
 
+                if (closed) {
+                    ukcp.close();
+                    return;
+                }
                 GameSession conversation = new GameSession(server);
 
                 sessions.put(ukcp, conversation);

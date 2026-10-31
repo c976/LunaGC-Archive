@@ -36,6 +36,8 @@
     <queueSize>1024</queueSize>
     <discardingThreshold>0</discardingThreshold>
     <neverBlock>true</neverBlock>
+    <!-- %class needs the caller; without this the async appenders print "?" for it. -->
+    <includeCallerData>true</includeCallerData>
   </appender>
 
   <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
@@ -43,6 +45,8 @@
     <queueSize>1024</queueSize>
     <discardingThreshold>0</discardingThreshold>
     <neverBlock>true</neverBlock>
+    <!-- %class needs the caller; without this the async appenders print "?" for it. -->
+    <includeCallerData>true</includeCallerData>
   </appender>
 
   <root level="INFO">

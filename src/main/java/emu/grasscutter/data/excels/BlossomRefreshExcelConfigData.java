@@ -1,5 +1,6 @@
 package emu.grasscutter.data.excels;
 
+import com.google.gson.annotations.SerializedName;
 import emu.grasscutter.data.*;
 import java.util.List;
 import lombok.Getter;
@@ -20,10 +21,12 @@ public class BlossomRefreshExcelConfigData extends GameResource {
     private int refreshCount; // Number of entries to spawn at refresh (1 for each leyline type for each city,
     // 4 for magical ore for each city)
     private String refreshTime; // Server time-of-day to refresh at
+    @SerializedName(value = "RefreshCondVec", alternate = "refreshCondVec")
     private RefreshCond[] refreshCondVec; // AR requirements etc.
 
     private int cityId;
     private int blossomChestId; // 1 for mora, 2 for exp
+    @SerializedName(value = "DropVec", alternate = "dropVec")
     private Drop[] dropVec;
 
     // Unknown details
@@ -32,7 +35,9 @@ public class BlossomRefreshExcelConfigData extends GameResource {
 
     @Getter
     public static class Drop {
+        @SerializedName(value = "drop_id", alternate = "dropId")
         int dropId;
+        @SerializedName(value = "preview_reward", alternate = "previewReward")
         int previewReward;
     }
 

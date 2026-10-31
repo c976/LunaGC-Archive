@@ -1,0 +1,18 @@
+version.json https://api.lunaris.moe/data/version.json
+
+characters.json https://api.lunaris.moe/data/7.1.53/charlist.json // traveler is either 10000005_<ELEMENT> (boy) or 10000007_<ELEMENT> (girl). more info at https://api.lunaris.moe/data/7.1.53/en/char/<ID>.json
+weapons.json https://api.lunaris.moe/data/7.1.53/weaponlist.json // more info at https://api.lunaris.moe/data/7.1.53/en/weapon/<ID>.json, though nothing truly useful except maybe the level scaling
+artifacts.json https://api.lunaris.moe/data/7.1.53/artifactlist.json // more info at https://api.lunaris.moe/data/7.1.53/en/artifact/<ID>.json, though nothing truly useful
+materials.json https://api.lunaris.moe/data/7.1.53/materiallist.json  // also contains books, food, namecards, TCG cards, blueprints
+monsters.json https://api.lunaris.moe/data/7.1.53/monsterlist.json // more details at https://api.lunaris.moe/data/7.1.53/en/monster/<ID>.json
+quests.json https://api.lunaris.moe/data/7.1.53/chapterlist.json  // more like quest-lines rather than _all_ the quests. a bit more info at https://lunaris.moe/quest/<ID>. also see https://gi.yatta.moe/en/archive/quest/<ID>, which has better progression but no exact quest_id
+imaginarium_theater.json https://api.lunaris.moe/data/7.1.53/roleplaylist.json // more details at https://api.lunaris.moe/data/7.1.53/en/roleplay/<ID>.json
+spiral_abyss.json https://api.lunaris.moe/data/7.1.53/towerlist.json // not much info besides the historical start/end datetime and the name of the buff
+tutorials.json https://api.lunaris.moe/data/7.1.53/tutoriallist.json
+
+banners.json https://lunaris.moe/data/banners.json
+stygian_onslaught.7_1.json https://lunaris.moe/data/leylinechallenge/5269012.json  // first schedule is 5269001.json for update 5.7
+
+achievements.json https://gi.yatta.moe/api/v2/en/achievement
+furnishings.json https://gi.yatta.moe/api/v2/en/furniture // materials.json contains only the recipes, this is probably the actual items
+quests_alt.json https://gi.yatta.moe/api/v2/en/quest // alternative to quests.json, also contains commission quests

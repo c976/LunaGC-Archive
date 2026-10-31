@@ -23,6 +23,48 @@ import javax.crypto.Cipher;
 /** A class containing default authenticators. */
 public final class DefaultAuthenticators {
 
+    /** Builds formatted ban message for client SDK modal. */
+    public static String buildBanMessage(Account account) {
+        if (account == null) return "This account is banned.";
+        int endTime = account.getBanEndTime();
+        String timeStr;
+        if (endTime <= 0) {
+            timeStr = "permanent";
+        } else {
+            timeStr = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                    .format(new java.util.Date(((long) endTime) * 1000L));
+        }
+        String reason = account.getBanReason();
+        if (reason == null || reason.trim().isEmpty()) {
+            reason = "violation of the game rules";
+        }
+        return String.format("This account is banned.\nUnban time: %s\nReason: %s", timeStr, reason);
+    }
+
+    /**
+     * The password as the player typed it, or null when the client encrypted it (is_crypto) with a
+     * key this server cannot decrypt.
+     */
+    private static String plainPassword(LoginAccountRequestJson data, boolean integrationPassword) {
+        String password = data.password == null ? "" : data.password;
+        // The integration password comes out of the username box, which is never encrypted.
+        if (integrationPassword || !data.is_crypto || password.isEmpty()) return password;
+        try {
+            return RSADecryptionUtil.decrypt(password);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    /** {@link Account#verifyPassword}, but a password BCrypt refuses counts as wrong, not a 500. */
+    private static boolean verifyPassword(Account account, String password) {
+        try {
+            return account.verifyPassword(password);
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
+    }
+
     /** Handles the authentication request from the username and password form. */
     public static class PasswordAuthenticator implements Authenticator<LoginResultJson> {
         @Override
@@ -31,18 +73,59 @@ public final class DefaultAuthenticators {
 
             var requestData = request.getPasswordRequest();
             assert requestData != null; // This should never be null.
+            boolean useIntegrationPassword = ACCOUNT.useIntegrationPassword;
+            if (useIntegrationPassword) {
+                // Rewrites requestData.account and requestData.password in place, and nulls both
+                // when the username box did not hold the "account&&password" form.
+                requestData.parse();
+            }
 
             boolean successfulLogin = false;
             String address = Utils.address(request.getContext());
             String responseMessage = translate("messages.dispatch.account.username_error");
             String loggerMessage = "";
 
+            // Nothing usable came out of the username box. Stop here: signing in registers an
+            // unknown name, so falling through would try to register a null one.
+            if (requestData.account == null || requestData.account.isBlank()) {
+                response.retcode = -201;
+                response.message =
+                        useIntegrationPassword
+                                ? "Enter your account and password in the username box as"
+                                        + " account&&password."
+                                : responseMessage;
+                Grasscutter.getLogger()
+                        .info("[Dispatch] Client {} sent no usable account name.", address);
+                return response;
+            }
+
+            if (useIntegrationPassword
+                    && (requestData.password == null || requestData.password.isEmpty())) {
+                response.retcode = -201;
+                response.message = "The password half of account&&password is empty.";
+                Grasscutter.getLogger()
+                        .info("[Dispatch] Client {} sent an empty password half.", address);
+                return response;
+            }
+
             // Get account from database.
             Account account = DatabaseHelper.getAccountByName(requestData.account);
-            // Check if account exists.
+            // Signing in with a name nobody holds registers it, so there is no separate sign-up
+            // step: the launcher's login box is the sign-up form. autoCreate turns this off for a
+            // closed server.
+            //
+            // The cost is that a mistyped username registers that typo rather than reporting a bad
+            // login - unavoidable when the credential comes from one free-text box, and the reason
+            // the password is checked below for names that already exist.
             if (account == null && ACCOUNT.autoCreate) {
                 // This account has been created AUTOMATICALLY. There will be no permissions added.
-                account = DatabaseHelper.createAccountWithUid(requestData.account, 0);
+                account =
+                        useIntegrationPassword
+                                // The password came in with the name, so store it now, hashed. The
+                                // other path has none to store and locks one in on first sign-in.
+                                ? DatabaseHelper.createAccountWithHashedPassword(
+                                        requestData.account, requestData.password, null)
+                                : DatabaseHelper.createAccountWithUid(requestData.account, 0);
 
                 // Check if the account was created successfully.
                 if (account == null) {
@@ -59,23 +142,68 @@ public final class DefaultAuthenticators {
                                     translate(
                                             "messages.dispatch.account.account_login_create_success",
                                             address,
-                                            response.data.account.uid));
+                                            account.getId()));
                 }
-            } else if (account != null) successfulLogin = true;
-            else
+            } else if (account != null) {
+                String rawPassword = plainPassword(requestData, useIntegrationPassword);
+                if (rawPassword == null) {
+                    // The client encrypted the password with a key this server does not hold, so
+                    // it can be neither stored nor checked. Hashing the ciphertext threw (BCrypt
+                    // takes at most 72 bytes) and reached the client as an HTTP 500; the login is
+                    // let through instead, as the private repo does.
+                    successfulLogin = true;
+                    Grasscutter.getLogger()
+                            .info(
+                                    "[Dispatch] Client "
+                                            + address
+                                            + " sent a password this server cannot decrypt; account "
+                                            + account.getId()
+                                            + " logs in without a password check.");
+                } else {
+                    // Lock the entered password as the account password on first login
+                    // (covers both newly auto-created accounts and old accounts with an empty
+                    // password).
+                    if ((account.getPassword() == null || account.getPassword().isEmpty())
+                            && !rawPassword.isEmpty()) {
+                        try {
+                            account.setPassword(
+                                    BCrypt.withDefaults().hashToString(10, rawPassword.toCharArray()));
+                            account.save();
+                        } catch (IllegalArgumentException tooLong) {
+                            // Longer than BCrypt takes: leave the account without a password.
+                        }
+                    }
+                }
+                // Verify the password for accounts that have one set.
+                if (successfulLogin
+                        || account.getPassword() == null
+                        || account.getPassword().isEmpty()
+                        || verifyPassword(account, rawPassword)) {
+                    successfulLogin = true;
+                } else {
+                    responseMessage = translate("messages.dispatch.account.password_error");
+                    loggerMessage = translate("messages.dispatch.account.login_password_error", address);
+                }
+            } else
                 loggerMessage = translate("messages.dispatch.account.account_login_exist_error", address);
 
             // Set response data.
             if (successfulLogin) {
-                response.message = "OK";
-                response.data.account.uid = account.getId();
-                response.data.account.token = account.generateSessionKey();
-                response.data.account.email = account.getEmail();
+                if (account != null && account.isBanned()) {
+                    response.retcode = -201;
+                    response.message = buildBanMessage(account);
+                    loggerMessage = String.format("Login rejected: account %s is banned", account.getId());
+                } else {
+                    response.message = "OK";
+                    response.data.account.uid = account.getId();
+                    response.data.account.token = account.generateSessionKey();
+                    response.data.account.email = account.getEmail();
 
-                loggerMessage =
-                        translate("messages.dispatch.account.login_success", address, account.getId());
+                    loggerMessage =
+                            translate("messages.dispatch.account.login_success", address, account.getId());
+                }
             } else {
-                response.retcode = -201;
+                response.retcode = -3201;
                 response.message = responseMessage;
             }
             Grasscutter.getLogger().info(loggerMessage);
@@ -91,7 +219,6 @@ public final class DefaultAuthenticators {
 
             var requestData = request.getPasswordRequest();
             assert requestData != null; // This should never be null.
-
             boolean successfulLogin = false;
             String address = Utils.address(request.getContext());
             String responseMessage = translate("messages.dispatch.account.username_error");
@@ -128,9 +255,11 @@ public final class DefaultAuthenticators {
                 // This account has been created AUTOMATICALLY. There will be no permissions added.
                 if (decryptedPassword.length() >= 8) {
                     account = DatabaseHelper.createAccountWithUid(requestData.account, 0);
-                    account.setPassword(
-                            BCrypt.withDefaults().hashToString(12, decryptedPassword.toCharArray()));
-                    account.save();
+                    if (account != null) {
+                        account.setPassword(
+                                BCrypt.withDefaults().hashToString(12, decryptedPassword.toCharArray()));
+                        account.save();
+                    }
 
                     // Check if the account was created successfully.
                     if (account == null) {
@@ -166,10 +295,19 @@ public final class DefaultAuthenticators {
                         responseMessage = translate("messages.dispatch.account.password_error");
                     }
                 } else {
-                    successfulLogin = false;
-                    loggerMessage =
-                            translate("messages.dispatch.account.login_password_storage_error", address);
-                    responseMessage = translate("messages.dispatch.account.password_storage_error");
+                    // Empty password account: lock the entered password on first login.
+                    if (decryptedPassword != null && !decryptedPassword.isEmpty()) {
+                        account.setPassword(
+                                BCrypt.withDefaults()
+                                        .hashToString(12, decryptedPassword.toCharArray()));
+                        account.save();
+                        successfulLogin = true;
+                    } else {
+                        successfulLogin = false;
+                        loggerMessage =
+                                translate("messages.dispatch.account.login_password_error", address);
+                        responseMessage = translate("messages.dispatch.account.password_error");
+                    }
                 }
             } else {
                 loggerMessage = translate("messages.dispatch.account.account_login_exist_error", address);
@@ -177,15 +315,21 @@ public final class DefaultAuthenticators {
 
             // Set response data.
             if (successfulLogin) {
-                response.message = "OK";
-                response.data.account.uid = account.getId();
-                response.data.account.token = account.generateSessionKey();
-                response.data.account.email = account.getEmail();
+                if (account != null && account.isBanned()) {
+                    response.retcode = -201;
+                    response.message = buildBanMessage(account);
+                    loggerMessage = String.format("Login rejected: account %s is banned", account.getId());
+                } else {
+                    response.message = "OK";
+                    response.data.account.uid = account.getId();
+                    response.data.account.token = account.generateSessionKey();
+                    response.data.account.email = account.getEmail();
 
-                loggerMessage =
-                        translate("messages.dispatch.account.login_success", address, account.getId());
+                    loggerMessage =
+                            translate("messages.dispatch.account.login_success", address, account.getId());
+                }
             } else {
-                response.retcode = -201;
+                response.retcode = -3201;
                 response.message = responseMessage;
             }
             Grasscutter.getLogger().info(loggerMessage);
@@ -215,20 +359,26 @@ public final class DefaultAuthenticators {
             Account account = DatabaseHelper.getAccountById(requestData.uid);
 
             // Check if account exists/token is valid.
-            successfulLogin = account != null && account.getSessionKey().equals(requestData.token);
+            successfulLogin = account != null && account.matchesSessionKey(requestData.token);
 
             // Set response data.
             if (successfulLogin) {
-                response.message = "OK";
-                response.data.account.uid = account.getId();
-                response.data.account.token = account.getSessionKey();
-                response.data.account.email = account.getEmail();
+                if (account.isBanned()) {
+                    response.retcode = -201;
+                    response.message = buildBanMessage(account);
+                    loggerMessage = String.format("Token login rejected: account %s is banned", account.getId());
+                } else {
+                    response.message = "OK";
+                    response.data.account.uid = account.getId();
+                    response.data.account.token = account.getSessionKey();
+                    response.data.account.email = account.getEmail();
 
-                // Log the login.
-                loggerMessage =
-                        translate("messages.dispatch.account.login_token_success", address, requestData.uid);
+                    // Log the login.
+                    loggerMessage =
+                            translate("messages.dispatch.account.login_token_success", address, requestData.uid);
+                }
             } else {
-                response.retcode = -201;
+                response.retcode = -3201;
                 response.message = translate("messages.dispatch.account.account_cache_error");
 
                 // Log the failure.
@@ -249,30 +399,48 @@ public final class DefaultAuthenticators {
             var requestData = request.getSessionKeyRequest();
             var loginData = request.getSessionKeyData();
             assert requestData != null;
-            assert loginData != null;
 
             boolean successfulLogin;
             String address = Utils.address(request.getContext());
             String loggerMessage;
 
-            // Get account from database.
-            Account account = DatabaseHelper.getAccountById(loginData.uid);
+            // A data field that is not the expected JSON leaves loginData null, which used to throw
+            // and reach the client as an HTTP 500.
+            if (loginData == null) {
+                response.retcode = -3201;
+                response.message = translate("messages.dispatch.account.session_key_error");
+                Grasscutter.getLogger().info("[Combo] login from " + address + " carried no usable data.");
+                return response;
+            }
 
-            // Check if account exists/token is valid.
-            successfulLogin = account != null && account.getSessionKey().equals(loginData.token);
+            // Fail closed: never trust a caller-supplied session token simply because
+            // an account with that UID exists.
+            Account account = DatabaseHelper.getAccountById(loginData.uid);
+            successfulLogin = account != null && account.matchesSessionKey(loginData.token);
+            Grasscutter.getLogger()
+                    .info(
+                            "[Combo] credential verification={} for uid={}",
+                            successfulLogin,
+                            loginData.uid);
 
             // Set response data.
             if (successfulLogin) {
-                response.message = "OK";
-                response.data.open_id = account.getId();
-                response.data.combo_id = "157795300";
-                response.data.combo_token = account.generateLoginToken();
+                if (account.isBanned()) {
+                    response.retcode = -201;
+                    response.message = buildBanMessage(account);
+                    loggerMessage = String.format("Combo login rejected: account %s is banned", account.getId());
+                } else {
+                    response.message = "OK";
+                    response.data.open_id = account.getId();
+                    response.data.combo_id = "157795300";
+                    response.data.combo_token = account.generateLoginToken();
 
-                // Log the login.
-                loggerMessage = translate("messages.dispatch.account.combo_token_success", address);
+                    // Log the login.
+                    loggerMessage = translate("messages.dispatch.account.combo_token_success", address);
+                }
 
             } else {
-                response.retcode = -201;
+                response.retcode = -3201;
                 response.message = translate("messages.dispatch.account.session_key_error");
 
                 // Log the failure.

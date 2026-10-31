@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "IceCreatureGadgetInfo.proto";
+
+// 7.1 CmdId 6301 (_IceCreatureAllGadgetInfoNotify).
+message IceCreatureAllGadgetInfoNotify {
+  uint32 uid = 8;
+  repeated IceCreatureGadgetInfo ice_creature_gadget_info_list = 14;
+}

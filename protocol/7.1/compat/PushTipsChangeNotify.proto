@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "PushTipsData.proto";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 4737 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message PushTipsChangeNotify {
+  repeated uint32 _repeated_push_tips_id_list = 2;
+  repeated PushTipsData push_tips_list = 7;
+}

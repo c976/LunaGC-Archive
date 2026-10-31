@@ -8,7 +8,7 @@ public class HandlerUnlockMapLayerGroupReq extends PacketHandler {
 
     @Override
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
-        emu.grasscutter.Grasscutter.getLogger().info("[Gacha] UnlockMapLayerGroupReq received — sending UnlockMapLayerGroupRsp (retcode=0)");
+        emu.grasscutter.Grasscutter.getLogger().debug("[Gacha] UnlockMapLayerGroupReq received — sending UnlockMapLayerGroupRsp (retcode=0)");
         session.send(new BasePacket(PacketOpcodes.UnlockMapLayerGroupRsp));
     }
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "HomeResource.proto";
+
+// 7.1 CmdId 28033 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message HomeResourceTakeHomeCoinRsp {
+  HomeResource home_coin = 12;
+  int32 retcode = 8;
+}

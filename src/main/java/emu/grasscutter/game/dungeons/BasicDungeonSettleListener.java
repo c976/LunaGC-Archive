@@ -15,5 +15,15 @@ public class BasicDungeonSettleListener implements DungeonSettleListener {
         DungeonEndStats stats = new DungeonEndStats(scene.getKilledMonsterCount(), time, 0, endReason);
 
         scene.broadcastPacket(new PacketDungeonSettleNotify(new BaseDungeonResult(dungeonData, stats)));
+        if (endReason == BaseDungeonResult.DungeonEndReason.COMPLETED) {
+            try {
+                WeeklyBossModelCleanup.sweepAfterSettle(scene);
+            } catch (Throwable ignored) {
+            }
+            try {
+                DvalinSettleTransitionHelper.onDungeonSettleSuccess(scene);
+            } catch (Throwable ignored) {
+            }
+        }
     }
 }

@@ -1,0 +1,1090 @@
+[
+  {
+    "itemId": 11503,
+    "prefabPath": "GachaShowPanel_A201",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A201",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A201_TITLE",
+    "displayItemIds": [
+      14516,
+      11503
+    ]
+  },
+  {
+    "itemId": 11509,
+    "prefabPath": "GachaShowPanel_A165",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A165",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A165_TITLE",
+    "displayItemIds": [
+      12512,
+      11509
+    ]
+  },
+  {
+    "itemId": 11510,
+    "prefabPath": "GachaShowPanel_A162",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A162",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A162_TITLE",
+    "displayItemIds": [
+      11510,
+      13511
+    ]
+  },
+  {
+    "itemId": 11511,
+    "prefabPath": "GachaShowPanel_A195",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A195",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A195_TITLE",
+    "displayItemIds": [
+      12512,
+      11511
+    ]
+  },
+  {
+    "itemId": 11512,
+    "prefabPath": "GachaShowPanel_A189",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A189",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A189_TITLE",
+    "displayItemIds": [
+      11515,
+      11512
+    ]
+  },
+  {
+    "itemId": 11514,
+    "prefabPath": "GachaShowPanel_A207",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A207",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A207_TITLE",
+    "displayItemIds": [
+      11516,
+      11514
+    ]
+  },
+  {
+    "itemId": 11515,
+    "prefabPath": "GachaShowPanel_A222",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A222",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A222_TITLE",
+    "displayItemIds": [
+      13512,
+      11515
+    ]
+  },
+  {
+    "itemId": 11516,
+    "prefabPath": "GachaShowPanel_A270",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A270",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A270_TITLE",
+    "displayItemIds": [
+      14519,
+      11516
+    ]
+  },
+  {
+    "itemId": 11517,
+    "prefabPath": "GachaShowPanel_A261",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A261",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A261_TITLE",
+    "displayItemIds": [
+      14521,
+      11513
+    ]
+  },
+  {
+    "itemId": 11518,
+    "prefabPath": "GachaShowPanel_A291",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A291",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A291_TITLE",
+    "displayItemIds": [
+      14523,
+      11518
+    ]
+  },
+  {
+    "itemId": 12503,
+    "prefabPath": "GachaShowPanel_A141",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A141",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A141_TITLE",
+    "displayItemIds": [
+      12503,
+      14502
+    ]
+  },
+  {
+    "itemId": 12510,
+    "prefabPath": "GachaShowPanel_A177",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A177",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A177_TITLE",
+    "displayItemIds": [
+      11514,
+      12510
+    ]
+  },
+  {
+    "itemId": 12511,
+    "prefabPath": "GachaShowPanel_A123",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A123",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A123_TITLE",
+    "displayItemIds": [
+      12511,
+      13511
+    ]
+  },
+  {
+    "itemId": 12512,
+    "prefabPath": "GachaShowPanel_A237",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A237",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A237_TITLE",
+    "displayItemIds": [
+      13514,
+      12512
+    ]
+  },
+  {
+    "itemId": 12513,
+    "prefabPath": "GachaShowPanel_A240",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A240",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A240_TITLE",
+    "displayItemIds": [
+      12513,
+      13509
+    ]
+  },
+  {
+    "itemId": 12514,
+    "prefabPath": "GachaShowPanel_A294",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A294",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A294_TITLE",
+    "displayItemIds": [
+      12514,
+      13517
+    ]
+  },
+  {
+    "itemId": 12515,
+    "prefabPath": "GachaShowPanel_A264",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A264",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A264_TITLE",
+    "displayItemIds": [
+      13504,
+      13512
+    ]
+  },
+  {
+    "itemId": 12516,
+    "prefabPath": "GachaShowPanel_A291",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A291",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A291_TITLE",
+    "displayItemIds": [
+      14523,
+      11518
+    ]
+  },
+  {
+    "itemId": 13502,
+    "prefabPath": "GachaShowPanel_A210",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A210",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A210_TITLE",
+    "displayItemIds": [
+      14511,
+      13501
+    ]
+  },
+  {
+    "itemId": 13504,
+    "prefabPath": "GachaShowPanel_A264",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A264",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A264_TITLE",
+    "displayItemIds": [
+      13504,
+      13512
+    ]
+  },
+  {
+    "itemId": 13505,
+    "prefabPath": "GachaShowPanel_A174",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A174",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A174_TITLE",
+    "displayItemIds": [
+      13505,
+      14509
+    ]
+  },
+  {
+    "itemId": 13507,
+    "prefabPath": "GachaShowPanel_A243",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A243",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A243_TITLE",
+    "displayItemIds": [
+      11517,
+      13507
+    ]
+  },
+  {
+    "itemId": 13509,
+    "prefabPath": "GachaShowPanel_A168",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A168",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A168_TITLE",
+    "displayItemIds": [
+      13509,
+      15509
+    ]
+  },
+  {
+    "itemId": 13511,
+    "prefabPath": "GachaShowPanel_A162",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A162",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A162_TITLE",
+    "displayItemIds": [
+      11510,
+      13511
+    ]
+  },
+  {
+    "itemId": 13513,
+    "prefabPath": "GachaShowPanel_A246",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A246",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A246_TITLE",
+    "displayItemIds": [
+      12514,
+      13513
+    ]
+  },
+  {
+    "itemId": 14502,
+    "prefabPath": "GachaShowPanel_A141",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A141",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A141_TITLE",
+    "displayItemIds": [
+      12503,
+      14502
+    ]
+  },
+  {
+    "itemId": 14505,
+    "prefabPath": "GachaShowPanel_A186",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A186",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A186_TITLE",
+    "displayItemIds": [
+      14512,
+      14505
+    ]
+  },
+  {
+    "itemId": 14506,
+    "prefabPath": "GachaShowPanel_A144",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A144",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A144_TITLE",
+    "displayItemIds": [
+      14506,
+      14512
+    ]
+  },
+  {
+    "itemId": 14509,
+    "prefabPath": "GachaShowPanel_A174",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A174",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A174_TITLE",
+    "displayItemIds": [
+      13505,
+      14509
+    ]
+  },
+  {
+    "itemId": 14511,
+    "prefabPath": "GachaShowPanel_A210",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A210",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A210_TITLE",
+    "displayItemIds": [
+      14511,
+      13501
+    ]
+  },
+  {
+    "itemId": 14512,
+    "prefabPath": "GachaShowPanel_A186",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A186",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A186_TITLE",
+    "displayItemIds": [
+      14512,
+      14505
+    ]
+  },
+  {
+    "itemId": 14513,
+    "prefabPath": "GachaShowPanel_A228",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A228",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A228_TITLE",
+    "displayItemIds": [
+      11513,
+      14513
+    ]
+  },
+  {
+    "itemId": 14514,
+    "prefabPath": "GachaShowPanel_A276",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A276",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A276_TITLE",
+    "displayItemIds": [
+      11519,
+      14514
+    ]
+  },
+  {
+    "itemId": 14515,
+    "prefabPath": "GachaShowPanel_A231",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A231",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A231_TITLE",
+    "displayItemIds": [
+      14519,
+      14515
+    ]
+  },
+  {
+    "itemId": 14516,
+    "prefabPath": "GachaShowPanel_A252",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A252",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A252_TITLE",
+    "displayItemIds": [
+      14516,
+      15514
+    ]
+  },
+  {
+    "itemId": 14517,
+    "prefabPath": "GachaShowPanel_A219",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A219",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A219_TITLE",
+    "displayItemIds": [
+      12514,
+      14517
+    ]
+  },
+  {
+    "itemId": 14518,
+    "prefabPath": "GachaShowPanel_A282",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A282",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A282_TITLE",
+    "displayItemIds": [
+      11517,
+      13514
+    ]
+  },
+  {
+    "itemId": 14519,
+    "prefabPath": "GachaShowPanel_A288",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A288",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A288_TITLE",
+    "displayItemIds": [
+      14520,
+      14521
+    ]
+  },
+  {
+    "itemId": 14520,
+    "prefabPath": "GachaShowPanel_A288",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A288",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A288_TITLE",
+    "displayItemIds": [
+      14520,
+      14521
+    ]
+  },
+  {
+    "itemId": 14521,
+    "prefabPath": "GachaShowPanel_A291",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A291",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A291_TITLE",
+    "displayItemIds": [
+      14523,
+      11518
+    ]
+  },
+  {
+    "itemId": 14522,
+    "prefabPath": "GachaShowPanel_A273",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A273",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A273_TITLE",
+    "displayItemIds": [
+      14522,
+      13515
+    ]
+  },
+  {
+    "itemId": 14523,
+    "prefabPath": "GachaShowPanel_A291",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A291",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A291_TITLE",
+    "displayItemIds": [
+      14523,
+      11518
+    ]
+  },
+  {
+    "itemId": 15502,
+    "prefabPath": "GachaShowPanel_A132",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A132",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A132_TITLE",
+    "displayItemIds": [
+      14505,
+      15502
+    ]
+  },
+  {
+    "itemId": 15503,
+    "prefabPath": "GachaShowPanel_A234",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A234",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A234_TITLE",
+    "displayItemIds": [
+      11516,
+      15503
+    ]
+  },
+  {
+    "itemId": 15507,
+    "prefabPath": "GachaShowPanel_A150",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A150",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A150_TITLE",
+    "displayItemIds": [
+      13504,
+      15507
+    ]
+  },
+  {
+    "itemId": 15508,
+    "prefabPath": "GachaShowPanel_A258",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A258",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A258_TITLE",
+    "displayItemIds": [
+      13516,
+      15508
+    ]
+  },
+  {
+    "itemId": 15509,
+    "prefabPath": "GachaShowPanel_A168",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A168",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A168_TITLE",
+    "displayItemIds": [
+      13509,
+      15509
+    ]
+  },
+  {
+    "itemId": 15511,
+    "prefabPath": "GachaShowPanel_A102",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A102",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A102_TITLE"
+  },
+  {
+    "itemId": 15512,
+    "prefabPath": "GachaShowPanel_A213",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A213",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A213_TITLE",
+    "displayItemIds": [
+      15514,
+      15512
+    ]
+  },
+  {
+    "itemId": 15513,
+    "prefabPath": "GachaShowPanel_A225",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A225",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A225_TITLE",
+    "displayItemIds": [
+      14518,
+      15513
+    ]
+  },
+  {
+    "itemId": 15514,
+    "prefabPath": "GachaShowPanel_A285",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A285",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A285_TITLE",
+    "displayItemIds": [
+      15516,
+      15514
+    ]
+  },
+  {
+    "itemId": 15515,
+    "prefabPath": "GachaShowPanel_A273",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A273",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A273_TITLE",
+    "displayItemIds": [
+      14522,
+      13515
+    ]
+  },
+  {
+    "itemId": 15516,
+    "prefabPath": "GachaShowPanel_A279",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A279",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A279_TITLE",
+    "displayItemIds": [
+      12515,
+      13516
+    ]
+  },
+  {
+    "itemId": 1002,
+    "prefabPath": "GachaShowPanel_A164",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A164",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A164_TITLE"
+  },
+  {
+    "itemId": 1003,
+    "prefabPath": "GachaShowPanel_A022",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A022",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A022_TITLE"
+  },
+  {
+    "itemId": 1016,
+    "prefabPath": "GachaShowPanel_A022",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A022",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A022_TITLE"
+  },
+  {
+    "itemId": 1022,
+    "prefabPath": "GachaShowPanel_A266",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A266",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A266_TITLE"
+  },
+  {
+    "itemId": 1026,
+    "prefabPath": "GachaShowPanel_A172",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A172",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A172_TITLE"
+  },
+  {
+    "itemId": 1029,
+    "prefabPath": "GachaShowPanel_A140",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A140",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A140_TITLE"
+  },
+  {
+    "itemId": 1030,
+    "prefabPath": "GachaShowPanel_A262",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A262",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A262_TITLE"
+  },
+  {
+    "itemId": 1033,
+    "prefabPath": "GachaShowPanel_A107",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A107",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A107_TITLE"
+  },
+  {
+    "itemId": 1035,
+    "prefabPath": "GachaShowPanel_A022",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A022",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A022_TITLE"
+  },
+  {
+    "itemId": 1037,
+    "prefabPath": "GachaShowPanel_A131",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A131",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A131_TITLE"
+  },
+  {
+    "itemId": 1038,
+    "prefabPath": "GachaShowPanel_A101",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A101",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A101_TITLE"
+  },
+  {
+    "itemId": 1041,
+    "prefabPath": "GachaShowPanel_A022",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A022",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A022_TITLE"
+  },
+  {
+    "itemId": 1042,
+    "prefabPath": "GachaShowPanel_A022",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A022",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A022_TITLE"
+  },
+  {
+    "itemId": 1046,
+    "prefabPath": "GachaShowPanel_A209",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A209",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A209_TITLE",
+    "displayItemIds": [
+      1065,
+      1025,
+      1097
+    ]
+  },
+  {
+    "itemId": 1047,
+    "prefabPath": "GachaShowPanel_A200",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A200",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A200_TITLE"
+  },
+  {
+    "itemId": 1049,
+    "prefabPath": "GachaShowPanel_A167",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A167",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A167_TITLE"
+  },
+  {
+    "itemId": 1051,
+    "prefabPath": "GachaShowPanel_A139",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A139",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A139_TITLE"
+  },
+  {
+    "itemId": 1052,
+    "prefabPath": "GachaShowPanel_A299",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A299",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A299_TITLE"
+  },
+  {
+    "itemId": 1054,
+    "prefabPath": "GachaShowPanel_A142",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A142",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A142_TITLE"
+  },
+  {
+    "itemId": 1057,
+    "prefabPath": "GachaShowPanel_A176",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A176",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A176_TITLE"
+  },
+  {
+    "itemId": 1058,
+    "prefabPath": "GachaShowPanel_A173",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A173",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A173_TITLE"
+  },
+  {
+    "itemId": 1060,
+    "prefabPath": "GachaShowPanel_A257",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A257",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A257_TITLE"
+  },
+  {
+    "itemId": 1063,
+    "prefabPath": "GachaShowPanel_A242",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A242",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A242_TITLE"
+  },
+  {
+    "itemId": 1066,
+    "prefabPath": "GachaShowPanel_A161",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A161",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A161_TITLE"
+  },
+  {
+    "itemId": 1069,
+    "prefabPath": "GachaShowPanel_A091",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A091",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A091_TITLE"
+  },
+  {
+    "itemId": 1070,
+    "prefabPath": "GachaShowPanel_A194",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A194",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A194_TITLE"
+  },
+  {
+    "itemId": 1071,
+    "prefabPath": "GachaShowPanel_A160",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A160",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A160_TITLE"
+  },
+  {
+    "itemId": 1073,
+    "prefabPath": "GachaShowPanel_A254",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A254",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A254_TITLE"
+  },
+  {
+    "itemId": 1075,
+    "prefabPath": "GachaShowPanel_A184",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A184",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A184_TITLE"
+  },
+  {
+    "itemId": 1078,
+    "prefabPath": "GachaShowPanel_A188",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A188",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A188_TITLE"
+  },
+  {
+    "itemId": 1079,
+    "prefabPath": "GachaShowPanel_A121",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A121",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A121_TITLE"
+  },
+  {
+    "itemId": 1082,
+    "prefabPath": "GachaShowPanel_A185",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A185",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A185_TITLE"
+  },
+  {
+    "itemId": 1084,
+    "prefabPath": "GachaShowPanel_A212",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A212",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A212_TITLE"
+  },
+  {
+    "itemId": 1086,
+    "prefabPath": "GachaShowPanel_A227",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A227",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A227_TITLE"
+  },
+  {
+    "itemId": 1087,
+    "prefabPath": "GachaShowPanel_A275",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A275",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A275_TITLE"
+  },
+  {
+    "itemId": 1089,
+    "prefabPath": "GachaShowPanel_A260",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A260",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A260_TITLE",
+    "displayItemIds": [
+      1083,
+      1088,
+      1090
+    ]
+  },
+  {
+    "itemId": 1091,
+    "prefabPath": "GachaShowPanel_A236",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A236",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A236_TITLE"
+  },
+  {
+    "itemId": 1093,
+    "prefabPath": "GachaShowPanel_A230",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A230",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A230_TITLE"
+  },
+  {
+    "itemId": 1094,
+    "prefabPath": "GachaShowPanel_A206",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A206",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A206_TITLE"
+  },
+  {
+    "itemId": 1095,
+    "prefabPath": "GachaShowPanel_A224",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A224",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A224_TITLE"
+  },
+  {
+    "itemId": 1096,
+    "prefabPath": "GachaShowPanel_A263",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A263",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A263_TITLE"
+  },
+  {
+    "itemId": 1098,
+    "prefabPath": "GachaShowPanel_A221",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A221",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A221_TITLE"
+  },
+  {
+    "itemId": 1099,
+    "prefabPath": "GachaShowPanel_A245",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A245",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A245_TITLE"
+  },
+  {
+    "itemId": 4101,
+    "prefabPath": "GachaShowPanel_A238",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A238",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A238_TITLE"
+  },
+  {
+    "itemId": 4102,
+    "prefabPath": "GachaShowPanel_A250",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A250",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A250_TITLE"
+  },
+  {
+    "itemId": 4103,
+    "prefabPath": "GachaShowPanel_A269",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A269",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A269_TITLE"
+  },
+  {
+    "itemId": 4104,
+    "prefabPath": "GachaShowPanel_A284",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A284",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A284_TITLE"
+  },
+  {
+    "itemId": 4106,
+    "prefabPath": "GachaShowPanel_A293",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A293",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A293_TITLE"
+  },
+  {
+    "itemId": 4107,
+    "prefabPath": "GachaShowPanel_A218",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A218",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A218_TITLE"
+  },
+  {
+    "itemId": 4109,
+    "prefabPath": "GachaShowPanel_A223",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A223",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A223_TITLE"
+  },
+  {
+    "itemId": 4111,
+    "prefabPath": "GachaShowPanel_A268",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A268",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A268_TITLE"
+  },
+  {
+    "itemId": 4112,
+    "prefabPath": "GachaShowPanel_A281",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A281",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A281_TITLE"
+  },
+  {
+    "itemId": 4114,
+    "prefabPath": "GachaShowPanel_A280",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A280",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A280_TITLE"
+  },
+  {
+    "itemId": 4116,
+    "prefabPath": "GachaShowPanel_A272",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A272",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A272_TITLE"
+  },
+  {
+    "itemId": 4119,
+    "prefabPath": "GachaShowPanel_A286",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A286",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A286_TITLE"
+  },
+  {
+    "itemId": 4120,
+    "prefabPath": "GachaShowPanel_A278",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A278",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A278_TITLE"
+  },
+  {
+    "itemId": 4122,
+    "prefabPath": "GachaShowPanel_A287",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A287",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A287_TITLE"
+  },
+  {
+    "itemId": 4123,
+    "prefabPath": "GachaShowPanel_A290",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A290",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A290_TITLE"
+  },
+  {
+    "itemId": 4125,
+    "prefabPath": "GachaShowPanel_A298",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A298",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A298_TITLE"
+  },
+  {
+    "itemId": 4126,
+    "prefabPath": "GachaShowPanel_A274",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A274",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A274_TITLE"
+  },
+  {
+    "itemId": 4128,
+    "prefabPath": "GachaShowPanel_A277",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A277",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A277_TITLE"
+  },
+  {
+    "itemId": 4129,
+    "prefabPath": "GachaShowPanel_A292",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A292",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A292_TITLE"
+  },
+  {
+    "itemId": 4130,
+    "prefabPath": "GachaShowPanel_A283",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A283",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A283_TITLE"
+  },
+  {
+    "itemId": 4131,
+    "prefabPath": "GachaShowPanel_A289",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A289",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A289_TITLE"
+  },
+  {
+    "itemId": 4133,
+    "prefabPath": "GachaShowPanel_A295",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A295",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A295_TITLE"
+  },
+  {
+    "itemId": 4148,
+    "prefabPath": "GachaShowPanel_A301",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A301",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A0301_TITLE"
+  },
+  {
+    "itemId": 4150,
+    "prefabPath": "GachaShowPanel_A301",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A301",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A0301_TITLE"
+  },
+  {
+    "itemId": 11501,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 11502,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 11504,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 11505,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 11513,
+    "prefabPath": "GachaShowPanel_A261",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A261",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A261_TITLE",
+    "displayItemIds": [
+      14521,
+      11513
+    ]
+  },
+  {
+    "itemId": 11519,
+    "prefabPath": "GachaShowPanel_A276",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A276",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A276_TITLE",
+    "displayItemIds": [
+      11519,
+      14514
+    ]
+  },
+  {
+    "itemId": 11520,
+    "prefabPath": "GachaShowPanel_A303",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A303",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A021_TITLE",
+    "displayItemIds": [
+      11520,
+      13512
+    ]
+  },
+  {
+    "itemId": 12501,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 12502,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 12504,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 13501,
+    "prefabPath": "GachaShowPanel_A210",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A210",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A210_TITLE",
+    "displayItemIds": [
+      14511,
+      13501
+    ]
+  },
+  {
+    "itemId": 13512,
+    "prefabPath": "GachaShowPanel_A264",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A264",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A264_TITLE",
+    "displayItemIds": [
+      13504,
+      13512
+    ]
+  },
+  {
+    "itemId": 13514,
+    "prefabPath": "GachaShowPanel_A282",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A282",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A282_TITLE",
+    "displayItemIds": [
+      11517,
+      13514
+    ]
+  },
+  {
+    "itemId": 13515,
+    "prefabPath": "GachaShowPanel_A273",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A273",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A273_TITLE",
+    "displayItemIds": [
+      14522,
+      13515
+    ]
+  },
+  {
+    "itemId": 13516,
+    "prefabPath": "GachaShowPanel_A279",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A279",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A279_TITLE",
+    "displayItemIds": [
+      12515,
+      13516
+    ]
+  },
+  {
+    "itemId": 13517,
+    "prefabPath": "GachaShowPanel_A294",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A294",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A294_TITLE",
+    "displayItemIds": [
+      12514,
+      13517
+    ]
+  },
+  {
+    "itemId": 14501,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 14504,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  },
+  {
+    "itemId": 15501,
+    "prefabPath": "GachaShowPanel_A020",
+    "previewPrefabPath": "UI_Tab_GachaShowPanel_A020",
+    "titlePath": "UI_GACHA_SHOW_PANEL_A020_TITLE"
+  }
+]

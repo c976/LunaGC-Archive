@@ -36,7 +36,9 @@ public class DataLoader {
             throws IOException, FileNotFoundException {
         try {
             InputStream is = load(resourcePath, true);
-            return new InputStreamReader(is);
+            // Always UTF-8: ChestDrop/MonsterDrop tags are Chinese. Platform
+            // default (GBK on CN Windows) mojibakes keys so handleBossChestDrop never matches.
+            return new InputStreamReader(is, java.nio.charset.StandardCharsets.UTF_8);
         } catch (FileNotFoundException exception) {
             throw exception;
         }
@@ -83,6 +85,35 @@ public class DataLoader {
             String resourcePath, Class<T1> keyType, Class<T2> valueType) throws IOException {
         try (InputStreamReader reader = loadReader(resourcePath)) {
             return JsonUtils.loadToMap(reader, keyType, valueType);
+        }
+    }
+
+    /**
+     * As {@link #loadTableToList}, but the jar's copy wins over the data folder.
+     *
+     * <p>For files the server ships rather than expects configured: a stale copy left in the data
+     * folder by an older deployment must not quietly override the one a new build brings with it.
+     */
+    public static <T> List<T> loadBundledTableToList(String resourcePath, Class<T> classType)
+            throws IOException {
+        val path = FileUtils.getBundledDataPathTsjJsonTsv(resourcePath);
+        Grasscutter.getLogger().trace("Loading bundled data table from: " + path);
+        return switch (FileUtils.getFileExtension(path)) {
+            case "json" -> JsonUtils.loadToList(path, classType);
+            case "tsj" -> TsvUtils.loadTsjToListSetField(path, classType);
+            case "tsv" -> TsvUtils.loadTsvToListSetField(path, classType);
+            default -> null;
+        };
+    }
+
+    /** As {@link #loadList}, but the jar's copy wins over the data folder. */
+    public static <T> List<T> loadBundledList(String resourcePath, Class<T> classType)
+            throws IOException {
+        var path = FileUtils.getBundledDataPath(resourcePath);
+        try (var reader =
+                new InputStreamReader(
+                        Files.newInputStream(path), java.nio.charset.StandardCharsets.UTF_8)) {
+            return JsonUtils.loadToList(reader, classType);
         }
     }
 

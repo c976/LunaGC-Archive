@@ -10,9 +10,12 @@ import emu.grasscutter.server.packet.send.*;
 import emu.grasscutter.utils.Utils;
 
 public class ResinManager extends BasePlayerManager {
-    public static final int MAX_RESIN_BUYING_COUNT = 6;
+    public static final int MAX_RESIN_BUYING_COUNT = 15;
+    /** Official client UI hardcodes a daily max of 6; clamp notify so the button stays usable. */
+    public static final int CLIENT_RESIN_BUY_CAP = 6;
     public static final int AMOUNT_TO_ADD = 60;
-    public static final int[] HCOIN_NUM_TO_BUY_RESIN = new int[] {50, 100, 100, 150, 200, 200};
+    public static final int[] HCOIN_NUM_TO_BUY_RESIN =
+            new int[] {50, 100, 100, 150, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200};
 
     public ResinManager(Player player) {
         super(player);
@@ -49,10 +52,17 @@ public class ResinManager extends BasePlayerManager {
         this.player.sendPacket(new PacketResinChangeNotify(this.player));
 
         // Battle Pass trigger
-        this.player
-                .getBattlePassManager()
-                .triggerMission(
-                        WatcherTriggerType.TRIGGER_COST_MATERIAL, 106, amount); // Resin item id = 106
+        // An optional battle-pass failure must not make an already-paid claim retryable.
+        try {
+            var battlePass = this.player.getBattlePassManager();
+            if (battlePass != null) {
+                battlePass.triggerMission(WatcherTriggerType.TRIGGER_COST_MATERIAL, 106, amount);
+            }
+        } catch (RuntimeException e) {
+            emu.grasscutter.Grasscutter.getLogger().warn(
+                    "Resin payment succeeded but battle-pass bookkeeping failed uid={}",
+                    player.getUid(), e);
+        }
 
         return true;
     }
@@ -152,8 +162,19 @@ public class ResinManager extends BasePlayerManager {
             this.player.setNextResinRefresh(currentTime + GAME_OPTIONS.resinOptions.rechargeTime);
         }
 
-        // Send initial notifications on logon.
+        // Keep map/HUD resin visible (stacks with abyss floor banner).
+        this.player.getOpenStates().put(45, 1);
+        this.player.sendPacket(new PacketOpenStateChangeNotify(45, 1));
         this.player.sendPacket(new PacketResinChangeNotify(this.player));
+    }
+
+    /** Re-assert resin open-state + value (e.g. when opening the map). */
+    public synchronized void refreshClientResinUi() {
+        this.player.getOpenStates().put(45, 1);
+        this.player.sendPacket(new PacketOpenStateChangeNotify(45, 1));
+        this.player.sendPacket(new PacketResinChangeNotify(this.player));
+        this.player.sendPacket(
+                new PacketPlayerPropNotify(this.player, PlayerProperty.PROP_PLAYER_RESIN));
     }
 
     public int buy() {
@@ -176,5 +197,39 @@ public class ResinManager extends BasePlayerManager {
                 new PacketItemAddHintNotify(new GameItem(106, AMOUNT_TO_ADD), ActionReason.BuyResin));
 
         return 0;
+    }
+
+    /**
+     * Domain / ley-line primogem claim — same price ladder and daily count as BuyResin.
+     * Does not grant +60 resin; only pays primogems and increments {@code resinBuyCount}.
+     */
+    public synchronized boolean payHcoinRewardClaim() {
+        if (!GAME_OPTIONS.resinOptions.resinUsage) {
+            return true;
+        }
+        int used = this.player.getResinBuyCount();
+        if (used >= MAX_RESIN_BUYING_COUNT) {
+            return false;
+        }
+        int cost = HCOIN_NUM_TO_BUY_RESIN[used];
+        if (!this.player.getInventory().payItem(201, cost)) {
+            return false;
+        }
+        this.player.setResinBuyCount(used + 1);
+        this.player.setProperty(PlayerProperty.PROP_PLAYER_WAIT_SUB_HCOIN, 0);
+        this.player.sendPacket(new PacketResinChangeNotify(this.player));
+        return true;
+    }
+
+    /**
+     * Value for {@code ResinChangeNotify.cur_buy_count}. The 7.0 client assumes a daily max of 6;
+     * keep the exchange UI unlocked until the server-side 15-buy cap is hit.
+     */
+    public int getClientResinBuyCount() {
+        int actual = this.player.getResinBuyCount();
+        if (actual >= MAX_RESIN_BUYING_COUNT) {
+            return CLIENT_RESIN_BUY_CAP;
+        }
+        return Math.min(actual, CLIENT_RESIN_BUY_CAP - 1);
     }
 }

@@ -1,0 +1,64 @@
+name: Build
+
+on:
+  # Every in-repo branch is covered here, and GitHub attaches these runs to any PR opened from one,
+  # so a pull_request trigger would only build the same commit a second time.
+  push:
+    branches:
+      - "**"
+      # main is covered by the release workflow, which builds and tests the same way.
+      - "!main"
+  workflow_dispatch:
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          # AstaPS uses Java 21 APIs and emits Java 21 bytecode.
+          java-version: "21"
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      # gradlew is committed without the execute bit.
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      - name: Build jar
+        run: ./gradlew jar -PskipHandbook=1 -Dorg.gradle.jvmargs=-Xmx4g
+
+      # GrasscutterTest boots a real server and needs MongoDB plus the resources pack, which is
+      # gitignored and so absent from a fresh checkout. Without them Grasscutter.main calls
+      # System.exit(1) and takes the Gradle test executor down with it, which is why it carries
+      # @Tag("integration") and is left out here. Everything else runs.
+      - name: Test
+        run: ./gradlew test -PexcludeTags=integration -Dorg.gradle.jvmargs=-Xmx4g
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/reports/tests/test
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Upload jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: grasscutter
+          path: grasscutter-7.1.0.jar
+          retention-days: 14

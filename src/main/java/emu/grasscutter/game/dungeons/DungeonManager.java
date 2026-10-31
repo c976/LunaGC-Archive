@@ -11,6 +11,7 @@ import emu.grasscutter.game.inventory.GameItem;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.game.props.*;
 import emu.grasscutter.game.quest.enums.*;
+import emu.grasscutter.game.tps.TpsAvatarSystem;
 import emu.grasscutter.game.world.*;
 import emu.grasscutter.scripts.constants.EventType;
 import emu.grasscutter.scripts.data.ScriptArgs;
@@ -34,6 +35,27 @@ public final class DungeonManager {
 
     @Getter private final int[] finishedConditions;
     private final IntSet rewardedPlayers = new IntOpenHashSet();
+    private final DomainClaimRunIdentity claimRunIdentity = new DomainClaimRunIdentity();
+
+    synchronized String getClaimOperationId() {
+        return claimRunIdentity.operationId(dungeonData.getId());
+    }
+
+    // Called only after a proven unpaid attempt, under the claim monitor.
+    synchronized void rotateClaimIdentityAfterUnpaidAttempt() {
+        claimRunIdentity.restart();
+    }
+
+    /** The claim service uses this set while holding the DungeonManager monitor. */
+    IntSet getRewardedPlayersForClaims() {
+        return rewardedPlayers;
+    }
+
+
+    /** True only after a successful petrified-tree reward claim in this dungeon run. */
+    synchronized boolean hasClaimedDomainReward(int uid) {
+        return rewardedPlayers.contains(uid);
+    }
     private final Set<Integer> activeDungeonWayPoints = new HashSet<>();
     private boolean ended = false;
     private int newestWayPoint = 0;
@@ -68,16 +90,40 @@ public final class DungeonManager {
         }
 
         if (isFinishedSuccessfully()) {
-            // Set ended now because calling EVENT_DUNGEON_SETTLE
-            // during finishDungeon() may cause reentrance into
-            // this function, leading to double settles.
-            ended = true;
+            // Spiral Abyss mid-half: upper challenge success can satisfy pass conditions before
+            // the lower team is applied. Settling now advances the chamber and cancels the swap.
+            if (isTowerDungeon() && !scene.getPlayers().isEmpty()) {
+                var tower = scene.getPlayers().get(0).getTowerManager();
+                if (tower != null && tower.isMidHalfCutscenePending()) {
+                    Grasscutter.getLogger()
+                            .info(
+                                    "Tower finishDungeon deferred uid={} - mid-half team swap pending",
+                                    scene.getPlayers().get(0).getUid());
+                    return;
+                }
+                if (scene.getLoadedGroups().stream()
+                        .anyMatch(
+                                g -> {
+                                    var variables = scene.getScriptManager().getVariables(g.id);
+                                    return variables != null
+                                            && variables.containsKey("stage")
+                                            && Integer.valueOf(1).equals(variables.get("stage"));
+                                })) {
+                    Grasscutter.getLogger()
+                            .info(
+                                    "Tower finishDungeon deferred uid={} - lua stage=1 (lower half pending)",
+                                    scene.getPlayers().get(0).getUid());
+                    return;
+                }
+            }
             finishDungeon();
         }
     }
 
     public boolean isFinishedSuccessfully() {
-        if (passConfigData.getConds() == null) return false;
+        // Missing pass conditions mean completion is controlled by quest/script actions.
+        // An empty quest-style AND must not settle the dungeon on its first unrelated event.
+        if (passConfigData.getConds() == null || passConfigData.getConds().isEmpty()) return false;
         return LogicType.calculate(passConfigData.getLogicType(), finishedConditions);
     }
 
@@ -89,6 +135,10 @@ public final class DungeonManager {
             // TODO should use levelConfigMap? and how?
             return dungeonData.getShowLevel();
         }
+    }
+
+    public boolean isWayPointActive(int pointId) {
+        return activeDungeonWayPoints.contains(pointId);
     }
 
     public boolean activateRespawnPoint(int pointId) {
@@ -124,41 +174,15 @@ public final class DungeonManager {
         return pointData.getRot() != null ? pointData.getRot() : null;
     }
 
+    /** Keep legacy callers on the same guarded, receipted claim path as GadgetRewardStatue. */
     public boolean getStatueDrops(Player player, boolean useCondensed, int groupId) {
-        if (!isFinishedSuccessfully()
-                || dungeonData.getRewardPreviewData() == null
-                || dungeonData.getRewardPreviewData().getPreviewItems().length == 0) {
-            return false;
-        }
-
-        // Already rewarded
-        if (rewardedPlayers.contains(player.getUid())) {
-            return false;
-        }
-
-        if (!handleCost(player, useCondensed)) {
-            return false;
-        }
-
-        // Get and roll rewards.
-        List<GameItem> rewards =
-                player
-                        .getServer()
-                        .getDropSystem()
-                        .handleDungeonRewardDrop(dungeonData.getStatueDrop(), useCondensed);
-        if (rewards.isEmpty()) {
-            // fallback to legacy drop system
-            Grasscutter.getLogger().debug("dungeon drop failed for {}", dungeonData.getId());
-            rewards = new ArrayList<>(this.rollRewards(useCondensed));
-        }
-        // Add rewards to player and send notification.
-        player.getInventory().addItems(rewards, ActionReason.DungeonStatueDrop);
-        player.sendPacket(new PacketGadgetAutoPickDropInfoNotify(rewards));
-
-        rewardedPlayers.add(player.getUid());
-
-        scene.getScriptManager().callEvent(new ScriptArgs(groupId, EventType.EVENT_DUNGEON_REWARD_GET));
-        return true;
+        return DomainStatueDropService.claim(
+                player, this,
+                useCondensed
+                        ? DomainStatueClaimHelper.ClaimMode.CONDENSE
+                        : DomainStatueClaimHelper.ClaimMode.NORMAL_1X,
+                groupId,
+                useCondensed ? 2 : 1);
     }
 
     public boolean handleCost(Player player, boolean useCondensed) {
@@ -243,6 +267,17 @@ public final class DungeonManager {
     public void applyTrialTeam(Player player) {
         if (getDungeonData() == null) return;
 
+        // TPS dungeons only allow the TPS traveler, which differs per player (boy or girl).
+        var tpsTeam = TpsAvatarSystem.getTrialTeam(player, this.scene);
+        if (tpsTeam != null) {
+            this.trialTeam = tpsTeam;
+            player.getTeamManager().addTrialAvatars(tpsTeam.getTrialAvatarIds());
+            return;
+        }
+
+        // Types this server does not know load as null.
+        if (getDungeonData().getType() == null) return;
+
         switch (getDungeonData().getType()) {
                 // case DUNGEON_PLOT is handled by quest execs
             case DUNGEON_ACTIVITY -> {
@@ -287,6 +322,9 @@ public final class DungeonManager {
     }
 
     public void finishDungeon() {
+        // Set ended first: EVENT_DUNGEON_SETTLE can re-enter, and reward statues call this again.
+        if (ended) return;
+        ended = true;
         this.notifyEndDungeon(true);
         this.endDungeon(BaseDungeonResult.DungeonEndReason.COMPLETED);
 
@@ -305,6 +343,9 @@ public final class DungeonManager {
     }
 
     public void quitDungeon() {
+        // Leaving a dungeon that already settled - many have no pass condition and are completed by
+        // their script - is not a quit, and must not fail the quests waiting on it.
+        if (this.ended) return;
         this.notifyEndDungeon(false);
         this.endDungeon(BaseDungeonResult.DungeonEndReason.QUIT);
     }
@@ -323,6 +364,14 @@ public final class DungeonManager {
                             if (successfully) {
                                 var dungeonId = this.getDungeonData().getId();
                                 p.getPlayerProgress().markDungeonAsComplete(dungeonId);
+                                try {
+                                    emu.grasscutter.game.player.InvestigationHandbookHelper.trigger(
+                                            p,
+                                            WatcherTriggerType.TRIGGER_TAKE_DUNGEON_FIRST_PASS_REWARD,
+                                            dungeonId,
+                                            1);
+                                } catch (Throwable ignored) {
+                                }
                             } else {
                                 p.getQuestManager()
                                         .queueEvent(QuestContent.QUEST_CONTENT_FAIL_DUNGEON, dungeonData.getId());
@@ -349,6 +398,12 @@ public final class DungeonManager {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if (successfully) {
+            try {
+                WeeklyBossModelCleanup.sweepAfterSettle(scene);
+            } catch (Throwable ignored) {
+            }
+        }
     }
 
     public void endDungeon(BaseDungeonResult.DungeonEndReason endReason) {
@@ -361,9 +416,10 @@ public final class DungeonManager {
         ended = true;
     }
 
-    public void restartDungeon() {
+    public synchronized void restartDungeon() {
         this.scene.setKilledMonsterCount(0);
         this.rewardedPlayers.clear();
+        this.claimRunIdentity.restart();
         Arrays.fill(finishedConditions, 0);
         this.ended = false;
         this.activeDungeonWayPoints.clear();

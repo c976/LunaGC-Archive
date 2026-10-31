@@ -2,14 +2,14 @@ package emu.grasscutter.server.packet.send;
 
 import emu.grasscutter.game.entity.EntityVehicle;
 import emu.grasscutter.net.packet.*;
-import emu.grasscutter.net.proto.VehiclePhlogistonPointsNotifyOuterClass.VehiclePhlogistonPointsNotify;
+import emu.grasscutter.net.proto.VehiclePhlogistonNotify._VehiclePhlogistonNotify;
 
 public class PacketVehiclePhlogistonPointsNotify extends BasePacket {
 
     public PacketVehiclePhlogistonPointsNotify(EntityVehicle vehicle) {
-        super(PacketOpcodes.VehiclePhlogistonPointsNotify);
+        super(PacketOpcodes._VehiclePhlogistonNotify);
 
-        VehiclePhlogistonPointsNotify notify = VehiclePhlogistonPointsNotify.newBuilder()
+        _VehiclePhlogistonNotify notify = _VehiclePhlogistonNotify.newBuilder()
                 .setCurPhlogiston(vehicle.getCurPhlogiston())
                 .setEntityId(vehicle.getId())
                 .build();

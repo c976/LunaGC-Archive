@@ -30,11 +30,7 @@ public class PacketAvatarFetterDataNotify extends BasePacket {
             }
         }
 
-        int cardId = avatar.getNameCardId();
-
-        if (avatar.getPlayer().getNameCardList().contains(cardId)) {
-            avatarFetter.addRewardedFetterLevelList(10);
-        }
+        avatarFetter.addAllRewardedFetterLevelList(avatar.getRewardedFetterLevels());
 
         AvatarFetterInfo avatarFetterInfo = avatarFetter.build();
 

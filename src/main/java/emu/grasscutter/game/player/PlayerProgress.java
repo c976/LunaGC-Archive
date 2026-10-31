@@ -30,12 +30,98 @@ public class PlayerProgress {
     private Map<Integer, ItemGiveRecord> itemGivings;
     private Map<Integer, BargainRecord> bargains;
 
+    /** Adventurer Handbook (Investigation/preparation) targetId -> progress. */
+    private Map<Integer, Integer> investigationTargetProgress;
+    /** Adventurer Handbook targetId -> state (2=complete, 3=reward taken). */
+    private Map<Integer, Integer> investigationTargetState;
+    /** Adventurer Handbook chapterId -> state (3=reward taken). */
+    private Map<Integer, Integer> investigationChapterState;
+    /** Cumulative chest opens counted for handbook tasks. */
+    @Setter private int handbookChestOpenCount;
+    /** rankLevel -> historical obtain count for handbook relic tasks. */
+    private Map<Integer, Integer> handbookReliquaryHistoryCount;
+
     public PlayerProgress() {
         this.questProgressCountMap = new ConcurrentHashMap<>();
         this.completedDungeons = new IntArrayList();
         this.itemHistory = new Int2ObjectOpenHashMap<>();
         this.itemGivings = new Int2ObjectOpenHashMap<>();
         this.bargains = new Int2ObjectOpenHashMap<>();
+        this.investigationTargetProgress = new ConcurrentHashMap<>();
+        this.investigationTargetState = new ConcurrentHashMap<>();
+        this.investigationChapterState = new ConcurrentHashMap<>();
+        this.handbookReliquaryHistoryCount = new ConcurrentHashMap<>();
+    }
+
+    public int getInvestigationTargetProgress(int targetId) {
+        ensureInvestigationMaps();
+        return investigationTargetProgress.getOrDefault(targetId, 0);
+    }
+
+    public void setInvestigationTargetProgress(int targetId, int progress) {
+        ensureInvestigationMaps();
+        investigationTargetProgress.put(targetId, Math.max(0, progress));
+    }
+
+    public int getInvestigationTargetState(int targetId) {
+        ensureInvestigationMaps();
+        return investigationTargetState.getOrDefault(targetId, 0);
+    }
+
+    public void setInvestigationTargetState(int targetId, int state) {
+        ensureInvestigationMaps();
+        investigationTargetState.put(targetId, state);
+    }
+
+    public int getInvestigationChapterState(int chapterId) {
+        ensureInvestigationMaps();
+        return investigationChapterState.getOrDefault(chapterId, 0);
+    }
+
+    public void setInvestigationChapterState(int chapterId, int state) {
+        ensureInvestigationMaps();
+        investigationChapterState.put(chapterId, state);
+    }
+
+    public int getHandbookChestOpenCount() {
+        return handbookChestOpenCount;
+    }
+
+    public int addHandbookChestOpen(int amount) {
+        if (amount > 0) {
+            handbookChestOpenCount += amount;
+        }
+        return handbookChestOpenCount;
+    }
+
+    public int getHandbookReliquaryHistoryCount(int rankLevel) {
+        ensureInvestigationMaps();
+        return handbookReliquaryHistoryCount.getOrDefault(rankLevel, 0);
+    }
+
+    public void raiseHandbookReliquaryHistoryCount(int rankLevel, int count) {
+        ensureInvestigationMaps();
+        handbookReliquaryHistoryCount.merge(rankLevel, Math.max(0, count), Math::max);
+    }
+
+    public int addHandbookReliquaryHistory(int rankLevel, int amount) {
+        ensureInvestigationMaps();
+        return handbookReliquaryHistoryCount.merge(rankLevel, Math.max(0, amount), Integer::sum);
+    }
+
+    private void ensureInvestigationMaps() {
+        if (investigationTargetProgress == null) {
+            investigationTargetProgress = new ConcurrentHashMap<>();
+        }
+        if (investigationTargetState == null) {
+            investigationTargetState = new ConcurrentHashMap<>();
+        }
+        if (investigationChapterState == null) {
+            investigationChapterState = new ConcurrentHashMap<>();
+        }
+        if (handbookReliquaryHistoryCount == null) {
+            handbookReliquaryHistoryCount = new ConcurrentHashMap<>();
+        }
     }
 
     /**

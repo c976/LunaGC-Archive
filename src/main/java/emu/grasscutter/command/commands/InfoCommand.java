@@ -1,69 +1,70 @@
 package emu.grasscutter.command.commands;
 
-import emu.grasscutter.*;
-import emu.grasscutter.command.*;
+import emu.grasscutter.BuildConfig;
+import emu.grasscutter.Grasscutter;
+import emu.grasscutter.command.Command;
+import emu.grasscutter.command.CommandHandler;
+import emu.grasscutter.command.CommandOutput;
 import emu.grasscutter.game.player.Player;
 import emu.grasscutter.tools.Tools;
+import picocli.CommandLine;
 
-import java.util.List;
-
-@Command(label = "info", aliases = {"troubleshoot", "helpme"},
-    usage = "/info", targetRequirement = Command.TargetRequirement.NONE)
+@Command(
+        label = "info",
+        targetRequirement = Command.TargetRequirement.NONE)
 public final class InfoCommand implements CommandHandler {
-    // This command can use the 'grasscutter.command.troubleshoot' permission to show sensitive information.
-
     @Override
-    public void execute(Player sender, Player targetPlayer, List<String> args) {
-        // Collect server information.
-        var build = "%s (%s)".formatted(
-            BuildConfig.VERSION, BuildConfig.GIT_HASH);
-        var playerCount = Grasscutter.getGameServer()
-            .getPlayers().size();
-        var resourceInfo = Tools.resourcesInfo();
+    public CommandLine createCommandLine(Player sender, Player targetPlayer) {
+        return new CommandLine(new Args(sender));
+    }
 
-        // Collect configuration information.
-        var config = Grasscutter.getConfig();
-        var gameOptions = config.server.game;
-        var questingEnabled = gameOptions.gameOptions.questing.enabled;
-        var scriptsEnabled = gameOptions.enableScriptInBigWorld;
-        var fastRequire = config.server.fastRequire;
+    @CommandLine.Command(name = "info")
+    private static final class Args implements Runnable {
+        private final Player sender;
 
-        CommandHandler.sendMessage(sender, """
-                Modified by Kei-Luna and the contributors
-                Created by Meledy
-                - currently maintained by KingRainbow44
-                - formerly maintained by Birdulon
+        private Args(Player sender) {
+            this.sender = sender;
+        }
 
-                Other Credits
-                 - Slushy Team (akio, azzu, Areha11Fz, tamil; protocol)
-                 - Yuki (resource minifying & packaging)
-                 - Dimbreath (dumping most resources)""");
-        // TODO: Send to remote server (Grasscutter API) and send dump link.
-        if (
-                sender == null
-                        || sender.getAccount()
-                        .hasPermission("grasscutter.command.troubleshoot")
-                        || playerCount == 1
-        ) {
-            CommandHandler.sendMessage(sender, """
-            Server Information
-            Revision: %s
-            Player Count: %d
-            Questing Enabled: %s
-            Scripts Enabled: %s
-            Using Fast Require: %s
-            Operating System: %s
-            Resource Information: %s
+        @Override
+        public void run() {
+            var build = "%s (%s)".formatted(BuildConfig.VERSION, BuildConfig.GIT_HASH);
+            var playerCount = Grasscutter.getGameServer().getPlayers().size();
+            var resourceInfo = Tools.resourcesInfo();
 
-            discord.gg/2AxayFampP"""
-                    .formatted(
-                            build, playerCount, questingEnabled, scriptsEnabled, fastRequire,
-                            System.getProperty("os.name"), resourceInfo.toString()
-                    )
-            );
-        } else {
-            CommandHandler.sendMessage(sender, """
-                    Grasscutter Discord: discord.gg/2AxayFampP""");
+            var config = Grasscutter.getConfig();
+            var gameOptions = config.server.game;
+            var questingEnabled = gameOptions.gameOptions.questing.enabled;
+            var scriptsEnabled = gameOptions.enableScriptInBigWorld;
+            var fastRequire = config.server.fastRequire;
+
+            if (sender == null
+                    || sender.getAccount().hasPermission("grasscutter.command.troubleshoot")
+                    || playerCount == 1) {
+                CommandOutput.sendMessage(
+                        sender,
+                        """
+                        Server Information
+                        Revision: %s
+                        Player Count: %d
+                        Questing Enabled: %s
+                        Scripts Enabled: %s
+                        Using Fast Require: %s
+                        Operating System: %s
+                        Resource Information: %s"""
+                                .formatted(
+                                        build,
+                                        playerCount,
+                                        questingEnabled,
+                                        scriptsEnabled,
+                                        fastRequire,
+                                        System.getProperty("os.name"),
+                                        resourceInfo));
+            } else {
+                CommandOutput.sendMessage(
+                        sender,
+                        "Server revision: " + build + "\nOnline players: " + playerCount);
+            }
         }
     }
 }

@@ -11,7 +11,8 @@ public class HandlerNpcTalkReq extends PacketHandler {
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
         var req = NpcTalkReq.parseFrom(payload);
 
-        session.getPlayer().getTalkManager().triggerTalkAction(req.getTalkId(), req.getEntityId());
+        int npcEntityId = req.getNpcEntityId() != 0 ? req.getNpcEntityId() : req.getEntityId();
+        session.getPlayer().getTalkManager().triggerTalkAction(req.getTalkId(), npcEntityId);
         session.send(new PacketNpcTalkRsp(req.getNpcEntityId(), req.getTalkId(), req.getEntityId()));
     }
 }

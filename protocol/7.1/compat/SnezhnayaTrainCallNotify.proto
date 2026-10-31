@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 26580 (unnamed MAFJAEIEHBI; the name is inferred). The answer to
+// SnezhnayaTrainCallReq: the station the train was called to.
+message SnezhnayaTrainCallNotify {
+  uint32 station_id = 8;
+}

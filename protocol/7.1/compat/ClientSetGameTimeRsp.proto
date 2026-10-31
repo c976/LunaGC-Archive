@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+option java_outer_classname = "ClientSetGameTimeRspOuterClass";
+
+// 7.1 CmdId 25217. Recovered from capyb2222/LunaGC_7.1.0 c3f203a's generated descriptor.
+message ClientSetGameTimeRsp {
+  repeated uint32 game_time_locked_quest_list = 3;
+  uint32 game_time = 5;
+  uint32 client_game_time = 6;
+  int32 retcode = 10;
+}

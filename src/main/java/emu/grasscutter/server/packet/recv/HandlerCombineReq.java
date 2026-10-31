@@ -1,5 +1,6 @@
 package emu.grasscutter.server.packet.recv;
 
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.common.ItemParamData;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.*;
@@ -15,12 +16,21 @@ public class HandlerCombineReq extends PacketHandler {
     public void handle(GameSession session, byte[] header, byte[] payload) throws Exception {
 
         CombineReqOuterClass.CombineReq req = CombineReqOuterClass.CombineReq.parseFrom(payload);
+        Grasscutter.getLogger()
+                .info(
+                        "Received CombineReq: combineId={}, count={}, avatarGuid={}",
+                        req.getCombineId(),
+                        req.getCombineCount(),
+                        req.getAvatarGuid());
 
         var result =
                 session
                         .getServer()
                         .getCombineSystem()
-                        .combineItem(session.getPlayer(), req.getCombineId(), req.getCombineCount());
+                        .combineItem(
+                                session.getPlayer(),
+                                req.getCombineId(),
+                                req.getCombineCount() > 0 ? req.getCombineCount() : 1);
 
         if (result == null) {
             return;
@@ -31,9 +41,9 @@ public class HandlerCombineReq extends PacketHandler {
                         req,
                         toItemParamList(result.getMaterial()),
                         toItemParamList(result.getResult()),
-                        toItemParamList(result.getExtra()),
+                        List.of(),
                         toItemParamList(result.getBack()),
-                        toItemParamList(result.getBack())));
+                        toItemParamList(result.getExtra())));
     }
 
     private List<ItemParamOuterClass.ItemParam> toItemParamList(List<ItemParamData> list) {

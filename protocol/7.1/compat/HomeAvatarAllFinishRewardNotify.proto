@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// 7.1 CmdId 20526 and field numbers from kitkat-multiverse/genshin-protocol 7.1.0.
+message HomeAvatarAllFinishRewardNotify {
+  repeated uint32 event_id_list = 13;
+}

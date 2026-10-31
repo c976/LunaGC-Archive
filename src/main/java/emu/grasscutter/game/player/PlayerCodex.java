@@ -1,6 +1,7 @@
 package emu.grasscutter.game.player;
 
 import dev.morphia.annotations.*;
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.excels.codex.CodexAnimalData;
 import emu.grasscutter.game.entity.*;
@@ -18,10 +19,18 @@ public class PlayerCodex {
     @Getter private Map<Integer, Integer> unlockedAnimal;
     @Getter private Set<Integer> unlockedMaterial;
     @Getter private Set<Integer> unlockedBook;
+    // Legacy, never written; push tip state lives in pushTipsState.
     @Getter private Set<Integer> unlockedTip;
     @Getter private Set<Integer> unlockedView;
     @Getter private Set<Integer> unlockedReliquary;
     @Getter private Set<Integer> unlockedReliquarySuitCodex;
+
+    // Push tips (tutorial codex): tipId -> state (1 unread, 3 finished). Missing in older documents.
+    private Map<Integer, Integer> pushTipsState;
+    // Tips whose reward has been claimed.
+    private Set<Integer> claimedPushTipsReward;
+    // Codex ids (PushTipsCodexExcelConfigData.Id) the player has opened in the codex.
+    private Set<Integer> viewedPushTipsCodex;
 
     public PlayerCodex() {
         this.unlockedWeapon = new HashSet<>();
@@ -32,6 +41,25 @@ public class PlayerCodex {
         this.unlockedView = new HashSet<>();
         this.unlockedReliquary = new HashSet<>();
         this.unlockedReliquarySuitCodex = new HashSet<>();
+        this.pushTipsState = new HashMap<>();
+        this.claimedPushTipsReward = new HashSet<>();
+        this.viewedPushTipsCodex = new HashSet<>();
+    }
+
+    /** Never null, even for documents saved before push tips existed. */
+    public Map<Integer, Integer> getPushTipsState() {
+        if (this.pushTipsState == null) this.pushTipsState = new HashMap<>();
+        return this.pushTipsState;
+    }
+
+    public Set<Integer> getClaimedPushTipsReward() {
+        if (this.claimedPushTipsReward == null) this.claimedPushTipsReward = new HashSet<>();
+        return this.claimedPushTipsReward;
+    }
+
+    public Set<Integer> getViewedPushTipsCodex() {
+        if (this.viewedPushTipsCodex == null) this.viewedPushTipsCodex = new HashSet<>();
+        return this.viewedPushTipsCodex;
     }
 
     public PlayerCodex(Player player) {
@@ -96,10 +124,20 @@ public class PlayerCodex {
             val animalCountType = codexAnimal.getCountType();
             if (animalCountType != countType && animalCountType != null) return;
 
+            boolean firstSighting = !this.getUnlockedAnimal().containsKey(monsterId);
             this.getUnlockedAnimal().merge(monsterId, 1, (i, j) -> i + 1);
 
             player.save();
             this.player.sendPacket(new PacketCodexDataUpdateNotify(3, monsterId));
+
+            if (firstSighting) {
+                try {
+                    PushTipsManager.of(this.player).onNewMonster(monsterId);
+                } catch (Throwable t) {
+                    Grasscutter.getLogger()
+                            .warn("[PushTips] new monster {} hook failed: {}", monsterId, t.toString());
+                }
+            }
         }
     }
 
