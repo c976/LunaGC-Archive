@@ -1,36 +1,37 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.game.inventory.GameItem;
-import emu.grasscutter.net.packet.*;
-import emu.grasscutter.net.proto.StoreItemDelNotifyOuterClass.StoreItemDelNotify;
-import emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType;
 import java.util.Collection;
 
-public class PacketStoreItemDelNotify extends BasePacket {
+import emu.grasscutter.game.inventory.GenshinItem;
+import emu.grasscutter.net.packet.GenshinPacket;
+import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.proto.StoreItemDelNotifyOuterClass.StoreItemDelNotify;
+import emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType;
 
-    private PacketStoreItemDelNotify() {
-        super(PacketOpcodes.StoreItemDelNotify);
-    }
+public class PacketStoreItemDelNotify extends GenshinPacket {
+	
+	private PacketStoreItemDelNotify() {
+		super(PacketOpcodes.StoreItemDelNotify);
+	}
+	
+	public PacketStoreItemDelNotify(GenshinItem item) {
+		this();
+		
+		StoreItemDelNotify.Builder proto = StoreItemDelNotify.newBuilder()
+				.setStoreType(StoreType.StorePack)
+				.addGuidList(item.getGuid());
+		
+		this.setData(proto);
+	}
+	
+	public PacketStoreItemDelNotify(Collection<GenshinItem> items) {
+		this();
 
-    public PacketStoreItemDelNotify(GameItem item) {
-        this();
-
-        StoreItemDelNotify.Builder proto =
-                StoreItemDelNotify.newBuilder()
-                        .setStoreType(StoreType.STORE_TYPE_PACK)
-                        .addGuidList(item.getGuid());
-
-        this.setData(proto);
-    }
-
-    public PacketStoreItemDelNotify(Collection<GameItem> items) {
-        this();
-
-        StoreItemDelNotify.Builder proto =
-                StoreItemDelNotify.newBuilder().setStoreType(StoreType.STORE_TYPE_PACK);
-
-        items.stream().forEach(item -> proto.addGuidList(item.getGuid()));
-
-        this.setData(proto);
-    }
+		StoreItemDelNotify.Builder proto = StoreItemDelNotify.newBuilder()
+				.setStoreType(StoreType.StorePack);
+		
+		items.stream().forEach(item -> proto.addGuidList(item.getGuid()));
+		
+		this.setData(proto);
+	}
 }

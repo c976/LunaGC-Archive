@@ -3,23 +3,23 @@ package emu.grasscutter.data.common;
 import emu.grasscutter.game.props.FightProperty;
 
 public class FightPropData {
-    private String propType;
-    private FightProperty prop;
-    private float value;
+	private String PropType;
+	private FightProperty prop;
+    private float Value;
+    
+	public String getPropType() {
+		return PropType;
+	}
+	
+	public float getValue() {
+		return Value;
+	}
 
-    public String getPropType() {
-        return propType;
-    }
+	public FightProperty getProp() {
+		return prop;
+	}
 
-    public float getValue() {
-        return value;
-    }
-
-    public FightProperty getProp() {
-        return prop;
-    }
-
-    public void onLoad() {
-        this.prop = FightProperty.getPropByName(propType);
-    }
+	public void onLoad() {
+		this.prop = FightProperty.getPropByName(PropType);
+	}
 }

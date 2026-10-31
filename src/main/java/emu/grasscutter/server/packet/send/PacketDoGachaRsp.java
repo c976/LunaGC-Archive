@@ -1,65 +1,41 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.data.common.ItemParamData;
-import emu.grasscutter.game.gacha.*;
-import emu.grasscutter.net.packet.*;
-import emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp;
-import emu.grasscutter.net.proto.GachaItemOuterClass.GachaItem;
-import emu.grasscutter.net.proto.RetcodeOuterClass;
-import emu.grasscutter.net.proto.RetcodeOuterClass.Retcode;
 import java.util.List;
 
-public class PacketDoGachaRsp extends BasePacket {
+import emu.grasscutter.game.gacha.GachaBanner;
+import emu.grasscutter.net.packet.GenshinPacket;
+import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.proto.DoGachaRspOuterClass.DoGachaRsp;
+import emu.grasscutter.net.proto.GachaItemOuterClass.GachaItem;
 
-    public PacketDoGachaRsp(
-            GachaBanner banner, List<GachaItem> list, PlayerGachaBannerInfo gachaInfo) {
-        super(PacketOpcodes.DoGachaRsp);
+public class PacketDoGachaRsp extends GenshinPacket {
+	
+	public PacketDoGachaRsp(GachaBanner banner, List<GachaItem> list) {
+		super(PacketOpcodes.DoGachaRsp);
 
-        ItemParamData costItem = banner.getCost(1);
-        ItemParamData costItem10 = banner.getCost(10);
-        int gachaTimesLimit = banner.getGachaTimesLimit();
-        int leftGachaTimes =
-                switch (gachaTimesLimit) {
-                    case Integer.MAX_VALUE -> Integer.MAX_VALUE;
-                    default -> Math.max(gachaTimesLimit - gachaInfo.getTotalPulls(), 0);
-                };
-        DoGachaRsp.Builder rsp =
-                DoGachaRsp.newBuilder()
-                        .setGachaType(banner.getGachaType())
-                        .setGachaScheduleId(banner.getScheduleId())
-                        .setGachaTimes(list.size())
-                        .setNewGachaRandom(12345)
-                        .setLeftGachaTimes(leftGachaTimes)
-                        .setGachaTimesLimit(gachaTimesLimit)
-                        .setCostItemId(costItem.getId())
-                        .setCostItemNum(costItem.getCount())
-                        .setTenCostItemId(costItem10.getId())
-                        .setTenCostItemNum(costItem10.getCount())
-                        .addAllGachaItemList(list);
+		DoGachaRsp p = DoGachaRsp.newBuilder()
+				.setGachaType(banner.getGachaType())
+				.setGachaScheduleId(banner.getScheduleId())
+				.setGachaTimes(list.size())
+				.setNewGachaRandom(12345)
+				.setLeftGachaTimes(Integer.MAX_VALUE)
+				.setCostItemId(banner.getCostItem())
+	            .setCostItemNum(1)
+	            .setTenCostItemId(banner.getCostItem())
+	            .setTenCostItemNum(10)
+	            .addAllGachaItemList(list)
+				.build();
+		
+		this.setData(p);
+	}
 
-        if (banner.hasEpitomized()) {
-            rsp.setWishItemId(gachaInfo.getWishItemId())
-                    .setWishProgress(gachaInfo.getFailedChosenItemPulls())
-                    .setWishMaxProgress(banner.getWishMaxProgress());
-        }
+	public PacketDoGachaRsp() {
+		super(PacketOpcodes.DoGachaRsp);
 
-        this.setData(rsp.build());
-    }
-
-    public PacketDoGachaRsp() {
-        super(PacketOpcodes.DoGachaRsp);
-
-        DoGachaRsp p =
-                DoGachaRsp.newBuilder().setRetcode(RetcodeOuterClass.Retcode.RET_SVR_ERROR_VALUE).build();
-
-        this.setData(p);
-    }
-
-    public PacketDoGachaRsp(Retcode retcode) {
-        super(PacketOpcodes.DoGachaRsp);
-
-        DoGachaRsp p = DoGachaRsp.newBuilder().setRetcode(retcode.getNumber()).build();
-
-        this.setData(p);
-    }
+		DoGachaRsp p = DoGachaRsp.newBuilder()
+				.setRetcode(1)
+				.build();
+		
+		this.setData(p);
+	}
 }
