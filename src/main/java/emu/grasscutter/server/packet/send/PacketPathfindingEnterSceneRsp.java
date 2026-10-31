@@ -1,13 +1,10 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 
-public class PacketPathfindingEnterSceneRsp extends GenshinPacket {
+public class PacketPathfindingEnterSceneRsp extends BasePacket {
 
-	public PacketPathfindingEnterSceneRsp(int clientSequence) {
-		super(PacketOpcodes.PathfindingEnterSceneRsp);
-		
-		this.buildHeader(clientSequence);
-	}
+    public PacketPathfindingEnterSceneRsp(int clientSequence) {
+        super(PacketOpcodes.PathfindingEnterSceneRsp);
+    }
 }

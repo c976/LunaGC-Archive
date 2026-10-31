@@ -1,16 +1,19 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.GetShopmallDataRspOuterClass.GetShopmallDataRsp;
+import java.util.List;
 
-public class PacketGetShopmallDataRsp extends GenshinPacket {
-	
-	public PacketGetShopmallDataRsp() {
-		super(PacketOpcodes.GetShopmallDataRsp);
+public class PacketGetShopmallDataRsp extends BasePacket {
 
-		GetShopmallDataRsp proto = GetShopmallDataRsp.newBuilder().build();
-		
-		this.setData(proto);
-	}
+    public PacketGetShopmallDataRsp() {
+        super(PacketOpcodes.GetShopmallDataRsp);
+
+        List<Integer> shop_malls = List.of(900, 1052, 902, 1001, 903);
+
+        GetShopmallDataRsp proto =
+                GetShopmallDataRsp.newBuilder().addAllShopTypeList(shop_malls).build();
+
+        this.setData(proto);
+    }
 }

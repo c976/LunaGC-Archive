@@ -1,23 +1,22 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.DestroyMaterialRspOuterClass.DestroyMaterialRsp;
 import it.unimi.dsi.fastutil.ints.Int2IntMap;
-import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 
-public class PacketDestroyMaterialRsp extends GenshinPacket {
-	
-	public PacketDestroyMaterialRsp(Int2IntOpenHashMap returnMaterialMap) {
-		super(PacketOpcodes.DestroyMaterialRsp);
-		
-		DestroyMaterialRsp.Builder proto = DestroyMaterialRsp.newBuilder();
-		
-		for (Int2IntMap.Entry e : returnMaterialMap.int2IntEntrySet()) {
-			proto.addItemIdList(e.getIntKey());
-			proto.addItemCountList(e.getIntValue());
-		}
-		
-		this.setData(proto);
-	}
+public class PacketDestroyMaterialRsp extends BasePacket {
+
+    public PacketDestroyMaterialRsp(Int2IntMap returnMaterialMap) {
+        super(PacketOpcodes.DestroyMaterialRsp);
+
+        var proto = DestroyMaterialRsp.newBuilder();
+
+        returnMaterialMap.forEach(
+                (id, count) -> {
+                    proto.addItemIdList(id);
+                    proto.addItemCountList(count);
+                });
+
+        this.setData(proto);
+    }
 }

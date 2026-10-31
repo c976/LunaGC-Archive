@@ -1,48 +1,49 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.GenshinConstants;
-import emu.grasscutter.game.GenshinPlayer;
+import static emu.grasscutter.config.Configuration.GAME_INFO;
+
+import emu.grasscutter.GameConstants;
 import emu.grasscutter.game.friends.Friendship;
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.packet.*;
+import emu.grasscutter.net.proto.*;
 import emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief;
 import emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState;
 import emu.grasscutter.net.proto.GetPlayerFriendListRspOuterClass.GetPlayerFriendListRsp;
-import emu.grasscutter.net.proto.HeadImageOuterClass.HeadImage;
+import emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture;
 
-public class PacketGetPlayerFriendListRsp extends GenshinPacket {
-	
-	public PacketGetPlayerFriendListRsp(GenshinPlayer player) {
-		super(PacketOpcodes.GetPlayerFriendListRsp);
-		
-		FriendBrief serverFriend = FriendBrief.newBuilder()
-				.setUid(GenshinConstants.SERVER_CONSOLE_UID)
-				.setNickname("Server")
-				.setLevel(1)
-				.setAvatar(HeadImage.newBuilder().setAvatarId(GenshinConstants.MAIN_CHARACTER_FEMALE))
-				.setWorldLevel(0)
-				.setSignature("")
-				.setLastActiveTime((int) (System.currentTimeMillis() / 1000f))
-				.setIsMpModeAvailable(true)
-				.setNameCardId(210001)
-				.setOnlineState(FriendOnlineState.FRIEND_ONLINE)
-				.setParam(1)
-				.setUnk1(1)
-				.setUnk2(3)
-				.build();
-		
-		GetPlayerFriendListRsp.Builder proto = GetPlayerFriendListRsp.newBuilder().addFriendList(serverFriend);
-		
-		for (Friendship friendship : player.getFriendsList().getFriends().values()) {
-			proto.addFriendList(friendship.toProto());
-		}
-		for (Friendship friendship : player.getFriendsList().getPendingFriends().values()) {
-			if (friendship.getAskerId() == player.getId()) {
-				continue;
-			}
-			proto.addAskFriendList(friendship.toProto());
-		}
-		
-		this.setData(proto);
-	}
+public class PacketGetPlayerFriendListRsp extends BasePacket {
+
+    public PacketGetPlayerFriendListRsp(Player player) {
+        super(PacketOpcodes.GetPlayerFriendListRsp);
+
+        var serverAccount = GAME_INFO.serverAccount;
+        FriendBrief serverFriend =
+                FriendBrief.newBuilder()
+                        .setUid(GameConstants.SERVER_CONSOLE_UID)
+                        .setNickname(serverAccount.nickName)
+                        .setLevel(serverAccount.adventureRank)
+                        .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(serverAccount.avatarId))
+                        .setWorldLevel(serverAccount.worldLevel)
+                        .setSignature(serverAccount.signature)
+                        .setLastActiveTime((int) (System.currentTimeMillis() / 1000f))
+                        .setNameCardId(serverAccount.nameCardId)
+                        .setOnlineState(FriendOnlineState.FriendOnlineState_FRIEND_ONLINE)
+                        .setParam(1)
+                        .setIsGameSource(true)
+                        .setPlatformType(PlatformTypeOuterClass.PlatformType.PlatformType_PC)
+                        .setFriendEnterHomeOptionValue(
+                                FriendEnterHomeOptionOuterClass.FriendEnterHomeOption
+                                        .FriendEnterHomeOption_REFUSE_VALUE)
+                        .build();
+
+        GetPlayerFriendListRsp.Builder proto =
+                GetPlayerFriendListRsp.newBuilder().addFriendList(serverFriend);
+
+        for (Friendship friendship : player.getFriendsList().getFriends().values()) {
+            proto.addFriendList(friendship.toProto());
+        }
+
+        this.setData(proto);
+    }
 }

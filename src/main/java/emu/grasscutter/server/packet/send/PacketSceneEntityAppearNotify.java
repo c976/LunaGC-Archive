@@ -1,49 +1,51 @@
 package emu.grasscutter.server.packet.send;
 
-import java.util.Collection;
-
-import emu.grasscutter.game.GenshinPlayer;
-import emu.grasscutter.game.entity.GenshinEntity;
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.game.entity.GameEntity;
+import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.SceneEntityAppearNotifyOuterClass.SceneEntityAppearNotify;
 import emu.grasscutter.net.proto.VisionTypeOuterClass.VisionType;
+import java.util.Collection;
+import java.util.Objects;
 
-public class PacketSceneEntityAppearNotify extends GenshinPacket {
-	
-	public PacketSceneEntityAppearNotify(GenshinEntity entity) {
-		super(PacketOpcodes.SceneEntityAppearNotify, true);
+public class PacketSceneEntityAppearNotify extends BasePacket {
 
-		SceneEntityAppearNotify.Builder proto = SceneEntityAppearNotify.newBuilder()
-				.setAppearType(VisionType.VisionBorn)
-				.addEntityList(entity.toProto());
+    public PacketSceneEntityAppearNotify(GameEntity entity) {
+        super(PacketOpcodes.SceneEntityAppearNotify, true);
 
-		this.setData(proto.build());
-	}
-	
-	public PacketSceneEntityAppearNotify(GenshinEntity entity, VisionType vision, int param) {
-		super(PacketOpcodes.SceneEntityAppearNotify, true);
+        SceneEntityAppearNotify.Builder proto =
+                SceneEntityAppearNotify.newBuilder()
+                        .setAppearType(VisionType.VisionType_VISION_BORN)
+                        .addEntityList(entity.toProto());
 
-		SceneEntityAppearNotify.Builder proto = SceneEntityAppearNotify.newBuilder()
-				.setAppearType(vision)
-				.setParam(param)
-				.addEntityList(entity.toProto());
+        this.setData(proto.build());
+    }
 
-		this.setData(proto.build());
-	}
-	
-	public PacketSceneEntityAppearNotify(GenshinPlayer player) {
-		this(player.getTeamManager().getCurrentAvatarEntity());
-	}
+    public PacketSceneEntityAppearNotify(GameEntity entity, VisionType vision, int param) {
+        super(PacketOpcodes.SceneEntityAppearNotify, true);
 
-	public PacketSceneEntityAppearNotify(Collection<GenshinEntity> entities, VisionType visionType) {
-		super(PacketOpcodes.SceneEntityAppearNotify, true);
-		
-		SceneEntityAppearNotify.Builder proto = SceneEntityAppearNotify.newBuilder()
-				.setAppearType(visionType);
-		
-		entities.forEach(e -> proto.addEntityList(e.toProto()));
+        SceneEntityAppearNotify.Builder proto =
+                SceneEntityAppearNotify.newBuilder()
+                        .setAppearType(vision)
+                        .setParam(param)
+                        .addEntityList(entity.toProto());
 
-		this.setData(proto.build());
-	}
+        this.setData(proto.build());
+    }
+
+    public PacketSceneEntityAppearNotify(Player player) {
+        this(Objects.requireNonNull(player.getTeamManager().getCurrentAvatarEntity()));
+    }
+
+    public PacketSceneEntityAppearNotify(
+            Collection<? extends GameEntity> entities, VisionType visionType) {
+        super(PacketOpcodes.SceneEntityAppearNotify, true);
+
+        SceneEntityAppearNotify.Builder proto =
+                SceneEntityAppearNotify.newBuilder().setAppearType(visionType);
+
+        entities.forEach(e -> proto.addEntityList(e.toProto()));
+
+        this.setData(proto.build());
+    }
 }

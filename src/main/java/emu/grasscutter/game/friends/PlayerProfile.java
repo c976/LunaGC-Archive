@@ -1,99 +1,75 @@
 package emu.grasscutter.game.friends;
 
 import dev.morphia.annotations.*;
-import emu.grasscutter.game.GenshinPlayer;
+import emu.grasscutter.Grasscutter;
+import emu.grasscutter.game.home.GameHome;
+import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass;
 import emu.grasscutter.utils.Utils;
+import lombok.Getter;
+import org.jetbrains.annotations.Nullable;
 
+@Entity
+@Getter
 public class PlayerProfile {
-	@Transient private GenshinPlayer player;
-	
-	private int id;
-	private int nameCard;
-	private int avatarId;
-	private String name;
-	private String signature;
-	private int achievements;
-	
-	private int playerLevel;
-	private int worldLevel;
-	private int lastActiveTime;
+    @AlsoLoad("id")
+    private int uid;
 
-	@Deprecated // Morphia only
-	public PlayerProfile() { }
-	
-	public PlayerProfile(GenshinPlayer player) {
-		this.id = player.getId();
-		this.syncWithCharacter(player);
-	}
-	
-	public int getId() {
-		return id;
-	}
+    private int nameCard;
+    private int headImageId;
+    private String name;
+    private String signature;
 
-	public GenshinPlayer getPlayer() {
-		return player;
-	}
-	
-	public synchronized void setPlayer(GenshinPlayer player) {
-		this.player = player;
-	}
-	
-	public String getName() {
-		return name;
-	}
+    private int playerLevel;
+    private int worldLevel;
+    private int lastActiveTime;
 
-	public int getNameCard() {
-		return nameCard;
-	}
+    private boolean isInDuel = false; // TODO: Implement duels. (TCG)
+    private boolean isDuelObservable = false; // TODO: Implement duels. (TCG)
 
-	public int getAvatarId() {
-		return avatarId;
-	}
+    @Getter private int enterHomeOption;
 
-	public String getSignature() {
-		return signature;
-	}
+    @Deprecated // Morphia only
+    public PlayerProfile() {}
 
-	public int getAchievements() {
-		return achievements;
-	}
+    public PlayerProfile(Player player) {
+        this.uid = player.getUid();
+        this.syncWithCharacter(player);
+    }
 
-	public int getPlayerLevel() {
-		return playerLevel;
-	}
+    @Nullable public Player getPlayer() {
+        var player = Grasscutter.getGameServer().getPlayerByUid(this.getUid(), true);
+        this.syncWithCharacter(player);
+        return player;
+    }
 
-	public int getWorldLevel() {
-		return worldLevel;
-	}
+    public void updateLastActiveTime() {
+        this.lastActiveTime = Utils.getCurrentSeconds();
+    }
 
-	public int getLastActiveTime() {
-		return lastActiveTime;
-	}
-	
-	public void updateLastActiveTime() {
-		this.lastActiveTime = Utils.getCurrentSeconds();
-	}
-	
-	public int getDaysSinceLogin() {
-		return (int) Math.floor((Utils.getCurrentSeconds() - getLastActiveTime()) / 86400.0);
-	}
+    public int getDaysSinceLogin() {
+        return (int) Math.floor((Utils.getCurrentSeconds() - getLastActiveTime()) / 86400.0);
+    }
 
-	public boolean isOnline() {
-		return this.getPlayer() != null;
-	}
+    public void syncWithCharacter(Player player) {
+        if (player == null) {
+            return;
+        }
 
-	public void syncWithCharacter(GenshinPlayer player) {
-		if (player == null) {
-			return;
-		}
-		
-		this.name = player.getNickname();
-		this.avatarId = player.getHeadImage();
-		this.signature = player.getSignature();
-		this.nameCard = player.getNameCardId();
-		this.playerLevel = player.getLevel();
-		this.worldLevel = player.getWorldLevel();
-		//this.achievements = 0;
-		this.updateLastActiveTime();
-	}
+        this.uid = player.getUid();
+        this.name = player.getNickname();
+        this.headImageId = player.getHeadImage();
+        this.signature = player.getSignature();
+        this.nameCard = player.getNameCardId();
+        this.playerLevel = player.getLevel();
+        this.worldLevel = player.getWorldLevel();
+        this.enterHomeOption =
+                player
+                        .tryGetHome()
+                        .map(GameHome::getEnterHomeOption)
+                        .orElse(
+                                FriendEnterHomeOptionOuterClass.FriendEnterHomeOption
+                                        .FriendEnterHomeOption_REFUSE_VALUE);
+        this.updateLastActiveTime();
+    }
 }

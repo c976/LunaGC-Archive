@@ -1,25 +1,31 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.data.GameData;
+import emu.grasscutter.game.player.Player;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.GetScenePointRspOuterClass.GetScenePointRsp;
 
-public class PacketGetScenePointRsp extends GenshinPacket {
-	
-	public PacketGetScenePointRsp(int sceneId) {
-		super(PacketOpcodes.GetScenePointRsp);
+public class PacketGetScenePointRsp extends BasePacket {
 
-		GetScenePointRsp.Builder p = GetScenePointRsp.newBuilder()
-				.setSceneId(sceneId);
-		
-		for (int i = 1; i < 1000; i++) {
-			p.addUnlockedPointList(i);
-		}
-		
-		for (int i = 1; i < 9; i++) {
-			p.addUnlockAreaList(i);
-		}
+    public PacketGetScenePointRsp(Player player, int sceneId) {
+        super(PacketOpcodes.GetScenePointRsp);
 
-		this.setData(p);
-	}
+        GetScenePointRsp.Builder p = GetScenePointRsp.newBuilder().setSceneId(sceneId);
+
+        if (GameData.getScenePointIdList().isEmpty()) {
+            for (int i = 1; i < 1000; i++) {
+                p.addUnlockedPointList(i);
+                p.addUnhidePointList(i);
+            }
+        } else {
+            p.addAllUnlockedPointList(player.getUnlockedScenePoints(sceneId));
+            p.addAllUnhidePointList(player.getUnlockedScenePoints(sceneId));
+        }
+
+        for (int i = 1; i < 9; i++) {
+            p.addUnlockAreaList(i);
+        }
+
+        this.setData(p);
+    }
 }

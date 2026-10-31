@@ -1,18 +1,16 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.ServerTimeNotifyOuterClass.ServerTimeNotify;
 
-public class PacketServerTimeNotify extends GenshinPacket {
-	
-	public PacketServerTimeNotify() {
-		super(PacketOpcodes.ServerTimeNotify);
+public class PacketServerTimeNotify extends BasePacket {
 
-		ServerTimeNotify proto = ServerTimeNotify.newBuilder()
-				.setServerTime(System.currentTimeMillis())
-				.build();
-		
-		this.setData(proto);
-	}
+    public PacketServerTimeNotify() {
+        super(PacketOpcodes.ServerTimeNotify);
+
+        ServerTimeNotify proto =
+                ServerTimeNotify.newBuilder().setServerTime(System.currentTimeMillis()).build();
+
+        this.setData(proto);
+    }
 }

@@ -1,39 +1,43 @@
 package emu.grasscutter.game.inventory;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class EquipInventoryTab implements InventoryTab {
-	private final Set<GenshinItem> items;
-	private final int maxCapacity;
-	
-	public EquipInventoryTab(int maxCapacity) {
-		this.items = new HashSet<GenshinItem>();
-		this.maxCapacity = maxCapacity;
-	}
+    private final Set<GameItem> items;
+    private final int maxCapacity;
 
-	@Override
-	public GenshinItem getItemById(int id) {
-		return null;
-	}
+    public EquipInventoryTab(int maxCapacity) {
+        this.items = new HashSet<GameItem>();
+        this.maxCapacity = maxCapacity;
+    }
 
-	@Override
-	public void onAddItem(GenshinItem item) {
-		this.items.add(item);
-	}
+    @Override
+    public GameItem getItemById(int id) {
+        return null;
+    }
 
-	@Override
-	public void onRemoveItem(GenshinItem item) {
-		this.items.remove(item);
-	}
+    @Override
+    public void onAddItem(GameItem item) {
+        this.items.add(item);
+    }
 
-	@Override
-	public int getSize() {
-		return this.items.size();
-	}
+    @Override
+    public void onRemoveItem(GameItem item) {
+        this.items.remove(item);
+    }
 
-	@Override
-	public int getMaxCapacity() {
-		return this.maxCapacity;
-	}
+    @Override
+    public int getSize() {
+        return this.items.size();
+    }
+
+    @Override
+    public int getMaxCapacity() {
+        return this.maxCapacity;
+    }
+
+    @Override
+    public int getItemCountById(int itemId) {
+        return (int) items.stream().filter(item -> item.getItemId() == itemId).count();
+    }
 }

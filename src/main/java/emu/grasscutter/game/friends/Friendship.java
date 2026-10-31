@@ -1,108 +1,114 @@
 package emu.grasscutter.game.friends;
 
-import org.bson.types.ObjectId;
-
 import dev.morphia.annotations.*;
 import emu.grasscutter.database.DatabaseHelper;
-import emu.grasscutter.game.GenshinPlayer;
+import emu.grasscutter.game.player.Player;
 import emu.grasscutter.net.proto.FriendBriefOuterClass.FriendBrief;
 import emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState;
-import emu.grasscutter.net.proto.HeadImageOuterClass.HeadImage;
+import emu.grasscutter.net.proto.PlatformTypeOuterClass;
+import emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture;
+import org.bson.types.ObjectId;
 
-@Entity(value = "friendships", noClassnameStored = true)
+@Entity(value = "friendships", useDiscriminator = false)
 public class Friendship {
-	@Id private ObjectId id;
-	
-	@Transient private GenshinPlayer owner;
-	
-	@Indexed private int ownerId;
-	@Indexed private int friendId;
-	private boolean isFriend;
-	private int askerId;
-	
-	private PlayerProfile profile;
-	
-	@Deprecated // Morphia use only
-	public Friendship() { }
-	
-	public Friendship(GenshinPlayer owner, GenshinPlayer friend, GenshinPlayer asker) {
-		this.setOwner(owner);
-		this.ownerId = owner.getId();
-		this.friendId = friend.getId();
-		this.profile = friend.getProfile();
-		this.askerId = asker.getId();
-	}
+    @Id private ObjectId id;
 
-	public GenshinPlayer getOwner() {
-		return owner;
-	}
+    @Transient private Player owner;
 
-	public void setOwner(GenshinPlayer owner) {
-		this.owner = owner;
-	}
+    @Indexed private int ownerId;
+    @Indexed private int friendId;
+    private boolean isFriend;
+    private int askerId;
 
-	public boolean isFriend() {
-		return isFriend;
-	}
+    private PlayerProfile profile;
 
-	public void setIsFriend(boolean b) {
-		this.isFriend = b;
-	}
+    @Deprecated // Morphia use only
+    public Friendship() {}
 
-	public int getOwnerId() {
-		return ownerId;
-	}
+    public Friendship(Player owner, Player friend, Player asker) {
+        this.setOwner(owner);
+        this.ownerId = owner.getUid();
+        this.friendId = friend.getUid();
+        this.profile = friend.getProfile();
+        this.askerId = asker.getUid();
+    }
 
-	public int getFriendId() {
-		return friendId;
-	}
+    public Player getOwner() {
+        return owner;
+    }
 
-	public int getAskerId() {
-		return askerId;
-	}
+    public void setOwner(Player owner) {
+        this.owner = owner;
+    }
 
-	public void setAskerId(int askerId) {
-		this.askerId = askerId;
-	}
+    public boolean isFriend() {
+        return isFriend;
+    }
 
-	public PlayerProfile getFriendProfile() {
-		return profile;
-	}
-	
-	public void setFriendProfile(GenshinPlayer character) {
-		if (character == null || this.friendId != character.getId()) return;
-		this.profile = character.getProfile();
-	}
-	
-	public boolean isOnline() {
-		return getFriendProfile().getPlayer() != null;
-	}
+    public void setIsFriend(boolean b) {
+        this.isFriend = b;
+    }
 
-	public void save() {
-		DatabaseHelper.saveFriendship(this);
-	}
+    public int getOwnerId() {
+        return ownerId;
+    }
 
-	public void delete() {
-		DatabaseHelper.deleteFriendship(this);
-	}
-	
-	public FriendBrief toProto() {
-		FriendBrief proto = FriendBrief.newBuilder()
-				.setUid(getFriendProfile().getId())
-				.setNickname(getFriendProfile().getName())
-				.setLevel(getFriendProfile().getPlayerLevel())
-				.setAvatar(HeadImage.newBuilder().setAvatarId(getFriendProfile().getAvatarId()))
-				.setWorldLevel(getFriendProfile().getWorldLevel())
-				.setSignature(getFriendProfile().getSignature())
-				.setOnlineState(getFriendProfile().isOnline() ? FriendOnlineState.FRIEND_ONLINE : FriendOnlineState.FRIEND_DISCONNECT)
-				.setIsMpModeAvailable(true)
-				.setLastActiveTime(getFriendProfile().getLastActiveTime())
-				.setNameCardId(getFriendProfile().getNameCard())
-				.setParam(getFriendProfile().getDaysSinceLogin())
-				.setUnk1(1)
-				.setUnk2(3)
-				.build();
+    public int getFriendId() {
+        return friendId;
+    }
 
-		return proto;
-	}
+    public int getAskerId() {
+        return askerId;
+    }
+
+    public void setAskerId(int askerId) {
+        this.askerId = askerId;
+    }
+
+    public PlayerProfile getFriendProfile() {
+        return profile;
+    }
+
+    public void setFriendProfile(Player character) {
+        if (character == null || this.friendId != character.getUid()) return;
+        this.profile = character.getProfile();
+    }
+
+    public boolean isOnline() {
+        return getFriendProfile().getPlayer() != null;
+    }
+
+    public void save() {
+        DatabaseHelper.saveFriendship(this);
+    }
+
+    public void delete() {
+        DatabaseHelper.deleteFriendship(this);
+    }
+
+    public FriendBrief toProto() {
+        var player = this.getFriendProfile().getPlayer(); // get latest player and sync.
+
+        return FriendBrief.newBuilder()
+                .setUid(getFriendProfile().getUid())
+                .setNickname(getFriendProfile().getName())
+                .setLevel(getFriendProfile().getPlayerLevel())
+                .setProfilePicture(
+                        ProfilePicture.newBuilder().setProfilePictureId(getFriendProfile().getHeadImageId()))
+                .setWorldLevel(getFriendProfile().getWorldLevel())
+                .setSignature(getFriendProfile().getSignature())
+                .setOnlineState(
+                        player != null && player.isOnline()
+                                ? FriendOnlineState.FriendOnlineState_FRIEND_ONLINE
+                                : FriendOnlineState.FriendOnlineState_FREIEND_DISCONNECT)
+                .setIsMpModeAvailable(true)
+                .setLastActiveTime(getFriendProfile().getLastActiveTime())
+                .setNameCardId(getFriendProfile().getNameCard())
+                .setParam(getFriendProfile().getDaysSinceLogin())
+                .setIsGameSource(true)
+                .setPlatformType(PlatformTypeOuterClass.PlatformType.PlatformType_PC)
+                .setIsInDuel(getFriendProfile().isInDuel())
+                .setIsDuelObservable(getFriendProfile().isDuelObservable())
+                .build();
+    }
 }

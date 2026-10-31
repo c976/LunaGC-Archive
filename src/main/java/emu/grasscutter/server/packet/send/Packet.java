@@ -1,12 +1,10 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import emu.grasscutter.net.packet.*;
 
-public class Packet extends GenshinPacket {
-	
-	public Packet() {
-		super(PacketOpcodes.NONE);
+public class Packet extends BasePacket {
 
-	}
+    public Packet() {
+        super(PacketOpcodes.NONE);
+    }
 }

@@ -1,25 +1,26 @@
 package emu.grasscutter.server.packet.send;
 
-import emu.grasscutter.GenshinConstants;
-import emu.grasscutter.net.packet.GenshinPacket;
-import emu.grasscutter.net.packet.PacketOpcodes;
+import static emu.grasscutter.config.Configuration.INVENTORY_LIMITS;
+
+import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType;
 import emu.grasscutter.net.proto.StoreWeightLimitNotifyOuterClass.StoreWeightLimitNotify;
 
-public class PacketStoreWeightLimitNotify extends GenshinPacket {
-	
-	public PacketStoreWeightLimitNotify() {
-		super(PacketOpcodes.StoreWeightLimitNotify);
+public class PacketStoreWeightLimitNotify extends BasePacket {
 
-		StoreWeightLimitNotify p = StoreWeightLimitNotify.newBuilder()
-				.setStoreType(StoreType.StorePack)
-				.setWeightLimit(GenshinConstants.LIMIT_ALL)
-				.setWeaponCountLimit(GenshinConstants.LIMIT_WEAPON)
-				.setReliquaryCountLimit(GenshinConstants.LIMIT_RELIC)
-				.setMaterialCountLimit(GenshinConstants.LIMIT_MATERIAL)
-				.setFurnitureCountLimit(GenshinConstants.LIMIT_FURNITURE)
-				.build();
-		
-		this.setData(p);
-	}
+    public PacketStoreWeightLimitNotify() {
+        super(PacketOpcodes.StoreWeightLimitNotify);
+
+        StoreWeightLimitNotify p =
+                StoreWeightLimitNotify.newBuilder()
+                        .setStoreType(StoreType.StoreType_STORE_PACK)
+                        .setWeightLimit(INVENTORY_LIMITS.all)
+//                        .setWeaponCountLimit(INVENTORY_LIMITS.weapons)
+//                        .setReliquaryCountLimit(INVENTORY_LIMITS.relics)
+//                        .setMaterialCountLimit(INVENTORY_LIMITS.materials)
+//                        .setFurnitureCountLimit(INVENTORY_LIMITS.furniture)
+                        .build();
+
+        this.setData(p);
+    }
 }
